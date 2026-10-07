@@ -1,0 +1,88 @@
+{
+  "timestamp_utc": "2026-10-07T19:04:00Z",
+  "turn_type": "adjacent_frontier_correlated_noise_advantage_test",
+  "user_selection": 3,
+  "source_head_at_start": "65130e8e8f9c65a5c5a8281b81fc6cfa95ade3d3",
+  "concurrent_commit_detected": {
+    "sha": "ff55d95b820583149811d92135796215b9a004c5",
+    "message": "Certify retained thermal curvature with mixed bath term and wider finite window",
+    "relevance": "Strengthens fixed-launch reservoir finite-window evidence to 16 +/- 2^-6, but explicitly leaves arbitrary-input diamond distance and physical bridge OPEN; it does not alter the gauge-core theorem.",
+    "conflict_with_this_turn": false
+  },
+  "artifacts_created": [
+    {
+      "path": "research/bridges/2026-10-07T1900Z_mqm_gauge_core_correlated_noise_audit_v01.py",
+      "commit": "539b290933c4f2d772e9e2fdcf5812645f1e0623",
+      "type": "exact_replay"
+    },
+    {
+      "path": "research/bridges/2026-10-07T1901Z_MQM_GAUGE_CORE_CORRELATED_NOISE_RESULTS_v0.1.json",
+      "commit": "c1bac5081cf578eb32e10a07a4c697ad7d7bcffa",
+      "type": "machine_result"
+    },
+    {
+      "path": "research/bridges/2026-10-07T1902Z_MQM_TETRA_GAUGE_CORE_NOISE_FIREWALL_THEOREM_v0.1.md",
+      "commit": "2f5f4669096d0283b62c078ab3f69a534ef68c36",
+      "type": "scoped_theorem"
+    }
+  ],
+  "exact_findings": {
+    "physical_core": [1, 2, 3, 8],
+    "outer_tetrahedra": {
+      "T_plus": [5, 6, 7, 8],
+      "T_minus": [4, 6, 7, 8]
+    },
+    "core_pauli_patterns": 256,
+    "core_logical_I_after_ideal_recovery": 256,
+    "four_site_subsets_tested": 70,
+    "unique_fully_benign_subset": [1, 2, 3, 8],
+    "core_syndrome_counts": {
+      "0000": 64,
+      "0001": 64,
+      "0110": 64,
+      "0111": 64
+    },
+    "outer_tetrahedron_full_pauli_distribution": {
+      "I": 64,
+      "X": 64,
+      "Y": 64,
+      "Z": 64
+    },
+    "core_internal_two_lowering_components": {
+      "total": 24,
+      "logical_I": 24
+    },
+    "outer_internal_two_lowering_components": {
+      "total_per_tetrahedron": 24,
+      "logical_I": 0,
+      "logical_X": 9,
+      "logical_Y": 6,
+      "logical_Z": 9
+    }
+  },
+  "theorem_scope": {
+    "exact": "The operator algebra supported on T_C={1,2,3,8} is correctable on the protected subsystem under ideal subsystem recovery.",
+    "architecture_consequence": "Correlated noise can be advantageous only when its support is preferentially confined to the K4 gauge core; tetrahedral symmetry alone is insufficient.",
+    "critical_escape_route": "core-to-shell support propagation, especially through shared hub site 8",
+    "not_claimed": [
+      "physical noise suppression",
+      "finite-time logical reservoir channel",
+      "fault-tolerant active-schedule confinement",
+      "hardware advantage",
+      "threshold",
+      "quantum advantage"
+    ]
+  },
+  "literature_context": [
+    "Poulin, Phys. Rev. Lett. 95, 230504 (2005), subsystem gauge transformations",
+    "Kribs-Laflamme-Poulin-Lesosky, Operator Quantum Error Correction (2005/2006), arbitrary quantum operations",
+    "Chubb-Flammia, arXiv:1809.10704, correlated noise in stabilizer/subsystem decoding"
+  ],
+  "multiuser_policy": {
+    "overwrites": 0,
+    "force_push": false,
+    "existing_artifacts_deleted": 0,
+    "concurrent_commit_preserved": true
+  },
+  "physical_promotion": 0
+}
