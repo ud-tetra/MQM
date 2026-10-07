@@ -1,0 +1,28 @@
+{
+  "parameters": {
+    "Omega": 64,
+    "B": 16,
+    "kappa": 8,
+    "beta": "5/16",
+    "T": 16,
+    "h": 1,
+    "g": 1,
+    "lambda_squared": "4 sqrt(2)"
+  },
+  "freeze_stage": "Before new curvature evaluation",
+  "target": "uniform retained error strictly below2^-16",
+  "candidates": "2^-k k=4..24",
+  "comparison_horizon": "16+2^-4",
+  "method": "Finite ideal M192 retained double commutator: bath outer commutators trace to zero; mixed term retained via Jacobi identity, weighted exchange norm charged. Uniform continuum VALUE comparison, no inference of continuum derivatives.",
+  "controls": {
+    "M": [
+      4,
+      8
+    ],
+    "random_seed": 1711,
+    "random_states_per_M": 3,
+    "routes": "Dense full generator versus retained reduced commutator, including mixed term; exact cross multiplication"
+  },
+  "physical_promotion": 0,
+  "external_review": "OPEN"
+}

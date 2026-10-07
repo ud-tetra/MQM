@@ -5,6 +5,57 @@
   "physical_promotion": 0,
   "releases": [
     {
+      "id": "MQM_RESPONSE_CURVATURE_v0.1",
+      "title": "Mixed bath commutator and fourfold wider conditional window",
+      "version": "0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "EXACT retained Jacobi identity preserves the mixed bath term. DERIVED finite response curvature <=(2864/3)nu; conditional error<119/2^23<2^-16 throughout16 +/-2^-6. Fourfold larger halfwidth. External review OPEN; physical promotion0.",
+      "claims": {
+        "version": "0.1",
+        "physical_promotion": 0,
+        "claims": [
+          {
+            "id": "RETAINED-JACOBI",
+            "status": "EXACT",
+            "claim": "Retained double commutator equals local double commutator plus the mixed [[K,H_B],X] term",
+            "scope": "Finite source excitation sectors; bath-only outer commutators trace to zero"
+          },
+          {
+            "id": "FINITE-CURVATURE",
+            "status": "DERIVED",
+            "claim": "Half trace norm of finite M192 response curvature <= (2864/3) nu at every time",
+            "scope": "Ideal source flat-band Gauss reference Q<=2; not uniform continuum photon number"
+          },
+          {
+            "id": "WIDER-WINDOW",
+            "status": "DERIVED conditional",
+            "claim": "Retained error<119/2^23<2^-16 throughout16 +/-2^-6 at beta5/16",
+            "scope": "Fixed launch and inherited directed arithmetic/Gaussian/continuum assumptions; fresh uniform value comparison"
+          },
+          {
+            "id": "CURVATURE-CONTROLS",
+            "status": "SIMULATED / EXACT decision audit",
+            "claim": "6 random retained-Jacobi checks,2 thermal dyad-curvature checks and21 exact integer decisions",
+            "scope": "Separate same-agent implementations; no external reviewer"
+          },
+          {
+            "id": "PHYSICAL-BRIDGE",
+            "status": "OPEN",
+            "claim": "Permanent retention, arbitrary-input diamond distance, replenished bath, device-time calibration and hardware validation remain OPEN"
+          }
+        ]
+      },
+      "zip_url": "/research/MQM_RESPONSE_CURVATURE_v0.1/MQM_RESPONSE_CURVATURE_v0.1.zip",
+      "zip_sha256": "22185b813ef699d1ab99ee33cf36c5426471d6e7438ca9043eb345a3609657ca",
+      "pdfs": [
+        {
+          "url": "/research/MQM_RESPONSE_CURVATURE_v0.1/MQM_RESPONSE_CURVATURE_IEEE_A4_v0.1.pdf",
+          "sha256": "26a6542fb9baf7f4f8ad9727e331a891a08e46c5d62da9211c4db1def139f097"
+        }
+      ],
+      "claims_url": "/research/MQM_RESPONSE_CURVATURE_v0.1/CLAIM_REGISTER.json"
+    },
+    {
       "id": "MQM_LAUNCH_TRANSPORT_v0.1",
       "title": "Derivative-launch certification and eightfold wider capture window",
       "version": "0.1",

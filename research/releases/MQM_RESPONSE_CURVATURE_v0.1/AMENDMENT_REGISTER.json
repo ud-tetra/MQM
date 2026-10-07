@@ -1,0 +1,12 @@
+{
+  "post_exposure_engineering": true,
+  "changes": [
+    "Candidate list k4..24 and horizon257/16 recorded before evaluation.",
+    "Uniform vacuum/covariance slots re-enclosed as2^-29 and2^-55 for expanded horizon; previous smaller-horizon results preserved.",
+    "Thermal response quadratic allowance replaces1/8 by(1432/3)nu_U using an exact retained identity with mixed term kept.",
+    "Point launch output is inherited, not a fresh prediction or propagation."
+  ],
+  "target_temperature_launch_changed": false,
+  "reporting_ceiling": "119/2^23 engineering display enclosure",
+  "failed_candidates": "2^-5 and2^-4 fail this majorant only"
+}

@@ -1,0 +1,119 @@
+{
+  "status": "SIMULATED separate curvature routes / EXACT integer decisions",
+  "rows": [
+    {
+      "M": 4,
+      "occupation_dimension": 29,
+      "mixed_commutator_norm": 83.38816203143165,
+      "local_generator_norm": 9.622168779227426,
+      "Jacobi_discrepancies": [
+        5.8896396337340645e-15,
+        5.581165930299496e-15,
+        4.744736662980466e-15
+      ],
+      "thermal_curvature_route_discrepancy": 5.722491248244214e-21,
+      "quadrature_second_moment_discrepancy": 2.7284841053187847e-12
+    },
+    {
+      "M": 8,
+      "occupation_dimension": 71,
+      "mixed_commutator_norm": 83.38816203143175,
+      "local_generator_norm": 9.622168779227426,
+      "Jacobi_discrepancies": [
+        3.827256022511929e-15,
+        4.631448383810217e-15,
+        3.0695076236634066e-15
+      ],
+      "thermal_curvature_route_discrepancy": 1.8500722750343386e-20,
+      "quadrature_second_moment_discrepancy": 5.9117155615240335e-12
+    }
+  ],
+  "integer_decisions": [
+    {
+      "k": 4,
+      "pass": false
+    },
+    {
+      "k": 5,
+      "pass": false
+    },
+    {
+      "k": 6,
+      "pass": true
+    },
+    {
+      "k": 7,
+      "pass": true
+    },
+    {
+      "k": 8,
+      "pass": true
+    },
+    {
+      "k": 9,
+      "pass": true
+    },
+    {
+      "k": 10,
+      "pass": true
+    },
+    {
+      "k": 11,
+      "pass": true
+    },
+    {
+      "k": 12,
+      "pass": true
+    },
+    {
+      "k": 13,
+      "pass": true
+    },
+    {
+      "k": 14,
+      "pass": true
+    },
+    {
+      "k": 15,
+      "pass": true
+    },
+    {
+      "k": 16,
+      "pass": true
+    },
+    {
+      "k": 17,
+      "pass": true
+    },
+    {
+      "k": 18,
+      "pass": true
+    },
+    {
+      "k": 19,
+      "pass": true
+    },
+    {
+      "k": 20,
+      "pass": true
+    },
+    {
+      "k": 21,
+      "pass": true
+    },
+    {
+      "k": 22,
+      "pass": true
+    },
+    {
+      "k": 23,
+      "pass": true
+    },
+    {
+      "k": 24,
+      "pass": true
+    }
+  ],
+  "external_independent_review": false,
+  "physical_promotion": 0
+}

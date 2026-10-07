@@ -1,0 +1,26 @@
+{
+  "proof_source_commit": "fcc015e91e72cb6ef703a4717d13caea63c9db8f",
+  "dependencies": [
+    {
+      "release": "MQM_LAUNCH_TRANSPORT_v0.1",
+      "repository_path": "dist/research/MQM_LAUNCH_TRANSPORT_v0.1/MQM_LAUNCH_TRANSPORT_v0.1.zip",
+      "sha256": "ad978466c59a3b087d8407c76272f4025d9bde2058c4952303b90b15c7fec687"
+    },
+    {
+      "release": "MQM_RESPONSE_JET_v0.1",
+      "repository_path": "dist/research/MQM_RESPONSE_JET_v0.1/MQM_RESPONSE_JET_v0.1.zip",
+      "sha256": "c92347cbd7c3c15c9bff426a07460ccbeb6c23a4f880a94147e9cf6be5b365c8"
+    },
+    {
+      "release": "MQM_CENTERED_TRANSFER_v0.1",
+      "repository_path": "dist/research/MQM_CENTERED_TRANSFER_v0.1/MQM_CENTERED_TRANSFER_v0.1.zip",
+      "sha256": "3d6e04c60f9c0d232022912ebe64229786eed082bb681fa2e3ee2c742af26e48"
+    },
+    {
+      "release": "MQM_DIRECTED_RESPONSE_v0.1",
+      "repository_path": "dist/research/MQM_DIRECTED_RESPONSE_v0.1/MQM_DIRECTED_RESPONSE_v0.1.zip",
+      "sha256": "5f34e05724ec2ccc1a73ae51d2e6802c6a3ceb74ddc45a8960a252069ab49686"
+    }
+  ],
+  "external_review": "OPEN"
+}

@@ -1,0 +1,92 @@
+\documentclass[a4paper,journal]{IEEEtran}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\title{Retained Double-Commutator Bounds for a Wider Conditional Quantum Capture Window}
+\author{Ben Mayes\thanks{MQM development v0.1, 7 October 2026. Same-agent derivation and separate controls. External review OPEN; physical promotion zero.}}
+\maketitle
+\begin{abstract}
+We sharpen finite thermal-response curvature by retaining the mixed bath commutator after partial tracing. The bath-only outer commutator disappears, but its mixed contribution does not. In the source flat-band two-excitation reference, weighted exchange gives a uniform curvature ceiling $(2864/3)\nu$, with $\nu$ the finite occupation trace. This replaces the earlier $4\cdot64^2\nu$ charge. Combined with inherited derivative-launch certificates, response-point and slope bounds, Gaussian remainder and freshly extended uniform continuum value comparisons, rational arithmetic certifies retained error below $119/2^{23}<2^{-16}$ throughout $16\pm2^{-6}$ at unchanged $\beta=5/16$. The interval halfwidth is fourfold larger than the preceding release. This is a conditional fixed-launch result, not permanent retention or hardware evidence.
+\end{abstract}
+\begin{IEEEkeywords}Open quantum systems, finite reservoirs, trace bounds, quantum control.\end{IEEEkeywords}
+\section{Contract and Scope}
+Keep $\Omega=64$, $B=16$, $\kappa=8$, $\beta=5/16$, $T=16$, $h=g=1$ and $\lambda^2=4\sqrt2$. The launch is the source $p0$ state with the vacuum baseline. The thermal correction uses the $M=192$ Gauss reference. Its finite identity [1] is
+\begin{equation}
+ \Delta_{2,M}(t)=\operatorname{Tr}_B X(t),\quad
+ X(t)=U_2\rho_{1,N}U_2^\dagger-\nu U_1\rho_0U_1^\dagger.
+\end{equation}
+Both blocks embed in total charge $Q\le2$; $\nu=\operatorname{tr}N$ and $\|X(t)\|_1\le2\nu$. This finite occupation trace is not a uniformly bounded continuum photon count. The continuum comparison below transfers values, not derivatives.
+
+Before evaluating this release we declared $w=2^{-k}$, $k=4,\ldots,24$, and horizon $U=16+2^{-4}=257/16$. This expands the preceding list and is post-exposure engineering, not an independent prediction. No temperature, state, target or physical resource is changed.
+\section{The Mixed Term Must Be Kept}
+Write $H=H_B+K$, $K=H_S+H_{SB}$. Bath-only commutators vanish under partial trace. Jacobi gives the exact retained identity
+\begin{align}
+ \operatorname{Tr}_B[H,[H,X]]
+ ={}&\operatorname{Tr}_B[K,[K,X]]\\
+ &+\operatorname{Tr}_B[[K,H_B],X].
+\end{align}
+Indeed, the outer $H_B$ terms trace to zero, and
+$[K,[H_B,X]]=[[K,H_B],X]+[H_B,[K,X]]$.
+Discarding the mixed term would produce an unsupported curvature improvement. Differentiating $X(t)$ gives minus this retained double commutator.
+
+The inherited native-plus-exchange norm on $Q\le2$ is $\|K\|<14$ [1]. To bound the remaining term, use the source lowering operator $S=I_C\otimes\sigma_R^-$:
+\begin{equation}
+ H_{SB}=S^\dagger a(c)+S a^\dagger(c).
+\end{equation}
+Commutation with the centered bath replaces $c$ by the weighted vector $\delta c$, up to a phase. The same bright-mode exchange blocks therefore give
+\begin{equation}
+ \|[K,H_B]\|\le\sqrt2\,\|\delta c\|.
+\end{equation}
+The flat-band moment, exact for Gauss degree at least two, is
+\begin{equation}
+ \|\delta c\|^2=G^2B^2/3=\frac{32768}{3\pi}.
+\end{equation}
+Consequently $\|[K,H_B]\|<256/3$, using $\pi>3$. This is a frequency-weighted exchange bound, not a charge of the full bath spectral norm.
+\begin{theorem}
+In the ideal finite $M=192$ reference, for all times,
+\begin{equation}
+ \tfrac12\|\Delta_{2,M}''(t)\|_1
+ \le\frac{2864}{3}\nu.
+\end{equation}
+\end{theorem}
+\begin{proof}
+Partial trace contracts trace norm on the Hermitian terms at issue. Double commutation by $K$ costs at most $4\|K\|^2\|X\|_1$, while the mixed term costs at most $2\|[K,H_B]\|\|X\|_1$. Half their sum, with $\|X\|_1\le2\nu$, is bounded by
+$\nu(4\cdot14^2+2\cdot256/3)=(2864/3)\nu$.
+\end{proof}
+
+The inherited ideal finite slope bound is $\tfrac12\|\Delta_{2,M}'(16)\|_1<2^{-20}$ [1]. With the directed source ceiling $\nu\le\nu_U$, integration yields
+\begin{equation}
+ \tfrac12\|\Delta_{2,M}(t)-\Delta_{2,M}(16)\|_1
+ \le2^{-20}w+\frac{1432}{3}\nu_U w^2.
+\end{equation}
+The coefficient is approximately $0.005122$ instead of $1/8$. No new propagated 192-column checkpoint is required for this all-time ideal curvature bound. Numerical slope and point certificates retain their inherited arithmetic assumptions.
+\section{Uniform Thermal Ledger}
+The preceding derivative-launch packet [2] directly compared $p0$, $p1$ and $p0+p2$ with the continuum native projection. Re-evaluate its normalized launch debit on the enlarged horizon; it is below $2.141\times10^{-4}$. The enclosed vacuum slope remains below $2^{-16}$. Its local curvature bound $C_q(w)$ gives cold variation
+\begin{equation}
+ d_q(w)=2^{-16}w+C_q(w)w^2/2.
+\end{equation}
+At $w=2^{-6}$, $C_q(w)$ is approximately $0.003866$. These decimals are diagnostics; exact returned entries and rational upper roots determine the replay.
+
+The source centered comparison [3], now over $[0,U]$, gives response vacuum and covariance allowances below $2^{-29}$ and $2^{-55}$ respectively. These deliberately replace the smaller old-horizon slots $2^{-30}$ and $2^{-56}$. They are uniform value comparisons, so numerical continuum derivative transfer remains OPEN. With $E_0=3/2^{18}+2^{-128}$ and inherited $x_w$, the complete majorant is
+\begin{align}
+ E_\beta(t)<{}&E_0+d_q(w)+3/2^{26}+2^{-20}w\\
+ &+(1432/3)\nu_Uw^2+2^{-29}+2^{-55}\\
+ &+\frac{x_w^2}{2(1-x_w)}.
+\end{align}
+Here $x_w=12433696189517/58512905602490430+6V(16w+w^2/2)$, $V=64/31457265$; the Gaussian remainder stays below $2^{-25}$.
+\begin{theorem}
+Under the inherited continuum, Gaussian and arithmetic assumptions, retained thermal error is below $119/2^{23}<2^{-16}$ for $|t-16|\le2^{-6}$.
+\end{theorem}
+\begin{proof}
+Exact rational evaluation gives a diagnostic total $1.348968\times10^{-5}$. Integer cross multiplication verifies the stated ceiling and target. Every term bounds the full closed interval. Candidate $2^{-5}$ fails this majorant, not the physical task.
+\end{proof}
+\section{Audit and Remaining Gates}
+Six random-state tests on separately assembled $M=4,8$ occupation matrices verify the retained identity against the full generator. Maximum discrepancy is $5.890\times10^{-15}$. Two actual thermal curvature calculations compare dense double commutation with propagated dyad curvature, agreeing within $1.851\times10^{-20}$. Twenty-one candidate decisions receive separate integer checks. These same-agent controls are not independent external review or proof by finite sampling.
+
+The halfwidth gain is $4$ against $2^{-8}$ and $1024$ against the original $2^{-16}$ interval. Relative halfwidth is $2^{-10}$; full width is $2^{-5}$ model time units. Model time, the population derivative ceiling and the channel target remain distinct typed quantities. Permanent retention, finite-bath replenishment, arbitrary-input diamond accuracy, calibrated device time and physical validation remain OPEN. The next useful tightening is the actual finite response curvature at $T$, with a third-order remainder and explicit continuum value comparison.
+\begin{thebibliography}{3}
+\bibitem{jet} B. Mayes, MQM\_RESPONSE\_JET v0.1, finite response identity, slope and retained norm bounds, 2026.
+\bibitem{launch} B. Mayes, ``Derivative-Launch Transport Certificates for Finite Quantum Capture Windows,'' MQM\_LAUNCH\_TRANSPORT v0.1, 2026.
+\bibitem{center} B. Mayes, MQM\_CENTERED\_TRANSFER and MQM\_DIRECTED\_RESPONSE v0.1, uniform comparison and directed parameter ledgers, 2026.
+\end{thebibliography}
+\end{document}

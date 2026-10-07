@@ -1,0 +1,12 @@
+{
+  "local_double_commutator_charge": "4*14^2=784",
+  "mixed_charge": "2*(256/3)=512/3",
+  "curvature_charge": "784+512/3=2864/3=16*179/3",
+  "integrated_quadratic_charge": "1432/3=8*179/3",
+  "halfwidth": "2^-6",
+  "relative_halfwidth": "2^-6/16=2^-10",
+  "fullwidth": "2^-5",
+  "gain_vs_parent": 4,
+  "gain_vs_initial": 1024,
+  "interpretation": "Algebraic decomposition, not a tetrahedral count or capacity identification"
+}
