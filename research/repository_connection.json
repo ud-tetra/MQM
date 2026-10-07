@@ -1,0 +1,11 @@
+{
+  "repository": "ud-tetra/MQM",
+  "repository_id": "1409162584",
+  "url": "https://github.com/ud-tetra/MQM",
+  "branch": "main",
+  "visibility": "private",
+  "capture_policy": "Every substantive MQM development turn; read AGENTS.md",
+  "sites_project_id": "appgprj_6aad8de0ced88191a976857505b587a3",
+  "sites_url": "https://mqm-research.ben-w-mayes.chatgpt.site",
+  "sites_auto_deploy_from_github": false
+}

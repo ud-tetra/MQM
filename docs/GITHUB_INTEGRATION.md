@@ -12,7 +12,7 @@ Alternatively, clone the repository and run `python3 scripts/serve_offline.py`, 
 
 ## Updating both copies
 
-The Sites source repository remains the production publishing destination. GitHub is an additional research mirror; this mirror does not automatically link GitHub pushes to Sites deployment. Keep the two branches aligned by pushing the same reviewed commit to both destinations. Future assistant work must record both resulting commit SHAs and verify the artifact catalogue before claiming synchronization.
+The Sites source repository remains the production publishing destination. GitHub is an additional research mirror; this mirror does not automatically link GitHub pushes to Sites deployment. Keep the two repositories aligned by capturing the same reviewed file state in both destinations. Connector-created GitHub commits and Sites commits may have different identities; verify file trees rather than equating commit numbers. Future assistant work must record both resulting commit SHAs and verify the artifact catalogue before claiming synchronization.
 
 Before each synchronization:
 

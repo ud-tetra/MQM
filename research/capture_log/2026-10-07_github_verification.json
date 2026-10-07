@@ -1,0 +1,13 @@
+{
+  "capture_commit": "e9b2dc68168227df4ea68ec4abd30015264e2e34",
+  "tree_sha": "3f2ed7eb7ad5a70bed0809c22fa0b5b3fb1b5d32",
+  "remote_files_verified": 242,
+  "unique_blob_hashes_verified": 230,
+  "verification": "All remote path, mode, size and Git blob SHA values match the local frozen upload manifest",
+  "workflow_run_id": 37662132645,
+  "workflow_status_at_record": "completed: success",
+  "public_research_packages": 36,
+  "manuscripts": 36,
+  "physical_promotion": 0,
+  "workflow_url": "https://github.com/ud-tetra/MQM/actions/runs/37662132645"
+}
