@@ -1,0 +1,12 @@
+{
+  "timestamp_utc": "2026-10-07T18:48:00Z",
+  "turn_type": "append_only_formatting_repair",
+  "superseded_for_presentation": "research/bridges/2026-10-07T1841Z_MQM_K4_RESERVOIR_CODE_BRIDGE_v0.1.md",
+  "replacement": "research/bridges/2026-10-07T1847Z_MQM_K4_RESERVOIR_CODE_BRIDGE_v0.2.md",
+  "replacement_commit": "9afb4a2c00fb4459f80860207c99b8f6ed093fb5",
+  "reason": "LaTeX backslashes were stripped by connector string escaping in v0.1",
+  "scientific_scope_changed": false,
+  "v0_1_deleted_or_overwritten": false,
+  "overwrites": 0,
+  "physical_promotion": 0
+}
