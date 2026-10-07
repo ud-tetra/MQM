@@ -1,0 +1,35 @@
+{
+  "1": null,
+  "2": null,
+  "3": null,
+  "4": {
+    "error_A": "X5",
+    "error_B": "Y6",
+    "difference": "IIIIXYII",
+    "logical_class": 2
+  },
+  "5": {
+    "error_A": "X4",
+    "error_B": "X6",
+    "difference": "IIIXIXII",
+    "logical_class": 3
+  },
+  "6": {
+    "error_A": "X4",
+    "error_B": "Z5",
+    "difference": "IIIXZIII",
+    "logical_class": 3
+  },
+  "7": {
+    "error_A": "X4",
+    "error_B": "Y5",
+    "difference": "IIIXYIII",
+    "logical_class": 2
+  },
+  "8": {
+    "error_A": "X4",
+    "error_B": "Z6",
+    "difference": "IIIXIZII",
+    "logical_class": 2
+  }
+}

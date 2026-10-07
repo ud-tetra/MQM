@@ -1,0 +1,32 @@
+{
+  "1": {
+    "checks": [
+      "IXZIZXZY",
+      "IXZYZZIX",
+      "IIIZZYYI",
+      "IIIXXZZI"
+    ],
+    "syndrome_bins": 16,
+    "ambiguous_bins": 0
+  },
+  "2": {
+    "checks": [
+      "IIIYYXXI",
+      "IIIXZIXZ",
+      "XIXXYYIX",
+      "XIXZYIZY"
+    ],
+    "syndrome_bins": 16,
+    "ambiguous_bins": 0
+  },
+  "3": {
+    "checks": [
+      "IXIYXIYX",
+      "IIIYIYZZ",
+      "IXIIZXZX",
+      "IXIZYIZY"
+    ],
+    "syndrome_bins": 16,
+    "ambiguous_bins": 0
+  }
+}

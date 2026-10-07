@@ -1,0 +1,16 @@
+field,public_value,status,source_or_owner,why_needed
+tweezer/site pitch,6 um,PUBLIC,Rines et al. 2509.13247v2 Methods,Sets physical scale only; not PSF.
+readout modality,non-destructive qubit readout / fluorescence images shown,PUBLIC,Rines et al. Methods/Fig.1,Confirms site-resolved imaging context.
+loss semantics,missing expected atom -> loss detection; normally postselect,PUBLIC,Rines et al. Post-Processing,Directly relevant.
+single-loss correction,infer missing state from codeword/parity; one extra bit flip can miscorrect,PUBLIC,Rines et al. Post-Processing; Infleqtion 30L post,Baseline decoder.
+per-site photon-count distribution occupied,UNKNOWN,REQUEST,Sqale calibration,Needed for shot-noise likelihood.
+per-site photon-count distribution empty/background,UNKNOWN,REQUEST,Sqale calibration,Needed for false-present/false-loss.
+effective 2D PSF or localization covariance,UNKNOWN,REQUEST,Sqale calibration,Needed to resolve projected pairs.
+affine drift covariance translation/shear/scale/rotation,UNKNOWN,REQUEST,Sqale calibration,Needed for scan/drift channel.
+frame-to-frame drift correlation time,UNKNOWN,REQUEST,Sqale calibration,Needed for two-view timestamp fusion.
+common-mode camera/frame failure probability,UNKNOWN,REQUEST,Sqale calibration,Blank/saturated/bad-frame HOLD channel.
+view-axis calibration covariance,UNKNOWN,REQUEST,Sqale calibration,Maps camera to MQM coordinate frame.
+second independent optical view availability,UNKNOWN,GO/NO-GO,Sqale hardware,Gate 2 requires a genuinely distinct view or equivalent 3D observation.
+inter-view acquisition time / simultaneity,UNKNOWN,REQUEST,Sqale hardware,Motion between views can mimic loss/duplication.
+mid-circuit image latency,UNKNOWN for 30L,REQUEST,Sqale hardware,Controls whether certificate can gate Superstaq admission.
+raw/loss-labeled calibration frames,UNKNOWN,REQUEST,Sqale data,Needed for direct confusion-matrix validation.
