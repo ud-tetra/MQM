@@ -14,7 +14,7 @@ See `docs/MQM_RESEARCH_REPOSITIONING_v0.5.md` for the response to the presentati
 
 ## Architecture record — 7 October 2026
 
-The current source-bound catalogue contains **37 research packages and 37 manuscripts**. Research, Tracker and Updates pages are built from `research/session_catalogue.json` and `scripts/build_session_update.py`. These records preserve code release 0.5 independently. The thermal target has a conditional finite-window certificate; external review, permanent retention and physical implementation remain open. Physical promotion remains 0.
+The current source-bound catalogue contains **38 research packages and 38 manuscripts**. Research, Tracker and Updates pages are built from `research/session_catalogue.json` and `scripts/build_session_update.py`. These records preserve code release 0.5 independently. The thermal target has a conditional finite-window certificate; external review, permanent retention and physical implementation remain open. Physical promotion remains 0.
 
 ## Integrated archive and offline website
 

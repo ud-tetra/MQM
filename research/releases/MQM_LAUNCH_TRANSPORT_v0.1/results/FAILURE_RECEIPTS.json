@@ -1,0 +1,12 @@
+[
+  {
+    "stage": "Initial transfer ceiling check",
+    "failure": "Inherited covariance display ceiling2^-57 insufficient on enlarged U=1025/64",
+    "repair": "Charge freshly verified2^-56; unchanged acceptance target; initial script retained."
+  },
+  {
+    "stage": "Display ceiling",
+    "failure": "113/2^23 is below the evaluated majorant",
+    "repair": "Report verified115/2^23; initial display script retained; no target or candidate change."
+  }
+]

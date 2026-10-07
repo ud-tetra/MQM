@@ -1,0 +1,185 @@
+{
+  "status": "SIMULATED separate implementations / EXACT integer acceptance audit",
+  "controls": [
+    {
+      "M": 4,
+      "time": 15.99609375,
+      "vector_discrepancy": 2.955630629145567e-13,
+      "launch_identity_discrepancies": [
+        3.9544922890522164e-15,
+        4.083999172935347e-14
+      ],
+      "q_prime": 0.003001002711242595,
+      "q_second": -0.06341035592770927
+    },
+    {
+      "M": 4,
+      "time": 16.0,
+      "vector_discrepancy": 2.9212733326015063e-13,
+      "launch_identity_discrepancies": [
+        5.584878875537063e-15,
+        1.0289840525258622e-13
+      ],
+      "q_prime": 0.002752778336656103,
+      "q_second": -0.0636802504973315
+    },
+    {
+      "M": 4,
+      "time": 16.00390625,
+      "vector_discrepancy": 2.9964681382081505e-13,
+      "launch_identity_discrepancies": [
+        7.808578161056677e-15,
+        6.266457923019328e-14
+      ],
+      "q_prime": 0.0025035025678596945,
+      "q_second": -0.06394875311278825
+    },
+    {
+      "M": 8,
+      "time": 15.99609375,
+      "vector_discrepancy": 2.7943612482888625e-13,
+      "launch_identity_discrepancies": [
+        8.202236008931034e-15,
+        6.490553057246657e-14
+      ],
+      "q_prime": 0.5778469213675901,
+      "q_second": -0.12217189785001759
+    },
+    {
+      "M": 8,
+      "time": 16.0,
+      "vector_discrepancy": 2.738747971979754e-13,
+      "launch_identity_discrepancies": [
+        7.517502387426039e-15,
+        6.422102283727987e-14
+      ],
+      "q_prime": 0.5773454227031699,
+      "q_second": -0.13459480830762494
+    },
+    {
+      "M": 8,
+      "time": 16.00390625,
+      "vector_discrepancy": 2.685880779453354e-13,
+      "launch_identity_discrepancies": [
+        8.3754881033746e-15,
+        3.822088991592425e-14
+      ],
+      "q_prime": 0.576795403655479,
+      "q_second": -0.1470144698621909
+    },
+    {
+      "M": 192,
+      "time": 15.99609375,
+      "vector_discrepancy": 1.6627432036926966e-13,
+      "launch_identity_discrepancies": [
+        4.011258535515501e-15,
+        3.3146301668188776e-14
+      ],
+      "q_prime": -9.144331613320705e-06,
+      "q_second": 3.340808191848803e-05
+    },
+    {
+      "M": 192,
+      "time": 16.0,
+      "vector_discrepancy": 1.6638647722687908e-13,
+      "launch_identity_discrepancies": [
+        5.679502920666523e-15,
+        3.3530287032011896e-14
+      ],
+      "q_prime": -9.014175682672576e-06,
+      "q_second": 3.323102278409139e-05
+    },
+    {
+      "M": 192,
+      "time": 16.00390625,
+      "vector_discrepancy": 1.6714629663430236e-13,
+      "launch_identity_discrepancies": [
+        4.5172743080857905e-15,
+        3.557993090156272e-14
+      ],
+      "q_prime": -8.884720007916412e-06,
+      "q_second": 3.30495403903791e-05
+    }
+  ],
+  "integer_decisions": [
+    {
+      "k": 6,
+      "pass": false
+    },
+    {
+      "k": 7,
+      "pass": false
+    },
+    {
+      "k": 8,
+      "pass": true
+    },
+    {
+      "k": 9,
+      "pass": true
+    },
+    {
+      "k": 10,
+      "pass": true
+    },
+    {
+      "k": 11,
+      "pass": true
+    },
+    {
+      "k": 12,
+      "pass": true
+    },
+    {
+      "k": 13,
+      "pass": true
+    },
+    {
+      "k": 14,
+      "pass": true
+    },
+    {
+      "k": 15,
+      "pass": true
+    },
+    {
+      "k": 16,
+      "pass": true
+    },
+    {
+      "k": 17,
+      "pass": true
+    },
+    {
+      "k": 18,
+      "pass": true
+    },
+    {
+      "k": 19,
+      "pass": true
+    },
+    {
+      "k": 20,
+      "pass": true
+    },
+    {
+      "k": 21,
+      "pass": true
+    },
+    {
+      "k": 22,
+      "pass": true
+    },
+    {
+      "k": 23,
+      "pass": true
+    },
+    {
+      "k": 24,
+      "pass": true
+    }
+  ],
+  "Taylor_vs_exponential_discrepancy": 3.40531434718767e-14,
+  "external_independent_review": false,
+  "physical_promotion": 0
+}

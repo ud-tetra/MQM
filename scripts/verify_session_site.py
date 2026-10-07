@@ -14,7 +14,7 @@ class Links(HTMLParser):
 for f in D.glob('*/index.html'):Links().feed(f.read_text())
 Links().feed((D/'index.html').read_text())
 assert hashlib.sha256((D/'MQM_RESEARCH_RELEASE_0.5.zip').read_bytes()).hexdigest()=='12479c3490d11faa768f246b5d296630fa656365ada362a243f0ad0e8bb5976b'
-assert '127/2²³' in (D/'tracker/index.html').read_text()
+assert '115/2²³' in (D/'tracker/index.html').read_text()
 assert '773/2²⁶' in (D/'tracker/index.html').read_text()
 assert '2⁻²²⁹' in (D/'tracker/index.html').read_text()
 assert 'Physical promotion 0' in (D/'research/index.html').read_text()

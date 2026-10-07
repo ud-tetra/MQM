@@ -46,3 +46,4 @@ For each subsequent substantive turn that generates or modifies artifacts:
 5. never promote simulation or algebra to hardware evidence merely because it is committed here.
 
 GitHub is the artifact ledger, not truth authority.
+

@@ -1,0 +1,20 @@
+{
+  "post_exposure_engineering": true,
+  "changes": [
+    "Candidate list expands k=8..24 to k=6..24 before new launch evaluation; horizon enlarged accordingly.",
+    "No changes to parameters, target, input state or response ledger."
+  ],
+  "reporting_ceiling": "115/2^23 selected after evaluation",
+  "repairs": [
+    {
+      "stage": "Initial transfer ceiling check",
+      "failure": "Inherited covariance display ceiling2^-57 insufficient on enlarged U=1025/64",
+      "repair": "Charge freshly verified2^-56; unchanged acceptance target; initial script retained."
+    },
+    {
+      "stage": "Display ceiling",
+      "failure": "113/2^23 is below the evaluated majorant",
+      "repair": "Report verified115/2^23; initial display script retained; no target or candidate change."
+    }
+  ]
+}

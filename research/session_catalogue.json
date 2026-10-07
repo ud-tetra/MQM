@@ -5,6 +5,55 @@
   "physical_promotion": 0,
   "releases": [
     {
+      "id": "MQM_LAUNCH_TRANSPORT_v0.1",
+      "title": "Derivative-launch certification and eightfold wider capture window",
+      "version": "0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "DERIVED conditional direct continuum comparison of three vacuum launches certifies error<115/2^23<2^-16 throughout16 +/-2^-8. Eightfold wider than prior window. External review OPEN; hardware promotion0.",
+      "claims": {
+        "version": "0.1",
+        "physical_promotion": 0,
+        "claims": [
+          {
+            "id": "LAUNCH-TRANSFER",
+            "status": "DERIVED conditional",
+            "claim": "Centered embedding directly compares each of p0, p1 and p0+p2 with continuum native projection; no derivative-of-state-error inference."
+          },
+          {
+            "id": "VACUUM-SLOPE",
+            "status": "DERIVED conditional",
+            "claim": "Native cold population slope at T16 is strictly below 2^-16 with all declared errors charged."
+          },
+          {
+            "id": "THERMAL-WINDOW",
+            "status": "DERIVED conditional",
+            "claim": "Retained thermal error <115/2^23<2^-16 throughout16 +/-2^-8 model time units",
+            "scope": "Fixed launch, beta5/16, inherited Gaussian continuum and arithmetic assumptions"
+          },
+          {
+            "id": "SEPARATE-CONTROLS",
+            "status": "SIMULATED / EXACT integer audit",
+            "claim": "9 separate propagation controls and19 exact integer acceptance decisions; Taylor comparison3.406e-14",
+            "scope": "Same-agent checks; external review OPEN"
+          },
+          {
+            "id": "UNREPLENISHED-RETENTION",
+            "status": "OPEN",
+            "claim": "Permanent retention, arbitrary-input diamond accuracy, device-time mapping and hardware validation remain open."
+          }
+        ]
+      },
+      "zip_url": "/research/MQM_LAUNCH_TRANSPORT_v0.1/MQM_LAUNCH_TRANSPORT_v0.1.zip",
+      "zip_sha256": "ad978466c59a3b087d8407c76272f4025d9bde2058c4952303b90b15c7fec687",
+      "pdfs": [
+        {
+          "url": "/research/MQM_LAUNCH_TRANSPORT_v0.1/MQM_LAUNCH_TRANSPORT_IEEE_A4_v0.1.pdf",
+          "sha256": "9caaa9e46c2a6dc6b54f2525be455aa05b1f5629e6d5dbc91f1edbc621a74265"
+        }
+      ],
+      "claims_url": "/research/MQM_LAUNCH_TRANSPORT_v0.1/CLAIM_REGISTER.json"
+    },
+    {
       "id": "MQM_VACUUM_FLOW_v0.1",
       "title": "Launch moments and eightfold wider thermal window",
       "version": "0.1",

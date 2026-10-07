@@ -5,6 +5,165 @@
   "physical_promotion": 0,
   "releases": [
     {
+      "id": "MQM_LAUNCH_TRANSPORT_v0.1",
+      "title": "Derivative-launch certification and eightfold wider capture window",
+      "version": "0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "DERIVED conditional direct continuum comparison of three vacuum launches certifies error<115/2^23<2^-16 throughout16 +/-2^-8. Eightfold wider than prior window. External review OPEN; hardware promotion0.",
+      "claims": {
+        "version": "0.1",
+        "physical_promotion": 0,
+        "claims": [
+          {
+            "id": "LAUNCH-TRANSFER",
+            "status": "DERIVED conditional",
+            "claim": "Centered embedding directly compares each of p0, p1 and p0+p2 with continuum native projection; no derivative-of-state-error inference."
+          },
+          {
+            "id": "VACUUM-SLOPE",
+            "status": "DERIVED conditional",
+            "claim": "Native cold population slope at T16 is strictly below 2^-16 with all declared errors charged."
+          },
+          {
+            "id": "THERMAL-WINDOW",
+            "status": "DERIVED conditional",
+            "claim": "Retained thermal error <115/2^23<2^-16 throughout16 +/-2^-8 model time units",
+            "scope": "Fixed launch, beta5/16, inherited Gaussian continuum and arithmetic assumptions"
+          },
+          {
+            "id": "SEPARATE-CONTROLS",
+            "status": "SIMULATED / EXACT integer audit",
+            "claim": "9 separate propagation controls and19 exact integer acceptance decisions; Taylor comparison3.406e-14",
+            "scope": "Same-agent checks; external review OPEN"
+          },
+          {
+            "id": "UNREPLENISHED-RETENTION",
+            "status": "OPEN",
+            "claim": "Permanent retention, arbitrary-input diamond accuracy, device-time mapping and hardware validation remain open."
+          }
+        ]
+      },
+      "zip_url": "/research/MQM_LAUNCH_TRANSPORT_v0.1/MQM_LAUNCH_TRANSPORT_v0.1.zip",
+      "zip_sha256": "ad978466c59a3b087d8407c76272f4025d9bde2058c4952303b90b15c7fec687",
+      "pdfs": [
+        {
+          "url": "/research/MQM_LAUNCH_TRANSPORT_v0.1/MQM_LAUNCH_TRANSPORT_IEEE_A4_v0.1.pdf",
+          "sha256": "9caaa9e46c2a6dc6b54f2525be455aa05b1f5629e6d5dbc91f1edbc621a74265"
+        }
+      ],
+      "claims_url": "/research/MQM_LAUNCH_TRANSPORT_v0.1/CLAIM_REGISTER.json"
+    },
+    {
+      "id": "MQM_VACUUM_FLOW_v0.1",
+      "title": "Launch moments and eightfold wider thermal window",
+      "version": "0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "EXACT fixed-launch moments give unit amplitude variation and population-curvature bounds. DERIVED conditional retained error<127/2^23<2^-16 throughout16 +/-2^-11 model time units; eightfold wider than the response-jet window. No new physical or numerical continuum-derivative promotion.",
+      "claims": {
+        "version": "0.1",
+        "physical_promotion": 0,
+        "claims": [
+          {
+            "id": "VACUUM-MOMENTS",
+            "status": "EXACT",
+            "claim": "H psi0=p1 and H^2 psi0=p0+p2, giving conserved norm charges1 and sqrt2",
+            "scope": "Named source-frame vacuum launch; continuum one-excitation sector and finite references"
+          },
+          {
+            "id": "VACUUM-FLOW",
+            "status": "DERIVED",
+            "claim": "|q prime| <=2 sqrt(q); |q second| <=2+2 sqrt(2q); cold variation <=7w/1024+w^2"
+          },
+          {
+            "id": "WIDER-WINDOW",
+            "status": "DERIVED conditional",
+            "claim": "Retained thermal error <127/2^23<2^-16 throughout16 +/-2^-11",
+            "scope": "Inherited launch, continuum/Gaussian/arithmetic assumptions, finite response jet and uniformly extended comparisons"
+          },
+          {
+            "id": "CONTROLS",
+            "status": "SIMULATED",
+            "claim": "9 separate propagation controls, 6 launch-moment checks; 17 exact integer acceptance checks",
+            "scope": "Same-agent routes; not external independent review"
+          },
+          {
+            "id": "PERMANENT-HOLD",
+            "status": "OPEN",
+            "claim": "No permanent retention, replenished bath, hardware bridge or arbitrary-input diamond bound"
+          }
+        ]
+      },
+      "claims_url": "/research/MQM_VACUUM_FLOW_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_VACUUM_FLOW_v0.1/MQM_VACUUM_FLOW_v0.1.zip",
+      "zip_sha256": "8375b0029e3304e6f66f8b4d1ced1746069e23595086483ae0b2a6238b244ecd",
+      "zip_bytes": 276329,
+      "pdfs": [
+        {
+          "url": "/research/MQM_VACUUM_FLOW_v0.1/MQM_VACUUM_FLOW_IEEE_A4_v0.1.pdf",
+          "sha256": "cc8cbb4ff4fb4a22d53a667fbf42a456507c775599663e10fc13ccb7d6719657"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_RESPONSE_JET_v0.1",
+      "title": "Retained-response derivative and fourfold thermal window",
+      "version": "0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "DERIVED analytic retained dyad charge64\u219214. Conditional finite192-mode derivative bound<2^-20 and uniform continuum value comparison give error<31/2^21<2^-16 on16\u00b12^-14 model time units. Numerical continuum derivative transfer, external review and permanent retention remain OPEN; physical promotion0.",
+      "claims": {
+        "version": "0.1",
+        "physical_promotion": 0,
+        "claims": [
+          {
+            "id": "RETAINED-DERIVATIVE-14",
+            "status": "DERIVED",
+            "claim": "Analytic continuum retained-response dyad charge64 reduced to14",
+            "scope": "Bath-only partial trace cancellation; native norm<7/2, Jaynes-Cummings norm<=sqrt2G onQ<=2"
+          },
+          {
+            "id": "FINITE-JET",
+            "status": "DERIVED conditional",
+            "claim": "Finite192-mode response derivative half trace atT <2^-20",
+            "scope": "Declared arithmetic/parameter assumptions; not numerical continuum derivative"
+          },
+          {
+            "id": "WIDER-WINDOW",
+            "status": "DERIVED conditional",
+            "claim": "Uniform retained error <31/2^21<2^-16 on16\u00b12^-14 model time units",
+            "scope": "Finite jet/curvature plus uniform continuum value comparisons; frozen beta5/16 and source launch"
+          },
+          {
+            "id": "NUMERICAL-CONTINUUM-DERIVATIVE",
+            "status": "OPEN",
+            "claim": "No derivative transfer from uniform value bounds"
+          },
+          {
+            "id": "CONTROLS",
+            "status": "SIMULATED",
+            "claim": "Dense occupation, polarization and finite differences agree forM4/8",
+            "scope": "Same-agent independent implementation routes; not external review"
+          },
+          {
+            "id": "PERMANENT-RETENTION",
+            "status": "OPEN",
+            "claim": "Finite window does not prove permanent hold, refresh or physical implementation"
+          }
+        ]
+      },
+      "claims_url": "/research/MQM_RESPONSE_JET_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_RESPONSE_JET_v0.1/MQM_RESPONSE_JET_v0.1.zip",
+      "zip_sha256": "c92347cbd7c3c15c9bff426a07460ccbeb6c23a4f880a94147e9cf6be5b365c8",
+      "zip_bytes": 1077207,
+      "pdfs": [
+        {
+          "url": "/research/MQM_RESPONSE_JET_v0.1/MQM_RESPONSE_JET_IEEE_A4_v0.1.pdf",
+          "sha256": "1b4786323e583c18ab0b657f739e8877c729c210428f0a504477a08692a155be"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
       "id": "MQM_RETENTION_WINDOW_v0.1",
       "title": "Finite thermal timing and retention window; external-review handoff",
       "version": "0.1",

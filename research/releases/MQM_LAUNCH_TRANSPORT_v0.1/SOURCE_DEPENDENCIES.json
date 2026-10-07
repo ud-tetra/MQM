@@ -1,0 +1,27 @@
+{
+  "source_repository": "https://github.com/ud-tetra/MQM",
+  "source_commit": "d04f9c0b9949823fc4f5df311f5c8582a27b7151",
+  "dependencies": [
+    {
+      "release": "MQM_VACUUM_FLOW_v0.1",
+      "repository_path": "dist/research/MQM_VACUUM_FLOW_v0.1/MQM_VACUUM_FLOW_v0.1.zip",
+      "sha256": "8375b0029e3304e6f66f8b4d1ced1746069e23595086483ae0b2a6238b244ecd"
+    },
+    {
+      "release": "MQM_RESPONSE_JET_v0.1",
+      "repository_path": "dist/research/MQM_RESPONSE_JET_v0.1/MQM_RESPONSE_JET_v0.1.zip",
+      "sha256": "c92347cbd7c3c15c9bff426a07460ccbeb6c23a4f880a94147e9cf6be5b365c8"
+    },
+    {
+      "release": "MQM_CENTERED_TRANSFER_v0.1",
+      "repository_path": "dist/research/MQM_CENTERED_TRANSFER_v0.1/MQM_CENTERED_TRANSFER_v0.1.zip",
+      "sha256": "3d6e04c60f9c0d232022912ebe64229786eed082bb681fa2e3ee2c742af26e48"
+    },
+    {
+      "release": "MQM_DIRECTED_RESPONSE_v0.1",
+      "repository_path": "dist/research/MQM_DIRECTED_RESPONSE_v0.1/MQM_DIRECTED_RESPONSE_v0.1.zip",
+      "sha256": "5f34e05724ec2ccc1a73ae51d2e6802c6a3ceb74ddc45a8960a252069ab49686"
+    }
+  ],
+  "inherited_review": "OPEN"
+}

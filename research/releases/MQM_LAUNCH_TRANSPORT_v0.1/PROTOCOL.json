@@ -1,0 +1,26 @@
+{
+  "version": "0.1",
+  "freeze_stage": "Before fresh launch evaluation",
+  "parameters": {
+    "Omega": 64,
+    "B": 16,
+    "kappa": 8,
+    "beta": "5/16",
+    "T": 16,
+    "h": 1,
+    "g": 1,
+    "lambda_squared": "4 sqrt(2)"
+  },
+  "acceptance": "uniform retained error strictly below 2^-16",
+  "candidates": "2^-k, k=6..24, largest passing certificate",
+  "horizon": "16+2^-6",
+  "launches": [
+    "p0",
+    "p1",
+    "p0+p2 (unnormalized)"
+  ],
+  "method": "128 degree48 real/imaginary Taylor steps; inherited directed coefficient intervals and conservative Q2 error charge; centered continuum embedding compared separately for each launch",
+  "reporting": "New rational display ceilings may be selected after evaluation, disclosed as engineering enclosures",
+  "external_review": "OPEN",
+  "physical_promotion": 0
+}

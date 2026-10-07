@@ -1,0 +1,84 @@
+\documentclass[a4paper,journal]{IEEEtran}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\title{Derivative-Launch Transport Certificates for Finite Quantum Capture Windows}
+\author{Ben Mayes\thanks{MQM development v0.1, 7 October 2026. Conditional derivation and same-agent separate implementations. External review OPEN; physical promotion zero.}}
+\maketitle
+\begin{abstract}
+Direct propagation of derivative launches avoids inferring derivative accuracy from state accuracy. For the named MQM vacuum launch, three source vectors are $p0$, $p1$, and $p0+p2$. We compare each finite Gauss reference with the continuum through a centered bath embedding, charge inherited directed coefficient and binary64 arithmetic allowances, and enclose the retained population slope and curvature. With inherited thermal-response and Gaussian bounds, rational arithmetic certifies retained error below $115/2^{23}<2^{-16}$ on $16\pm2^{-8}$ at unchanged $\beta=5/16$. This is an eightfold wider halfwidth than the preceding launch-moment certificate. The result concerns a finite interval under the stated fixed-launch contract; permanent retention, arbitrary-input diamond accuracy, external review and hardware validation remain open.
+\end{abstract}
+\begin{IEEEkeywords}Quantum control, continuum reservoirs, derivative propagation, rigorous error bounds.\end{IEEEkeywords}
+\section{Frozen Contract}
+Keep $\Omega=64$, $B=16$, $\kappa=8$, $\beta=5/16$, $T=16$, $h=g=1$, and $\lambda^2=4\sqrt2$. In the centered source frame the first live edges are $p0\leftrightarrow p1\leftrightarrow p2$ with unit weights, followed by $p2\leftrightarrow p3$ with weight $\lambda$. The band couples only to $p3$. The launch is $p0\otimes\mathrm{vac}$ and $P$ selects the four live coordinates.
+
+The prior packet [1] established halfwidth $2^{-11}$. Before fresh evaluation we declared candidates $2^{-k}$, $k=6,\ldots,24$, and horizon $U=16+2^{-6}=1025/64$. This is post-exposure engineering, not an independent prediction. Target, temperature and launch are unchanged. Mathematical modes are not physical qubits.
+\section{Direct Continuum Comparison}
+For normalized launches the centered Gauss embedding of [2] gives a uniform interaction-picture port error $4G R$, where $G^2=128/\pi<49$ and
+\begin{equation}
+ R=\frac{x^{192}}{192!\,(1-x/193)},\qquad x=BU/4=4U.
+\end{equation}
+The conservative two-excitation Duhamel allowance also applies in the one-excitation sector:
+\begin{equation}
+ D_1\le8\sqrt2 GUR<84UR.
+\end{equation}
+The embedding maps bath coordinates only and acts identically on the native coordinates. Separate free-bath unitaries leave their projection unchanged. Thus this bounds the native propagation discrepancy for each launch $p0$, $p1$, and $(p0+p2)/\sqrt2$, without differentiating an approximate state comparison. For the unnormalized third vector multiply the allowance by $\sqrt2<3/2$.
+
+The exact source identities are $Hp0=p1$ and $H^2p0=p0+p2$. Let $u_j(t)=e^{-iHt}s_j$ for these three vectors. Then
+\begin{align}
+ q'&=2\Re\langle Pu_0,-iPu_1\rangle,\\
+ q''&=2\|Pu_1\|^2-2\Re\langle Pu_0,Pu_2\rangle.
+\end{align}
+These follow from commutation of $H$ with its propagator, not from numerical differentiation.
+\section{Directed Launch Enclosures}
+At $M=192$ we execute 128 Taylor steps of duration $1/8$ and degree 48, with real and imaginary CSR products separated. Returned binary64 entries are interpreted as exact rational data. Under the inherited round-to-nearest operation model [3], at most 196 row entries and $\||H|\|<64$ give the conservative normalized propagation allowance $256s$, with
+\begin{equation}
+ s=32\,2^{-43}3^8+
+ \frac{8^{49}}{49!(1-8/50)}+2^{-800}.
+\end{equation}
+Use the inherited coefficient mismatch $d_H$ from the directed parameter file. Its conservative two-excitation bound is valid here. The normalized vector debit is
+\begin{equation}
+ e=16d_H+256s+84UR<2.138\times10^{-4}.
+\end{equation}
+No normalized irrational launch preparation is required: the third seed has two exact unit entries, so its debit is bounded by $3e/2$.
+
+Let $a_j$ be rational upper roots of the exact returned native squared norms, and let $\widehat q'$ be the exact bilinear evaluation. The certified slope satisfies
+\begin{equation}
+ |q'(16)|\le |\widehat q'|+2e(a_0+a_1)+2e^2<2^{-16}.
+\end{equation}
+Here $a_0$ denotes the computed launch-zero norm only. In subsequent bounds use the separate inherited ceiling $A=7/2048$, with $q(16)<E_0<A^2$, $E_0=3/2^{18}+2^{-128}$. The numerator 7 is unrelated to the proposed capacity coefficient $7/768$.
+
+Since $\|Hp1\|=\sqrt2<3/2$ and $\|H(p0+p2)\|=\sqrt{4+4\sqrt2}<13/4$, for $|t-16|\le w$ we have
+\begin{align}
+ b_1(w)&=a_1+e+3w/2,\\
+ b_2(w)&=a_2+3e/2+13w/4,\\
+ C(w)&=2b_1(w)^2+2(A+w)b_2(w).
+\end{align}
+The live amplitude is unit-Lipschitz [1]. Consequently
+\begin{equation}
+ |q(t)-q(16)|\le2^{-16}w+C(w)w^2/2.
+\end{equation}
+At $w=2^{-8}$, the curvature ceiling is approximately $5.431\times10^{-4}$; this decimal is diagnostic, while the replay uses rational arithmetic.
+\section{Thermal Window and Audit}
+The inherited response point debit is $3/2^{26}$ and its finite variation is $2^{-20}w+w^2/8$. Uniform centered response comparison remains below $2^{-30}$ on $[0,U]$. The covariance comparison on this expanded horizon is below $2^{-56}$; its former $2^{-57}$ ceiling fails and is explicitly amended. Let $V=64/31457265$,
+\begin{equation}
+ x_w=\frac{12433696189517}{58512905602490430}
+       +6V(16w+w^2/2).
+\end{equation}
+The Gaussian remainder is $x_w^2/[2(1-x_w)]<2^{-25}$. The total bound is the sum of $E_0$, cold variation, response point and variation, both comparison debits, and this remainder.
+\begin{theorem}
+Under the inherited continuum, Gaussian and arithmetic assumptions, retained thermal error is strictly below $115/2^{23}<2^{-16}$ throughout $[16-2^{-8},16+2^{-8}]$.
+\end{theorem}
+\begin{proof}
+Exact rational replay gives a total diagnostic $1.348730\times10^{-5}$ at $w=2^{-8}$ and verifies the stated rational ceiling by integer cross multiplication. All variation terms majorize the closed interval. This is the largest passing member of the declared candidate list; $2^{-7}$ fails the bound, not the physical task.
+\end{proof}
+
+Nine dense-eigensystem versus exponential-action controls at $M=4,8,192$ verify both launch identities. Fresh Taylor output agrees with exponential action within $3.406\times10^{-14}$. Nineteen acceptance decisions are separately audited with integers. These same-agent routes are not external review. The failed initial display ceiling $113/2^{23}$ is preserved; changing the display ceiling did not change acceptance. Halfwidth increases eightfold, relative halfwidth is $2^{-12}$ and full width is $2^{-7}$ in model time. The equal numeral $2^{-16}$ in the slope ceiling and channel target does not identify their units or meanings.
+
+The response variation now dominates enlargement. No device-time calibration, physical sink, perpetual retention, replenished reservoir or arbitrary-input channel guarantee follows.
+\begin{thebibliography}{3}
+\bibitem{flow} B. Mayes, ``Launch-Moment Bounds for a Wider Conditional MQM Thermal Capture Window,'' MQM\_VACUUM\_FLOW v0.1, 2026.
+\bibitem{center} B. Mayes, MQM\_CENTERED\_TRANSFER v0.1, source-bound centered embedding and covariance comparison, 2026.
+\bibitem{direct} B. Mayes, MQM\_DIRECTED\_RESPONSE and MQM\_RESPONSE\_JET v0.1, directed coefficient and propagation ledgers, 2026.
+\end{thebibliography}
+\end{document}
