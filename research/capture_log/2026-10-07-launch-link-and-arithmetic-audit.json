@@ -1,0 +1,91 @@
+{
+  "status": "EXACT rational decision replay / API access observation",
+  "source_commit": "fcc015e91e72cb6ef703a4717d13caea63c9db8f",
+  "certificate_sha256": "66df73de861f41aeafb56041ff3e6fcfb708f0b09a32625c53fd0bc2bee6d1c6",
+  "integer_decisions": [
+    {
+      "k": 6,
+      "integer_target_pass": false
+    },
+    {
+      "k": 7,
+      "integer_target_pass": false
+    },
+    {
+      "k": 8,
+      "integer_target_pass": true
+    },
+    {
+      "k": 9,
+      "integer_target_pass": true
+    },
+    {
+      "k": 10,
+      "integer_target_pass": true
+    },
+    {
+      "k": 11,
+      "integer_target_pass": true
+    },
+    {
+      "k": 12,
+      "integer_target_pass": true
+    },
+    {
+      "k": 13,
+      "integer_target_pass": true
+    },
+    {
+      "k": 14,
+      "integer_target_pass": true
+    },
+    {
+      "k": 15,
+      "integer_target_pass": true
+    },
+    {
+      "k": 16,
+      "integer_target_pass": true
+    },
+    {
+      "k": 17,
+      "integer_target_pass": true
+    },
+    {
+      "k": 18,
+      "integer_target_pass": true
+    },
+    {
+      "k": 19,
+      "integer_target_pass": true
+    },
+    {
+      "k": 20,
+      "integer_target_pass": true
+    },
+    {
+      "k": 21,
+      "integer_target_pass": true
+    },
+    {
+      "k": 22,
+      "integer_target_pass": true
+    },
+    {
+      "k": 23,
+      "integer_target_pass": true
+    },
+    {
+      "k": 24,
+      "integer_target_pass": true
+    }
+  ],
+  "display_ceiling_pass": true,
+  "source_parameters_unchanged": true,
+  "repository_visibility_observed": "public",
+  "visibility_changed_by_this_turn": false,
+  "commit_API_resolves": true,
+  "browser_failure_reproduced": false,
+  "external_review": "OPEN",
+  "physical_promotion": 0
+}

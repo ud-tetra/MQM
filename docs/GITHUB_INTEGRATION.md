@@ -1,8 +1,8 @@
 # Integrated GitHub research repository
 
-Authorized private destination: `ud-tetra/MQM`, branch `main`. The user created it and authorized per-turn live artifact capture on 7 October 2026.
+Authorized artifact destination: `ud-tetra/MQM`, branch `main`. The user created it and authorized per-turn live artifact capture on 7 October 2026.
 
-This repository contains the website source, generated website, all 36 published architecture replay packages and manuscripts, the immutable code review release 0.5, claim registers, source-bound protocols, failures and amendments. Package hashes live in `research/session_catalogue.json`. Nested dependency packages preserve the earlier research inputs.
+This repository contains the website source, generated website, all 38 published architecture replay packages and manuscripts, the immutable code review release 0.5, claim registers, source-bound protocols, failures and amendments. Package hashes live in `research/session_catalogue.json`. Nested dependency packages preserve the earlier research inputs.
 
 ## Offline use
 
@@ -33,3 +33,7 @@ Mathematical, simulation, hardware, and comparative-advantage evidence remain di
 ## Per-turn capture
 
 `AGENTS.md` requires capture after each substantive development turn, with an append-only receipt under `research/capture_log/`. This is an agent handoff requirement, not a claim that synchronization occurs without an executing agent.
+
+## Access observation — 7 October 2026
+
+GitHub API reports this repository as public. The captured launch-transport commit `fcc015e91e72cb6ef703a4717d13caea63c9db8f` resolves through the connected API with the same canonical URL previously reported. This turn did not change repository visibility and did not reproduce a browser link failure. The paired exact arithmetic replay is recorded in `research/capture_log/2026-10-07-launch-link-and-arithmetic-audit.json`. No scientific claim or frozen release package was changed.
