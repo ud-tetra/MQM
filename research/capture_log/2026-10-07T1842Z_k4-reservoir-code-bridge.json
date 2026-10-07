@@ -1,0 +1,40 @@
+{
+  "timestamp_utc": "2026-10-07T18:42:00Z",
+  "turn_type": "adjacent_frontier_execution",
+  "user_selection": 3,
+  "source_head_before_bridge": "26b7a63fd0e1176b969a63d79b09561a1ad05287",
+  "bridge_commit": "da9e82747a2f2fca2100f561c74e147f503788a9",
+  "artifact": "research/bridges/2026-10-07T1841Z_MQM_K4_RESERVOIR_CODE_BRIDGE_v0.1.md",
+  "sources_read": [
+    "release/branches.json",
+    "release/docs/TRACK_A_REVIEW.md",
+    "release/docs/TRACK_A_20_CIRCUIT_INVENTORY.json",
+    "release/docs/ENTANGLER_LEMMA.md",
+    "research/session_catalogue.json",
+    "artifact-capture/2026-10-07-chat-session/SESSION_MANIFEST.json"
+  ],
+  "external_context_checked": [
+    "Phys. Rev. Research 7 L022045 (2025): plane-selective control in a 3D optical tweezer array",
+    "Phys. Rev. Lett. 135 060602 (2025): defect-free 2D and 3D neutral-atom arrays up to 2024 atoms",
+    "Nature s41586-025-09848-5: fault-tolerant neutral-atom architecture with repeated QEC and loss detection",
+    "Nature Physics s41567-026-03258-8: Yb multilevel mapping and loss-detectable/error-detected neutral-atom operations"
+  ],
+  "results": {
+    "primary_bridge_branch": "subsystem-8",
+    "core_x_status": "controller/conformance only for this bridge; unrestricted distance 1",
+    "core_x5_status": "controller/conformance only for this bridge; unrestricted distance 1",
+    "no_go": "fixed-launch reservoir retention may not be relabeled as logical error rate or pseudothreshold",
+    "exact_symmetry_result": "K4 S4-invariant four-site covariance C=alpha I+beta(J-I) decomposes into eigenvalues alpha+3beta (multiplicity 1) and alpha-beta (multiplicity 3)",
+    "derived_qec_result": "distance-3 subsystem code corrects the leading single-jump span under ideal recovery",
+    "finite_time_logical_channel": "OPEN",
+    "hardware_validation": "OPEN",
+    "physical_promotion": 0
+  },
+  "next_execution_target": "instantiate the actual locked 8Q geometry/coupling map and compute or bound the code-subspace reduced channel before schedule-level noisy simulation",
+  "multiuser_policy": {
+    "new_paths_only": true,
+    "overwrites": 0,
+    "force_push": false
+  },
+  "evidence_level": "EXACT + DERIVED scoped; CANDIDATE bridge; no hardware promotion"
+}
