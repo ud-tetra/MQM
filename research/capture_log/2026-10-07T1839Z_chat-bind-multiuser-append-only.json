@@ -1,0 +1,46 @@
+{
+  "timestamp_utc": "2026-10-07T18:39:00Z",
+  "turn_type": "repository_bind_and_state_ingest",
+  "repository": "ud-tetra/MQM",
+  "branch": "main",
+  "authenticated_login": "ud-tetra",
+  "observed_head_before_capture": "e182d9320c4a7d0bf0957317142975d2bd451d6d",
+  "capture_policy": {
+    "per_substantive_turn": true,
+    "multiuser_safe": true,
+    "overwrite_existing_paths": false,
+    "append_only_by_unique_file": true,
+    "force_push": false,
+    "log_every_capture": true,
+    "preserve_failed_and_no_go_results": true
+  },
+  "state_ingested": [
+    "README.md",
+    "AGENTS.md",
+    "RELEASE_MANIFEST.json",
+    "docs/GITHUB_INTEGRATION.md",
+    "research/repository_connection.json",
+    "research/session_catalogue.json (current leading entries)",
+    "research/capture_log/",
+    "recent commit history through e182d9320c4a7d0bf0957317142975d2bd451d6d"
+  ],
+  "current_scientific_status": {
+    "public_release": "0.5",
+    "catalogued_research_packages": 38,
+    "latest_catalogued_package": "MQM_LAUNCH_TRANSPORT_v0.1",
+    "latest_claim_scope": "DERIVED conditional finite-window launch transport",
+    "external_review": "OPEN",
+    "hardware_validation": "OPEN",
+    "quantum_advantage": "NOT_CLAIMED",
+    "physical_promotion": 0
+  },
+  "repository_access_observation": {
+    "github_api_visibility": "public",
+    "note": "research/repository_connection.json still records private; live API observation governs current access status"
+  },
+  "artifacts_generated_this_turn": [
+    "research/capture_log/2026-10-07T1839Z_chat-bind-multiuser-append-only.json"
+  ],
+  "excluded_artifacts": [],
+  "evidence_level": "OPERATIONAL / NO_SCIENTIFIC_PROMOTION"
+}
