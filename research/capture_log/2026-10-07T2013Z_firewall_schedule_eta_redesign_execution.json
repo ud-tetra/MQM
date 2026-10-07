@@ -1,0 +1,74 @@
+{
+  "timestamp_utc": "2026-10-07T20:13:00Z",
+  "turn_type": "execute_options_1_2_3",
+  "user_selection": [1,2,3],
+  "source_head_at_start": "5d72f2b0a7145f011ba00bc066fdcfdcfd1c6753",
+  "concurrent_commit_preserved": {
+    "sha": "5d72f2b0a7145f011ba00bc066fdcfdcfd1c6753",
+    "message": "Add files via upload",
+    "relevant_new_state": "Gate-1 pre-loss gauge-history audit: sites 1-3 partial reopen with four-bit temporal receipt; sites 4-8 survivor-gauge-history NO-GO under arbitrary post-loss survivor Pauli."
+  },
+  "artifacts_created": [
+    {
+      "path": "research/bridges/2026-10-07T1955Z_mqm_firewall_schedule_leakage_audit_v01.py",
+      "commit": "fb383bf89282019af15db813276f0642a4385523",
+      "status": "EXACT replay"
+    },
+    {
+      "path": "research/bridges/2026-10-07T1956Z_MQM_FIREWALL_SCHEDULE_LEAKAGE_RESULTS_v0.1.json",
+      "commit": "69f953139d51baa3a1dc4f937a931ce60d3a7060",
+      "status": "EXACT machine result"
+    },
+    {
+      "path": "research/bridges/2026-10-07T1957Z_MQM_FIREWALL_SCHEDULE_AND_ETA_AUDIT_v0.1.md",
+      "commit": "98a275693009631dfd02495f2b7f85bbf8e98c4c",
+      "status": "EXACT + DERIVED + SOURCE-BLOCKED scoped audit"
+    },
+    {
+      "path": "research/bridges/2026-10-07T1958Z_MQM_FIREWALL_AWARE_CENTER_SCHEDULE_v0.1_CANDIDATE.json",
+      "commit": "30dd6fabe8a9c9bcbdb6d73eb25bee585f406202",
+      "status": "CANDIDATE protocol freeze"
+    }
+  ],
+  "option_1_schedule_audit": {
+    "exact_schedule_location_audit": "SOURCE_BLOCKED",
+    "reason": "Frozen v0.2 schedule exists only inside the binary session archive in this runtime; exact gate list bytes were not recovered.",
+    "frozen_schedule_sha256": "87e477ceaf8cbc2fa21c5d81345ebd79015fdd648b8b09a8d54453b6b159967f",
+    "closed_schedule_independent_results": [
+      "Any direct entangling core-shell unitary leaks some operator out of the full core algebra.",
+      "Arbitrary core Pauli times one shell Pauli yields 3072 exact basis patterns split 768 each among logical I/X/Y/Z after frozen ideal recovery."
+    ],
+    "reopening": "Recover bytes matching the frozen SHA256 and inject every declared single fault at every schedule location."
+  },
+  "option_2_eta_out": {
+    "graph_edges": {"total":15,"core_core":6,"core_shell":4,"shell_shell":5},
+    "core_shell_cut_edges": [[8,4],[8,5],[8,6],[8,7]],
+    "hub8_first_hop_cut_fraction": "1",
+    "equal_edge_eta_shell": "3/5",
+    "equal_edge_eta_cut": "2/5",
+    "physical_weighted_eta": "OPEN pending source-bound coupling/process weights",
+    "no_inferred_power_law": true
+  },
+  "option_3_redesign": {
+    "status": "CANDIDATE_PROTOCOL_FREEZE",
+    "old_center_basis": ["IIIXXZZI","IIIYIYZZ","IIIXZIXZ","XXXXYYIX"],
+    "candidate_basis": ["IIIXXZZI","IIIZZYYI","IIIYIYZZ","XXXXYYIX"],
+    "cross_checks": "3 -> 2",
+    "hub8_checks": "3 -> 2",
+    "core_incidences": "6 -> 5",
+    "shell_incidences": "13 -> 14",
+    "total_pauli_weight": "19 -> 19",
+    "exact_minimum_cross_checks": 2,
+    "exact_minimum_hub8_checks": 2,
+    "syndrome_transform": "b=(s1,s2 xor s3,s2,s4); inverse s=(b1,b3,b2 xor b3,b4)",
+    "decision_boundary": "Candidate is preferred under C=cS*N_shell+cC*N_core+cH*N_hub8+cX*N_cross iff cH+cX > cS-cC. Costs must be source-bound before evaluation.",
+    "promotion": "No performance promotion until full circuit synthesis and frozen matched fault injection."
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "existing_frozen_schedule_modified": false
+  },
+  "physical_promotion": 0
+}
