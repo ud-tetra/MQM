@@ -1,0 +1,205 @@
+{
+  "version": "0.1",
+  "archive_filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst",
+  "archive_size_bytes": 2039050,
+  "archive_sha256": "53062d4d3dc95076c8d2f8b986ee3700360e2a9deccc713907113b560229c64d",
+  "source_artifact_count": 216,
+  "source_total_bytes": 3566144,
+  "source_manifest_sha256": "d6bf33aef115242609f378a7b5adf2de08f07d8fb89f0077ee699abc87c1b247",
+  "excluded_user_inputs": [
+    "UD Tetra Quantum architecture.pdf",
+    "17875249175482803232469895174120.png"
+  ],
+  "reconstruction": "cat archive/MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part* > MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst",
+  "parts": [
+    {
+      "index": "000",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part000",
+      "size_bytes": 358400,
+      "sha256": "62a0cd7da6ebf3b5de16c515360d9162a452fdcaab01468bc0f073c47edf91ab",
+      "git_blob_sha": "2594dbecca337e9779d944b251400da1a378c2b9"
+    },
+    {
+      "index": "001",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part001",
+      "size_bytes": 81920,
+      "sha256": "871e380c32eb2de17097a2d7da0a17fa0f7c6b2fa568b7e0d62ba2fb12f228e1",
+      "git_blob_sha": "2fcfd188c80a55afd4656df36d668b2b99992456"
+    },
+    {
+      "index": "002",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part002",
+      "size_bytes": 65536,
+      "sha256": "52712e9dd199082af1483e109e4043ad35d6469460d5a18951113a2379896401",
+      "git_blob_sha": "6691382ce50769dba2ad0078d090937a69f29d50"
+    },
+    {
+      "index": "003",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part003",
+      "size_bytes": 65536,
+      "sha256": "9a4c5187152903ad8557d599eb9173c2b0a0b3a87151401178aaa3c02d25a12f",
+      "git_blob_sha": "4bf3dc7de605db062532e9800743fb95c9484142"
+    },
+    {
+      "index": "004",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part004",
+      "size_bytes": 65536,
+      "sha256": "c5d61e5625eecb37af818382fe3efa9e3f4969155a0db629b2e3ca54d99e4754",
+      "git_blob_sha": "a7f67534b8a3e209e049f66141caa695be956efb"
+    },
+    {
+      "index": "005",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part005",
+      "size_bytes": 65536,
+      "sha256": "d44bd4e7cbe9b48dd9e985b623f6c639a45f49f38c509355032a2d1d25db47f0",
+      "git_blob_sha": "3eb4381d727cf461d847c44765da8c254c0ad338"
+    },
+    {
+      "index": "006",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part006",
+      "size_bytes": 65536,
+      "sha256": "cf312d51e4d1ee4c06ea5161f5e61dac346d759d6358575305ee543bbe55c51a",
+      "git_blob_sha": "015e9a647bb9c1c121584b237733539362b10c2f"
+    },
+    {
+      "index": "007",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part007",
+      "size_bytes": 65536,
+      "sha256": "2bcbd9cb2d36460347b6d2bc211d1e3aa0741692ed0f1af043a1326d3168a3bd",
+      "git_blob_sha": "82a3103150f4a7e5d3fb2bef6331673caa4ba51f"
+    },
+    {
+      "index": "008",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part008",
+      "size_bytes": 65536,
+      "sha256": "162e0d6eff60d2c960b616c70353522065f44ce232eeea89b24225970d2b20e0",
+      "git_blob_sha": "d89a7ba6bef9eba715f9199feab72f9dea2f5b29"
+    },
+    {
+      "index": "009",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part009",
+      "size_bytes": 65536,
+      "sha256": "e729b5f609913533bd73fbbec66d42925419dbff82eafd873e2775a996283961",
+      "git_blob_sha": "522b67b9dc89d02b264867f502d5e50b54b04b2f"
+    },
+    {
+      "index": "010",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part010",
+      "size_bytes": 65536,
+      "sha256": "f0a6679c3b4d42feb8368e34dc69cf7507eb35cb51182cfd4ea033434b2317bf",
+      "git_blob_sha": "49ef1d3331b259f9489d02002c8fcaa94adc256a"
+    },
+    {
+      "index": "011",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part011",
+      "size_bytes": 65536,
+      "sha256": "00107e596944d9982684636cda0b37f97e51425435a9b4a6b02aa965db22aae5",
+      "git_blob_sha": "f41a2db25d7c9ab582ab8b07bb2d1cec05a3ccab"
+    },
+    {
+      "index": "012",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part012",
+      "size_bytes": 65536,
+      "sha256": "1de848186d5a5b1a2dedbb04045c1719e79f294a71ab04f68944f5f25fcb7351",
+      "git_blob_sha": "f01c347c15efdadd4a8c7c742b1505eb2c2c3dd2"
+    },
+    {
+      "index": "013",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part013",
+      "size_bytes": 65536,
+      "sha256": "b8c68309a45bba7631d84661affc21290cd20e9873e586cbb726deabb310f6f3",
+      "git_blob_sha": "9722c5d77cfb1975be552a6cc52a42db56bbf316"
+    },
+    {
+      "index": "014",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part014",
+      "size_bytes": 65536,
+      "sha256": "95926400fa1133c2f1f86b2147aecc2646277bad3dd1616750d378a5a017b225",
+      "git_blob_sha": "4fe80ed91a42c3e25029afd80e094c1ae5fac98e"
+    },
+    {
+      "index": "015",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part015",
+      "size_bytes": 65536,
+      "sha256": "6c69cd0e363c45a4f21553b16d5238571f3b100e8f0dd7fc90aef8786aa6b2ec",
+      "git_blob_sha": "a6dfa18696fef562f66a55f385a4b584d975bcb7"
+    },
+    {
+      "index": "016",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part016",
+      "size_bytes": 65536,
+      "sha256": "8beca7f68bf47259d0e17c953800cec5f6c100340614ef37eb6579c9bb913d62",
+      "git_blob_sha": "4babd53159a60ffcf474e984b478e27151abd637"
+    },
+    {
+      "index": "017",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part017",
+      "size_bytes": 65536,
+      "sha256": "a9bd334286ce056af6471030be72fb7e6e5d7bfdea158197ccaaf631e31f2a48",
+      "git_blob_sha": "9636c4da9852890c95637d5f0a57761b10678a5f"
+    },
+    {
+      "index": "018",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part018",
+      "size_bytes": 65536,
+      "sha256": "b5a0413ed0956bf68f34d7435cb99e50ac95eb4fc0056417fca30491df23a118",
+      "git_blob_sha": "249641eafadf649f9850fb69128e369c38fd17fc"
+    },
+    {
+      "index": "019",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part019",
+      "size_bytes": 65536,
+      "sha256": "d18f7e23370b236ca314f2c4234ab23c06c3d47958f9027617f87b5abf0f3291",
+      "git_blob_sha": "3e259a1441ca49e0287cdb837ccc063aabc68945"
+    },
+    {
+      "index": "020",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part020",
+      "size_bytes": 65536,
+      "sha256": "8401d4b8b6bcc448508527e4ff015aed0553ff3b638c6c13d038bd0631aa7584",
+      "git_blob_sha": "719e35a857fee21df76abfd7cc823253eba0beb0"
+    },
+    {
+      "index": "021",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part021",
+      "size_bytes": 65536,
+      "sha256": "e74ec4231c835dfe08ae75bb97a4c4456b1c1e854d98ef75cde1404fe961bcd9",
+      "git_blob_sha": "6e32a998d78eb6f6021a537a2f8f688a3d1e4c61"
+    },
+    {
+      "index": "022",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part022",
+      "size_bytes": 65536,
+      "sha256": "5fad6ae62fa524ba81e15720857daac057a945c6d1c3ed57023d426483b5ec7e",
+      "git_blob_sha": "3cbeb76f7edebc887a3f1d8d77f6eb4f25832705"
+    },
+    {
+      "index": "023",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part023",
+      "size_bytes": 65536,
+      "sha256": "ac55199213ccd6fca22d30802955b9c570f5d21688f64d11b2d79f1c68ce22d4",
+      "git_blob_sha": "05473e26a915d90c48ab1a5809d7d4de1215c614"
+    },
+    {
+      "index": "024",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part024",
+      "size_bytes": 65536,
+      "sha256": "7e278417e596c9debca98a9794469b2ce54a5ad6a1007e602533913f1d20767f",
+      "git_blob_sha": "5064b0ca5f9d385ac2c07a28d88999f6f64e8a1b"
+    },
+    {
+      "index": "025",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part025",
+      "size_bytes": 65536,
+      "sha256": "e9667ba051b30db90d3eb3446cd1b10b733b2c6993b7caa6c2d1178f3ac2445b",
+      "git_blob_sha": "44a0956cd0e852a2fe5dad36ad1c0908f9b44032"
+    },
+    {
+      "index": "026",
+      "filename": "MQM_SESSION_ARTIFACTS_2026-10-07.tar.zst.part026",
+      "size_bytes": 25866,
+      "sha256": "c7c19c0736190a2a89adc5e72c4cafc4788eaff3a1653ca0300c40355f855f81",
+      "git_blob_sha": "3e359ef28584d0040a1d28547a89326ca3e733bb"
+    }
+  ]
+}
