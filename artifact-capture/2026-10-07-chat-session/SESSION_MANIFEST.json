@@ -1,1 +1,1092 @@
-The requested file reference is not currently visible. Use files.search or files.list to rediscover the file, then retry with a returned ref_id or file_id.
+{
+  "session_date": "2026-10-07",
+  "repository": "ud-tetra/MQM",
+  "artifact_count": 216,
+  "total_bytes": 3566144,
+  "excluded_user_inputs": [
+    "17875249175482803232469895174120.png",
+    "UD Tetra Quantum architecture.pdf"
+  ],
+  "artifacts": [
+    {
+      "path": "MQM_3D_ERASURE_AND_DEFERRED_RECEIPT_v0.1.zip",
+      "bytes": 4495,
+      "sha256": "7dbe856ec0c69e8411edd482546a9a30d50badb3e22066bf9161222b651a4e7b"
+    },
+    {
+      "path": "MQM_3D_SWAP_LDU_AND_RM_LOSS_GATE_v0.1.zip",
+      "bytes": 9463,
+      "sha256": "e6b4a299e4531d49ab2d6f8466ddc1bdea9bb5ca85ea41ffd99f739a5e6d05eb"
+    },
+    {
+      "path": "MQM_3D_TETRA_PIPELINE_AND_ERASURE_DECODER_v0.1.zip",
+      "bytes": 10461,
+      "sha256": "773c379e8ff5e72b5e0ac3f3b404089ab7515078f58ec6ef05c4d4b564f9b56b"
+    },
+    {
+      "path": "MQM_3D_TETRA_QUARANTINE_HARDWARE_INTERFACE_v0.1.zip",
+      "bytes": 9987,
+      "sha256": "99dbf83a732379ba5d62ad46c4568be34675edaa829f88f4e6423be50e0cdbfc"
+    },
+    {
+      "path": "MQM_5Q_K4_CORE_CLOSURE_LIFT_v0.1_PROPOSAL.md",
+      "bytes": 2283,
+      "sha256": "aee688bd3ceca3f821bd5bf2b9e482429da9326e882ad003eec63bad0ccb16b9"
+    },
+    {
+      "path": "MQM_5Q_K4_CORE_COMPATIBILITY_AUDIT_v0.1_LOCK.md",
+      "bytes": 4262,
+      "sha256": "eb27e21da4baf64491e4df103b83d6a7ff9f7d4810e4de71798d68403163724c"
+    },
+    {
+      "path": "MQM_ERASURE_REDUNDANCY_AND_MULTI_LOSS_GATE_v0.1.zip",
+      "bytes": 13112,
+      "sha256": "93658cd5f51acbb716afa9437de7740cfeb0d4610dbbb7025a54bde93f4c369d"
+    },
+    {
+      "path": "MQM_HETERONUCLEAR_SENTINEL_AND_CORRELATED_FAULT_GATE_v0.1.zip",
+      "bytes": 12568,
+      "sha256": "e56a2c518a2dfd65e3b4451c894a83fcbe2289eeccac67346265a085191cf123"
+    },
+    {
+      "path": "MQM_K4_8BLOCK_RM_PARITY_SURGERY_AUDIT_v0.1.json",
+      "bytes": 854,
+      "sha256": "2aa2edf7c7953d0f9a695aad08f1e8bd3e024a7c8853d9882e2929b6dfa7d0ae"
+    },
+    {
+      "path": "MQM_K4_8BLOCK_RM_PARITY_SURGERY_CIRCUIT_AUDIT_v0.1_LOCK.md",
+      "bytes": 3901,
+      "sha256": "8780d62dfef19bae448639afc8d763895e40404cab2bb114a6ff65935c4b6189"
+    },
+    {
+      "path": "MQM_K4_8Q_CIRCUIT_FT_AND_LOGICAL_CLIFFORD_PACKAGE_v0.1.zip",
+      "bytes": 31712,
+      "sha256": "8818d4592b80d2b28e19b2c7110050eae9f6e4727fec54e4ad5f01e7c717d620"
+    },
+    {
+      "path": "MQM_K4_8Q_CIRCUIT_FT_AND_LOGICAL_CLIFFORD_SHA256_v0.1.txt",
+      "bytes": 2528,
+      "sha256": "9040996dd883439c8be21341ad2c440f30dc22ba0f3ae0c0c7d6f6650c77d664"
+    },
+    {
+      "path": "MQM_K4_8Q_ENTANGLING_AND_PSEUDOTHRESHOLD_PACKAGE_v0.1.zip",
+      "bytes": 31959,
+      "sha256": "da6703c9b619e38f59a4a3a819562fe46d923cd0fbeed4422239aae2c8c04ea7"
+    },
+    {
+      "path": "MQM_K4_8Q_ENTANGLING_GATE_AND_PSEUDOTHRESHOLD_PROTOCOL_v0.1.md",
+      "bytes": 2931,
+      "sha256": "a8c07a966fe37be8fc6936444967c176e7633e4f7712412fde098353cb9854e0"
+    },
+    {
+      "path": "MQM_K4_8Q_FACTORY_AND_ADAPTIVE_SCHEDULER_PACKAGE_v0.1.zip",
+      "bytes": 31436,
+      "sha256": "3e181d65952da80be493c6902c754f825179adc1e561b81de8f212db3db27b39"
+    },
+    {
+      "path": "MQM_K4_8Q_FAULT_TOLERANT_GAUGE_MEASUREMENT_SCHEDULE_v0.2_LOCK.json",
+      "bytes": 11735,
+      "sha256": "87e477ceaf8cbc2fa21c5d81345ebd79015fdd648b8b09a8d54453b6b159967f"
+    },
+    {
+      "path": "MQM_K4_8Q_FAULT_TOLERANT_GAUGE_MEASUREMENT_SCHEDULE_v0.2_LOCK.md",
+      "bytes": 5429,
+      "sha256": "b66c948cf3eac0b757fb1d994060d029bbf5f73932a133e720c638eea623a748"
+    },
+    {
+      "path": "MQM_K4_8Q_FRONTIER_EXECUTION_v0.2.json",
+      "bytes": 1672,
+      "sha256": "e85e506d80284a5e82b718e894846e3ab963c451f8e182a8a0d238a42ef0cb4b"
+    },
+    {
+      "path": "MQM_K4_8Q_HOOK_ERROR_AUDIT_v0.1_LOCK.md",
+      "bytes": 4684,
+      "sha256": "b21308153099eecfd53a8060fbbb8d76d7d497f880f075ab52f69ae74ad7dc97"
+    },
+    {
+      "path": "MQM_K4_8Q_LOGICAL_CLIFFORD_AUTOMORPHISM_AUDIT_v0.1.json",
+      "bytes": 1613,
+      "sha256": "65de75b14770903b2d7b3face6b708f3c9998eb4dc60d5320f47c50d557fa805"
+    },
+    {
+      "path": "MQM_K4_8Q_LOGICAL_CLIFFORD_AUTOMORPHISM_AUDIT_v0.1_LOCK.md",
+      "bytes": 4183,
+      "sha256": "95e9567bea58dc2e0b5c8d05843f8a0d9235e702f088fded64c506f55e85775a"
+    },
+    {
+      "path": "MQM_K4_8Q_LOGICAL_PARITY_GAUGE_SURGERY_AND_CNOT_v0.1_LOCK.md",
+      "bytes": 6991,
+      "sha256": "918a31ac66824e0766c4b1143af7ed3feb1a89b8c0340b50eb58aba58a504c4f"
+    },
+    {
+      "path": "MQM_K4_8Q_MAGIC_AND_BIAS_FRONTIER_PACKAGE_v0.2.zip",
+      "bytes": 25935,
+      "sha256": "91456fb82109c7836bb859507866e8d108ebd3221d0f72487b8cfa6072a10499"
+    },
+    {
+      "path": "MQM_K4_8Q_MEMORY_PSEUDOTHRESHOLD_v0.1_LOCK.md",
+      "bytes": 4390,
+      "sha256": "b1d7f64a53b9c0473aed3b3a521b3e2ac0e546f14da2cab303276e1e5f83c47b"
+    },
+    {
+      "path": "MQM_K4_8Q_NEXT_FRONTIER_v0.3.json",
+      "bytes": 1248,
+      "sha256": "9e4ad82fe152d0bb02ffa188c5fdbd55e7527717d95b0226e438b7cd9c915ca4"
+    },
+    {
+      "path": "MQM_K4_8Q_NEXT_GATE_EXECUTION_v0.1.json",
+      "bytes": 1589,
+      "sha256": "ba6c78fb1110f733a0614d0fd3791d250f732eede2c79bdb826a90d513252b61"
+    },
+    {
+      "path": "MQM_K4_8Q_NOISY_15TO1_FACTORY_AUDIT_v0.1_LOCK.md",
+      "bytes": 6233,
+      "sha256": "19aa3f66d638401eb60874a04b4d0936281c4660b8905f000ff5fbdd75954904"
+    },
+    {
+      "path": "MQM_K4_8Q_NONCLIFFORD_MAGIC_STATE_INJECTION_v0.1_LOCK.md",
+      "bytes": 7189,
+      "sha256": "cc574049376359824b6088fea469ad94d0ec7a488ef8d5eb79001be7f28360b8"
+    },
+    {
+      "path": "MQM_K4_8Q_TRANSVERSAL_ENTANGLER_NO_GO_v0.1_LOCK.md",
+      "bytes": 630,
+      "sha256": "cfb7236efff7fca53a6813d6ce4aea6284c1ec6a871ed2e4822047c2e28206f9"
+    },
+    {
+      "path": "MQM_K4_ADAPTIVE_EDGE_SCHEDULER_HMM_v0.1_LOCK.md",
+      "bytes": 4640,
+      "sha256": "3c0832cf1777929845e3f9a07a1a148500b88c50742035e3601e2be9ec5879c2"
+    },
+    {
+      "path": "MQM_K4_CODE_CONSISTENCY_AND_SYNDROME_AUDIT_v0.1.json",
+      "bytes": 1046,
+      "sha256": "cae1c0b64f2b344814ee80b7858b1a2c26862c7397ab076ad79aba6ee19089fa"
+    },
+    {
+      "path": "MQM_K4_CODE_CONSISTENCY_AND_SYNDROME_AUDIT_v0.1_LOCK.md",
+      "bytes": 10835,
+      "sha256": "ca7a82a0be19cd426e5705a1a75ba9f16121e7fc3e36475ab9c9f899ecf342b5"
+    },
+    {
+      "path": "MQM_K4_CODE_CONSISTENCY_AND_SYNDROME_AUDIT_v0.1_LOCK.pdf",
+      "bytes": 72048,
+      "sha256": "6cdccf81ea602335ea82293f47c850dd31f6ab37e52f6d54c1927d355cd5cba2"
+    },
+    {
+      "path": "MQM_K4_EDGE_HISTORY_DECODER_AND_BIASED_NOISE_AUDIT_v0.1_LOCK.md",
+      "bytes": 6689,
+      "sha256": "663892e35c9ac7ef92075a3e89a01c31602b2088616432018754e9ac33cafcfc"
+    },
+    {
+      "path": "MQM_K4_REDUNDANT_EDGE_SYNDROME_DECODER_v0.1_LOCK.md",
+      "bytes": 3145,
+      "sha256": "70fdda263d87ddf4ae021cf81465addc9c15dfc6943277ff1c241fdab98e3b91"
+    },
+    {
+      "path": "MQM_MULTILEVEL_SENTINEL_PORT_AND_EXREC_GATE_v0.1.zip",
+      "bytes": 10483,
+      "sha256": "57809d9579489224925a27a81bd6f8e47037f2ee9d30257d4fc7a2c4b7adc0d7"
+    },
+    {
+      "path": "MQM_NATIVE_3D_TETRAHEDRAL_ARCHITECTURE_v0.1.zip",
+      "bytes": 9871,
+      "sha256": "4f7ede4363a99c821bc0cc6e06c3a1671c8dd4e5f362034ce5d60b6063434ca1"
+    },
+    {
+      "path": "MQM_REFRESH_COLLAR_FACTORY_COMPOSITION_AND_LOSS_BUDGET_v0.1.zip",
+      "bytes": 8735,
+      "sha256": "2eadf9709c044d46beaa899c28879948c6b094b371293c09e493c9470f01253d"
+    },
+    {
+      "path": "MQM_ROBUST_SHAPED_VDW_SENTINEL_GATE_v0.1.zip",
+      "bytes": 8502,
+      "sha256": "70ee0be69df5adf7a390a6642ad3f4b554bf3543d99aac3de8d322487713da5a"
+    },
+    {
+      "path": "MQM_SENTINEL_SPILLOVER_AND_WITNESS_QEC_GATE_v0.1.zip",
+      "bytes": 7191,
+      "sha256": "c3a405c5c38af56a55d4230afb29ba6f9dd1d204c74e7f3ebd6d381b687c0924"
+    },
+    {
+      "path": "MQM_SQALE_GATE1_INTERNAL_ALGEBRA_AUDIT_v0.3.zip",
+      "bytes": 4009,
+      "sha256": "ef728d5a802cb44cb40b5f3f238f4c706ed599947bd0f23f5948fa0330b1c35c"
+    },
+    {
+      "path": "MQM_SQALE_GATE1_INTERNAL_ALGEBRA_AUDIT_v0.3/GATE1_PRELOSS_GAUGE_HISTORY_AUDIT_v0.1_LOCK.md",
+      "bytes": 3939,
+      "sha256": "0ba29811448315e615bec5697e7f545b6d66624f39fc753814304675f5fdf86c"
+    },
+    {
+      "path": "MQM_SQALE_GATE1_INTERNAL_ALGEBRA_AUDIT_v0.3/GATE1_SURVIVOR_GAUGE_AUDIT_v0.1.csv",
+      "bytes": 383,
+      "sha256": "ecf819d44f54062e20ea9dcf3c666d877cdf77c198122bcdfe670e2905dccf36"
+    },
+    {
+      "path": "MQM_SQALE_GATE1_INTERNAL_ALGEBRA_AUDIT_v0.3/README.md",
+      "bytes": 785,
+      "sha256": "5dc93909b6d199a418170144ad7a35c627f3b9cd10f240e13ac6bc0e8482b552"
+    },
+    {
+      "path": "MQM_SQALE_GATE1_PUBLIC_v0.1.zip",
+      "bytes": 23162,
+      "sha256": "be6c75bb1bae7b0d5ff76fbd5bb030978f64de672aeda1850c992a53e4f6a4eb"
+    },
+    {
+      "path": "MQM_SQALE_GATE1_PUBLIC_v0.1/README.md",
+      "bytes": 3525,
+      "sha256": "c48fa16af849ce289867388e5d0b870577011239711531345271f6452819db17"
+    },
+    {
+      "path": "MQM_SQALE_GATE1_PUBLIC_v0.2.zip",
+      "bytes": 28740,
+      "sha256": "55daec917b72e06167dc90a36970199aa9eaa8816e9c02fe0cc57c02f8422696"
+    },
+    {
+      "path": "MQM_SQALE_GATE1_PUBLIC_v0.2/README.md",
+      "bytes": 4609,
+      "sha256": "67c60ba21288ad2e996f28673b05a3da79b40000fdbc14d25d393474d5b30dc6"
+    },
+    {
+      "path": "MQM_SQALE_GATE1_PUBLIC_v0.2/SOURCES.md",
+      "bytes": 2528,
+      "sha256": "95f9c26137111e498826ecbd5dc77d25f7eaec95dcc5eebb8b36563e5c3c7372"
+    },
+    {
+      "path": "MQM_SQALE_GATE1_PUBLIC_v0.3_NO_GO.zip",
+      "bytes": 46884,
+      "sha256": "28eb308acce8bc8f19ba5827ee66523b57a68cc67113d6a2f0ed4e72e3e84227"
+    },
+    {
+      "path": "MQM_SQALE_GATE1_PUBLIC_v0.3_NO_GO/README.md",
+      "bytes": 5237,
+      "sha256": "22c16589b9d8e47b64e19616a16ab2befbc1cd1dd3f2cf94d0fed3c466541481"
+    },
+    {
+      "path": "MQM_SQALE_GATE1_PUBLIC_v0.3_NO_GO/SOURCES.md",
+      "bytes": 2528,
+      "sha256": "95f9c26137111e498826ecbd5dc77d25f7eaec95dcc5eebb8b36563e5c3c7372"
+    },
+    {
+      "path": "MQM_SQALE_GATE2_CALIBRATION_REQUEST_v0.2.zip",
+      "bytes": 4906,
+      "sha256": "0434d91f1f9b8498489c9554c65fb7954bb0519bf490efd8a3e8e7f2a6b38177"
+    },
+    {
+      "path": "MQM_SQALE_GATE2_CALIBRATION_REQUEST_v0.2/README.md",
+      "bytes": 751,
+      "sha256": "acc805bd41e4dcd688f28aa6c2570e2796c8f7ca8c072bd25ff1a6ddd0196019"
+    },
+    {
+      "path": "MQM_SQALE_GATE2_CALIBRATION_REQUEST_v0.2/SQALE_CAMERA_CALIBRATION_FIELDS_v0.2.csv",
+      "bytes": 1932,
+      "sha256": "8335105db2157547ac12c872a01579707bbf7e2d1f6cf1cb1e5a45c258eda696"
+    },
+    {
+      "path": "MQM_SQALE_GATE2_CALIBRATION_REQUEST_v0.2/SQALE_DUAL_VIEW_CALIBRATION_REQUEST_v0.2.md",
+      "bytes": 4031,
+      "sha256": "bb6d73f2fa52e0f6669ded21f24203caea6998e901c09607ef69e8946d8aa379"
+    },
+    {
+      "path": "MQM_SQALE_GATE2_DUAL_VIEW_CERTIFICATE_v0.1.zip",
+      "bytes": 204081,
+      "sha256": "6a19a0b22b0fc79f557cc6eb1a938976f4e51f40cbce0ea8103acd5786621d17"
+    },
+    {
+      "path": "MQM_SQALE_GATE2_DUAL_VIEW_CERTIFICATE_v0.1/README.md",
+      "bytes": 2124,
+      "sha256": "cd65707a4830855add164702fec23ec910fa128b0a7317525beb953c5df16813"
+    },
+    {
+      "path": "MQM_SQALE_GATE2_DUAL_VIEW_CERTIFICATE_v0.1/SOURCES.md",
+      "bytes": 986,
+      "sha256": "4b070426ae45f0ba3205c8a43a335314ba26ec3a4f3c3af184d70931f88160aa"
+    },
+    {
+      "path": "MQM_SQALE_TRACKS_1_AND_2_EXECUTION_v0.1.zip",
+      "bytes": 8711,
+      "sha256": "bb31d7673a7ecd95d118ed85f758149b2a0e1becd232fd383135ce90babc1014"
+    },
+    {
+      "path": "MQM_SQALE_TRACKS_1_AND_2_EXECUTION_v0.1/EXECUTION_SUMMARY.md",
+      "bytes": 1422,
+      "sha256": "71aab233451a04235efb2c2b75a35effe4d5d9d9149744c9e357d391e5c411e5"
+    },
+    {
+      "path": "MQM_SQALE_TRACKS_1_AND_2_EXECUTION_v0.1/gate1_history/GATE1_AMBIGUITY_WITNESSES_v0.1.json",
+      "bytes": 586,
+      "sha256": "9830c48d86044aee888c1328b762b257b42ae3e7c265da3f5ac94c5069a0a284"
+    },
+    {
+      "path": "MQM_SQALE_TRACKS_1_AND_2_EXECUTION_v0.1/gate1_history/GATE1_MINIMAL_4CHECK_HISTORY_SETS_v0.1.json",
+      "bytes": 473,
+      "sha256": "d1e3e636b37549b963078cb4e46b1f7512e7f47d72d08f853848ebb4cbed32b0"
+    },
+    {
+      "path": "MQM_SQALE_TRACKS_1_AND_2_EXECUTION_v0.1/gate1_history/GATE1_PRELOSS_GAUGE_HISTORY_AUDIT_v0.1_LOCK.md",
+      "bytes": 3939,
+      "sha256": "0ba29811448315e615bec5697e7f545b6d66624f39fc753814304675f5fdf86c"
+    },
+    {
+      "path": "MQM_SQALE_TRACKS_1_AND_2_EXECUTION_v0.1/gate1_history/GATE1_SURVIVOR_GAUGE_AUDIT_v0.1.csv",
+      "bytes": 383,
+      "sha256": "ecf819d44f54062e20ea9dcf3c666d877cdf77c198122bcdfe670e2905dccf36"
+    },
+    {
+      "path": "MQM_SQALE_TRACKS_1_AND_2_EXECUTION_v0.1/gate2_calibration/SQALE_CAMERA_CALIBRATION_FIELDS_v0.1.csv",
+      "bytes": 1932,
+      "sha256": "8335105db2157547ac12c872a01579707bbf7e2d1f6cf1cb1e5a45c258eda696"
+    },
+    {
+      "path": "MQM_SQALE_TRACKS_1_AND_2_EXECUTION_v0.1/gate2_calibration/SQALE_DUAL_VIEW_CALIBRATION_REQUEST_v0.1.md",
+      "bytes": 4031,
+      "sha256": "bb6d73f2fa52e0f6669ded21f24203caea6998e901c09607ef69e8946d8aa379"
+    },
+    {
+      "path": "MQM_TETRAHEDRAL_MULTI_VIEW_READOUT_GEOMETRY_GATE_v0.1.zip",
+      "bytes": 299655,
+      "sha256": "969bcaf27e4adb8aa801a8c4ceee897945d30b59fc9c78aa3ce93c2629fcfff2"
+    },
+    {
+      "path": "MQM_TRI_WITNESS_FINITE_RATE_FACTORY_GATE_v0.1.zip",
+      "bytes": 11890,
+      "sha256": "7acc77ac3fc05dc74b612306fd0061f1ec878767cda67fddba4a1a45487960a3"
+    },
+    {
+      "path": "MQM_VDW_SENTINEL_PULSE_THERMAL_GATE_v0.1.zip",
+      "bytes": 9025,
+      "sha256": "776ea746e0812790a63e0d25e8c9219da4cd46d2bf0ecaf3587e1c1629ba087a"
+    },
+    {
+      "path": "MQM_WITNESS_DIVERSITY_AND_COLLAR_MICROFAULT_GATE_v0.1.zip",
+      "bytes": 14948,
+      "sha256": "8499d81a0236955991fe14181c0e6efa474af50b4468cafb649068ce1248e6e6"
+    },
+    {
+      "path": "UD_MQM_EXACT_FACTORY_GATE_v0.1.zip",
+      "bytes": 36432,
+      "sha256": "6e49b5ba351b98b2c9d81fbced83e34b7d09649c208fc7353c978d23f0238e91"
+    },
+    {
+      "path": "UD_MQM_GLOBAL_REFRESH_AND_PARALLEL_IDLE_GATE_v0.1.zip",
+      "bytes": 16069,
+      "sha256": "b20ef00107c102573e136fb9a99708b3db3536d696d88c88c378278bedcedcf5"
+    },
+    {
+      "path": "UD_MQM_REFRESH_AND_DIRECT_FACTORY_v0.1.zip",
+      "bytes": 28023,
+      "sha256": "77feda50c58c54603cf354a73c37eeebc0a6b59ce0af9c007ec2b32a314d8d6f"
+    },
+    {
+      "path": "UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.3.md",
+      "bytes": 1816,
+      "sha256": "4f04b320f9265c9f4834b61608d5df08e8594350832d754cfe2fd5397d81ea99"
+    },
+    {
+      "path": "UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.4.md",
+      "bytes": 2894,
+      "sha256": "11d38c701eadeb57acc1374806ddcb581da0eb485a0452579f85dc7f1570e2a1"
+    },
+    {
+      "path": "UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.5.md",
+      "bytes": 3007,
+      "sha256": "f3a9209f14bddb7b994dfb5d7322cef49fbb01182b2e24b71b6b23c71dd8f300"
+    },
+    {
+      "path": "UD_TETRA_QUANTUM_PUBLIC_SITE_v0.1.zip",
+      "bytes": 1534983,
+      "sha256": "27120cf00f12987984238d58c5f07fd33155c6dddfc89b39cb5518ace3e767e9"
+    },
+    {
+      "path": "UD_TETRA_QUANTUM_PUBLIC_SITE_v0.1/README.md",
+      "bytes": 1027,
+      "sha256": "978fd761566f30dbda9795b954e7d8d60b185250ec11db6f9cd13bc5af7b8a2a"
+    },
+    {
+      "path": "UD_TETRA_QUANTUM_PUBLIC_SITE_v0.1/SITE_PUBLISH_BRIEF.md",
+      "bytes": 1353,
+      "sha256": "b63a2069752bf1890092fff02fca40452b480e9e2c597a3d5b502ff43947f150"
+    },
+    {
+      "path": "UD_TETRA_QUANTUM_PUBLIC_SITE_v0.1/architecture.html",
+      "bytes": 3516,
+      "sha256": "8d0d6dafe599d2f983e6829e52d77f1f24d22a24330d769a2dec0071f210891b"
+    },
+    {
+      "path": "UD_TETRA_QUANTUM_PUBLIC_SITE_v0.1/evidence.html",
+      "bytes": 5619,
+      "sha256": "7744ec02bb2d9390cf15f13efbd4bc10a3ddace5dd330fb92e60ac05d4bcc84d"
+    },
+    {
+      "path": "UD_TETRA_QUANTUM_PUBLIC_SITE_v0.1/factory.html",
+      "bytes": 3006,
+      "sha256": "38c70c85f4856a73b9ff7466157f55e73f240753b01a943374b627a3b096fc6c"
+    },
+    {
+      "path": "UD_TETRA_QUANTUM_PUBLIC_SITE_v0.1/governance.html",
+      "bytes": 2742,
+      "sha256": "8c000d7a29f6b3efb2338e82ef68144ebb8ad6d8c330ed5018f119ad6585c34d"
+    },
+    {
+      "path": "UD_TETRA_QUANTUM_PUBLIC_SITE_v0.1/hardware.html",
+      "bytes": 3804,
+      "sha256": "5a5c30c307d497267fd35c9639531abe7fca03d295e4c0c253d4d82392657fdb"
+    },
+    {
+      "path": "UD_TETRA_QUANTUM_PUBLIC_SITE_v0.1/index.html",
+      "bytes": 8359,
+      "sha256": "b03daa9e5f3ec79983244850140d482b8d268d877dd682ccdabfe65fe8ada5a6"
+    },
+    {
+      "path": "UD_TETRA_QUANTUM_PUBLIC_SITE_v0.1/legacy.html",
+      "bytes": 2447,
+      "sha256": "e27ccb2f9908ed9967fecbea3e225be063d28ff3b1786c60527d641ded072156"
+    },
+    {
+      "path": "UD_TETRA_QUANTUM_PUBLIC_SITE_v0.1/qec.html",
+      "bytes": 3382,
+      "sha256": "9800c7702f06c389862a2a56498a9e8621aa3543fe026251669cddcef30d23d6"
+    },
+    {
+      "path": "UD_TETRA_QUANTUM_PUBLIC_SITE_v0.1/repo.html",
+      "bytes": 104868,
+      "sha256": "e8a6b48f0410a1f6cc834aa49910abd0384594938382a280182b2dae4f4763ec"
+    },
+    {
+      "path": "UD_TETRA_QUANTUM_PUBLIC_SITE_v0.1/tracker.html",
+      "bytes": 5024,
+      "sha256": "07216e17ba4e894b8bf1a3a7b11a8e3010063736a8324d87448937c50dad0e76"
+    },
+    {
+      "path": "UD_TETRA_QUANTUM_PUBLIC_SITE_v0.1/updates.html",
+      "bytes": 4175,
+      "sha256": "fb3fffe4a1a5cfd734b7b56f20badd4c5e56e1538d3bb8a575b8d010e64c603b"
+    },
+    {
+      "path": "UD_TETRA_QUANTUM_SITE_QA_PATCH_v0.2.zip",
+      "bytes": 10940,
+      "sha256": "de4f9cdb98dceb88b3cedd7c1c8db6745c5041aab3051db050e742fba9c51571"
+    },
+    {
+      "path": "UD_TETRA_QUANTUM_SITE_QA_PATCH_v0.2/LOVABLE_APPLY_INSTRUCTIONS.md",
+      "bytes": 1675,
+      "sha256": "e851e5c26a5c8e661086a085847d6c98ee2cf2b105b1091774c215096f3965fe"
+    },
+    {
+      "path": "UD_TETRA_QUANTUM_SITE_QA_PATCH_v0.2/QA_REPORT.md",
+      "bytes": 4632,
+      "sha256": "f2187f5914c8b5deead3290958db36a725c90852788d7b7acec620969a44c394"
+    },
+    {
+      "path": "UD_TETRA_QUANTUM_SITE_QA_PATCH_v0.2/README.md",
+      "bytes": 709,
+      "sha256": "41d2939fbbd15cdaa576898ecbc24e8f561cfc6ac1f12a793347f950c8c50fce"
+    },
+    {
+      "path": "UD_TETRA_QUANTUM_SITE_QA_PATCH_v0.2/RELEASE_SYNC_CONTRACT.md",
+      "bytes": 1321,
+      "sha256": "0e882a73d8d311a16d1c05cf0c4e0e414ffba0f3e390c1b6b7d03ece78cc505a"
+    },
+    {
+      "path": "UD_TETRA_QUANTUM_SITE_QA_PATCH_v0.2/SHA256SUMS.json",
+      "bytes": 975,
+      "sha256": "e1a42d77b5caa7dbb325cb9f39c44f9bf67a1f524684c0203c2d36a94bbb76f1"
+    },
+    {
+      "path": "UD_Tetra_MQM_G0_Audit_Package_v0.1.zip",
+      "bytes": 59552,
+      "sha256": "cd1e20d7dfa838bb1829d7ce99a853ef98d344744fffc1119c27a93265397bbc"
+    },
+    {
+      "path": "UD_Tetra_Quantum_Architecture_REPAIRED_v0.2.pdf",
+      "bytes": 106450,
+      "sha256": "2a9d54f18727ef6f3a66336e2efc107e511eb56e98d9939a0710ee3f4fb918f7"
+    },
+    {
+      "path": "_mqm_3d_erasure_receipt_v01/MQM_3D_NEUTRAL_ATOM_ERASURE_AND_DEFERRED_RECEIPT_AUDIT_v0.1_LOCK.md",
+      "bytes": 4773,
+      "sha256": "944b5ce208d5ef37546deeb530e8b0d76a90a3530c833d18dde8219b99dd1146"
+    },
+    {
+      "path": "_mqm_3d_erasure_receipt_v01/UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.10.md",
+      "bytes": 1274,
+      "sha256": "7dce3c5e874665d69acde1728fde82892d5822dc714b5da6f657d1885bd46fb8"
+    },
+    {
+      "path": "_mqm_3d_native_v01/MQM_NATIVE_3D_HARDWARE_PROFILE_v0.1_LOCK.md",
+      "bytes": 4023,
+      "sha256": "a4be96f5e4c97af698fda6b7b8f54d9fd79c9526ecdae077e30e44f5de66a36e"
+    },
+    {
+      "path": "_mqm_3d_native_v01/MQM_NATIVE_3D_TRI_TETRA_8Q_CELL_v0.1_LOCK.md",
+      "bytes": 1040,
+      "sha256": "6a412c1c90f22ee24cbb5d3bc8068de6f7c396672a4c0087deeefbfdbe928b52"
+    },
+    {
+      "path": "_mqm_3d_native_v01/MQM_RM15_BARYCENTRIC_TETRA_COORDINATES_v0.1.csv",
+      "bytes": 971,
+      "sha256": "7d60b69fa18612067eb17e5c7f2ff09d854ec08cc260e593be6fc59e48c54848"
+    },
+    {
+      "path": "_mqm_3d_native_v01/MQM_RM15_BARYCENTRIC_TETRA_FACTORY_v0.1.obj",
+      "bytes": 1792,
+      "sha256": "b25288758962878ef530247def772db1b101119eb59562c8c89c674bf6a9f3ef"
+    },
+    {
+      "path": "_mqm_3d_native_v01/MQM_RM15_TETRAHEDRAL_BARYCENTRIC_ISOMORPHISM_v0.1_LOCK.md",
+      "bytes": 1059,
+      "sha256": "da1b9095e0f004c8707a6a7c207a3d025caa771b25e11d4982f7a14f63bcf96d"
+    },
+    {
+      "path": "_mqm_3d_native_v01/MQM_TRI_TETRA_8Q_CELL_v0.1.obj",
+      "bytes": 545,
+      "sha256": "fe36d7e31ba41764a5a137433d769c7909ce4af5f6088f58b2f46ff77f14942d"
+    },
+    {
+      "path": "_mqm_3d_native_v01/MQM_TRI_TETRA_8Q_COORDINATES_v0.1.csv",
+      "bytes": 452,
+      "sha256": "7eabe8d57e0cc94bc4998d38d22e38ec29db01c7e2144c0b961918aec7374ebe"
+    },
+    {
+      "path": "_mqm_3d_native_v01/UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.9.md",
+      "bytes": 1726,
+      "sha256": "9bcae2f70e23d9db1fee638bab0880ede32caafca6048016024f1249d27535cb"
+    },
+    {
+      "path": "_mqm_3d_pipeline_erasure_v01/MQM_3D_ANCILLA_BUFFER_RESOURCE_TABLE_v0.1.csv",
+      "bytes": 329,
+      "sha256": "e6964437c1605558db7e88b25337c481e1954260bab03a287c8a98b90b9d7807"
+    },
+    {
+      "path": "_mqm_3d_pipeline_erasure_v01/MQM_3D_TETRA_ANCILLA_PIPELINE_CIRCUIT_AND_ERASURE_DECODER_v0.1.json",
+      "bytes": 9052,
+      "sha256": "1f3876908738193bfbec44da762e633e2705c8909d6a93d9812b3b9082932a64"
+    },
+    {
+      "path": "_mqm_3d_pipeline_erasure_v01/MQM_3D_TETRA_ANCILLA_PIPELINE_CIRCUIT_AND_ERASURE_DECODER_v0.1_LOCK.md",
+      "bytes": 9643,
+      "sha256": "8bb089b87dddc88ef7fcfa05a6d77b0a85d6f58c8c435acc736cb896b27f3252"
+    },
+    {
+      "path": "_mqm_3d_pipeline_erasure_v01/MQM_ERASURE_MIXED_CHANNEL_CODE_CAPACITY_v0.1.csv",
+      "bytes": 727,
+      "sha256": "35051b432f1f74717913312e368c1cb0deb31e61dd8488c685f0e92a5f8478b8"
+    },
+    {
+      "path": "_mqm_3d_pipeline_erasure_v01/UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.11.md",
+      "bytes": 2647,
+      "sha256": "536087675e153ab0006c39c503e269b40b940cbea6bbdbf7cb95a136f18e9817"
+    },
+    {
+      "path": "_mqm_3d_quarantine_v01/MQM_3D_BLOCK_ADMISSION_STATE_MACHINE_v0.1.json",
+      "bytes": 1104,
+      "sha256": "40532ef897dfa4f2bd5e5264f2729b85794200eeaf702ddc315b11f25cfcdf53"
+    },
+    {
+      "path": "_mqm_3d_quarantine_v01/MQM_3D_TETRA_LOSS_DETECTION_AND_BLOCK_QUARANTINE_HARDWARE_INTERFACE_v0.1_LOCK.md",
+      "bytes": 6121,
+      "sha256": "dbad164f443cf0aeef8edde3bc9fbd26ab628f0d8144393cf413c4b15444e50f"
+    },
+    {
+      "path": "_mqm_3d_quarantine_v01/MQM_BLOCK_CERTIFICATE_FRESHNESS_BUDGET_v0.1.csv",
+      "bytes": 345,
+      "sha256": "f857af647ca4b188f070053b8725fef29e6cfd9c16f3206b255e25a1218bd29d"
+    },
+    {
+      "path": "_mqm_3d_quarantine_v01/MQM_DEFERRED_QUARANTINE_HOOK_SUBGROUP_AUDIT_v0.1.json",
+      "bytes": 1398,
+      "sha256": "80d029d0dcdd56f5b32e0abeef9c30d0913947eab1dd014a6d68b11032616450"
+    },
+    {
+      "path": "_mqm_3d_quarantine_v01/MQM_DEFERRED_QUARANTINE_HOOK_SUBGROUP_THEOREM_v0.1_LOCK.md",
+      "bytes": 1864,
+      "sha256": "2f309e9e9dfc124bd2b701f03192fb6d00595806e2ec934f04d32ef34762ca75"
+    },
+    {
+      "path": "_mqm_3d_quarantine_v01/MQM_ERASURE_DETECTION_EFFICIENCY_MAPPING_v0.1.csv",
+      "bytes": 375,
+      "sha256": "3299515ee7aedf90fe43a865b36776ad35bd22de9b9e2f7cab6c8486d15e4e08"
+    },
+    {
+      "path": "_mqm_3d_quarantine_v01/UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.12.md",
+      "bytes": 1313,
+      "sha256": "0362ea8dd7e5a6fd73f69a301982daae3654982b7cd94b3ea4cbba46d12400b4"
+    },
+    {
+      "path": "_mqm_3d_quarantine_v01/mqm_deferred_quarantine_hook_subgroup_audit_v01.py",
+      "bytes": 1481,
+      "sha256": "f520ba6208d168cea907cd794973e335296b4c021542c9f9c74f64c92a1acbbf"
+    },
+    {
+      "path": "_mqm_erasure_redundancy_multiloss_v01/MQM_3D_TETRA_ERASURE_DETECTOR_REDUNDANCY_AND_MULTI_LOSS_RM_DECODER_v0.1_LOCK.md",
+      "bytes": 6130,
+      "sha256": "fe5708357bb3efebeda49dbc5b84528fa482c985c07e2121eca8656cf376cd39"
+    },
+    {
+      "path": "_mqm_erasure_redundancy_multiloss_v01/MQM_ERASURE_REDUNDANCY_MULTI_LOSS_EXECUTION_v0.1.json",
+      "bytes": 5089,
+      "sha256": "6aa8156d027b2ff712c1379eca26d2172aba96258f4c4ea322d3079bc1d0793d"
+    },
+    {
+      "path": "_mqm_erasure_redundancy_multiloss_v01/MQM_ERASURE_WITNESS_REDUNDANCY_REQUIREMENTS_v0.1.csv",
+      "bytes": 546,
+      "sha256": "8a49d16b02d249a1a053bb53f3744aaad94cc36c72928ca686f90069b4ba62e6"
+    },
+    {
+      "path": "_mqm_erasure_redundancy_multiloss_v01/MQM_LDU_REDUNDANCY_SCREEN_v0.1.csv",
+      "bytes": 453,
+      "sha256": "1cec31eac4e646cb38cfd5bf02f6c6d87bb9ed5c4605746d0186249c4cf175e9"
+    },
+    {
+      "path": "_mqm_erasure_redundancy_multiloss_v01/MQM_RM_MULTI_LOSS_DECODER_SUMMARY_v0.1.csv",
+      "bytes": 260,
+      "sha256": "4f5699fb02988d91b291cf0a075f3bce9e67b780464a126487fa9f68bf0b0fa9"
+    },
+    {
+      "path": "_mqm_erasure_redundancy_multiloss_v01/UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.15.md",
+      "bytes": 1330,
+      "sha256": "5e6aa87992326ba88dd5ee6baf6b5b89919d32188eacff917dbf98240cf6d387"
+    },
+    {
+      "path": "_mqm_erasure_redundancy_multiloss_v01/mqm_rm_three_loss_frontier_audit_v01.py",
+      "bytes": 3931,
+      "sha256": "27786425e41f2a7057aac3394d39723f5a3d6650f1ced40d31ee414db59a413d"
+    },
+    {
+      "path": "_mqm_erasure_redundancy_multiloss_v01/mqm_rm_two_loss_decoder_audit_v01.py",
+      "bytes": 6350,
+      "sha256": "9e3d81904d1c953d0498e92e5f455a1e8b24d61777e3f47146e400d31992cec9"
+    },
+    {
+      "path": "_mqm_exact_factory_v01/MQM_K4_DIRECT_RM_FACTORY_EXACT_PAIR_AND_OUTPUT_DECODE_v0.1.json",
+      "bytes": 3976,
+      "sha256": "f0dbe29c732bb2b731455b8fde73b54ae7da75ec6ff233629309260233e369d1"
+    },
+    {
+      "path": "_mqm_exact_factory_v01/MQM_K4_DIRECT_RM_FACTORY_EXACT_PAIR_AND_OUTPUT_DECODE_v0.1_LOCK.md",
+      "bytes": 7139,
+      "sha256": "3ae69778161e88d46c000af8802b2acd5cc8e078df2119bccd1a0f8e73f78ac5"
+    },
+    {
+      "path": "_mqm_exact_factory_v01/MQM_RM_AGGREGATE_OUTPUT_PARITY_COMPRESSION_v0.2_FAIL.md",
+      "bytes": 777,
+      "sha256": "762f845fc5c41c04f714f176cb2423a0701ff6b1ccbaff5595e3dcf1bca19850"
+    },
+    {
+      "path": "_mqm_exact_factory_v01/MQM_RM_MEASUREMENT_ONLY_OUTPUT_DECODER_v0.1_LOCK.md",
+      "bytes": 1718,
+      "sha256": "35f3d9b5aa68bd7a2555d619994f98d52d5755959991f7bdc0fa62c5255fcd29"
+    },
+    {
+      "path": "_mqm_exact_factory_v01/UD_MQM_RUNTIME_REFRESH_2026-08-21_v0.2.json",
+      "bytes": 530,
+      "sha256": "24eb05d432a07cf6e512a5ebdabe24d8e35854589a4a7084a42a1645dcddb48f"
+    },
+    {
+      "path": "_mqm_exact_factory_v01/UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.7.md",
+      "bytes": 2320,
+      "sha256": "cba6985308f022540bcd9948e89c9ed95f52d50f16e9452d6133e625052c2607"
+    },
+    {
+      "path": "_mqm_heteronuclear_sentinel_v01/MQM_3D_TETRA_HETERONUCLEAR_SENTINEL_AND_CORRELATED_COLLAR_FAULT_AUDIT_v0.1_LOCK.md",
+      "bytes": 9537,
+      "sha256": "d4155314840a695b47b6e4cd0b0b5572fcd4cdbc08f08738265aa32617db1eff"
+    },
+    {
+      "path": "_mqm_heteronuclear_sentinel_v01/MQM_HETERONUCLEAR_SENTINEL_CORRELATED_FAULT_STATE_v0.1.json",
+      "bytes": 3292,
+      "sha256": "f027b8dadca83a59a328cbd698ad07c208e6ff5d5bb101b7c1694a7bdaafd67a"
+    },
+    {
+      "path": "_mqm_heteronuclear_sentinel_v01/MQM_HETERONUCLEAR_STANDARD_LDU_SINGLE_FAULT_AUDIT_v0.1.json",
+      "bytes": 11292,
+      "sha256": "c7a35d5c807c6361d38a4cd8922d8813199a611546cff503d0b6f96dc9a9d1e4"
+    },
+    {
+      "path": "_mqm_heteronuclear_sentinel_v01/MQM_K4_CORE_COMMON_MODE_PAULI_FIREWALL_v0.1_LOCK.md",
+      "bytes": 1115,
+      "sha256": "a1e272404d1f51613c81acc90d54e498e8a5a9d458251186484debaa3ee68f63"
+    },
+    {
+      "path": "_mqm_heteronuclear_sentinel_v01/MQM_TRI_TETRA_CORRELATED_PAIR_RISK_MAP_v0.1.csv",
+      "bytes": 2189,
+      "sha256": "ff55a50b9828066130b12f2315dfc778e306d189e1ab4248b9e7a010e1275d06"
+    },
+    {
+      "path": "_mqm_heteronuclear_sentinel_v01/MQM_TRI_TETRA_SENTINEL_5PHASE_SCHEDULE_v0.1.csv",
+      "bytes": 249,
+      "sha256": "393127c7ce623d5b15e117033cd82a4ff3c7f201f0901da5e90baa10bd62026f"
+    },
+    {
+      "path": "_mqm_heteronuclear_sentinel_v01/UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.18.md",
+      "bytes": 1941,
+      "sha256": "ebda03eb62601d28767f1a6beba4a36e23724d119261a2335b9b66a1c2081e85"
+    },
+    {
+      "path": "_mqm_heteronuclear_sentinel_v01/mqm_heteronuclear_sentinel_pair_risk_reproducer_v01.py",
+      "bytes": 874,
+      "sha256": "4ca2a2d266d3b54eb36fafcffe959ec0f19989c6df3951fa085725e1b32edf99"
+    },
+    {
+      "path": "_mqm_multilevel_port_exrec_v01/MQM_CONTROLLED_BRANCH_PHASE_GAUGE_CORRECTION_v0.1_LOCK.md",
+      "bytes": 1936,
+      "sha256": "de1d01e7a93d844e731d9675848f9157e5dbe50176597c0f387c30f65bda4459"
+    },
+    {
+      "path": "_mqm_multilevel_port_exrec_v01/MQM_HETERONUCLEAR_SENTINEL_PLUS_LAYERA_REQUALIFICATION_EXREC_v0.1_LOCK.md",
+      "bytes": 2601,
+      "sha256": "f50f5d918568d7d349d3dc5b15f17f65ccbb45c0a1df6ca43ea577950175cb23"
+    },
+    {
+      "path": "_mqm_multilevel_port_exrec_v01/MQM_MULTILEVEL_SENTINEL_PORT_EXREC_STATE_v0.1.json",
+      "bytes": 3184,
+      "sha256": "20c3aed5fb335f31df8da36e908ca2556f9d77300e85978f6c573abd61cb09e3"
+    },
+    {
+      "path": "_mqm_multilevel_port_exrec_v01/MQM_PHASE_CORRECTED_PHYSICAL_16SEG_SEED_v0.1_FAIL.csv",
+      "bytes": 1297,
+      "sha256": "d0802b582bb8397ddff897ee150eff909b851c4c8206ef729eeecaace00d618e"
+    },
+    {
+      "path": "_mqm_multilevel_port_exrec_v01/MQM_RBCS_MULTILEVEL_SENTINEL_PULSE_PORT_v0.1_LOCK.md",
+      "bytes": 4559,
+      "sha256": "5ba27836731dca630d8c02e022b0596cf061deb58616dd194ad76c3c754f00f3"
+    },
+    {
+      "path": "_mqm_multilevel_port_exrec_v01/MQM_RBCS_SOURCE_PORT_AND_BALANCED_PORT_TABLE_v0.1.csv",
+      "bytes": 617,
+      "sha256": "1f6073b340ab2b312e6ecd66259857eac8bc53b407c78aa7e46f987beef17574"
+    },
+    {
+      "path": "_mqm_multilevel_port_exrec_v01/UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.22.md",
+      "bytes": 1789,
+      "sha256": "e20a0641007c28e3dcbfaa62ffdf879595ac89be9255323362577b60449da7dd"
+    },
+    {
+      "path": "_mqm_multiview_readout_v01/MQM_8Q_CANONICAL_DUAL_VIEW_A_v0.1.png",
+      "bytes": 55611,
+      "sha256": "8f12e69391daeffd390039e617eb3a932557fdb84f28e37ca87447fa788349a3"
+    },
+    {
+      "path": "_mqm_multiview_readout_v01/MQM_8Q_CANONICAL_DUAL_VIEW_B_v0.1.png",
+      "bytes": 55697,
+      "sha256": "227cfcafae7368586c4e237349dcec92057830c4ec26f9f093bb0665fbbe55ee"
+    },
+    {
+      "path": "_mqm_multiview_readout_v01/MQM_DUAL_VIEW_AXIS_MISALIGNMENT_ROBUSTNESS_v0.1.csv",
+      "bytes": 531,
+      "sha256": "828575318321982e7349b9a7286dd8ed30577161c0a37c4062bf106f9fe0da38"
+    },
+    {
+      "path": "_mqm_multiview_readout_v01/MQM_INNER_8Q_CANONICAL_DUAL_VIEW_PAIR_MARGINS_v0.1.csv",
+      "bytes": 2112,
+      "sha256": "4dcb02ef87198b59c473445e710e35b5c6e6a40e747671f3c8b4719e0b65695c"
+    },
+    {
+      "path": "_mqm_multiview_readout_v01/MQM_INNER_8Q_PROJECTION_DEGENERACY_AXES_v0.1.csv",
+      "bytes": 4020,
+      "sha256": "3fe6a6158dd340dfe724baed8410a9c07a9e90efb88ae0a6f662bad0c1151381"
+    },
+    {
+      "path": "_mqm_multiview_readout_v01/MQM_MULTI_VIEW_READOUT_STATE_v0.1.json",
+      "bytes": 1964,
+      "sha256": "5f7d669ec3737ebd0dc5adec397d7e09e8824928266c6554881ebdf6c8fee5e5"
+    },
+    {
+      "path": "_mqm_multiview_readout_v01/MQM_RM15_CANONICAL_DUAL_VIEW_A_v0.1.png",
+      "bytes": 51870,
+      "sha256": "157c09585d693bebec89bfd67cee6fc1bb3129f959459208f281ded26f8298ce"
+    },
+    {
+      "path": "_mqm_multiview_readout_v01/MQM_RM15_CANONICAL_DUAL_VIEW_B_v0.1.png",
+      "bytes": 52230,
+      "sha256": "70010df1133271e8c1041d9fac97c1ffef98a36e8b40471e20af4d57f3220404"
+    },
+    {
+      "path": "_mqm_multiview_readout_v01/MQM_TETRAHEDRAL_MULTI_VIEW_READOUT_GEOMETRY_AUDIT_v0.1_LOCK.md",
+      "bytes": 4614,
+      "sha256": "0203a6dcbf70f4abb4c5fa6a94319e1e4fe3a1ecfe0a20e5f17b1919effa354f"
+    },
+    {
+      "path": "_mqm_multiview_readout_v01/UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.23.md",
+      "bytes": 1200,
+      "sha256": "8af8b1a11df671af1c92afb3ea00190487390cc2a19bd14fd2946456aefd7d26"
+    },
+    {
+      "path": "_mqm_refresh_collar_budget_v01/MQM_3D_TETRA_REFRESH_COLLAR_FACTORY_COMPOSITION_AND_LOSS_BUDGET_v0.1_LOCK.md",
+      "bytes": 4675,
+      "sha256": "4e188204f1c88f0c4bee3992d4858687eddd13220f2045f533e8c8f78acdc689"
+    },
+    {
+      "path": "_mqm_refresh_collar_budget_v01/MQM_REFRESH_COLLAR_FACTORY_COMPOSITION_AND_LOSS_BUDGET_v0.1.json",
+      "bytes": 4246,
+      "sha256": "dc47a8b68f5093d36a15f5c58df711ddf2a3a7ae9242c404582ea470b773e332"
+    },
+    {
+      "path": "_mqm_refresh_collar_budget_v01/MQM_REFRESH_COLLAR_HERALDING_PHASE_GRID_v0.1.csv",
+      "bytes": 1928,
+      "sha256": "2e6d82cf4ed65a2b4129b245d4f23434db594dc6d232e7b6b4f2b2335be50255"
+    },
+    {
+      "path": "_mqm_refresh_collar_budget_v01/MQM_REFRESH_COLLAR_POLICY_COMPARISON_v0.1.csv",
+      "bytes": 769,
+      "sha256": "d6fed670cb9e06d3290e1737ff9d5fb7a0e978b751498a47818aafb7a13b6b7d"
+    },
+    {
+      "path": "_mqm_refresh_collar_budget_v01/MQM_RM_LOSS_REPLAY_AND_DETECTOR_BUDGET_v0.1.csv",
+      "bytes": 666,
+      "sha256": "0c0fa1be042c8a294b5c50086b125e99bde75c72a88758c6e4c202f71c30eaac"
+    },
+    {
+      "path": "_mqm_refresh_collar_budget_v01/UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.14.md",
+      "bytes": 1434,
+      "sha256": "9fd762765f846eba2a67924050766d74eb0e9136153ae930c4fef316593d095f"
+    },
+    {
+      "path": "_mqm_robust_shaped_vdw_v01/MQM_3D_TETRA_ROBUST_SHAPED_VDW_SENTINEL_PULSE_SYNTHESIS_v0.1_LOCK.md",
+      "bytes": 5483,
+      "sha256": "8cae094fbc660b9623584194dc95eada711e6286818f01eae1ce57027670b606"
+    },
+    {
+      "path": "_mqm_robust_shaped_vdw_v01/MQM_ROBUST_SHAPED_VDW_SENTINEL_STATE_v0.1.json",
+      "bytes": 1169,
+      "sha256": "b99d34aaafb697fe10031464fdf39434e6f38bfb9afb049588e598c2bcb4d169"
+    },
+    {
+      "path": "_mqm_robust_shaped_vdw_v01/MQM_ROBUST_VDW_PULSE_TECHNICAL_TOLERANCE_v0.1.csv",
+      "bytes": 284,
+      "sha256": "9c9c8dfbbd7a719264059e94b7a02ecd80a391fef03dd257fa05c3a2e889c6ba"
+    },
+    {
+      "path": "_mqm_robust_shaped_vdw_v01/MQM_ROBUST_VDW_PULSE_THERMAL_MONTE_CARLO_v0.1.csv",
+      "bytes": 875,
+      "sha256": "b9d3dd8b629a7ffff66905964ac699dbab14d670c66e39ce9fba8b766304730d"
+    },
+    {
+      "path": "_mqm_robust_shaped_vdw_v01/MQM_ROBUST_VDW_PULSE_TRAINING_ENVELOPE_v0.1.csv",
+      "bytes": 287,
+      "sha256": "637f76c23ec3a68dda52802a76dd5e0868ce6964dc12f55e6ba3a6607d482391"
+    },
+    {
+      "path": "_mqm_robust_shaped_vdw_v01/MQM_ROBUST_VDW_SENTINEL_16SEG_PULSE_v0.1.csv",
+      "bytes": 846,
+      "sha256": "3b3028e492ed673e213002ff40a7a17f10dca4cdeac28e590eaad755180eda79"
+    },
+    {
+      "path": "_mqm_robust_shaped_vdw_v01/UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.21.md",
+      "bytes": 1076,
+      "sha256": "118f9edac3e71c1c18562c3118a177bb7e714285d34c35f2dd65f4f8cc042643"
+    },
+    {
+      "path": "_mqm_sentinel_spillover_qec_v01/MQM_3D_TETRA_SENTINEL_SPILLOVER_GEOMETRY_AND_WITNESS_QEC_COMPOSITION_v0.1_LOCK.md",
+      "bytes": 4514,
+      "sha256": "04ac152f5f8474d2af91d67dac765e0049fbd3036e2a0d48e5003c582cbad8f4"
+    },
+    {
+      "path": "_mqm_sentinel_spillover_qec_v01/MQM_SENTINEL_GEOMETRY_THRESHOLD_TABLE_v0.1.csv",
+      "bytes": 557,
+      "sha256": "416f63e866735ccd1b867adf20a83727f9578b34850a17736cf33218acd1bc8c"
+    },
+    {
+      "path": "_mqm_sentinel_spillover_qec_v01/MQM_SENTINEL_OPTIMIZED_COORDINATES_RHO_1OVER3_v0.1.csv",
+      "bytes": 930,
+      "sha256": "933a76bd7f6c4ca0a54fca5ebf8403840e262213e55ea35ac01858e63a7e5279"
+    },
+    {
+      "path": "_mqm_sentinel_spillover_qec_v01/MQM_SENTINEL_SPILLOVER_QEC_STATE_v0.1.json",
+      "bytes": 891,
+      "sha256": "2ae8b27ff51de7bfd32a65e4ed7c730cbe49e96265b69b2844c1e8f0f282086a"
+    },
+    {
+      "path": "_mqm_sentinel_spillover_qec_v01/MQM_WITNESS_QEC_COMPOSITION_COMPARISON_v0.1.csv",
+      "bytes": 583,
+      "sha256": "28ff2968bac505e6a8c6be923f4ebabee3644b4935a57194caa93dbee9743872"
+    },
+    {
+      "path": "_mqm_sentinel_spillover_qec_v01/UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.19.md",
+      "bytes": 811,
+      "sha256": "0a4db27ce5a435f45db1da26f801eabe35d4875c54aeb0498d68fe16755cea60"
+    },
+    {
+      "path": "_mqm_swap_ldu_rm_loss_v01/MQM_3D_TETRA_SWAP_LDU_REFRESH_COLLAR_AND_RM_LOSS_PROPAGATION_v0.1.json",
+      "bytes": 2534,
+      "sha256": "a6ed5ef5987d538a1650573c9bcdb5234aaba905a3c0db1bc41a90a1d08ebfaa"
+    },
+    {
+      "path": "_mqm_swap_ldu_rm_loss_v01/MQM_3D_TRI_TETRA_SWAP_LDU_REFRESH_COLLAR_v0.1_LOCK.md",
+      "bytes": 3792,
+      "sha256": "023eb66aa4a9027ee2ff31cd39fcd0c8f493237eff9866d013cd4bf0d8dec997"
+    },
+    {
+      "path": "_mqm_swap_ldu_rm_loss_v01/MQM_RM_STAR_LOSS_PROPAGATION_AND_GAUGE_REPLAY_v0.1_LOCK.md",
+      "bytes": 3965,
+      "sha256": "0d1140edf352fe71b9f7a634e3190a1dd3fd7e9855e83c816289a9c90bf3cf2e"
+    },
+    {
+      "path": "_mqm_swap_ldu_rm_loss_v01/UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.13.md",
+      "bytes": 2139,
+      "sha256": "41a5510b53d786e0d0a3624810041e4c613c287eba6d0e2c9351e98cb4fc4344"
+    },
+    {
+      "path": "_mqm_tri_witness_finite_factory_v01/MQM_3D_TETRA_TRI_WITNESS_CERTIFICATE_AND_FINITE_RATE_FACTORY_AUDIT_v0.1_LOCK.md",
+      "bytes": 9948,
+      "sha256": "d8b738d0b5e831a0294089ed6e992d4a1ccc5d2c243ba8dd6b40b68a006c68e8"
+    },
+    {
+      "path": "_mqm_tri_witness_finite_factory_v01/MQM_FINITE_RATE_FACTORY_SCENARIOS_v0.1.csv",
+      "bytes": 1578,
+      "sha256": "15a8757878bd64d7ff8dba1d9540575f5f967a07dcd56f471bad1f62255a08a2"
+    },
+    {
+      "path": "_mqm_tri_witness_finite_factory_v01/MQM_TRI_WITNESS_COLLAR_ADMISSIBILITY_SURFACE_v0.1.csv",
+      "bytes": 2259,
+      "sha256": "a37148004609251f638e6fda13ebdea3e89076ad48351087274f4a6fa4be46c7"
+    },
+    {
+      "path": "_mqm_tri_witness_finite_factory_v01/MQM_TRI_WITNESS_FINITE_RATE_FACTORY_STATE_v0.1.json",
+      "bytes": 7190,
+      "sha256": "061de8a31867c9bca0b68977d09330f1543c3a7fdfb5bbea66e2d44d4270e4a0"
+    },
+    {
+      "path": "_mqm_tri_witness_finite_factory_v01/UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.16.md",
+      "bytes": 1894,
+      "sha256": "deb4beb2d6341d3f818565080bb153055efce6c421d6a665d99b63b440948c93"
+    },
+    {
+      "path": "_mqm_tri_witness_finite_factory_v01/mqm_tri_witness_finite_rate_factory_audit_v01.py",
+      "bytes": 956,
+      "sha256": "0840424ad4ccffa0342166331700a4016e05ccf34e474fd438aaff6a6466ad18"
+    },
+    {
+      "path": "_mqm_ud_refresh_v01/MQM_CIRCUIT_IDENTITY_PRUNING_REPLAY_v0.1_LOCK.md",
+      "bytes": 2639,
+      "sha256": "bfa4877b4921bb3e8a248a5cf67ff7e755e56227334750f938efc1ff6217ecc1"
+    },
+    {
+      "path": "_mqm_ud_refresh_v01/MQM_K4_DIRECT_RM_FACTORY_NOISY_RECEIPT_PILOT_v0.2_LOCK.md",
+      "bytes": 5632,
+      "sha256": "5975fe864a138bff1fec9769e5ced2707a236e827b0790a739122022f46848cc"
+    },
+    {
+      "path": "_mqm_ud_refresh_v01/UD_MQM_RUNTIME_REFRESH_2026-08-21_v0.1.json",
+      "bytes": 2194,
+      "sha256": "8b36c2ffa10bce21441a456b736b3378c0e3af03491daecce28e7ee081a5706f"
+    },
+    {
+      "path": "_mqm_ud_refresh_v01/UD_MQM_RUNTIME_REFRESH_2026-08-21_v0.1_LOCK.md",
+      "bytes": 2721,
+      "sha256": "f969fff6d7b3f7e6ee6205fe411b85268fe989b8fe4db0f7d6da1e8925c63ee2"
+    },
+    {
+      "path": "_mqm_ud_refresh_v01/UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.6.md",
+      "bytes": 2643,
+      "sha256": "140e43be9bde1f344a263bd47e55db3cfaab78081e9e3ed1282a6af69d23242c"
+    },
+    {
+      "path": "_mqm_vdw_pulse_thermal_v01/MQM_3D_TETRA_VDW_SENTINEL_PULSE_AND_THERMAL_GEOMETRY_ROBUSTNESS_v0.1_LOCK.md",
+      "bytes": 5862,
+      "sha256": "b740485c1b5f98cbd87e70193029cc20c45101144a3834c6cb2b0a0094d45f47"
+    },
+    {
+      "path": "_mqm_vdw_pulse_thermal_v01/MQM_K4_SENTINEL_SENTINEL_INTERACTION_SCREEN_v0.1.csv",
+      "bytes": 463,
+      "sha256": "e334f77becffaa56d92fdfc7512c9ceb0e9933f73bce3c706bf3838e08d80c5e"
+    },
+    {
+      "path": "_mqm_vdw_pulse_thermal_v01/MQM_VDW_SENTINEL_CONTROL_TOLERANCE_v0.1.csv",
+      "bytes": 371,
+      "sha256": "b02195019d7a9dc13bf3d015a1c4c94e96a252be91b8762f1b3103b27f0104d1"
+    },
+    {
+      "path": "_mqm_vdw_pulse_thermal_v01/MQM_VDW_SENTINEL_DRIVEN_GEOMETRY_THRESHOLD_v0.1.csv",
+      "bytes": 294,
+      "sha256": "e61c195766857288508384afb7302957560040832c527fdc518aed7340150011"
+    },
+    {
+      "path": "_mqm_vdw_pulse_thermal_v01/MQM_VDW_SENTINEL_PULSE_THERMAL_STATE_v0.1.json",
+      "bytes": 1147,
+      "sha256": "3e647b605cd85b64b92363e17d5e1474845a4175a34c546e8bf8ec2f6964e58a"
+    },
+    {
+      "path": "_mqm_vdw_pulse_thermal_v01/MQM_VDW_SENTINEL_REDUCED_PULSE_OPERATING_POINTS_v0.1.csv",
+      "bytes": 386,
+      "sha256": "0b40e29d069e1ba61424fde7486a16833a5d23d443cc9f95ab50e88b9c3ef4f1"
+    },
+    {
+      "path": "_mqm_vdw_pulse_thermal_v01/MQM_VDW_SENTINEL_THERMAL_POSITION_TOLERANCE_v0.1.csv",
+      "bytes": 683,
+      "sha256": "f07a2111a6744febe0ea51794fe112e6a1545f75eefe01166a4e8b9a6df1ce96"
+    },
+    {
+      "path": "_mqm_vdw_pulse_thermal_v01/UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.20.md",
+      "bytes": 940,
+      "sha256": "649937d0684caa3e330b6c12c75cc95d974356dcd58f2636d874757772c3005d"
+    },
+    {
+      "path": "_mqm_witness_diversity_microfault_v01/MQM_3D_TETRA_WITNESS_DIVERSITY_AND_REFRESH_COLLAR_MICROFAULT_AUDIT_v0.1_LOCK.md",
+      "bytes": 11810,
+      "sha256": "02767b2768dc9c66063fd328048f23e6a3068d92932658de6275f0391d075e0c"
+    },
+    {
+      "path": "_mqm_witness_diversity_microfault_v01/MQM_DIVERSE_THIRD_WITNESS_TARGET_SURFACE_v0.1.csv",
+      "bytes": 574,
+      "sha256": "da4ad2037cfa66878fd6d0ad1017f5c152e26d8a38ed38eaeb296f502fd47507"
+    },
+    {
+      "path": "_mqm_witness_diversity_microfault_v01/MQM_REFRESH_COLLAR_MICROFAULT_TAXONOMY_v0.1.csv",
+      "bytes": 1791,
+      "sha256": "2723158650922b4290e28b8e39dc41ed937eff169b604b9b765e27dbf195e744"
+    },
+    {
+      "path": "_mqm_witness_diversity_microfault_v01/MQM_SWAP_LDU_MICROFAULT_PROXY_v0.1.json",
+      "bytes": 906,
+      "sha256": "2be7e8dbf121e973a9af5fcaa9d03d5ff21993a9c4b4d65c6b4f06920d230530"
+    },
+    {
+      "path": "_mqm_witness_diversity_microfault_v01/MQM_WITNESS_COMMON_MODE_LEDGER_v0.1.csv",
+      "bytes": 1282,
+      "sha256": "ea4ebd33988bf7787f6de8282e806d7448d6fb54c808a9924b6a48921cfe29b6"
+    },
+    {
+      "path": "_mqm_witness_diversity_microfault_v01/MQM_WITNESS_DIVERSITY_FAILURE_MATRIX_v0.1.csv",
+      "bytes": 1949,
+      "sha256": "d2e953a50dfcb3b877f744afc23eb3cea6b001617cab4d09b97da51d8e1a8d01"
+    },
+    {
+      "path": "_mqm_witness_diversity_microfault_v01/MQM_WITNESS_DIVERSITY_MICROFAULT_STATE_v0.1.json",
+      "bytes": 3624,
+      "sha256": "e37f2b4fcbcd9045a76850db665c19c88c9aed3059f6dd5a2ba47b25f91f55d4"
+    },
+    {
+      "path": "_mqm_witness_diversity_microfault_v01/UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.17.md",
+      "bytes": 2039,
+      "sha256": "9cb6121b6952774d24b56e6ac76451544af42dac02a6ff0e407785374c7fa087"
+    },
+    {
+      "path": "_ud_mqm_global_refresh_20260822/MQM_K4_PARALLEL_Q_RECEIPT_AND_IDLE_MARGIN_VALIDATION_v0.1_LOCK.md",
+      "bytes": 7446,
+      "sha256": "09a12317cc959b1deb1ac4ea230337dff64f67f894dde28043ac66ed24fee00f"
+    },
+    {
+      "path": "_ud_mqm_global_refresh_20260822/MQM_K4_TERMINAL_SPECTATOR_GAUGE_REPAIR_v0.1_LOCK.md",
+      "bytes": 2041,
+      "sha256": "93fbbc0098a82c0e0a51351bca06162e3e500659f88a7d371f7a93a7c70d8aff"
+    },
+    {
+      "path": "_ud_mqm_global_refresh_20260822/UD_GLOBAL_LOCKED_STATE_REFRESH_2026-08-22_v0.1_LOCK.md",
+      "bytes": 2663,
+      "sha256": "287571d84cb627172408361f26c0440af0e16f3d523d9fbfe0334d8c54ca6456"
+    },
+    {
+      "path": "_ud_mqm_global_refresh_20260822/UD_MQM_GLOBAL_REFRESH_AND_IDLE_GATE_v0.1.json",
+      "bytes": 1868,
+      "sha256": "37d161d5075ac5b4799df0754bab551e5324e31a31f9edb20652d468592bf338"
+    },
+    {
+      "path": "_ud_mqm_global_refresh_20260822/UD_TETRA_QEC_ARCHITECTURE_PATCH_v0.8.md",
+      "bytes": 3380,
+      "sha256": "ccd7e66e720fbb82da106a1996d61c57bbd06b990bffa6dd0bf4966e3d06fa61"
+    }
+  ]
+}
