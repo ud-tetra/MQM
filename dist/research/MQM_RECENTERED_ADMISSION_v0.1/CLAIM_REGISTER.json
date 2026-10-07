@@ -1,0 +1,38 @@
+{
+  "exploration": {
+    "status": "SIMULATED exploratory tuning after parent evaluation exposure",
+    "attempts": 424,
+    "accepted": 309,
+    "rejected": 115,
+    "attempt_cap": 1000,
+    "free_box_radius": 4,
+    "initial_residual": 0.22288181865759019,
+    "best_residual": 0.2228461005676329,
+    "resource_gain": false,
+    "stationarity_or_global_optimum": false
+  },
+  "root": {
+    "status": "EXACT / AUTO_LOCK scoped",
+    "first_second_moments_exact": true,
+    "root_type": "Unique implicitly defined real algebraic root in a fixed rational slice box",
+    "box_radius": "1/281474976710656",
+    "dependent_coordinates": 15,
+    "fixed_coordinates": 82,
+    "local_zero_manifold_dimension": 82,
+    "deadline_upper": "13792685781029863011731/36893488147419103232",
+    "full_norm_budget": 1,
+    "all_time_half_diamond_floor": "strictly greater than1/16",
+    "scope": "One selected root; not planar-family no-go or path certification"
+  },
+  "complete_admission": {
+    "status": "OPEN",
+    "target": "1/65536 on nonzero readout window",
+    "certified_encoder": false,
+    "SWAP_composition": "gated"
+  },
+  "scoped_exact_checks": 252,
+  "numerical_derivative_checks": 166,
+  "physical_promotion": 0,
+  "independent_review": "pending",
+  "novelty_comparison": "pending"
+}

@@ -1,0 +1,165 @@
+[
+  {
+    "id": "core-x",
+    "n_data": 4,
+    "n_gauge": 0,
+    "n_ancilla": 3,
+    "distance_metric": {
+      "name": "unrestricted quantum",
+      "value": 1
+    },
+    "error_model": "Single X error; ideal parity readout. Three active ancillas in selected recovery circuit.",
+    "generators": {
+      "center": [
+        "ZZII",
+        "ZIZI",
+        "ZIIZ"
+      ],
+      "gauge": []
+    },
+    "logicals": {
+      "X": "XXXX",
+      "Z": "ZIII"
+    },
+    "witnesses": [
+      {
+        "pauli": "ZIII",
+        "meaning": "Weight-one logical Z"
+      },
+      {
+        "pauli": "ZZZI",
+        "meaning": "Raw triple-Z face acts as logical Z"
+      }
+    ],
+    "decoder": {
+      "scope": "Single-X ideal parity lookup in listed generator order; not a complete fault-tolerant controller.",
+      "lookup": {
+        "000": "IIII",
+        "111": "XIII",
+        "100": "IXII",
+        "010": "IIXI",
+        "001": "IIIX"
+      },
+      "unrecognized_syndrome": "ESCALATE; no correction inferred"
+    }
+  },
+  {
+    "id": "core-x5",
+    "n_data": 5,
+    "n_gauge": 0,
+    "n_ancilla": 4,
+    "distance_metric": {
+      "name": "unrestricted quantum",
+      "value": 1
+    },
+    "error_model": "X-only; incoming weight <=1 and <=1 named extraction fault in enumerated envelope.",
+    "generators": {
+      "center": [
+        "ZZIII",
+        "ZIZII",
+        "ZIIZI",
+        "ZIIIZ"
+      ],
+      "gauge": []
+    },
+    "logicals": {
+      "X": "XXXXX",
+      "Z": "ZIIII"
+    },
+    "witnesses": [
+      {
+        "pauli": "ZIIII",
+        "meaning": "Weight-one logical Z"
+      },
+      {
+        "pauli": "XXXXX",
+        "meaning": "Residual logical X in 30 weight-two-plus-new-X witnesses"
+      }
+    ],
+    "decoder": {
+      "scope": "Minimum-weight X lookup; stable-syndrome controller resets consensus after corrections, then verifies.",
+      "lookup": {
+        "0000": "IIIII",
+        "0001": "IIIIX",
+        "0010": "IIIXI",
+        "0011": "IIIXX",
+        "0100": "IIXII",
+        "0101": "IIXIX",
+        "0110": "IIXXI",
+        "0111": "XXIII",
+        "1000": "IXIII",
+        "1001": "IXIIX",
+        "1010": "IXIXI",
+        "1011": "XIXII",
+        "1100": "IXXII",
+        "1101": "XIIXI",
+        "1110": "XIIIX",
+        "1111": "XIIII"
+      },
+      "unrecognized_syndrome": "INVALID; reset consensus, then resource-capped timeout"
+    }
+  },
+  {
+    "id": "subsystem-8",
+    "n_data": 8,
+    "n_gauge": 3,
+    "n_ancilla": null,
+    "distance_metric": {
+      "name": "dressed subsystem",
+      "value": 3
+    },
+    "error_model": "Exact phase-quotiented Pauli algebra; ideal center syndrome for reference decoder only. Extraction ancillas unspecified.",
+    "generators": {
+      "center": [
+        "IIIXXZZI",
+        "IIIYIYZZ",
+        "IIIXZIXZ",
+        "XXXXYYIX"
+      ],
+      "gauge": [
+        "IIIXXZZI",
+        "IIIYIYZZ",
+        "IIIXZIXZ",
+        "XXXXYYIX",
+        "XIIIIIII",
+        "ZIIIIIIZ",
+        "IXIIIIII",
+        "IZIIIIIZ",
+        "IIXIIIII",
+        "IIZIIIIZ"
+      ]
+    },
+    "logicals": {
+      "X": "IIIYZIZI",
+      "Z": "IIIXIZIZ"
+    },
+    "witnesses": [
+      {
+        "pauli": "IIIIIXXZ",
+        "meaning": "Minimum-weight dressed logical witness"
+      }
+    ],
+    "decoder": {
+      "scope": "New ideal-center minimum-weight Pauli reference lookup; equal-weight ties lexicographic in IXYZ strings. Not the unavailable historical flag decoder.",
+      "lookup": {
+        "0000": "IIIIIIII",
+        "0110": "IIIIIIIX",
+        "0111": "IIIIIIIY",
+        "0001": "IIIIIIIZ",
+        "1100": "IIIIIIXI",
+        "1010": "IIIIYIII",
+        "1011": "IIIYIIII",
+        "1101": "IIIIIXII",
+        "1110": "IIIIIIYI",
+        "1000": "IIIIIYII",
+        "1001": "IIIIZIII",
+        "1111": "IIIZIIII",
+        "0010": "IIIIIIZI",
+        "0100": "IIIXIIII",
+        "0101": "IIIIIZII",
+        "0011": "IIIIXIII"
+      },
+      "unrecognized_syndrome": "INVALID; do not infer a noisy recovery"
+    }
+  }
+]

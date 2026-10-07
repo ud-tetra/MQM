@@ -1,0 +1,24 @@
+{
+  "model_matching": {
+    "status": "EXACT symbolic identities / AUTO_LOCK scoped",
+    "assumptions": "Infinite-mass strip,neutral interior,identical uniform-width finite-doping ideal leads,abrupt mode-preserving interfaces,T=0,no disorder/interactions/B field",
+    "exact_checks": 6,
+    "scope": "Continuum model only"
+  },
+  "parameter_evaluation": {
+    "status": "SIMULATED binary64 exploratory inverse design",
+    "numerical_checks": 27,
+    "lead50meV": "No open modes at ideal-contact width",
+    "nominal_lead_eV": 0.2,
+    "nominal_width_nm": 15.795234968653224,
+    "fitted_target": "Lowest-mode7/768 within root tolerance1e-12",
+    "mode_sum_equals_target": false,
+    "interval_certified_width": false,
+    "independent_prediction": false
+  },
+  "physical_promotion": 0,
+  "device_or_advantage_claim": false,
+  "occupancy_transduction": "OPEN",
+  "Lindblad_rate_transduction": "OPEN",
+  "independent_review": "pending"
+}

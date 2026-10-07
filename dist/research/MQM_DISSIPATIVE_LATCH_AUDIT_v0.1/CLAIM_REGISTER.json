@@ -1,0 +1,49 @@
+{
+  "claims": [
+    {
+      "id": "DL1",
+      "title": "Absorbing operational target",
+      "claim": "Complete error equals survival S; clock-traced body error equals incomplete population under final-flag contract",
+      "evidence": "Analytic prefix/jump theorem; small full Lindblad fixture on entangled and mixed inputs",
+      "independent_review": "pending",
+      "priority_assessment": "pending",
+      "physical_promotion": 0
+    },
+    {
+      "id": "DL2",
+      "title": "Isolated latch mean optimum",
+      "claim": "E[tau]=2/Gamma+Gamma/(4g^2)+Delta^2/(g^2Gamma); Gamma*=2sqrt(2g^2+Delta^2)",
+      "evidence": "Integrated equations checked exactly for rational fixtures",
+      "independent_review": "pending",
+      "priority_assessment": "pending",
+      "physical_promotion": 0
+    },
+    {
+      "id": "DL3",
+      "title": "Uniform clock mean optimum",
+      "claim": "E[tau]=n/Gamma+(n-1)Gamma/(4g^2); Gamma*/g=2sqrt(n/(n-1))",
+      "evidence": "Explicit integrated covariance; exact rational residuals for dimensions2..16",
+      "independent_review": "pending",
+      "priority_assessment": "pending",
+      "physical_promotion": 0
+    },
+    {
+      "id": "DL4",
+      "title": "Conservative ideal full-episode hold",
+      "claim": "For uniform m13 g1/8 Gamma1/4, S(t)<=1/1024 for everyt>=118784",
+      "evidence": "Exact mean116 and Markov survival bound; no physical imperfections admitted",
+      "independent_review": "pending",
+      "priority_assessment": "pending",
+      "physical_promotion": 0
+    }
+  ],
+  "not_claimed": [
+    "Finite-time exact total absorption",
+    "A finite closed reservoir implementing permanent Markov decay",
+    "A universal energy lower bound",
+    "Generic address dephasing formula",
+    "Inherited64vs53 resource improvement for this open task",
+    "Global deadline optimum"
+  ],
+  "old_closed_resource_frontier": "Immutable and separate; this open contract does not improve or invalidate it."
+}

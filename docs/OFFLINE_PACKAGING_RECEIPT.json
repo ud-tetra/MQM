@@ -1,0 +1,8 @@
+{
+  "status": "REPAIRED_PACKAGING",
+  "initial_failure": "Site source Git service rejected generated 44 MB offline ZIP as object too large",
+  "repair": "Keep source and original individual research packages tracked; generate aggregate offline ZIP separately and in GitHub Actions. Combined Site archive rejected as invalid/incomplete; omit redundant aggregate ZIP from hosted assets.",
+  "research_artifacts_modified": false,
+  "github_repository_creation": "PENDING",
+  "github_actions_execution": "NOT_RUN"
+}

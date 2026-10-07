@@ -1,0 +1,60 @@
+{
+  "version": "0.1",
+  "date": "2026-10-05",
+  "independent_review": "pending",
+  "physical_promotion": 0,
+  "claims": [
+    {
+      "id": "S1",
+      "status": "EXACT DERIVATION",
+      "claim": "The bare three-qubit generator g Xc tensor SWAP has three nonzero weight-three coefficients and cannot equal a two-local sum on the same unrestricted space.",
+      "boundary": "Not a no-go for timed unitaries, encoding, or ancillary simulation."
+    },
+    {
+      "id": "S2",
+      "status": "EXACT CONSTRUCTION REPLAY",
+      "claim": "The 54-qubit Pauli ledger is two-local and admits an invariant 136-dimensional computational sector within the 208-dimensional one-train joint sector.",
+      "boundary": "This is an adaptation of Nagaj direct encoding, not a generic two-local universality novelty claim."
+    },
+    {
+      "id": "S3",
+      "status": "EXACT DYNAMICAL CERTIFICATE",
+      "claim": "Hphys Omega = Omega (g K tensor I4), including the six wrong-rail leaves, certifies zero compiler leakage and normalized diamond error at all times.",
+      "boundary": "Relative to the expanded 34-vertex graph, not the original two-address generator."
+    },
+    {
+      "id": "S4",
+      "status": "EXACT DERIVATION",
+      "claim": "Final-port branch is alpha(t) SWAP, and complete-domain distance to the fixed final-port SWAP target is sqrt(1-|alpha(t)|^2).",
+      "boundary": "Success may be less than one; conditional correctness is not deterministic capture."
+    },
+    {
+      "id": "S5",
+      "status": "EXACT GRAPH COUNTERCERTIFICATE",
+      "claim": "The displayed 102-edge physical interaction graph contains a K3,3 subdivision and is nonplanar.",
+      "boundary": "No universal planar-compilation obstruction is claimed."
+    },
+    {
+      "id": "S6",
+      "status": "EXACT RATIONAL CERTIFICATE",
+      "claim": "Binary64 representation of 144 irrational coefficients gives a full-operator/channel rounding debit below 2^-40 on [0,1024], at g=1/8.",
+      "boundary": "Representation error only; not calibration, preparation, decoherence, or arrival accuracy."
+    },
+    {
+      "id": "S7",
+      "status": "NUMERICAL DIAGNOSTIC",
+      "claim": "Largest sampled final-port probability 0.4739700232738219 at time 687.75, on a 4097-point grid.",
+      "boundary": "No interval enclosure or global optimum; no impossibility theorem about other times."
+    },
+    {
+      "id": "S8",
+      "status": "OPEN",
+      "claim": "Minimum physical mediator count, planar implementation, certified useful deadline, and matched resource improvement."
+    },
+    {
+      "id": "S9",
+      "status": "NOT ESTABLISHED",
+      "claim": "Physical realization, fault tolerance, thermodynamic refreshment, supervising clock renewal, UD-GR/QFT correspondence, or complete thirteen-step local implementation."
+    }
+  ]
+}

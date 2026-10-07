@@ -1,0 +1,43 @@
+{
+  "version": "0.1",
+  "physical_promotion": 0,
+  "claims": [
+    {
+      "status": "EXACT",
+      "scope": "Specified finite vacuum one-excitation Hamiltonian, retained q identity and resonant-only zero-mode floor",
+      "evidence": "audit_reference.py"
+    },
+    {
+      "status": "DERIVED",
+      "scope": "Finite256-mode B16 reference q(16)<3/262144 by directed interval",
+      "evidence": "results/REFERENCE_INTERVAL.json"
+    },
+    {
+      "status": "DERIVED",
+      "scope": "Continuum comparison<=min(1,tB/M); too loose to transfer target pass",
+      "evidence": "results/REFERENCE_AUDIT.json"
+    },
+    {
+      "status": "DERIVED",
+      "scope": "Normalized decay identity gamma=8 terminal weight; no zero-decay eigenmodes for positive path couplings",
+      "evidence": "results/MODE_AUDIT.json"
+    },
+    {
+      "status": "SIMULATED",
+      "scope": "12 finite grids and36 time evaluations; frozen modal diagnostics including cross terms",
+      "evidence": [
+        "results/REFERENCE_AUDIT.json",
+        "results/MODE_AUDIT.json"
+      ]
+    },
+    {
+      "status": "NO-GO",
+      "scope": "Only the three degenerate-frequency bright-mode controls: all-time q floors25/128,2209/8192,625/2048",
+      "evidence": "results/REFERENCE_AUDIT.json"
+    },
+    {
+      "status": "OPEN",
+      "scope": "Continuum target certificate, finite temperature, old Ohmic relation, full-word microscopic accuracy, permanent hold, refresh, physical two-local compilation and hardware"
+    }
+  ]
+}

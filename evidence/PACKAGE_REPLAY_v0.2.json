@@ -1,0 +1,44 @@
+{
+  "mqm_k4_syndrome_audit.py": {
+    "returncode": 0,
+    "matches_supplied_output": null,
+    "sha256": "eb723a7cd5d0dd48d959784cc294f64b3402fb920fc9d2e9039feaec864e8858"
+  },
+  "five_qubit_syndrome.py": {
+    "returncode": 0,
+    "matches_supplied_output": null,
+    "sha256": "ce98b8617e34eea40645907bed9c29eb48022ce38b59e4fb8ebb8ea3de5f5c9b"
+  },
+  "mqm_k4_8q_gauge_parity_surgery_audit.py": {
+    "returncode": 0,
+    "matches_supplied_output": true,
+    "sha256": "9be5c3c31917f398600e66532f675267b3fbdfa30f53b077765dd06034d1a0ac"
+  },
+  "mqm_k4_8q_gauge_parity_surgery_distance.py": {
+    "returncode": 0,
+    "matches_supplied_output": true,
+    "sha256": "4c96eb79eab2dd49edc44a2efcdf08870a000ff2c50c45dd8d5982ffe7efe878"
+  },
+  "mqm_k4_8q_parity_surgery_single_fault_audit_with_intermediate_syndrome.py": {
+    "returncode": 0,
+    "matches_supplied_output": true,
+    "sha256": "29d8e1fb93646d94f0596c212a65d3435ba22f2553a5ff02694d0e45893274dc"
+  },
+  "readout_checksums": {
+    "files": 13,
+    "mismatches": []
+  },
+  "inner_readout_csv": {
+    "pair_count": 28,
+    "minimum": 0.8660254037844386,
+    "agrees_sqrt3_over_2": true,
+    "fusion_consistent": true
+  },
+  "limitations": [
+    "Same-environment replay is not non-constructor adversarial review or independent replication.",
+    "Missing mqm_k4_8q_weight3_flag_search.py blocks specialized-measurement replay.",
+    "Missing MQM_K4_8Q_FAULT_TOLERANT_GAUGE_MEASUREMENT_SCHEDULE_v0.2_LOCK.json blocks 8Q memory replay.",
+    "200000-trial raw outputs and readout coordinate-generation script are absent.",
+    "Parity audit uses exact algebraic intermediate syndrome receipts, not noisy intermediate syndrome-extraction circuits."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "finite_response": "SIMULATED full covariance-weighted Q2 columns, M32/64/128/192, not continuum certificate",
+  "M192_half_trace_response": 2.2505874657197752e-08,
+  "dense_control": "SIMULATED independent implementation route; not independent reviewer",
+  "Chebyshev_transfer": "DERIVED conditional at L1536, EXACT rational comparison <2^-229",
+  "covariance_transfer": "DERIVED ideal stationary Gauss-node kernel at M192, EXACT rational response allowance <2^-57",
+  "primary_beta_5_16_target": "OPEN",
+  "vacuum_transfer_at_192": "OPEN",
+  "directed_numerical_error": "OPEN",
+  "independent_review": "OPEN same-agent audit only",
+  "physical_promotion": 0
+}

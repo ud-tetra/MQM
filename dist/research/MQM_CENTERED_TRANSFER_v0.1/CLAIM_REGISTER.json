@@ -1,0 +1,48 @@
+{
+  "version": "0.1",
+  "claims": [
+    {
+      "id": "CENTERED-VAC192",
+      "status": "DERIVED",
+      "claim": "Frozen fixed-launch second-order vacuum-transfer debit at ideal M192 <2^-30",
+      "scope": "Same continuum thermal covariance, Q<=2, T16, B16; proof embedding centered at8",
+      "evidence": "manuscript and results/EXACT_AUDIT.json",
+      "independent_review": "OPEN"
+    },
+    {
+      "id": "CAP-IDENTITY",
+      "status": "EXACT",
+      "claim": "7/768=(8-1)/(4*24*8)",
+      "scope": "Arithmetic only"
+    },
+    {
+      "id": "CAP-DIAGONAL",
+      "status": "NO-GO",
+      "claim": "Rank7 invariant diagonal projector impossible",
+      "scope": "Left-regular S4 on declared permutation labels, bit labels unchanged"
+    },
+    {
+      "id": "CAP-COHERENT",
+      "status": "EXACT",
+      "claim": "Coherent rank7 projector exists with mixed-state expectation7/192",
+      "scope": "Chosen hypothetical dilation and selector; no source allocation law"
+    },
+    {
+      "id": "NUM-CONTROLS",
+      "status": "SIMULATED",
+      "claim": "Eight supplementary embedding controls pass",
+      "scope": "M8/16 binary64, not directed certification"
+    },
+    {
+      "id": "THERMAL-TARGET",
+      "status": "OPEN",
+      "claim": "Primary2^-16 thermal target requires directed finite response certificate"
+    },
+    {
+      "id": "CAP-LAW",
+      "status": "OPEN",
+      "claim": "Reference selection, admissibility factor4, source dynamics and latch map unresolved"
+    }
+  ],
+  "physical_promotion": 0
+}

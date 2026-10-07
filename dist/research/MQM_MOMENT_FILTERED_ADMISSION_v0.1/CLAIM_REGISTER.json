@@ -1,0 +1,62 @@
+{
+  "real_kernel_symmetry_decomposition": {
+    "status": "EXACT / AUTO_LOCK SCOPED",
+    "first_moment_dimension": 55,
+    "both_charge_conserving_intersection": 20,
+    "charge_breaking_complement": 35,
+    "Nz_conserving_intersection": 45,
+    "Nz_changing_complement": 10,
+    "scope": "62-real-coefficient ansatz, exact first-moment kernel, specified six-qubit planar ten-pair graph; not all Hermitian generators."
+  },
+  "terminal_activation": {
+    "status": "DERIVED NECESSARY",
+    "condition": "[H,N_z]!=0",
+    "sufficient": false
+  },
+  "frozen_candidate_exclusions": {
+    "status": "EXACT / AUTO_LOCK SCOPED",
+    "witness": "second-moment expectation conserved by static H",
+    "batch_A_strict_floor": "1/512",
+    "batch_B_strict_floor": "1/1024",
+    "scope": "These two exact binary-rational frozen generators, every time and uniform norm rescaling; not all searched coefficients."
+  },
+  "expanded_planar_filter": {
+    "status": "EXACT / AUTO_LOCK SCOPED",
+    "all_Hermitian_dimension_including_identity": 109,
+    "first_moment_rank": 11,
+    "kernel_without_identity": 97,
+    "added_qubits": 0,
+    "added_allowed_pairs": 0,
+    "new_independent_coupling_components": true,
+    "optimization_run": false,
+    "sufficient": false
+  },
+  "search": {
+    "status": "NUMERICAL EXPLORATION",
+    "starts": 8,
+    "basis_parameters": 55,
+    "first_moment": "exact parameterization",
+    "second_moment": "soft penalty in second batch only",
+    "optimizer_global_certificate": false
+  },
+  "six_qubit_single_excitation_admission": "OPEN",
+  "static_full_episode": "OPEN",
+  "thermodynamic_refresh": "OPEN",
+  "physical_promotion": 0,
+  "independent_review": "pending",
+  "theorem_level_novelty_comparison": "pending",
+  "verification": {
+    "exact_kernel_checks": 40,
+    "expanded_kernel_checks": 9,
+    "candidate_audit_checks": [
+      9,
+      9
+    ],
+    "total_exact_checks": 67,
+    "finite_fits": 8,
+    "derivative_check_max_errors": [
+      3.9225230494266405e-09,
+      3.9225230494266405e-09
+    ]
+  }
+}

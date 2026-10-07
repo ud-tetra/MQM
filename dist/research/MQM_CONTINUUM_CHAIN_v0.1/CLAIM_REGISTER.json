@@ -1,0 +1,40 @@
+{
+  "version": "0.1",
+  "physical_promotion": 0,
+  "claims": [
+    {
+      "status": "EXACT",
+      "lock": "AUTO_LOCK scoped mathematical specification",
+      "scope": "Legendre coordinates for declared flat band; G^2=128/pi; b_n^2=256n^2/(4n^2-1)",
+      "evidence": [
+        "audit_chain.py",
+        "results/CHAIN_AUDIT.json"
+      ]
+    },
+    {
+      "status": "DERIVED",
+      "lock": "AUTO_LOCK conditional vacuum target",
+      "scope": "q_infinity(16)<3/262144+2^-128<2^-16 with768bath coordinates; original reservoir traced, arbitrary identity spectators retained",
+      "evidence": "results/CONTINUUM_CERTIFICATE.json"
+    },
+    {
+      "status": "DERIVED",
+      "scope": "Cut-edge propagation allowance by bounded-Hermitian Chebyshev expansion, Poisson Bessel bound and Duhamel; fixed launch only",
+      "evidence": "results/CHAIN_AUDIT.json"
+    },
+    {
+      "status": "SIMULATED",
+      "scope": "L64 control and L768 diagnostics; interval result independent of float pass",
+      "evidence": "results/CHAIN_AUDIT.json"
+    },
+    {
+      "status": "DERIVED",
+      "scope": "Thermal covariance generally non-diagonal in Legendre basis; occupation bound1/(exp15-1)",
+      "evidence": "manuscript/MQM_CONTINUUM_CHAIN_IEEE_A4_v0.1.tex"
+    },
+    {
+      "status": "OPEN",
+      "scope": "finite-temperature channel, thermal Ohmic family, whole13-step microscopic channel, permanent hold, refresh, admission, physical layout, hardware, independent review and advantage"
+    }
+  ]
+}

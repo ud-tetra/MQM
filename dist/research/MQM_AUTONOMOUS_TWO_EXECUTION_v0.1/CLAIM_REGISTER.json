@@ -1,0 +1,52 @@
+{
+  "claims": [
+    {
+      "id": "AQ1",
+      "claim": "Compiled static finite episode and projective reversal",
+      "scope": "Prepared compiled Hamiltonian on declared finite logical domain",
+      "novelty": "Established history/perfect-transfer ingredients; application derivation"
+    },
+    {
+      "id": "AQ2",
+      "claim": "Exact complete channel error sqrt(2p-p^2)",
+      "scope": "Final exhaustion flag; pure fixed bank; specified comparison clock/body target",
+      "novelty": "New derivation in this record; external priority assessment pending"
+    },
+    {
+      "id": "AQ3",
+      "claim": "Exact reduced channel error p",
+      "scope": "Trace supervising clock; retain full flagged body and spectator",
+      "novelty": "Orthogonal-block derivation; priority assessment pending"
+    },
+    {
+      "id": "AQ4",
+      "claim": "Exact binomial endpoint and necessary/sufficient clock-size criterion",
+      "scope": "Engineered spin clock and declared symmetric window",
+      "novelty": "Family-specific criterion; not universal optimality"
+    },
+    {
+      "id": "AQ5",
+      "claim": "Theta(m+log(1/epsilon)) clock-step scaling",
+      "scope": "Fixed beta=pi/4 spin-padding family; ideal pure-bank model",
+      "novelty": "Matching order within selected family only"
+    },
+    {
+      "id": "AQ6",
+      "claim": "Complete supply + mismatch + exact tail upper bound",
+      "scope": "Same retained legal domain; channel bank term requires uniform preparation norm",
+      "novelty": "Standard perturbation composition with exact family tail"
+    },
+    {
+      "id": "AQ7",
+      "claim": "Latency >= m sqrt(1-epsilon^2)/(2 Jmax)",
+      "scope": "Address-0 nearest-neighbor history chain; final flag and same complete target; bounded edge hopping",
+      "novelty": "Elementary propagation obstruction; not universal computational speed limit"
+    }
+  ],
+  "independent_review": "PENDING",
+  "physical_validation": "NONE",
+  "registry_promotion": "NONE",
+  "global_supervisor_renewal": "OPEN",
+  "cross_family_optimality": "OPEN",
+  "full_novelty_review": "OPEN"
+}

@@ -1,0 +1,9 @@
+# Ideal abstract center measurements only. MPP is not an ancilla-resolved extraction schedule.
+MPP X3*X4*Z5*Z6
+TICK
+MPP Y3*Y5*Z6*Z7
+TICK
+MPP X3*Z4*X6*Z7
+TICK
+MPP X0*X1*X2*X3*Y4*Y5*X7
+TICK

@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MQM branch record",
+  "type": "object",
+  "required": [
+    "id",
+    "n_data",
+    "n_gauge",
+    "n_ancilla",
+    "distance_metric",
+    "error_model",
+    "generators",
+    "logicals",
+    "witnesses",
+    "decoder"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "n_data": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "n_gauge": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "n_ancilla": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "distance_metric": {
+      "type": "object",
+      "required": [
+        "name",
+        "value"
+      ],
+      "properties": {
+        "name": {
+          "enum": [
+            "unrestricted quantum",
+            "dressed subsystem"
+          ]
+        },
+        "value": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "error_model": {
+      "type": "string"
+    },
+    "generators": {
+      "type": "object",
+      "required": [
+        "center",
+        "gauge"
+      ],
+      "properties": {
+        "center": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[IXYZ]+$"
+          }
+        },
+        "gauge": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[IXYZ]+$"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "logicals": {
+      "type": "object",
+      "required": [
+        "X",
+        "Z"
+      ],
+      "properties": {
+        "X": {
+          "type": "string"
+        },
+        "Z": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "witnesses": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "decoder": {
+      "type": "object",
+      "required": [
+        "scope",
+        "lookup",
+        "unrecognized_syndrome"
+      ],
+      "properties": {
+        "scope": {
+          "type": "string"
+        },
+        "lookup": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "unrecognized_syndrome": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

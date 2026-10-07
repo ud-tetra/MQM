@@ -1,0 +1,33 @@
+{
+  "version": "0.1",
+  "physical_promotion": 0,
+  "claims": [
+    {
+      "status": "EXACT",
+      "scope": "Finite resonant exchange energy and excitation commutators; detuned exchange energy nonconservation",
+      "evidence": "results/ENERGY_AUDIT.json"
+    },
+    {
+      "status": "DERIVED",
+      "scope": "Positive Gram bath generators and common full-spectrum ceiling8/3; centered laboratory ceiling200/3",
+      "evidence": [
+        "audit_exchange.py",
+        "audit_clock.py"
+      ]
+    },
+    {
+      "status": "SIMULATED",
+      "scope": "All five frozen exchange-bath filters fail target at port deadline16; best tau4 error2.8378993222730615e-5",
+      "evidence": "results/EXCHANGE_AUDIT.json"
+    },
+    {
+      "status": "INTERVAL VERIFIED",
+      "scope": "Uniform passes, PST16/PST14 fail at common word window1024 +/-1/1024, local cold bath only",
+      "evidence": "results/INTERVAL_AUDIT.json"
+    },
+    {
+      "status": "OPEN",
+      "scope": "Microscopic finite-time bath accuracy, native joint admission, physical2local whole-word compiler, geometry, thermodynamic repeatability, hardware and advantage"
+    }
+  ]
+}

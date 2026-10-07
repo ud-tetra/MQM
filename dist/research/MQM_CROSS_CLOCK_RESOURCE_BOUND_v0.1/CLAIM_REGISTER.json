@@ -1,0 +1,56 @@
+[
+  {
+    "id": "CC1",
+    "result": "Exact complete and reduced state/channel error for arbitrary finite prefix clock, including mixed input",
+    "scope": "Fixed pure bank, fresh final-step E flip, own free comparison clock; all retained registers",
+    "evidence": "Written proof with constructor fixtures",
+    "independent_review": "Pending",
+    "priority": "Not established",
+    "physical_promotion": 0
+  },
+  {
+    "id": "CC2",
+    "result": "Explicit finite-frequency interval suppression lower bound from a recurrence",
+    "scope": "r pure frequencies, f(0)=1, positive-length interval [a,b] with a>0; conservative constants",
+    "evidence": "Written proof with constructor fixtures",
+    "independent_review": "Pending",
+    "priority": "Not established",
+    "physical_promotion": 0
+  },
+  {
+    "id": "CC3",
+    "result": "Cross-design spectral/dimension lower bound, Omega(m+log(1/epsilon)) for fixed window geometry",
+    "scope": "Frequency cost for finite prefix clocks; m+1 cost from explicit primitive history path",
+    "evidence": "Written proof with constructor fixtures",
+    "independent_review": "Pending",
+    "priority": "Not established",
+    "physical_promotion": 0
+  },
+  {
+    "id": "CC4",
+    "result": "Matching cross-design ideal address-dimension order under a fixed common resource/window task",
+    "scope": "Path clocks with no shortcuts, legal-sector resource contract; no qubit, physical-cost or universal optimum",
+    "evidence": "Written proof with constructor fixtures",
+    "independent_review": "Pending",
+    "priority": "Not established",
+    "physical_promotion": 0
+  },
+  {
+    "id": "CC5",
+    "result": "Necessary latency combines path propagation and energy-variance angle limits",
+    "scope": "Static path clocks, fixed max edge and launch variance; standard Mandelstam-Tamm component",
+    "evidence": "Written proof with constructor fixtures",
+    "independent_review": "Pending",
+    "priority": "Not established",
+    "physical_promotion": 0
+  },
+  {
+    "id": "CC6",
+    "result": "Continuous interpolation allowance in incomplete amplitude",
+    "scope": "Exact state samples or certified numerical enclosures needed for a numerical certificate",
+    "evidence": "Written proof with constructor fixtures",
+    "independent_review": "Pending",
+    "priority": "Not established",
+    "physical_promotion": 0
+  }
+]

@@ -1,0 +1,82 @@
+{
+  "kernel": {
+    "status": "EXACT / AUTO_LOCK SCOPED",
+    "Pauli_terms": 108,
+    "first_moment_rank": 11,
+    "real_coordinates": 97,
+    "split": {
+      "real_matrix_entry": 55,
+      "imaginary_matrix_entry": 42
+    },
+    "physical_qubits": 6,
+    "allowed_pairs": 10,
+    "planar": true,
+    "maximum_degree": 4,
+    "resource_charge": "Additional independently tunable Pauli components beyond preceding real ansatz; no additional qubits or allowed pairs in the abstract graph."
+  },
+  "objective_gradient": {
+    "status": "DERIVED analytic formulation; numerical implementation checked",
+    "endpoint": "All four columns, one common phase. Real and imaginary residual stacked.",
+    "derivative": "Complex spectral Frechet derivative with conjugate transposes and continuous sinc divided difference.",
+    "second_moment": "Soft penalty only; exact first-moment parameterization.",
+    "central_difference_columns": 392,
+    "directional_checks": 2,
+    "largest_discrepancy": 6.471879393510349e-09
+  },
+  "search": {
+    "status": "FINITE NUMERICAL EXPLORATION",
+    "starts": 8,
+    "endpoint_only_best_residual": 0.3943084546438886,
+    "penalty_best_residual": 0.32910369230828146,
+    "global_optimizer_certificate": false,
+    "certified_endpoint_at_target": false
+  },
+  "moment_counterexample": {
+    "status": "EXACT / AUTO_LOCK SCOPED",
+    "generator": "H=X_z",
+    "full_norm": 1,
+    "spectrum_width": 2,
+    "all_compressed_moments_match": true,
+    "terminal_mode_activated": true,
+    "native_charges_QA_QO_broken": true,
+    "admission_complete_error": 1,
+    "scope": "This generator preserves native A and O; input01 never reaches its target."
+  },
+  "spectral_alignment": {
+    "status": "DERIVED exact criterion; proof supplied",
+    "criterion": "Every spectral projector must obey exp(-iT lambda) Pi_lambda E = exp(i phi) Pi_lambda W with common phi.",
+    "necessary_orientation": "S=sum_lambda |Tr W^dagger Pi_lambda E|=4",
+    "all_time_channel_floor": "Half diamond >= sqrt(1-(S/4)^2)",
+    "exact_admission_sufficiency": "Projector orientations AND one finite compatible deadline/phase; S=4 alone not sufficient."
+  },
+  "frozen_candidate_spectral_exclusion": {
+    "status": "EXACT ENCLOSED / AUTO_LOCK SCOPED",
+    "candidate_runs": [
+      3,
+      2
+    ],
+    "strict_all_time_half_diamond_floor": "1/8 for each frozen best fit",
+    "witness": "Maximally entangled logical/reference input, reference dimension four",
+    "certification": "Exact dyadic Gram, eigen residual, polar-normalization and projector bounds; integer square-root enclosures.",
+    "scope": "The two named exact binary-rational models only; every deadline, scalar centering and uniform rescaling. Not the whole planar family."
+  },
+  "verification": {
+    "total_exact_checks": 198,
+    "counts_by_receipt": {
+      "basis": 18,
+      "moment_audit_A": 9,
+      "moment_audit_B": 9,
+      "counterexample": 16,
+      "spectral_A": 73,
+      "spectral_B": 73
+    },
+    "optimization_runs": 8,
+    "gradient_column_checks": 392,
+    "gradient_directional_checks": 2
+  },
+  "six_qubit_joint_admission": "OPEN",
+  "full_static_episode": "OPEN",
+  "physical_promotion": 0,
+  "independent_review": "pending",
+  "theorem_level_novelty_comparison": "pending"
+}

@@ -1,0 +1,30 @@
+{
+  "version": "0.1",
+  "physical_promotion": 0,
+  "DERIVED": [
+    "arbitrary-detuning transfer amplitude under declared continuum model",
+    "thermal truncation tail bound"
+  ],
+  "INTERVAL_VERIFIED": [
+    "fixed-coefficient energy-only and gate-only radii 1/2000 eV",
+    "joint independent energy/gate rectangle radius 1/4000 eV"
+  ],
+  "NUMERICALLY_VERIFIED": [
+    "3285 scoped binary64 checks",
+    "mode amplitude and flux checks",
+    "finite-temperature conductance averages"
+  ],
+  "OPEN": [
+    "physical graphene boundary realization",
+    "occupancy-transmission-reservoir transduction",
+    "native joint admission",
+    "physical 2-local dissipative compiler",
+    "2^-16 complete quantum-channel guarantee"
+  ],
+  "excluded": [
+    "hardware validation",
+    "quantum advantage",
+    "material capacity law",
+    "fault tolerance"
+  ]
+}

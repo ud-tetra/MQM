@@ -1,0 +1,37 @@
+{
+  "mqm_core_x_fault_simulator_v0_1.py": {
+    "package": "UD_OMEGA0_PHASE45_MQM_FAULT_PROPAGATION_PACKAGE_v0.1(1).zip",
+    "sha256": "1035b1b7a0b6fdeb72ae6b36b4e9bd42109a3bbb0d90e587cb7d4f7fff9e3ab2",
+    "modifications": "NONE"
+  },
+  "mqm_core_x_fail_closed_controller_v0_1.py": {
+    "package": "UD_OMEGA0_PHASE46_MQM_FAIL_CLOSED_PACKAGE_v0.1(1).zip",
+    "sha256": "9ac2ab6310274ebea84f601dabada805be1f1bdbefbcb04d53c810e80aae7a77",
+    "modifications": "NONE"
+  },
+  "mqm_core_x5_fault_simulator_v0_1.py": {
+    "package": "UD_OMEGA0_PHASE48_MQM_X5_FAULT_PACKAGE_v0.1(1).zip",
+    "sha256": "8a332bdd1b41d28e03269deeb88d19ecc04241ed8669572ebc88fab4c57e335d",
+    "modifications": "NONE"
+  },
+  "mqm_core_x5_recovery_controller_v0_1.py": {
+    "package": "UD_OMEGA0_PHASE48_MQM_X5_FAULT_PACKAGE_v0.1(1).zip",
+    "sha256": "2eaebfaf507b5aa93d9b5c0961c24286d38411c9af6b5305f7effeaa5a0a57c2",
+    "modifications": "NONE"
+  },
+  "mqm_core_x5_pauli_hook_audit_v0_1.py": {
+    "package": "UD_OMEGA0_PHASE48_MQM_X5_FAULT_PACKAGE_v0.1(1).zip",
+    "sha256": "94ac4b1b3a1276b1c3fb52de2797eb42c2e0d1475f5d1d18a109f425b25a44d0",
+    "modifications": "NONE"
+  },
+  "mqm_core_x5_central_extension_v0_1.py": {
+    "package": "UD_OMEGA0_PHASE47_MQM_RESOURCE_DECISION_PACKAGE_v0.1(1).zip",
+    "sha256": "9df927bd8d05f06b5821f418133af36f6f76ff951b1581266536247c3cc05e68",
+    "modifications": "NONE"
+  },
+  "mqm_x5_neutral_atom_dynamic_3d_motion_v0_1.py": {
+    "package": "UD_OMEGA0_PHASE52_PARALLEL_HARDWARE_PACKAGE_v0.1(1).zip",
+    "sha256": "24f4d1498644e4342fbc66e931fa81c542796dcca31edfab142233db1af4d5e2",
+    "modifications": "NONE"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "release": "0.5",
+  "date": "2026-09-18",
+  "static_pages": 6,
+  "routes_assets_fragments": "PASS",
+  "semantic_structure": "PASS",
+  "public_memory_numbers": "REMOVED",
+  "industrial_names": "ABSENT",
+  "origin_isolated": "PASS",
+  "public_release_zips": 1,
+  "clean_extraction": {
+    "manifest_entries": 44,
+    "canonical_replays": 2,
+    "status": "PASS"
+  },
+  "branch_record_consistency": "PASS",
+  "stim_circuits_parsed": 21,
+  "track_a_inventory": "20 logical draft circuits; ideal expectations checked during creation; experimental acceptance not frozen",
+  "lemma_pdf": "one A4 page; rendered and visually inspected",
+  "independent_replication": false,
+  "hardware_executed": false,
+  "physical_promotion": 0,
+  "browser_visual_qa": "NOT_RUN: plain static project has no compatible supervised preview",
+  "custom_hostname": "prepared; DNS and TLS activation pending"
+}

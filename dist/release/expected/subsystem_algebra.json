@@ -1,0 +1,39 @@
+{
+  "release": "0.5",
+  "stim_version": "1.15.0",
+  "n_data": 8,
+  "n_logical": 1,
+  "n_gauge": 3,
+  "gauge_binary_rank": 10,
+  "center_binary_rank": 4,
+  "dressed_distance": 3,
+  "witness": "IIIIIXXZ",
+  "nontrivial_dressed_logical_counts_by_weight": {
+    "3": 66,
+    "5": 804,
+    "4": 234,
+    "6": 900,
+    "7": 666,
+    "8": 402
+  },
+  "single_data_Pauli_decoder_cases": 24,
+  "ideal_reference_decoder": {
+    "0000": "IIIIIIII",
+    "0110": "IIIIIIIX",
+    "0111": "IIIIIIIY",
+    "0001": "IIIIIIIZ",
+    "1100": "IIIIIIXI",
+    "1010": "IIIIYIII",
+    "1011": "IIIYIIII",
+    "1101": "IIIIIXII",
+    "1110": "IIIIIIYI",
+    "1000": "IIIIIYII",
+    "1001": "IIIIZIII",
+    "1111": "IIIZIIII",
+    "0010": "IIIIIIZI",
+    "0100": "IIIXIIII",
+    "0101": "IIIIIZII",
+    "0011": "IIIIXIII"
+  },
+  "scope": "Phase-quotiented exact algebra and ideal syndrome lookup only; no noisy extraction or memory experiment."
+}

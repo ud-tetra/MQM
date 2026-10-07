@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Code definitions · MQM</title><meta name="description" content="Generators, resource counts, distance witnesses and scoped decoder definitions for three separate code sketches."><meta name="theme-color" content="#0b151b"><meta property="og:title" content="Code definitions · MQM"><meta property="og:description" content="Generators, resource counts, distance witnesses and scoped decoder definitions for three separate code sketches."><meta property="og:type" content="website"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css"></head><body><a class="skip" href="#main">Skip to content</a><header><div class="header wrap"><a href="/" class="brand">MQM<small>Mayes Quantum Method</small></a><nav aria-label="Main navigation"><a href="/">Overview</a><a href="/research/">Research</a><a href="/tracker/">Tracker</a><a href="/updates/">Updates</a><a href="/codes/" aria-current="page">Codes</a><a href="/replay/">Replay</a><a href="/experiments/">Experiments</a><a href="/compare/">Compare</a></nav></div></header><main id="main" class="wrap"><div class="kicker">Code definitions</div><h1>Resources, operators, and limits.</h1><p class="lead">Notation leads; branch names follow. Data qubits, gauge degrees of freedom, and extraction ancillas are counted separately.</p><div class="table-scroll" role="region" aria-label="Branch resource and distance definitions" tabindex="0"><table><caption>Branch resource and distance definitions</caption><thead><tr><th scope="col">Branch</th><th scope="col">Data</th><th scope="col">Gauge</th><th scope="col">Ancillas</th><th scope="col">Distance</th></tr></thead><tbody><tr><th scope="row">[[4,1,1]] · Core-X</th><td>4</td><td>0</td><td>3 in selected circuit</td><td>Unrestricted quantum: 1</td></tr><tr><th scope="row">5-bit repetition · Core-X5</th><td>5</td><td>0</td><td>4</td><td>Unrestricted quantum: 1</td></tr><tr><th scope="row">Subsystem [[8,1,3]]</th><td>8</td><td>3 within data</td><td>Not fixed; additional</td><td>Dressed subsystem: 3</td></tr></tbody></table></div><p>The source’s four-entry convention is [[n,k,d,r]] = [[8,1,3,3]]. Public notation uses [[8,1,3]] with the three gauge qubits stated explicitly. A four-data + four-ancilla apparatus is a different object from this eight-data code.</p><p><a href="/release/branches.json">Branch records (JSON)</a> · <a href="/release/schema/branch.schema.json">Common branch schema</a></p><section class="section" id="repetition-four"><h2>[[4,1,1]] · Core-X</h2><p>In the computational basis, single-X errors have distinguishable ideal syndromes. ZIII is a weight-one logical error. Raw triple-Z faces act as logical Z: separately measuring them is not equivalent to measuring a safe pair product.</p><h3>Operators</h3><p>Character order follows the branch’s data register; X5 places the center first.</p><pre>Center generators
+ZZII
+ZIZI
+ZIIZ
+
+Logical X: XXXX
+Logical Z: ZIII</pre><details><summary>Decoder definition and lookup</summary><p>Single-X ideal parity lookup in listed generator order; not a complete fault-tolerant controller.</p><pre>{
+  &quot;000&quot;: &quot;IIII&quot;,
+  &quot;111&quot;: &quot;XIII&quot;,
+  &quot;100&quot;: &quot;IXII&quot;,
+  &quot;010&quot;: &quot;IIXI&quot;,
+  &quot;001&quot;: &quot;IIIX&quot;
+}</pre><p>Unrecognized syndrome: ESCALATE; no correction inferred</p></details><h3>One ideal syndrome round</h3><figure class="circuit-figure"><div class="circuit-scroll" role="region" aria-label="Ideal circuit diagram" tabindex="0"><img src="/circuits/core-x.svg" alt="Data q0-q3; ancillas q4-q6. Three safe pair-parity checks; raw triple-Z faces are not measured."></div><figcaption>Data q0-q3; ancillas q4-q6. Three safe pair-parity checks; raw triple-Z faces are not measured. No noise, idle durations or device implementation is modeled. <a href="/circuits/core-x.stim" download>Stim source</a>.</figcaption></figure></section><section class="section" id="repetition-five"><h2>5-bit repetition + 4 ancillas · Core-X5</h2><p>Sixteen clean X patterns of weight at most two decode in the ideal model. For one incoming X and one named X-type extraction fault, 800 labeled cases release 750 zero-X and 50 one-X residuals. A released boundary is correctable within the model; it is not a clean-state certificate.</p><div class="boundary"><p>Thirty weight-two + new-X witnesses produce residual logical XXXXX. General Pauli fault tolerance is not established: the prior 120-case audit found 24 multi-data hooks and 80 phase-bearing outcomes.</p></div><p>Forty simulator fault labels include duplicate operational effects. The replay is deterministic conformance, not a memory benchmark or proof of phase protection.</p><h3>Operators</h3><p>Character order follows the branch’s data register; X5 places the center first.</p><pre>Center generators
+ZZIII
+ZIZII
+ZIIZI
+ZIIIZ
+
+Logical X: XXXXX
+Logical Z: ZIIII</pre><details><summary>Decoder definition and lookup</summary><p>Minimum-weight X lookup; stable-syndrome controller resets consensus after corrections, then verifies.</p><pre>{
+  &quot;0000&quot;: &quot;IIIII&quot;,
+  &quot;0001&quot;: &quot;IIIIX&quot;,
+  &quot;0010&quot;: &quot;IIIXI&quot;,
+  &quot;0011&quot;: &quot;IIIXX&quot;,
+  &quot;0100&quot;: &quot;IIXII&quot;,
+  &quot;0101&quot;: &quot;IIXIX&quot;,
+  &quot;0110&quot;: &quot;IIXXI&quot;,
+  &quot;0111&quot;: &quot;XXIII&quot;,
+  &quot;1000&quot;: &quot;IXIII&quot;,
+  &quot;1001&quot;: &quot;IXIIX&quot;,
+  &quot;1010&quot;: &quot;IXIXI&quot;,
+  &quot;1011&quot;: &quot;XIXII&quot;,
+  &quot;1100&quot;: &quot;IXXII&quot;,
+  &quot;1101&quot;: &quot;XIIXI&quot;,
+  &quot;1110&quot;: &quot;XIIIX&quot;,
+  &quot;1111&quot;: &quot;XIIII&quot;
+}</pre><p>Unrecognized syndrome: INVALID; reset consensus, then resource-capped timeout</p></details><h3>One ideal syndrome round</h3><figure class="circuit-figure"><div class="circuit-scroll" role="region" aria-label="Ideal circuit diagram" tabindex="0"><img src="/circuits/core-x5.svg" alt="Data q0-q4, with center q0; ancillas q5-q8. Four pair-parity checks in one ideal round; no adaptive controller is shown."></div><figcaption>Data q0-q4, with center q0; ancillas q5-q8. Four pair-parity checks in one ideal round; no adaptive controller is shown. No noise, idle durations or device implementation is modeled. <a href="/circuits/core-x5.stim" download>Stim source</a>.</figcaption></figure></section><section class="section" id="subsystem"><h2>Subsystem [[8,1,3]] · three gauge qubits</h2><div class="boundary"><p><strong>Memory table withdrawn:</strong> schedule/recovery JSON and full raw-trial outputs are absent. No replayable memory-performance result is published.</p></div><p>The Stim notebook enumerates phase-quotiented Pauli labels, verifies center rank four and gauge rank ten, and finds no dressed logical of weight one or two. The weight-three witness is IIIIIXXZ. This establishes code algebra, not noisy extraction or composition.</p><p>The new ideal-center reference decoder corrects all 24 single-data Pauli errors with ideal syndrome information. It is not the missing historical flag decoder or a restoration of the memory simulation.</p><h3>Operators</h3><p>Character order follows the branch’s data register; X5 places the center first.</p><pre>Center generators
+IIIXXZZI
+IIIYIYZZ
+IIIXZIXZ
+XXXXYYIX
+
+Logical X: IIIYZIZI
+Logical Z: IIIXIZIZ</pre><pre>Additional gauge generators
+XIIIIIII
+ZIIIIIIZ
+IXIIIIII
+IZIIIIIZ
+IIXIIIII
+IIZIIIIZ</pre><details><summary>Decoder definition and lookup</summary><p>New ideal-center minimum-weight Pauli reference lookup; equal-weight ties lexicographic in IXYZ strings. Not the unavailable historical flag decoder.</p><pre>{
+  &quot;0000&quot;: &quot;IIIIIIII&quot;,
+  &quot;0110&quot;: &quot;IIIIIIIX&quot;,
+  &quot;0111&quot;: &quot;IIIIIIIY&quot;,
+  &quot;0001&quot;: &quot;IIIIIIIZ&quot;,
+  &quot;1100&quot;: &quot;IIIIIIXI&quot;,
+  &quot;1010&quot;: &quot;IIIIYIII&quot;,
+  &quot;1011&quot;: &quot;IIIYIIII&quot;,
+  &quot;1101&quot;: &quot;IIIIIXII&quot;,
+  &quot;1110&quot;: &quot;IIIIIIYI&quot;,
+  &quot;1000&quot;: &quot;IIIIIYII&quot;,
+  &quot;1001&quot;: &quot;IIIIZIII&quot;,
+  &quot;1111&quot;: &quot;IIIZIIII&quot;,
+  &quot;0010&quot;: &quot;IIIIIIZI&quot;,
+  &quot;0100&quot;: &quot;IIIXIIII&quot;,
+  &quot;0101&quot;: &quot;IIIIIZII&quot;,
+  &quot;0011&quot;: &quot;IIIIXIII&quot;
+}</pre><p>Unrecognized syndrome: INVALID; do not infer a noisy recovery</p></details><h3>One ideal syndrome round</h3><figure class="circuit-figure"><div class="circuit-scroll" role="region" aria-label="Ideal circuit diagram" tabindex="0"><img src="/circuits/subsystem.svg" alt="Data q0-q7. Ideal MPP measurements of four commuting center generators. This abstract figure has no extraction ancillas and is not the missing gauge-measurement schedule."></div><figcaption>Data q0-q7. Ideal MPP measurements of four commuting center generators. This abstract figure has no extraction ancillas and is not the missing gauge-measurement schedule. No noise, idle durations or device implementation is modeled. <a href="/circuits/subsystem.stim" download>Stim source</a>.</figcaption></figure><h3>Restricted entangler search</h3><p>Source-reported enumeration; not rerun in this release. No gauge-preserving logical entangler was found in the listed families.</p><div class="table-scroll" role="region" aria-label="Two-block pairwise Clifford search families" tabindex="0"><table><caption>Two-block pairwise Clifford search families</caption><thead><tr><th scope="col">Family</th><th scope="col">Maps tested</th><th scope="col">Gauge-preserving</th><th scope="col">Entangling</th></tr></thead><tbody><tr><th scope="row">Identical two-qubit symplectic Clifford map on all eight corresponding pairs</th><td>720</td><td>2</td><td>0</td></tr><tr><th scope="row">Pair-specific {I, CNOT A-to-B, CNOT B-to-A, CZ}</th><td>65,536</td><td>1</td><td>0</td></tr><tr><th scope="row">Same pair-specific alphabet, plus SWAP</th><td>390,625</td><td>2</td><td>0</td></tr></tbody></table></div><p>These counts do not exclude arbitrary circuits, non-Clifford gates, ancilla-assisted methods, or temporary-gauge surgery. A complete noisy logical CNOT remains unestablished. <a href="/release/docs/ENTANGLER_LEMMA.pdf">Conditional lemma and evidence boundary</a>.</p></section><section class="section"><h2>Related QEC foundations</h2><p>These references supply standard formalism and comparison context. They do not validate MQM or constitute a performance comparison.</p><ul><li><a href="https://arxiv.org/abs/quant-ph/9705052">Gottesman — Stabilizer Codes and Quantum Error Correction</a></li><li><a href="https://arxiv.org/abs/quant-ph/0508131">Poulin — Stabilizer Formalism for Operator Quantum Error Correction</a></li><li><a href="https://arxiv.org/abs/quant-ph/0506023">Bacon — Operator Quantum Error Correcting Subsystems for Self-Correcting Quantum Memories</a></li><li><a href="https://arxiv.org/abs/1208.0928">Fowler et al. — Surface codes: Towards practical large-scale quantum computation</a></li><li><a href="https://arxiv.org/abs/1808.02892">Litinski — A Game of Surface Codes</a></li></ul></section></main><footer class="footer wrap"><div><p>Benjamin Walker Mayes</p><p>Code release0.5 · Architecture record7 October2026</p></div><div><a href="/origin/">Research origin</a> · <a href="/release/CITATION.cff" download>Cite this release</a><p>No hardware result. No claimed advantage.</p></div></footer></body></html>

@@ -1,0 +1,21 @@
+# Same-agent audit, v0.1
+
+## Directed parameters
+All192 Legendre roots lie in disjoint sign-changing brackets of radius2^-44 around the stored node. The degree192 polynomial has exactly192 simple roots on(-1,1). Interval evaluation at bracket endpoints and node centers uses directed Decimal arithmetic at200 digits. P192'' is globally bounded by(191*192*193*194)/8 on[-1,1]; this encloses derivative variation without unstable interval recurrence across a root bracket. Weight=2/[(1-x²)P192'(x)²]. Machin arctangent alternating rational bounds enclose pi; square roots and exponentials use correctly rounded Decimal results expanded by next_minus/next_plus. The coupling and occupation errors are propagated as intervals.
+
+An initial implementation used ambient28-digit context in some negations. Its output is preserved and is NOT a certificate. The repaired implementation sets200-digit context and exact copy_negate; an amendment records this change before final promotion.
+
+## Taylor and roundoff proof
+Each row has at most196 nonzeros. For real CSR products, multiplication, accumulation and division by8k have normwise perturbation at most gamma|H| with gamma=2^-43 (1024 binary64 unit roundoffs). This covers ordinary sequential or pairwise binary64 accumulation. ||abs(H)||2<64 follows from bath diagonals<=32, bounded native couplings and collective exchange. Rounded assembly is charged separately.
+
+One step uses128th-of-T duration1/8 and polynomial degree48. With ||H||/8<=8, exact tail is bounded by8^49/[49!(1-8/50)]. Term recurrences have norm perturbation at most2k gamma times8^k/k! (48gamma<1/2). Summing gives<=16gamma exp8. The48 partial-sum additions and divisions fit the conservative remaining16gamma exp8 allowance. Since exp8<3^8, the per-step error bound is32gamma*3^8 plus tail. Tiny subnormal intermediates are covered by2^-800 per step. Exact step evolution is unitary, so128 steps amplify by at most(1+s)^128;128s<10^-5 makes2*128s a valid global bound, below2^-17.
+
+Duhamel charges16 times the directed Hamiltonian error to each normalized launch. For vector error e, half trace dyad error<=e+e²/2. The hot one-photon mixture and occupation-trace-weighted cold launch together contribute at mosttr(N)*(2e+e²). Occupation replacement costs sum|delta n|. Readout reductions include at most192² products per entry and complex contraction operations; a bound of2^-31 on reduction relative error, up to128 charge factors and tr(N)<2^-16 yields a debit below2^-36. This deliberately exceeds the standard operation-count error allowance. No eigensolver accuracy is assumed: half the sum of absolute real and imaginary output entries bounds half trace norm directly.
+
+These are conditional software arithmetic bounds, not processor-specific directed rounding of every stored amplitude. The assumptions and operation counts must be independently reviewed before external theorem promotion.
+
+## Centered-transfer audit
+Both covariance orientations contain four dyads. Each chronological ket/bra trajectory has at most two local insertions. Because normal covariance pairs one raising with one lowering insertion, total charge never exceeds2 for the source charge1 launch. Nonnegative propagation segments partition[0,T], preventing repeated full-T charges. Bath-only interaction-picture changes commute with local insertions; final bath unitaries disappear under the bath trace. The factor is8 dyads times2 vector-error factors times triangleT²/2 times half trace normalization =4T². These checks preserve fixed-launch scope; they do not establish arbitrary-input diamond error or permanent hold.
+
+## Capacity audit
+The new oriented spectral carrier is a proposal constructed after exposure to7/768 and the known spectrum. On the15-coordinate tetrahedral carrier A=D-D^T, A³=-4A, P0=I+A²/4 has rank1. For H=-iA, Pplus=(-A²-2iA)/8 has rank7 and is orthogonal toP0. P0+Pplus has rank8 and is invariant under all24 oriented S4 actions. The unique zero-mode reference is therefore forced within this new spectral construction. Choosing a uniformly mixed state yields active weight7/8; choosing that state is an additional assumption. Identification with Theta, permutation allocation factor24, admissibility factor4, and latch map remain OPEN. Neither rank count derives7/768 as a physical coefficient.

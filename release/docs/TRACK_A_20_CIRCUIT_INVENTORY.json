@@ -1,0 +1,327 @@
+{
+  "release": "0.5",
+  "inventory_status": "version-frozen inventory; experimental protocol NOT frozen",
+  "execution_status": "not executed",
+  "circuits": [
+    {
+      "id": "S00",
+      "input_X": [],
+      "type": "fault-free X-pattern syndrome check",
+      "expected_ideal_record": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "S01",
+      "input_X": [
+        0
+      ],
+      "type": "fault-free X-pattern syndrome check",
+      "expected_ideal_record": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "S02",
+      "input_X": [
+        1
+      ],
+      "type": "fault-free X-pattern syndrome check",
+      "expected_ideal_record": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "S03",
+      "input_X": [
+        2
+      ],
+      "type": "fault-free X-pattern syndrome check",
+      "expected_ideal_record": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "S04",
+      "input_X": [
+        3
+      ],
+      "type": "fault-free X-pattern syndrome check",
+      "expected_ideal_record": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "S05",
+      "input_X": [
+        4
+      ],
+      "type": "fault-free X-pattern syndrome check",
+      "expected_ideal_record": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "S06",
+      "input_X": [
+        0,
+        1
+      ],
+      "type": "fault-free X-pattern syndrome check",
+      "expected_ideal_record": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "S07",
+      "input_X": [
+        0,
+        2
+      ],
+      "type": "fault-free X-pattern syndrome check",
+      "expected_ideal_record": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "S08",
+      "input_X": [
+        0,
+        3
+      ],
+      "type": "fault-free X-pattern syndrome check",
+      "expected_ideal_record": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "S09",
+      "input_X": [
+        0,
+        4
+      ],
+      "type": "fault-free X-pattern syndrome check",
+      "expected_ideal_record": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "S10",
+      "input_X": [
+        1,
+        2
+      ],
+      "type": "fault-free X-pattern syndrome check",
+      "expected_ideal_record": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "S11",
+      "input_X": [
+        1,
+        3
+      ],
+      "type": "fault-free X-pattern syndrome check",
+      "expected_ideal_record": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "S12",
+      "input_X": [
+        1,
+        4
+      ],
+      "type": "fault-free X-pattern syndrome check",
+      "expected_ideal_record": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "S13",
+      "input_X": [
+        2,
+        3
+      ],
+      "type": "fault-free X-pattern syndrome check",
+      "expected_ideal_record": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "S14",
+      "input_X": [
+        2,
+        4
+      ],
+      "type": "fault-free X-pattern syndrome check",
+      "expected_ideal_record": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "S15",
+      "input_X": [
+        3,
+        4
+      ],
+      "type": "fault-free X-pattern syndrome check",
+      "expected_ideal_record": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "C00",
+      "type": "coherence baseline",
+      "ideal_check": "even X parity",
+      "status": "requires calibrated timing, mapping, acceptance and lab review"
+    },
+    {
+      "id": "C01",
+      "type": "ancilla measurement/reset coherence control",
+      "ideal_check": "even X parity",
+      "status": "requires calibrated timing, mapping, acceptance and lab review"
+    },
+    {
+      "id": "C02",
+      "type": "zero-state population control",
+      "ideal_check": "00000",
+      "status": "requires calibrated timing, mapping, acceptance and lab review"
+    },
+    {
+      "id": "C03",
+      "type": "one-state population control",
+      "ideal_check": "11111",
+      "status": "requires calibrated timing, mapping, acceptance and lab review"
+    }
+  ]
+}

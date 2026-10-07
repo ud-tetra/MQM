@@ -1,0 +1,5 @@
+Sp4 size 720
+gauge-preserving identical transversal 2q Cliffords 2
+logical actions 2 entangling matrices 0
+act (4, 8, 1, 2) count 1 ent False
+act (1, 2, 4, 8) count 1 ent False

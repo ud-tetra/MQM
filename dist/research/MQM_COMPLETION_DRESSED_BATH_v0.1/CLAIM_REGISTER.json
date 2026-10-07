@@ -1,0 +1,42 @@
+{
+  "version": "0.1",
+  "physical_promotion": 0,
+  "EXACT": [
+    "static native terminal-marker Hamiltonian",
+    "admitted sector capture carries flag1",
+    "blocked launch sector cannot capture",
+    "full interaction characteristic polynomial",
+    "displayed binary encoding has nonzero weight3 marker coefficient"
+  ],
+  "INTERVAL_VERIFIED": [
+    "original local-bath marked-port retained target below2^-16 throughout original readout window"
+  ],
+  "DERIVED": [
+    "local reverse-jump range r<=2^-24 sufficient with bound26625/2^31",
+    "Ohmic spectral construction conditional on Born-Markov/secular and omitted compensated Lamb shift"
+  ],
+  "SIMULATED": [
+    "52 binary64 bath/resource/state checks",
+    "restricted Gibbs target error",
+    "weak dressed-rate case first passes among frozen samples at2^18"
+  ],
+  "FAILED_DIAGNOSTIC": [
+    "fast dressed secular replay ratio15.165>1/10, regardless of its numerically passing target"
+  ],
+  "OPEN": [
+    "semantic frontend port composition",
+    "native joint admission",
+    "complete qubit2-local compiler",
+    "bath approximation error and continuum reference",
+    "Lamb shift calibration",
+    "material device and temperature calibration",
+    "hardware validation"
+  ],
+  "not_promoted": [
+    "universal local-master-equation falsification",
+    "minimum latency",
+    "weak-coupling error theorem",
+    "physical capacity law",
+    "quantum advantage"
+  ]
+}

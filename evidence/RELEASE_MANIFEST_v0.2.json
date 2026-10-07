@@ -1,0 +1,23 @@
+{
+  "release": "MQM_PUBLIC_TECHNICAL_RELEASE_v0.2",
+  "previous_release": "MQM_PUBLIC_TECHNICAL_RELEASE_v0.1",
+  "physical_promotion": 0,
+  "sha256": {
+    "dist/MQM_PUBLIC_EVIDENCE_UPDATE_v0.2.md": "827262c2e131705fc40625a82d22328365ebc3851e365691a61606c6d5c91cfc",
+    "dist/index.html": "6386ad0f1e88d303adfa652b6d0a869cbabf2920326682ef0851fb52e9e38ba9",
+    "dist/styles.css": "9d507e1d0fd772412afd97d7004e33273a561f86979c7b43fd82bb6f64c8d721"
+  },
+  "source_zip_sha256": {
+    "UD_Tetra_MQM_G0_Audit_Package_v0.1(1).zip": "cd1e20d7dfa838bb1829d7ce99a853ef98d344744fffc1119c27a93265397bbc",
+    "MQM_TETRAHEDRAL_MULTI_VIEW_READOUT_GEOMETRY_GATE_v0.1(1).zip": "969bcaf27e4adb8aa801a8c4ceee897945d30b59fc9c78aa3ce93c2629fcfff2",
+    "MQM_K4_8Q_ENTANGLING_AND_PSEUDOTHRESHOLD_PACKAGE_v0.1(1).zip": "da6703c9b619e38f59a4a3a819562fe46d923cd0fbeed4422239aae2c8c04ea7"
+  },
+  "validation": {
+    "links_assets_anchor_ids": "PASS",
+    "8Q_algebra": "PASS independent implementation in same session, not independent replication",
+    "source_parity_algebra_distance_fault_replay": "PASS within supplied model",
+    "readout_package_checksums": "PASS 13/13",
+    "memory_sweep_replay": "BLOCKED missing schedule and full raw-run receipts",
+    "browser_visual_qa": "NOT_RUN static site has no compatible supervised preview"
+  }
+}

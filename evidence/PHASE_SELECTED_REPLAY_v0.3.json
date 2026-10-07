@@ -1,0 +1,84 @@
+{
+  "physical_promotion": 0,
+  "measurement_ready": false,
+  "phase46_clean": {
+    "cases": 60,
+    "outcomes": {
+      "CERTIFIED_CORE_X1_BOUNDARY": 60
+    },
+    "residuals": {
+      "CERTIFIED_CORE_X1_BOUNDARY:weight=0": 52,
+      "CERTIFIED_CORE_X1_BOUNDARY:weight=1": 8
+    },
+    "max_rounds": 6
+  },
+  "phase46_incoming_X": {
+    "cases": 480,
+    "outcomes": {
+      "CERTIFIED_CORE_X1_BOUNDARY": 396,
+      "ESCALATE_OUTSIDE_CORE_X": 84
+    },
+    "residuals": {
+      "CERTIFIED_CORE_X1_BOUNDARY:weight=0": 364,
+      "ESCALATE_OUTSIDE_CORE_X:weight=2": 84,
+      "CERTIFIED_CORE_X1_BOUNDARY:weight=1": 32
+    },
+    "max_rounds": 8
+  },
+  "phase48_clean": {
+    "cases": 80,
+    "outcomes": {
+      "CERTIFIED_CORE_X5_XFT1_BOUNDARY": 80
+    },
+    "residuals": {
+      "CERTIFIED_CORE_X5_XFT1_BOUNDARY:weight=0": 70,
+      "CERTIFIED_CORE_X5_XFT1_BOUNDARY:weight=1": 10
+    },
+    "max_rounds": 6
+  },
+  "phase48_incoming_X": {
+    "cases": 800,
+    "outcomes": {
+      "CERTIFIED_CORE_X5_XFT1_BOUNDARY": 800
+    },
+    "residuals": {
+      "CERTIFIED_CORE_X5_XFT1_BOUNDARY:weight=0": 750,
+      "CERTIFIED_CORE_X5_XFT1_BOUNDARY:weight=1": 50
+    },
+    "max_rounds": 8
+  },
+  "X5_fault_free_patterns": 16,
+  "X5_face_matchings": 9,
+  "X5_correction_fault_cases": [
+    {
+      "rounds": 6,
+      "residual_weight": 0
+    },
+    {
+      "rounds": 6,
+      "residual_weight": 0
+    },
+    {
+      "rounds": 6,
+      "residual_weight": 0
+    },
+    {
+      "rounds": 6,
+      "residual_weight": 0
+    },
+    {
+      "rounds": 6,
+      "residual_weight": 0
+    }
+  ],
+  "X5_weight2_plus_new_X_logical_failure_witnesses": 30,
+  "X5_general_Pauli_hook_audit": {
+    "fault_cases": 120,
+    "data_weight_ge2": 24,
+    "phase_bearing": 80
+  },
+  "safe_static_four_data_Z_parities": 8,
+  "phase52_motion_samples": 64,
+  "alternating_partner_orders_no_extra_return": true,
+  "scope": "Same-session finite-model replay; no independent replication, blind hardware test, or full Pauli fault-tolerance claim."
+}

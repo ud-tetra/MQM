@@ -1,0 +1,12 @@
+# Draft logical conformance input; not hardware-compiled.
+R 0 1 2 3 4 5 6 7 8
+X 0 4
+CX 0 5 2 6
+TICK
+CX 0 6 3 7
+TICK
+CX 0 7 4 8
+TICK
+CX 0 8 1 5
+TICK
+M 5 6 7 8 0 1 2 3 4

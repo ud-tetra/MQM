@@ -1,0 +1,19 @@
+{
+  "repository": "ud-tetra/MQM",
+  "branch": "main",
+  "scope": "Initial current-source snapshot including all 36 published research packages and manuscripts, code release0.5, generated website and offline rebuild workflow",
+  "sites_source_parent": "687780b627980056040daf4734e7062ecf0ad700",
+  "historical_git_commits": "Not imported; GitHub snapshot preserves package-level historical receipts and nested dependencies",
+  "evidence": "Capture and implementation checks only; no additional theorem or hardware promotion",
+  "checks": [
+    "36 package/manuscript hashes",
+    "259 offline local links",
+    "immutable code release0.5 hash"
+  ],
+  "physical_promotion": 0,
+  "exclusions": [
+    "Generated aggregate offline ZIP rebuilt from tracked files; supplied separately and via CI",
+    "Ephemeral simulation checkpoints explicitly excluded by source releases"
+  ],
+  "standing_instruction": "Capture each substantive MQM turn; do not claim unattended background synchronization"
+}

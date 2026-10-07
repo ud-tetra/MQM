@@ -1,0 +1,21 @@
+{
+  "n": 8,
+  "k": 1,
+  "gauge_qubits": 3,
+  "dressed_distance": 3,
+  "convention": "[[n,k,d,r]]",
+  "gauge_binary_rank": 10,
+  "center_binary_rank": 4,
+  "distance_witness": "IIIIIXXZ",
+  "six_K4_Z_edges_in_gauge": true,
+  "nontrivial_dressed_logical_counts_by_weight": {
+    "3": 66,
+    "5": 804,
+    "4": 234,
+    "6": 900,
+    "7": 666,
+    "8": 402
+  },
+  "physical_promotion": 0,
+  "independent_replication": false
+}

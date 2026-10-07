@@ -1,0 +1,19 @@
+{
+  "locked_scoped_exact": [
+    "Three-qubit static encoder and decoder at 3*pi/2",
+    "Physical two-local triangle; full centered norm 1 and width 2",
+    "All-input and spectator-uniform isometry identities",
+    "Common binary64 scale has full norm 1-2^-54 and exact generator mismatch 2^-54",
+    "Nominal readout interval 2^-18 has complete-domain half-diamond error below 2^-16",
+    "T phase monomial extension preserves disjoint-path pair topology and full spectrum at fixed edge magnitudes"
+  ],
+  "open": [
+    "Two-native-qubit joint single-excitation encoder",
+    "Autonomous integration with the SWAP core",
+    "Minimality, novelty and independent review",
+    "Bare-Hamiltonian and coherent-supply realization",
+    "Irreversible latch and clock refresh",
+    "Matched end-to-end resource advantage"
+  ],
+  "physical_promotion": 0
+}

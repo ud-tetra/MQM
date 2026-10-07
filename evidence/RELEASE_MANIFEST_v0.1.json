@@ -1,0 +1,13 @@
+{
+  "release": "MQM_PUBLIC_TECHNICAL_RELEASE_v0.1",
+  "physical_promotion": 0,
+  "sha256": {
+    "index.html": "b6f94e6081baa53d3c3b6782602a37c8d81b8eedc64d32164914811fdd6e9e57",
+    "styles.css": "2a3dead94b96a5669697ee28f0d33dc66efc5c1a383d2cc0631bdceecc350158"
+  },
+  "validation": {
+    "html_links_and_assets": "PASS",
+    "unique_anchor_ids": "PASS",
+    "browser_visual_qa": "NOT_RUN: static site has no compatible supervised preview"
+  }
+}

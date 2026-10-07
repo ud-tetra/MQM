@@ -1,0 +1,2160 @@
+{
+  "record_date": "2026-10-07",
+  "scope": "Source-bound session architecture releases; code release0.5 remains distinct and immutable",
+  "independent_review": "pending",
+  "physical_promotion": 0,
+  "releases": [
+    {
+      "id": "MQM_RETENTION_WINDOW_v0.1",
+      "title": "Finite thermal timing and retention window; external-review handoff",
+      "version": "0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "DERIVED conditional retained error <15/2^20<2^-16 throughout16\u00b12^-16 model time units. Finite post-deadline hold, not permanent retention. Six dependency bundles and12 review gates prepared; external review not performed. Physical promotion0.",
+      "claims": {
+        "version": "0.1",
+        "physical_promotion": 0,
+        "claims": [
+          {
+            "id": "FINITE-RETENTION-WINDOW",
+            "status": "DERIVED",
+            "claim": "Uniform retained error <15/2^20<2^-16 on[16-2^-16,16+2^-16] model time units",
+            "scope": "Frozen fixed launch, beta5/16, Gaussian/continuum bounds and parent arithmetic assumptions; identity spectators",
+            "external_review": "OPEN"
+          },
+          {
+            "id": "DYADIC-SELECTION",
+            "status": "EXACT",
+            "claim": "k16 passes andk15 certificate is insufficient",
+            "scope": "Predeclared dyadic list under conservative majorants; not global maximum or physical failure"
+          },
+          {
+            "id": "FINITE-CONTROLS",
+            "status": "SIMULATED",
+            "claim": "Four M4/8 continuity checks pass",
+            "scope": "Diagnostic only"
+          },
+          {
+            "id": "REVIEW-HANDOFF",
+            "status": "PREPARED",
+            "claim": "Dependency bundles, hashes,12-gate checklist and blank reviewer ledger",
+            "scope": "No reviewer contacted or independent review performed"
+          },
+          {
+            "id": "PERMANENT-RETENTION",
+            "status": "OPEN",
+            "claim": "No permanent dark hold or device retention result"
+          }
+        ]
+      },
+      "claims_url": "/research/MQM_RETENTION_WINDOW_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_RETENTION_WINDOW_v0.1/MQM_RETENTION_WINDOW_v0.1.zip",
+      "zip_sha256": "06568ab9ec8d191830decabc2859bad5df58dc00de869741853169a435ce9887",
+      "zip_bytes": 7284587,
+      "pdfs": [
+        {
+          "url": "/research/MQM_RETENTION_WINDOW_v0.1/MQM_RETENTION_WINDOW_IEEE_A4_v0.1.pdf",
+          "sha256": "72823aeee824087648f1ce83d2fa739fc26620ffe4795110c8e7026276bb663e"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_DIRECTED_RESPONSE_v0.1",
+      "title": "Conditional thermal acceptance and oriented spectral reference",
+      "version": "0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "DERIVED conditional fixed-launch thermal error <773/2^26+2^-128<2^-16 at unchanged beta5/16 andT16. Arithmetic model and inherited Gaussian/continuum bounds are explicit; external review and retention remain OPEN. Exact spectral rank8 construction does not derive7/768 allocation.",
+      "claims": {
+        "version": "0.1",
+        "physical_promotion": 0,
+        "claims": [
+          {
+            "id": "THERMAL-ACCEPTANCE",
+            "status": "DERIVED",
+            "claim": "Fixed-launch retained thermal error <773/2^26+2^-128<2^-16",
+            "scope": "T16 beta5/16 Gaussian flat band, inherited proof bounds and IEEE754 operation assumptions; identity spectators",
+            "acceptance": "PASS_CONDITIONAL",
+            "external_independent_review": "OPEN",
+            "exclusions": [
+              "permanent retention",
+              "arbitrary input diamond norm",
+              "hardware validation",
+              "full-word or native-admission compilation",
+              "quantum advantage"
+            ]
+          },
+          {
+            "id": "NUM-PARAMETERS",
+            "status": "EXACT / DERIVED",
+            "claim": "192 disjoint root brackets and directed parameter intervals; arithmetic ledger replayed",
+            "scope": "Decimal200-digit implementation and source formulas;220-digit containment control passes"
+          },
+          {
+            "id": "SPECTRAL-REFERENCE",
+            "status": "EXACT",
+            "claim": "Unique rank1 zero reference in proposed rank8 oriented spectral carrier",
+            "scope": "Original15-coordinate oriented boundary; carrier proposal post-exposure"
+          },
+          {
+            "id": "CAPACITY-COEFFICIENT",
+            "status": "OPEN",
+            "claim": "No derivation of7/768 allocation or material law",
+            "dependencies": [
+              "Theta identification",
+              "192 basis and source dynamics",
+              "factor24 allocation",
+              "factor4 admissibility",
+              "latch map"
+            ]
+          }
+        ]
+      },
+      "claims_url": "/research/MQM_DIRECTED_RESPONSE_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_DIRECTED_RESPONSE_v0.1/MQM_DIRECTED_RESPONSE_v0.1.zip",
+      "zip_sha256": "5f34e05724ec2ccc1a73ae51d2e6802c6a3ceb74ddc45a8960a252069ab49686",
+      "zip_bytes": 2042173,
+      "pdfs": [
+        {
+          "url": "/research/MQM_DIRECTED_RESPONSE_v0.1/MQM_DIRECTED_RESPONSE_IEEE_A4_v0.1.pdf",
+          "sha256": "b9699d7643b414e1a242df16ea191036e3b8239bc9ba49e54b1f3741094195cd"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_CENTERED_TRANSFER_v0.1",
+      "title": "Time-centered vacuum transfer and separate capacity selection gates",
+      "version": "0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "DERIVED fixed-launch vacuum-transfer allowance below2^-30 at ideal192 modes. Directed numerical response remains OPEN. Separate exact capacity arithmetic and scoped selection witnesses do not derive7/768 as a physical law.",
+      "claims": {
+        "version": "0.1",
+        "claims": [
+          {
+            "id": "CENTERED-VAC192",
+            "status": "DERIVED",
+            "claim": "Frozen fixed-launch second-order vacuum-transfer debit at ideal M192 <2^-30",
+            "scope": "Same continuum thermal covariance, Q<=2, T16, B16; proof embedding centered at8",
+            "evidence": "manuscript and results/EXACT_AUDIT.json",
+            "independent_review": "OPEN"
+          },
+          {
+            "id": "CAP-IDENTITY",
+            "status": "EXACT",
+            "claim": "7/768=(8-1)/(4*24*8)",
+            "scope": "Arithmetic only"
+          },
+          {
+            "id": "CAP-DIAGONAL",
+            "status": "NO-GO",
+            "claim": "Rank7 invariant diagonal projector impossible",
+            "scope": "Left-regular S4 on declared permutation labels, bit labels unchanged"
+          },
+          {
+            "id": "CAP-COHERENT",
+            "status": "EXACT",
+            "claim": "Coherent rank7 projector exists with mixed-state expectation7/192",
+            "scope": "Chosen hypothetical dilation and selector; no source allocation law"
+          },
+          {
+            "id": "NUM-CONTROLS",
+            "status": "SIMULATED",
+            "claim": "Eight supplementary embedding controls pass",
+            "scope": "M8/16 binary64, not directed certification"
+          },
+          {
+            "id": "THERMAL-TARGET",
+            "status": "OPEN",
+            "claim": "Primary2^-16 thermal target requires directed finite response certificate"
+          },
+          {
+            "id": "CAP-LAW",
+            "status": "OPEN",
+            "claim": "Reference selection, admissibility factor4, source dynamics and latch map unresolved"
+          }
+        ],
+        "physical_promotion": 0
+      },
+      "claims_url": "/research/MQM_CENTERED_TRANSFER_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_CENTERED_TRANSFER_v0.1/MQM_CENTERED_TRANSFER_v0.1.zip",
+      "zip_sha256": "3d6e04c60f9c0d232022912ebe64229786eed082bb681fa2e3ee2c742af26e48",
+      "zip_bytes": 934670,
+      "pdfs": [
+        {
+          "url": "/research/MQM_CENTERED_TRANSFER_v0.1/MQM_CENTERED_TRANSFER_IEEE_A4_v0.1.pdf",
+          "sha256": "7db347f5ecc7e6c95d9077d8b5593748fd96b866f767a8d97e898cf7880ec401"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_CHAIN_RESPONSE_v0.1",
+      "title": "Thermal Chain Response and Sharper Transfer",
+      "version": "v0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "SIMULATED full-column M192 response ~2.2506e-8. DERIVED vacuum transfer <2^-229 at L1536; separate covariance debit <2^-57 at M192. Primary target remains OPEN.",
+      "claims": {
+        "finite_response": "SIMULATED full covariance-weighted Q2 columns, M32/64/128/192, not continuum certificate",
+        "M192_half_trace_response": 2.2505874657197752e-08,
+        "dense_control": "SIMULATED independent implementation route; not independent reviewer",
+        "Chebyshev_transfer": "DERIVED conditional at L1536, EXACT rational comparison <2^-229",
+        "covariance_transfer": "DERIVED ideal stationary Gauss-node kernel at M192, EXACT rational response allowance <2^-57",
+        "primary_beta_5_16_target": "OPEN",
+        "vacuum_transfer_at_192": "OPEN",
+        "directed_numerical_error": "OPEN",
+        "independent_review": "OPEN same-agent audit only",
+        "physical_promotion": 0
+      },
+      "claims_url": "/research/MQM_CHAIN_RESPONSE_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_CHAIN_RESPONSE_v0.1/MQM_CHAIN_RESPONSE_v0.1_RELEASE.zip",
+      "zip_sha256": "1ff1d202d07f394f46a0a60916a25bab4bb04de97cd4d04c5bfc512c4a962b26",
+      "zip_bytes": 1020665,
+      "pdfs": [
+        {
+          "url": "/research/MQM_CHAIN_RESPONSE_v0.1/MQM_CHAIN_RESPONSE_IEEE_A4_v0.1.pdf",
+          "sha256": "5f2e857c1ed0d1e7a319b194640aa52654d8e965948790670ca75188a13c47b0"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_AUTONOMOUS_NATIVE_ADMISSION_v0.1",
+      "title": "Autonomous Native Admission",
+      "version": "v0.1",
+      "family": "Native admission",
+      "summary": "Three-qubit static encoder and decoder at 3*pi/2",
+      "claims": {
+        "locked_scoped_exact": [
+          "Three-qubit static encoder and decoder at 3*pi/2",
+          "Physical two-local triangle; full centered norm 1 and width 2",
+          "All-input and spectator-uniform isometry identities",
+          "Common binary64 scale has full norm 1-2^-54 and exact generator mismatch 2^-54",
+          "Nominal readout interval 2^-18 has complete-domain half-diamond error below 2^-16",
+          "T phase monomial extension preserves disjoint-path pair topology and full spectrum at fixed edge magnitudes"
+        ],
+        "open": [
+          "Two-native-qubit joint single-excitation encoder",
+          "Autonomous integration with the SWAP core",
+          "Minimality, novelty and independent review",
+          "Bare-Hamiltonian and coherent-supply realization",
+          "Irreversible latch and clock refresh",
+          "Matched end-to-end resource advantage"
+        ],
+        "physical_promotion": 0
+      },
+      "claims_url": "/research/MQM_AUTONOMOUS_NATIVE_ADMISSION_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_AUTONOMOUS_NATIVE_ADMISSION_v0.1/MQM_AUTONOMOUS_NATIVE_ADMISSION_v0.1_RELEASE.zip",
+      "zip_sha256": "2905086270c065ebc29bd4f37e889659d9b74daa90a885295846a1c7053b7338",
+      "zip_bytes": 751696,
+      "pdfs": [
+        {
+          "url": "/research/MQM_AUTONOMOUS_NATIVE_ADMISSION_v0.1/MQM_AUTONOMOUS_NATIVE_ADMISSION_IEEE_A4_v0.1.pdf",
+          "sha256": "20e8d81c5ea0bd57ea3d441775979fec24ae1a285004b8af2e059bdb540e68b5"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_AUTONOMOUS_TWO_EXECUTION_v0.1",
+      "title": "Autonomous Two Execution",
+      "version": "v0.1",
+      "family": "Clock and compilation",
+      "summary": "Compiled static finite episode and projective reversal",
+      "claims": {
+        "claims": [
+          {
+            "id": "AQ1",
+            "claim": "Compiled static finite episode and projective reversal",
+            "scope": "Prepared compiled Hamiltonian on declared finite logical domain",
+            "novelty": "Established history/perfect-transfer ingredients; application derivation"
+          },
+          {
+            "id": "AQ2",
+            "claim": "Exact complete channel error sqrt(2p-p^2)",
+            "scope": "Final exhaustion flag; pure fixed bank; specified comparison clock/body target",
+            "novelty": "New derivation in this record; external priority assessment pending"
+          },
+          {
+            "id": "AQ3",
+            "claim": "Exact reduced channel error p",
+            "scope": "Trace supervising clock; retain full flagged body and spectator",
+            "novelty": "Orthogonal-block derivation; priority assessment pending"
+          },
+          {
+            "id": "AQ4",
+            "claim": "Exact binomial endpoint and necessary/sufficient clock-size criterion",
+            "scope": "Engineered spin clock and declared symmetric window",
+            "novelty": "Family-specific criterion; not universal optimality"
+          },
+          {
+            "id": "AQ5",
+            "claim": "Theta(m+log(1/epsilon)) clock-step scaling",
+            "scope": "Fixed beta=pi/4 spin-padding family; ideal pure-bank model",
+            "novelty": "Matching order within selected family only"
+          },
+          {
+            "id": "AQ6",
+            "claim": "Complete supply + mismatch + exact tail upper bound",
+            "scope": "Same retained legal domain; channel bank term requires uniform preparation norm",
+            "novelty": "Standard perturbation composition with exact family tail"
+          },
+          {
+            "id": "AQ7",
+            "claim": "Latency >= m sqrt(1-epsilon^2)/(2 Jmax)",
+            "scope": "Address-0 nearest-neighbor history chain; final flag and same complete target; bounded edge hopping",
+            "novelty": "Elementary propagation obstruction; not universal computational speed limit"
+          }
+        ],
+        "independent_review": "PENDING",
+        "physical_validation": "NONE",
+        "registry_promotion": "NONE",
+        "global_supervisor_renewal": "OPEN",
+        "cross_family_optimality": "OPEN",
+        "full_novelty_review": "OPEN"
+      },
+      "claims_url": "/research/MQM_AUTONOMOUS_TWO_EXECUTION_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_AUTONOMOUS_TWO_EXECUTION_v0.1/MQM_AUTONOMOUS_TWO_EXECUTION_v0.1_RELEASE.zip",
+      "zip_sha256": "9f63cf608956e8e6674d450f8617d0f66cdb3b730d1ac61db788b9c0e67887f8",
+      "zip_bytes": 686757,
+      "pdfs": [
+        {
+          "url": "/research/MQM_AUTONOMOUS_TWO_EXECUTION_v0.1/MQM_PAPER_A_AUTONOMOUS_ADDENDUM_v0.1.pdf",
+          "sha256": "25963ed03da462e3c17076ac57699772ef508f735a5bb693b77ef83b4b0826e8"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_CAPACITY_BOUNDARY_LATCH_v0.1",
+      "title": "Capacity Boundary Latch",
+      "version": "v0.1",
+      "family": "Boundary and transport",
+      "summary": "SOURCE-CONFIRMED definition; physical enforcement OPEN",
+      "claims": {
+        "capacity": {
+          "status": "SOURCE-CONFIRMED definition; physical enforcement OPEN",
+          "threshold": "7/768",
+          "finite_encoding": "n/768 for n=0..8; newly declared normalized encoding",
+          "measured_flux": false
+        },
+        "boundary_isometry": {
+          "status": "EXACT / AUTO_LOCK scoped",
+          "domain": "span of oriented edge01 and edge02",
+          "codomain": "four-dimensional face register",
+          "operator": "D1 K (K^dagger D1^dagger D1 K)^(-1/2)",
+          "full_edge_isometry": false,
+          "physical_compilation": "OPEN"
+        },
+        "conditional_latch": {
+          "status": "DERIVED / EXACT rational window certificate, AUTO_LOCK scoped",
+          "g": 1,
+          "Gamma": "2sqrt2",
+          "full_Hamiltonian_norm": 1,
+          "window": "[16-1/1024,16+1/1024]",
+          "complete_half_diamond_upper": "421720802990218760437543676608783860499420648180871694714404864000000000000000000000000/200048734518572544412100942846081049789386103198210154361123964140303758104604635346816579595219",
+          "target": "1/65536",
+          "assumptions": [
+            "Fixed eligible n>=7,F=1; product clock launchm",
+            "Trusted occupancy/completion flags; arbitrary data spectators",
+            "Identity data factors; no logical information in bath jump labels",
+            "No reverse jumps, zero storage Hamiltonian, ideal Markovian dynamics",
+            "Bath traced; cross-sector control coherences excluded"
+          ],
+          "isolation": "Incomplete or unsaturated productm launch cannot be captured",
+          "completion_generation": "OPEN",
+          "two_local_implementation": "OPEN",
+          "thermodynamic_refresh": "OPEN"
+        },
+        "negative_controls": {
+          "status": "SIMULATED",
+          "saturation_only_incomplete_capture": 0.9999999996708044,
+          "data_resolving_bath_Bell_negativity": 0.0,
+          "scope": "Constructor counterexamples; not a theorem about all baths"
+        },
+        "exact_checks": 35,
+        "numerical_controls": 34,
+        "physical_promotion": 0,
+        "hardware_or_quantum_advantage": false,
+        "native_joint_admission": "OPEN",
+        "independent_review": "pending",
+        "novelty_comparison": "pending"
+      },
+      "claims_url": "/research/MQM_CAPACITY_BOUNDARY_LATCH_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_CAPACITY_BOUNDARY_LATCH_v0.1/MQM_CAPACITY_BOUNDARY_LATCH_v0.1_RELEASE.zip",
+      "zip_sha256": "9894a35e756a1f3c55e3ea20e61b570432b8549a381e049023cf09b7d8c7e0fc",
+      "zip_bytes": 682813,
+      "pdfs": [
+        {
+          "url": "/research/MQM_CAPACITY_BOUNDARY_LATCH_v0.1/MQM_CAPACITY_BOUNDARY_LATCH_IEEE_A4_v0.1.pdf",
+          "sha256": "4f1b350b2929597a92ce00b291636dd7aa5cca6901c2a65ae3bcda8ef0c6003b"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_COARSE_GRAINED_WORD_v0.1",
+      "title": "Coarse Grained Word",
+      "version": "v0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "local gate unitarity and full-bank history-gauge composition",
+      "claims": {
+        "version": "0.1",
+        "physical_promotion": 0,
+        "EXACT": [
+          "local gate unitarity and full-bank history-gauge composition",
+          "conditional captured branch applies complete13-step word to arbitrary body/reference input",
+          "cold survival monotonicity"
+        ],
+        "DERIVED": [
+          "positive centered filter-Gram construction",
+          "two-specified-generator Duhamel comparison bound",
+          "analytic spectral-tail envelope",
+          "local complete-word reverse-rate bound3145729/2^38 forr<=2^-31"
+        ],
+        "INTERVAL_VERIFIED": [
+          "complete-word local cold retained-channel target around1024,halfwindow1/1024"
+        ],
+        "SIMULATED": [
+          "allfive frozen coarse-graining choices fail port target at16",
+          "complete-word frozen arrival samples",
+          "whole-bank endpoint fixture and donor pair entanglement",
+          "full scalar spectrum norms"
+        ],
+        "OPEN": [
+          "microscopic bath error",
+          "quadrature interval certificate",
+          "Born/memory/Lamb shift debits",
+          "native joint admission",
+          "physicalqubit2local compilation",
+          "geometry",
+          "hardware validation"
+        ],
+        "not_promoted": [
+          "positive generator implies physical accuracy",
+          "universal bath no-go",
+          "quantum advantage",
+          "first sampled deadline is minimum latency",
+          "old direct2local SWAP implementation reused"
+        ]
+      },
+      "claims_url": "/research/MQM_COARSE_GRAINED_WORD_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_COARSE_GRAINED_WORD_v0.1/MQM_COARSE_GRAINED_WORD_v0.1_RELEASE.zip",
+      "zip_sha256": "f1cdec94f1abfa43b0a05f7e4d79595afcb9e2ac89cac48478e981694d214d18",
+      "zip_bytes": 832101,
+      "pdfs": [
+        {
+          "url": "/research/MQM_COARSE_GRAINED_WORD_v0.1/MQM_COARSE_GRAINED_WORD_IEEE_A4_v0.1.pdf",
+          "sha256": "3b39b8f7a835fcc9147a152533a5ad84abffc61aa438eb3a8a3505998ceed639"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_COMPLETION_DRESSED_BATH_v0.1",
+      "title": "Completion Dressed Bath",
+      "version": "v0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "static native terminal-marker Hamiltonian",
+      "claims": {
+        "version": "0.1",
+        "physical_promotion": 0,
+        "EXACT": [
+          "static native terminal-marker Hamiltonian",
+          "admitted sector capture carries flag1",
+          "blocked launch sector cannot capture",
+          "full interaction characteristic polynomial",
+          "displayed binary encoding has nonzero weight3 marker coefficient"
+        ],
+        "INTERVAL_VERIFIED": [
+          "original local-bath marked-port retained target below2^-16 throughout original readout window"
+        ],
+        "DERIVED": [
+          "local reverse-jump range r<=2^-24 sufficient with bound26625/2^31",
+          "Ohmic spectral construction conditional on Born-Markov/secular and omitted compensated Lamb shift"
+        ],
+        "SIMULATED": [
+          "52 binary64 bath/resource/state checks",
+          "restricted Gibbs target error",
+          "weak dressed-rate case first passes among frozen samples at2^18"
+        ],
+        "FAILED_DIAGNOSTIC": [
+          "fast dressed secular replay ratio15.165>1/10, regardless of its numerically passing target"
+        ],
+        "OPEN": [
+          "semantic frontend port composition",
+          "native joint admission",
+          "complete qubit2-local compiler",
+          "bath approximation error and continuum reference",
+          "Lamb shift calibration",
+          "material device and temperature calibration",
+          "hardware validation"
+        ],
+        "not_promoted": [
+          "universal local-master-equation falsification",
+          "minimum latency",
+          "weak-coupling error theorem",
+          "physical capacity law",
+          "quantum advantage"
+        ]
+      },
+      "claims_url": "/research/MQM_COMPLETION_DRESSED_BATH_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_COMPLETION_DRESSED_BATH_v0.1/MQM_COMPLETION_DRESSED_BATH_v0.1_RELEASE.zip",
+      "zip_sha256": "d697145e2f70da06b0a68f98a30a8970eee88a74a85491dc51ee6f0b7d0dd5b4",
+      "zip_bytes": 809318,
+      "pdfs": [
+        {
+          "url": "/research/MQM_COMPLETION_DRESSED_BATH_v0.1/MQM_COMPLETION_DRESSED_BATH_IEEE_A4_v0.1.pdf",
+          "sha256": "285f478582a2db31ff709b02613535ceda9dcb799175de03c944cb8272d44615"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_COMPLEX_PLANAR_ADMISSION_v0.1",
+      "title": "Complex Planar Admission",
+      "version": "v0.1",
+      "family": "Native admission",
+      "summary": "EXACT / AUTO_LOCK SCOPED",
+      "claims": {
+        "kernel": {
+          "status": "EXACT / AUTO_LOCK SCOPED",
+          "Pauli_terms": 108,
+          "first_moment_rank": 11,
+          "real_coordinates": 97,
+          "split": {
+            "real_matrix_entry": 55,
+            "imaginary_matrix_entry": 42
+          },
+          "physical_qubits": 6,
+          "allowed_pairs": 10,
+          "planar": true,
+          "maximum_degree": 4,
+          "resource_charge": "Additional independently tunable Pauli components beyond preceding real ansatz; no additional qubits or allowed pairs in the abstract graph."
+        },
+        "objective_gradient": {
+          "status": "DERIVED analytic formulation; numerical implementation checked",
+          "endpoint": "All four columns, one common phase. Real and imaginary residual stacked.",
+          "derivative": "Complex spectral Frechet derivative with conjugate transposes and continuous sinc divided difference.",
+          "second_moment": "Soft penalty only; exact first-moment parameterization.",
+          "central_difference_columns": 392,
+          "directional_checks": 2,
+          "largest_discrepancy": 6.471879393510349e-09
+        },
+        "search": {
+          "status": "FINITE NUMERICAL EXPLORATION",
+          "starts": 8,
+          "endpoint_only_best_residual": 0.3943084546438886,
+          "penalty_best_residual": 0.32910369230828146,
+          "global_optimizer_certificate": false,
+          "certified_endpoint_at_target": false
+        },
+        "moment_counterexample": {
+          "status": "EXACT / AUTO_LOCK SCOPED",
+          "generator": "H=X_z",
+          "full_norm": 1,
+          "spectrum_width": 2,
+          "all_compressed_moments_match": true,
+          "terminal_mode_activated": true,
+          "native_charges_QA_QO_broken": true,
+          "admission_complete_error": 1,
+          "scope": "This generator preserves native A and O; input01 never reaches its target."
+        },
+        "spectral_alignment": {
+          "status": "DERIVED exact criterion; proof supplied",
+          "criterion": "Every spectral projector must obey exp(-iT lambda) Pi_lambda E = exp(i phi) Pi_lambda W with common phi.",
+          "necessary_orientation": "S=sum_lambda |Tr W^dagger Pi_lambda E|=4",
+          "all_time_channel_floor": "Half diamond >= sqrt(1-(S/4)^2)",
+          "exact_admission_sufficiency": "Projector orientations AND one finite compatible deadline/phase; S=4 alone not sufficient."
+        },
+        "frozen_candidate_spectral_exclusion": {
+          "status": "EXACT ENCLOSED / AUTO_LOCK SCOPED",
+          "candidate_runs": [
+            3,
+            2
+          ],
+          "strict_all_time_half_diamond_floor": "1/8 for each frozen best fit",
+          "witness": "Maximally entangled logical/reference input, reference dimension four",
+          "certification": "Exact dyadic Gram, eigen residual, polar-normalization and projector bounds; integer square-root enclosures.",
+          "scope": "The two named exact binary-rational models only; every deadline, scalar centering and uniform rescaling. Not the whole planar family."
+        },
+        "verification": {
+          "total_exact_checks": 198,
+          "counts_by_receipt": {
+            "basis": 18,
+            "moment_audit_A": 9,
+            "moment_audit_B": 9,
+            "counterexample": 16,
+            "spectral_A": 73,
+            "spectral_B": 73
+          },
+          "optimization_runs": 8,
+          "gradient_column_checks": 392,
+          "gradient_directional_checks": 2
+        },
+        "six_qubit_joint_admission": "OPEN",
+        "full_static_episode": "OPEN",
+        "physical_promotion": 0,
+        "independent_review": "pending",
+        "theorem_level_novelty_comparison": "pending"
+      },
+      "claims_url": "/research/MQM_COMPLEX_PLANAR_ADMISSION_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_COMPLEX_PLANAR_ADMISSION_v0.1/MQM_COMPLEX_PLANAR_ADMISSION_v0.1_RELEASE.zip",
+      "zip_sha256": "d2307124deb2e0f6764b57b291d1e79e1080144db5fe9d39c1d908ebfe5fcf81",
+      "zip_bytes": 981935,
+      "pdfs": [
+        {
+          "url": "/research/MQM_COMPLEX_PLANAR_ADMISSION_v0.1/MQM_COMPLEX_PLANAR_ADMISSION_IEEE_A4_v0.1.pdf",
+          "sha256": "ec6dbc40924ed02f5e5f55165b844719d3b872a69df5649335ad8de341f2a8e6"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_CONTINUUM_CHAIN_v0.1",
+      "title": "Continuum Chain",
+      "version": "v0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "Legendre coordinates for declared flat band; G^2=128/pi; b_n^2=256n^2/(4n^2-1)",
+      "claims": {
+        "version": "0.1",
+        "physical_promotion": 0,
+        "claims": [
+          {
+            "status": "EXACT",
+            "lock": "AUTO_LOCK scoped mathematical specification",
+            "scope": "Legendre coordinates for declared flat band; G^2=128/pi; b_n^2=256n^2/(4n^2-1)",
+            "evidence": [
+              "audit_chain.py",
+              "results/CHAIN_AUDIT.json"
+            ]
+          },
+          {
+            "status": "DERIVED",
+            "lock": "AUTO_LOCK conditional vacuum target",
+            "scope": "q_infinity(16)<3/262144+2^-128<2^-16 with768bath coordinates; original reservoir traced, arbitrary identity spectators retained",
+            "evidence": "results/CONTINUUM_CERTIFICATE.json"
+          },
+          {
+            "status": "DERIVED",
+            "scope": "Cut-edge propagation allowance by bounded-Hermitian Chebyshev expansion, Poisson Bessel bound and Duhamel; fixed launch only",
+            "evidence": "results/CHAIN_AUDIT.json"
+          },
+          {
+            "status": "SIMULATED",
+            "scope": "L64 control and L768 diagnostics; interval result independent of float pass",
+            "evidence": "results/CHAIN_AUDIT.json"
+          },
+          {
+            "status": "DERIVED",
+            "scope": "Thermal covariance generally non-diagonal in Legendre basis; occupation bound1/(exp15-1)",
+            "evidence": "manuscript/MQM_CONTINUUM_CHAIN_IEEE_A4_v0.1.tex"
+          },
+          {
+            "status": "OPEN",
+            "scope": "finite-temperature channel, thermal Ohmic family, whole13-step microscopic channel, permanent hold, refresh, admission, physical layout, hardware, independent review and advantage"
+          }
+        ]
+      },
+      "claims_url": "/research/MQM_CONTINUUM_CHAIN_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_CONTINUUM_CHAIN_v0.1/MQM_CONTINUUM_CHAIN_v0.1_RELEASE.zip",
+      "zip_sha256": "879bc71153c4bb7fd153af2ea6eab6d7f4ae4e5a8005a6d053fe7df110347aa0",
+      "zip_bytes": 794292,
+      "pdfs": [
+        {
+          "url": "/research/MQM_CONTINUUM_CHAIN_v0.1/MQM_CONTINUUM_CHAIN_IEEE_A4_v0.1.pdf",
+          "sha256": "9c872115c0e6fad698b70a84a5c2e112ee315183cfda2e2834714dd2c7a1ebdf"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_CROSS_CLOCK_RESOURCE_BOUND_v0.1",
+      "title": "Cross Clock Resource Bound",
+      "version": "v0.1",
+      "family": "Clock and compilation",
+      "summary": "Fixed pure bank, fresh final-step E flip, own free comparison clock; all retained registers",
+      "claims": [
+        {
+          "id": "CC1",
+          "result": "Exact complete and reduced state/channel error for arbitrary finite prefix clock, including mixed input",
+          "scope": "Fixed pure bank, fresh final-step E flip, own free comparison clock; all retained registers",
+          "evidence": "Written proof with constructor fixtures",
+          "independent_review": "Pending",
+          "priority": "Not established",
+          "physical_promotion": 0
+        },
+        {
+          "id": "CC2",
+          "result": "Explicit finite-frequency interval suppression lower bound from a recurrence",
+          "scope": "r pure frequencies, f(0)=1, positive-length interval [a,b] with a>0; conservative constants",
+          "evidence": "Written proof with constructor fixtures",
+          "independent_review": "Pending",
+          "priority": "Not established",
+          "physical_promotion": 0
+        },
+        {
+          "id": "CC3",
+          "result": "Cross-design spectral/dimension lower bound, Omega(m+log(1/epsilon)) for fixed window geometry",
+          "scope": "Frequency cost for finite prefix clocks; m+1 cost from explicit primitive history path",
+          "evidence": "Written proof with constructor fixtures",
+          "independent_review": "Pending",
+          "priority": "Not established",
+          "physical_promotion": 0
+        },
+        {
+          "id": "CC4",
+          "result": "Matching cross-design ideal address-dimension order under a fixed common resource/window task",
+          "scope": "Path clocks with no shortcuts, legal-sector resource contract; no qubit, physical-cost or universal optimum",
+          "evidence": "Written proof with constructor fixtures",
+          "independent_review": "Pending",
+          "priority": "Not established",
+          "physical_promotion": 0
+        },
+        {
+          "id": "CC5",
+          "result": "Necessary latency combines path propagation and energy-variance angle limits",
+          "scope": "Static path clocks, fixed max edge and launch variance; standard Mandelstam-Tamm component",
+          "evidence": "Written proof with constructor fixtures",
+          "independent_review": "Pending",
+          "priority": "Not established",
+          "physical_promotion": 0
+        },
+        {
+          "id": "CC6",
+          "result": "Continuous interpolation allowance in incomplete amplitude",
+          "scope": "Exact state samples or certified numerical enclosures needed for a numerical certificate",
+          "evidence": "Written proof with constructor fixtures",
+          "independent_review": "Pending",
+          "priority": "Not established",
+          "physical_promotion": 0
+        }
+      ],
+      "claims_url": "/research/MQM_CROSS_CLOCK_RESOURCE_BOUND_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_CROSS_CLOCK_RESOURCE_BOUND_v0.1/MQM_CROSS_CLOCK_RESOURCE_BOUND_v0.1_RELEASE.zip",
+      "zip_sha256": "2b6129309975803f43efb5c805b1f290114df7697f72b055265e04364cb039c9",
+      "zip_bytes": 624001,
+      "pdfs": [
+        {
+          "url": "/research/MQM_CROSS_CLOCK_RESOURCE_BOUND_v0.1/MQM_CROSS_CLOCK_RESOURCE_BOUND_v0.1.pdf",
+          "sha256": "5bf3310df9c7c640a7987f717d2831ae5cb340bf64fa80904710fb98710c4f29"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_DISSIPATIVE_LATCH_AUDIT_v0.1",
+      "title": "Dissipative Latch Audit",
+      "version": "v0.1",
+      "family": "Boundary and transport",
+      "summary": "Complete error equals survival S; clock-traced body error equals incomplete population under final-flag contract",
+      "claims": {
+        "claims": [
+          {
+            "id": "DL1",
+            "title": "Absorbing operational target",
+            "claim": "Complete error equals survival S; clock-traced body error equals incomplete population under final-flag contract",
+            "evidence": "Analytic prefix/jump theorem; small full Lindblad fixture on entangled and mixed inputs",
+            "independent_review": "pending",
+            "priority_assessment": "pending",
+            "physical_promotion": 0
+          },
+          {
+            "id": "DL2",
+            "title": "Isolated latch mean optimum",
+            "claim": "E[tau]=2/Gamma+Gamma/(4g^2)+Delta^2/(g^2Gamma); Gamma*=2sqrt(2g^2+Delta^2)",
+            "evidence": "Integrated equations checked exactly for rational fixtures",
+            "independent_review": "pending",
+            "priority_assessment": "pending",
+            "physical_promotion": 0
+          },
+          {
+            "id": "DL3",
+            "title": "Uniform clock mean optimum",
+            "claim": "E[tau]=n/Gamma+(n-1)Gamma/(4g^2); Gamma*/g=2sqrt(n/(n-1))",
+            "evidence": "Explicit integrated covariance; exact rational residuals for dimensions2..16",
+            "independent_review": "pending",
+            "priority_assessment": "pending",
+            "physical_promotion": 0
+          },
+          {
+            "id": "DL4",
+            "title": "Conservative ideal full-episode hold",
+            "claim": "For uniform m13 g1/8 Gamma1/4, S(t)<=1/1024 for everyt>=118784",
+            "evidence": "Exact mean116 and Markov survival bound; no physical imperfections admitted",
+            "independent_review": "pending",
+            "priority_assessment": "pending",
+            "physical_promotion": 0
+          }
+        ],
+        "not_claimed": [
+          "Finite-time exact total absorption",
+          "A finite closed reservoir implementing permanent Markov decay",
+          "A universal energy lower bound",
+          "Generic address dephasing formula",
+          "Inherited64vs53 resource improvement for this open task",
+          "Global deadline optimum"
+        ],
+        "old_closed_resource_frontier": "Immutable and separate; this open contract does not improve or invalidate it."
+      },
+      "claims_url": "/research/MQM_DISSIPATIVE_LATCH_AUDIT_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_DISSIPATIVE_LATCH_AUDIT_v0.1/MQM_DISSIPATIVE_LATCH_AUDIT_v0.1_RELEASE.zip",
+      "zip_sha256": "d3a13139c3ed239d1f5053bc92270bf42ce73b9581c6ca1ca165977ca1d9ea6a",
+      "zip_bytes": 584318,
+      "pdfs": [
+        {
+          "url": "/research/MQM_DISSIPATIVE_LATCH_AUDIT_v0.1/MQM_DISSIPATIVE_LATCH_IEEE_A4_v0.1.pdf",
+          "sha256": "845ee7a2f69dec16c355976c41e884221271b88f646fa2cde5552fb3f6033575"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_EXCHANGE_CLOCK_v0.1",
+      "title": "Exchange Clock",
+      "version": "v0.1",
+      "family": "Clock and compilation",
+      "summary": "Finite resonant exchange energy and excitation commutators; detuned exchange energy nonconservation",
+      "claims": {
+        "version": "0.1",
+        "physical_promotion": 0,
+        "claims": [
+          {
+            "status": "EXACT",
+            "scope": "Finite resonant exchange energy and excitation commutators; detuned exchange energy nonconservation",
+            "evidence": "results/ENERGY_AUDIT.json"
+          },
+          {
+            "status": "DERIVED",
+            "scope": "Positive Gram bath generators and common full-spectrum ceiling8/3; centered laboratory ceiling200/3",
+            "evidence": [
+              "audit_exchange.py",
+              "audit_clock.py"
+            ]
+          },
+          {
+            "status": "SIMULATED",
+            "scope": "All five frozen exchange-bath filters fail target at port deadline16; best tau4 error2.8378993222730615e-5",
+            "evidence": "results/EXCHANGE_AUDIT.json"
+          },
+          {
+            "status": "INTERVAL VERIFIED",
+            "scope": "Uniform passes, PST16/PST14 fail at common word window1024 +/-1/1024, local cold bath only",
+            "evidence": "results/INTERVAL_AUDIT.json"
+          },
+          {
+            "status": "OPEN",
+            "scope": "Microscopic finite-time bath accuracy, native joint admission, physical2local whole-word compiler, geometry, thermodynamic repeatability, hardware and advantage"
+          }
+        ]
+      },
+      "claims_url": "/research/MQM_EXCHANGE_CLOCK_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_EXCHANGE_CLOCK_v0.1/MQM_EXCHANGE_CLOCK_v0.1_RELEASE.zip",
+      "zip_sha256": "52034ba3cb85d13c0fdfd2f5ae6c9285b61163f779247481a2cce45fd20fd115",
+      "zip_bytes": 836989,
+      "pdfs": [
+        {
+          "url": "/research/MQM_EXCHANGE_CLOCK_v0.1/MQM_EXCHANGE_CLOCK_IEEE_A4_v0.1.pdf",
+          "sha256": "81c28027a27c593dc97cdd13acaa303f625b3b2c58d6067716d1ee99aafe382d"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_FINITE_CLOCK_CERTIFICATION_v0.1",
+      "title": "Finite Clock Certification",
+      "version": "v0.1",
+      "family": "Clock and compilation",
+      "summary": "D>=m+floor(b/a) when q_epsilon<1/floor(b/a); for this frozen task D>=16",
+      "claims": {
+        "status": "Development mathematics; no independent proof or priority promotion",
+        "claims": [
+          {
+            "id": "CF1",
+            "title": "Completed-subspace time packing",
+            "claim": "D>=m+floor(b/a) when q_epsilon<1/floor(b/a); for this frozen task D>=16",
+            "evidence": "Analytic Gram proof; exact threshold check",
+            "scope": "Arbitrary ideal static clocks with stated prefix/flag completion contract; no dependence on physical implementation",
+            "independent_proof_review": "pending",
+            "theorem_priority_review": "pending",
+            "physical_promotion": 0
+          },
+          {
+            "id": "CF2",
+            "title": "Dyadic clock resource admission",
+            "claim": "53 addresses; all edges positive and <=32/63, norm<1, launch variance<=1/63",
+            "evidence": "Exact rational checks and positive leading minors",
+            "scope": "Legal-sector generator only; physical whole-system resources not equated",
+            "independent_proof_review": "pending",
+            "theorem_priority_review": "pending",
+            "physical_promotion": 0
+          },
+          {
+            "id": "CF3",
+            "title": "Uniform continuous episode accuracy",
+            "claim": "Ideal complete error <=0.0008817189423708117; supplied-bank and generator allowance total <=0.0009677595597805739 <1/1024",
+            "evidence": "Conditional arithmetic certificate; replay receipt includes exact fractions",
+            "scope": "Declared elementary binary64 model and admitted preparation/mismatch assumptions; physical errors unmeasured",
+            "independent_proof_review": "pending",
+            "theorem_priority_review": "pending",
+            "physical_promotion": 0
+          },
+          {
+            "id": "CF4",
+            "title": "Reference address improvement",
+            "claim": "53 versus64 addresses:11/64=17.1875% reduction with unchanged contract",
+            "evidence": "CF2+CF3 against certified spin reference",
+            "scope": "Six binary clock qubits in both cases; no global dimension optimum or hardware advantage",
+            "independent_proof_review": "pending",
+            "theorem_priority_review": "pending",
+            "physical_promotion": 0
+          }
+        ],
+        "not_claimed": [
+          "Global smallest clock",
+          "Savings in binary clock qubits",
+          "Reduction in coupling synthesis cost",
+          "Independent theorem priority",
+          "Fault tolerance",
+          "Infeasibility of 52 addresses",
+          "Exact completion time or exact recurrence for the shaped clock",
+          "Autonomous renewal of the supervising clock"
+        ]
+      },
+      "claims_url": "/research/MQM_FINITE_CLOCK_CERTIFICATION_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_FINITE_CLOCK_CERTIFICATION_v0.1/MQM_FINITE_CLOCK_CERTIFICATION_v0.1_RELEASE.zip",
+      "zip_sha256": "3fd067bf25372ca1f62b9769b8aa23bc44471d809e770b965ebc7c9b0f9ce976",
+      "zip_bytes": 617579,
+      "pdfs": [
+        {
+          "url": "/research/MQM_FINITE_CLOCK_CERTIFICATION_v0.1/MQM_CERTIFIED_53_ADDRESS_CLOCK_IEEE_A4_v0.1.pdf",
+          "sha256": "45468b6a3e99aba3a58b69e7f0fa3d3214f7b1e941a8e0947015ec3baefa0ffb"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_FREQUENCY_BOUND_v0.1",
+      "title": "Frequency Bound",
+      "version": "v0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "All-orders Gaussian displacement drive bound (exp4I_abs-1)/2; original bath traced; Gaussian continuum existence assumed.",
+      "claims": {
+        "version": "0.1",
+        "claims": [
+          {
+            "id": "WICK-BOUND",
+            "level": "DERIVED",
+            "status": "Conditional scoped derivation; independent theorem review pending",
+            "scope": "All-orders Gaussian displacement drive bound (exp4I_abs-1)/2; original bath traced; Gaussian continuum existence assumed."
+          },
+          {
+            "id": "RATIONAL-CERTIFICATE",
+            "level": "EXACT / DERIVED",
+            "status": "AUTO_LOCK exact arithmetic scope",
+            "scope": "Rational envelope certifies total retained error<1/8192 at originalbeta5/16,time16; not actual error or target1/65536."
+          },
+          {
+            "id": "SECOND-ORDER-GATE",
+            "level": "DERIVED / OPEN",
+            "status": "Tail budget verified; full second-order response OPEN",
+            "scope": "Even orders4+ bounded<2^-25; fixed-launch second-order half-trace budget127/2^25-2^-128 sufficient for originaltarget."
+          },
+          {
+            "id": "MIDPOINT-AND-QUAD",
+            "level": "SIMULATED",
+            "status": "Numerical diagnostics only",
+            "scope": "80digit midpoint and cusp-resolved scipy quadrature agree; no directed midpoint arithmetic claim; original roundoff warning preserved."
+          },
+          {
+            "id": "SIGNED-FILTER",
+            "level": "EXACT scalar identity / SIMULATED value",
+            "status": "AUTO_FREEZE use as full channel certificate",
+            "scope": "Cannot replace noncommuting response by signed scalar integral; reopening requires explicit commuting or response theorem."
+          }
+        ],
+        "physical_promotion": 0,
+        "requested_target": "OPEN; no failure or universal no-go inferred"
+      },
+      "claims_url": "/research/MQM_FREQUENCY_BOUND_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_FREQUENCY_BOUND_v0.1/MQM_FREQUENCY_BOUND_v0.1_RELEASE.zip",
+      "zip_sha256": "503d22233e75e34caa39e9e3a1483b68ac88040f2baa591f5b0369046578833c",
+      "zip_bytes": 757438,
+      "pdfs": [
+        {
+          "url": "/research/MQM_FREQUENCY_BOUND_v0.1/MQM_FREQUENCY_BOUND_IEEE_A4_v0.1.pdf",
+          "sha256": "a8d865a37ab71b4871c4a27c6580c8db9c13767b123ee272ca049f5c6222862f"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_GRAPHENE_CONTACT_AUDIT_v0.1",
+      "title": "Graphene Contact Audit",
+      "version": "v0.1",
+      "family": "Boundary and transport",
+      "summary": "Continuum model only",
+      "claims": {
+        "model_matching": {
+          "status": "EXACT symbolic identities / AUTO_LOCK scoped",
+          "assumptions": "Infinite-mass strip,neutral interior,identical uniform-width finite-doping ideal leads,abrupt mode-preserving interfaces,T=0,no disorder/interactions/B field",
+          "exact_checks": 6,
+          "scope": "Continuum model only"
+        },
+        "parameter_evaluation": {
+          "status": "SIMULATED binary64 exploratory inverse design",
+          "numerical_checks": 27,
+          "lead50meV": "No open modes at ideal-contact width",
+          "nominal_lead_eV": 0.2,
+          "nominal_width_nm": 15.795234968653224,
+          "fitted_target": "Lowest-mode7/768 within root tolerance1e-12",
+          "mode_sum_equals_target": false,
+          "interval_certified_width": false,
+          "independent_prediction": false
+        },
+        "physical_promotion": 0,
+        "device_or_advantage_claim": false,
+        "occupancy_transduction": "OPEN",
+        "Lindblad_rate_transduction": "OPEN",
+        "independent_review": "pending"
+      },
+      "claims_url": "/research/MQM_GRAPHENE_CONTACT_AUDIT_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_GRAPHENE_CONTACT_AUDIT_v0.1/MQM_GRAPHENE_CONTACT_AUDIT_v0.1_RELEASE.zip",
+      "zip_sha256": "8b68535adc1ddb8e10fb0c1f3730dbc0336e9c43eafb49bce078a16807b2e7f1",
+      "zip_bytes": 630918,
+      "pdfs": [
+        {
+          "url": "/research/MQM_GRAPHENE_CONTACT_AUDIT_v0.1/MQM_GRAPHENE_CONTACT_AUDIT_IEEE_A4_v0.1.pdf",
+          "sha256": "570d17fbd628aa47238ac0cc6a7106aa38dc7d0602f275cc258c96af2c2ef406"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_GRAPHENE_WINDOW_AUDIT_v0.1",
+      "title": "Graphene Window Audit",
+      "version": "v0.1",
+      "family": "Boundary and transport",
+      "summary": "0.1",
+      "claims": {
+        "version": "0.1",
+        "physical_promotion": 0,
+        "DERIVED": [
+          "arbitrary-detuning transfer amplitude under declared continuum model",
+          "thermal truncation tail bound"
+        ],
+        "INTERVAL_VERIFIED": [
+          "fixed-coefficient energy-only and gate-only radii 1/2000 eV",
+          "joint independent energy/gate rectangle radius 1/4000 eV"
+        ],
+        "NUMERICALLY_VERIFIED": [
+          "3285 scoped binary64 checks",
+          "mode amplitude and flux checks",
+          "finite-temperature conductance averages"
+        ],
+        "OPEN": [
+          "physical graphene boundary realization",
+          "occupancy-transmission-reservoir transduction",
+          "native joint admission",
+          "physical 2-local dissipative compiler",
+          "2^-16 complete quantum-channel guarantee"
+        ],
+        "excluded": [
+          "hardware validation",
+          "quantum advantage",
+          "material capacity law",
+          "fault tolerance"
+        ]
+      },
+      "claims_url": "/research/MQM_GRAPHENE_WINDOW_AUDIT_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_GRAPHENE_WINDOW_AUDIT_v0.1/MQM_GRAPHENE_WINDOW_AUDIT_v0.1_RELEASE.zip",
+      "zip_sha256": "f72db2f0eee897fb61994d5fc3a118b2c7b218fb5b398d31c2da8da0a9711823",
+      "zip_bytes": 757575,
+      "pdfs": [
+        {
+          "url": "/research/MQM_GRAPHENE_WINDOW_AUDIT_v0.1/MQM_GRAPHENE_WINDOW_AUDIT_IEEE_A4_v0.1.pdf",
+          "sha256": "8b4ccaee1de75d0c74cfec5bcf112cddfeae7b56939c687769d9286e968f4e04"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_IEEE_CONVERSION_BASELINE_v0.1",
+      "title": "Ieee Conversion Baseline",
+      "version": "v0.1",
+      "family": "Clock and compilation",
+      "summary": "ud_claim,mqm_label,disposition\nIV.1,1,Preserved conditional claim and proof; wording adapted; no novelty promotion\nIV.2,2,Preserved conditional claim and proof; wording adapted; no novelty promotion\nIV.3,3,Preserved conditional claim and proof; wording adapted; no novelty promotion\nIV.4,4,Preserved ",
+      "claims": {
+        "source_register_text": "ud_claim,mqm_label,disposition\nIV.1,1,Preserved conditional claim and proof; wording adapted; no novelty promotion\nIV.2,2,Preserved conditional claim and proof; wording adapted; no novelty promotion\nIV.3,3,Preserved conditional claim and proof; wording adapted; no novelty promotion\nIV.4,4,Preserved conditional claim and proof; wording adapted; no novelty promotion\nIV.5,5,Preserved conditional claim and proof; wording adapted; no novelty promotion\nIV.6,6,Preserved conditional claim and proof; wording adapted; no novelty promotion\nIV.7,7,Preserved conditional claim and proof; wording adapted; no novelty promotion\nIV.8,8,Preserved conditional claim and proof; wording adapted; no novelty promotion\nIV.9,9,Preserved conditional claim and proof; wording adapted; no novelty promotion\nIV.10,10,Preserved conditional claim and proof; wording adapted; no novelty promotion\nIV.11,11,Preserved conditional claim and proof; wording adapted; no novelty promotion\nIV.12,12,Preserved conditional claim and proof; wording adapted; no novelty promotion\nIV.13,13,Preserved conditional claim and proof; wording adapted; no novelty promotion\nIII PT11-PT16,Paper A 2-13 via Paper IV,\"Historical summaries, not separate candidate publications\"\nNew channel interpretation,\"Section 2, unnumbered\",Corollary of uniform spectator perturbation estimate; requires review\nNew fixed-norm substitution,\"Section 7.3, unnumbered\",Algebraic consequence of existing bound; not a universal lower bound\n"
+      },
+      "claims_url": "/research/MQM_IEEE_CONVERSION_BASELINE_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_IEEE_CONVERSION_BASELINE_v0.1/MQM_IEEE_CONVERSION_BASELINE_v0.1_RELEASE.zip",
+      "zip_sha256": "777353e39ed94f58aff705a65147ad3d0cd58f7f283f2105983044a808c26448",
+      "zip_bytes": 376025,
+      "pdfs": [
+        {
+          "url": "/research/MQM_IEEE_CONVERSION_BASELINE_v0.1/MQM_PAPER_A_IEEE_FOCUSED_DRAFT_v0.1.pdf",
+          "sha256": "a4a4b1ca8ba52088ba7680b2cddac4b29c957b39e8360f77c7f59c21374d5e95"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_JOINT_PHASE_ADMISSION_v0.1",
+      "title": "Joint Phase Admission",
+      "version": "v0.1",
+      "family": "Native admission",
+      "summary": "Refreshed and adopted as project working conventions",
+      "claims": {
+        "instruction_block": {
+          "version": "0.2",
+          "status": "Refreshed and adopted as project working conventions",
+          "source_boundary": "Does not override platform instructions or authorization boundaries"
+        },
+        "joint_objective": {
+          "status": "DERIVED, implementation numerically checked",
+          "complete_columns": 4,
+          "common_phase": true,
+          "objective_columns_checked": 392,
+          "constraint_columns_checked": 98,
+          "largest_objective_gradient_discrepancy": 2.1295179924996077e-09,
+          "largest_constraint_gradient_discrepancy": 5.4484081092251446e-11
+        },
+        "finite_search": {
+          "status": "NUMERICAL, finite exploration only",
+          "starts": 4,
+          "iteration_cap": 500,
+          "deadline_cap": 512,
+          "best_sampled_operator_residual": 0.21778889718537925,
+          "global_optimum": false,
+          "certified_endpoint": false,
+          "operational_resource_improvement": false
+        },
+        "norm_budget": {
+          "status": "EXACT SCOPED",
+          "implementation": "H=G/L, deadline T=L, L=sum abs(exact Pauli coefficient)",
+          "full_norm_upper": 1,
+          "all_frozen_L_at_most": 512,
+          "selected_exact_L": "6524518364314613754121/18446744073709551616",
+          "physical_dimension": 64
+        },
+        "all_time_selected_candidate_exclusion": {
+          "status": "EXACT ENCLOSED / AUTO_LOCK SCOPED",
+          "half_diamond_error": "strictly greater than 1/16",
+          "scope": "Selected frozen binary-rational fit; arbitrary deadline, common phase, spectator entanglement, scalar shifts and uniform scaling. Not a planar-family no-go.",
+          "spectral_exact_checks": 73
+        },
+        "second_moment": {
+          "status": "EXACT selected fit does not satisfy M2=0",
+          "matrix_supplied": true,
+          "scope": "Necessary endpoint condition only; moment equality alone is insufficient."
+        },
+        "total_scoped_exact_checks": 199,
+        "joint_admission": "OPEN",
+        "physical_promotion": 0,
+        "independent_review": "pending",
+        "theorem_level_novelty_comparison": "pending"
+      },
+      "claims_url": "/research/MQM_JOINT_PHASE_ADMISSION_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_JOINT_PHASE_ADMISSION_v0.1/MQM_JOINT_PHASE_ADMISSION_v0.1_RELEASE.zip",
+      "zip_sha256": "2a8880c47dbfb59e7fae1125cbae328ef848bb4c092657d6049f4ed236872f48",
+      "zip_bytes": 781873,
+      "pdfs": [
+        {
+          "url": "/research/MQM_JOINT_PHASE_ADMISSION_v0.1/MQM_JOINT_PHASE_ADMISSION_IEEE_A4_v0.1.pdf",
+          "sha256": "44c8ad0ba967ba7cbd98223b71813a9c46691b62575b7395efd7db15c36e85d4"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_LOCAL_DRIVE_CHAIN_v0.1",
+      "title": "Local Drive Chain",
+      "version": "v0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "EXACT inherited prior art",
+      "claims": {
+        "chain_mapping": "EXACT inherited prior art",
+        "locality_theorem": "DERIVED conditional all-size proof, pending independent review",
+        "rational_tail": "EXACT numerator-denominator audit, less than2^-451",
+        "constructor_controls": "EXACT 115 equalities plus3 boundary witnesses; finite controls only",
+        "full_second_order_response": "OPEN not evaluated",
+        "numerical_roundoff_certificate": "OPEN",
+        "thermal_target_2_minus_16": "OPEN",
+        "physical_promotion": 0
+      },
+      "claims_url": "/research/MQM_LOCAL_DRIVE_CHAIN_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_LOCAL_DRIVE_CHAIN_v0.1/MQM_LOCAL_DRIVE_CHAIN_v0.1_RELEASE.zip",
+      "zip_sha256": "9405bc0d9faceb07c2ade1040f107ec7aa23e0f6480849d1d40bbcadeffdf8cf",
+      "zip_bytes": 898252,
+      "pdfs": [
+        {
+          "url": "/research/MQM_LOCAL_DRIVE_CHAIN_v0.1/MQM_LOCAL_DRIVE_CHAIN_IEEE_A4_v0.1.pdf",
+          "sha256": "6f0ff0bde220fbdc52c03d99d50effa8e1f836d315f4692802ed4bff426a4f62"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_MICROSCOPIC_LATCH_v0.1",
+      "title": "Microscopic Latch",
+      "version": "v0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "native-qutrit/qubit interaction spectrum",
+      "claims": {
+        "version": "0.1",
+        "physical_promotion": 0,
+        "EXACT": [
+          "native-qutrit/qubit interaction spectrum",
+          "displayed qubit-encoding weight3 obstruction",
+          "local thermal-generator stationary identities",
+          "identity-on-data preservation under declared coupling",
+          "reverse jump destroys d0 invariance"
+        ],
+        "INTERVAL_VERIFIED": [
+          "cold uniform window retained-channel bounds for kappa8,32,128; kappa2 fails"
+        ],
+        "DERIVED": [
+          "CPTP perturbation reverse-rate debit",
+          "kappa8,r<=2^-24 uniform retained-channel bound below2^-16"
+        ],
+        "SIMULATED": [
+          "262 binary64 checks for six-state local master equation",
+          "finite-bandwidth and reverse-rate scan",
+          "Bell spectator and closed-ingress controls"
+        ],
+        "CANDIDATE": [
+          "native qutrit plus lossy qubit physical interface",
+          "resonant free-energy assignment"
+        ],
+        "OPEN": [
+          "completion and occupancy gating compiler",
+          "native joint admission",
+          "full qubit 2-local implementation",
+          "microscopic bath spectral-density model",
+          "material reverse-rate calibration",
+          "hardware validation"
+        ],
+        "not_promoted": [
+          "universal stationary all-time lower bound",
+          "optimality",
+          "quantum advantage",
+          "hardware readiness",
+          "full complete-domain source-to-storage cycle"
+        ]
+      },
+      "claims_url": "/research/MQM_MICROSCOPIC_LATCH_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_MICROSCOPIC_LATCH_v0.1/MQM_MICROSCOPIC_LATCH_v0.1_RELEASE.zip",
+      "zip_sha256": "087f63321f1ce4e6d6c455d8fdd5c2e4fcb514a6faed5879bb4ad817b11363dc",
+      "zip_bytes": 799865,
+      "pdfs": [
+        {
+          "url": "/research/MQM_MICROSCOPIC_LATCH_v0.1/MQM_MICROSCOPIC_LATCH_IEEE_A4_v0.1.pdf",
+          "sha256": "ca10da47e433ada9dc65c282a76855b38e53ad41842cb4cd5895d786932e0ecc"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_MICRO_REFERENCE_v0.1",
+      "title": "Micro Reference",
+      "version": "v0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "Specified finite vacuum one-excitation Hamiltonian, retained q identity and resonant-only zero-mode floor",
+      "claims": {
+        "version": "0.1",
+        "physical_promotion": 0,
+        "claims": [
+          {
+            "status": "EXACT",
+            "scope": "Specified finite vacuum one-excitation Hamiltonian, retained q identity and resonant-only zero-mode floor",
+            "evidence": "audit_reference.py"
+          },
+          {
+            "status": "DERIVED",
+            "scope": "Finite256-mode B16 reference q(16)<3/262144 by directed interval",
+            "evidence": "results/REFERENCE_INTERVAL.json"
+          },
+          {
+            "status": "DERIVED",
+            "scope": "Continuum comparison<=min(1,tB/M); too loose to transfer target pass",
+            "evidence": "results/REFERENCE_AUDIT.json"
+          },
+          {
+            "status": "DERIVED",
+            "scope": "Normalized decay identity gamma=8 terminal weight; no zero-decay eigenmodes for positive path couplings",
+            "evidence": "results/MODE_AUDIT.json"
+          },
+          {
+            "status": "SIMULATED",
+            "scope": "12 finite grids and36 time evaluations; frozen modal diagnostics including cross terms",
+            "evidence": [
+              "results/REFERENCE_AUDIT.json",
+              "results/MODE_AUDIT.json"
+            ]
+          },
+          {
+            "status": "NO-GO",
+            "scope": "Only the three degenerate-frequency bright-mode controls: all-time q floors25/128,2209/8192,625/2048",
+            "evidence": "results/REFERENCE_AUDIT.json"
+          },
+          {
+            "status": "OPEN",
+            "scope": "Continuum target certificate, finite temperature, old Ohmic relation, full-word microscopic accuracy, permanent hold, refresh, physical two-local compilation and hardware"
+          }
+        ]
+      },
+      "claims_url": "/research/MQM_MICRO_REFERENCE_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_MICRO_REFERENCE_v0.1/MQM_MICRO_REFERENCE_v0.1_RELEASE.zip",
+      "zip_sha256": "479f2fb4c37793906bf1e270497b894f36d3fa80851278e21399f17b6a869ea9",
+      "zip_bytes": 799117,
+      "pdfs": [
+        {
+          "url": "/research/MQM_MICRO_REFERENCE_v0.1/MQM_MICRO_REFERENCE_IEEE_A4_v0.1.pdf",
+          "sha256": "fbf30dee77c43b91b2ee178f982bd3372a56ea2311b732df8f8dd4afc835c346"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_MOMENT_FILTERED_ADMISSION_v0.1",
+      "title": "Moment Filtered Admission",
+      "version": "v0.1",
+      "family": "Native admission",
+      "summary": "62-real-coefficient ansatz, exact first-moment kernel, specified six-qubit planar ten-pair graph; not all Hermitian generators.",
+      "claims": {
+        "real_kernel_symmetry_decomposition": {
+          "status": "EXACT / AUTO_LOCK SCOPED",
+          "first_moment_dimension": 55,
+          "both_charge_conserving_intersection": 20,
+          "charge_breaking_complement": 35,
+          "Nz_conserving_intersection": 45,
+          "Nz_changing_complement": 10,
+          "scope": "62-real-coefficient ansatz, exact first-moment kernel, specified six-qubit planar ten-pair graph; not all Hermitian generators."
+        },
+        "terminal_activation": {
+          "status": "DERIVED NECESSARY",
+          "condition": "[H,N_z]!=0",
+          "sufficient": false
+        },
+        "frozen_candidate_exclusions": {
+          "status": "EXACT / AUTO_LOCK SCOPED",
+          "witness": "second-moment expectation conserved by static H",
+          "batch_A_strict_floor": "1/512",
+          "batch_B_strict_floor": "1/1024",
+          "scope": "These two exact binary-rational frozen generators, every time and uniform norm rescaling; not all searched coefficients."
+        },
+        "expanded_planar_filter": {
+          "status": "EXACT / AUTO_LOCK SCOPED",
+          "all_Hermitian_dimension_including_identity": 109,
+          "first_moment_rank": 11,
+          "kernel_without_identity": 97,
+          "added_qubits": 0,
+          "added_allowed_pairs": 0,
+          "new_independent_coupling_components": true,
+          "optimization_run": false,
+          "sufficient": false
+        },
+        "search": {
+          "status": "NUMERICAL EXPLORATION",
+          "starts": 8,
+          "basis_parameters": 55,
+          "first_moment": "exact parameterization",
+          "second_moment": "soft penalty in second batch only",
+          "optimizer_global_certificate": false
+        },
+        "six_qubit_single_excitation_admission": "OPEN",
+        "static_full_episode": "OPEN",
+        "thermodynamic_refresh": "OPEN",
+        "physical_promotion": 0,
+        "independent_review": "pending",
+        "theorem_level_novelty_comparison": "pending",
+        "verification": {
+          "exact_kernel_checks": 40,
+          "expanded_kernel_checks": 9,
+          "candidate_audit_checks": [
+            9,
+            9
+          ],
+          "total_exact_checks": 67,
+          "finite_fits": 8,
+          "derivative_check_max_errors": [
+            3.9225230494266405e-09,
+            3.9225230494266405e-09
+          ]
+        }
+      },
+      "claims_url": "/research/MQM_MOMENT_FILTERED_ADMISSION_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_MOMENT_FILTERED_ADMISSION_v0.1/MQM_MOMENT_FILTERED_ADMISSION_v0.1_RELEASE.zip",
+      "zip_sha256": "6d92c971c45e82d8905a363bf639b9857193193963581bda41860dafc3ae9b20",
+      "zip_bytes": 812570,
+      "pdfs": [
+        {
+          "url": "/research/MQM_MOMENT_FILTERED_ADMISSION_v0.1/MQM_MOMENT_FILTERED_ADMISSION_IEEE_A4_v0.1.pdf",
+          "sha256": "b01eb52a64404d3653c776b4280ee34d44ff53b38996a2341d591fff2b82767d"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_PLANAR_ENCODED_SWAP_v0.1",
+      "title": "Planar Encoded Swap",
+      "version": "v0.1",
+      "family": "Clock and compilation",
+      "summary": "conditional mathematical development; independent review pending",
+      "claims": {
+        "status": "conditional mathematical development; independent review pending",
+        "physical_promotion": 0,
+        "certified": [
+          "Exact four-address three-CNOT logical SWAP history under joint mode encoding",
+          "16 physical mode qubits; 12 core pairs; degree 2; planar; no blind leaves or detuning",
+          "Exact full physical core norm 1 and width 2; ideal deadline 8*pi",
+          "Rounded core budget conservatively rescaled; interval error <2^-16",
+          "Spectator-uniform isometry and half-diamond guarantees conditional on admitted encoded input",
+          "Explicit coherent native interfaces and exact nearest-neighbor routing; 18-qubit planar hybrid"
+        ],
+        "open": [
+          "Autonomous native input and output interfaces",
+          "Permanent retention or clock refresh",
+          "Hardware supply, preparation, pulse switching and noise certificate",
+          "Minimality or advantage over direct timed SWAP",
+          "Polynomial scaling in body qubits",
+          "Thirteen-gate non-permutation word planarity",
+          "Independent theorem-level novelty comparison"
+        ]
+      },
+      "claims_url": "/research/MQM_PLANAR_ENCODED_SWAP_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_PLANAR_ENCODED_SWAP_v0.1/MQM_PLANAR_ENCODED_SWAP_v0.1_RELEASE.zip",
+      "zip_sha256": "c9d720cb497519ba268ab9be2c67c56b7a54be35bb00d6d6b341ca0b3ed56335",
+      "zip_bytes": 1060834,
+      "pdfs": [
+        {
+          "url": "/research/MQM_PLANAR_ENCODED_SWAP_v0.1/MQM_PLANAR_ENCODED_SWAP_IEEE_A4_v0.1.pdf",
+          "sha256": "1872a8833886aa0aeda56836424bb92e3fbfa96268471398e8e518779a8bc65b"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_RECENTERED_ADMISSION_v0.1",
+      "title": "Recentered Admission",
+      "version": "v0.1",
+      "family": "Native admission",
+      "summary": "SIMULATED exploratory tuning after parent evaluation exposure",
+      "claims": {
+        "exploration": {
+          "status": "SIMULATED exploratory tuning after parent evaluation exposure",
+          "attempts": 424,
+          "accepted": 309,
+          "rejected": 115,
+          "attempt_cap": 1000,
+          "free_box_radius": 4,
+          "initial_residual": 0.22288181865759019,
+          "best_residual": 0.2228461005676329,
+          "resource_gain": false,
+          "stationarity_or_global_optimum": false
+        },
+        "root": {
+          "status": "EXACT / AUTO_LOCK scoped",
+          "first_second_moments_exact": true,
+          "root_type": "Unique implicitly defined real algebraic root in a fixed rational slice box",
+          "box_radius": "1/281474976710656",
+          "dependent_coordinates": 15,
+          "fixed_coordinates": 82,
+          "local_zero_manifold_dimension": 82,
+          "deadline_upper": "13792685781029863011731/36893488147419103232",
+          "full_norm_budget": 1,
+          "all_time_half_diamond_floor": "strictly greater than1/16",
+          "scope": "One selected root; not planar-family no-go or path certification"
+        },
+        "complete_admission": {
+          "status": "OPEN",
+          "target": "1/65536 on nonzero readout window",
+          "certified_encoder": false,
+          "SWAP_composition": "gated"
+        },
+        "scoped_exact_checks": 252,
+        "numerical_derivative_checks": 166,
+        "physical_promotion": 0,
+        "independent_review": "pending",
+        "novelty_comparison": "pending"
+      },
+      "claims_url": "/research/MQM_RECENTERED_ADMISSION_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_RECENTERED_ADMISSION_v0.1/MQM_RECENTERED_ADMISSION_v0.1_RELEASE.zip",
+      "zip_sha256": "3324bfa2dcc312d83e96ffe6ec16ccb5ecd1904d48892cfe7a614c21919b7e79",
+      "zip_bytes": 727301,
+      "pdfs": [
+        {
+          "url": "/research/MQM_RECENTERED_ADMISSION_v0.1/MQM_RECENTERED_ADMISSION_IEEE_A4_v0.1.pdf",
+          "sha256": "6b8242e4c1b1bf582ea3cfa240902db475a498236f14c3ef3da3c7bb69c8a157"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_RETRACTED_BRANCH_SEARCH_v0.1",
+      "title": "Retracted Branch Search",
+      "version": "v0.1",
+      "family": "Native admission",
+      "summary": "NUMERICAL bounded exploration",
+      "claims": {
+        "search": {
+          "status": "NUMERICAL bounded exploration",
+          "attempts": 158,
+          "accepted": 100,
+          "rejected": 58,
+          "declared_attempt_cap": 200,
+          "initial_operator_residual": 0.22289152265047185,
+          "best_operator_residual": 0.22288181865758103,
+          "stationarity_or_global_optimality": false,
+          "resource_improvement": false
+        },
+        "exact_selected_root": {
+          "status": "EXACT / AUTO_LOCK SCOPED",
+          "first_and_second_moments_match": true,
+          "fixed_dyadic_coordinates": 82,
+          "dependent_coordinates": 15,
+          "local_branch_dimension": 82,
+          "root_type": "Unique real algebraic root in a fixed rational slice box",
+          "radius": "1/562949953421312",
+          "full_norm_implementation": "H=G/L_upper; norm<=1 on all64 dimensions",
+          "deadline_upper": "13240871624521036831541/36893488147419103232",
+          "all_time_half_diamond_error": "strictly greater than1/16",
+          "scope": "One selected exact root; not the family or continuous optimization path"
+        },
+        "shared_return": {
+          "status": "DERIVED with exact task-data checks; novelty pending",
+          "perfect_admission_Krylov_dimension_upper": 61,
+          "finite_error_assumption": "Simple spectrum",
+          "finite_error_condition": "sum of three smallest shared-launch weights <= (epsilon/(1-epsilon))^2",
+          "target_threshold": "1/4294836225",
+          "necessary_not_sufficient": true,
+          "root_launch_weights_enclosed": false,
+          "family_no_go": false
+        },
+        "total_scoped_exact_checks": 252,
+        "numerical_reduced_Jacobian_columns": 166,
+        "certified_encoder": false,
+        "physical_promotion": 0,
+        "independent_review": "pending",
+        "theorem_level_novelty_comparison": "pending"
+      },
+      "claims_url": "/research/MQM_RETRACTED_BRANCH_SEARCH_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_RETRACTED_BRANCH_SEARCH_v0.1/MQM_RETRACTED_BRANCH_SEARCH_v0.1_RELEASE.zip",
+      "zip_sha256": "28928cc85905d2dba97daa5c2f50fa5e794012ceb1dcd229f35c363fc2d11554",
+      "zip_bytes": 874835,
+      "pdfs": [
+        {
+          "url": "/research/MQM_RETRACTED_BRANCH_SEARCH_v0.1/MQM_RETRACTED_BRANCH_SEARCH_IEEE_A4_v0.1.pdf",
+          "sha256": "3c7edb27d72e768afec25993be419cb30afb69544ca88584beb84ed95bc448f3"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_SECOND_MOMENT_MANIFOLD_v0.1",
+      "title": "Second Moment Manifold",
+      "version": "v0.1",
+      "family": "Native admission",
+      "summary": "Fifteen independent quadratic forms, not globally regular constraints.",
+      "claims": {
+        "quadratic_geometry": {
+          "status": "EXACT / AUTO_LOCK SCOPED",
+          "kernel_coordinates": 97,
+          "Hermitian_components": 16,
+          "polynomial_row_rank": 15,
+          "integer_Jacobian_probe_ranks": [
+            15,
+            15,
+            15
+          ],
+          "X_z_zero_point_rank": 13,
+          "origin_zero_point_rank": 0,
+          "scope": "Fifteen independent quadratic forms, not globally regular constraints."
+        },
+        "finite_search": {
+          "status": "NUMERICAL bounded exploration",
+          "attempts": 4,
+          "iteration_cap": 600,
+          "best_operator_residual": 0.22289098811883507,
+          "floating_equality_is_not_exact": true,
+          "certified_encoder": false
+        },
+        "exact_regular_root": {
+          "status": "EXACT RATIONAL CONTRACTION / AUTO_LOCK SCOPED",
+          "unique_in_fixed_slice_box": true,
+          "varied_coordinates": 15,
+          "fixed_coordinates": 82,
+          "root_type": "Implicitly defined real algebraic root of rational quadratics, not frozen binary-rational coefficients",
+          "box_radius": "1/562949953421312",
+          "first_moment_exact_zero": true,
+          "second_moment_exact_zero": true,
+          "Jacobian_rank": 15,
+          "local_zero_manifold_dimension": 82,
+          "global_manifold_or_uniqueness_claim": false,
+          "full_norm_implementation": "G_root / L_root_upper; norm<=1 on all64 dimensions",
+          "finite_deadline_upper": "6567952598006607673097/18446744073709551616",
+          "feasibility_gate": "Local second-moment feasibility CLOSED, complete admission OPEN"
+        },
+        "root_admission_exclusion": {
+          "status": "EXACT ENCLOSED / AUTO_LOCK SCOPED",
+          "all_time_half_diamond_error": "strictly greater than1/16",
+          "scope": "This exact algebraic root only; all deadlines, common phases, spectators, scalar shifts and uniform norm rescaling. Not a family no-go."
+        },
+        "total_scoped_exact_checks": 245,
+        "numerical_gradient_columns": 196,
+        "physical_promotion": 0,
+        "operational_resource_improvement": false,
+        "independent_review": "pending",
+        "theorem_level_novelty_comparison": "pending"
+      },
+      "claims_url": "/research/MQM_SECOND_MOMENT_MANIFOLD_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_SECOND_MOMENT_MANIFOLD_v0.1/MQM_SECOND_MOMENT_MANIFOLD_v0.1_RELEASE.zip",
+      "zip_sha256": "4e5a5ef90ab224803b95eb0385a00d3f90e7a4b537e99729db18268bdc275c30",
+      "zip_bytes": 871775,
+      "pdfs": [
+        {
+          "url": "/research/MQM_SECOND_MOMENT_MANIFOLD_v0.1/MQM_SECOND_MOMENT_MANIFOLD_IEEE_A4_v0.1.pdf",
+          "sha256": "137cc4ac14e05d67a74a54239232bc763cbf9557db5aba8e9c2dc892bc6dc14f"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_SECOND_ORDER_SPEC_v0.1",
+      "title": "Second Order Spec",
+      "version": "v0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "Eight-dimensional retained correction requires joint vacuum bath operator evolution and final vacuum propagation before trace; fixed source launch only.",
+      "claims": {
+        "version": "0.1",
+        "claims": [
+          {
+            "id": "JOINT-RESPONSE",
+            "level": "DERIVED",
+            "scope": "Eight-dimensional retained correction requires joint vacuum bath operator evolution and final vacuum propagation before trace; fixed source launch only.",
+            "status": "Scoped formal specification; independent theorem review pending"
+          },
+          {
+            "id": "FINITE-ONEPHOTON-IDENTITY",
+            "level": "DERIVED / EXACT algebra checks",
+            "scope": "For finite stationary passive Gaussian regularization, second Gaussian response equals one-photon covariance-weighted launch output minustrN vacuum output. It is a derivative identity, not truncation of full thermal dynamics.",
+            "status": "AUTO_LOCK finite source scope; independent review pending"
+          },
+          {
+            "id": "SECTORS",
+            "level": "EXACT / DERIVED",
+            "scope": "System charges0,1,2 withmultiplicities1,4,3; finite response directmethodQ1/Q2; integralmethodQ0..Q2. Sectornormbound64 isrotating-frame mathematical bound, not fullphysicalnorm."
+          },
+          {
+            "id": "FINITE-PHOTON-TAIL",
+            "level": "DERIVED / EXACT rational receipts",
+            "scope": "FiniteM photon count tail<=binom(M+r-1,r)/(2^21-1)^r; projectednormalized initialK<=r-1 evolveswithinQ<=r. Doesnot certify uniformcontinuum Fockcutoff."
+          },
+          {
+            "id": "RESPONSE-CONTROLS",
+            "level": "SIMULATED",
+            "scope": "M2,4,8,16 finite midpoint grids. M2 doublecommutator agrees with onephotonformula after256/512 refinement; numericalcontrolnotintervalcertificate."
+          },
+          {
+            "id": "ORIGINAL-QUADRATURE",
+            "level": "SIMULATED",
+            "status": "AUTO_FREEZE originalrecipe failed1e-10criterion at128",
+            "scope": "Originalsource andfailure receipt preserved; numericalrefinement disclosed."
+          },
+          {
+            "id": "PRIMARY-CONTINUUM",
+            "level": "OPEN",
+            "scope": "beta5/16,t16,target2^-16 notcertified. Need responsecontinuum transfer, numerical enclosures and allowance within127/2^25-2^-128."
+          }
+        ],
+        "physical_promotion": 0,
+        "independent_review": "pending",
+        "necessity_claim": "Failure of a sufficient response bound does not prove cooling or spectral changes necessary."
+      },
+      "claims_url": "/research/MQM_SECOND_ORDER_SPEC_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_SECOND_ORDER_SPEC_v0.1/MQM_SECOND_ORDER_SPEC_v0.1_RELEASE.zip",
+      "zip_sha256": "e639570640d5f3ab17e5365603be9d002dfa199e5b34ea3c6ffb648ce77ded97",
+      "zip_bytes": 883216,
+      "pdfs": [
+        {
+          "url": "/research/MQM_SECOND_ORDER_SPEC_v0.1/MQM_SECOND_ORDER_SPEC_IEEE_A4_v0.1.pdf",
+          "sha256": "51daac4c272135f898c847732eae39bb5f8ba6e35a24d328191eaae880b35de4"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_SIX_QUBIT_ADMISSION_SEARCH_v0.1",
+      "title": "Six Qubit Admission Search",
+      "version": "v0.1",
+      "family": "Native admission",
+      "summary": "Scoped mathematical results; independent review pending; physical evidence promotion 0",
+      "claims": {
+        "status": "Scoped mathematical results; independent review pending; physical evidence promotion 0",
+        "optimal_single_native_admission": {
+          "state": "EXACT, SCOPED",
+          "theorem": 3,
+          "generator": "Hstar_g = K_g - 2*g*N_A*N_v - 2*g*I; g=1/2",
+          "same_contract_as_parent": true,
+          "deadline": "pi",
+          "previous_deadline": "3*pi/2",
+          "full_norm": 1,
+          "spectrum": [
+            -1,
+            0,
+            1
+          ],
+          "optimality_scope": "Static Hermitian two-local generator, specified native computational-basis seed contract, full centered operator norm <= 1.",
+          "physical_qubits": 3,
+          "interaction_pairs": 3,
+          "maximum_degree": 2,
+          "planar": true,
+          "maximum_Pauli_coefficient": "1/2 versus 1/3 in parent",
+          "maximum_two_body_Pauli_coefficient": "1/4 versus 1/6 in parent",
+          "fixed_per_coupling_speed_improvement": false,
+          "coefficient_rounding_debit": 0,
+          "uniform_spectator_channel_window": "|t-pi| <= 2^-18 gives half-diamond error <= 2^-18 under ideal preparation and implementation"
+        },
+        "joint_charge_family": {
+          "state": "EXACT EXCLUSION",
+          "theorem": 1,
+          "scope": "Exactly six qubits, two-local Hermitian, commutes with both QA and QO",
+          "dimension": 38,
+          "conclusion": "Every member conserves N_m11; input 11 remains orthogonal to target for all times.",
+          "universal_two_local_impossibility": false
+        },
+        "deadline": {
+          "state": "EXACT NECESSARY BOUND",
+          "theorem": 2,
+          "exact": "T>=pi",
+          "error_2_minus_16": "T>=pi-1/21845",
+          "scope": "Static Hermitian two-local on stated source/target, full centered norm<=1; complex couplings allowed.",
+          "joint_six_qubit_attainment": "OPEN"
+        },
+        "odd_parity_comparator": {
+          "state": "EXACT DIFFERENT CONTRACT",
+          "physical_qubits": 5,
+          "pairs": 6,
+          "planar": true,
+          "maximum_degree": 4,
+          "deadline": "2*pi",
+          "full_norm": 1,
+          "width": 2,
+          "outputs": [
+            "100",
+            "010",
+            "001",
+            "111"
+          ],
+          "required_single_excitation_interface": false,
+          "coupling_rounding_debit": 0
+        },
+        "numerical_search": {
+          "state": "FINITE EXPLORATION, NO ENCODER",
+          "runs": 4,
+          "parameters": 62,
+          "planar_pairs": 10,
+          "best_frozen_fit_all_time_error_floor": "990307649893073664/54271772679467745551",
+          "all_fits_or_all_hamiltonians_excluded": false
+        },
+        "moment_filter": {
+          "state": "EXACT NECESSARY FILTER",
+          "planar_real_rank": 7,
+          "kernel_dimension": 55,
+          "sufficiency": false,
+          "constrained_optimization_run": false
+        },
+        "verification": {
+          "exact_checks": 78,
+          "numerical_propagation_checks": 4,
+          "optimization_runs_reported_separately": 4,
+          "physical_promotion": 0
+        },
+        "six_qubit_single_excitation_admission": "OPEN",
+        "complete_autonomous_episode": "OPEN",
+        "irreversible_latch": "OPEN",
+        "thermodynamic_refresh": "OPEN"
+      },
+      "claims_url": "/research/MQM_SIX_QUBIT_ADMISSION_SEARCH_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_SIX_QUBIT_ADMISSION_SEARCH_v0.1/MQM_SIX_QUBIT_ADMISSION_SEARCH_v0.1_RELEASE.zip",
+      "zip_sha256": "003c274f918d6c04f294f931a15c3a6247d8d8322e6bf42e323581a8b2caa18c",
+      "zip_bytes": 1119042,
+      "pdfs": [
+        {
+          "url": "/research/MQM_SIX_QUBIT_ADMISSION_SEARCH_v0.1/MQM_SIX_QUBIT_ADMISSION_IEEE_A4_v0.1.pdf",
+          "sha256": "139f302d22e0f2f6e7af1c0ce00b0a28d6a5d078871fc3f36ebaed0f427cb554"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_SPARSE_TRANSFER_v0.1",
+      "title": "Sparse Transfer",
+      "version": "v0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "M768,Q2 dimension298371,nnz1486852,CSR19035712bytes. Physicalqubit/coupling counts notclaimed.",
+      "claims": {
+        "version": "0.1",
+        "claims": [
+          {
+            "id": "SPARSE-CONSTRUCTION",
+            "level": "EXACT counts / SIMULATED implementation",
+            "scope": "M768,Q2 dimension298371,nnz1486852,CSR19035712bytes. Physicalqubit/coupling counts notclaimed."
+          },
+          {
+            "id": "KRYLOV-DEFECT",
+            "level": "DERIVED prior-art method",
+            "scope": "Duhamel full-defect state bound; rankone Lanczos residual onlywith exact recurrence. Rounded data needfull residual and directed arithmetic allowances."
+          },
+          {
+            "id": "SHORTSTEP-PLAN",
+            "level": "DERIVED ideal exact-arithmetic design",
+            "scope": "64steps of1/4,k64,source-sectornorm64 yieldglobalvectorerror<2^-32 andidealfinitefullresponsepropdebit<2^-43. Restartedcompleximplementation and numericalcertification OPEN."
+          },
+          {
+            "id": "SPARSE-CONTROLS",
+            "level": "SIMULATED",
+            "scope": "M16 assembly andone-vector Lanczos residualchecks pass; whole-intervalk128 vectorerror0.09618 doesnot certifytargetaccuracy. M768k16 pilotonlyonehot mode, notfullthermalresponse."
+          },
+          {
+            "id": "CONTINUUM-COMPARISON",
+            "level": "DERIVED conditional / EXACT rational majorants",
+            "scope": "Stepfrequency embedding andGaussianpairedresponse givecoarse1/M transferallowance. M768majorant~0.029003 insufficient; notactualerrorfloor."
+          },
+          {
+            "id": "PRIMARY-TARGET",
+            "level": "OPEN",
+            "scope": "beta5/16,T16,target2^-16 notcertified. Higher-sourceclaims, permanenthold, hardware andadvantage remainunclosed."
+          }
+        ],
+        "physical_promotion": 0,
+        "independent_theorem_review": "pending"
+      },
+      "claims_url": "/research/MQM_SPARSE_TRANSFER_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_SPARSE_TRANSFER_v0.1/MQM_SPARSE_TRANSFER_v0.1_RELEASE.zip",
+      "zip_sha256": "937f0f16a4ccd4e6d5229a3bd5b86ab210f32ab76b10890b72daa2c5955df59d",
+      "zip_bytes": 687488,
+      "pdfs": [
+        {
+          "url": "/research/MQM_SPARSE_TRANSFER_v0.1/MQM_SPARSE_TRANSFER_IEEE_A4_v0.1.pdf",
+          "sha256": "8d136eaac9f31650e4493911108578091908df616d27547634485e1cfaf13294"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_SPECTRAL_ALIGNMENT_ADMISSION_v0.1",
+      "title": "Spectral Alignment Admission",
+      "version": "v0.1",
+      "family": "Native admission",
+      "summary": "DERIVED, simple resolved spectrum; numerical implementation checked in 194 columns",
+      "claims": {
+        "spectral_orientation_gradient": "DERIVED, simple resolved spectrum; numerical implementation checked in 194 columns",
+        "finite_search": {
+          "status": "NUMERICAL, not global optimality",
+          "runs": 4,
+          "iteration_cap": 250,
+          "best_S": 3.9991205292960474,
+          "target_orientation_necessary": "S>=4 sqrt(1-2^-32)",
+          "smoothing_bias": "64*10^-10=6.4e-9, too large to certify target; unsmoothed S reported"
+        },
+        "frozen_generator": {
+          "status": "EXACT ENCLOSED / AUTO_LOCK SCOPED",
+          "exact_checks": 191,
+          "all_time_half_diamond_error": "strictly greater than 1/64",
+          "scope": "One frozen generator, all deadlines, arbitrary spectators, scalar shifts and uniform scaling. Not a family obstruction."
+        },
+        "resources": {
+          "physical_qubits": 6,
+          "allowed_pairs": 10,
+          "planar": true,
+          "maximum_degree": 4,
+          "full_dimension": 64,
+          "logical_dimension": 4,
+          "full_norm_certificate": "H/L, L=sum abs(exact Pauli coefficients), full norm<=1"
+        },
+        "joint_admission": "OPEN",
+        "phase_scan": "NUMERICAL bounded grid and local refinements, no exhaustiveness or certified endpoint",
+        "operational_resource_improvement": false,
+        "physical_promotion": 0,
+        "independent_review": "pending",
+        "theorem_level_novelty_comparison": "pending"
+      },
+      "claims_url": "/research/MQM_SPECTRAL_ALIGNMENT_ADMISSION_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_SPECTRAL_ALIGNMENT_ADMISSION_v0.1/MQM_SPECTRAL_ALIGNMENT_ADMISSION_v0.1_RELEASE.zip",
+      "zip_sha256": "cf31232e0991efc24603cbe2df06b9c080b783d3e2196564630ad61e6d7c3dc8",
+      "zip_bytes": 764263,
+      "pdfs": [
+        {
+          "url": "/research/MQM_SPECTRAL_ALIGNMENT_ADMISSION_v0.1/MQM_SPECTRAL_ALIGNMENT_ADMISSION_IEEE_A4_v0.1.pdf",
+          "sha256": "3572d31ff55abc1719134a316c060edc6e7653de64f28c99cadf1b5bfa5422c4"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_THERMAL_KERNEL_v0.1",
+      "title": "Thermal Kernel",
+      "version": "v0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "Gaussian flat-band continuum reference; reduced dynamics existence assumed; correlated thermal covariance preserved.",
+      "claims": {
+        "version": "0.1",
+        "claims": [
+          {
+            "id": "THERMAL-REFERENCE",
+            "level": "DERIVED",
+            "status": "AUTO_LOCK scoped conditional specification",
+            "scope": "Gaussian flat-band continuum reference; reduced dynamics existence assumed; correlated thermal covariance preserved."
+          },
+          {
+            "id": "THERMAL-DEBIT",
+            "level": "DERIVED",
+            "status": "AUTO_LOCK scoped conditional bound",
+            "scope": "half diamond thermal-vacuum <=min(1,t^2 V_beta); arbitrary reference; original bath traced; no photon truncation."
+          },
+          {
+            "id": "PRIMARY-TEMPERATURE",
+            "level": "OPEN",
+            "status": "OPEN",
+            "scope": "beta5/16 target not certified; conservative bound inconclusive, not channel failure."
+          },
+          {
+            "id": "COOLING-POINT",
+            "level": "DERIVED",
+            "status": "AUTO_LOCK conditional sufficient bound",
+            "scope": "Separately frozen beta7/16 cooling point total ceiling <1/65536 at t16; no necessity or device claim."
+          },
+          {
+            "id": "VACUUM-KERNEL",
+            "level": "SIMULATED",
+            "status": "AUTO_LOCK declared numerical checks",
+            "scope": "Volterra audit agrees with inherited vacuum certificate within1e-8; not second directed theorem or external review."
+          },
+          {
+            "id": "QUADRATURE-ORIGINAL",
+            "level": "SIMULATED",
+            "status": "AUTO_FREEZE failed numerical recipe",
+            "scope": "128/256 at s16 exceeds1e-12; source model unchanged; reopen only with resolution amendment."
+          },
+          {
+            "id": "QUADRATURE-REPAIR",
+            "level": "SIMULATED",
+            "status": "AUTO_LOCK declared numerical checks",
+            "scope": "256/512 checked against Bose series; amendment preserved."
+          }
+        ],
+        "physical_promotion": 0,
+        "unclosed": [
+          "primary beta5/16 thermal target",
+          "full13-step microscopic thermal word",
+          "permanent retention",
+          "reservoir refresh",
+          "native2-local joint admission",
+          "hardware validation",
+          "quantum advantage",
+          "independent theorem review"
+        ]
+      },
+      "claims_url": "/research/MQM_THERMAL_KERNEL_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_THERMAL_KERNEL_v0.1/MQM_THERMAL_KERNEL_v0.1_RELEASE.zip",
+      "zip_sha256": "04a34b07a14a52d0a1216e2e58b1af27a9f37c1f79e0287ae5a7b2dddee17938",
+      "zip_bytes": 788253,
+      "pdfs": [
+        {
+          "url": "/research/MQM_THERMAL_KERNEL_v0.1/MQM_THERMAL_KERNEL_IEEE_A4_v0.1.pdf",
+          "sha256": "36196b77147418948911a1f85c9f46e7edc3587bf64082a3ec566ab4b3c9b4dd"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_TWO_LOCAL_SWAP_BASELINE_v0.1",
+      "title": "Two Local Swap Baseline",
+      "version": "v0.1",
+      "family": "Clock and compilation",
+      "summary": "The bare three-qubit generator g Xc tensor SWAP has three nonzero weight-three coefficients and cannot equal a two-local sum on the same unrestricted space.",
+      "claims": {
+        "version": "0.1",
+        "date": "2026-10-05",
+        "independent_review": "pending",
+        "physical_promotion": 0,
+        "claims": [
+          {
+            "id": "S1",
+            "status": "EXACT DERIVATION",
+            "claim": "The bare three-qubit generator g Xc tensor SWAP has three nonzero weight-three coefficients and cannot equal a two-local sum on the same unrestricted space.",
+            "boundary": "Not a no-go for timed unitaries, encoding, or ancillary simulation."
+          },
+          {
+            "id": "S2",
+            "status": "EXACT CONSTRUCTION REPLAY",
+            "claim": "The 54-qubit Pauli ledger is two-local and admits an invariant 136-dimensional computational sector within the 208-dimensional one-train joint sector.",
+            "boundary": "This is an adaptation of Nagaj direct encoding, not a generic two-local universality novelty claim."
+          },
+          {
+            "id": "S3",
+            "status": "EXACT DYNAMICAL CERTIFICATE",
+            "claim": "Hphys Omega = Omega (g K tensor I4), including the six wrong-rail leaves, certifies zero compiler leakage and normalized diamond error at all times.",
+            "boundary": "Relative to the expanded 34-vertex graph, not the original two-address generator."
+          },
+          {
+            "id": "S4",
+            "status": "EXACT DERIVATION",
+            "claim": "Final-port branch is alpha(t) SWAP, and complete-domain distance to the fixed final-port SWAP target is sqrt(1-|alpha(t)|^2).",
+            "boundary": "Success may be less than one; conditional correctness is not deterministic capture."
+          },
+          {
+            "id": "S5",
+            "status": "EXACT GRAPH COUNTERCERTIFICATE",
+            "claim": "The displayed 102-edge physical interaction graph contains a K3,3 subdivision and is nonplanar.",
+            "boundary": "No universal planar-compilation obstruction is claimed."
+          },
+          {
+            "id": "S6",
+            "status": "EXACT RATIONAL CERTIFICATE",
+            "claim": "Binary64 representation of 144 irrational coefficients gives a full-operator/channel rounding debit below 2^-40 on [0,1024], at g=1/8.",
+            "boundary": "Representation error only; not calibration, preparation, decoherence, or arrival accuracy."
+          },
+          {
+            "id": "S7",
+            "status": "NUMERICAL DIAGNOSTIC",
+            "claim": "Largest sampled final-port probability 0.4739700232738219 at time 687.75, on a 4097-point grid.",
+            "boundary": "No interval enclosure or global optimum; no impossibility theorem about other times."
+          },
+          {
+            "id": "S8",
+            "status": "OPEN",
+            "claim": "Minimum physical mediator count, planar implementation, certified useful deadline, and matched resource improvement."
+          },
+          {
+            "id": "S9",
+            "status": "NOT ESTABLISHED",
+            "claim": "Physical realization, fault tolerance, thermodynamic refreshment, supervising clock renewal, UD-GR/QFT correspondence, or complete thirteen-step local implementation."
+          }
+        ]
+      },
+      "claims_url": "/research/MQM_TWO_LOCAL_SWAP_BASELINE_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_TWO_LOCAL_SWAP_BASELINE_v0.1/MQM_TWO_LOCAL_SWAP_BASELINE_v0.1_RELEASE.zip",
+      "zip_sha256": "9cda08376c2a56e712e939d4f8022746ef802c43714ff014fb7d7379e5e88041",
+      "zip_bytes": 1404573,
+      "pdfs": [
+        {
+          "url": "/research/MQM_TWO_LOCAL_SWAP_BASELINE_v0.1/MQM_TWO_LOCAL_SWAP_IEEE_A4_v0.1.pdf",
+          "sha256": "e183db8f11be4828c288c56b4291c0d689ae25c4d20d611e3076194500dcec64"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
+      "id": "MQM_WEIGHTED_ARRIVAL_RESOURCE_AUDIT_v0.1",
+      "title": "Weighted Arrival Resource Audit",
+      "version": "v0.1",
+      "family": "Clock and compilation",
+      "summary": "All 27 independent weighted stage operators preserve the computational isometry, with the tied leaf edges included.",
+      "claims": {
+        "date": "2026-10-05",
+        "version": "0.1",
+        "independent_review": "pending",
+        "physical_promotion": 0,
+        "claims": [
+          {
+            "id": "WA1",
+            "status": "EXACT CONSTRUCTOR REPLAY",
+            "claim": "All 27 independent weighted stage operators preserve the computational isometry, with the tied leaf edges included.",
+            "scope": "Physical one-excitation clock-body sector and admitted computational subspace; arbitrary spectators by tensor identity."
+          },
+          {
+            "id": "WA2",
+            "status": "EXACT CONSTRUCTION",
+            "claim": "Twelve wrong-rail pair penalties, grouped into six barriers, are two-local and become exactly six leaf detunings on the computational graph.",
+            "scope": "No added qubits, Pauli supports or interaction pairs; 48 coefficients changed."
+          },
+          {
+            "id": "WA3",
+            "status": "DERIVED FINITE CERTIFICATE",
+            "claim": "Residual embedding gives complete-domain isometry error <= (2 beta + |t| beta sqrt(beta^2+a^2))/Delta.",
+            "scope": "No asymptotic elimination or adiabatic assumption; backbone is not itself invariant."
+          },
+          {
+            "id": "WA4",
+            "status": "EXACT RATIONAL ADMISSION",
+            "claim": "At Delta=2^20 and T=56*pi, rounding-inclusive complete-domain distance is <1/65536.",
+            "bound": {
+              "fraction": "33428331012123573389025/3791191370311477091878567936",
+              "numerator": "33428331012123573389025",
+              "denominator": "3791191370311477091878567936",
+              "decimal": 8.817368406643415e-06
+            },
+            "scope": "Ideal static proposal with only stored coefficient representation error; not hardware noise."
+          },
+          {
+            "id": "WA5",
+            "status": "EXACT RATIONAL WINDOW ADMISSION",
+            "claim": "The same tolerance is certified on T +/- 1/65536.",
+            "bound": {
+              "fraction": "49675315260847272698296929347/3975352282315727403093661252059136",
+              "numerator": "49675315260847272698296929347",
+              "denominator": "3975352282315727403093661252059136",
+              "decimal": 1.2495827220603037e-05
+            },
+            "scope": "Timed readout still supplied; no permanent capture/latch."
+          },
+          {
+            "id": "WA6",
+            "status": "EXACT FAMILY RESOURCE LOWER BOUND",
+            "claim": "Vacuum and filled-clock states certify full spectral diameter >=12 Delta, and norm >=6 Delta under every scalar energy shift.",
+            "scope": "This specific physical detuned family; outside-sector states are deliberately included because the chosen budget is the full operator norm."
+          },
+          {
+            "id": "WA7",
+            "status": "DERIVED SCALING OBSTRUCTION",
+            "claim": "Any full-norm-C uniform rescaling has declared transfer deadline >=336*pi*Delta/C.",
+            "scope": "Not a universal clock speed limit, not a no-go for other times or encodings; robust rounded norm lower bound 6 Delta - d."
+          },
+          {
+            "id": "WA8",
+            "status": "EXACT GRAPH AUDIT",
+            "claim": "Physical graph remains nonplanar with 54 qubits, 204 supports, 102 pairs and degree 18.",
+            "scope": "Weights and penalties do not planarize this graph; no assertion that every 2D chip requires ancillas."
+          },
+          {
+            "id": "WA9",
+            "status": "DERIVED ENDPOINT BENCHMARK",
+            "claim": "A planar two-port clock plus ordinary SWAP uses four active physical qubits and has norm-one endpoint deadline pi.",
+            "scope": "Different intermediate semantics; not a serial history compiler or complete execute-capture-renew episode."
+          },
+          {
+            "id": "WA10",
+            "status": "NUMERICAL DIAGNOSTIC",
+            "claim": "Uniform baseline late-time sample gives q approximately 0.746169, exceeding its earlier short-grid maximum.",
+            "scope": "Not a certified interval, global optimum, or all-time theorem."
+          },
+          {
+            "id": "WA11",
+            "status": "OPEN",
+            "claim": "Penalty-free planar history encoding, useful matched resource advantage, complete thirteen-step compilation and closed-loop refreshment."
+          }
+        ],
+        "replay_counts": {
+          "new_exact": 141,
+          "new_numerical": 9,
+          "prior_exact": 24,
+          "prior_numerical": 16,
+          "interpretation": "Constructor replay; counts are not independent experimental evidence or separate novelty claims."
+        }
+      },
+      "claims_url": "/research/MQM_WEIGHTED_ARRIVAL_RESOURCE_AUDIT_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_WEIGHTED_ARRIVAL_RESOURCE_AUDIT_v0.1/MQM_WEIGHTED_ARRIVAL_RESOURCE_AUDIT_v0.1_RELEASE.zip",
+      "zip_sha256": "707a00dc239fcbdc48951ee574f5789ef73f8d82bca0c0d4f069c1186c1844a6",
+      "zip_bytes": 1380705,
+      "pdfs": [
+        {
+          "url": "/research/MQM_WEIGHTED_ARRIVAL_RESOURCE_AUDIT_v0.1/MQM_WEIGHTED_ARRIVAL_IEEE_A4_v0.1.pdf",
+          "sha256": "b1bf628b3fbfc443580f14a015a41ea8aba4c1248b5839fa424822ca954f9d5a"
+        }
+      ],
+      "physical_promotion": 0
+    }
+  ]
+}

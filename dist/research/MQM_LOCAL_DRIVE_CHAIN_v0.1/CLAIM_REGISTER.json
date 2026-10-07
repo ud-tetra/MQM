@@ -1,0 +1,10 @@
+{
+  "chain_mapping": "EXACT inherited prior art",
+  "locality_theorem": "DERIVED conditional all-size proof, pending independent review",
+  "rational_tail": "EXACT numerator-denominator audit, less than2^-451",
+  "constructor_controls": "EXACT 115 equalities plus3 boundary witnesses; finite controls only",
+  "full_second_order_response": "OPEN not evaluated",
+  "numerical_roundoff_certificate": "OPEN",
+  "thermal_target_2_minus_16": "OPEN",
+  "physical_promotion": 0
+}

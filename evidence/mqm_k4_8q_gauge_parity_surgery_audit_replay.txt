@@ -1,0 +1,24 @@
+
+ ZZ
+product equals target? True
+add 1 gauge rank 21 center rank 7 r 7 k 2
+add 2 gauge rank 22 center rank 6 r 8 k 2
+add 3 gauge rank 23 center rank 7 r 8 k 1
+all invariants 23 7 8 1
+checks mutual symp [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+target central commutes True target in span True
+ check 1 with XA,ZA,XB,ZB= [1, 0, 1, 0]
+ check 2 with XA,ZA,XB,ZB= [0, 0, 0, 0]
+ check 3 with XA,ZA,XB,ZB= [0, 0, 0, 0]
+
+ XX
+product equals target? True
+add 1 gauge rank 21 center rank 7 r 7 k 2
+add 2 gauge rank 22 center rank 6 r 8 k 2
+add 3 gauge rank 23 center rank 7 r 8 k 1
+all invariants 23 7 8 1
+checks mutual symp [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+target central commutes True target in span True
+ check 1 with XA,ZA,XB,ZB= [0, 1, 0, 1]
+ check 2 with XA,ZA,XB,ZB= [0, 0, 0, 0]
+ check 3 with XA,ZA,XB,ZB= [0, 0, 0, 0]

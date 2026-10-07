@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-05",
+  "version": "0.1",
+  "independent_review": "pending",
+  "physical_promotion": 0,
+  "claims": [
+    {
+      "id": "WA1",
+      "status": "EXACT CONSTRUCTOR REPLAY",
+      "claim": "All 27 independent weighted stage operators preserve the computational isometry, with the tied leaf edges included.",
+      "scope": "Physical one-excitation clock-body sector and admitted computational subspace; arbitrary spectators by tensor identity."
+    },
+    {
+      "id": "WA2",
+      "status": "EXACT CONSTRUCTION",
+      "claim": "Twelve wrong-rail pair penalties, grouped into six barriers, are two-local and become exactly six leaf detunings on the computational graph.",
+      "scope": "No added qubits, Pauli supports or interaction pairs; 48 coefficients changed."
+    },
+    {
+      "id": "WA3",
+      "status": "DERIVED FINITE CERTIFICATE",
+      "claim": "Residual embedding gives complete-domain isometry error <= (2 beta + |t| beta sqrt(beta^2+a^2))/Delta.",
+      "scope": "No asymptotic elimination or adiabatic assumption; backbone is not itself invariant."
+    },
+    {
+      "id": "WA4",
+      "status": "EXACT RATIONAL ADMISSION",
+      "claim": "At Delta=2^20 and T=56*pi, rounding-inclusive complete-domain distance is <1/65536.",
+      "bound": {
+        "fraction": "33428331012123573389025/3791191370311477091878567936",
+        "numerator": "33428331012123573389025",
+        "denominator": "3791191370311477091878567936",
+        "decimal": 8.817368406643415e-06
+      },
+      "scope": "Ideal static proposal with only stored coefficient representation error; not hardware noise."
+    },
+    {
+      "id": "WA5",
+      "status": "EXACT RATIONAL WINDOW ADMISSION",
+      "claim": "The same tolerance is certified on T +/- 1/65536.",
+      "bound": {
+        "fraction": "49675315260847272698296929347/3975352282315727403093661252059136",
+        "numerator": "49675315260847272698296929347",
+        "denominator": "3975352282315727403093661252059136",
+        "decimal": 1.2495827220603037e-05
+      },
+      "scope": "Timed readout still supplied; no permanent capture/latch."
+    },
+    {
+      "id": "WA6",
+      "status": "EXACT FAMILY RESOURCE LOWER BOUND",
+      "claim": "Vacuum and filled-clock states certify full spectral diameter >=12 Delta, and norm >=6 Delta under every scalar energy shift.",
+      "scope": "This specific physical detuned family; outside-sector states are deliberately included because the chosen budget is the full operator norm."
+    },
+    {
+      "id": "WA7",
+      "status": "DERIVED SCALING OBSTRUCTION",
+      "claim": "Any full-norm-C uniform rescaling has declared transfer deadline >=336*pi*Delta/C.",
+      "scope": "Not a universal clock speed limit, not a no-go for other times or encodings; robust rounded norm lower bound 6 Delta - d."
+    },
+    {
+      "id": "WA8",
+      "status": "EXACT GRAPH AUDIT",
+      "claim": "Physical graph remains nonplanar with 54 qubits, 204 supports, 102 pairs and degree 18.",
+      "scope": "Weights and penalties do not planarize this graph; no assertion that every 2D chip requires ancillas."
+    },
+    {
+      "id": "WA9",
+      "status": "DERIVED ENDPOINT BENCHMARK",
+      "claim": "A planar two-port clock plus ordinary SWAP uses four active physical qubits and has norm-one endpoint deadline pi.",
+      "scope": "Different intermediate semantics; not a serial history compiler or complete execute-capture-renew episode."
+    },
+    {
+      "id": "WA10",
+      "status": "NUMERICAL DIAGNOSTIC",
+      "claim": "Uniform baseline late-time sample gives q approximately 0.746169, exceeding its earlier short-grid maximum.",
+      "scope": "Not a certified interval, global optimum, or all-time theorem."
+    },
+    {
+      "id": "WA11",
+      "status": "OPEN",
+      "claim": "Penalty-free planar history encoding, useful matched resource advantage, complete thirteen-step compilation and closed-loop refreshment."
+    }
+  ],
+  "replay_counts": {
+    "new_exact": 141,
+    "new_numerical": 9,
+    "prior_exact": 24,
+    "prior_numerical": 16,
+    "interpretation": "Constructor replay; counts are not independent experimental evidence or separate novelty claims."
+  }
+}

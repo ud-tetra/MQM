@@ -1,0 +1,51 @@
+{
+  "quadratic_geometry": {
+    "status": "EXACT / AUTO_LOCK SCOPED",
+    "kernel_coordinates": 97,
+    "Hermitian_components": 16,
+    "polynomial_row_rank": 15,
+    "integer_Jacobian_probe_ranks": [
+      15,
+      15,
+      15
+    ],
+    "X_z_zero_point_rank": 13,
+    "origin_zero_point_rank": 0,
+    "scope": "Fifteen independent quadratic forms, not globally regular constraints."
+  },
+  "finite_search": {
+    "status": "NUMERICAL bounded exploration",
+    "attempts": 4,
+    "iteration_cap": 600,
+    "best_operator_residual": 0.22289098811883507,
+    "floating_equality_is_not_exact": true,
+    "certified_encoder": false
+  },
+  "exact_regular_root": {
+    "status": "EXACT RATIONAL CONTRACTION / AUTO_LOCK SCOPED",
+    "unique_in_fixed_slice_box": true,
+    "varied_coordinates": 15,
+    "fixed_coordinates": 82,
+    "root_type": "Implicitly defined real algebraic root of rational quadratics, not frozen binary-rational coefficients",
+    "box_radius": "1/562949953421312",
+    "first_moment_exact_zero": true,
+    "second_moment_exact_zero": true,
+    "Jacobian_rank": 15,
+    "local_zero_manifold_dimension": 82,
+    "global_manifold_or_uniqueness_claim": false,
+    "full_norm_implementation": "G_root / L_root_upper; norm<=1 on all64 dimensions",
+    "finite_deadline_upper": "6567952598006607673097/18446744073709551616",
+    "feasibility_gate": "Local second-moment feasibility CLOSED, complete admission OPEN"
+  },
+  "root_admission_exclusion": {
+    "status": "EXACT ENCLOSED / AUTO_LOCK SCOPED",
+    "all_time_half_diamond_error": "strictly greater than1/16",
+    "scope": "This exact algebraic root only; all deadlines, common phases, spectators, scalar shifts and uniform norm rescaling. Not a family no-go."
+  },
+  "total_scoped_exact_checks": 245,
+  "numerical_gradient_columns": 196,
+  "physical_promotion": 0,
+  "operational_resource_improvement": false,
+  "independent_review": "pending",
+  "theorem_level_novelty_comparison": "pending"
+}

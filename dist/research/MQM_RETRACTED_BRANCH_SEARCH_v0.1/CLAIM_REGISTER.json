@@ -1,0 +1,42 @@
+{
+  "search": {
+    "status": "NUMERICAL bounded exploration",
+    "attempts": 158,
+    "accepted": 100,
+    "rejected": 58,
+    "declared_attempt_cap": 200,
+    "initial_operator_residual": 0.22289152265047185,
+    "best_operator_residual": 0.22288181865758103,
+    "stationarity_or_global_optimality": false,
+    "resource_improvement": false
+  },
+  "exact_selected_root": {
+    "status": "EXACT / AUTO_LOCK SCOPED",
+    "first_and_second_moments_match": true,
+    "fixed_dyadic_coordinates": 82,
+    "dependent_coordinates": 15,
+    "local_branch_dimension": 82,
+    "root_type": "Unique real algebraic root in a fixed rational slice box",
+    "radius": "1/562949953421312",
+    "full_norm_implementation": "H=G/L_upper; norm<=1 on all64 dimensions",
+    "deadline_upper": "13240871624521036831541/36893488147419103232",
+    "all_time_half_diamond_error": "strictly greater than1/16",
+    "scope": "One selected exact root; not the family or continuous optimization path"
+  },
+  "shared_return": {
+    "status": "DERIVED with exact task-data checks; novelty pending",
+    "perfect_admission_Krylov_dimension_upper": 61,
+    "finite_error_assumption": "Simple spectrum",
+    "finite_error_condition": "sum of three smallest shared-launch weights <= (epsilon/(1-epsilon))^2",
+    "target_threshold": "1/4294836225",
+    "necessary_not_sufficient": true,
+    "root_launch_weights_enclosed": false,
+    "family_no_go": false
+  },
+  "total_scoped_exact_checks": 252,
+  "numerical_reduced_Jacobian_columns": 166,
+  "certified_encoder": false,
+  "physical_promotion": 0,
+  "independent_review": "pending",
+  "theorem_level_novelty_comparison": "pending"
+}

@@ -1,0 +1,2 @@
+alphabet (0, 1, 2, 3) tested 65536 preserve 1 actions 1 ent 0
+alphabet (0, 1, 2, 3, 4) tested 390625 preserve 2 actions 2 ent 0

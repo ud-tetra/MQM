@@ -1,0 +1,37 @@
+{
+  "version": "0.1",
+  "claims": [
+    {
+      "id": "WICK-BOUND",
+      "level": "DERIVED",
+      "status": "Conditional scoped derivation; independent theorem review pending",
+      "scope": "All-orders Gaussian displacement drive bound (exp4I_abs-1)/2; original bath traced; Gaussian continuum existence assumed."
+    },
+    {
+      "id": "RATIONAL-CERTIFICATE",
+      "level": "EXACT / DERIVED",
+      "status": "AUTO_LOCK exact arithmetic scope",
+      "scope": "Rational envelope certifies total retained error<1/8192 at originalbeta5/16,time16; not actual error or target1/65536."
+    },
+    {
+      "id": "SECOND-ORDER-GATE",
+      "level": "DERIVED / OPEN",
+      "status": "Tail budget verified; full second-order response OPEN",
+      "scope": "Even orders4+ bounded<2^-25; fixed-launch second-order half-trace budget127/2^25-2^-128 sufficient for originaltarget."
+    },
+    {
+      "id": "MIDPOINT-AND-QUAD",
+      "level": "SIMULATED",
+      "status": "Numerical diagnostics only",
+      "scope": "80digit midpoint and cusp-resolved scipy quadrature agree; no directed midpoint arithmetic claim; original roundoff warning preserved."
+    },
+    {
+      "id": "SIGNED-FILTER",
+      "level": "EXACT scalar identity / SIMULATED value",
+      "status": "AUTO_FREEZE use as full channel certificate",
+      "scope": "Cannot replace noncommuting response by signed scalar integral; reopening requires explicit commuting or response theorem."
+    }
+  ],
+  "physical_promotion": 0,
+  "requested_target": "OPEN; no failure or universal no-go inferred"
+}

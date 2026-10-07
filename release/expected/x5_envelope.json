@@ -1,0 +1,15 @@
+{
+  "release": "0.5",
+  "stim_version": "1.15.0",
+  "round_translation_cases": 1312,
+  "fault_free_patterns": 16,
+  "labeled_incoming_cases": 800,
+  "residual_weight_counts": {
+    "0": 750,
+    "1": 50
+  },
+  "weight2_plus_extra_X_failures": 30,
+  "fault_labels": 40,
+  "scheduled_faults_not_executed_before_release": 0,
+  "scope": "Deterministic X-only Pauli-frame conformance; ideal operations except named injections. No stochastic idle model, phase protection, hardware execution, or independent replication."
+}

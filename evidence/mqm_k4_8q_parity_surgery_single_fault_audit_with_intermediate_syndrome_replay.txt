@@ -1,0 +1,2 @@
+ZZ fault_cases_both_parities= 828 unique_keys= 344 ambiguous_keys= 0 unsafe_data_cases= 0
+XX fault_cases_both_parities= 828 unique_keys= 344 ambiguous_keys= 0 unsafe_data_cases= 0

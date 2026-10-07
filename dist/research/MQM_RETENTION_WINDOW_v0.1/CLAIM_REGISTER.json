@@ -1,0 +1,36 @@
+{
+  "version": "0.1",
+  "physical_promotion": 0,
+  "claims": [
+    {
+      "id": "FINITE-RETENTION-WINDOW",
+      "status": "DERIVED",
+      "claim": "Uniform retained error <15/2^20<2^-16 on[16-2^-16,16+2^-16] model time units",
+      "scope": "Frozen fixed launch, beta5/16, Gaussian/continuum bounds and parent arithmetic assumptions; identity spectators",
+      "external_review": "OPEN"
+    },
+    {
+      "id": "DYADIC-SELECTION",
+      "status": "EXACT",
+      "claim": "k16 passes andk15 certificate is insufficient",
+      "scope": "Predeclared dyadic list under conservative majorants; not global maximum or physical failure"
+    },
+    {
+      "id": "FINITE-CONTROLS",
+      "status": "SIMULATED",
+      "claim": "Four M4/8 continuity checks pass",
+      "scope": "Diagnostic only"
+    },
+    {
+      "id": "REVIEW-HANDOFF",
+      "status": "PREPARED",
+      "claim": "Dependency bundles, hashes,12-gate checklist and blank reviewer ledger",
+      "scope": "No reviewer contacted or independent review performed"
+    },
+    {
+      "id": "PERMANENT-RETENTION",
+      "status": "OPEN",
+      "claim": "No permanent dark hold or device retention result"
+    }
+  ]
+}

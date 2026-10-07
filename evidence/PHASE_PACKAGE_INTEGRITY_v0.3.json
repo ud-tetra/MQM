@@ -1,0 +1,100 @@
+[
+  {
+    "package": "UD_OMEGA0_PHASE38_TOMOGRAPHY_PROTOCOL_PACKAGE_v0.1(1)",
+    "manifest": "UD_OMEGA0_PHASE38_TOMOGRAPHY_PROTOCOL_HASH_v0.1.json",
+    "files_checked": 9,
+    "mismatches": [],
+    "missing": []
+  },
+  {
+    "package": "UD_OMEGA0_PHASE39_BLIND_CONFORMANCE_PACKAGE_v0.2(1)",
+    "manifest": "UD_OMEGA0_PHASE39_BLIND_CONFORMANCE_HASH_v0.2.json",
+    "files_checked": 20,
+    "mismatches": [],
+    "missing": []
+  },
+  {
+    "package": "UD_OMEGA0_PHASE40_NOISY_DECODER_PACKAGE_v0.1(1)",
+    "manifest": "UD_OMEGA0_PHASE40_NOISY_DECODER_HASH_v0.1.json",
+    "files_checked": 11,
+    "mismatches": [],
+    "missing": []
+  },
+  {
+    "package": "UD_OMEGA0_PHASE41_HARDWARE_CONTRACT_PACKAGE_v0.1(1)",
+    "manifest": "UD_OMEGA0_PHASE41_HARDWARE_CONTRACT_HASH_v0.1.json",
+    "files_checked": 10,
+    "mismatches": [],
+    "missing": []
+  },
+  {
+    "package": "UD_OMEGA0_PHASE42_MQM_REFERENCE_PACKAGE_v0.1(1)",
+    "manifest": "UD_OMEGA0_PHASE42_MQM_REFERENCE_HASH_v0.1.json",
+    "files_checked": 10,
+    "mismatches": [],
+    "missing": []
+  },
+  {
+    "package": "UD_OMEGA0_PHASE44_MQM_CORE_DECISION_PACKAGE_v0.1(1)",
+    "manifest": "UD_OMEGA0_PHASE44_MQM_CORE_DECISION_HASH_v0.1.json",
+    "files_checked": 11,
+    "mismatches": [],
+    "missing": []
+  },
+  {
+    "package": "UD_OMEGA0_PHASE45_MQM_FAULT_PROPAGATION_PACKAGE_v0.1(1)",
+    "manifest": "UD_OMEGA0_PHASE45_MQM_FAULT_PROPAGATION_HASH_v0.1.json",
+    "files_checked": 10,
+    "mismatches": [],
+    "missing": []
+  },
+  {
+    "package": "UD_OMEGA0_PHASE46_MQM_FAIL_CLOSED_PACKAGE_v0.1(1)",
+    "manifest": "UD_OMEGA0_PHASE46_MQM_FAIL_CLOSED_HASH_v0.1.json",
+    "files_checked": 11,
+    "mismatches": [],
+    "missing": []
+  },
+  {
+    "package": "UD_OMEGA0_PHASE47_MQM_RESOURCE_DECISION_PACKAGE_v0.1(1)",
+    "manifest": "UD_OMEGA0_PHASE47_MQM_RESOURCE_DECISION_HASH_v0.1.json",
+    "files_checked": 10,
+    "mismatches": [],
+    "missing": []
+  },
+  {
+    "package": "UD_OMEGA0_PHASE48_MQM_X5_FAULT_PACKAGE_v0.1(1)",
+    "manifest": "UD_OMEGA0_PHASE48_MQM_X5_FAULT_HASH_v0.1.json",
+    "files_checked": 12,
+    "mismatches": [],
+    "missing": []
+  },
+  {
+    "package": "UD_OMEGA0_PHASE49_MQM_PLATFORM_ADMISSIBILITY_PACKAGE_v0.1(1)",
+    "manifest": "UD_OMEGA0_PHASE49_MQM_PLATFORM_ADMISSIBILITY_HASH_v0.1.json",
+    "files_checked": 8,
+    "mismatches": [],
+    "missing": []
+  },
+  {
+    "package": "UD_OMEGA0_PHASE50_PARALLEL_HARDWARE_PREPARATION_PACKAGE_v0.1(1)",
+    "manifest": "UD_OMEGA0_PHASE50_HASH_v0.1.json",
+    "files_checked": 13,
+    "mismatches": [],
+    "missing": []
+  },
+  {
+    "package": "UD_OMEGA0_PHASE51_PARALLEL_HARDWARE_PACKAGE_v0.1(1)",
+    "manifest": "UD_OMEGA0_PHASE51_HASH_v0.1.json",
+    "files_checked": 13,
+    "mismatches": [],
+    "missing": []
+  },
+  {
+    "package": "UD_OMEGA0_PHASE52_PARALLEL_HARDWARE_PACKAGE_v0.1(1)",
+    "manifest": "UD_OMEGA0_PHASE52_HASH_v0.1.json",
+    "files_checked": 13,
+    "mismatches": [],
+    "missing": []
+  }
+]

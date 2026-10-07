@@ -1,0 +1,41 @@
+{
+  "release": "0.4",
+  "date": "2026-09-18",
+  "static_checks": {
+    "local_links_assets_and_fragments": "PASS",
+    "unique_ids_and_single_h1": "PASS",
+    "aria_label_targets": "PASS",
+    "native_disclosure_structure": "PASS",
+    "table_captions": "PASS",
+    "inline_javascript_syntax": "PASS",
+    "selected_scientific_invariants": "PASS"
+  },
+  "review_kit": {
+    "zip_integrity": "PASS",
+    "file_hashes": 17,
+    "safe_paths_and_curated_contents": "PASS",
+    "replays": {
+      "verify_8q_algebra.py": "PASS: clean extraction, parsed output matches expected",
+      "verify_phase_results_v0.3.py": "PASS: clean extraction, parsed output matches expected"
+    }
+  },
+  "remediation": {
+    "P01": "IMPLEMENTED; static/source acceptance checked",
+    "P02": "IMPLEMENTED; static/source acceptance checked",
+    "M01": "IMPLEMENTED; static/source acceptance checked",
+    "M02": "IMPLEMENTED; static/source acceptance checked",
+    "E01": "IMPLEMENTED; static/source acceptance checked",
+    "E02": "IMPLEMENTED; static/source acceptance checked",
+    "A01": "IMPLEMENTED; static/source acceptance checked",
+    "A02": "IMPLEMENTED; static/source acceptance checked",
+    "I01": "IMPLEMENTED; static/source acceptance checked",
+    "I02": "IMPLEMENTED; static/source acceptance checked",
+    "R01": "IMPLEMENTED; static/source acceptance checked"
+  },
+  "remaining": {
+    "V01": "PARTIAL: responsive CSS and structural checks complete; visual browser QA not run because this static site has no compatible supervised preview",
+    "scientific_open_items": "UNCHANGED: hardware evidence, 8Q missing simulation inputs, full noisy circuit composition"
+  },
+  "physical_promotion": 0,
+  "independent_replication": "NOT_CLAIMED"
+}

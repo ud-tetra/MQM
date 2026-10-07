@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this dated research-method release; no hardware validation is claimed."
+title: "MQM: tetrahedral quantum-code evaluation method"
+authors:
+  - family-names: Mayes
+    given-names: Benjamin Walker
+version: 0.5
+date-released: 2026-09-18
+type: software
+url: "https://mqm-research.ben-w-mayes.chatgpt.site/replay/"
+abstract: "Research-stage evaluation materials: subsystem Pauli algebra and a scoped X-only controller replay. No hardware result or claimed advantage."

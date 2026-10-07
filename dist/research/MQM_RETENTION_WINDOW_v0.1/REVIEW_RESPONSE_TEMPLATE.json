@@ -1,0 +1,119 @@
+{
+  "version": "0.1",
+  "review_status": "NOT_PERFORMED",
+  "reviewer_identity": null,
+  "review_date": null,
+  "independence_declaration": null,
+  "environment": null,
+  "gates": [
+    {
+      "id": "R1",
+      "topic": "Gaussian continuum reference",
+      "question": "Check existence/interpretation of the reduced Gaussian state; avoid separately divergent tr(N) terms.",
+      "verdict": "UNREVIEWED",
+      "evidence": [],
+      "objection": null,
+      "suggested_repair": null
+    },
+    {
+      "id": "R2",
+      "topic": "Response identity",
+      "question": "Verify stationary one-photon derivative equals the noncommuting displacement integral, including final bath trace and charges0/1/2.",
+      "verdict": "UNREVIEWED",
+      "evidence": [],
+      "objection": null,
+      "suggested_repair": null
+    },
+    {
+      "id": "R3",
+      "topic": "Centered vacuum transfer",
+      "question": "Check time-centered Gauss evaluation isometry, unused-mode vacuum, local insertion commutation and8-dyad factor.",
+      "verdict": "UNREVIEWED",
+      "evidence": [],
+      "objection": null,
+      "suggested_repair": null
+    },
+    {
+      "id": "R4",
+      "topic": "Covariance transfer",
+      "question": "Verify the separate ideal Gauss covariance remainder; no equal-mode-count substitution.",
+      "verdict": "UNREVIEWED",
+      "evidence": [],
+      "objection": null,
+      "suggested_repair": null
+    },
+    {
+      "id": "R5",
+      "topic": "Parameter intervals",
+      "question": "Check all192 root brackets, derivative variation, weights, Machin pi, Decimal exp/sqrt and amended context.",
+      "verdict": "UNREVIEWED",
+      "evidence": [],
+      "objection": null,
+      "suggested_repair": null
+    },
+    {
+      "id": "R6",
+      "topic": "IEEE754 propagation",
+      "question": "Audit max194 row entries, absolute-generator norm, complex real/imag recurrence, operation counts, underflow debit and restart growth.",
+      "verdict": "UNREVIEWED",
+      "evidence": [],
+      "objection": null,
+      "suggested_repair": null
+    },
+    {
+      "id": "R7",
+      "topic": "Readout norm",
+      "question": "Check occupation replacement and contraction error; entrywise upper uses exact output fractions, not eigensolver accuracy.",
+      "verdict": "UNREVIEWED",
+      "evidence": [],
+      "objection": null,
+      "suggested_repair": null
+    },
+    {
+      "id": "R8",
+      "topic": "Uniform cold window",
+      "question": "Check live/bath partition, off-diagonal normG and square-root population Lipschitz bound.",
+      "verdict": "UNREVIEWED",
+      "evidence": [],
+      "objection": null,
+      "suggested_repair": null
+    },
+    {
+      "id": "R9",
+      "topic": "Uniform response window",
+      "question": "Check final-unitary derivative plus triangular-boundary term; no unrestricted thermal Hamiltonian bound.",
+      "verdict": "UNREVIEWED",
+      "evidence": [],
+      "objection": null,
+      "suggested_repair": null
+    },
+    {
+      "id": "R10",
+      "topic": "Uniform higher orders",
+      "question": "Check extension of x16 toU and Wick-pair remainder throughout the interval.",
+      "verdict": "UNREVIEWED",
+      "evidence": [],
+      "objection": null,
+      "suggested_repair": null
+    },
+    {
+      "id": "R11",
+      "topic": "Scope and provenance",
+      "question": "Confirm post-exposure engineering disclosure, fixed launch, no physical promotion, finite hold and model-time units.",
+      "verdict": "UNREVIEWED",
+      "evidence": [],
+      "objection": null,
+      "suggested_repair": null
+    },
+    {
+      "id": "R12",
+      "topic": "Capacity separation",
+      "question": "Verify spectral proposal is separate fromTheta; factors24/4 and latch map remain open.",
+      "verdict": "UNREVIEWED",
+      "evidence": [],
+      "objection": null,
+      "suggested_repair": null
+    }
+  ],
+  "overall_verdict": "UNREVIEWED"
+}

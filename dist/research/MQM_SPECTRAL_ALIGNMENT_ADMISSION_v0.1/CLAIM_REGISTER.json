@@ -1,0 +1,32 @@
+{
+  "spectral_orientation_gradient": "DERIVED, simple resolved spectrum; numerical implementation checked in 194 columns",
+  "finite_search": {
+    "status": "NUMERICAL, not global optimality",
+    "runs": 4,
+    "iteration_cap": 250,
+    "best_S": 3.9991205292960474,
+    "target_orientation_necessary": "S>=4 sqrt(1-2^-32)",
+    "smoothing_bias": "64*10^-10=6.4e-9, too large to certify target; unsmoothed S reported"
+  },
+  "frozen_generator": {
+    "status": "EXACT ENCLOSED / AUTO_LOCK SCOPED",
+    "exact_checks": 191,
+    "all_time_half_diamond_error": "strictly greater than 1/64",
+    "scope": "One frozen generator, all deadlines, arbitrary spectators, scalar shifts and uniform scaling. Not a family obstruction."
+  },
+  "resources": {
+    "physical_qubits": 6,
+    "allowed_pairs": 10,
+    "planar": true,
+    "maximum_degree": 4,
+    "full_dimension": 64,
+    "logical_dimension": 4,
+    "full_norm_certificate": "H/L, L=sum abs(exact Pauli coefficients), full norm<=1"
+  },
+  "joint_admission": "OPEN",
+  "phase_scan": "NUMERICAL bounded grid and local refinements, no exhaustiveness or certified endpoint",
+  "operational_resource_improvement": false,
+  "physical_promotion": 0,
+  "independent_review": "pending",
+  "theorem_level_novelty_comparison": "pending"
+}

@@ -1,0 +1,50 @@
+{
+  "instruction_block": {
+    "version": "0.2",
+    "status": "Refreshed and adopted as project working conventions",
+    "source_boundary": "Does not override platform instructions or authorization boundaries"
+  },
+  "joint_objective": {
+    "status": "DERIVED, implementation numerically checked",
+    "complete_columns": 4,
+    "common_phase": true,
+    "objective_columns_checked": 392,
+    "constraint_columns_checked": 98,
+    "largest_objective_gradient_discrepancy": 2.1295179924996077e-09,
+    "largest_constraint_gradient_discrepancy": 5.4484081092251446e-11
+  },
+  "finite_search": {
+    "status": "NUMERICAL, finite exploration only",
+    "starts": 4,
+    "iteration_cap": 500,
+    "deadline_cap": 512,
+    "best_sampled_operator_residual": 0.21778889718537925,
+    "global_optimum": false,
+    "certified_endpoint": false,
+    "operational_resource_improvement": false
+  },
+  "norm_budget": {
+    "status": "EXACT SCOPED",
+    "implementation": "H=G/L, deadline T=L, L=sum abs(exact Pauli coefficient)",
+    "full_norm_upper": 1,
+    "all_frozen_L_at_most": 512,
+    "selected_exact_L": "6524518364314613754121/18446744073709551616",
+    "physical_dimension": 64
+  },
+  "all_time_selected_candidate_exclusion": {
+    "status": "EXACT ENCLOSED / AUTO_LOCK SCOPED",
+    "half_diamond_error": "strictly greater than 1/16",
+    "scope": "Selected frozen binary-rational fit; arbitrary deadline, common phase, spectator entanglement, scalar shifts and uniform scaling. Not a planar-family no-go.",
+    "spectral_exact_checks": 73
+  },
+  "second_moment": {
+    "status": "EXACT selected fit does not satisfy M2=0",
+    "matrix_supplied": true,
+    "scope": "Necessary endpoint condition only; moment equality alone is insufficient."
+  },
+  "total_scoped_exact_checks": 199,
+  "joint_admission": "OPEN",
+  "physical_promotion": 0,
+  "independent_review": "pending",
+  "theorem_level_novelty_comparison": "pending"
+}

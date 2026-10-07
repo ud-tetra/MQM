@@ -1,0 +1,42 @@
+{
+  "version": "0.1",
+  "physical_promotion": 0,
+  "EXACT": [
+    "native-qutrit/qubit interaction spectrum",
+    "displayed qubit-encoding weight3 obstruction",
+    "local thermal-generator stationary identities",
+    "identity-on-data preservation under declared coupling",
+    "reverse jump destroys d0 invariance"
+  ],
+  "INTERVAL_VERIFIED": [
+    "cold uniform window retained-channel bounds for kappa8,32,128; kappa2 fails"
+  ],
+  "DERIVED": [
+    "CPTP perturbation reverse-rate debit",
+    "kappa8,r<=2^-24 uniform retained-channel bound below2^-16"
+  ],
+  "SIMULATED": [
+    "262 binary64 checks for six-state local master equation",
+    "finite-bandwidth and reverse-rate scan",
+    "Bell spectator and closed-ingress controls"
+  ],
+  "CANDIDATE": [
+    "native qutrit plus lossy qubit physical interface",
+    "resonant free-energy assignment"
+  ],
+  "OPEN": [
+    "completion and occupancy gating compiler",
+    "native joint admission",
+    "full qubit 2-local implementation",
+    "microscopic bath spectral-density model",
+    "material reverse-rate calibration",
+    "hardware validation"
+  ],
+  "not_promoted": [
+    "universal stationary all-time lower bound",
+    "optimality",
+    "quantum advantage",
+    "hardware readiness",
+    "full complete-domain source-to-storage cycle"
+  ]
+}

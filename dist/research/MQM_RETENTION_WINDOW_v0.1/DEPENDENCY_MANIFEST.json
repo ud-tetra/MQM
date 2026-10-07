@@ -1,0 +1,36 @@
+{
+  "status": "External review preparation only",
+  "files": [
+    {
+      "file": "dependencies/MQM_DIRECTED_RESPONSE_v0.1.zip",
+      "sha256": "5f34e05724ec2ccc1a73ae51d2e6802c6a3ceb74ddc45a8960a252069ab49686",
+      "bytes": 2042173
+    },
+    {
+      "file": "dependencies/MQM_CENTERED_TRANSFER_v0.1.zip",
+      "sha256": "3d6e04c60f9c0d232022912ebe64229786eed082bb681fa2e3ee2c742af26e48",
+      "bytes": 934670
+    },
+    {
+      "file": "dependencies/MQM_CHAIN_RESPONSE_v0.1_RELEASE.zip",
+      "sha256": "1ff1d202d07f394f46a0a60916a25bab4bb04de97cd4d04c5bfc512c4a962b26",
+      "bytes": 1020665
+    },
+    {
+      "file": "dependencies/MQM_SECOND_ORDER_SPEC_v0.1_RELEASE.zip",
+      "sha256": "e639570640d5f3ab17e5365603be9d002dfa199e5b34ea3c6ffb648ce77ded97",
+      "bytes": 883216
+    },
+    {
+      "file": "dependencies/MQM_FREQUENCY_BOUND_v0.1_RELEASE.zip",
+      "sha256": "503d22233e75e34caa39e9e3a1483b68ac88040f2baa591f5b0369046578833c",
+      "bytes": 757438
+    },
+    {
+      "file": "dependencies/MQM_CONTINUUM_CHAIN_v0.1_RELEASE.zip",
+      "sha256": "879bc71153c4bb7fd153af2ea6eab6d7f4ae4e5a8005a6d053fe7df110347aa0",
+      "bytes": 794292
+    }
+  ],
+  "physical_promotion": 0
+}

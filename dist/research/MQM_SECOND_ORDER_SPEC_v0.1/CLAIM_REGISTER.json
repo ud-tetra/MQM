@@ -1,0 +1,46 @@
+{
+  "version": "0.1",
+  "claims": [
+    {
+      "id": "JOINT-RESPONSE",
+      "level": "DERIVED",
+      "scope": "Eight-dimensional retained correction requires joint vacuum bath operator evolution and final vacuum propagation before trace; fixed source launch only.",
+      "status": "Scoped formal specification; independent theorem review pending"
+    },
+    {
+      "id": "FINITE-ONEPHOTON-IDENTITY",
+      "level": "DERIVED / EXACT algebra checks",
+      "scope": "For finite stationary passive Gaussian regularization, second Gaussian response equals one-photon covariance-weighted launch output minustrN vacuum output. It is a derivative identity, not truncation of full thermal dynamics.",
+      "status": "AUTO_LOCK finite source scope; independent review pending"
+    },
+    {
+      "id": "SECTORS",
+      "level": "EXACT / DERIVED",
+      "scope": "System charges0,1,2 withmultiplicities1,4,3; finite response directmethodQ1/Q2; integralmethodQ0..Q2. Sectornormbound64 isrotating-frame mathematical bound, not fullphysicalnorm."
+    },
+    {
+      "id": "FINITE-PHOTON-TAIL",
+      "level": "DERIVED / EXACT rational receipts",
+      "scope": "FiniteM photon count tail<=binom(M+r-1,r)/(2^21-1)^r; projectednormalized initialK<=r-1 evolveswithinQ<=r. Doesnot certify uniformcontinuum Fockcutoff."
+    },
+    {
+      "id": "RESPONSE-CONTROLS",
+      "level": "SIMULATED",
+      "scope": "M2,4,8,16 finite midpoint grids. M2 doublecommutator agrees with onephotonformula after256/512 refinement; numericalcontrolnotintervalcertificate."
+    },
+    {
+      "id": "ORIGINAL-QUADRATURE",
+      "level": "SIMULATED",
+      "status": "AUTO_FREEZE originalrecipe failed1e-10criterion at128",
+      "scope": "Originalsource andfailure receipt preserved; numericalrefinement disclosed."
+    },
+    {
+      "id": "PRIMARY-CONTINUUM",
+      "level": "OPEN",
+      "scope": "beta5/16,t16,target2^-16 notcertified. Need responsecontinuum transfer, numerical enclosures and allowance within127/2^25-2^-128."
+    }
+  ],
+  "physical_promotion": 0,
+  "independent_review": "pending",
+  "necessity_claim": "Failure of a sufficient response bound does not prove cooling or spectral changes necessary."
+}

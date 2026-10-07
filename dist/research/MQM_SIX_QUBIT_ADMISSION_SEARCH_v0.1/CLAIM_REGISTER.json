@@ -1,0 +1,86 @@
+{
+  "status": "Scoped mathematical results; independent review pending; physical evidence promotion 0",
+  "optimal_single_native_admission": {
+    "state": "EXACT, SCOPED",
+    "theorem": 3,
+    "generator": "Hstar_g = K_g - 2*g*N_A*N_v - 2*g*I; g=1/2",
+    "same_contract_as_parent": true,
+    "deadline": "pi",
+    "previous_deadline": "3*pi/2",
+    "full_norm": 1,
+    "spectrum": [
+      -1,
+      0,
+      1
+    ],
+    "optimality_scope": "Static Hermitian two-local generator, specified native computational-basis seed contract, full centered operator norm <= 1.",
+    "physical_qubits": 3,
+    "interaction_pairs": 3,
+    "maximum_degree": 2,
+    "planar": true,
+    "maximum_Pauli_coefficient": "1/2 versus 1/3 in parent",
+    "maximum_two_body_Pauli_coefficient": "1/4 versus 1/6 in parent",
+    "fixed_per_coupling_speed_improvement": false,
+    "coefficient_rounding_debit": 0,
+    "uniform_spectator_channel_window": "|t-pi| <= 2^-18 gives half-diamond error <= 2^-18 under ideal preparation and implementation"
+  },
+  "joint_charge_family": {
+    "state": "EXACT EXCLUSION",
+    "theorem": 1,
+    "scope": "Exactly six qubits, two-local Hermitian, commutes with both QA and QO",
+    "dimension": 38,
+    "conclusion": "Every member conserves N_m11; input 11 remains orthogonal to target for all times.",
+    "universal_two_local_impossibility": false
+  },
+  "deadline": {
+    "state": "EXACT NECESSARY BOUND",
+    "theorem": 2,
+    "exact": "T>=pi",
+    "error_2_minus_16": "T>=pi-1/21845",
+    "scope": "Static Hermitian two-local on stated source/target, full centered norm<=1; complex couplings allowed.",
+    "joint_six_qubit_attainment": "OPEN"
+  },
+  "odd_parity_comparator": {
+    "state": "EXACT DIFFERENT CONTRACT",
+    "physical_qubits": 5,
+    "pairs": 6,
+    "planar": true,
+    "maximum_degree": 4,
+    "deadline": "2*pi",
+    "full_norm": 1,
+    "width": 2,
+    "outputs": [
+      "100",
+      "010",
+      "001",
+      "111"
+    ],
+    "required_single_excitation_interface": false,
+    "coupling_rounding_debit": 0
+  },
+  "numerical_search": {
+    "state": "FINITE EXPLORATION, NO ENCODER",
+    "runs": 4,
+    "parameters": 62,
+    "planar_pairs": 10,
+    "best_frozen_fit_all_time_error_floor": "990307649893073664/54271772679467745551",
+    "all_fits_or_all_hamiltonians_excluded": false
+  },
+  "moment_filter": {
+    "state": "EXACT NECESSARY FILTER",
+    "planar_real_rank": 7,
+    "kernel_dimension": 55,
+    "sufficiency": false,
+    "constrained_optimization_run": false
+  },
+  "verification": {
+    "exact_checks": 78,
+    "numerical_propagation_checks": 4,
+    "optimization_runs_reported_separately": 4,
+    "physical_promotion": 0
+  },
+  "six_qubit_single_excitation_admission": "OPEN",
+  "complete_autonomous_episode": "OPEN",
+  "irreversible_latch": "OPEN",
+  "thermodynamic_refresh": "OPEN"
+}

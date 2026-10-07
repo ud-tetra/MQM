@@ -1,0 +1,40 @@
+{
+  "version": "0.1",
+  "physical_promotion": 0,
+  "claims": [
+    {
+      "id": "RETAINED-DERIVATIVE-14",
+      "status": "DERIVED",
+      "claim": "Analytic continuum retained-response dyad charge64 reduced to14",
+      "scope": "Bath-only partial trace cancellation; native norm<7/2, Jaynes-Cummings norm<=sqrt2G onQ<=2"
+    },
+    {
+      "id": "FINITE-JET",
+      "status": "DERIVED conditional",
+      "claim": "Finite192-mode response derivative half trace atT <2^-20",
+      "scope": "Declared arithmetic/parameter assumptions; not numerical continuum derivative"
+    },
+    {
+      "id": "WIDER-WINDOW",
+      "status": "DERIVED conditional",
+      "claim": "Uniform retained error <31/2^21<2^-16 on16\u00b12^-14 model time units",
+      "scope": "Finite jet/curvature plus uniform continuum value comparisons; frozen beta5/16 and source launch"
+    },
+    {
+      "id": "NUMERICAL-CONTINUUM-DERIVATIVE",
+      "status": "OPEN",
+      "claim": "No derivative transfer from uniform value bounds"
+    },
+    {
+      "id": "CONTROLS",
+      "status": "SIMULATED",
+      "claim": "Dense occupation, polarization and finite differences agree forM4/8",
+      "scope": "Same-agent independent implementation routes; not external review"
+    },
+    {
+      "id": "PERMANENT-RETENTION",
+      "status": "OPEN",
+      "claim": "Finite window does not prove permanent hold, refresh or physical implementation"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "version": "0.1",
+  "physical_promotion": 0,
+  "claims": [
+    {
+      "id": "THERMAL-ACCEPTANCE",
+      "status": "DERIVED",
+      "claim": "Fixed-launch retained thermal error <773/2^26+2^-128<2^-16",
+      "scope": "T16 beta5/16 Gaussian flat band, inherited proof bounds and IEEE754 operation assumptions; identity spectators",
+      "acceptance": "PASS_CONDITIONAL",
+      "external_independent_review": "OPEN",
+      "exclusions": [
+        "permanent retention",
+        "arbitrary input diamond norm",
+        "hardware validation",
+        "full-word or native-admission compilation",
+        "quantum advantage"
+      ]
+    },
+    {
+      "id": "NUM-PARAMETERS",
+      "status": "EXACT / DERIVED",
+      "claim": "192 disjoint root brackets and directed parameter intervals; arithmetic ledger replayed",
+      "scope": "Decimal200-digit implementation and source formulas;220-digit containment control passes"
+    },
+    {
+      "id": "SPECTRAL-REFERENCE",
+      "status": "EXACT",
+      "claim": "Unique rank1 zero reference in proposed rank8 oriented spectral carrier",
+      "scope": "Original15-coordinate oriented boundary; carrier proposal post-exposure"
+    },
+    {
+      "id": "CAPACITY-COEFFICIENT",
+      "status": "OPEN",
+      "claim": "No derivation of7/768 allocation or material law",
+      "dependencies": [
+        "Theta identification",
+        "192 basis and source dynamics",
+        "factor24 allocation",
+        "factor4 admissibility",
+        "latch map"
+      ]
+    }
+  ]
+}

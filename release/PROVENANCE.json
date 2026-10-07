@@ -1,0 +1,36 @@
+{
+  "release": "0.5",
+  "source_floor": "MQM release 0.4, 18 September 2026",
+  "new_artifacts": "Stim translations and ideal-syndrome reference lookup constructed in this release; same-session checks, not independent replication.",
+  "upstream": [
+    {
+      "source_name": "mqm_core_x5_fault_simulator_v0_1.py",
+      "source_sha256": "8a332bdd1b41d28e03269deeb88d19ecc04241ed8669572ebc88fab4c57e335d",
+      "release_path": "support/x5_model.py",
+      "release_sha256": "8a332bdd1b41d28e03269deeb88d19ecc04241ed8669572ebc88fab4c57e335d",
+      "delta": "Filename only"
+    },
+    {
+      "source_name": "mqm_core_x5_recovery_controller_v0_1.py",
+      "source_sha256": "2eaebfaf507b5aa93d9b5c0961c24286d38411c9af6b5305f7effeaa5a0a57c2",
+      "release_path": "support/x5_controller.py",
+      "release_sha256": "abcba58752eb161903d52ec0006039aa8fb9408a9c6a2125b19b7794eb93d730",
+      "delta": "Import path renamed to x5_model; controller unchanged"
+    },
+    {
+      "source_name": "MQM_K4_8Q_TRANSVERSAL_ENTANGLER_NO_GO_v0.1_LOCK.md",
+      "source_sha256": "cfb7236efff7fca53a6813d6ce4aea6284c1ec6a871ed2e4822047c2e28206f9",
+      "use": "restricted entangler lemma; not rerun"
+    },
+    {
+      "source_name": "mqm_k4_8q_transversal_2q_clifford_search_output.txt",
+      "source_sha256": "346f32eb849cd43360f6bf7d5b3c36ead550278b6af62fe5753f524568c247be",
+      "use": "restricted entangler lemma; not rerun"
+    },
+    {
+      "source_name": "mqm_k4_8q_pairwise_pattern_entangler_search_output.txt",
+      "source_sha256": "009b5cb959868347b918845d400296eaa30f7f5af6b6765366910d553e5d862b",
+      "use": "restricted entangler lemma; not rerun"
+    }
+  ]
+}

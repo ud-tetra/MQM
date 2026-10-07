@@ -1,0 +1,58 @@
+{
+  "version": "0.1",
+  "claims": [
+    {
+      "id": "THERMAL-REFERENCE",
+      "level": "DERIVED",
+      "status": "AUTO_LOCK scoped conditional specification",
+      "scope": "Gaussian flat-band continuum reference; reduced dynamics existence assumed; correlated thermal covariance preserved."
+    },
+    {
+      "id": "THERMAL-DEBIT",
+      "level": "DERIVED",
+      "status": "AUTO_LOCK scoped conditional bound",
+      "scope": "half diamond thermal-vacuum <=min(1,t^2 V_beta); arbitrary reference; original bath traced; no photon truncation."
+    },
+    {
+      "id": "PRIMARY-TEMPERATURE",
+      "level": "OPEN",
+      "status": "OPEN",
+      "scope": "beta5/16 target not certified; conservative bound inconclusive, not channel failure."
+    },
+    {
+      "id": "COOLING-POINT",
+      "level": "DERIVED",
+      "status": "AUTO_LOCK conditional sufficient bound",
+      "scope": "Separately frozen beta7/16 cooling point total ceiling <1/65536 at t16; no necessity or device claim."
+    },
+    {
+      "id": "VACUUM-KERNEL",
+      "level": "SIMULATED",
+      "status": "AUTO_LOCK declared numerical checks",
+      "scope": "Volterra audit agrees with inherited vacuum certificate within1e-8; not second directed theorem or external review."
+    },
+    {
+      "id": "QUADRATURE-ORIGINAL",
+      "level": "SIMULATED",
+      "status": "AUTO_FREEZE failed numerical recipe",
+      "scope": "128/256 at s16 exceeds1e-12; source model unchanged; reopen only with resolution amendment."
+    },
+    {
+      "id": "QUADRATURE-REPAIR",
+      "level": "SIMULATED",
+      "status": "AUTO_LOCK declared numerical checks",
+      "scope": "256/512 checked against Bose series; amendment preserved."
+    }
+  ],
+  "physical_promotion": 0,
+  "unclosed": [
+    "primary beta5/16 thermal target",
+    "full13-step microscopic thermal word",
+    "permanent retention",
+    "reservoir refresh",
+    "native2-local joint admission",
+    "hardware validation",
+    "quantum advantage",
+    "independent theorem review"
+  ]
+}

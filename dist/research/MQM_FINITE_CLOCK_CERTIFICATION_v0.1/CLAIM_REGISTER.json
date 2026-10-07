@@ -1,0 +1,55 @@
+{
+  "status": "Development mathematics; no independent proof or priority promotion",
+  "claims": [
+    {
+      "id": "CF1",
+      "title": "Completed-subspace time packing",
+      "claim": "D>=m+floor(b/a) when q_epsilon<1/floor(b/a); for this frozen task D>=16",
+      "evidence": "Analytic Gram proof; exact threshold check",
+      "scope": "Arbitrary ideal static clocks with stated prefix/flag completion contract; no dependence on physical implementation",
+      "independent_proof_review": "pending",
+      "theorem_priority_review": "pending",
+      "physical_promotion": 0
+    },
+    {
+      "id": "CF2",
+      "title": "Dyadic clock resource admission",
+      "claim": "53 addresses; all edges positive and <=32/63, norm<1, launch variance<=1/63",
+      "evidence": "Exact rational checks and positive leading minors",
+      "scope": "Legal-sector generator only; physical whole-system resources not equated",
+      "independent_proof_review": "pending",
+      "theorem_priority_review": "pending",
+      "physical_promotion": 0
+    },
+    {
+      "id": "CF3",
+      "title": "Uniform continuous episode accuracy",
+      "claim": "Ideal complete error <=0.0008817189423708117; supplied-bank and generator allowance total <=0.0009677595597805739 <1/1024",
+      "evidence": "Conditional arithmetic certificate; replay receipt includes exact fractions",
+      "scope": "Declared elementary binary64 model and admitted preparation/mismatch assumptions; physical errors unmeasured",
+      "independent_proof_review": "pending",
+      "theorem_priority_review": "pending",
+      "physical_promotion": 0
+    },
+    {
+      "id": "CF4",
+      "title": "Reference address improvement",
+      "claim": "53 versus64 addresses:11/64=17.1875% reduction with unchanged contract",
+      "evidence": "CF2+CF3 against certified spin reference",
+      "scope": "Six binary clock qubits in both cases; no global dimension optimum or hardware advantage",
+      "independent_proof_review": "pending",
+      "theorem_priority_review": "pending",
+      "physical_promotion": 0
+    }
+  ],
+  "not_claimed": [
+    "Global smallest clock",
+    "Savings in binary clock qubits",
+    "Reduction in coupling synthesis cost",
+    "Independent theorem priority",
+    "Fault tolerance",
+    "Infeasibility of 52 addresses",
+    "Exact completion time or exact recurrence for the shaped clock",
+    "Autonomous renewal of the supervising clock"
+  ]
+}

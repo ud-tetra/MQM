@@ -1,0 +1,21 @@
+{
+  "status": "conditional mathematical development; independent review pending",
+  "physical_promotion": 0,
+  "certified": [
+    "Exact four-address three-CNOT logical SWAP history under joint mode encoding",
+    "16 physical mode qubits; 12 core pairs; degree 2; planar; no blind leaves or detuning",
+    "Exact full physical core norm 1 and width 2; ideal deadline 8*pi",
+    "Rounded core budget conservatively rescaled; interval error <2^-16",
+    "Spectator-uniform isometry and half-diamond guarantees conditional on admitted encoded input",
+    "Explicit coherent native interfaces and exact nearest-neighbor routing; 18-qubit planar hybrid"
+  ],
+  "open": [
+    "Autonomous native input and output interfaces",
+    "Permanent retention or clock refresh",
+    "Hardware supply, preparation, pulse switching and noise certificate",
+    "Minimality or advantage over direct timed SWAP",
+    "Polynomial scaling in body qubits",
+    "Thirteen-gate non-permutation word planarity",
+    "Independent theorem-level novelty comparison"
+  ]
+}

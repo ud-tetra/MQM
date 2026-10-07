@@ -1,0 +1,27 @@
+Single-qubit Pauli syndromes:
+('IIII', '000')
+('XIII', '100')
+('YIII', '100')
+('ZIII', '000')
+('IXII', '110')
+('IYII', '110')
+('IZII', '000')
+('IIXI', '011')
+('IIYI', '011')
+('IIZI', '000')
+('IIIX', '001')
+('IIIY', '001')
+('IIIZ', '000')
+
+Face pair products:
+F123 F124 IIZZ
+F123 F134 IZIZ
+F123 F234 ZIIZ
+F124 F134 IZZI
+F124 F234 ZIZI
+F134 F234 ZZII
+
+Stabilizer group ['IIII', 'IIZZ', 'IZIZ', 'IZZI', 'ZIIZ', 'ZIZI', 'ZZII', 'ZZZZ']
+normalizer size 32 min logical weight 1
+weight-1 logicals ['IIIZ', 'IIZI', 'IZII', 'ZIII']
+weight-4 X logical candidates ['XXXX']

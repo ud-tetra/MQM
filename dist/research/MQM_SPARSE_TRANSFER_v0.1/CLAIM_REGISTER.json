@@ -1,0 +1,37 @@
+{
+  "version": "0.1",
+  "claims": [
+    {
+      "id": "SPARSE-CONSTRUCTION",
+      "level": "EXACT counts / SIMULATED implementation",
+      "scope": "M768,Q2 dimension298371,nnz1486852,CSR19035712bytes. Physicalqubit/coupling counts notclaimed."
+    },
+    {
+      "id": "KRYLOV-DEFECT",
+      "level": "DERIVED prior-art method",
+      "scope": "Duhamel full-defect state bound; rankone Lanczos residual onlywith exact recurrence. Rounded data needfull residual and directed arithmetic allowances."
+    },
+    {
+      "id": "SHORTSTEP-PLAN",
+      "level": "DERIVED ideal exact-arithmetic design",
+      "scope": "64steps of1/4,k64,source-sectornorm64 yieldglobalvectorerror<2^-32 andidealfinitefullresponsepropdebit<2^-43. Restartedcompleximplementation and numericalcertification OPEN."
+    },
+    {
+      "id": "SPARSE-CONTROLS",
+      "level": "SIMULATED",
+      "scope": "M16 assembly andone-vector Lanczos residualchecks pass; whole-intervalk128 vectorerror0.09618 doesnot certifytargetaccuracy. M768k16 pilotonlyonehot mode, notfullthermalresponse."
+    },
+    {
+      "id": "CONTINUUM-COMPARISON",
+      "level": "DERIVED conditional / EXACT rational majorants",
+      "scope": "Stepfrequency embedding andGaussianpairedresponse givecoarse1/M transferallowance. M768majorant~0.029003 insufficient; notactualerrorfloor."
+    },
+    {
+      "id": "PRIMARY-TARGET",
+      "level": "OPEN",
+      "scope": "beta5/16,T16,target2^-16 notcertified. Higher-sourceclaims, permanenthold, hardware andadvantage remainunclosed."
+    }
+  ],
+  "physical_promotion": 0,
+  "independent_theorem_review": "pending"
+}

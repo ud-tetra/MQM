@@ -1,0 +1,40 @@
+{
+  "version": "0.1",
+  "physical_promotion": 0,
+  "EXACT": [
+    "local gate unitarity and full-bank history-gauge composition",
+    "conditional captured branch applies complete13-step word to arbitrary body/reference input",
+    "cold survival monotonicity"
+  ],
+  "DERIVED": [
+    "positive centered filter-Gram construction",
+    "two-specified-generator Duhamel comparison bound",
+    "analytic spectral-tail envelope",
+    "local complete-word reverse-rate bound3145729/2^38 forr<=2^-31"
+  ],
+  "INTERVAL_VERIFIED": [
+    "complete-word local cold retained-channel target around1024,halfwindow1/1024"
+  ],
+  "SIMULATED": [
+    "allfive frozen coarse-graining choices fail port target at16",
+    "complete-word frozen arrival samples",
+    "whole-bank endpoint fixture and donor pair entanglement",
+    "full scalar spectrum norms"
+  ],
+  "OPEN": [
+    "microscopic bath error",
+    "quadrature interval certificate",
+    "Born/memory/Lamb shift debits",
+    "native joint admission",
+    "physicalqubit2local compilation",
+    "geometry",
+    "hardware validation"
+  ],
+  "not_promoted": [
+    "positive generator implies physical accuracy",
+    "universal bath no-go",
+    "quantum advantage",
+    "first sampled deadline is minimum latency",
+    "old direct2local SWAP implementation reused"
+  ]
+}

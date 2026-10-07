@@ -1,0 +1,49 @@
+{
+  "capacity": {
+    "status": "SOURCE-CONFIRMED definition; physical enforcement OPEN",
+    "threshold": "7/768",
+    "finite_encoding": "n/768 for n=0..8; newly declared normalized encoding",
+    "measured_flux": false
+  },
+  "boundary_isometry": {
+    "status": "EXACT / AUTO_LOCK scoped",
+    "domain": "span of oriented edge01 and edge02",
+    "codomain": "four-dimensional face register",
+    "operator": "D1 K (K^dagger D1^dagger D1 K)^(-1/2)",
+    "full_edge_isometry": false,
+    "physical_compilation": "OPEN"
+  },
+  "conditional_latch": {
+    "status": "DERIVED / EXACT rational window certificate, AUTO_LOCK scoped",
+    "g": 1,
+    "Gamma": "2sqrt2",
+    "full_Hamiltonian_norm": 1,
+    "window": "[16-1/1024,16+1/1024]",
+    "complete_half_diamond_upper": "421720802990218760437543676608783860499420648180871694714404864000000000000000000000000/200048734518572544412100942846081049789386103198210154361123964140303758104604635346816579595219",
+    "target": "1/65536",
+    "assumptions": [
+      "Fixed eligible n>=7,F=1; product clock launchm",
+      "Trusted occupancy/completion flags; arbitrary data spectators",
+      "Identity data factors; no logical information in bath jump labels",
+      "No reverse jumps, zero storage Hamiltonian, ideal Markovian dynamics",
+      "Bath traced; cross-sector control coherences excluded"
+    ],
+    "isolation": "Incomplete or unsaturated productm launch cannot be captured",
+    "completion_generation": "OPEN",
+    "two_local_implementation": "OPEN",
+    "thermodynamic_refresh": "OPEN"
+  },
+  "negative_controls": {
+    "status": "SIMULATED",
+    "saturation_only_incomplete_capture": 0.9999999996708044,
+    "data_resolving_bath_Bell_negativity": 0.0,
+    "scope": "Constructor counterexamples; not a theorem about all baths"
+  },
+  "exact_checks": 35,
+  "numerical_controls": 34,
+  "physical_promotion": 0,
+  "hardware_or_quantum_advantage": false,
+  "native_joint_admission": "OPEN",
+  "independent_review": "pending",
+  "novelty_comparison": "pending"
+}
