@@ -1,0 +1,146 @@
+{
+  "version": "0.1",
+  "status": "CANDIDATE_PROTOCOL_FREEZE",
+  "physical_promotion": 0,
+  "parent_schedule": {
+    "artifact": "MQM_K4_8Q_FAULT_TOLERANT_GAUGE_MEASUREMENT_SCHEDULE_v0.2_LOCK.json",
+    "sha256": "87e477ceaf8cbc2fa21c5d81345ebd79015fdd648b8b09a8d54453b6b159967f",
+    "modified": false,
+    "location_by_location_comparison": "SOURCE_BLOCKED until exact bytes are recovered"
+  },
+  "code": "subsystem-8",
+  "partition": {
+    "core": [1, 2, 3, 8],
+    "shell": [4, 5, 6, 7],
+    "cut_edges": [[8,4],[8,5],[8,6],[8,7]]
+  },
+  "center_basis": {
+    "old": [
+      "IIIXXZZI",
+      "IIIYIYZZ",
+      "IIIXZIXZ",
+      "XXXXYYIX"
+    ],
+    "candidate": [
+      "IIIXXZZI",
+      "IIIZZYYI",
+      "IIIYIYZZ",
+      "XXXXYYIX"
+    ],
+    "construction": ["S1", "S2*S3", "S2", "S4"],
+    "old_metrics": {
+      "cross_checks": 3,
+      "hub8_checks": 3,
+      "core_incidences": 6,
+      "shell_incidences": 13,
+      "total_pauli_weight": 19
+    },
+    "candidate_metrics": {
+      "cross_checks": 2,
+      "hub8_checks": 2,
+      "core_incidences": 5,
+      "shell_incidences": 14,
+      "total_pauli_weight": 19
+    },
+    "exact_lower_bounds": {
+      "minimum_cross_checks": 2,
+      "minimum_hub8_checks": 2,
+      "minimum_core_incidences_at_optimum": 5
+    },
+    "syndrome_transform": {
+      "forward": "b=(s1,s2 xor s3,s2,s4)",
+      "inverse": "s=(b1,b3,b2 xor b3,b4)",
+      "ideal_decoder_retraining": false,
+      "ideal_decoder_coordinate_relabel": true
+    }
+  },
+  "schedule_phases": [
+    {
+      "phase": 0,
+      "name": "TEMPORAL_RECEIPT",
+      "status": "CANDIDATE",
+      "action": "Preserve a fresh pre-boundary gauge/history receipt when the platform exposes it. Do not infer missing post-event information from a later snapshot.",
+      "gate1_constraint": "Sites 1-3 can partially reopen with four commuting pre-loss receipt bits; sites 4-8 remain NO-GO under the declared arbitrary post-loss survivor-Pauli model using survivor gauge algebra alone."
+    },
+    {
+      "phase": 1,
+      "name": "SHELL_ONLY_CENTER",
+      "status": "EXACT_SUPPORT",
+      "checks": ["IIIXXZZI", "IIIZZYYI"],
+      "rule": "Use separate syndrome ancillas or an otherwise proved non-spreading construction. These checks do not touch T_C."
+    },
+    {
+      "phase": 2,
+      "name": "CROSS_BOUNDARY_CENTER",
+      "status": "CANDIDATE_CIRCUIT",
+      "checks": ["IIIYIYZZ", "XXXXYYIX"],
+      "rule": "Fresh syndrome ancilla per check; no ancilla reuse across the two checks before measurement/reset. When compatible with the native parity circuit, order shell interactions before core interactions. Add a flag or verified-cat mechanism for cross-partition hook detection."
+    },
+    {
+      "phase": 3,
+      "name": "SYNDROME_COORDINATE_RECOVERY",
+      "status": "EXACT",
+      "action": "Map b back to frozen s coordinates and apply the existing ideal-center decoder only on an accepted complete record."
+    },
+    {
+      "phase": 4,
+      "name": "FAIL_CLOSED",
+      "status": "GOVERNANCE",
+      "action": "Flagged, incomplete, stale, or loss-invalidated temporal receipts return HOLD/quarantine; do not guess a recovery."
+    }
+  ],
+  "candidate_variants": {
+    "conservative": {
+      "name": "VERIFIED_CAT_CROSS_CHECKS",
+      "status": "CANDIDATE",
+      "principle": "Measure each cross check with a verified distributed ancilla so one syndrome ancilla does not serially bridge multiple data sites.",
+      "resource_cost": "OPEN"
+    },
+    "lower_resource": {
+      "name": "FLAGGED_SINGLE_ANCILLA_CROSS_CHECKS",
+      "status": "CANDIDATE",
+      "principle": "Single syndrome ancilla plus flag, with shell-first/core-last ordering.",
+      "resource_cost": "OPEN",
+      "promotion_gate": "Exhaustive circuit-level single-fault injection"
+    }
+  },
+  "break_even_cost_rule": {
+    "model": "C = cS*N_shell + cC*N_core + cH*N_hub8 + cX*N_cross, with source-bound nonnegative costs fixed before evaluation",
+    "candidate_minus_current": "Delta C = cS - cC - cH - cX",
+    "candidate_preferred_iff": "cH + cX > cS - cC",
+    "meaning": "The basis shift removes one core/hub/cross incidence but adds one shell incidence. It is not universally better; physical/noisy-circuit costs decide."
+  },
+  "frozen_evaluation_protocol": {
+    "fault_locations": [
+      "ancilla preparation",
+      "data preparation if present",
+      "single-qubit basis rotation",
+      "two-qubit entangler",
+      "measurement",
+      "reset",
+      "declared idle",
+      "declared loss event"
+    ],
+    "fault_types": [
+      "single Pauli X",
+      "single Pauli Y",
+      "single Pauli Z",
+      "measurement bit flip",
+      "reset failure",
+      "loss/erasure when modeled"
+    ],
+    "acceptance": "Every declared single fault must end as protected logical I after recovery OR a declared detected HOLD/quarantine. Any unflagged protected-logical nonidentity is FAIL.",
+    "comparison": "Parent v0.2 and candidate must use identical gate/noise assumptions, timing, decoder policy and discard accounting.",
+    "tuning": "No schedule/order/threshold changes after evaluation exposure without versioning and fresh confirmatory replay."
+  },
+  "open": [
+    "Exact parent v0.2 gate-list recovery",
+    "native entangler direction and basis-rotation ledger",
+    "flag/cat circuit synthesis",
+    "source-bound physical edge/process weights",
+    "finite-time reservoir-to-logical channel",
+    "hardware validation",
+    "threshold",
+    "quantum advantage"
+  ]
+}
