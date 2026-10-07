@@ -1,0 +1,88 @@
+{
+  "version": "0.1",
+  "status": "EXACT_CONSTRUCTOR_REPLAY",
+  "source_head_before_execution": "5d72f2b0a7145f011ba00bc066fdcfdcfd1c6753",
+  "replay_commit": "fb383bf89282019af15db813276f0642a4385523",
+  "scope": "Schedule-independent code/graph invariants and equivalent center-basis optimization. The archived v0.2 gate-list location-by-location audit is not claimed because the exact gate list remains binary-archive source-blocked in this runtime.",
+  "center_basis": {
+    "shell_only_subspace_rank": 2,
+    "hub8_avoiding_subspace_rank": 2,
+    "minimum_cross_checks_in_any_center_basis": 2,
+    "minimum_hub8_checks_in_any_center_basis": 2,
+    "current": {
+      "coeffs": [1, 2, 4, 8],
+      "paulis": ["IIIXXZZI", "IIIYIYZZ", "IIIXZIXZ", "XXXXYYIX"],
+      "cross_checks": 3,
+      "hub8_checks": 3,
+      "core_incidences": 6,
+      "shell_incidences": 13,
+      "total_pauli_weight": 19,
+      "weights": [4, 4, 4, 7]
+    },
+    "firewall_aware_candidate": {
+      "coeffs": [1, 6, 2, 8],
+      "construction": ["S1", "S2*S3", "S2", "S4"],
+      "paulis": ["IIIXXZZI", "IIIZZYYI", "IIIYIYZZ", "XXXXYYIX"],
+      "cross_checks": 2,
+      "hub8_checks": 2,
+      "core_incidences": 5,
+      "shell_incidences": 14,
+      "total_pauli_weight": 19,
+      "weights": [4, 4, 4, 7],
+      "syndrome_map": "b=(s1,s2 xor s3,s2,s4)",
+      "inverse_syndrome_map": "s=(b1,b3,b2 xor b3,b4)",
+      "decoder_retraining_required_ideal_algebra": false,
+      "decoder_coordinate_relabel_required": true
+    },
+    "optimal_basis_count_under_lexicographic_score": 96,
+    "optimal_score_tuple": "(cross_checks,core_incidences,total_pauli_weight,max_weight,hub8_checks)",
+    "optimal_score": [2, 5, 19, 7, 2]
+  },
+  "firewall_break_stress_test": {
+    "error_family": "arbitrary Pauli on T_C={1,2,3,8} times exactly one nonidentity Pauli on one shell site",
+    "patterns": 3072,
+    "factorization": "3072 = 256*4*3 = 2^10*3",
+    "logical_classes_after_frozen_ideal_center_recovery": {
+      "I": 768,
+      "X": 768,
+      "Y": 768,
+      "Z": 768
+    },
+    "per_shell_site": {
+      "4": {"I": 192, "X": 192, "Y": 192, "Z": 192},
+      "5": {"I": 192, "X": 192, "Y": 192, "Z": 192},
+      "6": {"I": 192, "X": 192, "Y": 192, "Z": 192},
+      "7": {"I": 192, "X": 192, "Y": 192, "Z": 192}
+    },
+    "interpretation": "Uniform Pauli-basis enumeration only. Equal counts are not physical probabilities. It shows that one-shell support destroys the universal 256/256 core-firewall guarantee."
+  },
+  "tri_tetra_graph": {
+    "tetrahedra": {
+      "T_C": [1, 2, 3, 8],
+      "T_plus": [5, 6, 7, 8],
+      "T_minus": [4, 6, 7, 8]
+    },
+    "edges_total": 15,
+    "core_core_edges": 6,
+    "core_shell_edges": 4,
+    "shell_shell_edges": 5,
+    "core_shell_cut_edges": [[4,8],[5,8],[6,8],[7,8]],
+    "all_cut_edges_incident_to_hub8": true,
+    "topological_first_hop_firewall_escape_through_hub8_fraction": "1",
+    "equal_edge_structural_eta_shell": "9/15 = 3/5",
+    "equal_edge_structural_eta_escape_given_core_touch": "4/10 = 2/5",
+    "physical_eta_out": "OPEN"
+  },
+  "operator_algebra_no_go": {
+    "status": "EXACT",
+    "claim": "No direct entangling unitary across the core|shell partition can normalize the full core matrix algebra B(H_C) tensor I_S back into itself. If U A U^dagger=A for A=B(H_C) tensor I_S, then U must factor as U_C tensor U_S.",
+    "consequence": "Any direct core-shell entangler necessarily leaks at least some core-supported operator outside the firewall algebra. Firewall preservation therefore requires segmentation/recovery, detection/flagging, or a different encoded interaction mechanism; gate ordering alone cannot make every core error remain core-supported."
+  },
+  "recent_gate1_constraint": {
+    "source_commit": "5d72f2b0a7145f011ba00bc066fdcfdcfd1c6753",
+    "sites_1_3": "PARTIAL_REOPEN with a fresh pre-loss four-bit commuting gauge frame",
+    "sites_4_8": "NO_GO for universal recovery using only classical pre-loss gauge bookkeeping plus post-loss survivor-supported gauge measurements under one arbitrary post-loss survivor Pauli",
+    "impact": "A firewall-aware schedule must preserve temporal receipts before loss/cross-boundary propagation; post-event survivor algebra alone is insufficient in the declared strong fault model."
+  },
+  "physical_promotion": 0
+}
