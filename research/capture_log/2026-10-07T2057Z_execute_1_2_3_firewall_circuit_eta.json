@@ -1,0 +1,84 @@
+{
+  "timestamp_utc": "2026-10-07T20:57:00Z",
+  "turn_type": "execute_options_1_2_3_followup",
+  "source_head_at_start": "91a673d74d67282d6fe1027591ac496517244cbd",
+  "user_selection": [1,2,3],
+  "artifacts_created": [
+    {
+      "path": "research/bridges/2026-10-07T2045Z_mqm_firewall_candidate_circuit_fault_audit_v02.py",
+      "commit": "04df0238b4ec28e4d65b2831c6c63c1fb9a5e9be",
+      "evidence": "EXACT replay"
+    },
+    {
+      "path": "research/bridges/2026-10-07T2047Z_MQM_FIREWALL_CIRCUIT_FAULT_RESULTS_v0.2.json",
+      "commit": "11700b4d0d1287e0a60460160542cebc59d98fbc",
+      "evidence": "EXACT hook-containment results"
+    },
+    {
+      "path": "research/bridges/2026-10-07T2049Z_MQM_ETA_OUT_PARAMETRIC_BRIDGE_v0.1.md",
+      "commit": "f48b74e9b808e00e2b02dbf09ea9807469492b73",
+      "evidence": "EXACT conditional eta algebra; physical instantiation OPEN"
+    },
+    {
+      "path": "research/bridges/2026-10-07T2050Z_MQM_ARCHIVE_SOURCE_RECOVERY_AUDIT_v0.1.json",
+      "commit": "adb970726a3438db29487e68ab656884b50b60bc",
+      "evidence": "SOURCE recovery audit"
+    },
+    {
+      "path": "research/bridges/2026-10-07T2052Z_MQM_FIREWALL_EXECUTION_123_v0.2.md",
+      "commit": "48011b5753f916bf0a4c799203b41c1a6de4682a",
+      "evidence": "integrated scoped report"
+    }
+  ],
+  "option_1_parent_schedule": {
+    "status": "SOURCE_BLOCKED",
+    "frozen_schedule_sha256": "87e477ceaf8cbc2fa21c5d81345ebd79015fdd648b8b09a8d54453b6b159967f",
+    "archive_part000_declared_bytes": 358400,
+    "archive_part000_connector_visible_bytes": 15009,
+    "archive_part001_declared_bytes": 81920,
+    "archive_part001_connector_visible_bytes": 15009,
+    "parent_silently_reconstructed": false,
+    "confirmatory_parent_vs_candidate_claim": false
+  },
+  "candidate_flagged_hook_result": {
+    "center_two_qubit_gates": 27,
+    "edge_two_qubit_gates": 12,
+    "full_cycle_two_qubit_gates": 39,
+    "fault_injections": 585,
+    "unsafe_unflagged_or_edge_hooks": 0,
+    "max_ancillas_beyond_data": 2,
+    "status": "AUTO_LOCK scoped hook containment"
+  },
+  "candidate_verified_cat_hook_result": {
+    "center_two_qubit_gates": 64,
+    "edge_two_qubit_gates": 12,
+    "full_cycle_two_qubit_gates": 76,
+    "fault_injections": 1152,
+    "unsafe_accepted_or_edge_hooks": 0,
+    "max_ancillas_beyond_data": 8,
+    "status": "AUTO_LOCK scoped hook containment"
+  },
+  "development_choice": {
+    "preferred_branch": "FIREWALL_FLAGGED",
+    "reason": "Same zero-unsafe-hook result under each declared exact audit with 37 fewer two-qubit gates and 6 fewer peak ancillas than verified-cat.",
+    "not_a_hardware_advantage_claim": true
+  },
+  "option_2_eta": {
+    "eta_cut": "2*kappa/(3+2*kappa)",
+    "eta_shell": "(4*kappa+5*lambda)/(6+4*kappa+5*lambda)",
+    "epsilon_1_over_10_kappa_max": "1/6",
+    "epsilon_1_over_100_kappa_max": "1/66",
+    "physical_weighted_values": "OPEN / SOURCE_BLOCKED"
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "frozen_parent_modified": false
+  },
+  "external_literature_context": [
+    "Chao and Reichardt, Phys. Rev. Lett. 121, 050502 (2018), flag QEC",
+    "Chamberland and Beverland, Quantum 2, 53 (2018), flag FTEC framework"
+  ],
+  "physical_promotion": 0
+}
