@@ -1,0 +1,72 @@
+{
+  "status": "EXACT_CONSTRUCTOR_REPLAY",
+  "source_head_before_execution": "65130e8e8f9c65a5c5a8281b81fc6cfa95ade3d3",
+  "release_source": "release/branches.json::subsystem-8",
+  "geometry_source": "locked native-3D tri-tetra mapping",
+  "physical_tetrahedra_1based": {
+    "T_C": [1, 2, 3, 8],
+    "T_plus": [5, 6, 7, 8],
+    "T_minus": [4, 6, 7, 8]
+  },
+  "code_tetrahedra_0based": {
+    "T_C": [0, 1, 2, 7],
+    "T_plus": [4, 5, 6, 7],
+    "T_minus": [3, 5, 6, 7]
+  },
+  "integer_factorization": {
+    "paulis_on_four_sites": "4^4 = 256 = 2^8",
+    "core_gauge_kernel": "2^6 = 64",
+    "core_cosets": "256/64 = 4 = 2^2",
+    "four_site_subsets": "C(8,4) = 70 = 2*5*7"
+  },
+  "core_quotient_map_mod_phase": "E -> X_8^(x_8) Z_8^(z_8 xor z_1 xor z_2 xor z_3) modulo the gauge group",
+  "core_syndromes": {
+    "0000": {"count": 64, "recovery": "I"},
+    "0001": {"count": 64, "recovery": "Z_8"},
+    "0110": {"count": 64, "recovery": "X_8"},
+    "0111": {"count": 64, "recovery": "Y_8"}
+  },
+  "four_site_pauli_logical_class_counts": {
+    "T_C": {"I": 256, "X": 0, "Y": 0, "Z": 0},
+    "T_plus": {"I": 64, "X": 64, "Y": 64, "Z": 64},
+    "T_minus": {"I": 64, "X": 64, "Y": 64, "Z": 64}
+  },
+  "uniqueness": {
+    "subsets_tested": 70,
+    "subsets_with_256_of_256_logical_I": [[1, 2, 3, 8]]
+  },
+  "weight2_pauli_by_pair_location": {
+    "core_core": {"total": 54, "I": 54, "X": 0, "Y": 0, "Z": 0},
+    "core_shell": {"total": 144, "I": 36, "X": 36, "Y": 36, "Z": 36},
+    "shell_shell": {"total": 54, "I": 0, "X": 18, "Y": 18, "Z": 18}
+  },
+  "two_lowering_pauli_components_by_pair_location": {
+    "core_core": {"total": 24, "I": 24, "X": 0, "Y": 0, "Z": 0},
+    "core_shell": {"total": 64, "I": 24, "X": 12, "Y": 16, "Z": 12},
+    "shell_shell": {"total": 24, "I": 0, "X": 9, "Y": 6, "Z": 9}
+  },
+  "internal_two_lowering_components": {
+    "T_C": {"total": 24, "I": 24, "X": 0, "Y": 0, "Z": 0},
+    "T_plus": {"total": 24, "I": 0, "X": 9, "Y": 6, "Z": 9},
+    "T_minus": {"total": 24, "I": 0, "X": 9, "Y": 6, "Z": 9}
+  },
+  "clean_logical_representatives_physical_1based": {
+    "X_L": "Z_4 Y_5 Z_6",
+    "Z_L": "Y_4 X_5 Y_6",
+    "note": "Gauge/stabilizer-equivalent to release logical representatives; both avoid T_C entirely."
+  },
+  "claim": {
+    "exact": "Under the frozen ideal-center syndrome recovery, every Pauli operator supported on T_C={1,2,3,8} returns to protected logical class I modulo gauge. T_C is the unique four-site subset with this 256/256 property.",
+    "derived_extension": "Any channel whose Kraus operators remain supported in the T_C operator algebra is a correctable protected-subsystem noise algebra under ideal recovery.",
+    "no_go": "This does not establish that a physical reservoir remains support-confined during active gates or that tetrahedral geometry lowers total physical noise power."
+  },
+  "open": [
+    "finite-time reservoir-to-logical channel on the active schedule",
+    "core-to-shell support propagation through gates",
+    "imperfect syndrome extraction and decoder latency",
+    "hardware rates/calibration",
+    "matched planar or conventional architecture comparison",
+    "threshold or quantum advantage"
+  ],
+  "physical_promotion": 0
+}
