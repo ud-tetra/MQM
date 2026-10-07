@@ -1,0 +1,52 @@
+{
+  "version": "0.1",
+  "status": "SOURCE_BLOCKED_WITH_PARTIAL_RECOVERY",
+  "repository": "ud-tetra/MQM",
+  "archive_manifest": "artifact-capture/2026-10-07-chat-session/ARCHIVE_PARTS.json",
+  "declared_archive_sha256": "53062d4d3dc95076c8d2f8b986ee3700360e2a9deccc713907113b560229c64d",
+  "declared_archive_size_bytes": 2039050,
+  "critical_parts": {
+    "000": {
+      "declared_size_bytes": 358400,
+      "declared_sha256": "62a0cd7da6ebf3b5de16c515360d9162a452fdcaab01468bc0f073c47edf91ab",
+      "git_blob_sha": "2594dbecca337e9779d944b251400da1a378c2b9",
+      "connector_visible_base64_chars": 20012,
+      "connector_visible_decoded_bytes": 15009
+    },
+    "001": {
+      "declared_size_bytes": 81920,
+      "declared_sha256": "871e380c32eb2de17097a2d7da0a17fa0f7c6b2fa568b7e0d62ba2fb12f228e1",
+      "git_blob_sha": "2fcfd188c80a55afd4656df36d668b2b99992456",
+      "connector_visible_base64_chars": 20012,
+      "connector_visible_decoded_bytes": 15009
+    }
+  },
+  "library_recovery": {
+    "full_base64_parts_available": "002 through 026",
+    "part000_available": false,
+    "part001_available": false,
+    "interpretation": "The current runtime can recover the later archive segments but cannot reconstruct the declared complete compressed stream without full parts 000 and 001."
+  },
+  "frozen_targets_still_blocked": {
+    "schedule": {
+      "path": "MQM_K4_8Q_FAULT_TOLERANT_GAUGE_MEASUREMENT_SCHEDULE_v0.2_LOCK.json",
+      "sha256": "87e477ceaf8cbc2fa21c5d81345ebd79015fdd648b8b09a8d54453b6b159967f"
+    },
+    "coordinates": {
+      "path": "_mqm_3d_native_v01/MQM_TRI_TETRA_8Q_COORDINATES_v0.1.csv",
+      "sha256": "7eabe8d57e0cc94bc4998d38d22e38ec29db01c7e2144c0b961918aec7374ebe"
+    },
+    "pair_risk_map": {
+      "path": "_mqm_heteronuclear_sentinel_v01/MQM_TRI_TETRA_CORRELATED_PAIR_RISK_MAP_v0.1.csv",
+      "sha256": "ff55a50b9828066130b12f2315dfc778e306d189e1ab4248b9e7a010e1275d06"
+    }
+  },
+  "governance_ruling": {
+    "repository_corruption_claimed": false,
+    "connector_visible_truncation_or_windowing_observed": true,
+    "parent_schedule_reconstructed": false,
+    "parent_schedule_silently_replaced": false,
+    "reopening_criterion": "Recover complete bytes whose SHA-256 matches each frozen artifact or complete archive part hashes; only then run confirmatory parent-vs-candidate location-by-location comparison."
+  },
+  "physical_promotion": 0
+}
