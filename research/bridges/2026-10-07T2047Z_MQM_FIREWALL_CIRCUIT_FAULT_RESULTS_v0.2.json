@@ -1,0 +1,145 @@
+{
+  "version": "0.2",
+  "status": "EXACT_CONSTRUCTOR_REPLAY",
+  "physical_promotion": 0,
+  "candidate_center_checks": [
+    "IIIXXZZI",
+    "IIIZZYYI",
+    "IIIYIYZZ",
+    "XXXXYYIX"
+  ],
+  "center_basis_provenance": {
+    "construction": ["S1", "S2*S3", "S2", "S4"],
+    "syndrome_transform": "b=(s1,s2 xor s3,s2,s4)",
+    "inverse": "s=(b1,b3,b2 xor b3,b4)"
+  },
+  "flagged_candidate": {
+    "gate_convention": "Rotate each measured data Pauli to Z; CNOT data->syndrome; flag CNOT flag->syndrome after data interactions 1 and 3; measure syndrome Z and flag X; unrotate data.",
+    "orders_1based": {
+      "IIIXXZZI": [4,5,6,7],
+      "IIIZZYYI": [4,5,6,7],
+      "IIIYIYZZ": [4,6,7,8],
+      "XXXXYYIX": [4,5,6,1,2,3,8]
+    },
+    "design_rule": "For cross checks, shell support is visited before core support. After the second flag interaction, any remaining syndrome-to-data hook is confined to T_C.",
+    "per_weight4_check": {
+      "two_qubit_gates": 6,
+      "two_qubit_pauli_faults": 90,
+      "histogram": {
+        "unflagged_dressed_0": 14,
+        "unflagged_dressed_1": 44,
+        "flagged_dressed_0": 8,
+        "flagged_dressed_1": 12,
+        "flagged_dressed_2": 12
+      },
+      "unsafe_unflagged": 0
+    },
+    "weight7_check": {
+      "check": "XXXXYYIX",
+      "two_qubit_gates": 9,
+      "two_qubit_pauli_faults": 135,
+      "histogram": {
+        "unflagged_dressed_0": 23,
+        "unflagged_dressed_1": 80,
+        "flagged_dressed_0": 8,
+        "flagged_dressed_1": 12,
+        "flagged_dressed_2": 12
+      },
+      "unsafe_unflagged": 0
+    },
+    "center_totals": {
+      "two_qubit_gates": 27,
+      "two_qubit_pauli_faults": 405,
+      "unflagged_dressed_0": 65,
+      "unflagged_dressed_1": 212,
+      "flagged_dressed_0": 32,
+      "flagged_dressed_1": 48,
+      "flagged_dressed_2": 48,
+      "unsafe_unflagged": 0
+    },
+    "six_core_edge_checks": {
+      "edges": [[1,2],[1,3],[1,8],[2,3],[2,8],[3,8]],
+      "two_qubit_gates": 12,
+      "two_qubit_pauli_faults": 180,
+      "dressed_0": 72,
+      "dressed_1": 108,
+      "unsafe": 0
+    },
+    "full_redundant_cycle": {
+      "two_qubit_gates": 39,
+      "factorization": "39=3*13",
+      "two_qubit_pauli_faults": 585,
+      "unsafe_unflagged_or_edge_faults": 0,
+      "max_ancillas_beyond_data": 2,
+      "data_basis_rotation_cliffords": 38,
+      "syndrome_or_flag_measurements": 14
+    }
+  },
+  "verified_cat_candidate": {
+    "construction": "For a weight-w check: prepare w-qubit GHZ cat by root-H and fanout; verify all Z(c0)Z(cj) parities with one reusable verifier; reject on any verifier event; couple each cat qubit transversally by CZ to exactly one rotated data qubit; measure cat in X.",
+    "fault_model": "All 15 nonidentity two-qubit Pauli faults after each CNOT/CZ plus X/Y/Z after the cat-root H. Accepted records must have final data dressed weight <=1.",
+    "weight4_each": {
+      "cat_qubits": 4,
+      "reusable_verifier": 1,
+      "max_ancillas": 5,
+      "two_qubit_gates": 13,
+      "injected_faults": 198,
+      "accepted_dressed_0": 46,
+      "accepted_dressed_1": 64,
+      "rejected": 88,
+      "unsafe_accepted": 0
+    },
+    "weight7": {
+      "cat_qubits": 7,
+      "reusable_verifier": 1,
+      "max_ancillas": 8,
+      "two_qubit_gates": 25,
+      "injected_faults": 378,
+      "accepted_dressed_0": 106,
+      "accepted_dressed_1": 88,
+      "rejected": 184,
+      "unsafe_accepted": 0
+    },
+    "center_totals": {
+      "two_qubit_gates": 64,
+      "injected_faults": 972,
+      "accepted_dressed_0": 244,
+      "accepted_dressed_1": 280,
+      "rejected": 448,
+      "unsafe_accepted": 0
+    },
+    "full_redundant_cycle_with_same_six_edges": {
+      "two_qubit_gates": 76,
+      "injected_hook_faults": 1152,
+      "unsafe_accepted_or_edge_faults": 0,
+      "max_ancillas_beyond_data": 8,
+      "data_basis_rotation_cliffords": 38,
+      "syndrome_or_verification_measurements": 40
+    }
+  },
+  "comparison": {
+    "flagged_vs_cat_two_qubit_gate_ratio": "39/76",
+    "cat_extra_two_qubit_gates": 37,
+    "flagged_max_ancillas": 2,
+    "cat_max_ancillas": 8,
+    "hook_containment_result": "Both candidates pass their declared single-fault hook tests exactly.",
+    "preferred_development_branch": "FLAGGED candidate, because it passes the hook-containment test with fewer qubits and two-qubit gates. This is not yet a full FTEC or hardware-performance result."
+  },
+  "parent_v0_2": {
+    "exact_bytes": "SOURCE_BLOCKED",
+    "known_prior_receipt_only": "Prior MQM record reports one syndrome ancilla + one flag for four weight-4 gauges, D1-F1-D2-D3-F2-D4 ordering, flag=0 => dressed weight<=1, bare six weight-2 edge gauges, and a 39-two-qubit-interaction redundant cycle.",
+    "comparison_status": "NOT_CONFIRMATORY: equal interaction count 39 does not identify the parent and candidate circuits; parent fault locations and Q1-Q4 strings were not byte-recovered."
+  },
+  "not_closed": [
+    "measurement-bit reliability across repeated rounds",
+    "decoder with noisy/incomplete temporal receipts",
+    "reset faults beyond hook-only scope",
+    "idle errors",
+    "loss during extraction",
+    "finite-time correlated reservoir channel",
+    "matched parent-vs-candidate logical failure probability",
+    "hardware validation",
+    "threshold",
+    "quantum advantage"
+  ]
+}
