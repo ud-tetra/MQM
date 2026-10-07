@@ -1,0 +1,12 @@
+{
+ "version":"0.1",
+ "evidence":"Post-exposure analytic engineering certification; not independent prediction",
+ "source":"MQM_RESPONSE_JET_v0.1 frozen launch and ledger",
+ "parameters":{"Omega":64,"B":16,"kappa":8,"beta":"5/16","T":16,"h":1,"g":1,"lambda_squared":"4 sqrt(2)"},
+ "acceptance":"uniform retained error strictly below 2^-16",
+ "candidate_halfwidths":"2^-k for k=8..24; report largest passing member under this certificate only",
+ "comparison_horizon":"16+2^-8 covers the declared candidate list",
+ "primary":"Analytic launch spectral moments; no numerical continuum derivative transfer",
+ "controls":"Separate dense vs sparse population derivatives at M=4,8,192; exact integer-scaled budget audit",
+ "external_review":"OPEN","physical_promotion":0
+}

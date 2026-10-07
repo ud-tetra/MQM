@@ -1,0 +1,34 @@
+{
+  "version": "0.1",
+  "physical_promotion": 0,
+  "claims": [
+    {
+      "id": "VACUUM-MOMENTS",
+      "status": "EXACT",
+      "claim": "H psi0=p1 and H^2 psi0=p0+p2, giving conserved norm charges1 and sqrt2",
+      "scope": "Named source-frame vacuum launch; continuum one-excitation sector and finite references"
+    },
+    {
+      "id": "VACUUM-FLOW",
+      "status": "DERIVED",
+      "claim": "|q prime| <=2 sqrt(q); |q second| <=2+2 sqrt(2q); cold variation <=7w/1024+w^2"
+    },
+    {
+      "id": "WIDER-WINDOW",
+      "status": "DERIVED conditional",
+      "claim": "Retained thermal error <127/2^23<2^-16 throughout16 +/-2^-11",
+      "scope": "Inherited launch, continuum/Gaussian/arithmetic assumptions, finite response jet and uniformly extended comparisons"
+    },
+    {
+      "id": "CONTROLS",
+      "status": "SIMULATED",
+      "claim": "9 separate propagation controls, 6 launch-moment checks; 17 exact integer acceptance checks",
+      "scope": "Same-agent routes; not external independent review"
+    },
+    {
+      "id": "PERMANENT-HOLD",
+      "status": "OPEN",
+      "claim": "No permanent retention, replenished bath, hardware bridge or arbitrary-input diamond bound"
+    }
+  ]
+}

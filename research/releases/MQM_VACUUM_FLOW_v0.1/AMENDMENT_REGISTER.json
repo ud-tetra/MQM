@@ -1,0 +1,20 @@
+{
+  "interpretation": "Post-exposure engineering certification",
+  "records": [
+    {
+      "type": "Declared protocol expansion",
+      "change": "Dyadic list k8..24 and uniform comparison horizon4097/256",
+      "timing": "Recorded before this release evaluation; parent list and failures retained",
+      "frozen_parameters_changed": false
+    },
+    {
+      "type": "Reporting ceiling",
+      "change": "127/2^23 chosen after exact target pass; original2^-16 acceptance unchanged"
+    },
+    {
+      "type": "PDF build repairs",
+      "change": "Corrected authoring working-directory path; copied source IEEEtran class after missing-template build failure",
+      "scientific_result_changed": false
+    }
+  ]
+}

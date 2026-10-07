@@ -1,0 +1,1 @@
+{"status":"Frozen before controls","M":[4,8,192],"times":["16-2^-11","16","16+2^-11"],"dense_vs_exponential_vector_tolerance":"2^-32","operator_vs_vector_derivative_tolerance":"2^-32","moment_tolerance":"2^-40","scope":"Same-agent separate implementations; diagnostics, not external review or continuum transfer"}

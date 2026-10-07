@@ -1,0 +1,7 @@
+{
+  "clean_exact_replay": "byte-identical",
+  "controls": 9,
+  "moment_identities": 6,
+  "integer_decisions": 17,
+  "external_review": false
+}

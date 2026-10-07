@@ -5,6 +5,58 @@
   "physical_promotion": 0,
   "releases": [
     {
+      "id": "MQM_VACUUM_FLOW_v0.1",
+      "title": "Launch moments and eightfold wider thermal window",
+      "version": "0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "EXACT fixed-launch moments give unit amplitude variation and population-curvature bounds. DERIVED conditional retained error<127/2^23<2^-16 throughout16 +/-2^-11 model time units; eightfold wider than the response-jet window. No new physical or numerical continuum-derivative promotion.",
+      "claims": {
+        "version": "0.1",
+        "physical_promotion": 0,
+        "claims": [
+          {
+            "id": "VACUUM-MOMENTS",
+            "status": "EXACT",
+            "claim": "H psi0=p1 and H^2 psi0=p0+p2, giving conserved norm charges1 and sqrt2",
+            "scope": "Named source-frame vacuum launch; continuum one-excitation sector and finite references"
+          },
+          {
+            "id": "VACUUM-FLOW",
+            "status": "DERIVED",
+            "claim": "|q prime| <=2 sqrt(q); |q second| <=2+2 sqrt(2q); cold variation <=7w/1024+w^2"
+          },
+          {
+            "id": "WIDER-WINDOW",
+            "status": "DERIVED conditional",
+            "claim": "Retained thermal error <127/2^23<2^-16 throughout16 +/-2^-11",
+            "scope": "Inherited launch, continuum/Gaussian/arithmetic assumptions, finite response jet and uniformly extended comparisons"
+          },
+          {
+            "id": "CONTROLS",
+            "status": "SIMULATED",
+            "claim": "9 separate propagation controls, 6 launch-moment checks; 17 exact integer acceptance checks",
+            "scope": "Same-agent routes; not external independent review"
+          },
+          {
+            "id": "PERMANENT-HOLD",
+            "status": "OPEN",
+            "claim": "No permanent retention, replenished bath, hardware bridge or arbitrary-input diamond bound"
+          }
+        ]
+      },
+      "claims_url": "/research/MQM_VACUUM_FLOW_v0.1/CLAIM_REGISTER.json",
+      "zip_url": "/research/MQM_VACUUM_FLOW_v0.1/MQM_VACUUM_FLOW_v0.1.zip",
+      "zip_sha256": "8375b0029e3304e6f66f8b4d1ced1746069e23595086483ae0b2a6238b244ecd",
+      "zip_bytes": 276329,
+      "pdfs": [
+        {
+          "url": "/research/MQM_VACUUM_FLOW_v0.1/MQM_VACUUM_FLOW_IEEE_A4_v0.1.pdf",
+          "sha256": "cc8cbb4ff4fb4a22d53a667fbf42a456507c775599663e10fc13ccb7d6719657"
+        }
+      ],
+      "physical_promotion": 0
+    },
+    {
       "id": "MQM_RESPONSE_JET_v0.1",
       "title": "Retained-response derivative and fourfold thermal window",
       "version": "0.1",

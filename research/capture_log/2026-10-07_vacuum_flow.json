@@ -1,0 +1,16 @@
+{
+  "release": "MQM_VACUUM_FLOW_v0.1",
+  "github_source_parent": "2ac7b4346e3c5c33b535ea588532cb7f968973e8",
+  "sites_source_parent": "b05fe03ad56a465a37608648879d9dc78bc7122e",
+  "result": "DERIVED conditional window16 +/-2^-11, error<127/2^23<2^-16",
+  "checks": [
+    "Clean byte-identical exact replay",
+    "9 separate propagation controls",
+    "6 moment identities",
+    "17 integer decisions",
+    "IEEEtran A4 2 pages visually inspected"
+  ],
+  "amendments": "Protocol expansion declared before evaluation; post-exposure reporting ceiling; PDF build repairs preserved",
+  "external_review": "OPEN",
+  "physical_promotion": 0
+}

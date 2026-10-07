@@ -1,0 +1,107 @@
+\documentclass[a4paper,journal]{IEEEtran}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\title{Launch-Moment Bounds for a Wider Conditional MQM Thermal Capture Window}
+\author{Ben Mayes\thanks{Development v0.1, 7 October 2026. Same-agent derivation and separate checks; external independent review OPEN. Physical promotion zero.}}
+\maketitle
+\begin{abstract}
+The fixed vacuum launch of the MQM boundary latch has conserved generator moments much smaller than its full spectral norm. In the source rotating frame, $\|H\psi_0\|=1$ and $\|H^2\psi_0\|=\sqrt2$. These identities imply a unit live-amplitude Lipschitz bound and a population-curvature bound. They reduce the cold variation from $49w/1024+49w^2$ to $7w/1024+w^2$. With the inherited response jet, Gaussian remainder and uniformly extended continuum value comparisons, exact arithmetic certifies retained thermal error below $127/2^{23}<2^{-16}$ throughout $[16-2^{-11},16+2^{-11}]$ at unchanged $\beta=5/16$. This widens the preceding halfwidth eightfold. No numerical continuum-derivative transfer, permanent retention, arbitrary-input diamond bound or physical implementation is claimed.
+\end{abstract}
+\begin{IEEEkeywords}Quantum control, vacuum launch, spectral moments, finite retention.\end{IEEEkeywords}
+\section{Contract and Provenance}
+Keep $\Omega=64$, $B=16$, $\kappa=8$, $\beta=5/16$, $T=16$, $h=g=1$, and $\lambda^2=4\sqrt2$. The initial state is $\psi_0=|p0,\mathrm{vac}\rangle$. Let $P$ project onto the four live coordinates in the conserved one-excitation sector. The port joins the fourth live coordinate to the band reservoir; the first two native edges have unit weights.
+
+The generator is the centered rotating-frame vacuum generator, not an absolute-energy Hamiltonian. Scalar shifts preserve $q(t)=\|P\psi(t)\|^2$ but change uncentered moments; the identities below use the declared frame. Mathematical modes are not physical qubits. Spectators remain identities.
+
+The parent release [1] certifies conditional halfwidth $2^{-14}$; its numerical continuum-derivative transfer remains open. This release uses an analytic vacuum identity and uniform response-value comparisons. Window selection is post-exposure engineering certification, not independent prediction. The enlarged list $2^{-k}$, $k=8,\ldots,24$, was recorded before this release's evaluation.
+\section{Exact Launch Moments}
+In every admitted finite reference and its flat-band continuum counterpart,
+\begin{align}
+ H\psi_0&=|p1,\mathrm{vac}\rangle,\\
+ H^2\psi_0&=|p0,\mathrm{vac}\rangle+|p2,\mathrm{vac}\rangle.
+\end{align}
+No bath coefficient or $\lambda$ enters these identities. Orthonormality gives
+\begin{equation}
+ \langle H\rangle_0=0,\quad\langle H^2\rangle_0=1,\quad\langle H^4\rangle_0=2.
+\end{equation}
+Unitary evolution commutes with $H$, so $\|H\psi(t)\|=1$ and $\|H^2\psi(t)\|=\sqrt2$. The finite-band one-excitation generator is bounded; these differentiations are well-defined. The moments apply to the named launch, not arbitrary input or unrestricted thermal Fock space.
+\begin{theorem}
+The live amplitude is $1$-Lipschitz, and
+\begin{equation}
+ |q'(t)|\le2\sqrt{q(t)},\qquad |q''(t)|\le2+2\sqrt{2q(t)}.
+\end{equation}
+\end{theorem}
+\begin{proof}
+For $\psi=e^{-iHt}\psi_0$, $\|(P\psi)'\|\le\|H\psi\|=1$. Integrating and using the reverse triangle inequality proves the amplitude statement, including its zeros. Differentiation gives
+\begin{align}
+ q'&=2\Re\langle P\psi,-iPH\psi\rangle,\\
+ q''&=2\|PH\psi\|^2-2\Re\langle P\psi,PH^2\psi\rangle.
+\end{align}
+Cauchy--Schwarz and the conserved moments imply both bounds.
+\end{proof}
+No novelty comparison with general quantum speed-limit results has been performed.
+\section{Local Population Allowance}
+The inherited point certificate [1], [2] gives
+\begin{equation}
+ q(T)<E_0=3/2^{18}+2^{-128}<(7/2048)^2.
+\end{equation}
+Set $a_0=7/2048$. On $|t-T|\le w$,
+\begin{align}
+ \sqrt{q(t)}&<a_0+w,\\
+ q(t)&<E_0+d_q(w),\\
+ d_q(w)&=2a_0w+w^2=7w/1024+w^2.
+\end{align}
+The previous port bound used $G<7$ and $49w/1024+49w^2$. The launch moment improves the linear charge sevenfold and quadratic charge forty-ninefold without modifying the dynamics.
+
+A separate Taylor route uses $|q'(T)|<2a_0$, $\sqrt2<3/2$, and the interval amplitude bound:
+\begin{equation}
+ d_{q,\mathrm{curv}}(w)=2a_0w+[1+\tfrac32(a_0+w)]w^2.
+\end{equation}
+It is slightly more conservative and gives the same passing dyadic candidate.
+\section{Uniform Comparison and Thermal Ledger}
+The inherited finite-response certificate [1] remains
+\begin{equation}
+ \tfrac12\|\Delta_{2,M}(t)-\Delta_{2,M}(T)\|_1
+ \le2^{-20}w+w^2/8,\quad M=192,
+\end{equation}
+with point response below $3/2^{26}$. Extend the uniform comparison horizon to $U_*=4097/256=16+2^{-8}$, covering the declared list. The centered embedding [3] uses
+\begin{equation}
+ R=\frac{x^{192}}{192!\,[1-x/193]},\quad x=4U_*.
+\end{equation}
+Exact arithmetic verifies $336U_*^3\bar V R<2^{-30}$, where $\bar V=64/31457265$. For the distinct stationary covariance, put $r=2^{-21}$ and $y=8U_*+25/16$:
+\begin{align}
+ \eta={}&\frac{4(128/3)r}{1-r}
+ \frac{y^{384}}{384!\,[1-y/385]}\\
+ &+\frac{2(128/3)r^9}{1-r},\qquad2U_*^2\eta<2^{-57}.
+\end{align}
+These compare values, not derivatives. The Gaussian remainder is $R_{\ge4}=x_U^2/[2(1-x_U)]$, with
+\begin{align}
+ x_U&=x_{16}+6\bar V(Tw+w^2/2),\\
+ x_{16}&=12433696189517/58512905602490430.
+\end{align}
+\begin{theorem}
+Under the inherited fixed-launch continuum, Gaussian and arithmetic assumptions, retained thermal error is below $127/2^{23}<2^{-16}$ throughout $16\pm2^{-11}$ model time units.
+\end{theorem}
+\begin{proof}
+At $w=2^{-11}$, exact rational comparison establishes
+\begin{align}
+ E_\beta(t)<{}&E_0+d_q(w)+3/2^{26}+2^{-20}w+w^2/8\\
+ &+2^{-30}+2^{-57}+R_{\ge4}(T+w)\\
+ <{}&127/2^{23}<2^{-16}.
+\end{align}
+The target also passes with $d_{q,\mathrm{curv}}$. The comparison applies since $T+w\le U_*$. Larger declared candidates fail this sufficient majorant, not the physical task.
+\end{proof}
+The halfwidth is eight times [1] and thirty-two times [2], relative halfwidth $2^{-15}$ and full width $2^{-10}$ in model time. No pulse-off or device-time calibration is added.
+\section{Audit and Next Gate}
+Dense spectral evolution and independent exponential action at $M=4,8,192$ agree at nine declared times within $1.68\times10^{-13}$ in vector norm. Commutator/vector population derivatives and curvature agree within $2.23\times10^{-16}$ and $1.56\times10^{-15}$. Six moment identities pass; a separate integer audit checks seventeen decisions and the display ceiling. These are same-agent separate routes, not external review or continuum validation.
+
+The finite $M=192$ slope diagnostic near $T$ is about $-9.01\times10^{-6}$, much smaller than the generic certified ceiling. The next gate is to certify propagation of $H\psi_0=|p1,\mathrm{vac}\rangle$ and $H^2\psi_0$ using explicit continuum propagator comparison for each launch. Close values for the original launch alone do not close this bridge.
+
+External review, permanent retention, bath refresh, physical two-local implementation and arbitrary-input diamond accuracy remain OPEN. Capacity allocation remains separate. Physical promotion remains zero.
+\begin{thebibliography}{3}
+\bibitem{jet} B. Mayes, \emph{Retained-Response Derivative Bounds and a Wider Conditional MQM Thermal Capture Window}, v0.1, 2026.
+\bibitem{window} B. Mayes, \emph{A Finite Retention and Timing Window for the Conditional MQM Thermal Capture Certificate}, v0.1, 2026.
+\bibitem{center} B. Mayes, \emph{Time-Centered Gaussian Quadrature Embedding for the MQM Vacuum-Transfer Certificate}, v0.1, 2026.
+\end{thebibliography}
+\end{document}

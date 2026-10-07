@@ -1,0 +1,22 @@
+{
+  "source_repository": "https://github.com/ud-tetra/MQM",
+  "source_commit": "2ac7b4346e3c5c33b535ea588532cb7f968973e8",
+  "dependencies": [
+    {
+      "release": "MQM_RESPONSE_JET_v0.1",
+      "repository_path": "dist/research/MQM_RESPONSE_JET_v0.1/MQM_RESPONSE_JET_v0.1.zip",
+      "sha256": "c92347cbd7c3c15c9bff426a07460ccbeb6c23a4f880a94147e9cf6be5b365c8"
+    },
+    {
+      "release": "MQM_RETENTION_WINDOW_v0.1",
+      "repository_path": "dist/research/MQM_RETENTION_WINDOW_v0.1/MQM_RETENTION_WINDOW_v0.1.zip",
+      "sha256": "06568ab9ec8d191830decabc2859bad5df58dc00de869741853169a435ce9887"
+    },
+    {
+      "release": "MQM_CENTERED_TRANSFER_v0.1",
+      "repository_path": "dist/research/MQM_CENTERED_TRANSFER_v0.1/MQM_CENTERED_TRANSFER_v0.1.zip",
+      "sha256": "3d6e04c60f9c0d232022912ebe64229786eed082bb681fa2e3ee2c742af26e48"
+    }
+  ],
+  "inherited_review": "OPEN"
+}
