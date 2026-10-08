@@ -1,0 +1,163 @@
+{
+  "version": "0.1",
+  "status": "TYPED_HARDWARE_CHANNEL_CONTRACT_PARTIALLY_SOURCE_BOUND",
+  "timestamp_utc": "2026-10-08T21:00:00Z",
+  "platform": "Infleqtion Sqale cesium neutral-atom gate set",
+  "physical_promotion": 0,
+  "source_head": "76bdfbaa68578b6d6fe460cf22e8a1a902ddfb83",
+  "purpose": "Replace the homogeneous p/q/p_loss abstraction with operation-typed channels without inventing unsupported rates.",
+  "mqm_round_macro": {
+    "center_checks": {
+      "B1": {"pauli":"IIIXXZZI","cz_equivalent":6,"local_H_macros":8,"direct_local_Rz_S_macros":0,"prep_reset_macros":2,"measurements":{"Z":1,"X":1}},
+      "B2": {"pauli":"IIIZZYYI","cz_equivalent":6,"local_H_macros":8,"direct_local_Rz_S_macros":4,"prep_reset_macros":2,"measurements":{"Z":1,"X":1}},
+      "B3": {"pauli":"IIIYIYZZ","cz_equivalent":6,"local_H_macros":8,"direct_local_Rz_S_macros":4,"prep_reset_macros":2,"measurements":{"Z":1,"X":1}},
+      "B4": {"pauli":"XXXXYYIX","cz_equivalent":9,"local_H_macros":18,"direct_local_Rz_S_macros":4,"prep_reset_macros":2,"measurements":{"Z":1,"X":1}}
+    },
+    "six_core_edge_checks_total": {
+      "cz_equivalent": 12,
+      "local_H_macros": 12,
+      "direct_local_Rz_S_macros": 0,
+      "prep_reset_macros": 6,
+      "measurements":{"Z":6,"X":0}
+    },
+    "per_round_totals": {
+      "cz_equivalent": 39,
+      "local_H_macros": 54,
+      "direct_local_Rz_S_macros": 12,
+      "prep_reset_macros": 14,
+      "NDSSR_binary_measurements": 14,
+      "data_idle_site_epochs": 88,
+      "ancilla_cycle_loss_epochs": 14
+    },
+    "derivation": {
+      "candidate_data_basis_rotations": "26 H plus 12 S/Sdag macros = 38 abstract Clifford rotations",
+      "parity_chain_identity": "For each of 10 parity checks, product_j CNOT(control_j -> syndrome) = H_syndrome [product_j CZ(control_j,syndrome)] H_syndrome, so 39 CNOT-like interactions compile to 39 CZ requests plus 20 syndrome-H macros rather than 78 H macros.",
+      "flag_basis": "4 flag |+> preparations and 4 X-basis flag measurements add 8 H macros.",
+      "H_total": "26 data + 20 parity-chain + 8 flag = 54",
+      "S_total": "12 direct local phase macros"
+    }
+  },
+  "native_gate_mapping": {
+    "CZ_equivalent": {
+      "native_family": "CZ",
+      "mapping_status": "EXACT_GATE_IDENTITY_AT_MACRO_LEVEL",
+      "source_channel": "CZ phase plus five-level leakage/loss model; public fidelity summaries available",
+      "note": "Error propagation after compilation must use the compiled CZ+1Q circuit, not reuse CNOT Pauli propagation silently."
+    },
+    "direct_local_Rz_S_macro": {
+      "native_family": "local Rz",
+      "mapping_status": "EXACT",
+      "angle": "plus/minus pi/2",
+      "source_channel": "Rz relative coherent angle error and leakage model"
+    },
+    "local_H_macro": {
+      "native_family": "compiled from global GR(theta,phi) plus local Rz sandwiches",
+      "mapping_status": "OPEN_COMPILER_COUNT",
+      "reason": "Sqale's published native gate set has global XY rotations and single-site Rz. A local H is not assigned one GR count without an explicit spectator-refocusing schedule.",
+      "requirement": "compiled pulse/gate list must provide exact GR and Rz multiplicities and spectator action before hardware-facing scoring"
+    },
+    "prep_reset_macro": {
+      "native_family": "state preparation / mid-circuit reset",
+      "mapping_status": "PARTIAL",
+      "source_supported": "initial state-preparation leakage model",
+      "open": "repeated mid-circuit reset channel for reused syndrome/flag ancillas"
+    },
+    "NDSSR_binary_measurement": {
+      "native_family": "nondestructive state-selective readout",
+      "mapping_status": "SOURCE_BOUND_ASYMMETRIC",
+      "channel": "epsilon_1to0 and epsilon_0to1 plus readout-associated atom loss"
+    },
+    "data_idle_site_epoch": {
+      "native_family": "idle/storage plus any motion/retiming inserted by compiler",
+      "mapping_status": "OPEN",
+      "requirement": "duration-resolved dephasing/leakage/loss channel and compiled schedule times"
+    }
+  },
+  "source_profile_2025_logical_experiment": {
+    "provenance": "Chung et al., npj Quantum Information 11, 193 (2025), DOI 10.1038/s41534-025-01095-w",
+    "state_preparation": {
+      "dark_state_leakage_total": 0.006,
+      "bright_state_leakage_total": 0.046,
+      "typed_note": "source variables renamed here to avoid collision with MQM p/q"
+    },
+    "CZ": {
+      "single_qubit_phase_error_probability_in_source_noise_model": 0.0035,
+      "array_median_loss_postselected_fidelity": 0.9948,
+      "conditional_infidelity_proxy": 0.0052,
+      "typed_note": "0.0052 is not a uniform two-qubit Pauli probability"
+    },
+    "GR": {
+      "absolute_overrotation_radians": 0.0345,
+      "source_model_target_RB_fidelity": 0.9997,
+      "typed_note": "coherent rotation error, not Bernoulli Pauli"
+    },
+    "Rz": {
+      "angle_multiplier": 1.012,
+      "leakage_from_input_1_total_probability": 0.00132,
+      "typed_note": "coherent relative angle error plus state-dependent leakage"
+    },
+    "measurement": {
+      "epsilon_1_to_0": 0.028,
+      "epsilon_0_to_1": 0.004,
+      "state_average_atom_loss_per_site": 0.01
+    }
+  },
+  "source_profile_2025_PRX_characterization": {
+    "provenance": "Radnaev et al., PRX Quantum 6, 030334 (2025), DOI 10.1103/66s8-jj18",
+    "CZ": {
+      "two_atom_survival_per_gate": 0.9962,
+      "two_atom_survival_uncertainty": 0.0003,
+      "fidelity_including_leakage": 0.9935,
+      "fidelity_including_leakage_uncertainty": 0.0004,
+      "postselected_fidelity_excluding_atom_loss": 0.9973,
+      "postselected_fidelity_uncertainty": 0.0003,
+      "pair_loss_probability_proxy": 0.0038
+    },
+    "nondestructive_readout_loss": {
+      "central": 0.009,
+      "uncertainty": 0.003
+    },
+    "typed_note": "This is a different characterized operating point from the 2025 logical-experiment noise model; do not combine values silently."
+  },
+  "typed_loss_channels": {
+    "ell_CZ_pair": {"status":"EMPIRICAL_PROFILE_AVAILABLE","source_profile":"2025_PRX_characterization","value_proxy":0.0038},
+    "ell_NDSSR_site": {"status":"EMPIRICAL_PROFILE_AVAILABLE","source_profile":"2025_logical_experiment","value":0.01},
+    "ell_Rz_leakage_from_1": {"status":"EMPIRICAL_MODEL_AVAILABLE","value":0.00132,"note":"leakage, not necessarily physical atom loss"},
+    "ell_data_idle_motion": {"status":"OPEN"},
+    "ell_ancilla_cycle": {"status":"OPEN"},
+    "missed_loss_detection": {"status":"OPEN"}
+  },
+  "protocol_macro_scaling": {
+    "1+0": {"nominal_rounds":1,"CZ_requests":39,"local_H_macros":54,"direct_Rz_S_macros":12,"prep_reset_macros":14,"NDSSR_measurements":14,"data_idle_site_epochs":88},
+    "2+0": {"nominal_rounds":2,"CZ_requests":78,"local_H_macros":108,"direct_Rz_S_macros":24,"prep_reset_macros":28,"NDSSR_measurements":28,"data_idle_site_epochs":176},
+    "2+1": {"nominal_rounds":3,"CZ_requests":117,"local_H_macros":162,"direct_Rz_S_macros":36,"prep_reset_macros":42,"NDSSR_measurements":42,"data_idle_site_epochs":264},
+    "3+1": {"nominal_rounds":4,"CZ_requests":156,"local_H_macros":216,"direct_Rz_S_macros":48,"prep_reset_macros":56,"NDSSR_measurements":56,"data_idle_site_epochs":352}
+  },
+  "hardware_scoring_gate": {
+    "status": "BLOCKED",
+    "must_close": [
+      "exact compiler-expanded GR/Rz counts for all local_H macros including spectator echoes",
+      "mid-circuit reset channel and duration",
+      "duration-resolved idle/storage error and loss",
+      "typed motion-associated error/loss if atom motion is inserted",
+      "same-operating-point CZ loss/leakage channel for the target backend",
+      "measurement-state population model for asymmetric epsilon_1to0/epsilon_0to1",
+      "missed-loss detection probability"
+    ],
+    "forbidden": [
+      "replace all typed channels by one p",
+      "average asymmetric measurement errors without a frozen state distribution",
+      "copy readout loss to every idle/loss epoch",
+      "reuse postselected CZ infidelity as a Pauli rate"
+    ]
+  },
+  "claim_status": {
+    "macro_resource_mapping": "EXACT/DERIVED",
+    "native_compilation": "PARTIAL/OPEN",
+    "source_hardware_parameters": "EMPIRICAL-HARDWARE or EMPIRICAL-MODEL as typed",
+    "hardware_schedule_ranking": "OPEN",
+    "threshold": "OPEN",
+    "quantum_advantage": "OPEN",
+    "physical_promotion": 0
+  }
+}
