@@ -1,0 +1,26 @@
+{
+  "schema_version":"0.1",
+  "provider":"Infleqtion",
+  "backend":{"platform":"Sqale","backend_id":"REQUIRED","qpu_generation":"REQUIRED","software_stack_version":"REQUIRED","compiler_version":"REQUIRED"},
+  "calibration_context":{"start_utc":"REQUIRED","end_utc":"REQUIRED","operating_point_id":"REQUIRED"},
+  "compiler_manifest":{
+    "source_circuit_sha256":"REQUIRED_64_HEX",
+    "compiled_circuit_sha256":"REQUIRED_64_HEX",
+    "active_qubits":["REQUIRED"],
+    "native_gate_counts":{"CZ":0,"GR":0,"RZ":0,"NDSSR":0,"RESET":0,"MOVE":0},
+    "timing_manifest":[]
+  },
+  "channels":{
+    "CZ":{"operating_point_id":"REQUIRED","pair_records":[]},
+    "RZ":{"angle_records":[]},
+    "GR":{"records":[]},
+    "PREP":{"records":[]},
+    "RESET":{"records":[]},
+    "NDSSR":{"confusion_by_true_state":{},"loss_by_true_state":{},"duration_ns":0},
+    "IDLE":{"duration_records":[]},
+    "MOVE":{"records":[]},
+    "LOSS_DETECTION":{"event_family_records":[]},
+    "PARALLEL_CROSSTALK":{}
+  },
+  "provenance":{"contact":"REQUIRED","raw_data_refs":[],"exclusions":[],"uncertainty_method":"REQUIRED"}
+}
