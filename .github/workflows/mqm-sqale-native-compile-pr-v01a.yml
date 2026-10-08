@@ -1,0 +1,40 @@
+name: MQM Sqale native compile replay v0.1a
+
+on:
+  pull_request:
+    paths:
+      - 'research/hardware/2026-10-08T2205Z_mqm_sqale_native_round_compile_v01a.py'
+      - 'review_handoff/MQM_SQALE_NATIVE_COMPILE_v0.1a/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate exact native-gate schedule
+        run: |
+          python3 research/hardware/2026-10-08T2205Z_mqm_sqale_native_round_compile_v01a.py > MQM_SQALE_NATIVE_ROUND_COMPILE_v0.1a.json
+          python3 - <<'PY'
+          import json
+          j=json.load(open("MQM_SQALE_NATIVE_ROUND_COMPILE_v0.1a.json"))
+          assert j["round_totals"] == {
+            "GR":40,"CZ":39,"RZ_address_requests":346,"RZ_instruction_groups":66,
+            "RESET_site_requests":14,"NDSSR_site_requests":14
+          }
+          print(j["round_totals"])
+          PY
+      - name: Hash
+        run: |
+          sha256sum             research/hardware/2026-10-08T2205Z_mqm_sqale_native_round_compile_v01a.py             MQM_SQALE_NATIVE_ROUND_COMPILE_v0.1a.json             > MQM_SQALE_NATIVE_COMPILE_SHA256_v0.1a.txt
+          cat MQM_SQALE_NATIVE_COMPILE_SHA256_v0.1a.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MQM-Sqale-native-compile-v0.1a
+          path: |
+            MQM_SQALE_NATIVE_ROUND_COMPILE_v0.1a.json
+            MQM_SQALE_NATIVE_COMPILE_SHA256_v0.1a.txt
