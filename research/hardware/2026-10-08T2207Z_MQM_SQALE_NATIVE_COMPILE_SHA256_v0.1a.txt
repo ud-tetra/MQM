@@ -1,0 +1,2 @@
+6ac3049456718eff9a821c9e3f4e484ff52d82fe439ed5cbf38384a2579002ca  research/hardware/2026-10-08T2205Z_mqm_sqale_native_round_compile_v01a.py
+88cea4ea0dafce67cb9ba1701b3cf78229a06683ef56aa496c8a2fc2156eb651  MQM_SQALE_NATIVE_ROUND_COMPILE_v0.1a.json
