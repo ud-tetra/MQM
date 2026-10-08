@@ -1,0 +1,71 @@
+{
+  "version": "0.1a",
+  "status": "PASS_EXTERNAL_RUNTIME_REPLAY",
+  "timestamp_context": "2026-10-08",
+  "physical_promotion": 0,
+  "scope": "GitHub-hosted external runtime reproduction of the frozen primary and separate same-agent pair classifiers. This is external execution reproducibility, not independent scientific review.",
+  "draft_pr": {
+    "number": 1,
+    "branch": "external-replay-20261008",
+    "trigger_head_sha": "8ecd944aebe6de508cb3252fafe3c7474657a680",
+    "merge_required": false
+  },
+  "initial_failed_run_preserved": {
+    "run_id": 37830982640,
+    "job_id": 113495941597,
+    "workflow": "MQM external pair replay PR",
+    "conclusion": "failure",
+    "failure_stage": "historical source SHA precheck",
+    "scientific_classifier_builds": "both primary and separate classifier built and executed",
+    "aggregate_comparison_reached": false,
+    "reason": "The first manifest used historical local-container SHA-256 values that did not match the GitHub-canonical package byte copies.",
+    "invalid_scientific_result_promoted": false
+  },
+  "versioned_repair": {
+    "verifier_commit": "e5dabb2b52f237ffc78431507098eabf1e5e5321",
+    "manifest_commit": "9766d8eb49cb0194b7d23cc6140f1bc0d55e34ec",
+    "workflow_commit": "9d2d016eaddab276a0e250ff245a61268e08f24e",
+    "scientific_sources_changed": false,
+    "expected_raw_aggregates_changed": false,
+    "repair": "Remove stale historical precheck; record runtime package hashes and use exact semantic raw-aggregate equality as the pass gate."
+  },
+  "successful_run": {
+    "run_id": 37831270621,
+    "job_id": 113496920309,
+    "workflow": "MQM external pair replay PR v0.1a",
+    "conclusion": "success",
+    "steps": {
+      "build_primary": "success",
+      "run_primary": "success",
+      "build_separate_classifier": "success",
+      "run_separate_classifier": "success",
+      "verify_semantic_aggregates": "success",
+      "record_runtime_hashes": "success",
+      "upload_artifact": "success"
+    },
+    "raw_aggregate_mismatches": 0,
+    "primary_output_sha256": "47f962b42812490339518378d5733df799d6e4372b7123e2fa7665d795c4ed51",
+    "separate_classifier_output_sha256": "bb6e485cc1a6b97c3965afe64731e013dfb0cf3a5bf8d02b3071de94cad126bc",
+    "package_runtime_sha256": {
+      "mqm_symbolic_malignant_pair_replay_v01.cpp": "3f9a47d279a1830f201f3b5f6db9cb039f6f0e3f926d8eb7ebaacbc1a3e315d0",
+      "mqm_full_stochastic_tail_v01.cpp": "072152dd1b469465b0ffed0ebe7a8e6953b05769bd8da9c984e587e58af93dd3",
+      "mqm_pair_classifier_crosscheck_v01.cpp": "6d0f2a1ad544f5f192a59ac4daa2d65db42f7777b26da80d90429e22e289dac8",
+      "EXPECTED_RAW_AGGREGATES.json": "a34772e8e781df75c4bfa0d29cafb0fc7564b34c8834c675e61ed6449f8d04f8"
+    }
+  },
+  "workflow_artifact": {
+    "artifact_id": 11573242510,
+    "name": "MQM-pair-replay-v0.1a",
+    "size_bytes": 4679,
+    "zip_sha256": "14964ea9778b54badfc2e889b8f0c95b57f34d1ea64064e7e58ee061948ae1cc",
+    "expires_at": "2027-01-06T19:20:58Z"
+  },
+  "claim_boundary": {
+    "external_runtime_reproducibility": "CLOSED for this frozen package",
+    "second_classifier_semantic_match": "CLOSED for frozen raw aggregates",
+    "independent_human_or_external-team_review": "OPEN",
+    "hardware_validation": "OPEN",
+    "threshold": "OPEN",
+    "quantum_advantage": "OPEN"
+  }
+}
