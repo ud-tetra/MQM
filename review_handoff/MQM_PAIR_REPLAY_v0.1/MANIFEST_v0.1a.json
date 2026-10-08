@@ -1,0 +1,18 @@
+{
+  "version": "0.1a",
+  "status": "VERSIONED_REPAIR_AFTER_EXTERNAL_HASH_PRECHECK_FAILURE",
+  "parent_manifest": "MANIFEST.json",
+  "parent_failure": "The first external run stopped before aggregate comparison because historical local SHA-256 values did not match the GitHub-canonical package copies.",
+  "scientific_data_changed": false,
+  "package_git_blob_shas": {
+    "mqm_symbolic_malignant_pair_replay_v01.cpp": "63dfe9814f9f4c9f509a445e6d15f6dd944ecc86",
+    "mqm_full_stochastic_tail_v01.cpp": "d875cb3904b4b8862ef19761a5a526da4fa84cb3",
+    "mqm_pair_classifier_crosscheck_v01.cpp": "8ccfad29bae5b3ae4f729c3add7911afe8e2d127",
+    "EXPECTED_RAW_AGGREGATES.json": "1469e3f7222158669717da2bc7e776d3dfa87ce2"
+  },
+  "verifier": "verify_replay_v0_1a.py",
+  "expected_table": "EXPECTED_RAW_AGGREGATES.json",
+  "external_runtime": "GitHub-hosted ubuntu-latest",
+  "pass_condition": "zero semantic mismatches across primary and separate raw aggregates; runtime SHA-256 values recorded in the receipt",
+  "claim_boundary": "External runtime reproducibility is not independent scientific review."
+}
