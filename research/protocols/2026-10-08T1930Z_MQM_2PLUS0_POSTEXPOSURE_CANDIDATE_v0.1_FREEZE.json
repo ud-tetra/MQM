@@ -1,0 +1,48 @@
+{
+  "version": "0.1",
+  "status": "POSTEXPOSURE_EXPLORATORY_CANDIDATE_FROZEN_BEFORE_ITS_EVALUATION",
+  "timestamp_utc": "2026-10-08T19:30:00Z",
+  "physical_promotion": 0,
+  "parent_frozen_benchmark": "1+0 / 2+1 / 3+1",
+  "parent_benchmark_commit": "993eeb1ec575eebdb7cf2f4026df374c48cb05ad",
+  "selection_after_exposure": true,
+  "confirmatory_status": false,
+  "selection_reason": "The frozen full-grid development result shows 2+1 retains substantially lower accepted-logical error than 3+1 while using one fewer round. The next direct resource question is whether the terminal verification round in 2+1 is necessary for accepted-logical safety.",
+  "protocol": {
+    "name": "2+0",
+    "acquisition_rounds": 2,
+    "verification_rounds": 0,
+    "round_block": "identical 39-two-qubit-gate firewall round used by the frozen benchmark",
+    "syndrome_estimator": "two complete unflagged center frames must agree bit-for-bit; disagreement => HOLD",
+    "pre_recovery_fail_closed": "any center flag or detected ancilla loss => HOLD; detected data loss => QUARANTINE",
+    "recovery": "map agreed firewall-basis frame b to frozen center frame s and apply the frozen decoder as a classical Pauli-frame update",
+    "acceptance": "if both acquisition records are complete, unflagged, loss-free and equal, ACCEPT immediately after recovery; no terminal verification round",
+    "accepted_output_scoring": "protected logical quotient after analysis-only ideal cleanup; dressed residual weight reported separately"
+  },
+  "location_counts": {
+    "rounds": 2,
+    "p": 358,
+    "q": 28,
+    "p_loss": 204,
+    "all": 590,
+    "two_qubit_gates": 78,
+    "measurements": 28,
+    "peak_extra_ancillas": 2
+  },
+  "fault_semantics": "identical p/q/p_loss definitions and conditional Pauli distributions to the frozen parent benchmark",
+  "evaluation_plan": {
+    "single_event": "exact exhaustive",
+    "pair_event": "exact exhaustive",
+    "higher_order_grid": "same exact <=2 plus frozen conditional N>=3 tail-Monte-Carlo method, 200000 tail shots per nonzero grid point",
+    "grid": ["0","2^-21","2^-19","2^-17","2^-15"],
+    "master_seed": "same master with distinct protocol id 4",
+    "co_primary_metrics": ["Y","epsilon_L_given_A"],
+    "secondary_metrics": ["Y_good","P_HOLD","P_QUARANTINE","R1_given_A","Y_clean","resource per accepted-good shot"]
+  },
+  "stop_rules": [
+    "This candidate cannot retroactively alter the frozen 1+0/2+1/3+1 benchmark.",
+    "If 2+0 has a first-order accepted-logical term, record it; do not add verification after exposure within this version.",
+    "Any follow-on adaptive rule is a new candidate.",
+    "Physical promotion remains 0."
+  ]
+}
