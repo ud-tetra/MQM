@@ -1,0 +1,15 @@
+{
+  "version": "0.1a",
+  "status": "FROZEN_BEFORE_EVALUATION_METRIC_CLARIFICATION",
+  "parent_protocol": "research/protocols/2026-10-08T1642Z_MQM_FIREWALL_REPEATED_FTEC_PROTOCOL_v0.1_FREEZE.json",
+  "parent_commit": "d47138705508094f05d629e2a6f2622d02b1e569",
+  "scientific_parameters_changed": false,
+  "clarification": {
+    "circuit_single_fault_acceptance": "Unchanged: ACCEPT requires protected logical I and dressed residual <=1; otherwise the case must be detected HOLD/QUARANTINE.",
+    "noisy_decoder_logical_failure_metric": "After the tested noisy decoder applies its Pauli-frame recovery, apply one analysis-only ideal cleanup using the frozen decoder on the residual true center syndrome. Count logical failure iff the resulting normalizer element is nonidentity in the protected logical quotient.",
+    "why": "This separates protected-logical corruption from a merely residual correctable syndrome. Residual syndrome and dressed weight are reported separately.",
+    "analysis_only_cleanup_is_not_an_operational_extra_round": true
+  },
+  "no_results_seen_before_freeze": true,
+  "physical_promotion": 0
+}
