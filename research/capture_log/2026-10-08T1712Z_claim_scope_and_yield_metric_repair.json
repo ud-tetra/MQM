@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-10-08T17:12:00Z",
+  "turn_type": "claim_scope_repair_and_next_gate_governance",
+  "source_head_at_start": "e93268ebe6599f2ec1fab183a4eb08f079a76482",
+  "artifact": {
+    "path": "research/amendments/2026-10-08T1710Z_MQM_REPEATED_FIREWALL_CLAIM_SCOPE_AMENDMENT_v0.1.md",
+    "commit": "76655b6aa85fc7a3a77a19604df32498633fdd67"
+  },
+  "repairs": {
+    "broad_prior_wording": "AUTO_LOCK scoped FTEC certificate",
+    "replacement_wording": "AUTO_LOCK scoped fail-closed single-fault safety certificate; deterministic/high-yield correction not established",
+    "data_changed": false,
+    "same_agent_status_explicit": true,
+    "independent_reproduction": "OPEN"
+  },
+  "exact_enumeration_accounting": {
+    "total": 4564,
+    "accept": 1969,
+    "hold": 2243,
+    "quarantine": 352,
+    "fail": 0,
+    "hold_plus_quarantine": 2595,
+    "uniform_enumeration_accept_fraction": "1969/4564",
+    "uniform_enumeration_noncorrection_fraction": "2595/4564",
+    "physical_yield_interpretation": "NOT AUTHORIZED without frozen stochastic weights"
+  },
+  "accepted_residuals": {
+    "dressed_weight_0": 1608,
+    "dressed_weight_1": 361,
+    "meaning": "ACCEPT guarantees protected logical I and residual dressed weight <=1 under the frozen model, not an error-free physical block"
+  },
+  "separate_check": {
+    "single_qubit_input_error_fault_free_extraction": "24/24 PASS",
+    "included_in_4564_denominator": false
+  },
+  "next_campaign_gate": {
+    "status": "PRE_EVALUATION_BLOCKED",
+    "required_frozen_inputs": ["p","q","p_loss"],
+    "required_primary_outputs": [
+      "Y=P(ACCEPT)",
+      "epsilon_L_given_A=P(logical failure | ACCEPT)"
+    ],
+    "required_secondary_outputs": [
+      "P(HOLD)",
+      "P(QUARANTINE)",
+      "Y_good=P(ACCEPT and logical success)",
+      "resource cost per accepted-good shot"
+    ],
+    "hold_quarantine_count_as_success": false,
+    "two_fault_evaluation_started": false
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false
+  },
+  "physical_promotion": 0
+}
