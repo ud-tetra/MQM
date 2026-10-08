@@ -1,0 +1,234 @@
+{
+  "version": "0.1",
+  "status": "FROZEN_BEFORE_STOCHASTIC_EVALUATION",
+  "timestamp_utc": "2026-10-08T17:18:00Z",
+  "physical_promotion": 0,
+  "source_head": "a309f6aa63f482e7311be3c266383fc9c5e84762",
+  "purpose": "Compare 1+0, 2+1, and 3+1 firewall protocols under one explicit symbolic p/q/p_loss location model, charging HOLD and QUARANTINE as yield loss.",
+  "evidence_scope": "CANDIDATE benchmark protocol only; no stochastic result has been evaluated.",
+  "common_round_block": {
+    "center_checks": 4,
+    "core_edge_checks": 6,
+    "two_qubit_gates": 39,
+    "data_basis_rotation_cliffords": 38,
+    "ancilla_prepare_reset_locations": {
+      "center_syndrome": 4,
+      "center_flag": 4,
+      "edge_syndrome": 6,
+      "total": 14
+    },
+    "binary_measurements": {
+      "center_syndrome": 4,
+      "center_flag": 4,
+      "edge_syndrome": 6,
+      "total": 14
+    },
+    "data_idle_locations": {
+      "boundary_epochs_per_round": 11,
+      "data_sites_per_epoch": 8,
+      "total": 88,
+      "epochs": "pre-B1; after each of B1,B2,B3,B4,E12,E13,E18,E23,E28,E38"
+    },
+    "loss_locations": {
+      "data": {
+        "sites": [1,2,3,4,5,6,7,8],
+        "epochs_per_round": 11,
+        "total": 88,
+        "action_if_detected": "QUARANTINE"
+      },
+      "syndrome_ancilla": {
+        "one_per_check": 10,
+        "epoch": "after final entangling interaction and before syndrome measurement",
+        "total": 10,
+        "action_if_detected": "HOLD"
+      },
+      "flag_ancilla": {
+        "one_per_center_check": 4,
+        "epoch": "after final flag interaction and before flag measurement",
+        "total": 4,
+        "action_if_detected": "HOLD"
+      },
+      "total": 102
+    },
+    "classical_processing": {
+      "fault_probability": 0,
+      "scope": "syndrome-coordinate transform, majority/equality logic, Pauli-frame lookup and outcome classification are ideal in this first stochastic benchmark"
+    },
+    "stale_missing_metadata_fault_probability": 0
+  },
+  "p_model": {
+    "symbol": "p",
+    "meaning": "independent Bernoulli fault probability at each declared non-measurement quantum fault location",
+    "locations_per_round": {
+      "two_qubit_gates": 39,
+      "data_basis_rotation_cliffords": 38,
+      "ancilla_prepare_reset": 14,
+      "data_idle": 88,
+      "total": 179
+    },
+    "two_qubit_conditional_fault": "conditioned on a p event after an ideal two-qubit gate, choose uniformly from the 15 nonidentity two-qubit Paulis",
+    "single_qubit_conditional_fault": "conditioned on a p event after a one-qubit basis rotation, ancilla prepare/reset, or data idle location, choose X/Y/Z uniformly",
+    "data_preparation_locations": 0,
+    "physical_recovery_gate_locations": 0,
+    "same_p_for_all_location_types": "declared simplifying benchmark assumption; not a hardware calibration claim"
+  },
+  "q_model": {
+    "symbol": "q",
+    "meaning": "independent Bernoulli classical bit-flip probability on each declared binary measurement result after the ideal measurement",
+    "locations_per_round": {
+      "center_syndrome": 4,
+      "center_flag": 4,
+      "edge_syndrome": 6,
+      "total": 14
+    },
+    "edge_measurement_note": "edge values remain redundant receipts and do not enter the frozen center recovery lookup; their q faults are still counted as physical measurement errors"
+  },
+  "p_loss_model": {
+    "symbol": "p_loss",
+    "meaning": "independent Bernoulli loss event at each declared loss location",
+    "locations_per_round": 102,
+    "detection": "ideal and immediate at the declared detection epoch",
+    "data_loss": "QUARANTINE; no accepted-shot credit",
+    "ancilla_loss": "HOLD; no accepted-shot credit",
+    "missed_loss_probability": 0,
+    "inferred_loss": false,
+    "hardware_interpretation": "none; this is a benchmark assumption"
+  },
+  "joint_fault_semantics": {
+    "independence": "p, q, and p_loss elementary events are mutually independent across distinct declared locations",
+    "two_fault_definition": "exactly two elementary stochastic events at two distinct location IDs; all other locations ideal",
+    "same_round_allowed": true,
+    "same_check_allowed": true,
+    "same_elementary_location_allowed": false,
+    "two_qubit_pauli_with_both_qubits_nonidentity": "one p fault event, not two faults",
+    "mixed_pairs_allowed": ["p-p","p-q","p-p_loss","q-q","q-p_loss","p_loss-p_loss"],
+    "loss_plus_other_fault_same_check": "allowed when location IDs are distinct; ideal-detected loss determines HOLD/QUARANTINE outcome even if another fault also occurs",
+    "nominal_location_universe": "all scheduled rounds are used to define the pair universe, independent of early HOLD/QUARANTINE",
+    "adaptive_fail_fast_resource_model": "not used to define fault exposure; may later be reported only as a secondary expected-resource analysis without changing outcome probabilities"
+  },
+  "protocols": {
+    "1+0": {
+      "acquisition_rounds": 1,
+      "verification_rounds": 0,
+      "syndrome_estimator": "single complete unflagged center frame",
+      "pre_recovery_fail_closed": "any detected loss or center flag => HOLD/QUARANTINE",
+      "recovery": "map b to frozen s coordinates and apply frozen decoder as Pauli frame",
+      "acceptance": "if complete/unflagged/loss-free, ACCEPT immediately after recovery",
+      "nominal_rounds": 1,
+      "maximum_resources": {"two_qubit_gates":39,"measurements":14,"peak_extra_ancillas":2}
+    },
+    "2+1": {
+      "acquisition_rounds": 2,
+      "verification_rounds": 1,
+      "syndrome_estimator": "the two complete unflagged center frames must agree bit-for-bit; disagreement => HOLD",
+      "pre_recovery_fail_closed": "any detected loss or center flag => HOLD/QUARANTINE",
+      "recovery": "apply frozen decoder to the agreed center frame",
+      "verification": "one fresh round; ACCEPT only if complete/unflagged/loss-free and center syndrome relative to updated Pauli frame is 0000; otherwise HOLD/QUARANTINE",
+      "nominal_rounds": 3,
+      "maximum_resources": {"two_qubit_gates":117,"measurements":42,"peak_extra_ancillas":2}
+    },
+    "3+1": {
+      "acquisition_rounds": 3,
+      "verification_rounds": 1,
+      "syndrome_estimator": "bitwise majority of three complete unflagged center frames",
+      "pre_recovery_fail_closed": "any detected loss or center flag => HOLD/QUARANTINE",
+      "recovery": "apply frozen decoder to the majority center frame",
+      "verification": "one fresh round; ACCEPT only if complete/unflagged/loss-free and center syndrome relative to updated Pauli frame is 0000; otherwise HOLD/QUARANTINE",
+      "nominal_rounds": 4,
+      "maximum_resources": {"two_qubit_gates":156,"measurements":56,"peak_extra_ancillas":2}
+    }
+  },
+  "location_counts": {
+    "per_round": {"p":179,"q":14,"p_loss":102,"all":295},
+    "1+0": {"p":179,"q":14,"p_loss":102,"all":295},
+    "2+1": {"p":537,"q":42,"p_loss":306,"all":885},
+    "3+1": {"p":716,"q":56,"p_loss":408,"all":1180}
+  },
+  "unordered_two_event_pair_counts_before_conditional_pauli_expansion": {
+    "1+0": {
+      "p_p": 15931,
+      "p_q": 2506,
+      "p_p_loss": 18258,
+      "q_q": 91,
+      "q_p_loss": 1428,
+      "p_loss_p_loss": 5151,
+      "total": 43365,
+      "factorization_total": "43365=3*5*7^2*59"
+    },
+    "2+1": {
+      "p_p": 143916,
+      "p_q": 22554,
+      "p_p_loss": 164322,
+      "q_q": 861,
+      "q_p_loss": 12852,
+      "p_loss_p_loss": 46665,
+      "total": 391170,
+      "factorization_total": "391170=2*3*5*13*17*59"
+    },
+    "3+1": {
+      "p_p": 255970,
+      "p_q": 40096,
+      "p_p_loss": 292128,
+      "q_q": 1540,
+      "q_p_loss": 22848,
+      "p_loss_p_loss": 83028,
+      "total": 695610,
+      "factorization_total": "695610=2*3^2*5*59*131"
+    }
+  },
+  "primary_workload": {
+    "initial_state": "clean encoded protected logical state with arbitrary gauge state",
+    "campaigns": [
+      "zero elementary faults",
+      "every single elementary fault",
+      "every unordered pair of distinct elementary fault locations with full declared conditional Pauli expansion"
+    ],
+    "no_numeric_parameter_values": "The first report will be exact symbolic/rational coefficient ledgers in p,q,p_loss through total degree two; no fitted or hardware-interpreted numerical point."
+  },
+  "accepted_shot_scoring": {
+    "analysis_only_ideal_cleanup": "after operational protocol ends, use the frozen ideal decoder only for scoring residual syndrome; this does not add an operational recovery round",
+    "logical_failure_L": "after analysis-only cleanup, protected logical quotient is X, Y, or Z rather than I",
+    "dressed_residual": "reported separately before analysis-only cleanup",
+    "weight1_accepted_is_not_error_free": true
+  },
+  "co_primary_metrics": {
+    "Y": "P(ACCEPT)",
+    "epsilon_L_given_A": "P(L and ACCEPT)/P(ACCEPT)"
+  },
+  "secondary_metrics": {
+    "P_HOLD": "P(HOLD)",
+    "P_QUARANTINE": "P(QUARANTINE)",
+    "Y_good": "P(ACCEPT and not L)=Y*(1-epsilon_L_given_A)",
+    "R1_given_A": "P(dressed residual weight=1 | ACCEPT)",
+    "Y_clean": "P(ACCEPT and dressed residual weight=0 and not L)",
+    "max_scheduled_two_qubit_gates": "39,117,156 for 1+0,2+1,3+1",
+    "expected_executed_two_qubit_gates_if_fail_fast": "secondary analysis only; cannot redefine fault universe"
+  },
+  "comparison_rule": {
+    "same_location_semantics": true,
+    "same_p_q_p_loss_meaning": true,
+    "same_conditional_pauli_distributions": true,
+    "same_logical_scoring": true,
+    "same_hold_quarantine_treatment": "both are yield loss and never successful correction",
+    "winner_not_single_scalar": "report Pareto comparison in (Y, epsilon_L_given_A, Y_good, resource cost); do not declare a winner by epsilon alone",
+    "round_count_optimization_after_exposure": "new candidate requiring new version and fresh evaluation"
+  },
+  "not_in_first_stochastic_model": [
+    "stale or missing metadata faults with nonzero probability",
+    "classical computation errors",
+    "missed loss",
+    "leakage not represented as ideal-detected loss",
+    "coherent overrotation",
+    "correlated multi-location noise beyond independent Bernoulli locations",
+    "non-Markovian noise",
+    "hardware-calibrated heterogeneous location rates"
+  ],
+  "stop_rules": [
+    "Do not evaluate any numerical p,q,p_loss point and call it physical without calibration.",
+    "Do not count HOLD or QUARANTINE as correction success.",
+    "Do not change 2+1 equality rule or 3+1 majority rule after exposure.",
+    "Do not change conditional Pauli distributions after exposure.",
+    "Do not optimize round count on these results and call it confirmatory.",
+    "Physical promotion remains 0."
+  ]
+}
