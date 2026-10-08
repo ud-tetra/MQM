@@ -1,0 +1,95 @@
+{
+  "timestamp_utc": "2026-10-08T20:45:00Z",
+  "turn_type": "execute_options_1_2_3_adaptive_external_replay_source_calibration",
+  "source_head_at_start": "2d7e98e74a35c1d6f9ae81f6cdad09b16b82b30b",
+  "physical_promotion": 0,
+  "option_1_adaptive_candidate": {
+    "name": "2+C exact-repeat resolver v0.1",
+    "postexposure": true,
+    "confirmatory": false,
+    "freeze_commit": "394c8c7d2b0fb1164b9b3ed1836c817c71cbcd10",
+    "replay_commit": "96400d07c0602e3e4ebefa708efd8c621f287cd7",
+    "result_commit": "dcbc7a02e2f293c584ad097a91f2b9ae7621b4d8",
+    "audit_commit": "3e306fac65886b3734a92b8bacd26b424f6fa2d1",
+    "accepted_logical_error_degree2": "(339117/25)p^2 + (311/3)pq + O(3)",
+    "yield_first_order": "1-(267/5)p-8q-204 p_loss+O(2)",
+    "resolver_activation_first_order": "(884/5)p+8q+O(2)",
+    "epsilon_minus_2plus0": "(767776/75)p^2 + (208/3)pq + O(3)",
+    "epsilon_minus_2plus1": "(2318672/225)p^2 + (512/5)pq + O(3)",
+    "ruling": "NO_GO for intended 2+1-quality target in v0.1; exact frame repetition is too permissive at second order",
+    "higher_order_adaptive_run": "NOT RUN because exact degree-two coefficients already falsify the intended quality target; successor resolver rules require a new version"
+  },
+  "option_2_external_replay": {
+    "package_path": "review_handoff/MQM_PAIR_REPLAY_v0.1",
+    "initial_failed_run": {
+      "run_id": 37830982640,
+      "job_id": 113495941597,
+      "conclusion": "failure",
+      "reason": "stale historical local SHA precheck",
+      "semantic_aggregate_comparison_reached": false,
+      "preserved": true
+    },
+    "repair_commits": {
+      "verifier_v0_1a": "e5dabb2b52f237ffc78431507098eabf1e5e5321",
+      "manifest_v0_1a": "9766d8eb49cb0194b7d23cc6140f1bc0d55e34ec",
+      "workflow_v0_1a": "9d2d016eaddab276a0e250ff245a61268e08f24e"
+    },
+    "successful_run": {
+      "run_id": 37831270621,
+      "job_id": 113496920309,
+      "conclusion": "success",
+      "status": "PASS_EXTERNAL_RUNTIME_REPLAY",
+      "raw_aggregate_mismatches": 0,
+      "artifact_id": 11573242510,
+      "artifact_digest_sha256": "14964ea9778b54badfc2e889b8f0c95b57f34d1ea64064e7e58ee061948ae1cc",
+      "primary_output_sha256": "47f962b42812490339518378d5733df799d6e4372b7123e2fa7665d795c4ed51",
+      "separate_output_sha256": "bb6e485cc1a6b97c3965afe64731e013dfb0cf3a5bf8d02b3071de94cad126bc"
+    },
+    "receipt_commit": "1ff55b2a5f52494e9f7c5d4f4361b16b8d0d6256",
+    "draft_pr": {
+      "number": 1,
+      "state": "closed",
+      "merged": false,
+      "reason": "trigger-only marker branch; evidence retained in successful workflow run and artifact"
+    },
+    "scope": "external GitHub-hosted runtime reproduction of two same-agent implementations; independent human/external-team scientific review remains OPEN"
+  },
+  "option_3_sqale_source_calibration": {
+    "artifact_path": "research/hardware/2026-10-08T2030Z_MQM_SQALE_SOURCE_CALIBRATION_AUDIT_v0.1.md",
+    "commit": "36ef62bd8707ec0b77e7eeacad3459706cabe9d1",
+    "platform": "Infleqtion Sqale cesium neutral-atom processor",
+    "source_bound_values": {
+      "loss_postselected_CZ_fidelity": "99.48%",
+      "CZ_conditional_infidelity_proxy": "0.0052 = 13/2500",
+      "Rz_median_fidelity": "99.81%",
+      "GR_median_fidelity": "99.96%",
+      "NDSSR_bright_to_dark": "0.028 = 7/250",
+      "NDSSR_dark_to_bright": "0.004 = 1/250",
+      "NDSSR_state_average_atom_loss_per_site": "about 0.01",
+      "PRX_CZ_including_leakage": "99.35(4)%",
+      "PRX_CZ_excluding_atom_loss": "99.73(3)%",
+      "PRX_nondestructive_readout_loss": "0.9(3)%"
+    },
+    "frozen_scalar_p_calibration": "NO_GO: p currently spans heterogeneous 2Q, 1Q, prep/reset and idle locations",
+    "frozen_scalar_q_calibration": "NO_GO: measured readout channel is asymmetric and requires state/population model",
+    "frozen_uniform_p_loss_calibration": "NO_GO: measured loss is readout-associated and cannot be copied to all 102 generic loss epochs",
+    "hardware_schedule_ranking": "BLOCKED",
+    "required_successor": "typed heterogeneous source-bound channel model p_CZ,p_Rz,p_GR,p_prep/reset,p_idle,q10,q01,typed loss rates"
+  },
+  "claim_boundaries": {
+    "adaptive_2plusC_architecture_win": "NO_GO for v0.1 intended quality target",
+    "external_runtime_reproducibility": "CLOSED for frozen replay package",
+    "independent_scientific_review": "OPEN",
+    "hardware_calibrated_scalar_benchmark": "NO_GO under current frozen homogeneous model",
+    "hardware_validation": "OPEN",
+    "threshold": "OPEN",
+    "quantum_advantage": "OPEN",
+    "physical_promotion": 0
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "frozen_parent_benchmark_modified": false
+  }
+}
