@@ -1,0 +1,56 @@
+name: MQM external pair replay PR
+
+on:
+  pull_request:
+    paths:
+      - 'review_handoff/MQM_PAIR_REPLAY_v0.1/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build primary classifier
+        run: |
+          cd review_handoff/MQM_PAIR_REPLAY_v0.1
+          g++ -O3 -std=c++17 mqm_symbolic_malignant_pair_replay_v01.cpp -o primary
+
+      - name: Run primary classifier
+        run: |
+          cd review_handoff/MQM_PAIR_REPLAY_v0.1
+          ./primary > primary.json
+
+      - name: Build separate classifier
+        run: |
+          cd review_handoff/MQM_PAIR_REPLAY_v0.1
+          g++ -O3 -std=c++17 mqm_pair_classifier_crosscheck_v01.cpp -o independent
+
+      - name: Run separate classifier
+        run: |
+          cd review_handoff/MQM_PAIR_REPLAY_v0.1
+          ./independent > independent.json
+
+      - name: Verify hashes and raw aggregates
+        run: |
+          cd review_handoff/MQM_PAIR_REPLAY_v0.1
+          python3 verify_replay.py primary.json independent.json
+
+      - name: Record runtime hashes
+        run: |
+          cd review_handoff/MQM_PAIR_REPLAY_v0.1
+          sha256sum             mqm_symbolic_malignant_pair_replay_v01.cpp             mqm_full_stochastic_tail_v01.cpp             mqm_pair_classifier_crosscheck_v01.cpp             EXPECTED_RAW_AGGREGATES.json             primary.json independent.json             > RUNTIME_SHA256SUMS.txt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MQM-pair-replay-v0.1
+          path: |
+            review_handoff/MQM_PAIR_REPLAY_v0.1/EXTERNAL_REPLAY_RECEIPT.json
+            review_handoff/MQM_PAIR_REPLAY_v0.1/RUNTIME_SHA256SUMS.txt
+            review_handoff/MQM_PAIR_REPLAY_v0.1/primary.json
+            review_handoff/MQM_PAIR_REPLAY_v0.1/independent.json
