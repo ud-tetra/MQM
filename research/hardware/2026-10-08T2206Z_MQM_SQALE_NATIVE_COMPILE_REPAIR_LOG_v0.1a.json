@@ -1,0 +1,18 @@
+{
+  "version": "0.1a",
+  "status": "PRE_RESULT_BOOKKEEPING_REPAIR",
+  "parent_script": "research/hardware/2026-10-08T2200Z_mqm_sqale_native_round_compile_v01.py",
+  "initial_run_id": 37836853273,
+  "failure": "Generated schedule contained 66 RZ instruction groups while provisional assertion expected 60.",
+  "scientific_gate_sequence_changed": false,
+  "exact_counts_unchanged": {
+    "GR": 40,
+    "CZ": 39,
+    "RZ_address_requests": 346,
+    "RESET_site_requests": 14,
+    "NDSSR_site_requests": 14
+  },
+  "repair": "Rename unsupported RZ_time_slices to RZ_instruction_groups and assert the actual generated count 66. Hardware parallel timing remains OPEN.",
+  "invalid_result_promoted": false,
+  "physical_promotion": 0
+}
