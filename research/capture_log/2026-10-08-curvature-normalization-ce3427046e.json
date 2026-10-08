@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-08",
+  "source_commit": "ff55d95b820583149811d92135796215b9a004c5",
+  "decisions": 21,
+  "ceiling_pass": true,
+  "quadratic_coefficient": "(1432/3)*nu_U; 0.005122 is the evaluated product, not an additional factor of nu_U",
+  "coefficient_diagnostic": 0.005122445129967257,
+  "window": "16 +/-2^-6",
+  "continuum_derivative_transfer": "OPEN",
+  "physical_promotion": 0,
+  "external_review": "OPEN",
+  "status": "EXACT integer replay; normalization clarification"
+}
