@@ -1,0 +1,47 @@
+{
+  "version": "0.1",
+  "status": "PRE_RESULT_IMPLEMENTATION_REPAIR_LOG",
+  "physical_promotion": 0,
+  "repairs_before_any_result_promotion": [
+    {
+      "issue": "decoder syndrome-key packing mismatch in the first local prototype",
+      "symptom": "logical-class self-check failed immediately",
+      "cause": "release decoder strings are ordered by generator coordinates s1,s2,s3,s4, while the prototype initially indexed them as ordinary binary integers",
+      "repair": "pack syndrome coordinate s1 into bit 0, s2 into bit 1, s3 into bit 2, s4 into bit 3 and reorder the decoder table accordingly",
+      "invalid_output_promoted": false
+    },
+    {
+      "issue": "16-bit Pauli storage in an intermediate local prototype",
+      "symptom": "flag sanity audit found zero propagated flag events where the known hook circuit requires nonzero flags",
+      "cause": "the 10-qubit data+syndrome+flag symplectic Pauli representation requires 20 bits; uint16_t truncated ancilla Z/X components",
+      "repair": "replace Pauli storage with uint32_t throughout the circuit simulator",
+      "invalid_output_promoted": false
+    }
+  ],
+  "post_repair_controls": [
+    "candidate-to-frozen syndrome coordinate map checked on all 65536 eight-data-qubit Pauli vectors",
+    "one-round stochastic single-event replay reproduces 879 ACCEPT, 154 HOLD, 88 QUARANTINE after excluding zero-probability stale/missing metadata events; 152 accepted logical failures correspond to the prior one-round FAIL class",
+    "3+1 stochastic single-event replay reproduces 1969 ACCEPT, 2163 HOLD, 352 QUARANTINE after excluding the 80 zero-probability stale/missing metadata events",
+    "Y+HOLD+QUARANTINE coefficient partition verified exactly through degree two",
+    "separate Python Fraction implementation reproduces all coefficients and derived ratios"
+  ],
+  "canonical_local_sha256_before_repo_capture": {
+    "cpp_replay": "e146dcce1a0f084f9b31e574c633aef23bad0ef2c434cb3cdcec10739f4ef241",
+    "primary_result_json": "47f962b42812490339518378d5733df799d6e4372b7123e2fa7665d795c4ed51",
+    "independent_aggregator_py": "45408c5c8c153251da17f9e6ad52280c64b67b56ddfc1b7212b2f70d603cd1e1",
+    "independent_result_json": "258e4b06e7d33e2711690f5f623abbcfb5932863ae460ee0deb4eaf50a0b2cf3"
+  },
+  "canonical_repo_commits": {
+    "cpp_replay": "3b6ebf456405f573886a53aae35bf87f4ba4d581",
+    "primary_result": "fedac98ccf23087c414db05f1c7badf98ebaee82",
+    "independent_aggregator": "2fba3b4856b8db682796994b3c1c7ce2c1ce134e",
+    "independent_result": "360606e9e6ac550e7bf482ef9035631b4599c417"
+  },
+  "governance": {
+    "repair_occurred_before_symbolic_result_was_committed": true,
+    "frozen_fault_protocol_changed": false,
+    "frozen_metrics_changed": false,
+    "post_result_tuning": false,
+    "independent_scientific_review": "OPEN"
+  }
+}
