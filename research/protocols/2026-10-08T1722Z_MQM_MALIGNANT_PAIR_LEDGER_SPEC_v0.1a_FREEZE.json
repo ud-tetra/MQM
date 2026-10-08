@@ -1,0 +1,53 @@
+{
+  "version": "0.1a",
+  "status": "FROZEN_BEFORE_PAIR_EVALUATION",
+  "supersedes_for_interpretation": "research/protocols/2026-10-08T1720Z_MQM_MALIGNANT_PAIR_LEDGER_SPEC_v0.1_FREEZE.json",
+  "superseded_file_deleted_or_overwritten": false,
+  "scientific_fault_set_changed": false,
+  "repair": "Correct outcome normalization: accepted logical failures are a subset of ACCEPT, not a separate partition outcome.",
+  "parent_benchmark": "research/protocols/2026-10-08T1718Z_MQM_STOCHASTIC_TWO_FAULT_BENCHMARK_v0.1_FREEZE.json",
+  "parent_benchmark_commit": "993eeb1ec575eebdb7cf2f4026df374c48cb05ad",
+  "physical_promotion": 0,
+  "elementary_location_types": {
+    "P2": {"per_round":39,"fault_realizations":15,"specific_realization_probability":"p/15"},
+    "P1": {"per_round":140,"fault_realizations":3,"specific_realization_probability":"p/3","components":{"basis_rotation":38,"prepare_reset":14,"data_idle":88}},
+    "Q": {"per_round":14,"fault_realizations":1,"specific_realization_probability":"q"},
+    "L": {"per_round":102,"fault_realizations":1,"specific_realization_probability":"p_loss"}
+  },
+  "pair_identity": {
+    "unordered_distinct_location_ids": true,
+    "same_round_allowed": true,
+    "same_check_allowed": true,
+    "same_location_twice": false,
+    "chronological_replay": true
+  },
+  "conditional_realization_expansion_counts": {
+    "1+0": {"P_P":499995,"P_Q":14070,"P_L":102510,"Q_Q":91,"Q_L":1428,"L_L":5151,"total":623245},
+    "2+1": {"P_P":4530060,"P_Q":126630,"P_L":922590,"Q_Q":861,"Q_L":12852,"L_L":46665,"total":5639658},
+    "3+1": {"P_P":8060130,"P_Q":225120,"P_L":1640160,"Q_Q":1540,"Q_L":22848,"L_L":83028,"total":10032826}
+  },
+  "symbolic_report": {
+    "truncate_total_degree": 2,
+    "outputs": [
+      "Y=P(ACCEPT)",
+      "P_HOLD",
+      "P_QUARANTINE",
+      "P_REJECT=P_HOLD+P_QUARANTINE",
+      "P_L_and_ACCEPT",
+      "epsilon_L_given_A=P_L_and_ACCEPT/Y",
+      "Y_good=Y-P_L_and_ACCEPT",
+      "P_ACCEPT_dressed_weight_1",
+      "Y_clean=P(ACCEPT and dressed_weight=0 and logical_success)"
+    ],
+    "partition_check": "Y + P_HOLD + P_QUARANTINE = 1 + O(total_degree_3)",
+    "subset_check": "0 <= P_L_and_ACCEPT <= Y and 0 <= P_ACCEPT_dressed_weight_1 <= Y coefficientwise only where such coefficientwise comparison is meaningful; evaluate probability inequalities on admissible parameter domain.",
+    "numeric_substitution": "none in first symbolic report"
+  },
+  "governance": {
+    "same_agent": true,
+    "independent_replay": "OPEN",
+    "round_count_change_after_results": "new candidate only",
+    "hold_quarantine_as_success": false,
+    "physical_promotion": 0
+  }
+}
