@@ -1,0 +1,87 @@
+{
+  "version": "0.2",
+  "status": "POSTEXPOSURE_EXPLORATORY_CANDIDATE_FROZEN_BEFORE_EVALUATION",
+  "timestamp_utc": "2026-10-08T21:10:00Z",
+  "physical_promotion": 0,
+  "parent_no_go": "2+C exact center-frame repeat v0.1",
+  "parent_no_go_commit": "3e306fac65886b3734a92b8bacd26b424f6fa2d1",
+  "selection_after_exposure": true,
+  "confirmatory_status": false,
+  "name": "2+E",
+  "purpose": "Use the already-measured six K4 core-edge gauge receipts as a stronger temporal witness so a repeated center frame alone cannot legitimize recovery.",
+  "round_receipt": {
+    "center_bits_b": 4,
+    "edge_bits_e": 6,
+    "rho": "rho=(b1,b2,b3,b4,e12,e13,e18,e23,e28,e38)",
+    "absolute_edge_values": "gauge-state dependent and not interpreted as logical syndrome",
+    "temporal_use": "compare complete edge histories and exact K4 cycle validity across rounds"
+  },
+  "edge_observables": [
+    "Z1 Z2",
+    "Z1 Z3",
+    "Z1 Z8",
+    "Z2 Z3",
+    "Z2 Z8",
+    "Z3 Z8"
+  ],
+  "edge_algebra": {
+    "status": "EXACT_GAUGE_ALGEBRA",
+    "commuting": true,
+    "rank": 3,
+    "cycle_checks": [
+      "e12 xor e13 xor e23 = 0",
+      "e12 xor e18 xor e28 = 0",
+      "e13 xor e18 xor e38 = 0"
+    ],
+    "dependent_fourth_cycle": "e23 xor e28 xor e38 = 0",
+    "meaning": "An ideal complete edge receipt lies in the K4 cut space. Absolute receipt depends on gauge state; cycle validity does not."
+  },
+  "state_machine": [
+    "Run mandatory rounds R1 and R2 using the unchanged 39-two-qubit-gate round block.",
+    "Any center flag or detected ancilla loss -> HOLD. Any detected data loss -> QUARANTINE.",
+    "For each round, record the four center bits and all six edge-parity bits; compute the three frozen K4 cycle checks.",
+    "Fast path: if rho1 = rho2 and both edge receipts are cycle-valid, recover from the common center frame and ACCEPT. Do not execute R3.",
+    "Otherwise execute resolver round R3.",
+    "Any flag/ancilla loss in R3 -> HOLD; data loss -> QUARANTINE.",
+    "R3 must be cycle-valid.",
+    "Accept only if complete rho3 exactly equals one and only one cycle-valid prior receipt among {rho1,rho2}; recover from the matched receipt's center frame.",
+    "If rho3 matches neither prior valid receipt, or if no prior receipt is cycle-valid, HOLD.",
+    "No post-recovery verification round is present in v0.2."
+  ],
+  "stronger_than_v0_1": [
+    "center repetition alone is insufficient",
+    "all six K4 edge-gauge bits must temporally agree on the accepted receipt",
+    "three exact cycle parity checks reject internally inconsistent edge measurements",
+    "edge values remain typed gauge receipts and are not relabeled as stabilizer syndrome"
+  ],
+  "fault_semantics": {
+    "same_as_parent_homogeneous_benchmark": true,
+    "edge_measurement_q_faults": "now enter the temporal receipt rather than being ignored for recovery control",
+    "edge_data_error_response": "X/Y components on K4 core sites flip incident Z-edge parities according to exact symplectic commutation",
+    "initial_gauge_state": "arbitrary; first ideal edge round projects a valid K4 edge receipt. Replay may set an arbitrary valid baseline e0=000000 because only relative flips and cycle validity affect the controller.",
+    "classical_cycle_logic": "ideal"
+  },
+  "resources": {
+    "minimum_rounds": 2,
+    "maximum_rounds": 3,
+    "minimum_two_qubit_gates": 78,
+    "maximum_two_qubit_gates": 117,
+    "measurements_per_round": 14,
+    "additional_quantum_measurements_beyond_parent_round": 0,
+    "additional_classical_bits_used_per_round": 6,
+    "peak_extra_ancillas": 2
+  },
+  "evaluation_freeze": {
+    "single_event": "exact exhaustive",
+    "two_event": "exact exhaustive over mandatory-mandatory plus triggering-mandatory/resolver event pairs under adaptive exposure",
+    "primary_acceptance_metric": "protected logical class after recovery; accepted dressed residual reported separately",
+    "target": "reduce or eliminate the v0.1 resolver's excess second-order accepted-logical coefficients without adding quantum measurements",
+    "stop_rule": "If epsilon_L_given_A has larger degree-two coefficients than 2+0 in every nonnegative p/q direction, AUTO_FREEZE v0.2 as no-go for the intended quality target."
+  },
+  "governance": {
+    "postexposure_candidate": true,
+    "changes_parent_benchmark": false,
+    "hardware_validation": false,
+    "physical_promotion": 0
+  }
+}
