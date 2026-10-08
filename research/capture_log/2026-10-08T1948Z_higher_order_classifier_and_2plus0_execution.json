@@ -1,0 +1,87 @@
+{
+  "timestamp_utc": "2026-10-08T19:48:00Z",
+  "turn_type": "execute_options_1_2_3_higher_order_classifier_new_candidate",
+  "source_head_at_start": "381e7018a98e489f6bd48a7c39c31c173e445ac4",
+  "physical_promotion": 0,
+  "higher_order_protocol_freeze": {
+    "path": "research/protocols/2026-10-08T1910Z_MQM_FULL_STOCHASTIC_TAIL_AND_INDEPENDENT_CLASSIFIER_v0.1_FREEZE.json",
+    "commit": "d1b1c9fc8a76e9902fc74ba9ed4287fc07f7e658"
+  },
+  "option_1_higher_order": {
+    "evaluator_path": "research/benchmarks/2026-10-08T1920Z_mqm_full_stochastic_tail_v01.cpp",
+    "evaluator_commit": "35c56038055fa42a72df6c067b6f039fcec3c670",
+    "evaluator_local_sha256": "fbae1385dc18c555eaa985d38a57b2cd74a5b6b7b736066eb1f5b174558d1b91",
+    "result_path": "research/benchmarks/2026-10-08T1921Z_MQM_FULL_STOCHASTIC_GRID_RESULTS_v0.1.json",
+    "result_commit": "97f5db4fb38b3e7b5ec98c82cadc72eb911ee7be",
+    "result_local_sha256": "1b581592d0200e19c8b9e2ad2383170ca4d4fdc30418f6162f3152c69a5e1465",
+    "summary_commit": "c4fdf1568d892b672a89f5a48c62b2437b943377",
+    "report_commit": "aaab72107832daa162a0bcb0a9f660d86ce038c6",
+    "method": "exact zero/one/two-event contributions plus exact Bernoulli tail probability and 200000 conditional N>=3 Monte Carlo samples per nonzero point",
+    "grid_points": 125,
+    "positive_p_points": 100,
+    "2plus1_below_3plus1_epsilon_certified": 95,
+    "2plus1_vs_3plus1_inconclusive": 5,
+    "3plus1_below_2plus1_epsilon_certified": 0,
+    "2plus1_below_1plus0_epsilon_certified": 100,
+    "3plus1_below_1plus0_epsilon_certified": 100,
+    "max_tail_probabilities": {
+      "1+0": 1.1957323558327834e-7,
+      "2+1": 3.2069612979213953e-6,
+      "3+1": 7.557024024198685e-6
+    },
+    "evidence": "SIMULATED higher-order tail with frozen familywise confidence enclosure; exact <=2 contribution"
+  },
+  "option_2_separate_classifier": {
+    "source_commit": "7fb0c8055e9499661ad5a8d1fe274960c8930ba7",
+    "result_commit": "fb94ad7f995481fa7e46f7eb677fc65a778225f9",
+    "match_receipt_commit": "1e4276e4ab26f4d394e6277b87d0852a25668340",
+    "source_local_sha256": "f3f1f9b8d64757f96f571e911e2e3f71af3465bfd3dbcad77f73f5eb30214858",
+    "result_local_sha256": "bb6e485cc1a6b97c3965afe64731e013dfb0cf3a5bf8d02b3071de94cad126bc",
+    "primary_raw_aggregate_mismatches": 0,
+    "status": "PASS_EXACT_RAW_CLASSIFIER_MATCH",
+    "scope": "same-agent independent-from-primary classifier; shares P-struct engine with higher-order evaluator; not independent scientific review"
+  },
+  "option_3_new_candidate": {
+    "name": "2+0",
+    "postexposure": true,
+    "confirmatory": false,
+    "freeze_commit": "35b4083881c0950645f5a2c9c5cb76431c4584bf",
+    "evaluator_commit": "aba1c04b2fa519849cb03883a96cc2c805bbea79",
+    "result_commit": "d836182b8dfae6677e82cd443aedcfd02d082fdd",
+    "report_commit": "5a367cfa5ac97010d9ef22970c3018a22383afa7",
+    "evaluator_local_sha256": "ba1d56da79ab85e1759052cc0076a27fe362ec42df4caa842b97eec78d6b2dc8",
+    "result_local_sha256": "6b3484ce9d746799ed5a9a74ae16f1ddb9be97fdbe1599368abf6ce10afed755",
+    "resources": {"two_qubit_gates":78,"measurements":28,"peak_extra_ancillas":2},
+    "epsilon_degree2": "(9983/3)p^2 + (103/3)pq + O(3)",
+    "yield_first_order": "1-(996/5)p-16q-204 p_loss+O(2)",
+    "vs_2plus1": {
+      "epsilon_2plus0_minus_2plus1_degree2": "(15344/225)p^2 + (496/15)pq + O(3)",
+      "2plus1_epsilon_certified_better_positive_p_grid_points": 89,
+      "inconclusive_positive_p_grid_points": 11,
+      "2plus0_epsilon_certified_better": 0,
+      "2plus0_Ygood_certified_better_nonzero_grid_points": 124
+    },
+    "vs_3plus1": {
+      "2plus0_epsilon_certified_better_positive_p_grid_points": 99,
+      "inconclusive_positive_p_grid_points": 1,
+      "3plus1_epsilon_certified_better": 0,
+      "2plus0_Ygood_certified_better_nonzero_grid_points": 124
+    },
+    "development_ruling": "brightest new post-exposure round-count candidate; explicit quality-vs-yield trade with 2+1; candidate only"
+  },
+  "claim_boundaries": {
+    "overall_architecture_winner": "OPEN",
+    "hardware_calibrated_rates": "OPEN",
+    "external_independent_reproduction": "OPEN",
+    "threshold": "OPEN",
+    "hardware_validation": "OPEN",
+    "quantum_advantage": "OPEN",
+    "physical_promotion": 0
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "frozen_parent_benchmark_modified": false
+  }
+}
