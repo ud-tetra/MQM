@@ -1,0 +1,133 @@
+{
+  "version": "0.1",
+  "status": "FROZEN_BEFORE_EVALUATION",
+  "timestamp_utc": "2026-10-08T16:42:00Z",
+  "physical_promotion": 0,
+  "source_head": "a6ffaef476b2b33d1c3a3d8292c7d8bf1c88d198",
+  "code": "subsystem-8",
+  "candidate_center_basis": [
+    "IIIXXZZI",
+    "IIIZZYYI",
+    "IIIYIYZZ",
+    "XXXXYYIX"
+  ],
+  "center_orders_1based": {
+    "IIIXXZZI": [4,5,6,7],
+    "IIIZZYYI": [4,5,6,7],
+    "IIIYIYZZ": [4,6,7,8],
+    "XXXXYYIX": [4,5,6,1,2,3,8]
+  },
+  "edge_checks_1based": [[1,2],[1,3],[1,8],[2,3],[2,8],[3,8]],
+  "round_order": [
+    "B1 center",
+    "B2 center",
+    "B3 center",
+    "B4 center",
+    "edge 12",
+    "edge 13",
+    "edge 18",
+    "edge 23",
+    "edge 28",
+    "edge 38"
+  ],
+  "center_circuit": {
+    "basis_rotation": "map measured I/X/Y/Z data Pauli to Z parity using local Clifford rotations",
+    "syndrome_ancilla": "fresh reset |0> per center check",
+    "flag_ancilla": "fresh reset |+> per center check",
+    "entangler": "CNOT data->syndrome",
+    "flag_entangler": "CNOT flag->syndrome after data interactions 1 and 3",
+    "syndrome_measurement": "Z",
+    "flag_measurement": "X",
+    "cross_check_order_rule": "shell support before core support"
+  },
+  "edge_circuit": {
+    "syndrome_ancilla": "fresh reset |0> per edge",
+    "entangler": "two CNOT data->syndrome",
+    "measurement": "Z",
+    "edge_measurement_value_used_for_recovery": false,
+    "purpose": "redundant K4 core receipt and fault-propagation path"
+  },
+  "recovery": {
+    "type": "classical Pauli-frame update; no physical recovery gate",
+    "new_to_old_syndrome": "s=(b1,b3,b2 xor b3,b4)",
+    "decoder": "frozen release/branches.json ideal-center minimum-weight Pauli lookup"
+  },
+  "one_round_baseline": {
+    "rounds": 1,
+    "policy": [
+      "If any center flag, detected data loss, stale receipt or missing receipt: do not accept.",
+      "Map observed b to old syndrome s and update the Pauli frame using the frozen decoder.",
+      "No terminal verification round."
+    ]
+  },
+  "repeated_state_machine": {
+    "acquisition_rounds": 3,
+    "syndrome_estimator": "bitwise majority of the three complete unflagged center b frames",
+    "pre_recovery_fail_closed": [
+      "any center flag -> HOLD",
+      "any stale or missing center/edge receipt -> HOLD",
+      "any detected ancilla loss -> HOLD",
+      "any detected data loss -> QUARANTINE"
+    ],
+    "recovery": "apply one classical Pauli-frame update from the majority syndrome",
+    "verification_rounds": 1,
+    "verification_acceptance": [
+      "complete fresh record",
+      "no center flag",
+      "no detected loss",
+      "center syndrome relative to updated Pauli frame = 0000"
+    ],
+    "verification_nonzero": "HOLD",
+    "accepted_single_fault_output_requirement": "protected logical class I and dressed residual weight <=1 modulo gauge",
+    "maximum_executed_rounds": 4
+  },
+  "fault_campaign_A_clean_input_single_fault": {
+    "input": "clean code state / arbitrary gauge state",
+    "exactly_one_fault_max": true,
+    "fault_classes": [
+      "all 15 nonidentity two-qubit Pauli faults after every declared two-qubit gate",
+      "X/Y/Z after every declared data basis-rotation Clifford",
+      "X/Y/Z syndrome-ancilla reset/preparation fault before each check",
+      "X/Y/Z flag-ancilla reset/preparation fault before each center check",
+      "one measurement-bit flip on any center syndrome, center flag or edge receipt",
+      "X/Y/Z data idle fault at every declared inter-check boundary",
+      "stale receipt metadata fault on any round record",
+      "missing receipt metadata fault on any round record",
+      "ideal-detected data loss at any declared inter-check boundary -> QUARANTINE",
+      "ideal-detected syndrome/flag ancilla loss in a check -> HOLD"
+    ],
+    "loss_detection_assumption": "ideal erasure/loss indication for this mathematical state-machine test; missed-loss hardware modeling remains OPEN",
+    "acceptance": "Every single-fault case must finish as ACCEPT with protected logical I and dressed residual <=1, or detected HOLD/QUARANTINE."
+  },
+  "fault_campaign_B_input_error_no_circuit_fault": {
+    "inputs": "all 24 single-qubit nonidentity Pauli errors on 8 data qubits",
+    "circuit_faults": 0,
+    "acceptance": "Repeated state machine must ACCEPT with protected logical I and zero center syndrome after Pauli-frame recovery and verification."
+  },
+  "noisy_decoder_benchmark": {
+    "scope": "phenomenological syndrome readout only; separate from circuit-level campaign",
+    "input_ensemble": "uniform over the 24 single-qubit Pauli errors, conditioned on one incoming error",
+    "true_data_error_static_across_readout_rounds": true,
+    "per_center_bit_flip_probability": "q",
+    "bit_flips": "independent across 4 center bits and across rounds",
+    "one_round_decoder": "frozen lookup on one noisy b frame",
+    "repeated_decoder": "bitwise majority of 3 noisy b frames, then frozen lookup",
+    "metric": "conditional protected-logical failure probability after Pauli-frame recovery",
+    "report": "exact polynomial/rational coefficient ledger in q; no fitted q",
+    "tuning_after_evaluation": false
+  },
+  "resource_accounting": {
+    "one_round_two_qubit_gates": 39,
+    "repeated_worst_case_two_qubit_gates": 156,
+    "one_round_measurements": 14,
+    "repeated_worst_case_measurements": 56,
+    "peak_extra_ancillas": 2
+  },
+  "stop_rules": [
+    "Any accepted single-fault case with nonidentity protected logical class is FAIL.",
+    "Any accepted single-fault case with dressed residual weight >1 is FAIL.",
+    "Do not repair the frozen protocol after seeing failures; version a successor and rerun fresh.",
+    "Do not promote phenomenological readout results to circuit or hardware performance.",
+    "Physical promotion remains 0."
+  ]
+}
