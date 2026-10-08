@@ -1,0 +1,16 @@
+{
+  "version": "0.1",
+  "status": "FROZEN_EXTERNAL_REPLAY_MANIFEST",
+  "source_hashes": {
+    "mqm_symbolic_malignant_pair_replay_v01.cpp": "e146dcce1a0f084f9b31e574c633aef23bad0ef2c434cb3cdcec10739f4ef241",
+    "mqm_full_stochastic_tail_v01.cpp": "fbae1385dc18c555eaa985d38a57b2cd74a5b6b7b736066eb1f5b174558d1b91",
+    "mqm_pair_classifier_crosscheck_v01.cpp": "f3f1f9b8d64757f96f571e911e2e3f71af3465bfd3dbcad77f73f5eb30214858"
+  },
+  "canonical_result_hashes": {
+    "primary": "47f962b42812490339518378d5733df799d6e4372b7123e2fa7665d795c4ed51",
+    "separate_classifier": "bb6e485cc1a6b97c3965afe64731e013dfb0cf3a5bf8d02b3071de94cad126bc"
+  },
+  "expected_table": "EXPECTED_RAW_AGGREGATES.json",
+  "external_runtime": "GitHub-hosted ubuntu-latest",
+  "claim_boundary": "External runtime reproduction is not independent scientific review because both implementations were generated in the same research process."
+}
