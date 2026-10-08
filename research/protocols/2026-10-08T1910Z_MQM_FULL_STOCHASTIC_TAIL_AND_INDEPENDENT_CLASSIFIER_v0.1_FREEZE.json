@@ -1,0 +1,75 @@
+{
+  "version": "0.1",
+  "status": "FROZEN_BEFORE_HIGHER_ORDER_GRID_EVALUATION",
+  "timestamp_utc": "2026-10-08T19:10:00Z",
+  "physical_promotion": 0,
+  "source_head": "381e7018a98e489f6bd48a7c39c31c173e445ac4",
+  "parent_benchmark_commit": "993eeb1ec575eebdb7cf2f4026df374c48cb05ad",
+  "parent_pair_ledger_commit": "8e1fdbf9ac541a6f7640b5698d18149ce8208666",
+  "stress_grid_commit": "7d251ba7f6689ac42e403faf11bb2024977e4ea5",
+  "grid": {
+    "rate_set": ["0","2^-21","2^-19","2^-17","2^-15"],
+    "cartesian_points": 125,
+    "protocols": ["1+0","2+1","3+1"],
+    "round_definitions_changed": false
+  },
+  "higher_order_evaluator": {
+    "method": "exact <=2 elementary-event contribution plus conditional Monte Carlo of the complete N>=3 independent-Bernoulli tail",
+    "exact_low_order_source": "canonical raw conditional sums from MQM_SYMBOLIC_MALIGNANT_PAIR_RESULTS_v0.1.json",
+    "tail_probability": "computed from the exact binomial-count convolution for Kp~Binom(Np,p), Kq~Binom(Nq,q), Kl~Binom(Nl,p_loss); no Poisson approximation",
+    "tail_sampling": {
+      "condition": "Kp+Kq+Kl >= 3",
+      "count_sampling": "sample total count from exact convolved binomial PMF conditioned on N>=3, then sample (Kp,Kq,Kl) from the exact conditional composition weights",
+      "location_sampling": "uniform without replacement within each frozen location type",
+      "conditional_pauli": "P2 uniform 1/15; P1 uniform 1/3; Q and loss deterministic",
+      "classification": "XOR-combine independently precomputed Clifford fault signatures, then apply the frozen protocol state machine",
+      "shots_per_protocol_grid_point_with_nonzero_tail": 200000,
+      "master_seed_uint64": "0x4D514D5F32303236",
+      "per_point_seed": "SplitMix64(master_seed xor protocol_id xor (p_index<<8) xor (q_index<<16) xor (loss_index<<24))"
+    },
+    "metrics": [
+      "Y=P(ACCEPT)",
+      "P_HOLD",
+      "P_QUARANTINE",
+      "P_L_and_ACCEPT",
+      "epsilon_L_given_A",
+      "Y_good",
+      "R1_given_A",
+      "Y_clean"
+    ],
+    "uncertainty": {
+      "type": "Hoeffding bound on each conditional-tail Bernoulli metric, propagated by multiplying by exact P(N>=3)",
+      "familywise_alpha": 0.001,
+      "family_size_upper_bound": 3000,
+      "per_metric_alpha": "1/3000000",
+      "halfwidth_conditional_tail": "sqrt(log(2/per_metric_alpha)/(2*200000))",
+      "ratio_interval": "for epsilon_L_given_A, divide the lower/upper P_L_and_ACCEPT interval by the opposite Y interval endpoints when Y_lower>0"
+    },
+    "claim_rule": "A protocol ordering is certified on a grid point only when the corresponding all-orders confidence intervals are disjoint in the required direction. Overlap is INCONCLUSIVE, not a tie."
+  },
+  "independent_classifier": {
+    "status": "FROZEN_BEFORE_REPLAY",
+    "implementation_language": "C++17",
+    "state_representation": "separate Pauli struct with uint16_t x and z fields; no packed x|(z<<n) storage",
+    "fault_application": "reconstruct each frozen check circuit and derive event signatures independently; do not read primary raw aggregates or primary event signatures",
+    "pair_enumeration": "enumerate all frozen single events and all unordered distinct location pairs with full conditional Pauli realizations for 1+0,2+1,3+1",
+    "comparison_target": "raw outcome aggregates and all degree-two polynomial coefficients from the primary classifier",
+    "acceptance": "exact equality of every raw aggregate and derived rational coefficient",
+    "same_agent": true,
+    "independent_scientific_review": false
+  },
+  "post_result_new_candidate_rule": {
+    "allowed_only_after": "higher-order grid result and independent classifier result are frozen",
+    "candidate_status": "exploratory new version; cannot retroactively alter 1+0,2+1,3+1",
+    "candidate_family_to_consider": ["2+0","3+0","adaptive verify-on-disagreement"],
+    "selection_basis": "highest-value candidate after observing the frozen full-grid Pareto structure",
+    "confirmatory_claim": false
+  },
+  "stop_rules": [
+    "Do not change grid points, tail shots, seeds, protocol definitions, or fault semantics after numerical exposure.",
+    "Do not treat Monte Carlo tail uncertainty as hardware uncertainty.",
+    "Do not call same-agent independent classifier an independent review.",
+    "Do not promote a post-result round-count candidate as confirmation of the frozen benchmark.",
+    "Physical promotion remains 0."
+  ]
+}
