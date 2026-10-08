@@ -1,0 +1,90 @@
+{
+  "timestamp_utc": "2026-10-08T18:15:00Z",
+  "turn_type": "execute_options_1_2_3_symbolic_two_fault_independent_aggregation_and_stress_grid",
+  "source_head_at_start": "79a57626e73bfbe8b2d2b25068fb62a049ce1b48",
+  "physical_promotion": 0,
+  "artifacts_created": [
+    {
+      "path": "research/benchmarks/2026-10-08T1740Z_mqm_symbolic_malignant_pair_replay_v01.cpp",
+      "commit": "3b6ebf456405f573886a53aae35bf87f4ba4d581",
+      "status": "EXACT primary replay"
+    },
+    {
+      "path": "research/benchmarks/2026-10-08T1741Z_MQM_SYMBOLIC_MALIGNANT_PAIR_RESULTS_v0.1.json",
+      "commit": "fedac98ccf23087c414db05f1c7badf98ebaee82",
+      "status": "EXACT primary result"
+    },
+    {
+      "path": "research/benchmarks/2026-10-08T1742Z_mqm_independent_coefficient_aggregate_v01.py",
+      "commit": "2fba3b4856b8db682796994b3c1c7ce2c1ce134e",
+      "status": "same-agent independent coefficient aggregation implementation"
+    },
+    {
+      "path": "research/benchmarks/2026-10-08T1743Z_MQM_INDEPENDENT_COEFFICIENT_AGGREGATE_v0.1.json",
+      "commit": "360606e9e6ac550e7bf482ef9035631b4599c417",
+      "status": "PASS_EXACT_INDEPENDENT_AGGREGATION"
+    },
+    {
+      "path": "research/protocols/2026-10-08T1800Z_MQM_HARDWARE_NEUTRAL_STRESS_GRID_v0.1_FREEZE.json",
+      "commit": "7d251ba7f6689ac42e403faf11bb2024977e4ea5",
+      "status": "FROZEN before numerical stress evaluation"
+    },
+    {
+      "path": "research/benchmarks/2026-10-08T1810Z_MQM_SYMBOLIC_TWO_FAULT_COMPARISON_v0.1.md",
+      "commit": "f3205790cb4b6ef361503d5a95004e6f29bf1262",
+      "status": "scoped comparison report"
+    },
+    {
+      "path": "research/benchmarks/2026-10-08T1812Z_MQM_SYMBOLIC_PAIR_IMPLEMENTATION_REPAIR_LOG_v0.1.json",
+      "commit": "385a1213496a1bf2bf343e157e99311a5185e834",
+      "status": "pre-result implementation repair provenance"
+    }
+  ],
+  "pair_workloads": {
+    "1+0": 623245,
+    "2+1": 5639658,
+    "3+1": 10032826
+  },
+  "accepted_logical_error_degree2": {
+    "1+0": "(412/15)p + (382987/225)p^2 + (3866/15)pq + O(3)",
+    "2+1": "(733381/225)p^2 + (19/15)pq + O(3)",
+    "3+1": "(3734566/225)p^2 + (296/15)pq + O(3)",
+    "3+1_minus_2+1": "(66693/5)p^2 + (277/15)pq + O(3)"
+  },
+  "acceptance_first_order": {
+    "1+0": "1-(56/5)p-4q-102 p_loss+O(2)",
+    "2+1": "1-(5257/15)p-24q-306 p_loss+O(2)",
+    "3+1": "1-(5239/15)p-20q-408 p_loss+O(2)"
+  },
+  "interpretation": {
+    "1+0": "higher first-order yield but accepted logical error remains first order in p",
+    "2+1": "accepted logical error begins at degree two and is lower than 3+1 through degree two for p>0,q>=0",
+    "3+1": "majority gives slightly less first-order p/q rejection than 2+1 but more loss exposure, larger degree-two accepted logical coefficients, and higher resources",
+    "overall_winner": "OPEN; Pareto comparison requires Y, epsilon_L_given_A, Y_good and resource cost at frozen rates"
+  },
+  "stress_grid": {
+    "evaluated": false,
+    "rate_set": ["0","2^-21","2^-19","2^-17","2^-15"],
+    "cartesian_points": 125,
+    "same_for_all_protocols": true,
+    "round_count_retuned": false
+  },
+  "implementation_provenance": {
+    "pre_result_repairs_recorded": true,
+    "invalid_local_prototype_results_promoted": false,
+    "independent_aggregation_is_same_agent_not_independent_review": true
+  },
+  "claim_boundaries": {
+    "hardware_rates": "OPEN",
+    "full_higher_order_stochastic_result": "OPEN",
+    "independent_fault_pair_reproduction": "OPEN",
+    "threshold": "OPEN",
+    "hardware_validation": "OPEN",
+    "quantum_advantage": "OPEN"
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false
+  }
+}
