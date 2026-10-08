@@ -1,0 +1,91 @@
+{
+  "timestamp_utc": "2026-10-08T17:24:00Z",
+  "turn_type": "stochastic_two_fault_location_and_metric_freeze",
+  "source_head_at_start": "a309f6aa63f482e7311be3c266383fc9c5e84762",
+  "artifacts_created": [
+    {
+      "path": "research/protocols/2026-10-08T1718Z_MQM_STOCHASTIC_TWO_FAULT_BENCHMARK_v0.1_FREEZE.json",
+      "commit": "993eeb1ec575eebdb7cf2f4026df374c48cb05ad",
+      "status": "FROZEN_BEFORE_STOCHASTIC_EVALUATION"
+    },
+    {
+      "path": "research/protocols/2026-10-08T1720Z_MQM_MALIGNANT_PAIR_LEDGER_SPEC_v0.1_FREEZE.json",
+      "commit": "acde8eefd1555b68493b477c7270c31e3c55682b",
+      "status": "PRESERVED_WITH_NORMALIZATION_REPAIR"
+    },
+    {
+      "path": "research/protocols/2026-10-08T1722Z_MQM_MALIGNANT_PAIR_LEDGER_SPEC_v0.1a_FREEZE.json",
+      "commit": "8e1fdbf9ac541a6f7640b5698d18149ce8208666",
+      "status": "CANONICAL_PAIR_LEDGER_FREEZE"
+    }
+  ],
+  "frozen_location_model_per_round": {
+    "p_locations": {
+      "two_qubit_gates": 39,
+      "basis_rotations": 38,
+      "prepare_reset": 14,
+      "data_idle": 88,
+      "total": 179
+    },
+    "q_measurements": {
+      "center_syndrome": 4,
+      "center_flag": 4,
+      "edge_syndrome": 6,
+      "total": 14
+    },
+    "p_loss_locations": {
+      "data_boundary_sites": 88,
+      "syndrome_ancilla": 10,
+      "flag_ancilla": 4,
+      "total": 102
+    },
+    "all_elementary_locations": 295
+  },
+  "frozen_fault_semantics": {
+    "p_two_qubit": "uniform 1/15 over nonidentity two-qubit Paulis after ideal gate",
+    "p_single_qubit": "uniform 1/3 over X/Y/Z after ideal basis rotation, prepare/reset, or idle",
+    "q": "binary measurement result flip after ideal measurement",
+    "p_loss": "ideal-detected loss at declared site/epoch",
+    "two_faults_same_round": true,
+    "two_faults_same_check": true,
+    "two_faults_same_location": false,
+    "loss_detection": "ideal-detected, not inferred",
+    "classical_processing_faults": 0,
+    "stale_missing_metadata_probability": 0
+  },
+  "baselines": {
+    "1+0": {"rounds":1,"location_count":295,"pair_location_count":43365},
+    "2+1": {"rounds":3,"location_count":885,"pair_location_count":391170,"estimator":"two acquisition frames must agree; otherwise HOLD"},
+    "3+1": {"rounds":4,"location_count":1180,"pair_location_count":695610,"estimator":"three-round bitwise majority"}
+  },
+  "co_primary_metrics": [
+    "Y=P(ACCEPT)",
+    "epsilon_L_given_A=P(logical failure | ACCEPT)"
+  ],
+  "secondary_metrics": [
+    "P(HOLD)",
+    "P(QUARANTINE)",
+    "Y_good=P(ACCEPT and logical success)",
+    "R1_given_A=P(dressed residual weight 1 | ACCEPT)",
+    "Y_clean=P(ACCEPT and dressed residual weight 0 and logical success)",
+    "resource cost per accepted-good shot"
+  ],
+  "evaluation_status": {
+    "stochastic_evaluation_started": false,
+    "malignant_pair_classification_started": false,
+    "numeric_p_q_p_loss_substitution": false,
+    "first_report_planned": "exact symbolic/rational expansion through total degree two"
+  },
+  "governance": {
+    "hold_quarantine_as_success": false,
+    "post_exposure_round_count_optimization": "NEW_CANDIDATE_ONLY",
+    "same_agent_future_replay": "will not constitute independent review",
+    "independent_reproduction": "OPEN",
+    "physical_promotion": 0
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false
+  }
+}
