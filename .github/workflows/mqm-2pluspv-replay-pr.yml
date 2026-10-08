@@ -1,0 +1,39 @@
+name: MQM 2+PV exact replay PR
+
+on:
+  pull_request:
+    paths:
+      - 'research/benchmarks/2026-10-08T2212Z_mqm_2plusPV_exact_v03.cpp'
+      - 'research/protocols/2026-10-08T2210Z_MQM_2PLUS_POSTRECOVERY_VERIFY_v0.3_FREEZE.json'
+      - 'review_handoff/MQM_2PLUSPV_REPLAY_v0.3/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: |
+          cd research/benchmarks
+          g++ -O3 -std=c++17 2026-10-08T2212Z_mqm_2plusPV_exact_v03.cpp -o mqm_2pluspv
+      - name: Run
+        run: |
+          cd research/benchmarks
+          ./mqm_2pluspv > MQM_2PLUSPV_EXACT_RESULTS_v0.3.json
+          cat MQM_2PLUSPV_EXACT_RESULTS_v0.3.json
+      - name: Hash
+        run: |
+          cd research/benchmarks
+          sha256sum 2026-10-08T2212Z_mqm_2plusPV_exact_v03.cpp MQM_2PLUSPV_EXACT_RESULTS_v0.3.json > MQM_2PLUSPV_SHA256_v0.3.txt
+          cat MQM_2PLUSPV_SHA256_v0.3.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MQM-2plusPV-exact-v0.3
+          path: |
+            research/benchmarks/MQM_2PLUSPV_EXACT_RESULTS_v0.3.json
+            research/benchmarks/MQM_2PLUSPV_SHA256_v0.3.txt
