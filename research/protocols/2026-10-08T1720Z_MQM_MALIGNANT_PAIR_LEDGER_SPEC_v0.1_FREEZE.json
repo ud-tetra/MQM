@@ -1,0 +1,120 @@
+{
+  "version": "0.1",
+  "status": "FROZEN_BEFORE_PAIR_EVALUATION",
+  "parent_protocol": "research/protocols/2026-10-08T1718Z_MQM_STOCHASTIC_TWO_FAULT_BENCHMARK_v0.1_FREEZE.json",
+  "parent_commit": "993eeb1ec575eebdb7cf2f4026df374c48cb05ad",
+  "physical_promotion": 0,
+  "elementary_location_types": {
+    "P2": {
+      "meaning": "two-qubit gate p-location",
+      "per_round": 39,
+      "conditioned_fault_realizations": 15,
+      "realization_weight_given_event": "1/15"
+    },
+    "P1": {
+      "meaning": "single-qubit p-location: basis rotation, ancilla prepare/reset, or data idle",
+      "per_round": 140,
+      "decomposition_per_round": {"basis_rotation":38,"prepare_reset":14,"data_idle":88},
+      "conditioned_fault_realizations": 3,
+      "realization_weight_given_event": "1/3"
+    },
+    "Q": {
+      "meaning": "binary measurement bit-flip q-location",
+      "per_round": 14,
+      "conditioned_fault_realizations": 1
+    },
+    "L": {
+      "meaning": "ideal-detected p_loss location",
+      "per_round": 102,
+      "conditioned_fault_realizations": 1
+    }
+  },
+  "pair_identity": {
+    "unordered_distinct_location_ids": true,
+    "same_round": "allowed",
+    "same_check": "allowed",
+    "same_location_twice": "not allowed",
+    "two_nonidentity_components_of_one_two_qubit_Pauli": "one P2 event",
+    "pair_order_for_circuit_propagation": "apply each event at its chronological circuit location; unordered ID pair is sorted by schedule time before replay"
+  },
+  "conditional_realization_expansion_counts": {
+    "1+0": {
+      "P_P": 499995,
+      "P_Q": 14070,
+      "P_L": 102510,
+      "Q_Q": 91,
+      "Q_L": 1428,
+      "L_L": 5151,
+      "total_fault_realizations": 623245
+    },
+    "2+1": {
+      "P_P": 4530060,
+      "P_Q": 126630,
+      "P_L": 922590,
+      "Q_Q": 861,
+      "Q_L": 12852,
+      "L_L": 46665,
+      "total_fault_realizations": 5639658
+    },
+    "3+1": {
+      "P_P": 8060130,
+      "P_Q": 225120,
+      "P_L": 1640160,
+      "Q_Q": 1540,
+      "Q_L": 22848,
+      "L_L": 83028,
+      "total_fault_realizations": 10032826
+    }
+  },
+  "required_ledger_columns": [
+    "protocol",
+    "location_id_A",
+    "location_type_A",
+    "round_A",
+    "check_or_boundary_A",
+    "conditioned_fault_A",
+    "location_id_B",
+    "location_type_B",
+    "round_B",
+    "check_or_boundary_B",
+    "conditioned_fault_B",
+    "outcome_ACCEPT_HOLD_QUARANTINE",
+    "accepted_protected_logical_class",
+    "accepted_dressed_residual_weight",
+    "logical_failure_given_accept",
+    "analysis_only_cleanup_used"
+  ],
+  "probability_model": {
+    "P2_specific_realization": "p/15",
+    "P1_specific_realization": "p/3",
+    "Q_flip": "q",
+    "L_loss": "p_loss",
+    "no_event_at_p_location": "1-p",
+    "no_flip_at_q_location": "1-q",
+    "no_loss_at_loss_location": "1-p_loss"
+  },
+  "symbolic_report": {
+    "order": "retain all monomials of total degree <=2 in p,q,p_loss",
+    "derive_from": "zero-event, every single-event, and every frozen pair realization with exact rational conditional weights",
+    "outputs": [
+      "Y(p,q,p_loss)",
+      "P_HOLD(p,q,p_loss)",
+      "P_QUARANTINE(p,q,p_loss)",
+      "P_L_and_ACCEPT(p,q,p_loss)",
+      "epsilon_L_given_A as ratio P_L_and_ACCEPT/Y, reported as exact rational function through the frozen second-order approximation",
+      "Y_good=Y-P_L_and_ACCEPT",
+      "P_ACCEPT_dressed_weight_1",
+      "Y_clean"
+    ],
+    "normalization_check": "Y + P_HOLD + P_QUARANTINE + P_ACCEPT_logical_failure = 1 + O(total_degree_3) after outcome partition is defined; accepted logical failures are a subset of ACCEPT and must not be double-counted in the partition.",
+    "numeric_substitution": "none in the first report"
+  },
+  "governance": {
+    "same_agent": true,
+    "independent_replay": "OPEN",
+    "tuning_after_pair_results": false,
+    "round_count_change_after_results": "new candidate only",
+    "hold_or_quarantine_as_success": false,
+    "hardware_interpretation": false
+  }
+}
