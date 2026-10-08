@@ -1,0 +1,62 @@
+{
+  "version": "0.1",
+  "status": "POSTEXPOSURE_EXPLORATORY_CANDIDATE_FROZEN_BEFORE_ITS_EVALUATION",
+  "timestamp_utc": "2026-10-08T20:10:00Z",
+  "physical_promotion": 0,
+  "parent_benchmark_commit": "993eeb1ec575eebdb7cf2f4026df374c48cb05ad",
+  "selection_after_exposure": true,
+  "confirmatory_status": false,
+  "name": "2+C",
+  "purpose": "Target 2+0 fast-path throughput while conditionally spending a third round only when the first two center frames disagree.",
+  "mandatory_rounds": 2,
+  "conditional_rounds_max": 1,
+  "round_block": "identical frozen 39-two-qubit-gate / 14-measurement firewall extraction block",
+  "state_machine": [
+    "Run acquisition rounds R1 and R2.",
+    "Any center flag or detected ancilla loss in R1/R2 -> HOLD.",
+    "Any detected data loss in R1/R2 -> QUARANTINE.",
+    "If complete center frames b1 and b2 are identical, recover using that frame and ACCEPT immediately; do not execute R3.",
+    "If b1 != b2 and neither round flagged/lost, execute one conditional resolver round R3.",
+    "Any center flag or detected ancilla loss in R3 -> HOLD; detected data loss -> QUARANTINE.",
+    "If b3 exactly equals b1 or b2 as a complete four-bit frame, select the repeated frame, apply the frozen Pauli-frame decoder, and ACCEPT.",
+    "If b3 matches neither complete frame, HOLD.",
+    "No terminal post-recovery verification round is executed in this version."
+  ],
+  "ambiguity_condition": "b1 != b2 with both mandatory round records complete, unflagged, and loss-free",
+  "resolver_rule": "whole-frame exact repeat; no bitwise synthetic majority when b3 matches neither b1 nor b2",
+  "recovery": "same candidate-basis to frozen-center coordinate map and frozen ideal-center decoder as parent benchmark",
+  "fault_semantics": {
+    "p": "same frozen independent Bernoulli quantum-location rate and conditional Pauli distributions",
+    "q": "same frozen binary measurement-bit flip rate",
+    "p_loss": "same frozen ideal-detected loss semantics",
+    "conditional_round_exposure": "R3 fault locations exist only on trajectories that satisfy the ambiguity condition after R1/R2",
+    "unexecuted_R3_locations": "zero exposure and cannot host faults",
+    "classical_logic": "ideal"
+  },
+  "resources": {
+    "minimum_rounds": 2,
+    "maximum_rounds": 3,
+    "minimum_two_qubit_gates": 78,
+    "maximum_two_qubit_gates": 117,
+    "minimum_measurements": 28,
+    "maximum_measurements": 42,
+    "peak_extra_ancillas": 2,
+    "expected_resources": "must be reported from the stochastic trajectory distribution; cannot use the fixed 3-round maximum as actual average"
+  },
+  "evaluation_freeze": {
+    "single_event": "exact exhaustive over mandatory R1/R2 locations; R3 has no single-event-only locations because a clean mandatory prefix does not trigger R3",
+    "two_event": "exact exhaustive over (mandatory,mandatory) pairs plus (triggering mandatory event, conditional-R3 event) pairs; two R3-only faults are impossible at total order two",
+    "higher_order": "exact <=2 contribution plus conservative maximum-3-round tail enclosure and frozen Monte Carlo conditional on adaptive execution",
+    "grid": ["0","2^-21","2^-19","2^-17","2^-15"],
+    "co_primary_metrics": ["Y","epsilon_L_given_A"],
+    "secondary_metrics": ["Y_good","P_HOLD","P_QUARANTINE","R1_given_A","Y_clean","expected executed rounds","expected two-qubit gates","two-qubit gates per accepted-good shot"]
+  },
+  "stop_rules": [
+    "Do not change the whole-frame exact-repeat rule after exposure.",
+    "Do not replace it with bitwise majority after exposure within v0.1.",
+    "Do not add a post-recovery verification round after exposure within v0.1.",
+    "Any adaptive successor is a new candidate.",
+    "This post-exposure candidate cannot retroactively alter the frozen 1+0/2+1/3+1 benchmark.",
+    "Physical promotion remains 0."
+  ]
+}
