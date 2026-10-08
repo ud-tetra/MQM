@@ -1,0 +1,131 @@
+{
+  "version": "0.3",
+  "status": "POSTEXPOSURE_EXACT_DEGREE2_ADAPTIVE_2PLUSPV",
+  "workflow_run_id": 37837260022,
+  "workflow_job_id": 113517367652,
+  "workflow_artifact_id": 11576500542,
+  "workflow_artifact_zip_sha256": "e6cc5164d4fd3dba7414081536c53f390a245b30c823f10a059e259f0fb54a7b",
+  "source_sha256": "daeeb8961be790b66cf3be2805033d03c591c649222840b4eae151be8fea966d",
+  "result_sha256": "71d6ed7e836fc59eef34396168f2975437079af76a076c21404e6f56e99fda97",
+  "locations": {
+    "mandatory": {
+      "p": 358,
+      "q": 28,
+      "l": 204
+    },
+    "conditional_verify": {
+      "p": 179,
+      "q": 14,
+      "l": 102
+    }
+  },
+  "workload": {
+    "single_realizations": 2242,
+    "mandatory_pair_realizations": 2503131,
+    "trigger_plus_verify_realizations": 126673,
+    "triggering_single_realizations": 113
+  },
+  "polynomials_degree2": {
+    "Y": {
+      "1": "1",
+      "p": "-996/5",
+      "q": "-16",
+      "l": "-204",
+      "p2": "1347083/75",
+      "pq": "9458/3",
+      "pl": "189958/5",
+      "q2": "120",
+      "ql": "3264",
+      "l2": "20706"
+    },
+    "HOLD": {
+      "1": "0",
+      "p": "996/5",
+      "q": "16",
+      "l": "28",
+      "p2": "-1347083/75",
+      "pq": "-9458/3",
+      "pl": "-604106/15",
+      "q2": "-120",
+      "ql": "-3264",
+      "l2": "-5306"
+    },
+    "QUARANTINE": {
+      "1": "0",
+      "p": "0",
+      "q": "0",
+      "l": "176",
+      "p2": "0",
+      "pq": "0",
+      "pl": "34232/15",
+      "q2": "0",
+      "ql": "0",
+      "l2": "-15400"
+    },
+    "L_AND_ACCEPT": {
+      "1": "0",
+      "p": "0",
+      "q": "0",
+      "l": "0",
+      "p2": "733381/225",
+      "pq": "19/15",
+      "pl": "0",
+      "q2": "0",
+      "ql": "0",
+      "l2": "0"
+    },
+    "ACCEPT_DW1": {
+      "1": "0",
+      "p": "387/5",
+      "q": "0",
+      "l": "0",
+      "p2": "-4665724/225",
+      "pq": "-1161",
+      "pl": "-78948/5",
+      "q2": "0",
+      "ql": "0",
+      "l2": "0"
+    },
+    "Y_CLEAN": {
+      "1": "1",
+      "p": "-1383/5",
+      "q": "-16",
+      "l": "-204",
+      "p2": "2657864/75",
+      "pq": "21562/5",
+      "pl": "268906/5",
+      "q2": "120",
+      "ql": "3264",
+      "l2": "20706"
+    },
+    "Y_GOOD": {
+      "1": "1",
+      "p": "-996/5",
+      "q": "-16",
+      "l": "-204",
+      "p2": "3307868/225",
+      "pq": "15757/5",
+      "pl": "189958/5",
+      "q2": "120",
+      "ql": "3264",
+      "l2": "20706"
+    },
+    "EPSILON_L_GIVEN_A": {
+      "1": "0",
+      "p": "0",
+      "q": "0",
+      "l": "0",
+      "p2": "733381/225",
+      "pq": "19/15",
+      "pl": "0",
+      "q2": "0",
+      "ql": "0",
+      "l2": "0"
+    }
+  },
+  "verification_activation_first_order": "(389/15)p + O(2)",
+  "expected_rounds_first_order": "2 + (389/15)p + O(2)",
+  "expected_two_qubit_gates_first_order": "78 + (5057/5)p + O(2)",
+  "expected_measurements_first_order": "28 + (5446/15)p + O(2)",
+  "physical_promotion": 0
+}
