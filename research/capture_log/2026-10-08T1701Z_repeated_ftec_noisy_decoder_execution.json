@@ -1,0 +1,75 @@
+{
+  "timestamp_utc": "2026-10-08T17:01:00Z",
+  "turn_type": "execute_options_1_2_repeated_ftec_and_noisy_decoder",
+  "user_selection": [1,2],
+  "source_head_at_start": "a6ffaef476b2b33d1c3a3d8292c7d8bf1c88d198",
+  "freeze_before_evaluation": {
+    "protocol_path": "research/protocols/2026-10-08T1642Z_MQM_FIREWALL_REPEATED_FTEC_PROTOCOL_v0.1_FREEZE.json",
+    "protocol_commit": "d47138705508094f05d629e2a6f2622d02b1e569",
+    "metric_clarification_path": "research/protocols/2026-10-08T1644Z_MQM_FIREWALL_REPEATED_FTEC_PROTOCOL_v0.1a_METRIC_FREEZE.json",
+    "metric_clarification_commit": "841bfe81a322df075997561def441c05b36bcfae",
+    "results_seen_before_freeze": false
+  },
+  "artifacts_created": [
+    {
+      "path": "research/bridges/2026-10-08T1652Z_mqm_repeated_ftec_noisy_decoder_replay_v01.py",
+      "commit": "92b824293d0f7309f7e35f775f90637b8c0c05b8",
+      "evidence": "EXACT replay"
+    },
+    {
+      "path": "research/bridges/2026-10-08T1655Z_MQM_REPEATED_FTEC_NOISY_DECODER_RESULTS_v0.1.json",
+      "commit": "072c8f5ff38a0df45191c43a98d5fcac78ed38b3",
+      "evidence": "EXACT machine result"
+    },
+    {
+      "path": "research/bridges/2026-10-08T1658Z_MQM_REPEATED_FIREWALL_FTEC_ADDENDUM_v0.1.md",
+      "commit": "c93d062430a6e8290a3a4304a065a020658b20be",
+      "evidence": "versioned technical addendum"
+    }
+  ],
+  "option_1_repeated_ftec": {
+    "one_round_fault_cases": 1141,
+    "one_round_outcomes": {"ACCEPT":727,"HOLD":174,"QUARANTINE":88,"FAIL":152},
+    "one_round_ruling": "NO_GO under expanded frozen single-fault controller contract",
+    "repeated_fault_cases": 4564,
+    "repeated_outcomes": {"ACCEPT":1969,"HOLD":2243,"QUARANTINE":352,"FAIL":0},
+    "input_single_pauli_no_circuit_fault": {"PASS":24,"FAIL":0},
+    "repeated_ruling": "AUTO_LOCK scoped EXACT single-fault 1-EC/FTEC state-machine certificate",
+    "resource_debit": {
+      "one_round_two_qubit_gates":39,
+      "repeated_worst_case_two_qubit_gates":156,
+      "one_round_measurements":14,
+      "repeated_worst_case_measurements":56,
+      "peak_extra_ancillas":2
+    }
+  },
+  "option_2_noisy_decoder": {
+    "one_round": "F1(q)=(5/2)q-(13/4)q^2+2q^3-(1/2)q^4",
+    "majority_effective_bit_error": "r(q)=3q^2-2q^3",
+    "three_round": "F3(q)=F1(r(q))",
+    "leading_orders": {
+      "one_round": "(5/2)q+O(q^2)",
+      "three_round": "(15/2)q^2+O(q^3)"
+    },
+    "exact_dominance": "F3(q)<F1(q) for 0<q<1/2",
+    "direct_three_round_raw_cases":98304,
+    "first_raw_failure_weight":2,
+    "scope": "phenomenological independent center-bit readout noise, conditioned on one incoming single-qubit Pauli"
+  },
+  "claim_boundaries": {
+    "hardware_validation": "OPEN",
+    "threshold": "OPEN",
+    "multi_fault_circuit_logical_rate": "OPEN",
+    "missed_loss": "OPEN",
+    "coherent_non_pauli_noise": "OPEN",
+    "logical_gate_exRec": "OPEN",
+    "quantum_advantage": "OPEN",
+    "physical_promotion": 0
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "frozen_parent_artifacts_modified": false
+  }
+}
