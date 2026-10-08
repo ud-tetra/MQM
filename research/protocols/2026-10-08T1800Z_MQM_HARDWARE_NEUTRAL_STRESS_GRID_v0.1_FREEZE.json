@@ -1,0 +1,66 @@
+{
+  "version": "0.1",
+  "status": "FROZEN_AFTER_SYMBOLIC_RESULT_BEFORE_NUMERICAL_STRESS_EVALUATION",
+  "timestamp_utc": "2026-10-08T18:00:00Z",
+  "physical_promotion": 0,
+  "parent_stochastic_protocol_commit": "993eeb1ec575eebdb7cf2f4026df374c48cb05ad",
+  "parent_pair_ledger_commit": "8e1fdbf9ac541a6f7640b5698d18149ce8208666",
+  "symbolic_result_status": "already exposed before this grid was chosen",
+  "grid_role": "hardware-neutral future stress/replay grid; numerical substitution of the already-known degree-two polynomial is expository, not independent evidence",
+  "selection_rule": {
+    "depends_on_symbolic_winner": false,
+    "depends_on_hardware_calibration": false,
+    "basis": "common dyadic rate set for p, q and p_loss chosen from the maximum frozen location count, not from protocol performance",
+    "maximum_protocol_location_count": 1180
+  },
+  "rate_set_exact": [
+    "0",
+    "2^-21",
+    "2^-19",
+    "2^-17",
+    "2^-15"
+  ],
+  "rate_set_fractions": [
+    "0",
+    "1/2097152",
+    "1/524288",
+    "1/131072",
+    "1/32768"
+  ],
+  "cartesian_grid": {
+    "p": "rate_set_exact",
+    "q": "rate_set_exact",
+    "p_loss": "rate_set_exact",
+    "point_count": 125,
+    "factorization": "125=5^3",
+    "same_points_for": ["1+0","2+1","3+1"]
+  },
+  "maximum_equal-rate_exposure_diagnostic": {
+    "point": "p=q=p_loss=2^-15",
+    "sum_of_elementary_event_probabilities_3plus1": "1180/32768 = 295/8192",
+    "decimal": 0.0360107421875,
+    "union_bound_on_three_or_more_elementary_events": "((295/8192)^3)/6 = 25672375/3298534883328",
+    "union_bound_decimal": 0.00000778296301480926,
+    "scope": "event-count diagnostic only; not asserted as a rigorous bound on the Taylor-series truncation error"
+  },
+  "required_future_outputs_at_each_point": [
+    "Y=P(ACCEPT)",
+    "epsilon_L_given_A=P(logical failure | ACCEPT)",
+    "Y_good=P(ACCEPT and logical success)",
+    "P(HOLD)",
+    "P(QUARANTINE)",
+    "R1_given_A=P(dressed residual weight 1 | ACCEPT)",
+    "Y_clean",
+    "two-qubit gates per accepted-good shot",
+    "measurements per accepted-good shot"
+  ],
+  "governance": {
+    "round_count_retuning_after_symbolic_result": "PROHIBITED for this benchmark",
+    "1+0_2+1_3+1_definitions_changed": false,
+    "grid_change_after_numeric_exposure": "NEW_CANDIDATE_VERSION_ONLY",
+    "hardware_interpretation": false,
+    "source_calibrated_rates": "OPEN",
+    "independent_replay": "OPEN",
+    "physical_promotion": 0
+  }
+}
