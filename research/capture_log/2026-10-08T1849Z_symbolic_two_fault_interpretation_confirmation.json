@@ -1,0 +1,32 @@
+{
+  "timestamp_utc": "2026-10-08T18:49:00Z",
+  "turn_type": "symbolic_two_fault_interpretation_confirmation",
+  "source_head_at_start": "dfdf5c2a5baddc822afc86cf6536ce1be1bda27b",
+  "artifact": {
+    "path": "research/amendments/2026-10-08T1848Z_MQM_SYMBOLIC_TWO_FAULT_INTERPRETATION_CONFIRMATION_v0.1.md",
+    "commit": "18aac6cd2654ca869534cfc17d1030fd0c1897fe"
+  },
+  "data_changed": false,
+  "claim_promotion_changed": false,
+  "confirmed_points": [
+    "degree-two 2+1 accepted-logical error is below 3+1 for p>0,q>=0",
+    "1+0 alone retains a linear accepted-logical p term",
+    "loss coefficients in Y equal frozen ideal-detected loss-location counts",
+    "comparison remains Pareto across Y, epsilon_L_given_A, Y_good and resources",
+    "125-point stress grid remains unevaluated",
+    "Fraction aggregation is not a second fault-pair classifier",
+    "pre-result implementation repairs remain material provenance",
+    "physical promotion remains 0"
+  ],
+  "next_open_gates": [
+    "full higher-order stochastic run on frozen grid",
+    "independently implemented fault-pair classifier",
+    "hardware-calibrated p,q,p_loss"
+  ],
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false
+  },
+  "physical_promotion": 0
+}
