@@ -1,0 +1,2003 @@
+{
+  "version": "0.1",
+  "status": "EXACT_NATIVE_GATE_ALGEBRA_COMPILE_V0_1A__ROUTING_TIMING_OPEN",
+  "active_register": {
+    "data": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "syndrome": 9,
+    "flag": 10,
+    "live_qubits": 10
+  },
+  "assumptions": [
+    "Only these 10 live qubits require compensation under GR, or all external live spectators are independently compiler-decoupled.",
+    "Every requested CZ pair is made connected by a separate routing/motion layer; route, duration, and transport noise are not synthesized here.",
+    "Local RZ requests are exact site-address requests. RZ_instruction_groups are compiler groupings in this file, not hardware time slices; parallel local-RZ concurrency is not asserted.",
+    "RESET and NDSSR are typed macros pending a source-complete mid-circuit reset/timing contract."
+  ],
+  "native_primitives": [
+    "GR(theta,phi)",
+    "RZ_i(theta)",
+    "CZ_ij",
+    "RESET_i",
+    "NDSSR_Z_i"
+  ],
+  "identities": {
+    "selective_Ry_T_theta": "GR_y(theta/2); RZ_spectators(pi); GR_y(theta/2); RZ_spectators(-pi) => Ry_T(theta) tensor I_spectators",
+    "H_pre_ordinary": "RZ(pi) then Ry(pi/2) = -i H",
+    "Y_pre": "RZ(pi/2) then Ry(pi/2) = -i H Sdag",
+    "H_post": "Ry(-pi/2) then RZ(pi) = -i H",
+    "Y_post": "Ry(-pi/2) then RZ(-pi/2) = S H",
+    "parity_chain": "product CNOT(control->syndrome) = H_syndrome [product CZ(control,syndrome)] H_syndrome"
+  },
+  "checks": [
+    {
+      "name": "B1",
+      "pauli": "IIIXXZZI",
+      "data_order": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "X_data": [
+        4,
+        5
+      ],
+      "Y_data": [],
+      "selective_H_target": [
+        4,
+        5,
+        9,
+        10
+      ],
+      "spectators": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "ops": [
+        {
+          "gate": "RESET",
+          "qubits": [
+            9,
+            10
+          ],
+          "states": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            4,
+            5,
+            9,
+            10
+          ],
+          "theta": 3.141592653589793,
+          "role": "pre_H_phase"
+        },
+        {
+          "gate": "RZ",
+          "qubits": [],
+          "theta": 1.5707963267948966,
+          "role": "pre_Y_phase"
+        },
+        {
+          "gate": "GR",
+          "theta": 0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": 3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            8
+          ],
+          "role": "spectator_echo"
+        },
+        {
+          "gate": "GR",
+          "theta": 0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": -3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            8
+          ],
+          "role": "spectator_echo_inverse"
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            4,
+            9
+          ],
+          "role": "data_syndrome",
+          "data_interaction_index": 1
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            10,
+            9
+          ],
+          "role": "flag_syndrome",
+          "after_data_interaction": 1
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            5,
+            9
+          ],
+          "role": "data_syndrome",
+          "data_interaction_index": 2
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            6,
+            9
+          ],
+          "role": "data_syndrome",
+          "data_interaction_index": 3
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            10,
+            9
+          ],
+          "role": "flag_syndrome",
+          "after_data_interaction": 3
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            7,
+            9
+          ],
+          "role": "data_syndrome",
+          "data_interaction_index": 4
+        },
+        {
+          "gate": "GR",
+          "theta": -0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": 3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            8
+          ],
+          "role": "spectator_echo"
+        },
+        {
+          "gate": "GR",
+          "theta": -0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": -3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            8
+          ],
+          "role": "spectator_echo_inverse"
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            4,
+            5,
+            9,
+            10
+          ],
+          "theta": 3.141592653589793,
+          "role": "post_H_phase"
+        },
+        {
+          "gate": "RZ",
+          "qubits": [],
+          "theta": -1.5707963267948966,
+          "role": "post_Y_phase"
+        },
+        {
+          "gate": "NDSSR_Z",
+          "qubits": [
+            9,
+            10
+          ],
+          "logical_bases": [
+            "Z",
+            "X_after_compiled_H"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "B2",
+      "pauli": "IIIZZYYI",
+      "data_order": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "X_data": [],
+      "Y_data": [
+        6,
+        7
+      ],
+      "selective_H_target": [
+        6,
+        7,
+        9,
+        10
+      ],
+      "spectators": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8
+      ],
+      "ops": [
+        {
+          "gate": "RESET",
+          "qubits": [
+            9,
+            10
+          ],
+          "states": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            9,
+            10
+          ],
+          "theta": 3.141592653589793,
+          "role": "pre_H_phase"
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            6,
+            7
+          ],
+          "theta": 1.5707963267948966,
+          "role": "pre_Y_phase"
+        },
+        {
+          "gate": "GR",
+          "theta": 0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": 3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            8
+          ],
+          "role": "spectator_echo"
+        },
+        {
+          "gate": "GR",
+          "theta": 0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": -3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            8
+          ],
+          "role": "spectator_echo_inverse"
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            4,
+            9
+          ],
+          "role": "data_syndrome",
+          "data_interaction_index": 1
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            10,
+            9
+          ],
+          "role": "flag_syndrome",
+          "after_data_interaction": 1
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            5,
+            9
+          ],
+          "role": "data_syndrome",
+          "data_interaction_index": 2
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            6,
+            9
+          ],
+          "role": "data_syndrome",
+          "data_interaction_index": 3
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            10,
+            9
+          ],
+          "role": "flag_syndrome",
+          "after_data_interaction": 3
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            7,
+            9
+          ],
+          "role": "data_syndrome",
+          "data_interaction_index": 4
+        },
+        {
+          "gate": "GR",
+          "theta": -0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": 3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            8
+          ],
+          "role": "spectator_echo"
+        },
+        {
+          "gate": "GR",
+          "theta": -0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": -3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            8
+          ],
+          "role": "spectator_echo_inverse"
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            9,
+            10
+          ],
+          "theta": 3.141592653589793,
+          "role": "post_H_phase"
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            6,
+            7
+          ],
+          "theta": -1.5707963267948966,
+          "role": "post_Y_phase"
+        },
+        {
+          "gate": "NDSSR_Z",
+          "qubits": [
+            9,
+            10
+          ],
+          "logical_bases": [
+            "Z",
+            "X_after_compiled_H"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "B3",
+      "pauli": "IIIYIYZZ",
+      "data_order": [
+        4,
+        6,
+        7,
+        8
+      ],
+      "X_data": [],
+      "Y_data": [
+        4,
+        6
+      ],
+      "selective_H_target": [
+        4,
+        6,
+        9,
+        10
+      ],
+      "spectators": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8
+      ],
+      "ops": [
+        {
+          "gate": "RESET",
+          "qubits": [
+            9,
+            10
+          ],
+          "states": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            9,
+            10
+          ],
+          "theta": 3.141592653589793,
+          "role": "pre_H_phase"
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            4,
+            6
+          ],
+          "theta": 1.5707963267948966,
+          "role": "pre_Y_phase"
+        },
+        {
+          "gate": "GR",
+          "theta": 0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": 3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            5,
+            7,
+            8
+          ],
+          "role": "spectator_echo"
+        },
+        {
+          "gate": "GR",
+          "theta": 0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": -3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            5,
+            7,
+            8
+          ],
+          "role": "spectator_echo_inverse"
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            4,
+            9
+          ],
+          "role": "data_syndrome",
+          "data_interaction_index": 1
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            10,
+            9
+          ],
+          "role": "flag_syndrome",
+          "after_data_interaction": 1
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            6,
+            9
+          ],
+          "role": "data_syndrome",
+          "data_interaction_index": 2
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            7,
+            9
+          ],
+          "role": "data_syndrome",
+          "data_interaction_index": 3
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            10,
+            9
+          ],
+          "role": "flag_syndrome",
+          "after_data_interaction": 3
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            8,
+            9
+          ],
+          "role": "data_syndrome",
+          "data_interaction_index": 4
+        },
+        {
+          "gate": "GR",
+          "theta": -0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": 3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            5,
+            7,
+            8
+          ],
+          "role": "spectator_echo"
+        },
+        {
+          "gate": "GR",
+          "theta": -0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": -3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            5,
+            7,
+            8
+          ],
+          "role": "spectator_echo_inverse"
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            9,
+            10
+          ],
+          "theta": 3.141592653589793,
+          "role": "post_H_phase"
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            4,
+            6
+          ],
+          "theta": -1.5707963267948966,
+          "role": "post_Y_phase"
+        },
+        {
+          "gate": "NDSSR_Z",
+          "qubits": [
+            9,
+            10
+          ],
+          "logical_bases": [
+            "Z",
+            "X_after_compiled_H"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "B4",
+      "pauli": "XXXXYYIX",
+      "data_order": [
+        4,
+        5,
+        6,
+        1,
+        2,
+        3,
+        8
+      ],
+      "X_data": [
+        1,
+        2,
+        3,
+        4,
+        8
+      ],
+      "Y_data": [
+        5,
+        6
+      ],
+      "selective_H_target": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "spectators": [
+        7
+      ],
+      "ops": [
+        {
+          "gate": "RESET",
+          "qubits": [
+            9,
+            10
+          ],
+          "states": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            8,
+            9,
+            10
+          ],
+          "theta": 3.141592653589793,
+          "role": "pre_H_phase"
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            5,
+            6
+          ],
+          "theta": 1.5707963267948966,
+          "role": "pre_Y_phase"
+        },
+        {
+          "gate": "GR",
+          "theta": 0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": 3.141592653589793,
+          "qubits": [
+            7
+          ],
+          "role": "spectator_echo"
+        },
+        {
+          "gate": "GR",
+          "theta": 0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": -3.141592653589793,
+          "qubits": [
+            7
+          ],
+          "role": "spectator_echo_inverse"
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            4,
+            9
+          ],
+          "role": "data_syndrome",
+          "data_interaction_index": 1
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            10,
+            9
+          ],
+          "role": "flag_syndrome",
+          "after_data_interaction": 1
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            5,
+            9
+          ],
+          "role": "data_syndrome",
+          "data_interaction_index": 2
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            6,
+            9
+          ],
+          "role": "data_syndrome",
+          "data_interaction_index": 3
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            10,
+            9
+          ],
+          "role": "flag_syndrome",
+          "after_data_interaction": 3
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            1,
+            9
+          ],
+          "role": "data_syndrome",
+          "data_interaction_index": 4
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            2,
+            9
+          ],
+          "role": "data_syndrome",
+          "data_interaction_index": 5
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            3,
+            9
+          ],
+          "role": "data_syndrome",
+          "data_interaction_index": 6
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            8,
+            9
+          ],
+          "role": "data_syndrome",
+          "data_interaction_index": 7
+        },
+        {
+          "gate": "GR",
+          "theta": -0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": 3.141592653589793,
+          "qubits": [
+            7
+          ],
+          "role": "spectator_echo"
+        },
+        {
+          "gate": "GR",
+          "theta": -0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": -3.141592653589793,
+          "qubits": [
+            7
+          ],
+          "role": "spectator_echo_inverse"
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            8,
+            9,
+            10
+          ],
+          "theta": 3.141592653589793,
+          "role": "post_H_phase"
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            5,
+            6
+          ],
+          "theta": -1.5707963267948966,
+          "role": "post_Y_phase"
+        },
+        {
+          "gate": "NDSSR_Z",
+          "qubits": [
+            9,
+            10
+          ],
+          "logical_bases": [
+            "Z",
+            "X_after_compiled_H"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "E12",
+      "edge": [
+        1,
+        2
+      ],
+      "selective_H_target": [
+        9
+      ],
+      "spectators": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10
+      ],
+      "ops": [
+        {
+          "gate": "RESET",
+          "qubits": [
+            9
+          ],
+          "states": [
+            "0"
+          ]
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            9
+          ],
+          "theta": 3.141592653589793,
+          "role": "pre_H_phase"
+        },
+        {
+          "gate": "GR",
+          "theta": 0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": 3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo"
+        },        {
+          "gate": "GR",
+          "theta": 0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": -3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo_inverse"
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            1,
+            9
+          ],
+          "role": "edge_parity"
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            2,
+            9
+          ],
+          "role": "edge_parity"
+        },
+        {
+          "gate": "GR",
+          "theta": -0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": 3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo"
+        },
+        {
+          "gate": "GR",
+          "theta": -0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": -3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo_inverse"
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            9
+          ],
+          "theta": 3.141592653589793,
+          "role": "post_H_phase"
+        },
+        {
+          "gate": "NDSSR_Z",
+          "qubits": [
+            9
+          ],
+          "logical_bases": [
+            "Z"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "E13",
+      "edge": [
+        1,
+        3
+      ],
+      "selective_H_target": [
+        9
+      ],
+      "spectators": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10
+      ],
+      "ops": [
+        {
+          "gate": "RESET",
+          "qubits": [
+            9
+          ],
+          "states": [
+            "0"
+          ]
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            9
+          ],
+          "theta": 3.141592653589793,
+          "role": "pre_H_phase"
+        },
+        {
+          "gate": "GR",
+          "theta": 0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": 3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo"
+        },
+        {
+          "gate": "GR",
+          "theta": 0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": -3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo_inverse"
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            1,
+            9
+          ],
+          "role": "edge_parity"
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            3,
+            9
+          ],
+          "role": "edge_parity"
+        },
+        {
+          "gate": "GR",
+          "theta": -0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": 3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo"
+        },
+        {
+          "gate": "GR",
+          "theta": -0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": -3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo_inverse"
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            9
+          ],
+          "theta": 3.141592653589793,
+          "role": "post_H_phase"
+        },
+        {
+          "gate": "NDSSR_Z",
+          "qubits": [
+            9
+          ],
+          "logical_bases": [
+            "Z"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "E18",
+      "edge": [
+        1,
+        8
+      ],
+      "selective_H_target": [
+        9
+      ],
+      "spectators": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10
+      ],
+      "ops": [
+        {
+          "gate": "RESET",
+          "qubits": [
+            9
+          ],
+          "states": [
+            "0"
+          ]
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            9
+          ],
+          "theta": 3.141592653589793,
+          "role": "pre_H_phase"
+        },
+        {
+          "gate": "GR",
+          "theta": 0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": 3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo"
+        },
+        {
+          "gate": "GR",
+          "theta": 0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": -3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo_inverse"
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            1,
+            9
+          ],
+          "role": "edge_parity"
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            8,
+            9
+          ],
+          "role": "edge_parity"
+        },
+        {
+          "gate": "GR",
+          "theta": -0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": 3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo"
+        },
+        {
+          "gate": "GR",
+          "theta": -0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": -3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo_inverse"
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            9
+          ],
+          "theta": 3.141592653589793,
+          "role": "post_H_phase"
+        },
+        {
+          "gate": "NDSSR_Z",
+          "qubits": [
+            9
+          ],
+          "logical_bases": [
+            "Z"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "E23",
+      "edge": [
+        2,
+        3
+      ],
+      "selective_H_target": [
+        9
+      ],
+      "spectators": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10
+      ],
+      "ops": [
+        {
+          "gate": "RESET",
+          "qubits": [
+            9
+          ],
+          "states": [
+            "0"
+          ]
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            9
+          ],
+          "theta": 3.141592653589793,
+          "role": "pre_H_phase"
+        },
+        {
+          "gate": "GR",
+          "theta": 0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": 3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo"
+        },
+        {
+          "gate": "GR",
+          "theta": 0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": -3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo_inverse"
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            2,
+            9
+          ],
+          "role": "edge_parity"
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            3,
+            9
+          ],
+          "role": "edge_parity"
+        },
+        {
+          "gate": "GR",
+          "theta": -0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": 3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo"
+        },
+        {
+          "gate": "GR",
+          "theta": -0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": -3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo_inverse"
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            9
+          ],
+          "theta": 3.141592653589793,
+          "role": "post_H_phase"
+        },
+        {
+          "gate": "NDSSR_Z",
+          "qubits": [
+            9
+          ],
+          "logical_bases": [
+            "Z"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "E28",
+      "edge": [
+        2,
+        8
+      ],
+      "selective_H_target": [
+        9
+      ],
+      "spectators": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10
+      ],
+      "ops": [
+        {
+          "gate": "RESET",
+          "qubits": [
+            9
+          ],
+          "states": [
+            "0"
+          ]
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            9
+          ],
+          "theta": 3.141592653589793,
+          "role": "pre_H_phase"
+        },
+        {
+          "gate": "GR",
+          "theta": 0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": 3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo"
+        },
+        {
+          "gate": "GR",
+          "theta": 0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": -3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo_inverse"
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            2,
+            9
+          ],
+          "role": "edge_parity"
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            8,
+            9
+          ],
+          "role": "edge_parity"
+        },
+        {
+          "gate": "GR",
+          "theta": -0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": 3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo"
+        },
+        {
+          "gate": "GR",
+          "theta": -0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": -3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo_inverse"
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            9
+          ],
+          "theta": 3.141592653589793,
+          "role": "post_H_phase"
+        },
+        {
+          "gate": "NDSSR_Z",
+          "qubits": [
+            9
+          ],
+          "logical_bases": [
+            "Z"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "E38",
+      "edge": [
+        3,
+        8
+      ],
+      "selective_H_target": [
+        9
+      ],
+      "spectators": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10
+      ],
+      "ops": [
+        {
+          "gate": "RESET",
+          "qubits": [
+            9
+          ],
+          "states": [
+            "0"
+          ]
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            9
+          ],
+          "theta": 3.141592653589793,
+          "role": "pre_H_phase"
+        },
+        {
+          "gate": "GR",
+          "theta": 0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": 3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo"
+        },
+        {
+          "gate": "GR",
+          "theta": 0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": -3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo_inverse"
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            3,
+            9
+          ],
+          "role": "edge_parity"
+        },
+        {
+          "gate": "CZ",
+          "qubits": [
+            8,
+            9
+          ],
+          "role": "edge_parity"
+        },
+        {
+          "gate": "GR",
+          "theta": -0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": 3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo"
+        },
+        {
+          "gate": "GR",
+          "theta": -0.7853981633974483,
+          "phi": 1.5707963267948966,
+          "scope": "all_live"
+        },
+        {
+          "gate": "RZ",
+          "theta": -3.141592653589793,
+          "qubits": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "role": "spectator_echo_inverse"
+        },
+        {
+          "gate": "RZ",
+          "qubits": [
+            9
+          ],
+          "theta": 3.141592653589793,
+          "role": "post_H_phase"
+        },
+        {
+          "gate": "NDSSR_Z",
+          "qubits": [
+            9
+          ],
+          "logical_bases": [
+            "Z"
+          ]
+        }
+      ]
+    }
+  ],
+  "counts_per_check": {
+    "B1": {
+      "GR": 4,
+      "CZ": 6,
+      "RZ_address_requests": 32,
+      "RZ_instruction_groups": 6,
+      "RESET_site_requests": 2,
+      "NDSSR_site_requests": 2
+    },
+    "B2": {
+      "GR": 4,
+      "CZ": 6,
+      "RZ_address_requests": 32,
+      "RZ_instruction_groups": 8,
+      "RESET_site_requests": 2,
+      "NDSSR_site_requests": 2
+    },
+    "B3": {
+      "GR": 4,
+      "CZ": 6,
+      "RZ_address_requests": 32,
+      "RZ_instruction_groups": 8,
+      "RESET_site_requests": 2,
+      "NDSSR_site_requests": 2
+    },
+    "B4": {
+      "GR": 4,
+      "CZ": 9,
+      "RZ_address_requests": 22,
+      "RZ_instruction_groups": 8,
+      "RESET_site_requests": 2,
+      "NDSSR_site_requests": 2
+    },
+    "E12": {
+      "GR": 4,
+      "CZ": 2,
+      "RZ_address_requests": 38,
+      "RZ_instruction_groups": 6,
+      "RESET_site_requests": 1,
+      "NDSSR_site_requests": 1
+    },
+    "E13": {
+      "GR": 4,
+      "CZ": 2,
+      "RZ_address_requests": 38,
+      "RZ_instruction_groups": 6,
+      "RESET_site_requests": 1,
+      "NDSSR_site_requests": 1
+    },
+    "E18": {
+      "GR": 4,
+      "CZ": 2,
+      "RZ_address_requests": 38,
+      "RZ_instruction_groups": 6,
+      "RESET_site_requests": 1,
+      "NDSSR_site_requests": 1
+    },
+    "E23": {
+      "GR": 4,
+      "CZ": 2,
+      "RZ_address_requests": 38,
+      "RZ_instruction_groups": 6,
+      "RESET_site_requests": 1,
+      "NDSSR_site_requests": 1
+    },
+    "E28": {
+      "GR": 4,
+      "CZ": 2,
+      "RZ_address_requests": 38,
+      "RZ_instruction_groups": 6,
+      "RESET_site_requests": 1,
+      "NDSSR_site_requests": 1
+    },
+    "E38": {
+      "GR": 4,
+      "CZ": 2,
+      "RZ_address_requests": 38,
+      "RZ_instruction_groups": 6,
+      "RESET_site_requests": 1,
+      "NDSSR_site_requests": 1
+    }
+  },
+  "round_totals": {
+    "GR": 40,
+    "CZ": 39,
+    "RZ_address_requests": 346,
+    "RZ_instruction_groups": 66,
+    "RESET_site_requests": 14,
+    "NDSSR_site_requests": 14
+  },
+  "routing_requirements": {
+    "CZ_requests": 39,
+    "interaction_graph": "star-like syndrome-to-data/flag requests preserving the frozen check order",    "status": "OPEN_PHYSICAL_ROUTE",
+    "reason": "Public Sqale sources establish dynamic all-to-all connectivity/atom motion but do not provide a source-bound move sequence, concurrency contract, or timing for this MQM job."
+  },
+  "physical_promotion": 0
+}
