@@ -1,0 +1,165 @@
+{
+  "version": "0.1",
+  "status": "EXACT_CONSTRUCTOR_REPLAY",
+  "protocol_commit": "d47138705508094f05d629e2a6f2622d02b1e569",
+  "metric_freeze_commit": "841bfe81a322df075997561def441c05b36bcfae",
+  "replay_commit": "92b824293d0f7309f7e35f775f90637b8c0c05b8",
+  "physical_promotion": 0,
+  "fault_model": {
+    "clean_input_single_fault": true,
+    "faults_per_round": 1141,
+    "factorization": "1141 = 7*163",
+    "repeated_total_single_fault_cases": 4564,
+    "repeated_factorization": "4564 = 2^2*7*163",
+    "classes": {
+      "two_qubit_pauli": 585,
+      "data_idle_pauli": 264,
+      "basis_rotation_pauli": 114,
+      "detected_data_loss": 88,
+      "syndrome_reset_or_prep_pauli": 30,
+      "ancilla_loss": 14,
+      "flag_reset_or_prep_pauli": 12,
+      "stale_receipt": 10,
+      "missing_receipt": 10,
+      "edge_measurement_bit_flip": 6,
+      "center_syndrome_measurement_bit_flip": 4,
+      "center_flag_measurement_bit_flip": 4
+    },
+    "loss_detection": "ideal indication in this exact state-machine replay"
+  },
+  "one_round_baseline": {
+    "outcomes": {
+      "ACCEPT": 727,
+      "HOLD": 174,
+      "QUARANTINE": 88,
+      "FAIL": 152
+    },
+    "fail_factorization": "152 = 2^3*19",
+    "accepted_dressed_weight": {
+      "0": 275,
+      "1": 452
+    },
+    "failures_by_fault_kind": {
+      "two_qubit_pauli": 87,
+      "basis_rotation_pauli": 44,
+      "data_idle_pauli": 21
+    },
+    "failures_by_location_family": {
+      "center_check_1": 23,
+      "center_check_2": 44,
+      "center_check_3": 40,
+      "center_check_4": 24,
+      "idle_boundary_1": 6,
+      "idle_boundary_2": 9,
+      "idle_boundary_3": 6
+    },
+    "interpretation": "The prior hook-only certificate is insufficient as a one-round noisy recovery controller: a single fault can jointly alter data and the sequential syndrome record, causing an incorrect Pauli-frame recovery and protected-logical failure."
+  },
+  "repeated_3_acquisition_plus_1_verification": {
+    "outcomes": {
+      "ACCEPT": 1969,
+      "HOLD": 2243,
+      "QUARANTINE": 352,
+      "FAIL": 0
+    },
+    "accepted_dressed_weight": {
+      "0": 1608,
+      "1": 361
+    },
+    "by_fault_round": {
+      "acquisition_round_1": {"ACCEPT": 879, "HOLD": 174, "QUARANTINE": 88, "FAIL": 0},
+      "acquisition_round_2": {"ACCEPT": 347, "HOLD": 706, "QUARANTINE": 88, "FAIL": 0},
+      "acquisition_round_3": {"ACCEPT": 220, "HOLD": 833, "QUARANTINE": 88, "FAIL": 0},
+      "verification_round": {"ACCEPT": 523, "HOLD": 530, "QUARANTINE": 88, "FAIL": 0}
+    },
+    "accepted_dressed_weight_by_fault_round": {
+      "acquisition_round_1": {"0": 879, "1": 0},
+      "acquisition_round_2": {"0": 347, "1": 0},
+      "acquisition_round_3": {"0": 220, "1": 0},
+      "verification_round": {"0": 162, "1": 361}
+    },
+    "by_fault_kind": {
+      "syndrome_reset_or_prep": {"ACCEPT": 112, "HOLD": 8},
+      "flag_reset_or_prep": {"ACCEPT": 16, "HOLD": 32},
+      "center_syndrome_measurement_flip": {"ACCEPT": 12, "HOLD": 4},
+      "center_flag_measurement_flip": {"ACCEPT": 0, "HOLD": 16},
+      "basis_rotation_pauli": {"ACCEPT": 193, "HOLD": 263},
+      "two_qubit_pauli": {"ACCEPT": 1041, "HOLD": 1299},
+      "ancilla_loss": {"ACCEPT": 0, "HOLD": 56},
+      "edge_measurement_flip": {"ACCEPT": 24, "HOLD": 0},
+      "data_idle_pauli": {"ACCEPT": 571, "HOLD": 485},
+      "detected_data_loss": {"QUARANTINE": 352},
+      "stale_receipt": {"HOLD": 40},
+      "missing_receipt": {"HOLD": 40}
+    },
+    "acceptance_gate": "PASS EXACT: every one of 4564 declared single-fault cases ends ACCEPT with protected logical I and dressed residual <=1, HOLD, or QUARANTINE; zero accepted protected-logical failures."
+  },
+  "standard_input_error_condition": {
+    "inputs": 24,
+    "description": "all X/Y/Z single-qubit errors on each of 8 data qubits, no circuit fault",
+    "PASS": 24,
+    "FAIL": 0,
+    "accepted_residual_dressed_weight": 0,
+    "accepted_final_center_syndrome": "0000"
+  },
+  "noisy_decoder_phenomenological": {
+    "scope": "one incoming single-qubit Pauli error, static data error, independent per-center-bit readout flip probability q",
+    "one_round_case_counts_by_bit_flip_weight": {
+      "0": {"cases": 24, "logical_failures": 0},
+      "1": {"cases": 96, "logical_failures": 60},
+      "2": {"cases": 144, "logical_failures": 102},
+      "3": {"cases": 96, "logical_failures": 72},
+      "4": {"cases": 24, "logical_failures": 18}
+    },
+    "one_round_failure_polynomial": "F1(q) = (5/2)q - (13/4)q^2 + 2q^3 - (1/2)q^4",
+    "three_round_majority_effective_bit_error": "r(q) = 3q^2 - 2q^3",
+    "three_round_failure_polynomial": "F3(q) = F1(r(q))",
+    "three_round_failure_polynomial_expanded": "F3(q) = (15/2)q^2 - 5q^3 - (117/4)q^4 + 39q^5 + 41q^6 - 108q^7 + (63/2)q^8 + 92q^9 - 108q^10 + 48q^11 - 8q^12",
+    "three_round_direct_12bit_enumeration": {
+      "total_cases": 98304,
+      "factorization": "98304 = 2^15*3",
+      "logical_failures_by_total_raw_bit_flips": {
+        "0": 0,
+        "1": 0,
+        "2": 180,
+        "3": 1680,
+        "4": 6318,
+        "5": 12600,
+        "6": 15600,
+        "7": 13896,
+        "8": 8856,
+        "9": 3960,
+        "10": 1188,
+        "11": 216,
+        "12": 18
+      }
+    },
+    "exact_dominance": {
+      "range": "0 < q < 1/2",
+      "claim": "F3(q) < F1(q)",
+      "proof": "q-r(q)=q(1-q)(1-2q)>0 and F1'(q)=(1-q)(4(q-1)^2+1)/2>0, so F1(r(q))<F1(q)."
+    },
+    "leading_order": {
+      "one_round": "F1(q) = (5/2)q + O(q^2)",
+      "three_round_majority": "F3(q) = (15/2)q^2 + O(q^3)",
+      "interpretation": "Under this frozen phenomenological readout model, repeated majority removes the first-order readout-induced protected-logical failure term."
+    }
+  },
+  "resource_cost": {
+    "one_round_two_qubit_gates": 39,
+    "repeated_worst_case_two_qubit_gates": 156,
+    "factorization_repeated": "156 = 2^2*3*13",
+    "one_round_measurements": 14,
+    "repeated_worst_case_measurements": 56,
+    "peak_extra_ancillas": 2
+  },
+  "claim_status": {
+    "repeated_single_fault_state_machine": "AUTO_LOCK scoped EXACT 1-EC/FTEC certificate in frozen Pauli + ideal-loss-indication model",
+    "noisy_decoder_readout_suppression": "AUTO_LOCK scoped EXACT phenomenological result",
+    "hardware_validation": "OPEN",
+    "threshold": "OPEN",
+    "multi_fault_circuit_level_logical_rate": "OPEN",
+    "missed_loss_model": "OPEN",
+    "comparative_quantum_advantage": "OPEN"
+  }
+}
