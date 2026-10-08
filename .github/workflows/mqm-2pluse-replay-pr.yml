@@ -1,0 +1,39 @@
+name: MQM 2+E exact replay PR
+
+on:
+  pull_request:
+    paths:
+      - 'research/benchmarks/2026-10-08T2120Z_mqm_2plusE_exact_v02.cpp'
+      - 'research/protocols/2026-10-08T2110Z_MQM_2PLUS_EDGE_RECEIPT_RESOLVER_v0.2_FREEZE.json'
+      - 'review_handoff/MQM_2PLUSE_REPLAY_v0.2/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: |
+          cd research/benchmarks
+          g++ -O3 -std=c++17 2026-10-08T2120Z_mqm_2plusE_exact_v02.cpp -o mqm_2pluse
+      - name: Run exact degree-two replay
+        run: |
+          cd research/benchmarks
+          ./mqm_2pluse > MQM_2PLUSE_EXACT_RESULTS_v0.2.json
+          cat MQM_2PLUSE_EXACT_RESULTS_v0.2.json
+      - name: Hash
+        run: |
+          cd research/benchmarks
+          sha256sum 2026-10-08T2120Z_mqm_2plusE_exact_v02.cpp MQM_2PLUSE_EXACT_RESULTS_v0.2.json > MQM_2PLUSE_SHA256.txt
+          cat MQM_2PLUSE_SHA256.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MQM-2plusE-exact-v0.2
+          path: |
+            research/benchmarks/MQM_2PLUSE_EXACT_RESULTS_v0.2.json
+            research/benchmarks/MQM_2PLUSE_SHA256.txt
