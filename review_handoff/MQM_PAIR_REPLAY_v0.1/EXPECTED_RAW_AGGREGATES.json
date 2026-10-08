@@ -1,0 +1,250 @@
+{
+  "version": "0.1",
+  "status": "FROZEN_EXPECTED_RAW_AGGREGATES",
+  "source_artifact": "research/benchmarks/2026-10-08T1741Z_MQM_SYMBOLIC_MALIGNANT_PAIR_RESULTS_v0.1.json",
+  "protocols": {
+    "1+0": {
+      "locations": {
+        "p": 179,
+        "q": 14,
+        "l": 102
+      },
+      "raw_aggregates": {
+        "Y": {
+          "f0": 1,
+          "sp_num15": 2517,
+          "sq": 10,
+          "sl": 0,
+          "pp_num225": 3152131,
+          "pq_num15": 25338,
+          "pl_num15": 0,
+          "qq": 45,
+          "ql": 0,
+          "ll": 0
+        },
+        "HOLD": {
+          "f0": 0,
+          "sp_num15": 168,
+          "sq": 4,
+          "sl": 14,
+          "pp_num225": 432344,
+          "pq_num15": 12252,
+          "pl_num15": 37590,
+          "qq": 46,
+          "ql": 196,
+          "ll": 91
+        },
+        "QUARANTINE": {
+          "f0": 0,
+          "sp_num15": 0,
+          "sq": 0,
+          "sl": 88,
+          "pp_num225": 0,
+          "pq_num15": 0,
+          "pl_num15": 236280,
+          "qq": 0,
+          "ql": 1232,
+          "ll": 5060
+        },
+        "L_AND_ACCEPT": {
+          "f0": 0,
+          "sp_num15": 412,
+          "sq": 0,
+          "sl": 0,
+          "pp_num225": 1413811,
+          "pq_num15": 7986,
+          "pl_num15": 0,
+          "qq": 0,
+          "ql": 0,
+          "ll": 0
+        },
+        "ACCEPT_DW1": {
+          "f0": 0,
+          "sp_num15": 1300,
+          "sq": 4,
+          "sl": 0,
+          "pp_num225": 1343417,
+          "pq_num15": 11486,
+          "pl_num15": 0,
+          "qq": 30,
+          "ql": 0,
+          "ll": 0
+        },
+        "Y_CLEAN": {
+          "f0": 1,
+          "sp_num15": 805,
+          "sq": 6,
+          "sl": 0,
+          "pp_num225": 394903,
+          "pq_num15": 5866,
+          "pl_num15": 0,
+          "qq": 15,
+          "ql": 0,
+          "ll": 0
+        }
+      }
+    },
+    "2+1": {
+      "locations": {
+        "p": 537,
+        "q": 42,
+        "l": 306
+      },
+      "raw_aggregates": {
+        "Y": {
+          "f0": 1,
+          "sp_num15": 2798,
+          "sq": 18,
+          "sl": 0,
+          "pp_num225": 4572428,
+          "pq_num15": 53100,
+          "pl_num15": 0,
+          "qq": 153,
+          "ql": 0,
+          "ll": 0
+        },
+        "HOLD": {
+          "f0": 0,
+          "sp_num15": 5257,
+          "sq": 24,
+          "sl": 42,
+          "pp_num225": 27808672,
+          "pq_num15": 285210,
+          "pl_num15": 338310,
+          "qq": 708,
+          "ql": 1764,
+          "ll": 861
+        },
+        "QUARANTINE": {
+          "f0": 0,
+          "sp_num15": 0,
+          "sq": 0,
+          "sl": 264,
+          "pp_num225": 0,
+          "pq_num15": 0,
+          "pl_num15": 2126520,
+          "qq": 0,
+          "ql": 11088,
+          "ll": 45804
+        },
+        "L_AND_ACCEPT": {
+          "f0": 0,
+          "sp_num15": 0,
+          "sq": 0,
+          "sl": 0,
+          "pp_num225": 733381,
+          "pq_num15": 19,
+          "pl_num15": 0,
+          "qq": 0,
+          "ql": 0,
+          "ll": 0
+        },
+        "ACCEPT_DW1": {
+          "f0": 0,
+          "sp_num15": 1161,
+          "sq": 0,
+          "sl": 0,
+          "pp_num225": 2034407,
+          "pq_num15": 22059,
+          "pl_num15": 0,
+          "qq": 0,
+          "ql": 0,
+          "ll": 0
+        },
+        "Y_CLEAN": {
+          "f0": 1,
+          "sp_num15": 1637,
+          "sq": 18,
+          "sl": 0,
+          "pp_num225": 1804640,
+          "pq_num15": 31022,
+          "pl_num15": 0,
+          "qq": 153,
+          "ql": 0,
+          "ll": 0
+        }
+      }
+    },
+    "3+1": {
+      "locations": {
+        "p": 716,
+        "q": 56,
+        "l": 408
+      },
+      "raw_aggregates": {
+        "Y": {
+          "f0": 1,
+          "sp_num15": 5501,
+          "sq": 36,
+          "sl": 0,
+          "pp_num225": 17623787,
+          "pq_num15": 195988,
+          "pl_num15": 0,
+          "qq": 618,
+          "ql": 0,
+          "ll": 0
+        },
+        "HOLD": {
+          "f0": 0,
+          "sp_num15": 5239,
+          "sq": 20,
+          "sl": 56,
+          "pp_num225": 39969463,
+          "pq_num15": 405452,
+          "pl_num15": 601440,
+          "qq": 922,
+          "ql": 3136,
+          "ll": 1540
+        },
+        "QUARANTINE": {
+          "f0": 0,
+          "sp_num15": 0,
+          "sq": 0,
+          "sl": 352,
+          "pp_num225": 0,
+          "pq_num15": 0,
+          "pl_num15": 3780480,
+          "qq": 0,
+          "ql": 19712,
+          "ll": 81488
+        },
+        "L_AND_ACCEPT": {
+          "f0": 0,
+          "sp_num15": 0,
+          "sq": 0,
+          "sl": 0,
+          "pp_num225": 3734566,
+          "pq_num15": 296,
+          "pl_num15": 0,
+          "qq": 0,
+          "ql": 0,
+          "ll": 0
+        },
+        "ACCEPT_DW1": {
+          "f0": 0,
+          "sp_num15": 1161,
+          "sq": 0,
+          "sl": 0,
+          "pp_num225": 5214634,
+          "pq_num15": 43884,
+          "pl_num15": 0,
+          "qq": 0,
+          "ql": 0,
+          "ll": 0
+        },
+        "Y_CLEAN": {
+          "f0": 1,
+          "sp_num15": 4340,
+          "sq": 36,
+          "sl": 0,
+          "pp_num225": 8674587,
+          "pq_num15": 151808,
+          "pl_num15": 0,
+          "qq": 618,
+          "ql": 0,
+          "ll": 0
+        }
+      }
+    }
+  }
+}
