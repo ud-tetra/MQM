@@ -1,0 +1,91 @@
+{
+  "timestamp_utc": "2026-10-08T21:45:00Z",
+  "turn_type": "execute_options_1_2_3_typed_sqale_calibration_matrix_edge_receipt",
+  "source_head_at_start": "76bdfbaa68578b6d6fe460cf22e8a1a902ddfb83",
+  "physical_promotion": 0,
+  "option_1_typed_sqale_benchmark": {
+    "artifact": "research/hardware/2026-10-08T2100Z_MQM_SQALE_TYPED_CHANNEL_BENCHMARK_v0.1.json",
+    "commit": "f8c539d882c7ef88d8e5e166c84cb9b8961050bf",
+    "per_round_macro_counts": {
+      "CZ_requests": 39,
+      "local_H_macros": 54,
+      "direct_Rz_S_macros": 12,
+      "prep_reset_macros": 14,
+      "NDSSR_measurements": 14,
+      "data_idle_site_epochs": 88,
+      "ancilla_cycle_loss_epochs": 14
+    },
+    "typed_source_values": {
+      "prep_dark_leakage": 0.006,
+      "prep_bright_leakage": 0.046,
+      "CZ_phase_error_source_model": 0.0035,
+      "GR_absolute_overrotation_rad": 0.0345,
+      "Rz_angle_multiplier": 1.012,
+      "Rz_leakage_from_input_1": 0.00132,
+      "NDSSR_epsilon_1_to_0": 0.028,
+      "NDSSR_epsilon_0_to_1": 0.004,
+      "NDSSR_state_average_atom_loss": 0.01,
+      "PRX_two_atom_CZ_survival": 0.9962,
+      "PRX_CZ_fidelity_including_leakage": 0.9935,
+      "PRX_postselected_CZ_fidelity": 0.9973,
+      "PRX_nondestructive_readout_loss": "0.009 +/- 0.003"
+    },
+    "hardware_ranking_status": "BLOCKED pending compiler-expanded GR/Rz counts, reset, idle, motion, same-operating-point loss and missed-loss detection"
+  },
+  "option_2_missing_calibration_matrix": {
+    "csv_artifact": "research/hardware/MQM_SQALE_MISSING_CALIBRATION_MATRIX_v0.1.csv",
+    "csv_commit": "9d0b62986c398291c358083c8d6f7118a24548ec",
+    "request_artifact": "research/hardware/2026-10-08T2102Z_MQM_SQALE_MISSING_CALIBRATION_REQUEST_v0.1.md",
+    "request_commit": "0631603229cedc11b1812867b6231e3995eb419f",
+    "field_count": 16,
+    "priority_gaps": [
+      "compiler native schedule/timing",
+      "mid-circuit reset",
+      "missed-loss detection",
+      "same-operating-point CZ retained-error and loss channel",
+      "idle/storage channel",
+      "motion transport channel",
+      "asymmetric NDSSR",
+      "parallel/correlated gate error"
+    ]
+  },
+  "option_3_edge_receipt_candidate": {
+    "name": "2+E v0.2",
+    "postexposure": true,
+    "freeze_commit": "7f8c6512debf235f82940192271e0bfc30634fca",
+    "replay_commit": "7e5ac349c7b2db11233f53c809008f7f539b7122",
+    "workflow_run_id": 37833646689,
+    "workflow_job_id": 113505087494,
+    "workflow_artifact_id": 11573609556,
+    "workflow_artifact_zip_sha256": "4e13bb874b3b1c68d715a257b6bd93a60bc8b6a0bdc682eed9b35aa71f2c904a",
+    "result_commit": "3bb56b96ce0906acf737624307c5fdd5b1de438f",
+    "audit_commit": "d09b7ef7067dae946f28eed8a8d9890727e0fc0d",
+    "receipt_bits_per_round": 10,
+    "edge_cycle_rank_checks": 3,
+    "epsilon_degree2": "(559903/45)p^2 + (311/3)pq + O(3)",
+    "epsilon_minus_2plus0": "(410158/45)p^2 + (208/3)pq + O(3)",
+    "epsilon_minus_2plus1": "(2066134/225)p^2 + (512/5)pq + O(3)",
+    "epsilon_minus_2plusC_v01": "-(252538/225)p^2 + 0*pq + O(3)",
+    "yield_first_order": "1-(1136/15)p-8q-204 p_loss+O(2)",
+    "ruling": "AUTO_FREEZE NO_GO for intended adaptive quality target; retain exact K4 edge-history receipt as useful narrower result",
+    "higher_order_run": "NOT RUN per frozen stop rule"
+  },
+  "claim_boundaries": {
+    "typed_hardware_simulation": "PARTIAL/BLOCKED",
+    "hardware_schedule_ranking": "OPEN",
+    "independent_external_scientific_review": "OPEN",
+    "adaptive_temporal_repetition_strategy": "NO_GO through v0.2 for intended quality target",
+    "threshold": "OPEN",
+    "hardware_validation": "OPEN",
+    "quantum_advantage": "OPEN",
+    "physical_promotion": 0
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "frozen_parent_benchmark_modified": false,
+    "trigger_pr_number": 2,
+    "trigger_pr_merged": false
+  }
+}
