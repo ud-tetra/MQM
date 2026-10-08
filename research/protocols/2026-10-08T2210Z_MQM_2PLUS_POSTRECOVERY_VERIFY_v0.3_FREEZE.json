@@ -1,0 +1,63 @@
+{
+  "version": "0.3",
+  "status": "POSTEXPOSURE_EXPLORATORY_CANDIDATE_FROZEN_BEFORE_EVALUATION",
+  "timestamp_utc": "2026-10-08T22:10:00Z",
+  "physical_promotion": 0,
+  "parents": {
+    "2plus0": "post-exposure two-round equality candidate",
+    "2plus1": "fixed two-acquisition plus verification baseline",
+    "2plusC_v0_1": "AUTO_FREEZE temporal repeat no-go",
+    "2plusE_v0_2": "AUTO_FREEZE center+edge temporal repeat no-go"
+  },
+  "name": "2+PV",
+  "selection_after_exposure": true,
+  "confirmatory_status": false,
+  "purpose": "Spend a third round only to interrogate the post-recovery state after a nontrivial agreed recovery, rather than using another pre-recovery snapshot to choose the recovery.",
+  "state_machine": [
+    "Run mandatory acquisition rounds R1 and R2.",
+    "Any center flag or detected ancilla loss in R1/R2 -> HOLD; detected data loss -> QUARANTINE.",
+    "If complete center frames b1 and b2 disagree -> HOLD. No resolver snapshot is used.",
+    "If b1=b2=b, apply the frozen Pauli-frame recovery selected by b.",
+    "If b=0000, ACCEPT immediately; no verification round is executed.",
+    "If b!=0000, execute one conditional post-recovery verification round V.",
+    "Any center flag or detected ancilla loss in V -> HOLD; detected data loss -> QUARANTINE.",
+    "Accept only if V measures center syndrome 0000 relative to the updated Pauli frame.",
+    "A nonzero verification syndrome -> HOLD."
+  ],
+  "information_order": {
+    "pre_recovery_snapshots": 2,
+    "post_recovery_measurement": "conditional",
+    "strictly_stronger_than_temporal_repetition": "The optional round observes the state after the recovery map. Two pre-recovery histories that select the same recovery can be distinguished if their residual post-recovery syndromes differ.",
+    "does_not_claim_complete_state_tomography": true
+  },
+  "fault_semantics": {
+    "same_as_frozen_homogeneous_parent": true,
+    "mandatory_locations": {"p":358,"q":28,"p_loss":204},
+    "conditional_verification_locations": {"p":179,"q":14,"p_loss":102},
+    "conditional_exposure": "verification locations exist only on trajectories with complete unflagged loss-free b1=b2!=0000",
+    "classical_processing": "ideal"
+  },
+  "resources": {
+    "minimum_rounds": 2,
+    "maximum_rounds": 3,
+    "minimum_two_qubit_gates": 78,
+    "maximum_two_qubit_gates": 117,
+    "minimum_measurements": 28,
+    "maximum_measurements": 42,
+    "peak_extra_ancillas": 2
+  },
+  "evaluation_freeze": {
+    "single_event": "exact exhaustive mandatory-prefix events",
+    "two_event": "exact mandatory-mandatory pairs plus triggering-mandatory/conditional-verification pairs",
+    "co_primary_metrics": ["Y","epsilon_L_given_A"],
+    "secondary_metrics": ["Y_good","P_HOLD","P_QUARANTINE","R1_given_A","Y_clean","verification_activation_probability","expected_rounds"],
+    "success_target": "Reduce at least one of the 2+0 degree-two accepted-logical coefficients without increasing the other, while retaining first-order acceptance strictly above fixed 2+1 in at least one nonnegative fault direction.",
+    "no_go_target": "If both accepted-logical degree-two coefficients exceed or equal 2+0 with at least one strict increase, AUTO_FREEZE v0.3 for the intended adaptive-quality target."
+  },
+  "governance": {
+    "postexposure_candidate": true,
+    "changes_parent_benchmark": false,
+    "higher_order_run_only_if_degree2_target_survives": true,
+    "physical_promotion": 0
+  }
+}
