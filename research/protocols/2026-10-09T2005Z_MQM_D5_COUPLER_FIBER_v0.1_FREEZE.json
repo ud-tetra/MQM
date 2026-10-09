@@ -1,0 +1,23 @@
+{
+  "version":"0.1",
+  "status":"FROZEN_BEFORE_D5_COUPLER_FIBER_EVALUATION",
+  "physical_promotion":0,
+  "function":"redundant two-terminal parity/coupler ancilla fiber",
+  "family":{
+    "geometry":"D_m bipyramid around fixed terminals N,S",
+    "terminal_distance":2,
+    "adjacent_ancilla_slot_distance":2,
+    "ring_radius":"R_m=csc(pi/m)",
+    "terminal_to_slot_distance":"c_m=sqrt(1+csc(pi/m)^2)"
+  },
+  "candidate_m":[3,4,5,6,7,8],
+  "metrics":[
+    "terminal coupling asymmetry |d(N,v)-d(S,v)|",
+    "multiscale edge ratio kappa=max(2,c_m)/min(2,c_m)",
+    "number of symmetry-equivalent ancilla slots m",
+    "replacement spares after reserving four active channels: max(m-4,0)"
+  ],
+  "reference_reason_for_four_channels":"the frozen tri-tetra/firewall geometry has four hub-to-shell cut interfaces; no physical identification of those interfaces with the fiber is assumed in this benchmark",
+  "winner_rule":"report Pareto front over minimum kappa and maximum slot/spare count; separately report the unique integer m with minimum kappa",
+  "claim_rule":"geometric redundancy/uniformity only; no coupling-strength, crosstalk, loss, or hardware advantage without a source-bound interaction model"
+}
