@@ -1,0 +1,68 @@
+{
+  "version": "0.1",
+  "status": "FINITE_PULSE_SQALE_CROSS_PROFILE_STRESS",
+  "physical_promotion": 0,
+  "freeze_commit": "e6170f04746c2f7a25273f8b08168833ee5659cd",
+  "replay_source_commit": "f0f215b26b5c48bee7f784d839d727419c85583a",
+  "workflow_run_id": 37958043591,
+  "workflow_job_id": 113913469228,
+  "artifact_id": 11628299209,
+  "artifact_zip_sha256": "537f8c9cd75b97e5ea6935e3a83703256b27db55cc67b41191a08be8e8699ffb",
+  "source_profiles": {
+    "timing": "Radnaev et al. PRX Quantum 6 030334 (2025)",
+    "coherent_model": "Chung et al. npj Quantum Information 11 193 (2025)",
+    "combined_status": "CROSS_PROFILE_STRESS_ONLY"
+  },
+  "candidates": {
+    "I": {
+      "GR": 0,
+      "Rz": 0,
+      "CZ": 0,
+      "parallel_us": 0,
+      "serial_Rz_us": 0,
+      "unitary_infidelity": 0,
+      "combined_product_diagnostic": 1
+    },
+    "a": {
+      "GR": 24,
+      "Rz": 180,
+      "CZ": 6,
+      "parallel_us": 36.096,
+      "serial_Rz_us": 72.096,
+      "time_over_T2star": 0.0028422047244094474,
+      "unitary_infidelity": 0.1784774792753656,
+      "CZ_survival": 0.9774155056829528,
+      "Rz_leakage_envelope": 0.8879505528584699,
+      "GR_product": 0.9952110238249885,
+      "combined_product_diagnostic": 0.8637403023187821
+    },
+    "b": {
+      "GR": 168,
+      "Rz": 1260,
+      "CZ": 36,
+      "parallel_us": 250.926,
+      "serial_Rz_us": 500.676,
+      "time_over_T2star": 0.019757952755905556,
+      "unitary_infidelity": 0.9961045415059993,
+      "CZ_survival": 0.8719174034738303,
+      "Rz_leakage_envelope": 0.43523265629713387,
+      "GR_product": 0.9669549611680066,
+      "combined_product_diagnostic": 0.36694676732731446
+    },
+    "zb": {
+      "GR": 336,
+      "Rz": 2532,
+      "CZ": 72,
+      "parallel_us": 501.852,
+      "serial_Rz_us": 1005.852,
+      "time_over_T2star": 0.039515905511810764,
+      "unitary_infidelity": 0.9891147647225352,
+      "CZ_survival": 0.760239958480546,
+      "Rz_leakage_envelope": 0.18793263358431156,
+      "GR_product": 0.9350018969274213,
+      "combined_product_diagnostic": 0.13358736523372777
+    }
+  },
+  "ruling": "Canonical physical H/S/SWAP realizations of b and zb fail the finite-pulse cross-profile stress gate; a is materially less severe but still incurs large modeled coherent-control error. This is not a same-backend calibrated hardware no-go.",
+  "scope": "ideal CZ in coherent unitary stress; source diagnostics for survival/leakage; no reset/measurement; no claim of hardware prediction"
+}
