@@ -1,0 +1,13 @@
+{
+  "version": "0.1a",
+  "status": "PRE_RESULT_IMPLEMENTATION_REPAIR",
+  "parent": "research/architecture/2026-10-09T1430Z_mqm_local_clifford_automorphism_v01.cpp",
+  "failed_run_id": 37943554141,
+  "repairs": [
+    "Rename helper apply to applyT to avoid collision with std::apply under using namespace std.",
+    "Use make_pair for logical-action map key construction."
+  ],
+  "mathematical_search_changed": false,
+  "invalid_result_promoted": false,
+  "physical_promotion": 0
+}
