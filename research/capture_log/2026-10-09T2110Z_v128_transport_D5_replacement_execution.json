@@ -1,0 +1,75 @@
+{
+  "timestamp_utc": "2026-10-09T21:10:00Z",
+  "turn_type": "execute_1_2_3_v128_transport_D5_replacement",
+  "source_head_at_start": "97a7383bab8a05cb7cec7122f553a32d275e7c4c",
+  "physical_promotion": 0,
+  "option_1_v128": {
+    "freeze_commit": "3c2edaaf5c22b0474303442b7809afaee577c5b3",
+    "replay_source_commit": "4c55b9b1cf33af644cf8ddf3766929446017a22b",
+    "workflow_run_id": 37959984976,
+    "workflow_job_id": 113920067982,
+    "artifact_id": 11630777983,
+    "artifact_zip_sha256": "7c10d5478fa032d6190abfb13e5d5aed6097037094dac855101093b4d0feedb5",
+    "result_commit": "f5ca20bd2e347397b80e8d694d0af2b9ec6bc40c",
+    "v128_transform": "(4 6)(5 7) plus local words HS,HS,SH,SH on qubits 4-7",
+    "gate_SWAP_infidelity_stress": 0.9379198697267211,
+    "transport_infidelity_stress": 0.034901179833948026,
+    "transport_parallel_control_us": 12.2,
+    "b_transport_infidelity_stress": 0.15775437062498043,
+    "ruling": "v128 strongly improves local-control stress relative to b if permutation is implemented by ideal transport; MOVE channel remains OPEN"
+  },
+  "option_2_global_transport": {
+    "replay_source_commit": "32721a61d537a760d2fea9456c2c8390be33111d",
+    "workflow_run_id": 37960095093,
+    "workflow_job_id": 113920441865,
+    "artifact_id": 11630233487,
+    "artifact_zip_sha256": "30bd386975aa110ca1f57760b04d41d3317d573cd409d0f38d497d15d92122df",
+    "result_commit": "a7bedf6143b4e0a2aaa7e5a761cd67599fd5e11e",
+    "candidate_count": 12,
+    "all_candidates": "pure permutation transport-only",
+    "nontrivial_uniform_global_local_clifford_candidates": 0,
+    "best_ids": [
+      632,
+      824
+    ],
+    "best_zeroth_w2": "1/3",
+    "best_moved_role_exposure": 42,
+    "ruling": "spectator-free identity-motion frontier is physical transport, with the D6 order-6 pair giving strongest zeroth-order averaging among the 12"
+  },
+  "option_3_D5_replacement": {
+    "freeze_commit": "8ef3c60ff58131ee861360b693891afef0366a04",
+    "replay_source_commit": "2dc995d0564f84c77b7b97e080893e93d19f841d",
+    "workflow_run_id": 37960309234,
+    "workflow_job_id": 113921171607,
+    "artifact_id": 11630343165,
+    "artifact_zip_sha256": "21ad557400ef2489d9dc9da602004717f41e792f12d5c7fb7495aa0f71ae578f",
+    "result_commit": "f7e385ef55e664323ff9eb65e70c40c299ec8334",
+    "mapping": "four hub-cut channel ancillas plus one D5 spare",
+    "mean_replacement_distance": "(3+sqrt(5))/2",
+    "max_replacement_distance": "1+sqrt(5)",
+    "symbolic_four_active": "(1-ell_A)^4 + 4 ell_A (1-ell_A)^3 (1-ell_S)(1-m)(1-mu)(1-rho)(1-nu)",
+    "symbolic_unsafe": "1-(1-ell_A m)^4",
+    "NDSSR_only_stress_four_active": 0.9990198504,
+    "NDSSR_only_no_spare": 0.96059601,
+    "ruling": "exact one-detected-channel-loss replacement layer; MOVE/reset/detector channels remain source-open"
+  },
+  "integrated_audit_commit": "32d7ab6411400b1a9b97a796c13ced4663d4ed6f",
+  "claim_boundaries": {
+    "cross_profile_hardware_prediction": "NO",
+    "transport_hardware_advantage": "OPEN",
+    "D5_replacement_hardware_advantage": "OPEN",
+    "threshold": "OPEN",
+    "quantum_advantage": "OPEN",
+    "physical_promotion": 0
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "trigger_prs_closed_unmerged": [
+      22,
+      23,
+      24
+    ]
+  }
+}
