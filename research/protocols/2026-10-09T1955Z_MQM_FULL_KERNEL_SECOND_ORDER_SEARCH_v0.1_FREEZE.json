@@ -1,0 +1,25 @@
+{
+  "version":"0.1",
+  "status":"FROZEN_BEFORE_FULL_KERNEL_SECOND_ORDER_SEARCH",
+  "physical_promotion":0,
+  "search_space":"all 192 elements of the protected-logical identity kernel K192",
+  "canonical_signed_lift":"same minimum H/S local Clifford representatives and minimum-SWAP physical-qubit permutation compile used by the frozen motion benchmarks",
+  "word_metric":{
+    "alphabet":"z,a,b,B,u,v",
+    "z":"nonidentity central C2",
+    "a,b,B":"kernel-S4 order-2, order-3, inverse-order-3 generators",
+    "u,v":"deterministically selected independent generators of the V4 intersection from the second S4 factor",
+    "selection":"sort exact element IDs; u is first nonidentity; v is first element making <u,v> size 4"
+  },
+  "metrics_to_minimize":[
+    "zeroth-order weight-2 coherent residual mean norm squared",
+    "second-order equal-two-term 276-basis Magnus mean norm squared",
+    "corrected signed-cycle physical primitive exposure",
+    "direct step primitive cost",
+    "shortest kernel word length"
+  ],
+  "reference_b":"the previously frozen b motion",
+  "b_dominance_rule":"an element dominates b iff it is no worse in every listed metric and strictly better in at least one",
+  "pareto_rule":"exact Pareto dominance only; no scalarization",
+  "scope":"ideal instantaneous equal-dwell controls through first Magnus correction; no hardware promotion"
+}
