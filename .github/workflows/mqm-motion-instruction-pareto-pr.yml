@@ -1,0 +1,31 @@
+name: MQM motion instruction Pareto replay
+
+on:
+  pull_request:
+    paths:
+      - 'research/architecture/2026-10-09T1925Z_mqm_motion_instruction_pareto_v01.py'
+      - 'review_handoff/MQM_MOTION_PARETO_v0.1/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Pareto search
+        run: |
+          python3 research/architecture/2026-10-09T1925Z_mqm_motion_instruction_pareto_v01.py > MQM_MOTION_INSTRUCTION_PARETO_RESULTS_v0.1.json
+          cat MQM_MOTION_INSTRUCTION_PARETO_RESULTS_v0.1.json
+      - name: Hash
+        run: |
+          sha256sum research/architecture/2026-10-09T1925Z_mqm_motion_instruction_pareto_v01.py MQM_MOTION_INSTRUCTION_PARETO_RESULTS_v0.1.json > MQM_MOTION_INSTRUCTION_PARETO_SHA256_v0.1.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MQM-motion-instruction-pareto-v0.1
+          path: |
+            MQM_MOTION_INSTRUCTION_PARETO_RESULTS_v0.1.json
+            MQM_MOTION_INSTRUCTION_PARETO_SHA256_v0.1.txt
