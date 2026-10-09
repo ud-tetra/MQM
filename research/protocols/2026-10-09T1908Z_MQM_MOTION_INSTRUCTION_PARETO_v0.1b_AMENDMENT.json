@@ -1,0 +1,18 @@
+{
+  "version":"0.1b",
+  "status":"PRE_EVALUATION_SCOPE_REPAIR",
+  "parent":"research/protocols/2026-10-09T1906Z_MQM_MOTION_INSTRUCTION_PARETO_v0.1a_AMENDMENT.json",
+  "result_exposed":false,
+  "reason":"The exact second-order two-term Magnus metric is currently available only for the frozen logical-identity candidate library I,a,b,ab,zb. Extending that expensive metric to all 1152 group elements is a separate workload and nonidentity logical steps are not semantically matched to an idle-memory coherent-noise benchmark.",
+  "phase_A_search":{
+    "identity_candidates":["I","a","b","ab","zb"],
+    "logical_transposition_candidates":["c","dcd","bc","bdcd"],
+    "logical_3cycle_candidates":["d","ad","abd"],
+    "carriers":["A4","D6","S4"],
+    "D5":"excluded as a frame-instruction carrier because the current MQM transition group has no D5/order-5 lift; retained as local metric fiber"
+  },
+  "identity_metrics":["zeroth coherent residual","second-order two-term Magnus mean norm squared","corrected signed-cycle primitive exposure","word length","carrier literal cells","carrier interfaces","receipt distance"],
+  "nonidentity_metrics":["one-shot primitive cost","word length","hidden-frame multiplicity","carrier literal cells","carrier interfaces","receipt distance"],
+  "full_1152_second_order_search":"OPEN follow-on; no claim of global optimality beyond the frozen Phase A library",
+  "physical_promotion":0
+}
