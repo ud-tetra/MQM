@@ -1,0 +1,727 @@
+{
+  "version": "0.1",
+  "generated_utc": "2026-10-09T23:45:00Z",
+  "repository": "ud-tetra/MQM",
+  "status": "SESSION_CAPTURE_COMPLETE",
+  "physical_promotion": 0,
+  "source_head_before_manifest": "175913ab6113dd775ff617376c7efe40d2b6a2d7",
+  "source_head_message": "Log executable selector online execution",
+  "captured_file_count": 132,
+  "grouped_counts": {
+    ".github/workflows": 16,
+    "research/amendments": 1,
+    "research/architecture": 68,
+    "research/capture_log": 11,
+    "research/hardware": 9,
+    "research/protocols": 27
+  },
+  "files": [
+    {
+      "path": ".github/workflows/mqm-adaptive-receipt-controller-pr.yml",
+      "blob_sha": "bf195809adab08453f98921a9d26a15cb5254eb6",
+      "size": 2234
+    },
+    {
+      "path": ".github/workflows/mqm-d5-cut-replacement-pr.yml",
+      "blob_sha": "f814dc3c25fa97790ec4e47d5dbd0da2f1915387",
+      "size": 1044
+    },
+    {
+      "path": ".github/workflows/mqm-Dm-coupler-fiber-pr.yml",
+      "blob_sha": "a6116024f8fd00f6cca865923e38e274d160f171",
+      "size": 988
+    },
+    {
+      "path": ".github/workflows/mqm-executable-selector-online-pr.yml",
+      "blob_sha": "6a5f4b57a58de560b94f5065785e0c9ebe7371c9",
+      "size": 2193
+    },
+    {
+      "path": ".github/workflows/mqm-full-kernel-second-order-pr.yml",
+      "blob_sha": "309acaf8618ce6b635715854bff64c5d139950f9",
+      "size": 1088
+    },
+    {
+      "path": ".github/workflows/mqm-global-transport-search-pr.yml",
+      "blob_sha": "af0f8fc7a2e440a2e96d12eac9e45e04a5d6e3f7",
+      "size": 1175
+    },
+    {
+      "path": ".github/workflows/mqm-identity-motion-dynamics-pr.yml",
+      "blob_sha": "bc6fbbc78eb6e7a6f907cea9b448cfe3f14ab655",
+      "size": 1203
+    },
+    {
+      "path": ".github/workflows/mqm-motion-instruction-pareto-pr.yml",
+      "blob_sha": "b999052c77708fb4c3d312b455779d03de2f82e3",
+      "size": 1098
+    },
+    {
+      "path": ".github/workflows/mqm-move-2pv-rotating-pr-v01a.yml",
+      "blob_sha": "e7bcea1e5bb55e682f67e1eeaefda70da422e949",
+      "size": 2060
+    },
+    {
+      "path": ".github/workflows/mqm-move-2pv-rotating-spare-pr.yml",
+      "blob_sha": "45b24a3b7fe06b3a00633a445cce8fca0789950b",
+      "size": 2035
+    },
+    {
+      "path": ".github/workflows/mqm-move-calibration-hetero-receipt-pr.yml",
+      "blob_sha": "0d7bd3509b36066d0f1c8a9401671c5728de334d",
+      "size": 2189
+    },
+    {
+      "path": ".github/workflows/mqm-second-order-d5-pr.yml",
+      "blob_sha": "3ad3021a54ddb0b8371e6259e5b332b28a9aae13",
+      "size": 1688
+    },
+    {
+      "path": ".github/workflows/mqm-shape-function-next-pr.yml",
+      "blob_sha": "bde0c222d01d6f494180b9bd188666e6925be8df",
+      "size": 2278
+    },
+    {
+      "path": ".github/workflows/mqm-shape-motion-semantics-pr.yml",
+      "blob_sha": "418c04111fc080863cf2517ffc51da8f19d8d693",
+      "size": 1085
+    },
+    {
+      "path": ".github/workflows/mqm-sqale-finite-pulse-pr.yml",
+      "blob_sha": "e748ce0165f3265053da2dc9dca83bd314f137e6",
+      "size": 1089
+    },
+    {
+      "path": ".github/workflows/mqm-v128-native-compile-pr.yml",
+      "blob_sha": "59a7c23cd19dc21a3265794115b487a243ce4524",
+      "size": 1042
+    },
+    {
+      "path": "research/amendments/2026-10-09T1922Z_MQM_IDENTITY_MOTION_EXPOSURE_AMENDMENT_v0.1.md",
+      "blob_sha": "7328fed6433010438b41dd737a4c975b0c16e008",
+      "size": 1341
+    },
+    {
+      "path": "research/architecture/2026-10-09T1600Z_MQM_A4_S4_METRIC_CARRIER_AUDIT_v0.1.md",
+      "blob_sha": "01ce7a317c146a86cab33117d9fae469e1ee0f77",
+      "size": 2001
+    },
+    {
+      "path": "research/architecture/2026-10-09T1625Z_MQM_A4_D6_2PLUSPV_CARRIER_INTEGRATION_v0.1.md",
+      "blob_sha": "5a6af6a79fc1ef6c75ea963fab981abf67483e33",
+      "size": 4858
+    },
+    {
+      "path": "research/architecture/2026-10-09T1630Z_MQM_MIXED_D5_A4_D6S3_ARCHITECTURE_v0.1.md",
+      "blob_sha": "f17853b560ae041882246aa616cba1daa336d0a5",
+      "size": 4317
+    },
+    {
+      "path": "research/architecture/2026-10-09T1645Z_mqm_shape_motion_semantics_v01.cpp",
+      "blob_sha": "59a67b16480f6725972981b485a1a863e449e2c0",
+      "size": 2954
+    },
+    {
+      "path": "research/architecture/2026-10-09T1655Z_MQM_SHAPE_FUNCTION_MOTION_GRAMMAR_v0.1.md",
+      "blob_sha": "c6251fd5c1856780e24ea6bdec58edc56fc73244",
+      "size": 7721
+    },
+    {
+      "path": "research/architecture/2026-10-09T1658Z_MQM_SHAPE_MOTION_RESULTS_v0.1.json",
+      "blob_sha": "811258a3083a0ec2e2f8d8914c88ec904da38bb1",
+      "size": 1056
+    },
+    {
+      "path": "research/architecture/2026-10-09T1700Z_MQM_SPATIOTEMPORAL_COHERENCE_THEOREM_v0.1.md",
+      "blob_sha": "50cfa7d1e384b41c6cd317bf510d0da39d431df4",
+      "size": 4236
+    },
+    {
+      "path": "research/architecture/2026-10-09T1712Z_mqm_shape_function_benchmark_v01.py",
+      "blob_sha": "1b6adf8a2bcf6a7d82ed03bd3f88c450102c302f",
+      "size": 3033
+    },
+    {
+      "path": "research/architecture/2026-10-09T1720Z_mqm_2PV_spacetime_holonomy_v01.cpp",
+      "blob_sha": "02738885f145dde78396ebcae2343cde1087c708",
+      "size": 5827
+    },
+    {
+      "path": "research/architecture/2026-10-09T1722Z_mqm_2PV_spacetime_holonomy_v01a.cpp",
+      "blob_sha": "486419823029709af8c2912f8d72cbc03aba1506",
+      "size": 5669
+    },
+    {
+      "path": "research/architecture/2026-10-09T1722Z_MQM_2PV_SPACETIME_REPAIR_LOG_v0.1a.json",
+      "blob_sha": "71d9bda75d966e79d802b45c11b7b14e0b696037",
+      "size": 269
+    },
+    {
+      "path": "research/architecture/2026-10-09T1725Z_mqm_short_motion_words_v01.cpp",
+      "blob_sha": "827db16ba0a100620a7d5f29a8110130e287ec99",
+      "size": 5719
+    },
+    {
+      "path": "research/architecture/2026-10-09T1740Z_MQM_SHAPE_FUNCTION_BENCHMARK_RESULTS_v0.1.json",
+      "blob_sha": "3fd7e15a355f2a69868d566b4d9608b66a41e878",
+      "size": 1928
+    },
+    {
+      "path": "research/architecture/2026-10-09T1741Z_MQM_2PV_SPACETIME_HOLONOMY_RESULTS_v0.1.json",
+      "blob_sha": "921d666807b80ed9a06455e9c1f210a7c87eff3d",
+      "size": 861
+    },
+    {
+      "path": "research/architecture/2026-10-09T1742Z_MQM_SHORT_MOTION_WORD_RESULTS_v0.1.json",
+      "blob_sha": "1bb55826da0adf2547d2e39caf78136d6fb9b125",
+      "size": 1549
+    },
+    {
+      "path": "research/architecture/2026-10-09T1745Z_MQM_SHAPE_FUNCTION_SPACETIME_AUDIT_v0.1.md",
+      "blob_sha": "7aba24f3211789dcc2544577705853628630fcf8",
+      "size": 4460
+    },
+    {
+      "path": "research/architecture/2026-10-09T1820Z_mqm_identity_motion_dynamics_v01.cpp",
+      "blob_sha": "3d2c114231def3f45aeb5c3e9b3ca67721fa0dc8",
+      "size": 8576
+    },
+    {
+      "path": "research/architecture/2026-10-09T1830Z_MQM_IDENTITY_MOTION_DYNAMICS_RESULTS_v0.1.json",
+      "blob_sha": "7baafc5895fc5f9a12ecd955dff2c03ee6f69eb9",
+      "size": 3422
+    },
+    {
+      "path": "research/architecture/2026-10-09T1835Z_MQM_FUNCTION_SPECIALIZED_COMPOSITE_v0.1.md",
+      "blob_sha": "c01564386d5a035ba13da41d84b6c19537439109",
+      "size": 5173
+    },
+    {
+      "path": "research/architecture/2026-10-09T1840Z_MQM_FINITE_FRAME_MOTION_ALGEBRA_v0.1.md",
+      "blob_sha": "1039c606b3a52c9bb9cf6bad6beb03043c0f0cb1",
+      "size": 5076
+    },
+    {
+      "path": "research/architecture/2026-10-09T1845Z_MQM_IDENTITY_MOTION_DYNAMICS_AUDIT_v0.1.md",
+      "blob_sha": "51c57b1c6e1cbd61e85acf9d6a9b34bba3b708d1",
+      "size": 5211
+    },
+    {
+      "path": "research/architecture/2026-10-09T1850Z_mqm_composite_receipt_overlay_v01.py",
+      "blob_sha": "6fe3a9daad60decca2fce998c194391d063245fb",
+      "size": 1548
+    },
+    {
+      "path": "research/architecture/2026-10-09T1851Z_MQM_COMPOSITE_RECEIPT_OVERLAY_RESULTS_v0.1.json",
+      "blob_sha": "f3bc23d7487bcb2e2287d547820a67bc9ea3e726",
+      "size": 1003
+    },
+    {
+      "path": "research/architecture/2026-10-09T1910Z_mqm_second_order_identity_motion_v01.cpp",
+      "blob_sha": "ad300da22c6213e4fcc09b91e6959276aaf538b3",
+      "size": 7758
+    },
+    {
+      "path": "research/architecture/2026-10-09T1915Z_mqm_D5_8Q_role_mapping_v01.py",
+      "blob_sha": "201fa3e7f1f21c2935c48d2e383aa904fe26799a",
+      "size": 2806
+    },
+    {
+      "path": "research/architecture/2026-10-09T1920Z_MQM_SECOND_ORDER_IDENTITY_MOTION_RESULTS_v0.1.json",
+      "blob_sha": "8433d916aadac99dfd4ce9b768e17b19893d9456",
+      "size": 1964
+    },
+    {
+      "path": "research/architecture/2026-10-09T1921Z_MQM_D5_8Q_ROLE_MAPPING_RESULTS_v0.1.json",
+      "blob_sha": "117bb864145a6ddfffd85cc2cdb0119d3b952866",
+      "size": 1104
+    },
+    {
+      "path": "research/architecture/2026-10-09T1925Z_mqm_motion_instruction_pareto_v01.py",
+      "blob_sha": "3534ce62140bf1fbd9850eeb86b3650d56866443",
+      "size": 4080
+    },
+    {
+      "path": "research/architecture/2026-10-09T1930Z_MQM_MOTION_INSTRUCTION_PARETO_RESULTS_v0.1.json",
+      "blob_sha": "6a15f0ae82cfd694aeaeb2d90324288130a252c6",
+      "size": 1310
+    },
+    {
+      "path": "research/architecture/2026-10-09T1935Z_MQM_SECOND_ORDER_D5_INSTRUCTION_AUDIT_v0.1.md",
+      "blob_sha": "43ae7fbb0e980a7b1ae054067407b7c0a6c6ec7f",
+      "size": 5865
+    },
+    {
+      "path": "research/architecture/2026-10-09T2000Z_mqm_full_kernel_second_order_v01.cpp",
+      "blob_sha": "40783b2c8a3fd4941ff3a2da8d12f5b644589f46",
+      "size": 8889
+    },
+    {
+      "path": "research/architecture/2026-10-09T2010Z_mqm_Dm_coupler_fiber_v01.py",
+      "blob_sha": "122368b76c18307383e0cfc304535889cee4d93e",
+      "size": 2238
+    },
+    {
+      "path": "research/architecture/2026-10-09T2021Z_MQM_K192_SECOND_ORDER_RESULTS_v0.1.json",
+      "blob_sha": "e0aa521d1ac0e9c76253c82a25a755ee24e52be1",
+      "size": 2352
+    },
+    {
+      "path": "research/architecture/2026-10-09T2022Z_MQM_D5_COUPLER_FIBER_RESULTS_v0.1.json",
+      "blob_sha": "b9bff786a0b2c1f7c797802c929b4f37b17de15f",
+      "size": 1965
+    },
+    {
+      "path": "research/architecture/2026-10-09T2025Z_MQM_FINITE_PULSE_KERNEL_COUPLER_AUDIT_v0.1.md",
+      "blob_sha": "38be284e5537d44efa6dd4821c71bce334ba4d1d",
+      "size": 6109
+    },
+    {
+      "path": "research/architecture/2026-10-09T2045Z_mqm_global_transport_identity_search_v01.cpp",
+      "blob_sha": "9c98441c9a61ab134f047b7edeb074acedd8ccd3",
+      "size": 4897
+    },
+    {
+      "path": "research/architecture/2026-10-09T2052Z_mqm_D5_cut_channel_replacement_v01.py",
+      "blob_sha": "d8d4656bdfbcf82016f60a33fec3e5afc409193e",
+      "size": 2420
+    },
+    {
+      "path": "research/architecture/2026-10-09T2101Z_MQM_GLOBAL_TRANSPORT_IDENTITY_RESULTS_v0.1.json",
+      "blob_sha": "24bf1d6e8a6c19f3c57660ad88487c3d082a3ca9",
+      "size": 2042
+    },
+    {
+      "path": "research/architecture/2026-10-09T2102Z_MQM_D5_CUT_CHANNEL_REPLACEMENT_RESULTS_v0.1.json",
+      "blob_sha": "7915071ca0af404ee15eaaab3e3bfa1c6e664bfe",
+      "size": 2336
+    },
+    {
+      "path": "research/architecture/2026-10-09T2105Z_MQM_V128_TRANSPORT_D5_REPLACEMENT_AUDIT_v0.1.md",
+      "blob_sha": "f90ff95c22dcb9d2a968bb4c8209bd09d707b5a9",
+      "size": 5414
+    },
+    {
+      "path": "research/architecture/2026-10-09T2117Z_mqm_move_break_even_v01.py",
+      "blob_sha": "93bd4c3cedfa356a31f5fade58813d227a4f6f8c",
+      "size": 2253
+    },
+    {
+      "path": "research/architecture/2026-10-09T2122Z_mqm_2PV_D5_channel_integration_v01.py",
+      "blob_sha": "b7a0b9c3f5269ac012377b60b0ef74613ee3e1ec",
+      "size": 2540
+    },
+    {
+      "path": "research/architecture/2026-10-09T2123Z_mqm_2PV_D5_channel_integration_v01a.py",
+      "blob_sha": "1f0a988248a79140a429090d1c77d07e58410fc1",
+      "size": 2343
+    },
+    {
+      "path": "research/architecture/2026-10-09T2123Z_MQM_2PV_D5_CHANNEL_REPAIR_LOG_v0.1a.json",
+      "blob_sha": "c4305dd6a34c35b0eb044c42b5bf96a5c852868f",
+      "size": 503
+    },
+    {
+      "path": "research/architecture/2026-10-09T2127Z_mqm_D5_rotating_spare_v01.py",
+      "blob_sha": "6aeb46f4fbebf5db1f9b85a4c1db9f1821302969",
+      "size": 3317
+    },
+    {
+      "path": "research/architecture/2026-10-09T2130Z_MQM_MOVE_BREAK_EVEN_RESULTS_v0.1a.json",
+      "blob_sha": "e16240ba4fdc4bf794e47c9132ca999138827262",
+      "size": 1322
+    },
+    {
+      "path": "research/architecture/2026-10-09T2131Z_MQM_2PV_D5_CHANNEL_RESULTS_v0.1a.json",
+      "blob_sha": "92b0c88cc08288572f027b5da160c6f21dffb579",
+      "size": 1296
+    },
+    {
+      "path": "research/architecture/2026-10-09T2132Z_MQM_D5_ROTATING_SPARE_RESULTS_v0.1.json",
+      "blob_sha": "59cf4a87edcb44b91375205ff9684e4b6479023e",
+      "size": 1876
+    },
+    {
+      "path": "research/architecture/2026-10-09T2135Z_MQM_MOVE_2PV_ROTATING_SPARE_AUDIT_v0.1.md",
+      "blob_sha": "c2bb1050c87e2aa9ceab63e5688363340dd4e111",
+      "size": 6578
+    },
+    {
+      "path": "research/architecture/2026-10-09T2155Z_mqm_D5_heterogeneous_rotation_v01.py",
+      "blob_sha": "46b9b781adc1b5e4239b190e72d0401ba6bedfdf",
+      "size": 3722
+    },
+    {
+      "path": "research/architecture/2026-10-09T2210Z_mqm_D5_S4_retry_receipt_v01.py",
+      "blob_sha": "54ff805cd76b480516b0ad50ca9f963f4b2dad5b",
+      "size": 1879
+    },
+    {
+      "path": "research/architecture/2026-10-09T2216Z_MQM_D5_HETEROGENEOUS_ROTATION_RESULTS_v0.1.json",
+      "blob_sha": "7f630f5838fca24af913263294d96d3ec8496c55",
+      "size": 1407
+    },
+    {
+      "path": "research/architecture/2026-10-09T2217Z_MQM_D5_S4_RETRY_RECEIPT_RESULTS_v0.1.json",
+      "blob_sha": "472fc26128277ba2328bdbd077300ebcacb8239f",
+      "size": 1361
+    },
+    {
+      "path": "research/architecture/2026-10-09T2220Z_MQM_MOVE_HETEROGENEITY_RECEIPT_AUDIT_v0.1.md",
+      "blob_sha": "b3c73a4e5e658080dbfc15973b6d1b61018c684b",
+      "size": 7160
+    },
+    {
+      "path": "research/architecture/2026-10-09T2240Z_mqm_adaptive_site_controller_v01.py",
+      "blob_sha": "13664ed99e56bf319fc8d54638b01543f98c5019",
+      "size": 2967
+    },
+    {
+      "path": "research/architecture/2026-10-09T2242Z_mqm_receipt_depth_yield_v01.py",
+      "blob_sha": "f842a01d694f4efe063954037038fa52808cbb5f",
+      "size": 2849
+    },
+    {
+      "path": "research/architecture/2026-10-09T2245Z_mqm_integrated_shell_controller_v01.py",
+      "blob_sha": "5927ec1f2025610dc506e1e868196139d4b9e499",
+      "size": 6025
+    },
+    {
+      "path": "research/architecture/2026-10-09T2250Z_MQM_ADAPTIVE_SITE_CONTROLLER_RESULTS_v0.1.json",
+      "blob_sha": "cad86cb4ea00c013e631dd437d736ebd6d51819d",
+      "size": 1296
+    },
+    {
+      "path": "research/architecture/2026-10-09T2251Z_MQM_RECEIPT_DEPTH_YIELD_RESULTS_v0.1.json",
+      "blob_sha": "6d3531116075e82484bc89d21de94ba7a90ae9d8",
+      "size": 1618
+    },
+    {
+      "path": "research/architecture/2026-10-09T2252Z_MQM_INTEGRATED_SHELL_CONTROLLER_RESULTS_v0.1.json",
+      "blob_sha": "77690c68bcc16e679cebb7f05c0c9aef9f132a47",
+      "size": 1523
+    },
+    {
+      "path": "research/architecture/2026-10-09T2255Z_MQM_ADAPTIVE_RECEIPT_CONTROLLER_AUDIT_v0.1.md",
+      "blob_sha": "18e64893af9d391c67206f6b185cef0cd8862516",
+      "size": 5974
+    },
+    {
+      "path": "research/architecture/2026-10-09T2315Z_mqm_executable_shell_schedule_v01.py",
+      "blob_sha": "c600cf0e44049d6d36c9e0dec545eaec7775c39d",
+      "size": 7060
+    },
+    {
+      "path": "research/architecture/2026-10-09T2317Z_mqm_receipt_mode_selector_v01.py",
+      "blob_sha": "9c735624ff6e1cc72bbf6a3524346db0d745651f",
+      "size": 2859
+    },
+    {
+      "path": "research/architecture/2026-10-09T2320Z_mqm_online_site_quality_learning_v01.py",
+      "blob_sha": "920f4859dbdcea6ec16e3c299867348a35e2b294",
+      "size": 3101
+    },
+    {
+      "path": "research/architecture/2026-10-09T2325Z_MQM_EXECUTABLE_SHELL_SCHEDULE_RESULTS_v0.1.json",
+      "blob_sha": "0bf76d007f7ef5fbfef8c24b9edfc11747e65eff",
+      "size": 1387
+    },
+    {
+      "path": "research/architecture/2026-10-09T2326Z_MQM_RECEIPT_MODE_SELECTOR_RESULTS_v0.1.json",
+      "blob_sha": "09fd7fa168455297201b076987e98f3bbc7f8207",
+      "size": 1086
+    },
+    {
+      "path": "research/architecture/2026-10-09T2327Z_MQM_ONLINE_SITE_QUALITY_RESULTS_v0.1.json",
+      "blob_sha": "f21fb2912809eabbc8b5b2dd6cbe57dc6b3cd790",
+      "size": 1609
+    },
+    {
+      "path": "research/architecture/2026-10-09T2330Z_MQM_EXECUTABLE_SELECTOR_ONLINE_AUDIT_v0.1.md",
+      "blob_sha": "2284ecb75ee10c07e29a13ed16db4ae16d5f2dc0",
+      "size": 4758
+    },
+    {
+      "path": "research/capture_log/2026-10-09T1635Z_A4_D6_2PV_mixed_architecture_execution.md",
+      "blob_sha": "14c5d8cd41e5b64e90539bf629bfffddb066aa10",
+      "size": 471
+    },
+    {
+      "path": "research/capture_log/2026-10-09T1705Z_shape_function_motion_execution.json",
+      "blob_sha": "66674e57ef72d8525d8125a65c7eb3a1fe1483a9",
+      "size": 2873
+    },
+    {
+      "path": "research/capture_log/2026-10-09T1750Z_shape_function_spacetime_execution.json",
+      "blob_sha": "f76006af73e590a1a663c7cfb1856e41a4446e30",
+      "size": 2483
+    },
+    {
+      "path": "research/capture_log/2026-10-09T1855Z_identity_motion_composite_motion_algebra_execution.json",
+      "blob_sha": "259d8e769bc6a434fcabd668c37815c7a689b1da",
+      "size": 2998
+    },
+    {
+      "path": "research/capture_log/2026-10-09T1940Z_second_order_D5_motion_instruction_execution.json",
+      "blob_sha": "36aa6310c193da5d5d0f0009c8be8d45ba57eb93",
+      "size": 3205
+    },
+    {
+      "path": "research/capture_log/2026-10-09T2030Z_finite_pulse_kernel_coupler_execution.json",
+      "blob_sha": "1eeb76baa377d9a875672095c525ea60276ad4a4",
+      "size": 3010
+    },
+    {
+      "path": "research/capture_log/2026-10-09T2110Z_v128_transport_D5_replacement_execution.json",
+      "blob_sha": "3a369e165eb559cf3b0630b294b8875e1fa0507a",
+      "size": 3304
+    },
+    {
+      "path": "research/capture_log/2026-10-09T2140Z_move_2PV_rotating_spare_execution.json",
+      "blob_sha": "e69bd6a5888ecaabba22887260845be91dfb567a",
+      "size": 2690
+    },
+    {
+      "path": "research/capture_log/2026-10-09T2225Z_move_calibration_heterogeneity_receipt_execution.json",
+      "blob_sha": "c524289855215909f50b1df8c59691a4aa7053f6",
+      "size": 3159
+    },
+    {
+      "path": "research/capture_log/2026-10-09T2300Z_adaptive_receipt_controller_execution.json",
+      "blob_sha": "2da913bb54d7c5441d4f5b51add5a4c8ef0a390a",
+      "size": 3063
+    },
+    {
+      "path": "research/capture_log/2026-10-09T2335Z_executable_selector_online_execution.json",
+      "blob_sha": "95c429323b5ee493aea252dab4f87cdc74180fa3",
+      "size": 2607
+    },
+    {
+      "path": "research/hardware/2026-10-09T1620Z_MQM_A4_D6_SQALE_INTERFACE_COMPARISON_v0.1.md",
+      "blob_sha": "fc3f7e9ac347726ae6e7009ae3b397d81edd7f48",
+      "size": 3494
+    },
+    {
+      "path": "research/hardware/2026-10-09T1950Z_mqm_sqale_finite_pulse_identity_v01.cpp",
+      "blob_sha": "96583da51a0828bd9a03d683bc49adbc1ae1f585",
+      "size": 3890
+    },
+    {
+      "path": "research/hardware/2026-10-09T2020Z_MQM_SQALE_FINITE_PULSE_RESULTS_v0.1.json",
+      "blob_sha": "c3387d133ec3d5a81e6046eccd8ab1bcc72f31f1",
+      "size": 2486
+    },
+    {
+      "path": "research/hardware/2026-10-09T2040Z_mqm_v128_native_compile_v01.cpp",
+      "blob_sha": "805e083ec456698334db6ad9c0862dfecac33ce1",
+      "size": 7209
+    },
+    {
+      "path": "research/hardware/2026-10-09T2100Z_MQM_V128_NATIVE_COMPILE_RESULTS_v0.1.json",
+      "blob_sha": "2a52d504a5979fc8e664405ba43bfe034052fc79",
+      "size": 2517
+    },
+    {
+      "path": "research/hardware/2026-10-09T2145Z_MQM_MOVE_DECISION_CALIBRATION_PACKET_v0.1.json",
+      "blob_sha": "bec1a42839199a6d019f736a206b632e6a20f862",
+      "size": 4182
+    },
+    {
+      "path": "research/hardware/2026-10-09T2205Z_mqm_move_calibration_decision_v01.py",
+      "blob_sha": "cc41a0dbc258cd8863c849435de5d7321afb969a",
+      "size": 1480
+    },
+    {
+      "path": "research/hardware/2026-10-09T2215Z_MQM_MOVE_DECISION_THRESHOLD_RESULTS_v0.1.json",
+      "blob_sha": "5c51ec28e79ebc43479d6ae9adb5893c3cbcf9ae",
+      "size": 1695
+    },
+    {
+      "path": "research/hardware/MQM_MOVE_DECISION_HANDOFF_TEMPLATE_v0.1.json",
+      "blob_sha": "93614217891e44a6e85bca427309139804899eab",
+      "size": 2221
+    },
+    {
+      "path": "research/protocols/2026-10-09T1710Z_MQM_SHAPE_FUNCTION_BENCHMARK_v0.1_FREEZE.json",
+      "blob_sha": "a85bb622b8f8e558d04f28817a0f0372eacaa082",
+      "size": 1389
+    },
+    {
+      "path": "research/protocols/2026-10-09T1810Z_MQM_IDENTITY_MOTION_DYNAMICAL_BENCHMARK_v0.1_FREEZE.json",
+      "blob_sha": "78c9c1ff9288f66effd7b678baab70a2c715eaa5",
+      "size": 2696
+    },
+    {
+      "path": "research/protocols/2026-10-09T1900Z_MQM_SECOND_ORDER_IDENTITY_MOTION_v0.1_FREEZE.json",
+      "blob_sha": "87050e8e41cf99158df42da71d4558e26ca2c845",
+      "size": 1465
+    },
+    {
+      "path": "research/protocols/2026-10-09T1902Z_MQM_D5_8Q_ROLE_MAPPING_v0.1_FREEZE.json",
+      "blob_sha": "9cf68a5c43e92045d8138fca37a76b9cc896c487",
+      "size": 1583
+    },
+    {
+      "path": "research/protocols/2026-10-09T1904Z_MQM_MOTION_INSTRUCTION_PARETO_v0.1_FREEZE.json",
+      "blob_sha": "c02ae5af14d70beb28a22170c1a535c029cd10e9",
+      "size": 1139
+    },
+    {
+      "path": "research/protocols/2026-10-09T1906Z_MQM_MOTION_INSTRUCTION_PARETO_v0.1a_AMENDMENT.json",
+      "blob_sha": "343aae7103d35380dc774400cf87e87acc5de161",
+      "size": 1716
+    },
+    {
+      "path": "research/protocols/2026-10-09T1908Z_MQM_MOTION_INSTRUCTION_PARETO_v0.1b_AMENDMENT.json",
+      "blob_sha": "dcc4e9392604025c52340ae563df6e2fa32ee4ee",
+      "size": 1422
+    },
+    {
+      "path": "research/protocols/2026-10-09T1945Z_MQM_SQALE_FINITE_PULSE_IDENTITY_MOTION_v0.1_FREEZE.json",
+      "blob_sha": "b4f71ae945773754c3aabd8d756c697935762b81",
+      "size": 2470
+    },
+    {
+      "path": "research/protocols/2026-10-09T1955Z_MQM_FULL_KERNEL_SECOND_ORDER_SEARCH_v0.1_FREEZE.json",
+      "blob_sha": "f40742b35e0adcf01692a3d92d5bbad1395bd912",
+      "size": 1371
+    },
+    {
+      "path": "research/protocols/2026-10-09T2005Z_MQM_D5_COUPLER_FIBER_v0.1_FREEZE.json",
+      "blob_sha": "b31de01d75d1c1965404525c75add37dc1bfc329",
+      "size": 1207
+    },
+    {
+      "path": "research/protocols/2026-10-09T2035Z_MQM_V128_NATIVE_COMPILE_v0.1_FREEZE.json",
+      "blob_sha": "b589f34b6e18d57d1ad0fa6b87b45031ddbf2d26",
+      "size": 1360
+    },
+    {
+      "path": "research/protocols/2026-10-09T2050Z_MQM_D5_CUT_CHANNEL_REPLACEMENT_v0.1_FREEZE.json",
+      "blob_sha": "3bce79e76ccfd4c075f1bdabaf88af41db3c5e6f",
+      "size": 2193
+    },
+    {
+      "path": "research/protocols/2026-10-09T2115Z_MQM_MOVE_BREAK_EVEN_v0.1_FREEZE.json",
+      "blob_sha": "49ce89b58132c2329dbbaeac594c4548ba1736a2",
+      "size": 1248
+    },
+    {
+      "path": "research/protocols/2026-10-09T2120Z_MQM_2PV_D5_CHANNEL_INTEGRATION_v0.1_FREEZE.json",
+      "blob_sha": "49815ffa3ad8f07a33c79e808732ec2dc8c8dc60",
+      "size": 2126
+    },
+    {
+      "path": "research/protocols/2026-10-09T2125Z_MQM_D5_ROTATING_SPARE_v0.1_FREEZE.json",
+      "blob_sha": "1bf8806452767d80456ed09cd11f9a6ca1d1e5ae",
+      "size": 1239
+    },
+    {
+      "path": "research/protocols/2026-10-09T2150Z_MQM_D5_HETEROGENEOUS_ROTATION_v0.1_FREEZE.json",
+      "blob_sha": "8b6d5dfcd206d5594ff82a21abe053985cffab92",
+      "size": 1485
+    },
+    {
+      "path": "research/protocols/2026-10-09T2200Z_MQM_D5_S4_RETRY_RECEIPT_v0.1_FREEZE.json",
+      "blob_sha": "7b425ed6134fb9d3342097e1fab9109069c22dd4",
+      "size": 2316
+    },
+    {
+      "path": "research/protocols/2026-10-09T2230Z_MQM_ADAPTIVE_SITE_CONTROLLER_v0.1_FREEZE.json",
+      "blob_sha": "20145db0bf7c6229cc7dbae761aea4564300b127",
+      "size": 2075
+    },
+    {
+      "path": "research/protocols/2026-10-09T2231Z_MQM_ADAPTIVE_SITE_CONTROLLER_v0.1a_AMENDMENT.json",
+      "blob_sha": "c817468deaa71b03b6abdb051bccf2aa2f25cada",
+      "size": 542
+    },
+    {
+      "path": "research/protocols/2026-10-09T2232Z_MQM_RECEIPT_DEPTH_YIELD_v0.1_FREEZE.json",
+      "blob_sha": "0da9ca92a1d5d4f9d98b8d6f64850d76f12134ab",
+      "size": 1128
+    },
+    {
+      "path": "research/protocols/2026-10-09T2234Z_MQM_INTEGRATED_SHELL_CONTROLLER_v0.1_FREEZE.json",
+      "blob_sha": "20dad401f0a417911778f77b981a5d60c5b4d163",
+      "size": 1387
+    },
+    {
+      "path": "research/protocols/2026-10-09T2235Z_MQM_INTEGRATED_SHELL_CONTROLLER_v0.1a_AMENDMENT.json",
+      "blob_sha": "1d992e07a476e94a48263ca777e288cccec83b8d",
+      "size": 797
+    },
+    {
+      "path": "research/protocols/2026-10-09T2236Z_MQM_INTEGRATED_SHELL_CONTROLLER_v0.1b_AMENDMENT.json",
+      "blob_sha": "ce97f81a46cfb7944c61fa5e355cf5a3d5b89a58",
+      "size": 983
+    },
+    {
+      "path": "research/protocols/2026-10-09T2305Z_MQM_EXECUTABLE_SHELL_SCHEDULE_v0.1_FREEZE.json",
+      "blob_sha": "18d721125c435747a9edfdeb9416bd9ed60762a5",
+      "size": 1695
+    },
+    {
+      "path": "research/protocols/2026-10-09T2307Z_MQM_RECEIPT_MODE_SELECTOR_v0.1_FREEZE.json",
+      "blob_sha": "63d34ce36432dfbda54aa40d0e9ff2479a93d73f",
+      "size": 1478
+    },
+    {
+      "path": "research/protocols/2026-10-09T2309Z_MQM_ONLINE_SITE_QUALITY_LEARNING_v0.1_FREEZE.json",
+      "blob_sha": "ad7ca5af2f4d4250beaf1c2fa5c48c7e5fd4548d",
+      "size": 2303
+    },
+    {
+      "path": "research/protocols/2026-10-09T2310Z_MQM_ONLINE_SITE_QUALITY_LEARNING_v0.1a_AMENDMENT.json",
+      "blob_sha": "a91a541c59847426e458f6d121f419687377c25f",
+      "size": 1027
+    }
+  ],
+  "current_claim_state": {
+    "exact_or_derived": [
+      "shape-function structural specialization under frozen metrics",
+      "shape-motion monodromy and hidden-frame clock algebra",
+      "A4/D6 ideal decoder spacetime covariance",
+      "identity-motion coherent averaging under frozen ideal-control models",
+      "full K192 logical-identity search and Pareto frontier",
+      "D5 coupler/ancilla-fiber geometry and four-channel-plus-spare replacement algebra",
+      "MOVE break-even surfaces and provider calibration contract",
+      "heterogeneous spare minimax controller",
+      "receipt-mode selector and K4/S4 receipt code formulas",
+      "integrated shell-controller safety model check",
+      "executable abstract shell event graph",
+      "online spare-policy learning behavior on the frozen synthetic stream"
+    ],
+    "scoped_no_go": [
+      "D5+midpoint as an improvement to frozen 8Q interaction-length uniformity",
+      "canonical gate-SWAP implementations of b, zb, and v128 under frozen cross-profile finite-pulse stress",
+      "logical-identity motion benefit for the frozen stochastic weight-2 Pauli model",
+      "uniform rotation as reliability-minimax when site heterogeneity is known",
+      "generic K4+S4 receipt-depth advantage under the frozen iid bit-error objectives",
+      "rotation reliability advantage under homogeneous iid site loss"
+    ],
+    "open_or_source_blocked": [
+      "per-in-array Sqale MOVE duration/loss/dephasing/parallelism calibration",
+      "source-bound reset/idle/missed-loss channels",
+      "backend-timed executable schedule",
+      "hardware validation",
+      "fault-tolerance threshold",
+      "quantum advantage"
+    ]
+  },
+  "latest_execution": {
+    "capture_log": "research/capture_log/2026-10-09T2335Z_executable_selector_online_execution.json",
+    "audit": "research/architecture/2026-10-09T2330Z_MQM_EXECUTABLE_SELECTOR_ONLINE_AUDIT_v0.1.md",
+    "abstract_schedule_result": "research/architecture/2026-10-09T2325Z_MQM_EXECUTABLE_SHELL_SCHEDULE_RESULTS_v0.1.json",
+    "receipt_selector_result": "research/architecture/2026-10-09T2326Z_MQM_RECEIPT_MODE_SELECTOR_RESULTS_v0.1.json",
+    "online_learning_result": "research/architecture/2026-10-09T2327Z_MQM_ONLINE_SITE_QUALITY_RESULTS_v0.1.json"
+  },
+  "governance": {
+    "append_only": true,
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "failed_or_superseded_artifacts_preserved": true,
+    "claim_promotion": "scoped to verified evidence only"
+  }
+}
