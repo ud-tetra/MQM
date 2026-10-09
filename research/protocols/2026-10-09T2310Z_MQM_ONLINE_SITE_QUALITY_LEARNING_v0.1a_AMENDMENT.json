@@ -1,0 +1,55 @@
+{
+  "version": "0.1a",
+  "status": "PRE_EVALUATION_SYNTHETIC_STREAM_EXTENSION",
+  "parent": "research/protocols/2026-10-09T2309Z_MQM_ONLINE_SITE_QUALITY_LEARNING_v0.1_FREEZE.json",
+  "result_exposed": false,
+  "add_window": {
+    "window": 2,
+    "purpose": "calibration-rich stationary heterogeneous window to test whether conservative confidence bounds eventually recover the asymmetric minimax policy",
+    "active_trials": [
+      10000,
+      10000,
+      10000,
+      10000,
+      10000
+    ],
+    "active_failures": [
+      100,
+      200,
+      300,
+      400,
+      500
+    ],
+    "spare_trials": [
+      10000,
+      10000,
+      10000,
+      10000,
+      10000
+    ],
+    "spare_failures": [
+      50,
+      50,
+      50,
+      50,
+      50
+    ],
+    "check_trials": [
+      10000,
+      10000,
+      10000,
+      10000,
+      10000
+    ],
+    "check_failures": [
+      20,
+      20,
+      20,
+      20,
+      20
+    ]
+  },
+  "estimator_changed": false,
+  "safety_rules_changed": false,
+  "physical_promotion": 0
+}
