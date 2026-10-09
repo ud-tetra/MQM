@@ -1,0 +1,66 @@
+{
+  "version": "0.1",
+  "status": "EXACT_MOVE_DECISION_THRESHOLD_TABLE",
+  "physical_promotion": 0,
+  "calibration_packet_commit": "c68d2e8ef76f2a542c3197ae30b4186b6a7f16c5",
+  "replay_source_commit": "a851534f5656d2d64e809655fdd209eb39c262c2",
+  "workflow_run_id": 37963766840,
+  "workflow_job_id": 113932853765,
+  "artifact_id": 11632917288,
+  "artifact_zip_sha256": "8dd6067ab9d9bebc8257ecd856dbdd33a5cb6d91028de60d80f14a7766f2add4",
+  "parallelism_table": [
+    {
+      "P": 1,
+      "v128_batches": 4,
+      "D6_batches": 7,
+      "break_even_us": 0.46923076923076923
+    },
+    {
+      "P": 2,
+      "v128_batches": 2,
+      "D6_batches": 4,
+      "break_even_us": 0.7625
+    },
+    {
+      "P": 3,
+      "v128_batches": 2,
+      "D6_batches": 3,
+      "break_even_us": 1.22
+    },
+    {
+      "P": 4,
+      "v128_batches": 1,
+      "D6_batches": 2,
+      "break_even_us": 1.525
+    },
+    {
+      "P": 5,
+      "v128_batches": 1,
+      "D6_batches": 2,
+      "break_even_us": 1.525
+    },
+    {
+      "P": 6,
+      "v128_batches": 1,
+      "D6_batches": 2,
+      "break_even_us": 1.525
+    },
+    {
+      "P": 7,
+      "v128_batches": 1,
+      "D6_batches": 1,
+      "break_even_us": 6.1
+    },
+    {
+      "P": 8,
+      "v128_batches": 1,
+      "D6_batches": 1,
+      "break_even_us": 6.1
+    }
+  ],
+  "equal_loss_break_even": 0.0016852746870257285,
+  "equal_loss_break_even_percent": 0.16852746870257285,
+  "candidate_specific_time": "v128 faster iff 12.2 + 4*tau_v < 6*tau_D6",
+  "candidate_specific_loss": "v128 preferred iff 0.9570935821134408*(1-ell_v)^16 > (1-ell_D6)^42",
+  "public_source_closure": "SOURCE_BLOCKED for per-in-array Sqale MOVE timing/loss/dephasing/parallelism"
+}
