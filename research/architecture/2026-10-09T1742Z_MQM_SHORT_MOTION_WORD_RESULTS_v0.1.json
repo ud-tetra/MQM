@@ -1,0 +1,79 @@
+{
+  "version": "0.1",
+  "status": "EXACT_SHORT_MOTION_WORD_SEARCH",
+  "physical_promotion": 0,
+  "identity": {
+    "h1": {
+      "word": "I",
+      "frame_order": 1,
+      "primitive_cost": 0
+    },
+    "h2": {
+      "word": "a",
+      "frame_order": 2,
+      "primitive_cost": 3
+    },
+    "h3": {
+      "word": "b",
+      "frame_order": 3,
+      "primitive_cost": 12
+    },
+    "h4": {
+      "word": "ab",
+      "frame_order": 4,
+      "primitive_cost": 9
+    },
+    "h6": {
+      "word": "zb",
+      "frame_order": 6,
+      "primitive_cost": 9
+    }
+  },
+  "swap_XZ": {
+    "h1": {
+      "word": "c",
+      "frame_order": 2,
+      "primitive_cost": 12
+    },
+    "h2": {
+      "word": "dcd",
+      "frame_order": 4,
+      "primitive_cost": 14
+    },
+    "h3": {
+      "word": "bc",
+      "frame_order": 6,
+      "primitive_cost": 24
+    },
+    "h6": {
+      "word": "bdcd",
+      "frame_order": 12,
+      "primitive_cost": 26
+    }
+  },
+  "cycle_X_to_Z_to_Y": {
+    "h1": {
+      "word": "d",
+      "frame_order": 3,
+      "primitive_cost": 12
+    },
+    "h2": {
+      "word": "ad",
+      "frame_order": 6,
+      "primitive_cost": 15
+    },
+    "h4": {
+      "word": "abd",
+      "frame_order": 12,
+      "primitive_cost": 21
+    }
+  },
+  "alphabet": {
+    "z": "central C2",
+    "a": "kernel S4 order-2",
+    "b_B": "kernel S4 order-3 and inverse",
+    "c": "logical S4 order-2",
+    "d_D": "logical S4 order-3 and inverse"
+  },
+  "cost_scope": "local H/S count plus three per SWAP under the frozen abstract compile; not hardware time/error."
+}
