@@ -1,0 +1,35 @@
+name: MQM local Clifford automorphism replay
+
+on:
+  pull_request:
+    paths:
+      - 'research/architecture/2026-10-09T1430Z_mqm_local_clifford_automorphism_v01.cpp'
+      - 'review_handoff/MQM_LOCAL_CLIFFORD_AUT_v0.1/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: |
+          g++ -O3 -std=c++17 research/architecture/2026-10-09T1430Z_mqm_local_clifford_automorphism_v01.cpp -o lcaut
+      - name: Run exact enumeration
+        run: |
+          ./lcaut > MQM_LOCAL_CLIFFORD_AUT_RESULTS_v0.1.json
+          cat MQM_LOCAL_CLIFFORD_AUT_RESULTS_v0.1.json
+      - name: Hash
+        run: |
+          sha256sum research/architecture/2026-10-09T1430Z_mqm_local_clifford_automorphism_v01.cpp MQM_LOCAL_CLIFFORD_AUT_RESULTS_v0.1.json > MQM_LOCAL_CLIFFORD_AUT_SHA256_v0.1.txt
+          cat MQM_LOCAL_CLIFFORD_AUT_SHA256_v0.1.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MQM-local-Clifford-aut-v0.1
+          path: |
+            MQM_LOCAL_CLIFFORD_AUT_RESULTS_v0.1.json
+            MQM_LOCAL_CLIFFORD_AUT_SHA256_v0.1.txt
