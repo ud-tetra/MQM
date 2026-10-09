@@ -1,0 +1,61 @@
+{
+  "version": "0.1",
+  "status": "EXACT_DM_TETRAHEDRAL_REALIZATION_AND_COMPARATOR",
+  "workflow_run_id": 37943671661,
+  "workflow_job_id": 113864225774,
+  "artifact_id": 11622942292,
+  "artifact_zip_sha256": "81a74c96a40ec67577186a736062c98323a4d96f3f180d9daba1f2c02a29ca43",
+  "source_sha256": "ae4b669cb37a20805642ad9f09a76c0d3d7d7151c4050c883a9acb78cc09de53",
+  "result_sha256": "fd255a407c172692729c8ea474c971183ea135496d869e09455bbef10f45c1e6",
+  "general_family": {
+    "cells": "T_i={N,S,v_i,v_(i+1)}",
+    "coordinates": "N=(0,0,h), S=(0,0,-h), v_i=(R cos(2pi i/m),R sin(2pi i/m),0)",
+    "edges": "a=2h, b=2R sin(pi/m), c=sqrt(R^2+h^2) repeated four times",
+    "volume": "h R^2 sin(2pi/m)/3",
+    "cayley_menger": "288 V^2",
+    "central_edge_dihedral": "2pi/m"
+  },
+  "D5": {
+    "h": 1,
+    "R": "csc(pi/5)",
+    "central_edge": 2,
+    "ring_edge": 2,
+    "four_spokes": 1.9734303106519662,
+    "volume": 0.917587946980782,
+    "cayley_menger": 242.48668044798907,
+    "minimax_edge_ratio": 1.013463707942773,
+    "edge_spread_percent": 1.3463707942773073
+  },
+  "D6": {
+    "h": 1,
+    "R": 2,
+    "edges_exact": [
+      "2",
+      "2",
+      "sqrt(5) x4"
+    ],
+    "volume": 1.1547005383792515,
+    "cayley_menger": 384,
+    "minimax_edge_ratio": 1.1180339887498951,
+    "edge_spread_percent": 11.803398874989512
+  },
+  "representation_bridge": {
+    "standard_D6_bipyramid_cycle_type": [
+      6,
+      1,
+      1
+    ],
+    "code_D6_generator_cycle_type": [
+      3,
+      2,
+      2,
+      1
+    ],
+    "direct_standard_vertex_action_match": false,
+    "alternative_order6_orthogonal_action": "diag(R_120,-1)",
+    "K4_core_volume_under_exact_code_cycle_action": 0,
+    "direct_nondegenerate_K4_vertex_realization": "NO_GO",
+    "interpretation": "D6 can be literal at module/cell-shell level, but the exact code D6 permutation is naturally an internal frame/module action rather than a nondegenerate eight-site spatial symmetry."
+  },
+  "physical_promotion": 0
+}
