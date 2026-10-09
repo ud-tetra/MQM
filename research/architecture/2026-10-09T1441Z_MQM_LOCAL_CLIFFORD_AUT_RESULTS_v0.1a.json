@@ -1,0 +1,41 @@
+{
+  "version": "0.1a",
+  "status": "EXACT_MONOMIAL_LOCAL_CLIFFORD_AUTOMORPHISM_ENUMERATION",
+  "failed_pre_result_run_id": 37943554141,
+  "failed_pre_result_reason": "C++ helper name collision with std::apply and map-key syntax; no scientific result produced.",
+  "repair_commit": "cd6fe7d69a1b3b3d17971c3055191ec8726e6087",
+  "repair_log_commit": "bb296998eed93c5b113eb1811fab008fddf138a0",
+  "workflow_run_id": 37943787329,
+  "workflow_job_id": 113864634439,
+  "artifact_id": 11621862578,
+  "artifact_zip_sha256": "f2a24bb7f1a30894abbe71b46cbf81c18a94a18a20cae3549d7f54808e7a16d8",
+  "source_sha256": "e950063845fff65a006403f4e1298c71b3184261521ce640f74ab43fe38b7cde",
+  "result_sha256": "35f68aa5d0659b4873222c973ac5d6f984c88b1523a2bae81a41c8a6376a0966",
+  "support_permutation_candidates": 144,
+  "automorphism_group_size": 1152,
+  "factorization": "1152=2^7*3^2",
+  "element_order_spectrum": {
+    "1": 1,
+    "2": 199,
+    "3": 80,
+    "4": 312,
+    "6": 368,
+    "12": 192
+  },
+  "logical_action_pairs": {
+    "X->X,Z->Z": 192,
+    "X->X,Z->Y": 192,
+    "X->Z,Z->X": 192,
+    "X->Z,Z->Y": 192,
+    "X->Y,Z->X": 192,
+    "X->Y,Z->Z": 192
+  },
+  "logical_action_image": "full S3 = phase-quotiented single-logical-qubit Clifford action",
+  "protected_logical_kernel_size": 192,
+  "subgroup_reopening": {
+    "tetrahedral_A4": "PASS witness subgroup order12",
+    "octahedral_S4": "PASS witness subgroup order24",
+    "icosahedral_A5": "NO_GO: no element of order5"
+  },
+  "physical_promotion": 0
+}
