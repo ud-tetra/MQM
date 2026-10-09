@@ -1,0 +1,52 @@
+{
+  "version": "0.1",
+  "status": "EXACT_D5_S4_RETRY_RECEIPT_GATE",
+  "physical_promotion": 0,
+  "freeze_commit": "1716a77748631e6ece54577ac92aad4abe1c6533",
+  "replay_source_commit": "69f07c89e9b1a928336e356745fb4aa9a8dbf079",
+  "workflow_run_id": 37963766840,
+  "codes": {
+    "K4": {
+      "parameters": "[6,3,3]",
+      "nonzero_weight_spectrum": {
+        "3": 4,
+        "4": 3
+      }
+    },
+    "S4": {
+      "parameters": "[12,5,4]",
+      "nonzero_weight_spectrum": {
+        "4": 6,
+        "6": 16,
+        "8": 9
+      }
+    }
+  },
+  "exact": {
+    "U6": "4 p6^3(1-p6)^3 + 3 p6^4(1-p6)^2",
+    "U12": "6 p12^4(1-p12)^8 + 16 p12^6(1-p12)^6 + 9 p12^8(1-p12)^4",
+    "P_receipt_safe": "(1-p6)^6(1-p12)^12",
+    "P_receipt_unsafe_pass": "(Z6+U6)(Z12+U12)-Z6 Z12",
+    "P_receipt_hold": "1-(Z6+U6)(Z12+U12)"
+  },
+  "leading_order": {
+    "U6": "4 p6^3",
+    "U12": "6 p12^4",
+    "combined_unsafe": "4 p6^3 + 6 p12^4 + higher/cross terms"
+  },
+  "one_percent_stress": {
+    "safe": 0.8345137614500876,
+    "unsafe_pass": 0.0000035184349412542336,
+    "hold": 0.16548272011497114,
+    "U6": 0.000003910599,
+    "U12": 5.537974621260203e-8
+  },
+  "retry_sequence": [
+    "RESTORED_HOLD",
+    "fresh K4 receipts",
+    "fresh S4 comparison receipts",
+    "zero syndromes -> RETRY_READY",
+    "nonzero syndrome -> HOLD_RECEIPT",
+    "fresh 2+PV retry"
+  ]
+}
