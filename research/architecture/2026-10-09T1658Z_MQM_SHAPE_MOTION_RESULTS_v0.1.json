@@ -1,0 +1,51 @@
+{
+  "version": "0.1",
+  "status": "EXACT_SHAPE_MOTION_SEMANTICS_ENUMERATION",
+  "workflow_run_id": 37951245202,
+  "workflow_job_id": 113890270417,
+  "artifact_id": 11625987320,
+  "artifact_zip_sha256": "560e0d5f34ba6333dc3d711760741c28f0077c38288b78b92404f213fbef86d7",
+  "source_sha256": "d559f3947298bd44b244f206011ea23170cf28219f47656be5be4340e0c36261",
+  "result_sha256": "21aa17addf63792e2e60369d94218a7163f7dd898eb4d189af6577d0b6c3dc0b",
+  "group_order": 1152,
+  "logical_motion_types": {
+    "identity": 192,
+    "axis_transposition": 576,
+    "axis_3cycle": 384
+  },
+  "joint_full_order_logical_order": {
+    "1,1": 1,
+    "2,1": 79,
+    "2,2": 120,
+    "3,1": 8,
+    "3,3": 72,
+    "4,1": 48,
+    "4,2": 264,
+    "6,1": 56,
+    "6,2": 96,
+    "6,3": 216,
+    "12,2": 96,
+    "12,3": 96
+  },
+  "hidden_frame_period_ratio": {
+    "1": 193,
+    "2": 559,
+    "3": 104,
+    "4": 144,
+    "6": 152
+  },
+  "logical_periods": [
+    1,
+    2,
+    3
+  ],
+  "full_frame_periods": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    12
+  ],
+  "physical_promotion": 0
+}
