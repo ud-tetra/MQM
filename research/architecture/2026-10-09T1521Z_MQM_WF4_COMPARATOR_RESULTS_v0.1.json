@@ -1,0 +1,32 @@
+{
+  "version": "0.1",
+  "status": "EXACT_WF4_COMPARATOR",
+  "workflow_run_id": 37946305406,
+  "workflow_job_id": 113873327447,
+  "artifact_id": 11623766387,
+  "artifact_zip_sha256": "e4e29ecd1b4a7dade09900e2d479a7baf186a28d9e998040e6d8c64835bf6596",
+  "source_sha256": "9be308d88040c4c4bb085d92afa7c4cc2c7dfe3c86d3afaf922ba0e18ddf5bf4",
+  "result_sha256": "d158c356a31df23111013a0b5fa8800ace9be65ba2b4ad9e655ff41d46849466",
+  "W_F4_order": 1152,
+  "W_F4_spectrum": {
+    "1": 1,
+    "2": 139,
+    "3": 80,
+    "4": 228,
+    "6": 464,
+    "8": 144,
+    "12": 96
+  },
+  "MQM_order": 1152,
+  "MQM_spectrum": {
+    "1": 1,
+    "2": 199,
+    "3": 80,
+    "4": 312,
+    "6": 368,
+    "12": 192
+  },
+  "isomorphic": false,
+  "exact_witness": "element order 8 occurs in W(F4) but not in MQM monomial local-Clifford automorphism group",
+  "physical_promotion": 0
+}
