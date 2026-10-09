@@ -1,0 +1,43 @@
+name: MQM executable selector online replay
+
+on:
+  pull_request:
+    paths:
+      - 'research/architecture/2026-10-09T2315Z_mqm_executable_shell_schedule_v01.py'
+      - 'research/architecture/2026-10-09T2317Z_mqm_receipt_mode_selector_v01.py'
+      - 'research/architecture/2026-10-09T2320Z_mqm_online_site_quality_learning_v01.py'
+      - 'review_handoff/MQM_EXEC_SELECTOR_ONLINE_v0.1/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Executable shell schedule
+        run: |
+          python3 research/architecture/2026-10-09T2315Z_mqm_executable_shell_schedule_v01.py > MQM_EXECUTABLE_SHELL_SCHEDULE_RESULTS_v0.1.json
+          cat MQM_EXECUTABLE_SHELL_SCHEDULE_RESULTS_v0.1.json
+      - name: Receipt mode selector
+        run: |
+          python3 research/architecture/2026-10-09T2317Z_mqm_receipt_mode_selector_v01.py > MQM_RECEIPT_MODE_SELECTOR_RESULTS_v0.1.json
+          cat MQM_RECEIPT_MODE_SELECTOR_RESULTS_v0.1.json
+      - name: Online site learning
+        run: |
+          python3 research/architecture/2026-10-09T2320Z_mqm_online_site_quality_learning_v01.py > MQM_ONLINE_SITE_QUALITY_RESULTS_v0.1.json
+          cat MQM_ONLINE_SITE_QUALITY_RESULTS_v0.1.json
+      - name: Hash
+        run: |
+          sha256sum             research/architecture/2026-10-09T2315Z_mqm_executable_shell_schedule_v01.py             research/architecture/2026-10-09T2317Z_mqm_receipt_mode_selector_v01.py             research/architecture/2026-10-09T2320Z_mqm_online_site_quality_learning_v01.py             MQM_EXECUTABLE_SHELL_SCHEDULE_RESULTS_v0.1.json             MQM_RECEIPT_MODE_SELECTOR_RESULTS_v0.1.json             MQM_ONLINE_SITE_QUALITY_RESULTS_v0.1.json             > MQM_EXEC_SELECTOR_ONLINE_SHA256_v0.1.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MQM-exec-selector-online-v0.1
+          path: |
+            MQM_EXECUTABLE_SHELL_SCHEDULE_RESULTS_v0.1.json
+            MQM_RECEIPT_MODE_SELECTOR_RESULTS_v0.1.json
+            MQM_ONLINE_SITE_QUALITY_RESULTS_v0.1.json
+            MQM_EXEC_SELECTOR_ONLINE_SHA256_v0.1.txt
