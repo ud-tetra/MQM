@@ -1,0 +1,27 @@
+{
+  "version":"0.1a",
+  "status":"PRE_EVALUATION_METRIC_REPAIR",
+  "parent":"research/protocols/2026-10-09T1904Z_MQM_MOTION_INSTRUCTION_PARETO_v0.1_FREEZE.json",
+  "result_exposed":false,
+  "repairs":[
+    "Add carrier overhead objectives because maximizing receipt distance alone would trivially select S4 while ignoring its 24-cell literal carrier and 12-interface burden.",
+    "Restrict coherent-noise suppression objective to protected-logical-identity cycles, where comparison to memory/idling is semantically matched.",
+    "For nonidentity logical instructions, optimize generator-word length, physical primitive exposure, hidden-frame multiplicity, and carrier receipt/overhead metrics; do not relabel an identity-noise benchmark as a logical-gate noise result."
+  ],
+  "carrier_overhead":{
+    "D5":{"modules_or_local_sites":5,"literal_tetrahedral_cells":5,"interfaces":5,"receipt_distance":2},
+    "D6":{"modules":6,"literal_tetrahedral_cells":6,"interfaces":6,"receipt_distance":2},
+    "A4":{"modules":4,"literal_tetrahedral_cells":4,"interfaces":6,"receipt_distance":3},
+    "S4":{"modules":6,"literal_tetrahedral_cells":24,"interfaces":12,"receipt_distance":4}
+  },
+  "identity_objectives":{
+    "minimize":["zeroth-order coherent residual","second-order Magnus diagnostic","signed-cycle physical primitive exposure","word length","literal cell count","interface count"],
+    "maximize":["receipt distance"]
+  },
+  "nonidentity_objectives":{
+    "minimize":["physical primitive exposure","word length","hidden-frame multiplicity","literal cell count","interface count"],
+    "maximize":["receipt distance"]
+  },
+  "selection":"Pareto dominance only; no tuned scalarization",
+  "physical_promotion":0
+}
