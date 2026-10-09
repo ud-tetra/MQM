@@ -1,0 +1,91 @@
+{
+  "timestamp_utc": "2026-10-09T23:35:00Z",
+  "turn_type": "execute_1_2_3_executable_schedule_receipt_selector_online_learning",
+  "source_head_at_start": "4a17d0da9458812a05f26b027f0e84a58e21bb53",
+  "physical_promotion": 0,
+  "replay": {
+    "workflow_run_id": 37966042941,
+    "workflow_job_id": 113940521435,
+    "artifact_id": 11634125655,
+    "artifact_zip_sha256": "2cedd73e90fd1d6e57355b867d9c1e16460c2b300942519bad03fbed78209133"
+  },
+  "option_1_executable_schedule": {
+    "freeze_commit": "fc3028eabd7467fbb6a98832fd613abf25ba59a4",
+    "source_commit": "6d6b7d76abf1e43e2b5cabbc1adeafa22aa0689f",
+    "result_commit": "b63f1cd6de21bdbae530fdce332089b39b9aadcb",
+    "examples": [
+      "D6_UNIFORM_K4",
+      "V128_ASYMMETRIC_S4",
+      "V128_ASYMMETRIC_BOTH"
+    ],
+    "invariant_violations": 0
+  },
+  "option_2_receipt_selector": {
+    "freeze_commit": "5160b213636ab0f1ae334c1cd85ec8cbcaa605b1",
+    "source_commit": "c587b0e783812670421fd70be7ea9ea98267dccb",
+    "result_commit": "e6b8314fc71c081710971afb43968ae372d4f1e3",
+    "decisions": {
+      "generic_1pct_strict": "S4_ONLY",
+      "k4_1pct": "K4_ONLY",
+      "generic_asym_bad_s4": "K4_ONLY",
+      "both_asym": "K4_PLUS_S4"
+    }
+  },
+  "option_3_online_learning": {
+    "freeze_commit": "5be9a156edee963e515242d425bcb2faef820a4d",
+    "amendment_commit": "c3636d87731991ef6fe6462dfb967c0334943945",
+    "source_commit": "5b46e0db69b67a7b24846f24ddf2ebb8e6a6d907",
+    "result_commit": "5d6615fe60a3db7129ec7a27973c4f687b5143ae",
+    "estimator": "Hoeffding_UCB alpha=0.05, family_size=15, nmin=100",
+    "policies": [
+      {
+        "window": 0,
+        "counts": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "window": 1,
+        "counts": [
+          1,
+          1,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "window": 2,
+        "counts": [
+          0,
+          0,
+          0,
+          2,
+          3
+        ]
+      }
+    ],
+    "immutable_safety_rules": true
+  },
+  "integrated_audit_commit": "e962dd738accd29b0199aea7153ed1f69fc8a6c6",
+  "claim_boundaries": {
+    "abstract_schedule": "EXACT",
+    "receipt_selector": "EXACT under frozen formulas",
+    "online_controller_behavior": "EXACT on frozen synthetic stream",
+    "backend_timing": "SOURCE_BLOCKED",
+    "hardware_learning_performance": "OPEN",
+    "fault_tolerance": "OPEN",
+    "threshold": "OPEN",
+    "quantum_advantage": "OPEN"
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "trigger_pr_closed_unmerged": 29
+  }
+}
