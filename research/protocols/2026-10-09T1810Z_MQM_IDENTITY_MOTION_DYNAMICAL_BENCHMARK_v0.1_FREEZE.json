@@ -1,0 +1,74 @@
+{
+  "version": "0.1",
+  "status": "FROZEN_BEFORE_DYNAMICAL_IDENTITY_MOTION_EVALUATION",
+  "physical_promotion": 0,
+  "candidates": {
+    "I": {
+      "word": "I",
+      "frame_order": 1,
+      "abstract_primitive_cost_per_step": 0
+    },
+    "a": {
+      "word": "a",
+      "frame_order": 2,
+      "abstract_primitive_cost_per_step": 3
+    },
+    "b": {
+      "word": "b",
+      "frame_order": 3,
+      "abstract_primitive_cost_per_step": 12
+    },
+    "ab": {
+      "word": "ab",
+      "frame_order": 4,
+      "abstract_primitive_cost_per_step": 9
+    },
+    "zb": {
+      "word": "zb",
+      "frame_order": 6,
+      "abstract_primitive_cost_per_step": 9
+    }
+  },
+  "coherent_static_test": {
+    "assumption": "ideal instantaneous canonical H/S/SWAP frame action, equal dwell times, static Hamiltonian between frame updates",
+    "scope": "zeroth-order average Hamiltonian only; pulse error and higher Magnus terms excluded",
+    "basis": [
+      "24 weight-1 signed Pauli Hamiltonian terms",
+      "252 weight-2 signed Pauli Hamiltonian terms"
+    ],
+    "metrics": [
+      "signed conjugation period",
+      "rank of cycle-average projector",
+      "number of basis terms averaged exactly to zero",
+      "mean squared norm of averaged basis term"
+    ]
+  },
+  "stochastic_biased_test": {
+    "basis": "all 252 phase-quotiented weight-2 Pauli errors",
+    "clock_phase": "uniform over the frame cycle",
+    "recovery": "frozen ideal-center decoder/recovery",
+    "metrics": [
+      "per-error cycle-averaged protected-logical failure",
+      "count improved/worsened/equal versus static frame",
+      "global mean logical-failure fraction",
+      "orbit-size distribution"
+    ],
+    "invariant_check": "global uniform weight-2 ensemble mean must remain unchanged under a code automorphism"
+  },
+  "correlated_family_test": {
+    "families": "for each of the 9 two-site Pauli types XX,XY,XZ,YX,YY,YZ,ZX,ZY,ZZ, average uniformly over all 28 physical pairs",
+    "metric": "cycle-phase averaged protected-logical failure"
+  },
+  "loss_test": {
+    "model": "independent nonnegative loss probability ell per abstract physical primitive",
+    "cycle_exposure": "primitive_cost_per_step times frame_order",
+    "metric": "survival factor (1-ell)^N",
+    "rule": "for ell>0, extra physical primitives cannot improve loss survival; virtual frame tracking has zero added loss exposure"
+  },
+  "stop_rules": [
+    "coherent averaging is not a hardware claim",
+    "global Pauli-ensemble invariance is not an advantage result",
+    "a biased-family improvement must be reported together with worsened families",
+    "loss benefit cannot be claimed without a compensating source-bound mechanism"
+  ]
+}
