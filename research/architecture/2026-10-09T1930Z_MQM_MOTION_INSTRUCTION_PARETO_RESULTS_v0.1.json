@@ -1,0 +1,43 @@
+{
+  "version": "0.1",
+  "status": "EXACT_PHASE_A_MOTION_INSTRUCTION_PARETO",
+  "physical_promotion": 0,
+  "workflow_run_id": 37956497066,
+  "workflow_job_id": 113908232300,
+  "artifact_id": 11628695438,
+  "artifact_zip_sha256": "9750268f9037f077bccc5d3d692f11bf08116e49f05353240877193bb1d1d8e4",
+  "identity_motion_front": [
+    "I",
+    "a",
+    "b",
+    "zb"
+  ],
+  "dominated_identity_motion": {
+    "ab": "dominated by b"
+  },
+  "canonical_nonidentity": {
+    "XZ_transposition": {
+      "motion": "c",
+      "hidden_multiplicity": 1,
+      "primitive_cost": 12,
+      "word_length": 1
+    },
+    "logical_3cycle": {
+      "motion": "d",
+      "hidden_multiplicity": 1,
+      "primitive_cost": 12,
+      "word_length": 1
+    }
+  },
+  "carrier_front": [
+    "A4",
+    "S4"
+  ],
+  "carrier_dominance": {
+    "D6": "dominated by A4 under the frozen Phase-A Pareto metrics: more literal cells, same interface count, lower receipt distance",
+    "A4": "default low-overhead carrier",
+    "S4": "retained because receipt distance 4 trades against 24 cells and 12 interfaces"
+  },
+  "D6_role": "retained outside this Pareto front as the exact cyclic addressing/transport specialist",
+  "scope": "Frozen Phase-A short-word library only; not a global optimum over all 1152 transitions and not a hardware ranking"
+}
