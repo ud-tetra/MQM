@@ -1,0 +1,44 @@
+{
+  "version": "0.1",
+  "status": "EXACT_EXECUTABLE_ABSTRACT_SHELL_SCHEDULE",
+  "physical_promotion": 0,
+  "freeze_commit": "fc3028eabd7467fbb6a98832fd613abf25ba59a4",
+  "replay_source_commit": "6d6b7d76abf1e43e2b5cabbc1adeafa22aa0689f",
+  "workflow_run_id": 37966042941,
+  "workflow_job_id": 113940521435,
+  "artifact_id": 11634125655,
+  "artifact_zip_sha256": "2cedd73e90fd1d6e57355b867d9c1e16460c2b300942519bad03fbed78209133",
+  "native_round_counts": {
+    "CZ": 39,
+    "GR": 40,
+    "RZ_address_requests": 346,
+    "RESET_site_requests": 14,
+    "NDSSR_site_requests": 14
+  },
+  "examples": [
+    "D6_UNIFORM_K4",
+    "V128_ASYMMETRIC_S4",
+    "V128_ASYMMETRIC_BOTH"
+  ],
+  "model_checks": {
+    "K4_ONLY": {
+      "state_instances": 15,
+      "accept_transitions_examined": 4,
+      "invariants_pass": true,
+      "violations": 0
+    },
+    "S4_ONLY": {
+      "state_instances": 15,
+      "accept_transitions_examined": 4,
+      "invariants_pass": true,
+      "violations": 0
+    },
+    "K4_PLUS_S4": {
+      "state_instances": 17,
+      "accept_transitions_examined": 4,
+      "invariants_pass": true,
+      "violations": 0
+    }
+  },
+  "ruling": "A machine-readable branching shell schedule now exists for motion selection, spare assignment, two-acquisition 2+PV, recovery/verify, repair, receipt gating and fresh retry. MOVE and backend timing remain symbolic/source-bound."
+}
