@@ -1,0 +1,35 @@
+{
+  "version": "0.1",
+  "status": "FROZEN_BEFORE_INTEGRATED_SHELL_CONTROLLER_VERIFICATION",
+  "physical_promotion": 0,
+  "states": [
+    "SOURCE_BLOCKED",
+    "READY",
+    "RUN_2PV",
+    "ACCEPT",
+    "HOLD",
+    "DEGRADED_NO_SPARE",
+    "REPAIRING",
+    "RECEIPT_K4",
+    "RECEIPT_S4",
+    "RETRY_READY",
+    "QUARANTINE"
+  ],
+  "motion_modes": [
+    "V128",
+    "D6"
+  ],
+  "policy_inputs": "MOVE calibration decision plus adaptive D5 spare schedule",
+  "invariants": [
+    "ACCEPT is reachable only from RUN_2PV on a fresh attempt",
+    "REPAIRING can never transition directly to ACCEPT or RETRY_READY",
+    "successful repair must traverse RECEIPT_K4 then RECEIPT_S4 before RETRY_READY",
+    "RETRY_READY must transition to a fresh RUN_2PV before ACCEPT can occur",
+    "any data/hub loss forces QUARANTINE",
+    "two or more detected active-channel losses force HOLD",
+    "missing required MOVE/site calibration leaves SOURCE_BLOCKED",
+    "DEGRADED_NO_SPARE may complete a current clean attempt but future detected channel loss cannot be repaired until a spare is restored"
+  ],
+  "latent_analytic_state": "UNSAFE_ACCEPT_POSSIBLE is not observable to the controller; it represents missed-loss paths in analysis only.",
+  "claim_rule": "passing model checks establishes implementation correctness of the frozen abstract controller, not fault tolerance or hardware performance."
+}
