@@ -1,0 +1,99 @@
+{
+  "schema_version": "0.1",
+  "purpose": "MQM v128 versus D6 MOVE decision handoff",
+  "provider": "Infleqtion",
+  "backend": {
+    "platform": "Sqale",
+    "backend_id": "REQUIRED",
+    "qpu_generation": "REQUIRED",
+    "compiler_version": "REQUIRED"
+  },
+  "calibration_context": {
+    "start_utc": "REQUIRED",
+    "end_utc": "REQUIRED",
+    "operating_point_id": "REQUIRED"
+  },
+  "candidates": {
+    "v128": {
+      "signed_steps": 4,
+      "expected_moved_roles_per_step": 4,
+      "local_control_time_us": 12.2,
+      "steps": []
+    },
+    "D6": {
+      "signed_steps": 6,
+      "expected_moved_roles_per_step": 7,
+      "local_control_time_us": 0,
+      "steps": []
+    }
+  },
+  "move_record_schema": {
+    "step_id": "string",
+    "moved_role_ids": [
+      "role"
+    ],
+    "start_xyz_um": [
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "end_xyz_um": [
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "route_length_um": [
+      0
+    ],
+    "duration_ns": 0,
+    "parallel_group": "string",
+    "parallel_move_count": 1,
+    "retained_state_channel": {
+      "type": "PTM/process/source-native"
+    },
+    "phase_shift_rad": {
+      "value": 0,
+      "uncertainty": 0,
+      "shots_or_trials": 1
+    },
+    "dephasing_or_contrast": {
+      "value": 0,
+      "uncertainty": 0,
+      "shots_or_trials": 1
+    },
+    "atom_loss": {
+      "value": 0,
+      "uncertainty": 0,
+      "shots_or_trials": 1
+    },
+    "heating_or_recapture": {},
+    "spectator_error": {},
+    "route_interaction_error": {},
+    "loss_false_negative": {
+      "value": 0,
+      "uncertainty": 0,
+      "shots_or_trials": 1
+    },
+    "loss_false_positive": {
+      "value": 0,
+      "uncertainty": 0,
+      "shots_or_trials": 1
+    }
+  },
+  "decision_receipts": {
+    "candidate_specific_time": "12.2 + 4*tau_v < 6*tau_D6 => v128 faster",
+    "candidate_specific_loss": "0.9570935821134408*(1-ell_v)^16 > (1-ell_D6)^42 => v128 larger control+MOVE product",
+    "equal_loss_break_even": 0.0016852746870257285,
+    "ideal_Magnus_eta_cross": 3.7227278096555585
+  },
+  "provenance": {
+    "raw_data_refs": [],
+    "exclusions": [],
+    "uncertainty_method": "REQUIRED",
+    "analysis_code_sha256": "REQUIRED"
+  }
+}
