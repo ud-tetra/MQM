@@ -1,0 +1,88 @@
+{
+  "version": "0.1",
+  "status": "EXACT_STRUCTURAL_SHAPE_FUNCTION_BENCHMARK",
+  "physical_promotion": 0,
+  "packing_uniformity": {
+    "D5": {
+      "exact": "2/sqrt(3+2/sqrt(5))",
+      "value": 1.013463707942773
+    },
+    "D6": {
+      "exact": "sqrt(5)/2",
+      "value": 1.118033988749895
+    },
+    "A4": {
+      "exact": "sqrt(8/3)",
+      "value": 1.632993161855452
+    },
+    "S4": {
+      "exact": "2",
+      "value": 2
+    }
+  },
+  "coordination": {
+    "D5": {
+      "V": 5,
+      "E": 5,
+      "beta1": 1,
+      "diameter": 2,
+      "avg_pair_distance": "3/2",
+      "edge_connectivity": 2,
+      "receipt_distance": 2
+    },
+    "D6": {
+      "V": 6,
+      "E": 6,
+      "beta1": 1,
+      "diameter": 3,
+      "avg_pair_distance": "9/5",
+      "edge_connectivity": 2,
+      "receipt_distance": 2
+    },
+    "A4": {
+      "V": 4,
+      "E": 6,
+      "beta1": 3,
+      "diameter": 1,
+      "avg_pair_distance": "1",
+      "edge_connectivity": 3,
+      "receipt_distance": 3
+    },
+    "S4": {
+      "V": 6,
+      "E": 12,
+      "beta1": 7,
+      "diameter": 2,
+      "avg_pair_distance": "6/5",
+      "edge_connectivity": 4,
+      "receipt_distance": 4
+    }
+  },
+  "cyclic_transport": {
+    "D5": {
+      "geometric_pass": true,
+      "current_MQM_transition_lift": false,
+      "order": 5
+    },
+    "D6": {
+      "geometric_pass": true,
+      "current_MQM_transition_lift": true,
+      "order": 6
+    },
+    "A4": {
+      "geometric_pass": false,
+      "current_MQM_transition_lift": false
+    },
+    "S4": {
+      "geometric_pass": false,
+      "current_MQM_transition_lift": false
+    }
+  },
+  "function_winners": {
+    "packing_uniformity": "D5",
+    "coordination_average_pair_distance": "A4",
+    "cyclic_transport_with_current_MQM_code_frame_lift": "D6",
+    "receipt_redundancy_distance": "S4"
+  },
+  "scope": "Function-specific structural winners only; not an overall architecture or hardware winner."
+}
