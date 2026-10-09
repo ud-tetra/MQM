@@ -1,0 +1,51 @@
+{
+  "aut_perm": {
+    "isomorphism": "S3 x C2 ~= D6(order12)",
+    "order_spectrum": {"1":1,"2":7,"3":2,"6":2},
+    "protected_logical_action": {"I":12,"nontrivial":0},
+    "r": [[1,2,3],[4,5],[6,7]],
+    "s": [[2,3]],
+    "size": 12
+  },
+  "center_size": 16,
+  "defect_spectrum": {
+    "affine_logical_counts": {"I":12288,"X":12288,"Y":12288,"Z":12288},
+    "affine_total": 49152,
+    "center_normalizer": 4096,
+    "gauge": 1024,
+    "pauli_cosets": {"I":1024,"X":1024,"Y":1024,"Z":1024}
+  },
+  "frame_shells": {
+    "C3": {"basis_cycles_close":[true,true,true],"cycle_rank":3,"edges":6,"vertices":4},
+    "C6": {"basis_cycles_close":[true,true,true,true,true,true],"cycle_rank":6,"edges":12,"vertices":7},
+    "D6": "C6 wheel plus reflection s"
+  },
+  "gauge_size": 1024,
+  "physical_promotion": 0,
+  "regular_tetra_edge_clock": {
+    "residuals": {
+      "3":{"deg":-148.41366190347205,"kind":"gap"},
+      "4":{"deg":-77.88488253796274,"kind":"gap"},
+      "5":{"deg":-7.356103172453426,"kind":"gap"},
+      "6":{"deg":63.17267619305589,"kind":"overlap"}
+    },
+    "theta":"acos(1/3)",
+    "theta_over_pi":"irrational; no finite exact edge-ring closure"
+  },
+  "scope": {
+    "not_claimed":"D6 physical preference",
+    "open":["Euclidean six-cell realization","metric gluing","hardware preference"]
+  },
+  "six_frame_port_orbit":[[1,0],[2,1],[3,0],[1,1],[2,0],[3,1]],
+  "status":"EXACT_CODE_FRAME_ENUMERATION",
+  "symmetry_family_admission":{
+    "C3":{"order":3,"pass":true},
+    "C4":{"order":4,"pass":false},
+    "C6":{"order":6,"pass":true},
+    "D6_order12":{"order":12,"pass":true},
+    "icosahedral_A5":{"order":60,"pass":false},
+    "octahedral_S4":{"order":24,"pass":false},
+    "tetrahedral_A4":{"order":12,"pass":false}
+  },
+  "version":"0.1"
+}
