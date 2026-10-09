@@ -1,0 +1,23 @@
+{
+  "version":"0.1",
+  "status":"FROZEN_BEFORE_MOVE_BREAK_EVEN_EVALUATION",
+  "physical_promotion":0,
+  "candidates":{
+    "v128":{"signed_steps":4,"moved_roles_per_step":4,"moved_role_exposure":16,"local_control_time_us":12.2,"local_control_product_diagnostic":0.9570935821134408,"A0":"23/63","K2":"78/1265"},
+    "D6_transport":{"signed_steps":6,"moved_roles_per_step":7,"moved_role_exposure":42,"local_control_time_us":0,"local_control_product_diagnostic":1,"A0":"1/3","K2":"413/6325"}
+  },
+  "typed_surfaces":{
+    "ideal_Magnus":"compare sqrt(A0)+eta sqrt(K2); eta is dimensionless dwell/noise scale",
+    "concurrent_move_time":"t_v=12.2+4 tau_M; t_D6=6 tau_M",
+    "serial_role_time":"t_v=12.2+16 tau_r; t_D6=42 tau_r",
+    "move_loss_only":"S_v=(1-ell_M)^16; S_D6=(1-ell_M)^42",
+    "control_plus_move_loss_diagnostic":"S_v=C_v(1-ell_M)^16; S_D6=(1-ell_M)^42",
+    "control_plus_T2star_diagnostic":"multiply local-control product by exp(-cycle_time/12700us); diagnostic only"
+  },
+  "source_bound_T2star_us":12700,
+  "governance":[
+    "do not add A0/K2 residuals to fidelity/loss probabilities",
+    "each break-even is typed within its own metric",
+    "MOVE time, dephasing and loss are variables, not inferred hardware parameters"
+  ]
+}
