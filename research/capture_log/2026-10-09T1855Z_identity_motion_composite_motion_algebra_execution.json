@@ -1,0 +1,72 @@
+{
+  "timestamp_utc": "2026-10-09T18:55:00Z",
+  "turn_type": "execute_1_2_3_identity_motion_composite_motion_algebra",
+  "source_head_at_start": "14aa064d1b28b9195b486a35069089bb08584f86",
+  "physical_promotion": 0,
+  "option_1_identity_motion_dynamics": {
+    "freeze_commit": "022eb1a83db201bf6e0b0285ecabb3b0c6c73bc3",
+    "replay_source_commit": "ad09cb2eff23a3efca3ffb6f203797aef103cc84",
+    "workflow_run_id": 37954372128,
+    "workflow_job_id": 113901008818,
+    "artifact_id": 11627765884,
+    "artifact_zip_sha256": "fa9f4243257e99c8e9a39da7abd898fac1a8b83be46da10499cea15dbc410638",
+    "source_sha256": "b184f3a4299bde43a32ffabf204d0b99f61b860293fade4165fc46b2737d64d1",
+    "result_sha256": "8946aa6a9df3a5b2dca4a290e06ce0314d7f87be573168b3dc189c1ef16e2321",
+    "result_commit": "89eed19aab9ebab75f3dbda4579f55cdb259bff1",
+    "audit_commit": "0af77e6d6d96f854b8af46ab6465f0a69cbc1c3c",
+    "coherent_w2_mean_norm2": {
+      "I": "1",
+      "a": "65/84",
+      "b": "55/126",
+      "ab": "41/84",
+      "zb": "3/7"
+    },
+    "stochastic_weight2_result": "0 improved / 0 worsened / 252 equal for every candidate under frozen ideal decoder",
+    "physical_cycle_primitive_exposure": {
+      "I": 0,
+      "a": 6,
+      "b": 36,
+      "ab": 36,
+      "zb": 54
+    }
+  },
+  "option_2_function_specialized_composite": {
+    "architecture_commit": "98db4da380c07767c73939ae3bd85fa44e93cec4",
+    "replay_source_commit": "d77963a2369aad96932c75f15d4fba7535daf757",
+    "result_commit": "ddb97c4da88ca47e4c2e1f9b4622fb03bb72441b",
+    "layers": [
+      "D5 local metric fiber",
+      "A4 K4 module base",
+      "D6 six-state logical-identity frame clock",
+      "S4/octahedral receipt overlay"
+    ],
+    "native_receipt_code": "[6,3,3] K4 cut-space code",
+    "augmented_receipt_code": "[12,5,4] octahedron cut-space code",
+    "typed_address_count": "5*4*6=120=2^3*3*5"
+  },
+  "option_3_motion_algebra": {
+    "artifact_commit": "5345bad529c9730513162f66868f0e6a694a108b",
+    "transition_group": "C2 x S4 x S4",
+    "logical_quotient": "S3",
+    "kernel": "C2^3 x S4, order 192",
+    "result": "finite schedule monodromy, logical equivalence modulo kernel, concatenation, signed-period distinction, periodic kernel-frame gauge, and spacetime plaquette flatness formalized"
+  },
+  "claim_boundaries": {
+    "coherent_motion_resource": "EXACT under ideal zeroth-order static-Hamiltonian model",
+    "stochastic_pauli_advantage": "NO_GO in frozen weight-2 ideal-decoder model",
+    "physical_loss_advantage": "NO_GO absent compensating mechanism; virtual frame updates add no primitive loss exposure",
+    "composite_hardware_advantage": "OPEN",
+    "finite_frame_motion_algebra": "EXACT algebraic framework",
+    "hardware_validation": "OPEN",
+    "threshold": "OPEN",
+    "quantum_advantage": "OPEN",
+    "physical_promotion": 0
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "trigger_pr_number": 16,
+    "trigger_pr_merged": false
+  }
+}
