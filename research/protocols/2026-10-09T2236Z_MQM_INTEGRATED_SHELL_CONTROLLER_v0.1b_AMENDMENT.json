@@ -1,0 +1,43 @@
+{
+  "version": "0.1b",
+  "status": "PRE_EVALUATION_CONTROLLER_STRESS_CASES",
+  "parent": "research/protocols/2026-10-09T2235Z_MQM_INTEGRATED_SHELL_CONTROLLER_v0.1a_AMENDMENT.json",
+  "result_exposed": false,
+  "config_stress_cases": {
+    "D6_AUTO": {
+      "tau_v_us": 5,
+      "tau_D6_us": 1,
+      "ell_v": "1/1000",
+      "ell_D6": "1/1000",
+      "expected": "D6"
+    },
+    "V128_AUTO": {
+      "tau_v_us": 2,
+      "tau_D6_us": 4,
+      "ell_v": "1/200",
+      "ell_D6": "1/200",
+      "expected": "V128"
+    },
+    "CONFLICT_REVIEW": {
+      "tau_v_us": 2,
+      "tau_D6_us": 4,
+      "ell_v": "1/10000",
+      "ell_D6": "1/10000",
+      "expected": "CONFIG_REVIEW"
+    },
+    "MISSING": {
+      "expected": "SOURCE_BLOCKED"
+    }
+  },
+  "spare_policy_stress": {
+    "homogeneous": "UNIFORM",
+    "known_heterogeneous": "ASYMMETRIC"
+  },
+  "receipt_modes": [
+    "K4_ONLY",
+    "S4_ONLY",
+    "K4_PLUS_S4"
+  ],
+  "safety_contract_changed": false,
+  "physical_promotion": 0
+}
