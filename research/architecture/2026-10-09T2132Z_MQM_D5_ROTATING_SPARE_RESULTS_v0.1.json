@@ -1,0 +1,129 @@
+{
+  "version": "0.1",
+  "status": "EXACT_D5_ROTATING_SPARE_SCHEDULE",
+  "physical_promotion": 0,
+  "freeze_commit": "82dbf1fe0acc514121081da50c67ae37c713317b",
+  "replay_source_commit": "5dcbbde15ada31642c8da556c214eaae5fcc6d04",
+  "workflow_run_id": 37962063206,
+  "five_epoch": {
+    "slot_spare_counts": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "slot_active_counts": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "slot_total_check_counts": [
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "channel_slot_visit_rows": [
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "note": "slot burden and channel visits equalized; short/long replacement burden not equal across channel labels"
+  },
+  "ten_epoch": {
+    "slot_spare_counts": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "slot_active_counts": [
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "slot_total_check_counts": [
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "channel_slot_visit_rows": [
+      [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    ],
+    "short_counts_per_channel": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "long_counts_per_channel": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "mean_replacement_distance_exact": "(3+sqrt(5))/2"
+  },
+  "homogeneous_iid_loss": "exactly invariant under rotation; benefit requires site-dependent heterogeneity"
+}
