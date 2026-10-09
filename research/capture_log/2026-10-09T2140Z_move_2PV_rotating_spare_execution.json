@@ -1,0 +1,61 @@
+{
+  "timestamp_utc": "2026-10-09T21:40:00Z",
+  "turn_type": "execute_1_2_3_move_break_even_2PV_rotating_spare",
+  "source_head_at_start": "be0b7d21675f51c28cd7a63276f044014ecf1cd8",
+  "physical_promotion": 0,
+  "failed_combined_run": {
+    "workflow_run_id": 37961923486,
+    "failure": "runner lacked sympy during 2PV replay; MOVE result completed, 2PV/rotation not promoted",
+    "repair_log_commit": "8836908564c4f8e3e4a59f4d63c6057f519d5ef1"
+  },
+  "successful_replay": {
+    "workflow_run_id": 37962063206,
+    "workflow_job_id": 113927103843,
+    "artifact_id": 11632825294,
+    "artifact_zip_sha256": "5332ac021d5b35ad1d046f4dd50e6404bae61b7cb494bb5775bec2d301680839"
+  },
+  "option_1_MOVE_break_even": {
+    "freeze_commit": "0b05c2d13602ddc3a3f26dbc3b5c2cd82af8093a",
+    "source_commit": "3f30ce4dc1823579ba6116703e85f4389a9cd6eb",
+    "result_commit": "c0c1a871a266a155ee789034793c70ba7581c275",
+    "eta_cross": 3.7227278096555585,
+    "concurrent_move_time_break_even_us": 6.1,
+    "serial_role_time_break_even_us": 0.46923076923076923,
+    "control_plus_move_loss_break_even_per_role": 0.0016852746870257285
+  },
+  "option_2_2PV_D5": {
+    "freeze_commit": "59e5bc63b980d7277ebb5ef68ea02f2f365485f1",
+    "repaired_source_commit": "9b2d170b7feca039ea03dd347828df909e9bff3f",
+    "result_commit": "7d8422d1d6e639c635840803b0bca7603f88ed54",
+    "current_safe_accept": "A*(1-ell_A)^4",
+    "unsafe_accept_possible": "A*((1-ell_A*(1-m))^4-(1-ell_A)^4)",
+    "restored_hold_subset": "(A+H)*4*ell_A*(1-m)*(1-ell_A)^3*(1-ell_S)*(1-mu)*(1-rho)*(1-nu)",
+    "ruling": "successful spare replacement restores a fresh retry; it does not convert the interrupted 2+PV attempt to ACCEPT"
+  },
+  "option_3_rotating_spare": {
+    "freeze_commit": "82dbf1fe0acc514121081da50c67ae37c713317b",
+    "source_commit": "5dcbbde15ada31642c8da556c214eaae5fcc6d04",
+    "result_commit": "e0c2e943fa392af06efecd1d15465b6a8393bf90",
+    "five_epoch": "each slot spare once, active four times, each channel visits each slot once",
+    "ten_epoch": "each slot spare twice, active eight times; each channel visits each slot twice and sees five short/five long replacement opportunities",
+    "homogeneous_iid_reliability_gain": "NO_GO"
+  },
+  "integrated_audit_commit": "e2399bf9a227f0ba467b00f31aa68c265378a8e6",
+  "claim_boundaries": {
+    "MOVE_hardware_prediction": "OPEN",
+    "D5_site_heterogeneity_benefit": "OPEN",
+    "hardware_validation": "OPEN",
+    "threshold": "OPEN",
+    "quantum_advantage": "OPEN",
+    "physical_promotion": 0
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "trigger_prs_closed_unmerged": [
+      25,
+      26
+    ]
+  }
+}
