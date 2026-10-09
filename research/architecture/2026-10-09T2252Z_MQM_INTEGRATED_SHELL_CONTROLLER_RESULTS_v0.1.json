@@ -1,0 +1,47 @@
+{
+  "version": "0.1",
+  "status": "EXACT_INTEGRATED_SHELL_CONTROLLER_MODEL_CHECK",
+  "physical_promotion": 0,
+  "freeze_commit": "0af5c29f52619a62b7ef40d3de144776b0829df7",
+  "amendments": [
+    "53ada50ba01ccf4c9ef7d7b7edc037ef9467f261",
+    "de835d1568c92bd30ff7a24f3720948e8a43da5b"
+  ],
+  "replay_source_commit": "5d4b51d5ac6a654762b2072ec191445fda2357de",
+  "workflow_run_id": 37965179858,
+  "configuration_decisions": {
+    "D6_AUTO": "D6",
+    "V128_AUTO": "V128",
+    "CONFLICT_REVIEW": "CONFIG_REVIEW",
+    "MISSING": "SOURCE_BLOCKED"
+  },
+  "spare_policy_decisions": {
+    "homogeneous": "UNIFORM",
+    "known_heterogeneous": "ASYMMETRIC"
+  },
+  "receipt_modes": {
+    "K4_ONLY": {
+      "invariants_pass": true,
+      "violations": 0
+    },
+    "S4_ONLY": {
+      "invariants_pass": true,
+      "violations": 0
+    },
+    "K4_PLUS_S4": {
+      "invariants_pass": true,
+      "violations": 0
+    }
+  },
+  "locked_invariants": [
+    "ACCEPT only from a fresh RUN_2PV or clean DEGRADED_NO_SPARE attempt",
+    "REPAIRING never jumps directly to ACCEPT or RETRY_READY",
+    "repair success must traverse the configured receipt gate(s) before RETRY_READY",
+    "RETRY_READY starts a fresh RUN_2PV before any ACCEPT",
+    "data/hub loss -> QUARANTINE",
+    "two-or-more detected channel losses -> HOLD",
+    "missing calibration -> SOURCE_BLOCKED",
+    "timing/loss metric conflict -> CONFIG_REVIEW"
+  ],
+  "latent_risk": "UNSAFE_ACCEPT_POSSIBLE from missed loss remains analytic and unobservable to the controller."
+}
