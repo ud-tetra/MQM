@@ -1,0 +1,44 @@
+{
+  "version":"0.1",
+  "status":"FROZEN_BEFORE_FINITE_PULSE_SQALE_EVALUATION",
+  "physical_promotion":0,
+  "candidates":["I","a","b","zb"],
+  "implementation":"canonical physical H/S/SWAP lift; SWAP=3 CNOT; CNOT=H_target CZ H_target; local H uses the frozen selective-GR/Rz echo construction on 8 live data atoms",
+  "source_profiles":{
+    "PRX2025_timing":{
+      "provenance":"Radnaev et al., PRX Quantum 6, 030334 (2025)",
+      "GR_pi_us":4.1,
+      "Rz_pi_us":0.25,
+      "CZ_us":0.416,
+      "clock_qubit_T2star_ms":12.7,
+      "clock_qubit_T2_XY8_best_estimate_s":2.8,
+      "CZ_two_atom_survival":0.9962,
+      "Rz_single_qubit_fidelity_2MHz":0.99902,
+      "Rz_leakage_2MHz":0.00066,
+      "GR_array_average_fidelity":0.99980
+    },
+    "NPJ2025_coherent_model":{
+      "provenance":"Chung et al., npj Quantum Information 11, 193 (2025)",
+      "GR_absolute_overrotation_rad_per_GR":0.0345,
+      "Rz_angle_multiplier":1.012,
+      "Rz_leakage_from_input1":0.00132,
+      "CZ_single_qubit_phase_error_probability":0.0035
+    }
+  },
+  "timing_envelopes":{
+    "parallel_Rz_layer":"all same-angle site-addressed Rz requests in one compiler layer are simultaneous; no AOD switching latency added",
+    "serial_Rz_sites":"site-addressed Rz pulse durations are summed; no AOD switching latency added"
+  },
+  "coherent_unitary_stress":{
+    "model":"apply ideal CZ, but replace every GR(theta) by GR(theta+0.0345) and every Rz(theta) by Rz(1.012 theta); repeat through the signed cycle period",
+    "metric":"8-qubit average gate infidelity relative to identity/global phase",
+    "profile_status":"CROSS_PROFILE_STRESS because timing and coherent-error parameters originate from separately characterized public profiles"
+  },
+  "stochastic_exposure":{
+    "CZ_survival":"0.9962^N_CZ under an explicitly independent-pair survival model",
+    "Rz_leakage_envelope":"(1-0.00066)^N_Rz using the PRX 2MHz single-qubit leakage characterization as a state-independent stress envelope",
+    "GR_fidelity_product":"0.99980^N_GR diagnostic only; not a process composition theorem",
+    "idle_diagnostic":"cycle_time/T2star and exp(-cycle_time/T2star); the exponential is a diagnostic, not the measured Ramsey functional form"
+  },
+  "claim_rule":"A motion survives the finite-pulse gate only if its ideal coherent suppression is not overwhelmed by the source-stress control infidelity and its timing/loss exposure remains Pareto-competitive. No hardware promotion follows."
+}
