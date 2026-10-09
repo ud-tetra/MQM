@@ -1,0 +1,11 @@
+{
+  "version": "0.1a",
+  "status": "PRE_RESULT_IMPLEMENTATION_REPAIR",
+  "parent": "research/architecture/2026-10-09T2122Z_mqm_2PV_D5_channel_integration_v01.py",
+  "failed_run_id": 37961923486,
+  "failure": "GitHub runner lacked sympy; no 2PV result was produced",
+  "repair": "replace sympy-only symbolic formatting with algebraically identical hard-coded exact formulas and Fraction stress arithmetic",
+  "mathematical_contract_changed": false,
+  "result_exposed": false,
+  "physical_promotion": 0
+}
