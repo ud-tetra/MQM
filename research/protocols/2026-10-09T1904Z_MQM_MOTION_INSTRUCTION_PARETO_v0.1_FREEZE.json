@@ -1,0 +1,30 @@
+{
+  "version":"0.1",
+  "status":"FROZEN_BEFORE_MULTI_OBJECTIVE_MOTION_SEARCH",
+  "physical_promotion":0,
+  "search_space":{
+    "frame_elements":1152,
+    "carriers":["D5","D6","A4","S4"],
+    "logical_actions":"all six S3 protected-logical actions",
+    "word_alphabet":["z","a","b","B","c","d","D"]
+  },
+  "objectives":{
+    "minimize":[
+      "zeroth-order weight-2 coherent residual mean norm squared",
+      "second-order Magnus weight-2 two-term RMS coefficient",
+      "signed-cycle physical primitive exposure",
+      "shortest generator-word length"
+    ],
+    "maximize":[
+      "carrier receipt distance"
+    ]
+  },
+  "carrier_receipt_distance":{"D5":2,"D6":2,"A4":3,"S4":4},
+  "constraints":[
+    "logical monodromy must equal the requested S3 action",
+    "reported coherent cycle uses signed conjugation period",
+    "virtual-frame implementation is reported separately from physical-control exposure"
+  ],
+  "selection":"Pareto dominance only; no scalar weights are tuned after result exposure",
+  "claim_rule":"A Pareto point is an instruction candidate, not a hardware winner or proof of dynamical-decoupling advantage."
+}
