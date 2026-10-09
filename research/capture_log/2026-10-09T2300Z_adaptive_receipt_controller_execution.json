@@ -1,0 +1,100 @@
+{
+  "timestamp_utc": "2026-10-09T23:00:00Z",
+  "turn_type": "execute_1_2_3_adaptive_site_receipt_depth_integrated_shell_controller",
+  "source_head_at_start": "75612b992835c56c5d9dfc11b4033642ec80ac54",
+  "physical_promotion": 0,
+  "replay": {
+    "workflow_run_id": 37965179858,
+    "workflow_job_id": 113937624289,
+    "artifact_id": 11632869353,
+    "artifact_zip_sha256": "dd11eb9d4113cf97916d204cd025890ccc86dc0df70efc8261728266ead6eee7"
+  },
+  "option_1_adaptive_site_controller": {
+    "freeze_commit": "88956e78733bf6ffb5b473fb6ec801de919b7fb8",
+    "amendment_commit": "64989e4b070d6129f01b08270ef4b51755a70577",
+    "source_commit": "9cde1956fcf5358455b640b28e93ef479745dadc",
+    "result_commit": "5e933cd1454f773cd8e45c2566d4bcf8b63d15ec",
+    "homogeneous_policy": "UNIFORM",
+    "homogeneous_counts": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "heterogeneous_policy": "ASYMMETRIC",
+    "heterogeneous_counts": [
+      0,
+      0,
+      0,
+      2,
+      3
+    ],
+    "missing_calibration": "SOURCE_BLOCKED"
+  },
+  "option_2_receipt_depth_yield": {
+    "freeze_commit": "b7bfacdfb53198eb7392ecc426d4d68055d1bdbe",
+    "source_commit": "975a6d754cae5d612c677c3f722eb60bf69a03b7",
+    "result_commit": "2fa0d88423042b7d33015711d60a708b8783c97b",
+    "equal_iid_pareto": [
+      "K4_ONLY",
+      "S4_ONLY"
+    ],
+    "K4_PLUS_S4_equal_iid_pareto": false,
+    "one_percent": {
+      "K4_ONLY": {
+        "safe": 0.941480149401,
+        "unsafe": 0.000003910599,
+        "hold": 0.05851594
+      },
+      "S4_ONLY": {
+        "safe": 0.8863848717161292,
+        "unsafe": 5.537974621260203e-8,
+        "hold": 0.11361507290412451
+      },
+      "K4_PLUS_S4": {
+        "safe": 0.8345137614500876,
+        "unsafe": 0.0000035184349412542336,
+        "hold": 0.16548272011497114
+      }
+    }
+  },
+  "option_3_integrated_shell_controller": {
+    "freeze_commit": "0af5c29f52619a62b7ef40d3de144776b0829df7",
+    "amendments": [
+      "53ada50ba01ccf4c9ef7d7b7edc037ef9467f261",
+      "de835d1568c92bd30ff7a24f3720948e8a43da5b"
+    ],
+    "source_commit": "5d4b51d5ac6a654762b2072ec191445fda2357de",
+    "result_commit": "9b695d0cbb9af5058b99509897a5c7af955235fe",
+    "config_decisions": {
+      "D6_AUTO": "D6",
+      "V128_AUTO": "V128",
+      "CONFLICT_REVIEW": "CONFIG_REVIEW",
+      "MISSING": "SOURCE_BLOCKED"
+    },
+    "receipt_modes_passed": [
+      "K4_ONLY",
+      "S4_ONLY",
+      "K4_PLUS_S4"
+    ],
+    "invariant_violations": 0
+  },
+  "integrated_audit_commit": "09f4ba8372f4ddd1a3607ff30d12c1765bd1014b",
+  "claim_boundaries": {
+    "adaptive_policy": "EXACT under frozen independent site-channel model",
+    "receipt_pareto": "EXACT under frozen receipt-bit models",
+    "integrated_controller": "EXACT abstract model-check",
+    "hardware_MOVE_choice": "SOURCE_BLOCKED",
+    "fault_tolerance": "OPEN",
+    "threshold": "OPEN",
+    "quantum_advantage": "OPEN",
+    "physical_promotion": 0
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "trigger_pr_closed_unmerged": 28
+  }
+}
