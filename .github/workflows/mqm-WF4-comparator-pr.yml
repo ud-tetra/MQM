@@ -1,0 +1,32 @@
+name: MQM W(F4) comparator replay
+
+on:
+  pull_request:
+    paths:
+      - 'research/architecture/2026-10-09T1512Z_mqm_WF4_exact_comparator_v01.py'
+      - 'review_handoff/MQM_WF4_COMPARATOR_v0.1/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run exact comparator
+        run: |
+          python3 research/architecture/2026-10-09T1512Z_mqm_WF4_exact_comparator_v01.py > MQM_WF4_COMPARATOR_RESULTS_v0.1.json
+          cat MQM_WF4_COMPARATOR_RESULTS_v0.1.json
+      - name: Hash
+        run: |
+          sha256sum research/architecture/2026-10-09T1512Z_mqm_WF4_exact_comparator_v01.py MQM_WF4_COMPARATOR_RESULTS_v0.1.json > MQM_WF4_COMPARATOR_SHA256_v0.1.txt
+          cat MQM_WF4_COMPARATOR_SHA256_v0.1.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MQM-WF4-comparator-v0.1
+          path: |
+            MQM_WF4_COMPARATOR_RESULTS_v0.1.json
+            MQM_WF4_COMPARATOR_SHA256_v0.1.txt
