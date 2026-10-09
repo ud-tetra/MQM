@@ -1,0 +1,14 @@
+{
+  "version": "0.1a",
+  "status": "PRE_EVALUATION_STRESS_COMPLETION",
+  "parent": "research/protocols/2026-10-09T2230Z_MQM_ADAPTIVE_SITE_CONTROLLER_v0.1_FREEZE.json",
+  "result_exposed": false,
+  "stress_pair_repair": {
+    "geometry": "D5 ring; adjacent spare-to-active pairs are SHORT, separation-two pairs are LONG",
+    "short_success": "999/1000",
+    "long_success": "998/1000",
+    "note": "synthetic controller stress only; not a hardware MOVE calibration"
+  },
+  "mathematical_objective_changed": false,
+  "physical_promotion": 0
+}
