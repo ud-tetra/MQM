@@ -1,0 +1,32 @@
+{
+  "version":"0.1",
+  "status":"FROZEN_BEFORE_SHAPE_FUNCTION_EVALUATION",
+  "physical_promotion":0,
+  "carriers":["D5","D6","A4","S4"],
+  "tests":{
+    "packing_uniformity":{
+      "metric":"kappa=max_cell_edge/min_cell_edge on the exact literal carrier family",
+      "winner_rule":"smaller kappa"
+    },
+    "coordination":{
+      "metric":"average all-pairs graph distance on the module adjacency graph",
+      "secondary":["diameter","edge_count"],
+      "winner_rule":"smaller average distance"
+    },
+    "cyclic_transport":{
+      "metric":"existence of a single shell-symmetry generator acting transitively as one cycle over every module and closing after module_count steps",
+      "winner_rule":"PASS preferred; report generator order"
+    },
+    "receipt_redundancy":{
+      "model":"edge receipt is valid iff it lies in the GF(2) cut space; cycle-space checks are parity checks",
+      "metric":"minimum nonzero undetected edge-error weight = graph edge connectivity lambda",
+      "derived_detection_scope":"detect every edge-bit error of weight < lambda",
+      "winner_rule":"larger lambda"
+    }
+  },
+  "governance":[
+    "structural winners are function-specific and do not imply overall architecture superiority",
+    "receipt test is a graph-bit model, not a quantum logical-error result",
+    "packing metric is geometric, not an energy or hardware-noise model"
+  ]
+}
