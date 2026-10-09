@@ -1,0 +1,31 @@
+{
+  "version": "0.1",
+  "status": "FROZEN_BEFORE_HETEROGENEOUS_ROTATION_EVALUATION",
+  "physical_promotion": 0,
+  "horizon_epochs": 5,
+  "sites": [
+    "A0",
+    "A1",
+    "A2",
+    "A3",
+    "A4"
+  ],
+  "site_parameters": {
+    "ell_active_i": "active-slot loss probability per epoch at site i",
+    "ell_spare_i": "spare-slot loss probability per epoch at site i",
+    "r_check_i": "readout/occupancy-check failure probability per epoch at site i"
+  },
+  "cumulative_site_survival": "S_i(n_i)=(1-ell_active_i)^(T-n_i)*(1-ell_spare_i)^n_i*(1-r_check_i)^T, where n_i is number of spare epochs assigned to site i and sum_i n_i=T.",
+  "objective": "maximize minimum_i S_i, equivalently minimize maximum negative-log cumulative site risk",
+  "comparison": {
+    "uniform_rotation": "n_i=1 for all five sites",
+    "optimized_known_heterogeneity": "enumerate all integer n_i>=0 with sum n_i=5",
+    "robust_unknown_heterogeneity": "site labels are unknown/adversarial before assignment; compare worst-case permutation of a bounded risk multiset"
+  },
+  "theorem_targets": [
+    "prove uniform rotation is minimax for homogeneous site parameters",
+    "test whether it remains minimax for known heterogeneous parameters",
+    "test whether uniform counts are minimax against unknown adversarial relabeling when only the multiset/bounds are known"
+  ],
+  "claim_rule": "rotation is a burden-equalization theorem; reliability advantage requires a declared heterogeneity information model."
+}
