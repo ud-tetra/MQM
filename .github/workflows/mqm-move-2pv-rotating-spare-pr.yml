@@ -1,0 +1,43 @@
+name: MQM MOVE 2PV rotating spare replay
+
+on:
+  pull_request:
+    paths:
+      - 'research/architecture/2026-10-09T2117Z_mqm_move_break_even_v01.py'
+      - 'research/architecture/2026-10-09T2122Z_mqm_2PV_D5_channel_integration_v01.py'
+      - 'research/architecture/2026-10-09T2127Z_mqm_D5_rotating_spare_v01.py'
+      - 'review_handoff/MQM_MOVE_2PV_ROTATING_v0.1/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: MOVE break-even
+        run: |
+          python3 research/architecture/2026-10-09T2117Z_mqm_move_break_even_v01.py > MQM_MOVE_BREAK_EVEN_RESULTS_v0.1.json
+          cat MQM_MOVE_BREAK_EVEN_RESULTS_v0.1.json
+      - name: 2PV D5 integration
+        run: |
+          python3 research/architecture/2026-10-09T2122Z_mqm_2PV_D5_channel_integration_v01.py > MQM_2PV_D5_CHANNEL_RESULTS_v0.1.json
+          cat MQM_2PV_D5_CHANNEL_RESULTS_v0.1.json
+      - name: Rotating spare
+        run: |
+          python3 research/architecture/2026-10-09T2127Z_mqm_D5_rotating_spare_v01.py > MQM_D5_ROTATING_SPARE_RESULTS_v0.1.json
+          cat MQM_D5_ROTATING_SPARE_RESULTS_v0.1.json
+      - name: Hash
+        run: |
+          sha256sum             research/architecture/2026-10-09T2117Z_mqm_move_break_even_v01.py             research/architecture/2026-10-09T2122Z_mqm_2PV_D5_channel_integration_v01.py             research/architecture/2026-10-09T2127Z_mqm_D5_rotating_spare_v01.py             MQM_MOVE_BREAK_EVEN_RESULTS_v0.1.json             MQM_2PV_D5_CHANNEL_RESULTS_v0.1.json             MQM_D5_ROTATING_SPARE_RESULTS_v0.1.json             > MQM_MOVE_2PV_ROTATING_SHA256_v0.1.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MQM-MOVE-2PV-rotating-v0.1
+          path: |
+            MQM_MOVE_BREAK_EVEN_RESULTS_v0.1.json
+            MQM_2PV_D5_CHANNEL_RESULTS_v0.1.json
+            MQM_D5_ROTATING_SPARE_RESULTS_v0.1.json
+            MQM_MOVE_2PV_ROTATING_SHA256_v0.1.txt
