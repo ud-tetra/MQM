@@ -1,0 +1,26 @@
+{
+  "version": "0.1",
+  "status": "EXACT_2PV_SPACETIME_DECODER_HOLONOMY",
+  "physical_promotion": 0,
+  "A4": {
+    "directed_interfaces": 12,
+    "decoder_plaquettes": 192,
+    "strict_zero_defect": 192,
+    "gauge_defect": 192,
+    "nontrivial_logical_defect": 0
+  },
+  "D6": {
+    "directed_interfaces": 12,
+    "decoder_plaquettes": 192,
+    "strict_zero_defect": 192,
+    "gauge_defect": 192,
+    "nontrivial_logical_defect": 0
+  },
+  "spatial_cycles": {
+    "A4_rank": 3,
+    "D6_rank": 1,
+    "strict_closure": true
+  },
+  "meaning": "For every selected A4/D6 directed interface and all 16 ideal center syndromes, canonical decode-then-transport equals transport-then-canonical-decode exactly in the phase-quotiented Pauli representation.",
+  "scope": "Ideal center decoder/recovery covariance only; flag/hook/noise/hardware behavior remains separate."
+}
