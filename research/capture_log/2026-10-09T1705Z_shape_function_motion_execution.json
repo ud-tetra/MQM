@@ -1,0 +1,101 @@
+{
+  "timestamp_utc": "2026-10-09T17:05:00Z",
+  "turn_type": "analyze_shape_function_motion_and_execute_next_steps",
+  "source_head_at_start": "5e6f6eba7e0be684bb84b5158c9ba5171ba2545f",
+  "physical_promotion": 0,
+  "intuition_recast": "shape selects structural affordance; motion word selects frame transformation; monodromy selects protected-logical operation",
+  "artifacts": [
+    {
+      "path": "research/architecture/2026-10-09T1645Z_mqm_shape_motion_semantics_v01.cpp",
+      "commit": "58f2d255033e0f6d1b9e18f78e30646f68bc4c28"
+    },
+    {
+      "path": "research/architecture/2026-10-09T1658Z_MQM_SHAPE_MOTION_RESULTS_v0.1.json",
+      "commit": "f9739aded03f81a383d474ac3f1ef920a6ee4b97"
+    },
+    {
+      "path": "research/architecture/2026-10-09T1655Z_MQM_SHAPE_FUNCTION_MOTION_GRAMMAR_v0.1.md",
+      "commit": "7b3468f4e1a5e5a06da10ee1b118da85280c75b9"
+    },
+    {
+      "path": "research/architecture/2026-10-09T1700Z_MQM_SPATIOTEMPORAL_COHERENCE_THEOREM_v0.1.md",
+      "commit": "2e6fd7c5c60bf89d9a04744c26a09d530da9bcfb"
+    }
+  ],
+  "replay": {
+    "workflow_run_id": 37951245202,
+    "workflow_job_id": 113890270417,
+    "artifact_id": 11625987320,
+    "artifact_zip_sha256": "560e0d5f34ba6333dc3d711760741c28f0077c38288b78b92404f213fbef86d7",
+    "source_sha256": "d559f3947298bd44b244f206011ea23170cf28219f47656be5be4340e0c36261",
+    "result_sha256": "21aa17addf63792e2e60369d94218a7163f7dd898eb4d189af6577d0b6c3dc0b"
+  },
+  "exact_results": {
+    "group_order": 1152,
+    "logical_identity_motions": 192,
+    "logical_axis_transpositions": 576,
+    "logical_axis_3cycles": 384,
+    "logical_periods": [
+      1,
+      2,
+      3
+    ],
+    "frame_periods": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      12
+    ],
+    "hidden_frame_multiplicity": {
+      "1": 193,
+      "2": 559,
+      "3": 104,
+      "4": 144,
+      "6": 152
+    },
+    "spatiotemporal_homology": {
+      "D5": {
+        "beta1": 1,
+        "H1_rank": 2,
+        "H2_rank": 1
+      },
+      "D6": {
+        "beta1": 1,
+        "H1_rank": 2,
+        "H2_rank": 1
+      },
+      "A4": {
+        "beta1": 3,
+        "H1_rank": 4,
+        "H2_rank": 3
+      },
+      "S4": {
+        "beta1": 7,
+        "H1_rank": 8,
+        "H2_rank": 7
+      }
+    }
+  },
+  "candidate_function_map": {
+    "D5": "local low-distortion metric fiber",
+    "A4": "compact coordination/module-control carrier",
+    "D6": "cyclic frame/address/transport carrier",
+    "S4": "redundant verification/cross-check carrier"
+  },
+  "claim_boundaries": {
+    "candidate_functions": "OPEN pending matched workload evidence",
+    "physical_dynamics": "OPEN",
+    "hardware_validation": "OPEN",
+    "threshold": "OPEN",
+    "quantum_advantage": "OPEN"
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "trigger_pr": 14,
+    "trigger_pr_merged": false
+  }
+}
