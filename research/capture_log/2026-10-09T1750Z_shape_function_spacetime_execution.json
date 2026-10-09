@@ -1,0 +1,85 @@
+{
+  "timestamp_utc": "2026-10-09T17:50:00Z",
+  "turn_type": "execute_1_2_3_shape_function_spacetime_motion_words",
+  "source_head_at_start": "14aa064d1b28b9195b486a35069089bb08584f86",
+  "physical_promotion": 0,
+  "benchmark_freeze_commit": "cdec2567a0d7e07f9de7e4225845949e14b782f6",
+  "replay": {
+    "workflow_run_id": 37953207795,
+    "workflow_job_id": 113897038669,
+    "artifact_id": 11626199401,
+    "artifact_zip_sha256": "4ea067389473defa3d7119cca02cdb7e244bc190c4ce66b7c8c135fa06b3e932"
+  },
+  "option_1_shape_function": {
+    "source_commit": "c428bb01048ff2d3d25428b938d9ab42ac75fd43",
+    "result_commit": "170dba69332bb34ca5a320b505a8665d21359b3f",
+    "winners": {
+      "packing": "D5",
+      "coordination": "A4",
+      "cyclic_transport_with_current_code_lift": "D6",
+      "receipt_redundancy": "S4"
+    },
+    "receipt_distances": {
+      "D5": 2,
+      "D6": 2,
+      "A4": 3,
+      "S4": 4
+    }
+  },
+  "option_2_spacetime_holonomy": {
+    "source_commit": "30ecac8e810222286b4081186b63465a97992a8a",
+    "repair_log_commit": "32232a5160a28c9a854aac3dc5c9576f48b96388",
+    "result_commit": "0ef7ee09adf07ca14a62966807161e2faa6219e9",
+    "A4": {
+      "plaquettes": 192,
+      "strict_zero_defect": 192,
+      "logical_defect": 0
+    },
+    "D6": {
+      "plaquettes": 192,
+      "strict_zero_defect": 192,
+      "logical_defect": 0
+    },
+    "scope": "ideal center decoder/recovery covariance only"
+  },
+  "option_3_motion_words": {
+    "source_commit": "cbbec2153436809a749750560d21798695a9e3db",
+    "result_commit": "56cf83f5b67c7d7f138b9b9fd318f831e19dfd47",
+    "identity_hidden_multiplicity": [
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "swap_XZ_hidden_multiplicity": [
+      1,
+      2,
+      3,
+      6
+    ],
+    "logical_3cycle_hidden_multiplicity": [
+      1,
+      2,
+      4
+    ],
+    "result": "same protected logical operation admits multiple exact internal frame clocks"
+  },
+  "integrated_audit_commit": "f449a9ab4fbea70c9cd84d8a68fd7e519de79c14",
+  "claim_boundaries": {
+    "structural_specialization": "EXACT under frozen metrics",
+    "ideal_decoder_spacetime_covariance": "EXACT",
+    "physical_shape_function": "CANDIDATE",
+    "longer_hidden_frame_path_advantage": "OPEN",
+    "hardware_validation": "OPEN",
+    "threshold": "OPEN",
+    "quantum_advantage": "OPEN"
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "trigger_pr": 15,
+    "trigger_pr_merged": false
+  }
+}
