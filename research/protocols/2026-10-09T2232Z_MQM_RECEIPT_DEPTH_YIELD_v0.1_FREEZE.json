@@ -1,0 +1,55 @@
+{
+  "version": "0.1",
+  "status": "FROZEN_BEFORE_RECEIPT_DEPTH_YIELD_EVALUATION",
+  "physical_promotion": 0,
+  "gates": [
+    "K4_ONLY",
+    "S4_ONLY",
+    "K4_PLUS_S4"
+  ],
+  "costs": {
+    "K4_ONLY": {
+      "bits": 6,
+      "layers": 1
+    },
+    "S4_ONLY": {
+      "bits": 12,
+      "layers": 1
+    },
+    "K4_PLUS_S4": {
+      "bits": 18,
+      "layers": 2
+    }
+  },
+  "exact_codes": {
+    "K4": "[6,3,3]",
+    "S4": "[12,5,4]"
+  },
+  "error_families": {
+    "equal_iid_p": [
+      "1/10000",
+      "1/1000",
+      "1/100",
+      "1/20"
+    ],
+    "asymmetric_grid": {
+      "p6": [
+        "1/1000",
+        "1/100"
+      ],
+      "p12": [
+        "1/1000",
+        "1/100"
+      ]
+    }
+  },
+  "metrics": [
+    "safe_zero_error_pass",
+    "undetected_nonzero_pass",
+    "HOLD_probability",
+    "receipt_bits",
+    "receipt_layers"
+  ],
+  "pareto_rule": "minimize undetected pass, bits, layers; maximize safe zero-error pass. No scalar weights.",
+  "semantic_boundary": "K4 and S4 verify different typed receipt objects; a mathematical dominance result under an iid bit model does not erase that semantic distinction."
+}
