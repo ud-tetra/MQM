@@ -1,0 +1,90 @@
+{
+  "version": "0.1",
+  "status": "EXACT_TRANSITION_GROUP_DECOMPOSITION_AND_SHELLS",
+  "workflow_run_id": 37946203625,
+  "workflow_job_id": 113872975748,
+  "artifact_id": 11624300976,
+  "artifact_zip_sha256": "e3e7b0ad661ffdd5c80cbb6311a7756447eda838ea4d12608e43677111628420",
+  "source_sha256": "0ae407203b2658b076ce426663e4ff70fb5b555b0b9ca69830079c074704d19a",
+  "result_sha256": "b024a2b26477187ee16516c9e226c671690e46d00e62d197a09e903aa9c1e0f4",
+  "group": {
+    "order": 1152,
+    "isomorphism": "C2 x S4 x S4",
+    "center_order": 2,
+    "derived_order": 144,
+    "abelianization_order": 8,
+    "logical_kernel_order": 192,
+    "logical_kernel_isomorphism": "C2^3 x S4",
+    "kernel_order_spectrum": {
+      "1": 1,
+      "2": 79,
+      "3": 8,
+      "4": 48,
+      "6": 56
+    },
+    "H1_kernel_S4_order": 24,
+    "H2_S4_order": 24,
+    "H2_intersection_logical_kernel": 4,
+    "logical_quotient": "S4/V4 ~= S3 on the second S4 factor"
+  },
+  "WF4_comparison": {
+    "isomorphic": false,
+    "W_F4_element_order_spectrum": {
+      "1": 1,
+      "2": 139,
+      "3": 80,
+      "4": 228,
+      "6": 464,
+      "8": 144,
+      "12": 96
+    },
+    "MQM_element_order_spectrum": {
+      "1": 1,
+      "2": 199,
+      "3": 80,
+      "4": 312,
+      "6": 368,
+      "12": 192
+    },
+    "exact_obstruction": "W(F4) has 144 elements of order 8; MQM group has none."
+  },
+  "shells": {
+    "D6": {
+      "modules": 6,
+      "interfaces": 6,
+      "cycle_rank": 1,
+      "strict_cycle_closure": true,
+      "nontrivial_logical_interfaces": 0,
+      "sum_permutation_moves": 42,
+      "sum_local_axis_changes": 0,
+      "max_interface_complexity": 7,
+      "carrier": "six literal tetrahedral modules in D6 bipyramid ring",
+      "transition": "r on each oriented forward interface; r^-1 reverse; r^6=I"
+    },
+    "A4": {
+      "modules": 4,
+      "interfaces": 6,
+      "cycle_rank": 3,
+      "strict_cycle_closure": true,
+      "nontrivial_logical_interfaces": 0,
+      "sum_permutation_moves": 0,
+      "sum_local_axis_changes": 12,
+      "max_interface_complexity": 2,
+      "carrier": "four module ports on tetrahedral faces / K4 adjacency",
+      "transition_family": "protected-logical-kernel A4 subgroup of kernel S4 factor"
+    },
+    "S4": {
+      "modules": 6,
+      "interfaces": 12,
+      "cycle_rank": 7,
+      "strict_cycle_closure": true,
+      "nontrivial_logical_interfaces": 0,
+      "sum_permutation_moves": 28,
+      "sum_local_axis_changes": 12,
+      "max_interface_complexity": 5,
+      "carrier": "six module ports on cube faces / octahedron adjacency",
+      "transition_family": "protected-logical-kernel S4 factor"
+    }
+  },
+  "physical_promotion": 0
+}
