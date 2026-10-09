@@ -1,0 +1,31 @@
+name: MQM D5 cut-channel replacement replay
+
+on:
+  pull_request:
+    paths:
+      - 'research/architecture/2026-10-09T2052Z_mqm_D5_cut_channel_replacement_v01.py'
+      - 'review_handoff/MQM_D5_CUT_REPLACEMENT_v0.1/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run
+        run: |
+          python3 research/architecture/2026-10-09T2052Z_mqm_D5_cut_channel_replacement_v01.py > MQM_D5_CUT_REPLACEMENT_RESULTS_v0.1.json
+          cat MQM_D5_CUT_REPLACEMENT_RESULTS_v0.1.json
+      - name: Hash
+        run: |
+          sha256sum research/architecture/2026-10-09T2052Z_mqm_D5_cut_channel_replacement_v01.py MQM_D5_CUT_REPLACEMENT_RESULTS_v0.1.json > MQM_D5_CUT_REPLACEMENT_SHA256_v0.1.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MQM-D5-cut-replacement-v0.1
+          path: |
+            MQM_D5_CUT_REPLACEMENT_RESULTS_v0.1.json
+            MQM_D5_CUT_REPLACEMENT_SHA256_v0.1.txt
