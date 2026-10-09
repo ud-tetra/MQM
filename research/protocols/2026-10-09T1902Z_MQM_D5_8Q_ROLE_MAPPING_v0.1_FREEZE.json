@@ -1,0 +1,32 @@
+{
+  "version":"0.1",
+  "status":"FROZEN_BEFORE_D5_ROLE_MAPPING_EVALUATION",
+  "physical_promotion":0,
+  "frozen_MQM_interaction_graph":{
+    "source_sets":{"T_C":[1,2,3,8],"T_plus":[5,6,7,8],"T_minus":[4,6,7,8]},
+    "edge_rule":"union of all two-vertex edges inside the three tetrahedral sets",
+    "edge_count":15
+  },
+  "D5_augmented_scaffold":{
+    "base":"exact five-cell bipyramid with h=1 and R=csc(pi/5)",
+    "sites":["N","S","v0","v1","v2","v3","v4","O"],
+    "O":"midpoint of NS, included only as the eighth candidate qubit site; O is not a D5 tetrahedral cell vertex"
+  },
+  "enumeration":"all 8! bijections from data-qubit roles 1..8 to the eight candidate sites",
+  "primary_metrics":[
+    "required-edge kappa=max length/min length",
+    "coefficient of variation of required-edge lengths",
+    "maximum required-edge length normalized by mean",
+    "sum required-edge length normalized by mean"
+  ],
+  "secondary_metrics":[
+    "number of required edges at each exact distance class",
+    "mapping of high-degree logical/physical roles to scaffold sites",
+    "non-required nearest-neighbor collisions"
+  ],
+  "baselines":{
+    "ideal_tri_tetra":"three congruent regular tetrahedral cells realizing T_C,T_plus,T_minus with every frozen required edge equal; kappa=1 by construction"
+  },
+  "claim_rule":"D5 improves interaction-length uniformity only if it beats the declared baseline on the same frozen required-edge metric; otherwise record NO-GO for that proposed function.",
+  "scope":"geometric interaction-length burden only; no hardware coupling law inferred"
+}
