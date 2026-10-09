@@ -1,0 +1,50 @@
+{
+  "version": "0.1",
+  "status": "EXACT_COMPOSITE_RECEIPT_OVERLAY",
+  "physical_promotion": 0,
+  "A4_module_graph": {
+    "vertices": 4,
+    "edges": 6
+  },
+  "S4_overlay": {
+    "vertices": 6,
+    "edges": 12,
+    "degrees": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "identity": "L(K4) is the octahedron graph"
+  },
+  "native_K4_interface_receipt_code": {
+    "length": 6,
+    "dimension": 3,
+    "distance": 3,
+    "nonzero_weight_spectrum": {
+      "3": 4,
+      "4": 3
+    }
+  },
+  "augmented_octahedral_receipt_code": {
+    "length": 12,
+    "dimension": 5,
+    "distance": 4,
+    "nonzero_weight_spectrum": {
+      "4": 6,
+      "6": 16,
+      "8": 9
+    }
+  },
+  "typed_counts": {
+    "D5_cells_per_A4_module": 5,
+    "A4_modules": 4,
+    "D5_local_cells_total": 20,
+    "D6_frame_phases_per_module": 6,
+    "module_frame_states": 24,
+    "D5_A4_D6_typed_addresses": 120
+  },
+  "scope": "binary receipt topology only; not quantum-code distance or hardware performance"
+}
