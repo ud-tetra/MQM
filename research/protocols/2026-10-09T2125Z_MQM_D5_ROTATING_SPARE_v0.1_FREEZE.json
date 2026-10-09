@@ -1,0 +1,29 @@
+{
+  "version":"0.1",
+  "status":"FROZEN_BEFORE_ROTATING_D5_SPARE_EVALUATION",
+  "physical_promotion":0,
+  "ring_slots":["A0","A1","A2","A3","A4"],
+  "channels":["C0","C1","C2","C3"],
+  "five_epoch_base_schedule":{
+    "spare_at_epoch_t":"A_t",
+    "channel_assignment":"C_j -> A_(t+j+1 mod 5)"
+  },
+  "ten_epoch_balanced_supercycle":{
+    "cycle_1_offsets":[1,2,3,4],
+    "cycle_2_offsets":[2,1,4,3],
+    "purpose":"equalize short versus long spare-replacement distance exposure across the four logical channels"
+  },
+  "metrics":[
+    "spare count per physical slot",
+    "active count per physical slot",
+    "channel visits per physical slot",
+    "short-distance versus long-distance replacement opportunities per channel",
+    "readout/occupancy-check count per physical slot"
+  ],
+  "distance_classes":{
+    "short":"2",
+    "long":"1+sqrt(5)"
+  },
+  "homogeneous_loss_invariance_test":"under identical iid active/spare loss probabilities at all slots, rotating the spare cannot change per-epoch loss probabilities; only burden distribution changes",
+  "claim_rule":"rotation is promoted only as exact exposure equalization; reliability benefit under site heterogeneity remains CANDIDATE until a site-dependent channel is supplied"
+}
