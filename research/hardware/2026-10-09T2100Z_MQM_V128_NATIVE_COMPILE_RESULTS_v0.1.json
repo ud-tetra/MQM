@@ -1,0 +1,105 @@
+{
+  "version": "0.1",
+  "status": "V128_NATIVE_COMPILE_AND_STRESS",
+  "physical_promotion": 0,
+  "freeze_commit": "3c2edaaf5c22b0474303442b7809afaee577c5b3",
+  "replay_source_commit": "4c55b9b1cf33af644cf8ddf3766929446017a22b",
+  "workflow_run_id": 37959984976,
+  "workflow_job_id": 113920067982,
+  "artifact_id": 11630777983,
+  "artifact_zip_sha256": "7c10d5478fa032d6190abfb13e5d5aed6097037094dac855101093b4d0feedb5",
+  "v128": {
+    "id": 128,
+    "signed_period": 4,
+    "permutation": "(4 6)(5 7)",
+    "local_words": [
+      "I",
+      "I",
+      "I",
+      "HS",
+      "HS",
+      "SH",
+      "SH",
+      "I"
+    ],
+    "batched_layers": [
+      {
+        "op": "S",
+        "targets": [
+          6,
+          7
+        ]
+      },
+      {
+        "op": "H",
+        "targets": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "op": "S",
+        "targets": [
+          4,
+          5
+        ]
+      }
+    ],
+    "moved_roles": 4,
+    "min_swaps": 2,
+    "gate_SWAP": {
+      "GR": 104,
+      "Rz": 784,
+      "CZ": 24,
+      "parallel_us": 156.584,
+      "cross_profile_infidelity": 0.9379198697267211,
+      "CZ_survival": 0.9126765614607291,
+      "Rz_leakage_envelope": 0.5959426565609799,
+      "GR_product": 0.9794127904956726
+    },
+    "transport": {
+      "GR": 8,
+      "Rz": 64,
+      "CZ": 0,
+      "parallel_us": 12.2,
+      "cross_profile_infidelity": 0.034901179833948026,
+      "Rz_leakage_envelope": 0.9586263109788957,
+      "GR_product": 0.9984011195521122
+    }
+  },
+  "b_reference": {
+    "id": 579,
+    "signed_period": 6,
+    "permutation": "(1 2 3)",
+    "local_words": [
+      "HSH",
+      "HSH",
+      "I",
+      "I",
+      "I",
+      "I",
+      "I",
+      "I"
+    ],
+    "moved_roles": 3,
+    "min_swaps": 2,
+    "gate_SWAP": {
+      "GR": 168,
+      "Rz": 1260,
+      "CZ": 36,
+      "parallel_us": 250.926,
+      "cross_profile_infidelity": 0.9961045415059993
+    },
+    "transport": {
+      "GR": 24,
+      "Rz": 180,
+      "CZ": 0,
+      "parallel_us": 34.35,
+      "cross_profile_infidelity": 0.15775437062498043
+    }
+  },
+  "ruling": "v128 compiles substantially better than b under transport-assisted permutation: 12.2 us versus 34.35 us control time and 0.0349 versus 0.1578 cross-profile coherent unitary infidelity, while MOVE timing/error/loss remain unmodeled. Gate-SWAP implementations of both remain poor.",
+  "scope": "cross-profile stress only; transport is ideal instantaneous in the unitary model; not hardware validation"
+}
