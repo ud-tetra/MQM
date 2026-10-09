@@ -1,0 +1,65 @@
+{
+  "version": "0.1",
+  "status": "EXACT_DM_COUPLER_FIBER_BENCHMARK",
+  "physical_promotion": 0,
+  "freeze_commit": "ed0502e5db70ec787615ed453212ab9661133fc1",
+  "replay_source_commit": "fbd4b333165ddb48e20ac3d9b81d5c2302fc83ba",
+  "workflow_run_id": 37958522429,
+  "workflow_job_id": 113915104222,
+  "artifact_id": 11630390801,
+  "artifact_zip_sha256": "dd62ef83b11bbe29338f3fac033230797060a666ba3717465eaa6589c8d4abde",
+  "family": "two-terminal Dm ancilla/coupler ring with terminal spacing 2 and adjacent slot spacing 2",
+  "rows": {
+    "m3": {
+      "kappa": 1.3093073414159542,
+      "slots": 3,
+      "spares_after_four": 0,
+      "terminal_to_slot": 1.5275252316519468
+    },
+    "m4": {
+      "kappa": 1.1547005383792515,
+      "slots": 4,
+      "spares_after_four": 0,
+      "terminal_to_slot": 1.7320508075688774
+    },
+    "m5": {
+      "kappa": 1.013463707942773,
+      "slots": 5,
+      "spares_after_four": 1,
+      "terminal_to_slot": 1.9734303106519662
+    },
+    "m6": {
+      "kappa": 1.1180339887498951,
+      "slots": 6,
+      "spares_after_four": 2,
+      "terminal_to_slot": 2.2360679774997902
+    },
+    "m7": {
+      "kappa": 1.2561788398176759,
+      "slots": 7,
+      "spares_after_four": 3,
+      "terminal_to_slot": 2.5123576796353517
+    },
+    "m8": {
+      "kappa": 1.3989663259659069,
+      "slots": 8,
+      "spares_after_four": 4,
+      "terminal_to_slot": 2.7979326519318137
+    }
+  },
+  "unique_integer_distortion_minimum": {
+    "m": 5,
+    "kappa_exact": "2/sqrt(3+2/sqrt(5))",
+    "edge_spread_percent": 1.3463707942773073,
+    "slots": 5,
+    "spares_after_four": 1
+  },
+  "pareto_m": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "ruling": "D5 is the unique minimum-distortion redundant two-terminal coupler fiber. D6 and higher m remain Pareto only by trading greater geometric distortion for more spare slots.",
+  "scope": "geometric redundancy/uniformity only; no source-bound coupling, crosstalk, loss, or hardware advantage"
+}
