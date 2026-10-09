@@ -1,0 +1,47 @@
+name: MQM shape function next replay
+
+on:
+  pull_request:
+    paths:
+      - 'research/architecture/2026-10-09T1712Z_mqm_shape_function_benchmark_v01.py'
+      - 'research/architecture/2026-10-09T1722Z_mqm_2PV_spacetime_holonomy_v01a.cpp'
+      - 'research/architecture/2026-10-09T1725Z_mqm_short_motion_words_v01.cpp'
+      - 'review_handoff/MQM_SHAPE_FUNCTION_NEXT_v0.1/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Shape function benchmark
+        run: |
+          python3 research/architecture/2026-10-09T1712Z_mqm_shape_function_benchmark_v01.py > MQM_SHAPE_FUNCTION_BENCHMARK_RESULTS_v0.1.json
+          cat MQM_SHAPE_FUNCTION_BENCHMARK_RESULTS_v0.1.json
+      - name: Build holonomy and motion replays
+        run: |
+          g++ -O3 -std=c++17 research/architecture/2026-10-09T1722Z_mqm_2PV_spacetime_holonomy_v01a.cpp -o hol
+          g++ -O3 -std=c++17 research/architecture/2026-10-09T1725Z_mqm_short_motion_words_v01.cpp -o words
+      - name: Run holonomy
+        run: |
+          ./hol > MQM_2PV_SPACETIME_HOLONOMY_RESULTS_v0.1.json
+          cat MQM_2PV_SPACETIME_HOLONOMY_RESULTS_v0.1.json
+      - name: Run motion words
+        run: |
+          ./words > MQM_SHORT_MOTION_WORDS_RESULTS_v0.1.json
+          cat MQM_SHORT_MOTION_WORDS_RESULTS_v0.1.json
+      - name: Hash
+        run: |
+          sha256sum             research/architecture/2026-10-09T1712Z_mqm_shape_function_benchmark_v01.py             research/architecture/2026-10-09T1722Z_mqm_2PV_spacetime_holonomy_v01a.cpp             research/architecture/2026-10-09T1725Z_mqm_short_motion_words_v01.cpp             MQM_SHAPE_FUNCTION_BENCHMARK_RESULTS_v0.1.json             MQM_2PV_SPACETIME_HOLONOMY_RESULTS_v0.1.json             MQM_SHORT_MOTION_WORDS_RESULTS_v0.1.json             > MQM_SHAPE_FUNCTION_NEXT_SHA256_v0.1.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MQM-shape-function-next-v0.1
+          path: |
+            MQM_SHAPE_FUNCTION_BENCHMARK_RESULTS_v0.1.json
+            MQM_2PV_SPACETIME_HOLONOMY_RESULTS_v0.1.json
+            MQM_SHORT_MOTION_WORDS_RESULTS_v0.1.json
+            MQM_SHAPE_FUNCTION_NEXT_SHA256_v0.1.txt
