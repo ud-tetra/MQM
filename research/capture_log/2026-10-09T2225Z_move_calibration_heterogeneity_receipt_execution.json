@@ -1,0 +1,83 @@
+{
+  "timestamp_utc": "2026-10-09T22:25:00Z",
+  "turn_type": "execute_1_2_3_move_calibration_heterogeneity_receipt_gate",
+  "source_head_at_start": "449229bc76623d4e369105a1d9ce6817b87dabec",
+  "physical_promotion": 0,
+  "external_public_source_audit": {
+    "Infleqtion_2026_dynamic_arrays": "qualitative support for dynamic atom arrays and transport-aware architecture; no per-in-array MOVE duration/loss/dephasing table found",
+    "Infleqtion_2026_static_field_transport": "17 cm atom-delivery/cooling transport; not admissible as in-QPU role MOVE calibration"
+  },
+  "replay": {
+    "workflow_run_id": 37963766840,
+    "workflow_job_id": 113932853765,
+    "artifact_id": 11632917288,
+    "artifact_zip_sha256": "8dd6067ab9d9bebc8257ecd856dbdd33a5cb6d91028de60d80f14a7766f2add4"
+  },
+  "option_1_MOVE_calibration": {
+    "packet_commit": "c68d2e8ef76f2a542c3197ae30b4186b6a7f16c5",
+    "threshold_source_commit": "a851534f5656d2d64e809655fdd209eb39c262c2",
+    "result_commit": "b0002998309c3971d77b665167308856cf4deec8",
+    "provider_template_commit": "94d3c1176d9e8294fbd1e4bcba1920c78c6e8b48",
+    "equal_loss_break_even": 0.0016852746870257285,
+    "parallelism_break_even_us": {
+      "P1": 0.46923076923076923,
+      "P2": 0.7625,
+      "P3": 1.22,
+      "P4": 1.525,
+      "P5": 1.525,
+      "P6": 1.525,
+      "P7": 6.1,
+      "P8": 6.1
+    },
+    "source_closure": "BLOCKED"
+  },
+  "option_2_heterogeneous_rotation": {
+    "freeze_commit": "a60bc1129d4df79f2e6ee20c09af74a44d8f22f0",
+    "source_commit": "467d6999b676ab37077f44bdca2973b56f106136",
+    "result_commit": "e6ca6d3808c31ad68a71d60588b556f60ec5c27a",
+    "known_heterogeneity_uniform_worst_survival": 0.8023617341413612,
+    "known_heterogeneity_optimal_counts": [
+      0,
+      0,
+      0,
+      2,
+      3
+    ],
+    "known_heterogeneity_optimal_worst_survival": 0.8501809661739772,
+    "robust_unknown_labels_unique_optimal_counts": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "option_3_receipt_gated_retry": {
+    "freeze_commit": "1716a77748631e6ece54577ac92aad4abe1c6533",
+    "source_commit": "69f07c89e9b1a928336e356745fb4aa9a8dbf079",
+    "result_commit": "a24c159b2b25364f06166e59532edd8ca4905050",
+    "K4_receipt_code": "[6,3,3]",
+    "S4_receipt_code": "[12,5,4]",
+    "leading_unsafe": "4*p6^3 + 6*p12^4 + higher/cross terms",
+    "one_percent_iid_unsafe_pass": 0.0000035184349412542336,
+    "one_percent_iid_hold": 0.16548272011497114,
+    "retry_rule": "fresh 2+PV only after fresh K4 and S4 receipt syndromes both pass"
+  },
+  "integrated_audit_commit": "99c25732477abed1eca728ab56e6526076fc58b1",
+  "claim_boundaries": {
+    "MOVE_hardware_decision": "SOURCE_BLOCKED pending provider packet",
+    "known_heterogeneity_uniform_rotation": "NO_GO",
+    "robust_unknown_heterogeneity_uniform_rotation": "EXACT minimax for frozen benchmark",
+    "receipt_gate": "EXACT binary receipt protocol",
+    "hardware_validation": "OPEN",
+    "threshold": "OPEN",
+    "quantum_advantage": "OPEN",
+    "physical_promotion": 0
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "trigger_pr_closed_unmerged": 27
+  }
+}
