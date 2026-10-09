@@ -1,0 +1,77 @@
+{
+  "version": "0.1",
+  "status": "EXACT_FULL_K192_SECOND_ORDER_SEARCH",
+  "physical_promotion": 0,
+  "freeze_commit": "5442782a75adf042ac931bc3210485025a64aaae",
+  "replay_source_commit": "3c4442309674b02b029ff82745863acc027caada",
+  "workflow_run_id": 37958325236,
+  "workflow_job_id": 113914434765,
+  "artifact_id": 11631165471,
+  "artifact_zip_sha256": "d294e2e3fac762234d0518e67cf27e857d7793add894f4247e6d3e0a5e98dfa3",
+  "kernel_size": 192,
+  "reference_b": {
+    "id": 579,
+    "signed_period": 6,
+    "step_cost": 12,
+    "cycle_exposure": 72,
+    "word_length": 1,
+    "zeroth_w2": "55/126",
+    "K2_two_term": "15616/170775"
+  },
+  "dominates_b_count": 0,
+  "balanced_challengers": [
+    {
+      "id": 128,
+      "name": "v",
+      "signed_period": 4,
+      "step_cost": 14,
+      "cycle_exposure": 56,
+      "word_length": 1,
+      "zeroth_w2": "23/63",
+      "K2_two_term": "78/1265",
+      "tradeoff": "better zeroth, K2 and exposure than b; worse direct step cost"
+    },
+    {
+      "id": 320,
+      "signed_period": 4,
+      "step_cost": 17,
+      "cycle_exposure": 68,
+      "word_length": 2,
+      "zeroth_w2": "71/252",
+      "K2_two_term": "346/6325",
+      "tradeoff": "substantially stronger suppression and lower exposure; more complex step/word"
+    },
+    {
+      "id": 1021,
+      "signed_period": 4,
+      "step_cost": 15,
+      "cycle_exposure": 60,
+      "word_length": 4,
+      "zeroth_w2": "95/252",
+      "K2_two_term": "62/1265",
+      "tradeoff": "lower K2 and exposure; longer word and higher step cost"
+    }
+  ],
+  "extreme_suppression_examples": [
+    {
+      "id": 1090,
+      "signed_period": 4,
+      "step_cost": 20,
+      "cycle_exposure": 80,
+      "word_length": 5,
+      "zeroth_w2": "1/4",
+      "K2_two_term": "128/1725"
+    },
+    {
+      "id": 707,
+      "signed_period": 12,
+      "step_cost": 26,
+      "cycle_exposure": 312,
+      "word_length": 2,
+      "zeroth_w2": "17/126",
+      "K2_two_term": "13084/170775"
+    }
+  ],
+  "ruling": "No K192 element strictly dominates b under the frozen five-metric Pareto rule. b remains Pareto, but v=id128 is the brightest lower-exposure challenger if a two-primitive increase in direct step complexity is acceptable.",
+  "scope": "exact search over all 192 logical-identity elements; ideal instantaneous equal-dwell model through first Magnus correction"
+}
