@@ -1,0 +1,75 @@
+{
+  "version": "0.1",
+  "status": "FROZEN_BEFORE_ADAPTIVE_SITE_CONTROLLER_EVALUATION",
+  "physical_promotion": 0,
+  "horizon_epochs": 5,
+  "sites": [
+    "A0",
+    "A1",
+    "A2",
+    "A3",
+    "A4"
+  ],
+  "inputs": {
+    "ell_active_i": "measured active-role loss probability per site/epoch",
+    "ell_spare_i": "measured spare-role loss probability per site/epoch",
+    "check_i": "measured occupancy/readout failure probability per site/epoch",
+    "pair_repair_i_j": "measured probability a spare at site j successfully MOVE+reset+verifies after detected active loss at site i"
+  },
+  "primary_objective": "choose integer spare counts n_i>=0, sum n_i=5, maximizing minimum cumulative site survival S_i=(1-ell_active_i)^(5-n_i)(1-ell_spare_i)^n_i(1-check_i)^5",
+  "secondary_objective": "among schedules realizing the primary-optimal count vector, maximize the minimum pair-repair probability encountered by active-site/spare-site combinations; then maximize their mean",
+  "policy_label": {
+    "UNIFORM": "n_i=(1,1,1,1,1)",
+    "ASYMMETRIC": "any other primary-optimal count vector",
+    "SOURCE_BLOCKED": "required site calibration absent"
+  },
+  "stress_profiles": {
+    "homogeneous": {
+      "ell_active": [
+        "3/100",
+        "3/100",
+        "3/100",
+        "3/100",
+        "3/100"
+      ],
+      "ell_spare": [
+        "1/200",
+        "1/200",
+        "1/200",
+        "1/200",
+        "1/200"
+      ],
+      "check": [
+        "1/500",
+        "1/500",
+        "1/500",
+        "1/500",
+        "1/500"
+      ]
+    },
+    "known_heterogeneous": {
+      "ell_active": [
+        "1/100",
+        "2/100",
+        "3/100",
+        "4/100",
+        "5/100"
+      ],
+      "ell_spare": [
+        "1/200",
+        "1/200",
+        "1/200",
+        "1/200",
+        "1/200"
+      ],
+      "check": [
+        "1/500",
+        "1/500",
+        "1/500",
+        "1/500",
+        "1/500"
+      ]
+    }
+  },
+  "claim_rule": "controller proves an exact calibration-to-schedule map under the declared independent site-channel model; it is not hardware validation."
+}
