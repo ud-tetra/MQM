@@ -1,0 +1,33 @@
+name: MQM global transport identity search
+
+on:
+  pull_request:
+    paths:
+      - 'research/architecture/2026-10-09T2045Z_mqm_global_transport_identity_search_v01.cpp'
+      - 'review_handoff/MQM_GLOBAL_TRANSPORT_IDENTITY_v0.1/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: g++ -O3 -std=c++17 research/architecture/2026-10-09T2045Z_mqm_global_transport_identity_search_v01.cpp -o gt
+      - name: Run
+        run: |
+          ./gt > MQM_GLOBAL_TRANSPORT_IDENTITY_RESULTS_v0.1.json
+          cat MQM_GLOBAL_TRANSPORT_IDENTITY_RESULTS_v0.1.json
+      - name: Hash
+        run: |
+          sha256sum research/architecture/2026-10-09T2045Z_mqm_global_transport_identity_search_v01.cpp MQM_GLOBAL_TRANSPORT_IDENTITY_RESULTS_v0.1.json > MQM_GLOBAL_TRANSPORT_IDENTITY_SHA256_v0.1.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MQM-global-transport-identity-v0.1
+          path: |
+            MQM_GLOBAL_TRANSPORT_IDENTITY_RESULTS_v0.1.json
+            MQM_GLOBAL_TRANSPORT_IDENTITY_SHA256_v0.1.txt
