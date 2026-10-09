@@ -1,0 +1,93 @@
+{
+  "timestamp_utc": "2026-10-09T15:30:00Z",
+  "turn_type": "execute_1_2_3_equivariant_shells_group_structure",
+  "physical_promotion": 0,
+  "option_1_D6_carrier": {
+    "source_replay_commit": "d6b61e2f04e96b34b4ab6bcf5ec989706df38dd3",
+    "workflow_run_id": 37946203625,
+    "workflow_job_id": 113872975748,
+    "artifact_id": 11624300976,
+    "artifact_zip_sha256": "e3e7b0ad661ffdd5c80cbb6311a7756447eda838ea4d12608e43677111628420",
+    "result_commit": "3b5bd68c17e2b128d248f1801d1f1decd337ecbe",
+    "carrier": "six literal tetrahedral modules in exact nonregular D6 bipyramid ring",
+    "interface_transition": "r=(1 2 3)(4 5)(6 7) on each forward interface",
+    "modules": 6,
+    "interfaces": 6,
+    "cycle_rank": 1,
+    "strict_cycle_closure": true,
+    "protected_logical_nontrivial_interfaces": 0
+  },
+  "option_2_A4_S4_shells": {
+    "A4": {
+      "carrier": "four module ports on tetrahedral faces / K4 adjacency",
+      "modules": 4,
+      "interfaces": 6,
+      "cycle_rank": 3,
+      "strict_cycle_closure": true,
+      "protected_logical_nontrivial_interfaces": 0,
+      "sum_permutation_moves": 0,
+      "sum_local_axis_changes": 12,
+      "max_interface_complexity": 2
+    },
+    "S4": {
+      "carrier": "six module ports on cube faces / octahedron adjacency",
+      "modules": 6,
+      "interfaces": 12,
+      "cycle_rank": 7,
+      "strict_cycle_closure": true,
+      "protected_logical_nontrivial_interfaces": 0,
+      "sum_permutation_moves": 28,
+      "sum_local_axis_changes": 12,
+      "max_interface_complexity": 5
+    },
+    "D6_transition_cost_reference": {
+      "sum_permutation_moves": 42,
+      "sum_local_axis_changes": 0,
+      "max_interface_complexity": 7
+    },
+    "note": "transition complexity is exact for the selected representatives and declared combinatorial cost, not a hardware gate cost"
+  },
+  "option_3_group_identification": {
+    "local_clifford_structural_extension_run": 37945438742,
+    "group_order": 1152,
+    "exact_isomorphism": "C2 x S4 x S4",
+    "center_order": 2,
+    "derived_order": 144,
+    "abelianization_order": 8,
+    "logical_kernel_order": 192,
+    "logical_kernel_isomorphism": "C2^3 x S4",
+    "logical_quotient": "S4/V4 ~= S3",
+    "WF4_comparator_source_commit": "ade248d1ae561621880b25a60e92bae755c53446",
+    "WF4_workflow_run_id": 37946305406,
+    "WF4_artifact_id": 11623766387,
+    "WF4_artifact_zip_sha256": "e4e29ecd1b4a7dade09900e2d479a7baf186a28d9e998040e6d8c64835bf6596",
+    "WF4_result_commit": "f5b0050631e7f80159bde08a25de0c5de311c917",
+    "WF4_isomorphism": "NO_GO",
+    "WF4_obstruction": "W(F4) has 144 order-8 elements; MQM monomial LC group has none"
+  },
+  "integrated_audit": {
+    "path": "research/architecture/2026-10-09T1525Z_MQM_EQUIVARIANT_SHELL_AND_GROUP_STRUCTURE_AUDIT_v0.1.md",
+    "commit": "c27b79bd6bc1610b7e483db85051e047b4ba58d4"
+  },
+  "claim_boundaries": {
+    "D6_literal_module_carrier": "EXACT",
+    "A4_S4_frame_shells": "EXACT",
+    "A4_S4_literal_tetrahedral_cell_metric_gluing": "OPEN",
+    "intermodule_circuit_cost": "OPEN",
+    "hardware_validation": "OPEN",
+    "independent_external_review": "OPEN",
+    "threshold": "OPEN",
+    "quantum_advantage": "OPEN",
+    "physical_promotion": 0
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "trigger_prs_closed_unmerged": [
+      11,
+      12,
+      13
+    ]
+  }
+}
