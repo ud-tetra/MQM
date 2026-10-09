@@ -1,0 +1,53 @@
+{
+  "version": "0.1",
+  "status": "EXACT_HETEROGENEOUS_ROTATING_SPARE_MINIMAX",
+  "physical_promotion": 0,
+  "freeze_commit": "a60bc1129d4df79f2e6ee20c09af74a44d8f22f0",
+  "replay_source_commit": "467d6999b676ab37077f44bdca2973b56f106136",
+  "workflow_run_id": 37963766840,
+  "theorem": {
+    "homogeneous": "with identical site parameters and active exposure worse than spare exposure, uniform counts (1,1,1,1,1) uniquely minimize worst-site cumulative risk over five epochs",
+    "known_heterogeneity": "uniform rotation is not generally minimax",
+    "unknown_adversarial_labels": "uniform rotation is the unique minimax count allocation for the frozen risk multiset when physical risk labels are unknown/adversarial"
+  },
+  "stress_profile": {
+    "active_loss": [
+      "1/100",
+      "2/100",
+      "3/100",
+      "4/100",
+      "5/100"
+    ],
+    "spare_loss": "1/200 each",
+    "check_failure": "1/500 each"
+  },
+  "known_heterogeneity": {
+    "uniform_counts": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "uniform_worst_survival": 0.8023617341413612,
+    "optimal_counts": [
+      0,
+      0,
+      0,
+      2,
+      3
+    ],
+    "optimal_worst_survival": 0.8501809661739772,
+    "absolute_gain": 0.04781923203261592
+  },
+  "robust_unknown_labels": {
+    "unique_optimal_counts": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "worst_case_survival": 0.8023617341413612
+  }
+}
