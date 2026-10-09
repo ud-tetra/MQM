@@ -1,0 +1,32 @@
+{
+  "version": "0.1",
+  "status": "EXACT_RECEIPT_MODE_SELECTOR",
+  "physical_promotion": 0,
+  "freeze_commit": "5160b213636ab0f1ae334c1cd85ec8cbcaa605b1",
+  "replay_source_commit": "c587b0e783812670421fd70be7ea9ea98267dccb",
+  "workflow_run_id": 37966042941,
+  "selection_rule": "semantic coverage first; unsafe target second; then minimize layers, bits, HOLD",
+  "tests": {
+    "generic_1pct_strict": {
+      "decision": "S4_ONLY",
+      "unsafe": 5.537974621260203e-8,
+      "hold": 0.11361507290412451
+    },
+    "k4_1pct": {
+      "decision": "K4_ONLY",
+      "unsafe": 0.000003910599,
+      "hold": 0.05851594
+    },
+    "generic_asym_bad_s4": {
+      "decision": "K4_ONLY",
+      "unsafe": 3.991005999e-9,
+      "hold": 0.005985015994
+    },
+    "both_asym": {
+      "decision": "K4_PLUS_S4",
+      "unsafe": 0.000003863934657020825,
+      "hold": 0.06975181742763949
+    }
+  },
+  "ruling": "Receipt semantics are preserved: S4_ONLY never substitutes for a required K4 object, K4_ONLY never substitutes for a required S4 object, BOTH requires both despite generic Pareto cost."
+}
