@@ -1,0 +1,31 @@
+{
+  "version":"0.1",
+  "status":"FROZEN_BEFORE_SECOND_ORDER_MOTION_EVALUATION",
+  "physical_promotion":0,
+  "candidates":["I","a","b","ab","zb"],
+  "control_model":{
+    "frame_update":"canonical signed H/S/SWAP Clifford lift",
+    "pulses":"ideal instantaneous",
+    "dwell":"equal duration tau between updates",
+    "cycle_period":"signed Pauli-conjugation period T_pm, not phase-quotiented frame order"
+  },
+  "noise_basis":{
+    "weight1":24,
+    "weight2":252,
+    "combined":276
+  },
+  "zeroth_order":"existing cycle average Hbar0=(1/T) sum_j H_j",
+  "second_order":{
+    "definition":"Hbar1/tau = (-i)/(2T) sum_{j>k}[H_j,H_k]",
+    "single_basis_metric":"Hilbert-Schmidt coefficient norm squared for each normalized Pauli basis Hamiltonian",
+    "two_term_metric":"same norm for H=(P+Q)/sqrt(2), exhaustively over unordered pairs of the 276 basis terms",
+    "report":["zero_count","mean_norm2","max_norm2","RMS coefficient"]
+  },
+  "finite_cycle_diagnostic":{
+    "dimensionless_dwell":"eta=tau times input Hamiltonian coefficient scale",
+    "bound":"RMS(Hbar0)+eta*RMS(Hbar1/tau)",
+    "crossover":"smallest positive eta at which this diagnostic reaches the static-I zeroth-order RMS of 1"
+  },
+  "loss_exposure_repair":"physical exposure for a coherent averaging cycle is per-step primitive cost times signed period T_pm",
+  "scope":"zeroth plus first Magnus correction only; finite pulse widths, higher Magnus orders and hardware calibration excluded"
+}
