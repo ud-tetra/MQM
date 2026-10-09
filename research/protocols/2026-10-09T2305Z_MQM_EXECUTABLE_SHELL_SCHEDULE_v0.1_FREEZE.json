@@ -1,0 +1,56 @@
+{
+  "version": "0.1",
+  "status": "FROZEN_BEFORE_EXECUTABLE_SHELL_SCHEDULE_GENERATION",
+  "physical_promotion": 0,
+  "output": "machine-readable event graph plus executable replay checker",
+  "inputs": {
+    "motion_mode": [
+      "D6",
+      "V128",
+      "SOURCE_BLOCKED",
+      "CONFIG_REVIEW"
+    ],
+    "spare_policy": "ordered five-epoch spare-slot schedule from adaptive allocator",
+    "receipt_mode": [
+      "K4_ONLY",
+      "S4_ONLY",
+      "K4_PLUS_S4"
+    ],
+    "controller": "frozen 2+PV",
+    "native_round_reference": "research/hardware/2026-10-08T2218Z_MQM_SQALE_NATIVE_ROUND_COMPILE_v0.1b.json"
+  },
+  "event_families": [
+    "CONFIG",
+    "MOVE",
+    "SPARE_ASSIGN",
+    "2PV_ACQUIRE",
+    "2PV_COMPARE",
+    "RECOVERY",
+    "2PV_VERIFY",
+    "LOSS_CHECK",
+    "REPAIR_MOVE",
+    "RESET_PREP",
+    "RECEIPT_K4",
+    "RECEIPT_S4",
+    "STATE"
+  ],
+  "branch_guards": [
+    "missing calibration -> SOURCE_BLOCKED",
+    "metric conflict -> CONFIG_REVIEW",
+    "2+PV acquisition equal zero -> ACCEPT",
+    "2+PV acquisition equal nonzero -> RECOVERY then VERIFY",
+    "detected one channel loss with spare -> REPAIRING",
+    "detected >=2 channel losses -> HOLD",
+    "data/hub loss -> QUARANTINE",
+    "repair success -> configured fresh receipt gate(s) -> RETRY_READY -> fresh 2+PV"
+  ],
+  "native_round_counts": {
+    "CZ": 39,
+    "GR": 40,
+    "RZ_address_requests": 346,
+    "RESET_site_requests": 14,
+    "NDSSR_site_requests": 14
+  },
+  "verification": "replay all branch classes and prove ACCEPT is reachable only after a current fresh 2+PV attempt",
+  "claim_rule": "executable abstract schedule only; MOVE/native event durations remain symbolic unless source-bound"
+}
