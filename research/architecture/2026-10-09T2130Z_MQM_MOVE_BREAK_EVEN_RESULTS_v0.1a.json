@@ -1,0 +1,38 @@
+{
+  "version": "0.1a",
+  "status": "DERIVED_TYPED_MOVE_BREAK_EVEN_SURFACES",
+  "physical_promotion": 0,
+  "freeze_commit": "0b05c2d13602ddc3a3f26dbc3b5c2cd82af8093a",
+  "replay_source_commit": "3f30ce4dc1823579ba6116703e85f4389a9cd6eb",
+  "workflow_run_id": 37962063206,
+  "workflow_job_id": 113927103843,
+  "artifact_id": 11632825294,
+  "artifact_zip_sha256": "5332ac021d5b35ad1d046f4dd50e6404bae61b7cb494bb5775bec2d301680839",
+  "ideal_Magnus": {
+    "v128": {
+      "A0": "23/63",
+      "K2": "78/1265"
+    },
+    "D6": {
+      "A0": "1/3",
+      "K2": "413/6325"
+    },
+    "eta_cross": 3.7227278096555585
+  },
+  "timing": {
+    "concurrent_move_break_even_us": 6.1,
+    "serial_role_break_even_us": 0.46923076923076923,
+    "interpretation": "D6 is faster below each threshold; v128 above it."
+  },
+  "loss": {
+    "move_only": "v128 has higher survival for every 0<ell_M<1 because exposures are 16 versus 42 moved roles",
+    "with_v128_control_product_break_even_ell_M": 0.0016852746870257285,
+    "percent_per_moved_role": 0.16852746870257285
+  },
+  "T2star_product_diagnostic": {
+    "T2star_us": 12700,
+    "concurrent_move_break_even_us": 284.57356902089634,
+    "serial_role_break_even_us": 21.89027454006895
+  },
+  "scope": "typed architecture break-even surfaces; MOVE channel parameters remain variables"
+}
