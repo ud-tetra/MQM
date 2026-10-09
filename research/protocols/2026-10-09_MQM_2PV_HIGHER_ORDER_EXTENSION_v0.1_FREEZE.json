@@ -1,0 +1,48 @@
+{
+  "version": "0.1",
+  "status": "PROSPECTIVE_FREEZE_FOR_UNRUN_HIGHER_ORDER_EXTENSION",
+  "physical_promotion": 0,
+  "parent": "research/protocols/2026-10-08T2210Z_MQM_2PLUS_POSTRECOVERY_VERIFY_v0.3_FREEZE.json",
+  "historical_exposure": "2+PV degree-two coefficients, 2+0/2+1/3+1 results and 125-point comparison already known before this extension freeze; no confirmatory claims against prior exposure",
+  "rate_set": [
+    "0",
+    "2^-21",
+    "2^-19",
+    "2^-17",
+    "2^-15"
+  ],
+  "parameters": [
+    "p",
+    "q",
+    "p_loss"
+  ],
+  "grid_points": 125,
+  "candidate": "2+PV post-exposure exploratory; unchanged R1,R2, agree, frozen Pauli-frame recovery; zero syndrome direct ACCEPT; nonzero invokes post-recovery V; fail-closed",
+  "comparison": [
+    "2+1",
+    "2+0",
+    "3+1"
+  ],
+  "co_primary": [
+    "Y",
+    "epsilon_L_given_A"
+  ],
+  "secondary": [
+    "Y_good",
+    "P_HOLD",
+    "P_QUARANTINE",
+    "verification_activation",
+    "expected_rounds",
+    "CZ_per_good",
+    "measurement_per_good"
+  ],
+  "method": "exact zero/one/two elementary event contributions using independently reconstructed conditional-exposure event universe plus stratified >=3 event tail sampling with exact Bernoulli tail probability",
+  "tail_shots_per_nonzero_point": 200000,
+  "master_seed": "0x4D514D5F32505631",
+  "per_point_seed": "SplitMix64(master_seed xor protocol_id xor (p_index<<8) xor (q_index<<16) xor (loss_index<<24))",
+  "uncertainty": "simultaneous Hoeffding familywise alpha=0.001, family size <=3000; propagate exact >=3-event tail mass and ratio intervals; disjoint intervals only for certified order",
+  "independent_reimplementation": "separate event signature and conditional verification trigger implementation, no copying raw aggregates or classifiers; same-agent check not independent scientific review",
+  "acceptance": "report all 125 points, comparisons with confidence intervals, errors, exclusions and time/cost; no post-exposure alteration; overlap INCONCLUSIVE",
+  "status_execution": "NOT_RUN",
+  "hardware_promotion": 0
+}
