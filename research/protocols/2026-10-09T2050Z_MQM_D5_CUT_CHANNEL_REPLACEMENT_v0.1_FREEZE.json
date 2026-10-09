@@ -1,0 +1,39 @@
+{
+  "version":"0.1",
+  "status":"FROZEN_BEFORE_D5_CUT_CHANNEL_REPLACEMENT_EVALUATION",
+  "physical_promotion":0,
+  "mapping":{
+    "frozen_cut_channels":[[8,4],[8,5],[8,6],[8,7]],
+    "D5_slots":["A0","A1","A2","A3","A4"],
+    "active_assignment":{"A0":[8,4],"A1":[8,5],"A2":[8,6],"A3":[8,7]},
+    "spare":"A4",
+    "typed_note":"slots carry channel ancilla/coupler roles; they are not replacements for the data qubits 4..8"
+  },
+  "protocol":[
+    "occupancy/loss-check the four active channel ancillas before channel use",
+    "if exactly one active ancilla is detected lost and the spare is present, HOLD that channel, move the spare to the failed slot, reset/prepare it, verify occupancy/state, update the channel-to-slot map, then resume",
+    "if two or more active ancillas are lost in one epoch, HOLD the shell because one spare cannot restore four channels",
+    "if the spare is absent when an active loss occurs, HOLD",
+    "if a data/hub qubit is lost, QUARANTINE; this fiber only replaces channel ancillas",
+    "a missed active loss is UNSAFE and is reported separately from HOLD"
+  ],
+  "typed_variables":{
+    "ell_A":"active-channel ancilla loss probability over the declared epoch",
+    "ell_S":"spare loss probability over the same epoch",
+    "m":"false-negative / missed-loss probability conditional on an active ancilla loss",
+    "mu":"replacement MOVE failure/loss probability",
+    "rho":"reset/prepare failure probability",
+    "nu":"post-replacement verification failure/missed-presence probability"
+  },
+  "primary_formulas":{
+    "r":"(1-m)(1-mu)(1-rho)(1-nu)",
+    "P_four_active":"(1-ell_A)^4 + 4 ell_A (1-ell_A)^3 (1-ell_S) r",
+    "P_unsafe_missed_loss":"1-(1-ell_A m)^4",
+    "P_HOLD":"1-P_four_active-P_unsafe_missed_loss"
+  },
+  "motion_metric":"exact Euclidean spare-to-failed-slot distance classes on the D5 ring",
+  "source_stress":{
+    "NDSSR_only":"ell_A=ell_S=0.01 from the published 2025 state-average NDSSR atom-loss figure; set m=mu=rho=nu=0 only as an optimistic partial-channel stress"
+  },
+  "claim_rule":"replacement benefit is architectural/combinatorial until MOVE, reset and loss-detector confusion are source-bound at the target backend"
+}
