@@ -1,0 +1,60 @@
+{
+  "version": "0.1",
+  "status": "EXACT_ONLINE_SITE_QUALITY_CONTROLLER_REPLAY",
+  "physical_promotion": 0,
+  "freeze_commit": "5be9a156edee963e515242d425bcb2faef820a4d",
+  "amendment_commit": "c3636d87731991ef6fe6462dfb967c0334943945",
+  "replay_source_commit": "5b46e0db69b67a7b24846f24ddf2ebb8e6a6d907",
+  "workflow_run_id": 37966042941,
+  "estimator": {
+    "type": "Hoeffding_UCB",
+    "alpha": 0.05,
+    "family_size": 15,
+    "minimum_trials": 100
+  },
+  "updates": [
+    {
+      "window": 0,
+      "policy": "UNIFORM",
+      "spare_counts": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "worst_conservative_site_survival": 0.44719191233235905
+    },
+    {
+      "window": 1,
+      "policy": "ASYMMETRIC",
+      "spare_counts": [
+        1,
+        1,
+        1,
+        2,
+        0
+      ],
+      "worst_conservative_site_survival": 0.5175800635272523
+    },
+    {
+      "window": 2,
+      "policy": "ASYMMETRIC",
+      "spare_counts": [
+        0,
+        0,
+        0,
+        2,
+        3
+      ],
+      "worst_conservative_site_survival": 0.7191775028781365
+    }
+  ],
+  "immutable_safety_rules": [
+    "ACCEPT criteria unchanged",
+    "HOLD/QUARANTINE transitions unchanged",
+    "receipt unsafe targets unchanged",
+    "MOVE decision thresholds unchanged"
+  ],
+  "ruling": "The controller can adapt spare scheduling at completed superframe boundaries without adapting acceptance or safety criteria. Conservative confidence bounds can temporarily choose a different asymmetric schedule before calibration becomes rich enough to recover the static minimax allocation."
+}
