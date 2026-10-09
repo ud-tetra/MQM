@@ -1,0 +1,112 @@
+{
+  "version": "0.1",
+  "status": "FROZEN_BEFORE_ONLINE_SITE_QUALITY_LEARNING",
+  "physical_promotion": 0,
+  "estimator": "one-sided Hoeffding upper confidence bound, fixed before synthetic exposure",
+  "confidence_alpha": "1/20",
+  "site_count": 5,
+  "channels": [
+    "active_loss",
+    "spare_loss",
+    "check_failure"
+  ],
+  "minimum_trials_per_site_channel": 100,
+  "ucb": "min(1, failures/trials + sqrt(log(2*site_count*channel_count/alpha)/(2*trials)))",
+  "update_rule": "update only at completed five-epoch superframe boundaries using cumulative past observations; never mid-attempt",
+  "planning_rule": "feed UCB channel values into the frozen five-epoch minimax spare-count allocator",
+  "safety_rule": "only spare scheduling adapts; ACCEPT/HOLD/QUARANTINE/RETRY_READY rules and unsafe targets remain frozen",
+  "source_block": "if any site/channel has fewer than minimum_trials, keep previous certified schedule or SOURCE_BLOCKED if none exists",
+  "synthetic_stream": [
+    {
+      "window": 0,
+      "active_trials": [
+        1000,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "active_failures": [
+        30,
+        30,
+        30,
+        30,
+        30
+      ],
+      "spare_trials": [
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "spare_failures": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "check_trials": [
+        1000,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "check_failures": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "window": 1,
+      "active_trials": [
+        1000,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "active_failures": [
+        10,
+        20,
+        30,
+        45,
+        60
+      ],
+      "spare_trials": [
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "spare_failures": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "check_trials": [
+        1000,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "check_failures": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    }
+  ],
+  "claim_rule": "synthetic adaptation proves controller behavior, not hardware learning performance"
+}
