@@ -1,0 +1,125 @@
+{
+  "version": "0.1",
+  "status": "EXACT_IDENTITY_MOTION_DYNAMICAL_BENCHMARK",
+  "physical_promotion": 0,
+  "freeze_commit": "022eb1a83db201bf6e0b0285ecabb3b0c6c73bc3",
+  "replay_source_commit": "ad09cb2eff23a3efca3ffb6f203797aef103cc84",
+  "workflow_run_id": 37954372128,
+  "workflow_job_id": 113901008818,
+  "artifact_id": 11627765884,
+  "artifact_zip_sha256": "fa9f4243257e99c8e9a39da7abd898fac1a8b83be46da10499cea15dbc410638",
+  "source_sha256": "b184f3a4299bde43a32ffabf204d0b99f61b860293fade4165fc46b2737d64d1",
+  "result_sha256": "8946aa6a9df3a5b2dca4a290e06ce0314d7f87be573168b3dc189c1ef16e2321",
+  "candidates": {
+    "I": {
+      "frame_order": 1,
+      "signed_period": 1,
+      "cycle_primitive_exposure": 0,
+      "coherent_w1": {
+        "rank": 24,
+        "zeroed_basis": 0,
+        "mean_norm2": "1"
+      },
+      "coherent_w2": {
+        "rank": 252,
+        "zeroed_basis": 0,
+        "mean_norm2": "1"
+      }
+    },
+    "a": {
+      "frame_order": 2,
+      "signed_period": 2,
+      "cycle_primitive_exposure": 6,
+      "coherent_w1": {
+        "rank": 21,
+        "zeroed_basis": 0,
+        "mean_norm2": "7/8"
+      },
+      "coherent_w2": {
+        "rank": 195,
+        "zeroed_basis": 0,
+        "mean_norm2": "65/84"
+      }
+    },
+    "b": {
+      "frame_order": 3,
+      "signed_period": 6,
+      "cycle_primitive_exposure": 36,
+      "coherent_w1": {
+        "rank": 16,
+        "zeroed_basis": 6,
+        "mean_norm2": "2/3"
+      },
+      "coherent_w2": {
+        "rank": 110,
+        "zeroed_basis": 102,
+        "mean_norm2": "55/126"
+      }
+    },
+    "ab": {
+      "frame_order": 4,
+      "signed_period": 8,
+      "cycle_primitive_exposure": 36,
+      "coherent_w1": {
+        "rank": 17,
+        "zeroed_basis": 6,
+        "mean_norm2": "17/24"
+      },
+      "coherent_w2": {
+        "rank": 123,
+        "zeroed_basis": 110,
+        "mean_norm2": "41/84"
+      }
+    },
+    "zb": {
+      "frame_order": 6,
+      "signed_period": 12,
+      "cycle_primitive_exposure": 54,
+      "coherent_w1": {
+        "rank": 16,
+        "zeroed_basis": 6,
+        "mean_norm2": "2/3"
+      },
+      "coherent_w2": {
+        "rank": 108,
+        "zeroed_basis": 102,
+        "mean_norm2": "3/7"
+      }
+    }
+  },
+  "stochastic_weight2": {
+    "all_candidates": {
+      "improved": 0,
+      "worsened": 0,
+      "equal": 252,
+      "global_bad_mean": "9/14"
+    },
+    "fixed_type_family_bad_means": {
+      "XX": "5/14",
+      "XY": "5/14",
+      "XZ": "5/14",
+      "YX": "11/14",
+      "YY": "11/14",
+      "YZ": "11/14",
+      "ZX": "11/14",
+      "ZY": "11/14",
+      "ZZ": "11/14"
+    },
+    "interpretation": "For the five logical-identity candidates, ideal-center decoder logical-failure classification is unchanged for every one of the 252 weight-2 Pauli errors over the complete frame cycle."
+  },
+  "loss": {
+    "cycle_exposures": {
+      "I": 0,
+      "a": 6,
+      "b": 36,
+      "ab": 36,
+      "zb": 54
+    },
+    "rule": "Under independent per-primitive loss ell>0, physical-cycle survival is (1-ell)^N; extra physical motion cannot improve loss survival absent a compensating mechanism. Virtual frame tracking adds N=0."
+  },
+  "scope": {
+    "coherent": "zeroth-order average-Hamiltonian result under ideal instantaneous canonical frame controls; higher Magnus terms and pulse errors excluded",
+    "stochastic": "frozen ideal-center decoder only",
+    "hardware": "OPEN"
+  }
+}
