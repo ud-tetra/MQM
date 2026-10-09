@@ -1,0 +1,52 @@
+{
+  "version": "0.1",
+  "status": "EXACT_ADAPTIVE_SITE_CALIBRATION_CONTROLLER",
+  "physical_promotion": 0,
+  "freeze_commit": "88956e78733bf6ffb5b473fb6ec801de919b7fb8",
+  "amendment_commit": "64989e4b070d6129f01b08270ef4b51755a70577",
+  "replay_source_commit": "9cde1956fcf5358455b640b28e93ef479745dadc",
+  "workflow_run_id": 37965179858,
+  "workflow_job_id": 113937624289,
+  "artifact_id": 11632869353,
+  "artifact_zip_sha256": "dd11eb9d4113cf97916d204cd025890ccc86dc0df70efc8261728266ead6eee7",
+  "homogeneous": {
+    "policy": "UNIFORM",
+    "optimal_counts": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "canonical_spare_schedule": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "worst_site_survival": 0.8720928467454715,
+    "tie_count": 1
+  },
+  "known_heterogeneous": {
+    "policy": "ASYMMETRIC",
+    "optimal_counts": [
+      0,
+      0,
+      0,
+      2,
+      3
+    ],
+    "canonical_spare_schedule": [
+      3,
+      3,
+      4,
+      4,
+      4
+    ],
+    "worst_site_survival": 0.8501809661739772,
+    "tie_count": 1
+  },
+  "missing_calibration": "SOURCE_BLOCKED",
+  "ruling": "Measured homogeneous sites select uniform rotation; measured heterogeneous sites select an exact asymmetric minimax spare-frequency allocation. Missing calibration fails closed."
+}
