@@ -1,0 +1,63 @@
+{
+  "version": "0.1",
+  "status": "EXACT_SECOND_ORDER_IDENTITY_MOTION",
+  "physical_promotion": 0,
+  "freeze_commit": "13ac8c42e09b9e9c082822dda02ed090ca757a9a",
+  "workflow_run_id": 37956092128,
+  "workflow_job_id": 113906853828,
+  "artifact_id": 11628226256,
+  "artifact_zip_sha256": "3d0c47dedc107716eb551ac7b34e465503c847dae93cbe6ddcbcdcae12527d71",
+  "candidates": {
+    "I": {
+      "signed_period": 1,
+      "corrected_cycle_primitive_exposure": 0,
+      "zeroth_w2": "1",
+      "K2_w1_mean": "0",
+      "K2_w2_mean": "0",
+      "K2_two_term_mean": "0",
+      "two_term_zero": 37950,
+      "diagnostic_eta_cross": "infinite"
+    },
+    "a": {
+      "signed_period": 2,
+      "corrected_cycle_primitive_exposure": 6,
+      "zeroth_w2": "65/84",
+      "K2_w1_mean": "0",
+      "K2_w2_mean": "0",
+      "K2_two_term_mean": "127/6325",
+      "two_term_zero": 31854,
+      "diagnostic_eta_cross": 0.8492242640802062
+    },
+    "b": {
+      "signed_period": 6,
+      "corrected_cycle_primitive_exposure": 72,
+      "zeroth_w2": "55/126",
+      "K2_w1_mean": "0",
+      "K2_w2_mean": "1/42",
+      "K2_two_term_mean": "15616/170775",
+      "two_term_zero": 22248,
+      "diagnostic_eta_cross": 1.1220885760613075
+    },
+    "ab": {
+      "signed_period": 8,
+      "corrected_cycle_primitive_exposure": 72,
+      "zeroth_w2": "41/84",
+      "K2_w1_mean": "1/24",
+      "K2_w2_mean": "1/12",
+      "K2_two_term_mean": "933/6325",
+      "two_term_zero": 11268,
+      "diagnostic_eta_cross": 0.7846531881333095
+    },
+    "zb": {
+      "signed_period": 12,
+      "corrected_cycle_primitive_exposure": 108,
+      "zeroth_w2": "3/7",
+      "K2_w1_mean": "1/48",
+      "K2_w2_mean": "29/504",
+      "K2_two_term_mean": "31679/170775",
+      "two_term_zero": 10880,
+      "diagnostic_eta_cross": 0.8018280765072181
+    }
+  },
+  "scope": "zeroth + first Magnus correction with ideal instantaneous controls and equal dwell; higher orders and finite pulse widths excluded"
+}
