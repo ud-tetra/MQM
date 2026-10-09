@@ -1,0 +1,76 @@
+{
+  "version": "0.1",
+  "status": "EXACT_D5_CUT_CHANNEL_REPLACEMENT",
+  "physical_promotion": 0,
+  "freeze_commit": "8ef3c60ff58131ee861360b693891afef0366a04",
+  "replay_source_commit": "2dc995d0564f84c77b7b97e080893e93d19f841d",
+  "workflow_run_id": 37960309234,
+  "workflow_job_id": 113921171607,
+  "artifact_id": 11630343165,
+  "artifact_zip_sha256": "21ad557400ef2489d9dc9da602004717f41e792f12d5c7fb7495aa0f71ae578f",
+  "mapping": {
+    "cut_channels": [
+      [
+        8,
+        4
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        8,
+        6
+      ],
+      [
+        8,
+        7
+      ]
+    ],
+    "active_slots": [
+      "A0",
+      "A1",
+      "A2",
+      "A3"
+    ],
+    "spare_slot": "A4",
+    "raw_equivalent_label_assignments": 120
+  },
+  "replacement_geometry": {
+    "spare_to_active_distance_classes": {
+      "2": 2,
+      "1+sqrt(5)": 2
+    },
+    "mean_distance_exact": "(3+sqrt(5))/2",
+    "mean_distance": 2.618033988749895,
+    "max_distance_exact": "1+sqrt(5)",
+    "max_distance": 3.23606797749979
+  },
+  "symbolic": {
+    "r": "(1-m)(1-mu)(1-rho)(1-nu)",
+    "P_four_active": "(1-ell_A)^4 + 4 ell_A (1-ell_A)^3 (1-ell_S) r",
+    "P_unsafe": "1-(1-ell_A m)^4",
+    "P_HOLD": "1-P_four_active-P_unsafe"
+  },
+  "ideal_detector_replacement": {
+    "corrects": "any single active-channel ancilla loss when the spare survives the epoch",
+    "fail_closed": "two or more active losses, or one active loss with unavailable spare",
+    "not_corrected": "data/hub qubit loss"
+  },
+  "NDSSR_only_stress": {
+    "ell_A": 0.01,
+    "ell_S": 0.01,
+    "m": 0,
+    "mu": 0,
+    "rho": 0,
+    "nu": 0,
+    "four_active_probability": 0.9990198504,
+    "hold_probability": 0.0009801496000000354,
+    "unsafe_probability": 0,
+    "no_spare_four_active_probability": 0.96059601,
+    "absolute_availability_gain": 0.03842384040000002,
+    "relative_failure_reduction": 0.9751256256028886,
+    "typed_warning": "optimistic partial-channel stress; 1% is readout-associated loss and MOVE/reset/loss-detector imperfections are set ideal"
+  },
+  "ruling": "The five-slot D5 fiber exactly supplies four hub-cut channel-ancilla roles plus one symmetry-equivalent spare and corrects one detected active-ancilla loss under the frozen protocol. Hardware benefit remains source-blocked by MOVE/reset/loss-detector channels."
+}
