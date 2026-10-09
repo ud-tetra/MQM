@@ -1,0 +1,8 @@
+{
+  "version": "0.1a",
+  "status": "PRE_RESULT_SOURCE_REPAIR",
+  "parent": "2026-10-09T1720Z_mqm_2PV_spacetime_holonomy_v01.cpp",
+  "repair": "remove unused malformed syndrome lambda; mathematical test unchanged",
+  "result_exposed": false,
+  "physical_promotion": 0
+}
