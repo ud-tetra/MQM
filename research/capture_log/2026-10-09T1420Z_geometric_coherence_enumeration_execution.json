@@ -1,0 +1,88 @@
+{
+  "timestamp_utc": "2026-10-09T14:20:00Z",
+  "turn_type": "execute_options_1_2_3_geometric_coherence",
+  "source_head_at_start": "dc8a577feb7347e79fc58d780d64c1ae97738514",
+  "physical_promotion": 0,
+  "replay": {
+    "source": "research/architecture/2026-10-09T1410Z_mqm_code_frame_symmetry_v01.py",
+    "source_commit": "4da6e64112282ccef48cf41bc9154016bb413b8d",
+    "workflow_run_id": 37942210035,
+    "workflow_job_id": 113859191156,
+    "artifact_id": 11622520290,
+    "artifact_zip_sha256": "39f28def6f5b3833c9e2e656060e6384fa77474e84d46a2089e3da250ac6dc38",
+    "source_sha256": "276865faaccc6b8a7ca1e1913385794f95400440c728cc857c0b081d0e867863",
+    "result_sha256": "6ce846ae273dc73cebdaeb5bdac0a442677cac7d92e1dce34d07f71329c7ab0b"
+  },
+  "result": {
+    "result_commit": "33fe9b4e5a559316d41de70b8e6f7c815565dc32",
+    "audit_commit": "a39029b6a05b6b9979a612af220b5b55e2bdd605",
+    "permutation_automorphism_group": "S3 x C2 ~= D6 order12",
+    "group_size": 12,
+    "element_order_spectrum": {
+      "1": 1,
+      "2": 7,
+      "3": 2,
+      "6": 2
+    },
+    "protected_logical_nontrivial_actions": 0,
+    "six_frame_orbit": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "C3_cycle_rank": 3,
+    "C3_basis_cycles_all_close": true,
+    "C6_cycle_rank": 6,
+    "C6_basis_cycles_all_close": true,
+    "symmetry_admission": {
+      "C3": "PASS",
+      "C4": "NO_GO",
+      "C6": "PASS",
+      "D6": "PASS",
+      "tetrahedral_A4": "NO_GO",
+      "octahedral_S4": "NO_GO",
+      "icosahedral_A5": "NO_GO"
+    },
+    "pauli_defect_cosets_each": 1024,
+    "affine_defect_classes_each": 12288,
+    "regular_tetra_edge_ring": "NO finite exact closure; theta=acos(1/3), theta/pi irrational",
+    "m5_gap_deg": 7.356103172453426,
+    "m6_overlap_deg": 63.17267619305589
+  },
+  "claim_boundaries": {
+    "D6_physical_preference": "OPEN",
+    "euclidean_six_cell_realization": "OPEN",
+    "metric_gluing": "OPEN",
+    "circuit_advantage": "OPEN",
+    "hardware_validation": "OPEN",
+    "independent_reproduction": "OPEN"
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "trigger_pr_number": 6,
+    "trigger_pr_merged": false
+  }
+}
