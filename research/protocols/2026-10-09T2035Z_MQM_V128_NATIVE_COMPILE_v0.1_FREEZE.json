@@ -1,0 +1,18 @@
+{
+  "version":"0.1",
+  "status":"FROZEN_BEFORE_V128_NATIVE_COMPILE_EVALUATION",
+  "physical_promotion":0,
+  "targets":{"v128":128,"b_reference":579},
+  "compile":{
+    "local_part":"minimum H/S word on each qubit, then an exact dynamic-programming schedule that batches all currently-ready equal H or S operations; objective lexicographically minimizes GR pulses, local-Rz site requests, then layer count",
+    "H_layer":"frozen 8-live-data selective-H construction using two GR pulses plus target/spectator Rz echoes",
+    "S_layer":"parallel local Rz(pi/2) on the selected target set",
+    "permutation_modes":{
+      "gate_SWAP":"minimum transposition decomposition, SWAP=3 CNOT, CNOT=H_target CZ H_target",
+      "transport":"ideal instantaneous atom-role permutation for unitary stress; report moved roles and permutation cycles, but assign no transport error/timing because MOVE channel is source-open"
+    }
+  },
+  "finite_pulse_model":"same PRX-2025 timing + npj-2025 coherent-error cross-profile stress frozen previously",
+  "metrics":["exact transform","batched native GR/Rz/CZ counts","moved roles","cycle pulse time","average gate infidelity over signed cycle","source-exposure diagnostics"],
+  "claim_rule":"transport mode may remove gate-control burden but cannot become a hardware advantage claim until MOVE timing/error/loss are source-bound"
+}
