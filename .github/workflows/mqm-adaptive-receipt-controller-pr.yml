@@ -1,0 +1,43 @@
+name: MQM adaptive receipt controller replay
+
+on:
+  pull_request:
+    paths:
+      - 'research/architecture/2026-10-09T2240Z_mqm_adaptive_site_controller_v01.py'
+      - 'research/architecture/2026-10-09T2242Z_mqm_receipt_depth_yield_v01.py'
+      - 'research/architecture/2026-10-09T2245Z_mqm_integrated_shell_controller_v01.py'
+      - 'review_handoff/MQM_ADAPTIVE_RECEIPT_CONTROLLER_v0.1/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Adaptive site controller
+        run: |
+          python3 research/architecture/2026-10-09T2240Z_mqm_adaptive_site_controller_v01.py > MQM_ADAPTIVE_SITE_CONTROLLER_RESULTS_v0.1.json
+          cat MQM_ADAPTIVE_SITE_CONTROLLER_RESULTS_v0.1.json
+      - name: Receipt depth yield
+        run: |
+          python3 research/architecture/2026-10-09T2242Z_mqm_receipt_depth_yield_v01.py > MQM_RECEIPT_DEPTH_YIELD_RESULTS_v0.1.json
+          cat MQM_RECEIPT_DEPTH_YIELD_RESULTS_v0.1.json
+      - name: Integrated shell controller
+        run: |
+          python3 research/architecture/2026-10-09T2245Z_mqm_integrated_shell_controller_v01.py > MQM_INTEGRATED_SHELL_CONTROLLER_RESULTS_v0.1.json
+          cat MQM_INTEGRATED_SHELL_CONTROLLER_RESULTS_v0.1.json
+      - name: Hash
+        run: |
+          sha256sum             research/architecture/2026-10-09T2240Z_mqm_adaptive_site_controller_v01.py             research/architecture/2026-10-09T2242Z_mqm_receipt_depth_yield_v01.py             research/architecture/2026-10-09T2245Z_mqm_integrated_shell_controller_v01.py             MQM_ADAPTIVE_SITE_CONTROLLER_RESULTS_v0.1.json             MQM_RECEIPT_DEPTH_YIELD_RESULTS_v0.1.json             MQM_INTEGRATED_SHELL_CONTROLLER_RESULTS_v0.1.json             > MQM_ADAPTIVE_RECEIPT_CONTROLLER_SHA256_v0.1.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MQM-adaptive-receipt-controller-v0.1
+          path: |
+            MQM_ADAPTIVE_SITE_CONTROLLER_RESULTS_v0.1.json
+            MQM_RECEIPT_DEPTH_YIELD_RESULTS_v0.1.json
+            MQM_INTEGRATED_SHELL_CONTROLLER_RESULTS_v0.1.json
+            MQM_ADAPTIVE_RECEIPT_CONTROLLER_SHA256_v0.1.txt
