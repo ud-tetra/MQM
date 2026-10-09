@@ -1,0 +1,33 @@
+name: MQM Sqale finite pulse replay
+
+on:
+  pull_request:
+    paths:
+      - 'research/hardware/2026-10-09T1950Z_mqm_sqale_finite_pulse_identity_v01.cpp'
+      - 'review_handoff/MQM_SQALE_FINITE_PULSE_v0.1/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: g++ -O3 -std=c++17 research/hardware/2026-10-09T1950Z_mqm_sqale_finite_pulse_identity_v01.cpp -o sqfp
+      - name: Run
+        run: |
+          ./sqfp > MQM_SQALE_FINITE_PULSE_RESULTS_v0.1.json
+          cat MQM_SQALE_FINITE_PULSE_RESULTS_v0.1.json
+      - name: Hash
+        run: |
+          sha256sum research/hardware/2026-10-09T1950Z_mqm_sqale_finite_pulse_identity_v01.cpp MQM_SQALE_FINITE_PULSE_RESULTS_v0.1.json > MQM_SQALE_FINITE_PULSE_SHA256_v0.1.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MQM-Sqale-finite-pulse-v0.1
+          path: |
+            MQM_SQALE_FINITE_PULSE_RESULTS_v0.1.json
+            MQM_SQALE_FINITE_PULSE_SHA256_v0.1.txt
