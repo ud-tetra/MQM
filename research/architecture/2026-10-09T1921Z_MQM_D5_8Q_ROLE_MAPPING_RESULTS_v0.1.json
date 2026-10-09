@@ -1,0 +1,50 @@
+{
+  "version": "0.1",
+  "status": "EXACT_EXHAUSTIVE_D5_8Q_ROLE_MAPPING",
+  "physical_promotion": 0,
+  "enumerated_bijections": 40320,
+  "best_tie_count": 960,
+  "canonical_best_mapping": {
+    "1": "O",
+    "2": "v0",
+    "3": "v1",
+    "4": "N",
+    "5": "v2",
+    "6": "S",
+    "7": "v3",
+    "8": "v4"
+  },
+  "best_metrics": {
+    "kappa_exact": "sqrt((5+sqrt(5))/2)",
+    "kappa": 1.90211303259,
+    "CV": 0.219929089119,
+    "max_over_mean": 1.543768810407,
+    "required_edge_length_sum": 31.443192358372
+  },
+  "distance_class_counts": {
+    "2": 5,
+    "csc(pi/5)": 3,
+    "sqrt(3+2/sqrt(5))": 5,
+    "1+sqrt(5)": 2
+  },
+  "unused_shortest_pairs": {
+    "distance": 1,
+    "count": 2,
+    "mapped_qubit_pairs": [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        6
+      ]
+    ]
+  },
+  "baseline": {
+    "ideal_tri_tetra_kappa": 1,
+    "ideal_tri_tetra_CV": 0,
+    "ruling": "NO_GO for D5 improving the frozen 15-edge interaction-length uniformity under the natural D5+axis-midpoint eight-site augmentation"
+  },
+  "scope": "alternative eighth-site placement is a new candidate"
+}
