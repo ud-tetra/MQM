@@ -1,0 +1,103 @@
+{
+  "version": "0.1",
+  "status": "HARDWARE_HANDOFF_MOVE_DECISION_PACKET",
+  "physical_promotion": 0,
+  "decision": "Choose between v128 mixed transport/control and pure D6 transport for the logical-identity motion role.",
+  "exact_candidate_contracts": {
+    "v128": {
+      "transform": "(4 6)(5 7) plus local HS/SH frame operations on roles 4..7",
+      "signed_steps": 4,
+      "moved_roles_per_step": 4,
+      "moved_role_exposure": 16,
+      "local_control_time_us": 12.2,
+      "local_control_product_diagnostic": 0.9570935821134408,
+      "A0": "23/63",
+      "K2": "78/1265"
+    },
+    "D6": {
+      "transform": "order-6 pure permutation generator/inverse, e.g. (1 2 3)(4 5)(6 7)",
+      "signed_steps": 6,
+      "moved_roles_per_step": 7,
+      "moved_role_exposure": 42,
+      "local_control_time_us": 0,
+      "local_control_product_diagnostic": 1,
+      "A0": "1/3",
+      "K2": "413/6325"
+    }
+  },
+  "minimum_provider_fields": {
+    "backend_identity": [
+      "backend_id",
+      "qpu_generation",
+      "compiler_version",
+      "operating_point_id",
+      "calibration start/end UTC"
+    ],
+    "geometry": [
+      "initial and final coordinates for every moved role",
+      "trap spacing",
+      "route length per role",
+      "minimum inter-atom separation during transport"
+    ],
+    "timing": [
+      "duration_ns per MOVE batch",
+      "parallel_move_count",
+      "maximum simultaneous moved atoms",
+      "setup/settle latency",
+      "route-dependent duration distribution"
+    ],
+    "coherence": [
+      "complex phase shift or PTM/process channel conditional on successful MOVE",
+      "dephasing/contrast loss",
+      "return-path hysteresis",
+      "distance dependence",
+      "parallel-move covariance"
+    ],
+    "loss": [
+      "per-role MOVE loss",
+      "joint/correlated loss for parallel moves",
+      "distance dependence",
+      "loss uncertainty/trials"
+    ],
+    "heating_trap": [
+      "post-MOVE temperature/heating proxy",
+      "recapture/survival",
+      "trap-depth/configuration"
+    ],
+    "crosstalk_collision": [
+      "spectator displacement/error",
+      "collision/near-crossing error",
+      "parallel-route interaction"
+    ],
+    "detection": [
+      "MOVE-loss false negative",
+      "MOVE-loss false positive",
+      "detection latency"
+    ],
+    "raw_provenance": [
+      "raw trial counts",
+      "exclusions",
+      "uncertainty method",
+      "analysis code hash"
+    ]
+  },
+  "exact_decision_inequalities": {
+    "candidate_specific_time": "v128 faster iff 12.2 + 4*tau_v < 6*tau_D6, where tau values are measured critical-path MOVE durations per frame step.",
+    "equal_batch_time_parallelism": "v128 faster iff tau_batch > 12.2/[6 ceil(7/P)-4 ceil(4/P)] when denominator is positive.",
+    "candidate_specific_loss": "v128 product diagnostic exceeds D6 iff 0.9570935821134408*(1-ell_v)^16 > (1-ell_D6)^42.",
+    "equal_loss": "break-even ell=0.0016852746870257285 per moved-role exposure.",
+    "coherent_motion": "D6 has lower ideal zeroth residual; v128 has lower K2; frozen diagnostic crosses at eta=3.7227278096555585."
+  },
+  "current_public_source_audit": {
+    "2026_Infleqtion_dynamic_arrays": "qualitatively confirms dynamically reconfigurable atom arrays and effort to minimize movement error/loss/runtime; no per-MOVE quantitative channel found.",
+    "2026_Infleqtion_static_field_transport": "reports optical transport over 17 cm for atom delivery/cooling; not an in-QPU role-permutation calibration and therefore not admissible for the MOVE fields above.",
+    "public_closure_status": "SOURCE_BLOCKED"
+  },
+  "acceptance_gate": [
+    "Return candidate-specific compiled MOVE timing manifests for both v128 and D6 on the same backend and calibration window.",
+    "Return MOVE retained-state/coherence and loss channels with uncertainty, not fidelity only.",
+    "Return parallelism and correlated transport errors.",
+    "Evaluate the exact inequalities without substituting unrelated operating points."
+  ],
+  "claim_boundary": "Packet closure enables a typed hardware-facing simulation/decision; it does not establish threshold, fault tolerance, quantum advantage, or hardware readiness."
+}
