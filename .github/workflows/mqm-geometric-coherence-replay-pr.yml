@@ -1,0 +1,32 @@
+name: MQM geometric coherence replay
+
+on:
+  pull_request:
+    paths:
+      - 'research/architecture/2026-10-09T1410Z_mqm_code_frame_symmetry_v01.py'
+      - 'review_handoff/MQM_GEOMETRIC_COHERENCE_v0.1/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run exact enumeration
+        run: |
+          python3 research/architecture/2026-10-09T1410Z_mqm_code_frame_symmetry_v01.py > MQM_GEOMETRIC_COHERENCE_RESULTS_v0.1.json
+          cat MQM_GEOMETRIC_COHERENCE_RESULTS_v0.1.json
+      - name: Hash
+        run: |
+          sha256sum             research/architecture/2026-10-09T1410Z_mqm_code_frame_symmetry_v01.py             MQM_GEOMETRIC_COHERENCE_RESULTS_v0.1.json             > MQM_GEOMETRIC_COHERENCE_SHA256_v0.1.txt
+          cat MQM_GEOMETRIC_COHERENCE_SHA256_v0.1.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MQM-geometric-coherence-v0.1
+          path: |
+            MQM_GEOMETRIC_COHERENCE_RESULTS_v0.1.json
+            MQM_GEOMETRIC_COHERENCE_SHA256_v0.1.txt
