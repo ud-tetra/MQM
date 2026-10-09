@@ -1,0 +1,43 @@
+name: MQM MOVE calibration hetero receipt replay
+
+on:
+  pull_request:
+    paths:
+      - 'research/hardware/2026-10-09T2205Z_mqm_move_calibration_decision_v01.py'
+      - 'research/architecture/2026-10-09T2155Z_mqm_D5_heterogeneous_rotation_v01.py'
+      - 'research/architecture/2026-10-09T2210Z_mqm_D5_S4_retry_receipt_v01.py'
+      - 'review_handoff/MQM_MOVE_HETERO_RECEIPT_v0.1/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: MOVE calibration decision
+        run: |
+          python3 research/hardware/2026-10-09T2205Z_mqm_move_calibration_decision_v01.py > MQM_MOVE_CALIBRATION_DECISION_RESULTS_v0.1.json
+          cat MQM_MOVE_CALIBRATION_DECISION_RESULTS_v0.1.json
+      - name: Heterogeneous rotating spare
+        run: |
+          python3 research/architecture/2026-10-09T2155Z_mqm_D5_heterogeneous_rotation_v01.py > MQM_D5_HETEROGENEOUS_ROTATION_RESULTS_v0.1.json
+          cat MQM_D5_HETEROGENEOUS_ROTATION_RESULTS_v0.1.json
+      - name: D5 S4 retry receipt
+        run: |
+          python3 research/architecture/2026-10-09T2210Z_mqm_D5_S4_retry_receipt_v01.py > MQM_D5_S4_RETRY_RECEIPT_RESULTS_v0.1.json
+          cat MQM_D5_S4_RETRY_RECEIPT_RESULTS_v0.1.json
+      - name: Hash
+        run: |
+          sha256sum             research/hardware/2026-10-09T2205Z_mqm_move_calibration_decision_v01.py             research/architecture/2026-10-09T2155Z_mqm_D5_heterogeneous_rotation_v01.py             research/architecture/2026-10-09T2210Z_mqm_D5_S4_retry_receipt_v01.py             MQM_MOVE_CALIBRATION_DECISION_RESULTS_v0.1.json             MQM_D5_HETEROGENEOUS_ROTATION_RESULTS_v0.1.json             MQM_D5_S4_RETRY_RECEIPT_RESULTS_v0.1.json             > MQM_MOVE_HETERO_RECEIPT_SHA256_v0.1.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MQM-MOVE-hetero-receipt-v0.1
+          path: |
+            MQM_MOVE_CALIBRATION_DECISION_RESULTS_v0.1.json
+            MQM_D5_HETEROGENEOUS_ROTATION_RESULTS_v0.1.json
+            MQM_D5_S4_RETRY_RECEIPT_RESULTS_v0.1.json
+            MQM_MOVE_HETERO_RECEIPT_SHA256_v0.1.txt
