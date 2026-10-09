@@ -1,0 +1,42 @@
+{
+  "version":"0.1",
+  "status":"FROZEN_BEFORE_2PV_D5_CHANNEL_INTEGRATION",
+  "physical_promotion":0,
+  "controller":"frozen 2+PV ACCEPT/HOLD/QUARANTINE semantics",
+  "composition_rule":{
+    "A":"probability frozen 2+PV controller would ACCEPT absent D5 channel-layer faults",
+    "H":"probability frozen 2+PV controller would HOLD absent D5 channel-layer faults",
+    "Q":"probability frozen 2+PV controller would QUARANTINE absent D5 channel-layer faults",
+    "constraint":"A+H+Q=1"
+  },
+  "channel_model":{
+    "ell_A":"per-active-channel ancilla loss probability during the shell epoch",
+    "ell_S":"spare loss probability",
+    "m":"missed active-loss probability conditional on active loss",
+    "mu":"replacement MOVE failure/loss",
+    "rho":"reset/prepare failure",
+    "nu":"post-replacement verification failure"
+  },
+  "state_policy":[
+    "no active channel loss: preserve the frozen 2+PV outcome; if spare alone is lost, ACCEPT remains possible but mark DEGRADED",
+    "any detected active channel loss: current attempt cannot ACCEPT and is converted to HOLD",
+    "exactly one detected active loss plus live spare and successful MOVE/reset/verify: RESTORED_HOLD, then rerun a fresh 2+PV attempt",
+    "two or more active channel losses: HOLD even if some replacement is possible",
+    "any missed active channel loss with no detected active loss: if 2+PV would ACCEPT, label UNSAFE_ACCEPT_POSSIBLE",
+    "frozen 2+PV data loss still causes QUARANTINE and dominates the channel layer"
+  ],
+  "exact_channel_probabilities":{
+    "P_clean_active":"(1-ell_A)^4",
+    "P_unsafe_no_detected":"(1-ell_A(1-m))^4-(1-ell_A)^4",
+    "P_detected_any":"1-(1-ell_A(1-m))^4",
+    "P_repaired_single":"4 ell_A(1-m)(1-ell_A)^3(1-ell_S)(1-mu)(1-rho)(1-nu)"
+  },
+  "combined_outcomes":{
+    "SAFE_ACCEPT":"A P_clean_active",
+    "UNSAFE_ACCEPT_POSSIBLE":"A P_unsafe_no_detected",
+    "HOLD":"H + A P_detected_any",
+    "QUARANTINE":"Q",
+    "RESTORED_HOLD_SUBSET":"(A+H) P_repaired_single"
+  },
+  "claim_rule":"replacement improves readiness for a fresh retry; it does not retroactively validate the interrupted 2+PV attempt"
+}
