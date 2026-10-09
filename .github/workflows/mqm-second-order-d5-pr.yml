@@ -1,0 +1,39 @@
+name: MQM second order and D5 replay
+
+on:
+  pull_request:
+    paths:
+      - 'research/architecture/2026-10-09T1910Z_mqm_second_order_identity_motion_v01.cpp'
+      - 'research/architecture/2026-10-09T1915Z_mqm_D5_8Q_role_mapping_v01.py'
+      - 'review_handoff/MQM_SECOND_ORDER_D5_v0.1/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build second order
+        run: g++ -O3 -std=c++17 research/architecture/2026-10-09T1910Z_mqm_second_order_identity_motion_v01.cpp -o mag
+      - name: Run second order
+        run: |
+          ./mag > MQM_SECOND_ORDER_IDENTITY_MOTION_RESULTS_v0.1.json
+          cat MQM_SECOND_ORDER_IDENTITY_MOTION_RESULTS_v0.1.json
+      - name: Run D5 mapping
+        run: |
+          python3 research/architecture/2026-10-09T1915Z_mqm_D5_8Q_role_mapping_v01.py > MQM_D5_8Q_ROLE_MAPPING_RESULTS_v0.1.json
+          cat MQM_D5_8Q_ROLE_MAPPING_RESULTS_v0.1.json
+      - name: Hash
+        run: |
+          sha256sum             research/architecture/2026-10-09T1910Z_mqm_second_order_identity_motion_v01.cpp             research/architecture/2026-10-09T1915Z_mqm_D5_8Q_role_mapping_v01.py             MQM_SECOND_ORDER_IDENTITY_MOTION_RESULTS_v0.1.json             MQM_D5_8Q_ROLE_MAPPING_RESULTS_v0.1.json             > MQM_SECOND_ORDER_D5_SHA256_v0.1.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MQM-second-order-D5-v0.1
+          path: |
+            MQM_SECOND_ORDER_IDENTITY_MOTION_RESULTS_v0.1.json
+            MQM_D5_8Q_ROLE_MAPPING_RESULTS_v0.1.json
+            MQM_SECOND_ORDER_D5_SHA256_v0.1.txt
