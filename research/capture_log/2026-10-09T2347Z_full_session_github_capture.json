@@ -1,0 +1,25 @@
+{
+  "timestamp_utc": "2026-10-09T23:47:00Z",
+  "turn_type": "consolidate_all_session_data_to_github",
+  "repository": "ud-tetra/MQM",
+  "physical_promotion": 0,
+  "manifest": {
+    "path": "research/session/2026-10-09T2345Z_MQM_SESSION_MANIFEST_v0.1.json",
+    "commit": "7be7b6b9c5eac5297e6a61b2098b61d2976e2154",
+    "captured_file_count": 132
+  },
+  "state_snapshot": {
+    "path": "research/session/2026-10-09T2346Z_MQM_SESSION_STATE_SNAPSHOT_v0.1.md",
+    "commit": "18d05e8bd1b870390ee395d862e90ef2a9fa65c6"
+  },
+  "latest_prior_execution": "research/capture_log/2026-10-09T2335Z_executable_selector_online_execution.json",
+  "repository_head_before_receipt": "18d05e8bd1b870390ee395d862e90ef2a9fa65c6",
+  "governance": {
+    "append_only": true,
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "failed_and_repaired_artifacts_preserved": true
+  },
+  "status": "SESSION_GITHUB_CAPTURE_COMPLETE"
+}
