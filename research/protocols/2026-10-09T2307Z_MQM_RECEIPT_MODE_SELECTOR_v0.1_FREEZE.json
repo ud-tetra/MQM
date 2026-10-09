@@ -1,0 +1,63 @@
+{
+  "version": "0.1",
+  "status": "FROZEN_BEFORE_RECEIPT_MODE_SELECTOR_EVALUATION",
+  "physical_promotion": 0,
+  "inputs": {
+    "p6": "K4 receipt bit-flip probability",
+    "p12": "S4 comparison bit-flip probability",
+    "semantic_requirement": [
+      "K4",
+      "S4",
+      "BOTH",
+      "GENERIC"
+    ],
+    "unsafe_target": "maximum allowed undetected nonzero receipt pass probability"
+  },
+  "admissibility": {
+    "K4": [
+      "K4_ONLY",
+      "K4_PLUS_S4"
+    ],
+    "S4": [
+      "S4_ONLY",
+      "K4_PLUS_S4"
+    ],
+    "BOTH": [
+      "K4_PLUS_S4"
+    ],
+    "GENERIC": [
+      "K4_ONLY",
+      "S4_ONLY",
+      "K4_PLUS_S4"
+    ]
+  },
+  "selection": "among semantically admissible modes meeting unsafe_target, minimize layers, then bits, then HOLD probability; if none, HOLD_CONFIG",
+  "probabilities": "use exact [6,3,3] and [12,5,4] formulas frozen previously",
+  "frozen_tests": [
+    {
+      "p6": "1/100",
+      "p12": "1/100",
+      "requirement": "GENERIC",
+      "unsafe_target": "1/1000000"
+    },
+    {
+      "p6": "1/100",
+      "p12": "1/100",
+      "requirement": "K4",
+      "unsafe_target": "1/100000"
+    },
+    {
+      "p6": "1/1000",
+      "p12": "1/100",
+      "requirement": "GENERIC",
+      "unsafe_target": "1/1000000"
+    },
+    {
+      "p6": "1/100",
+      "p12": "1/1000",
+      "requirement": "BOTH",
+      "unsafe_target": "1/100000"
+    }
+  ],
+  "claim_rule": "selector does not reinterpret S4 receipts as K4 receipts or vice versa"
+}
