@@ -1,0 +1,84 @@
+{
+  "timestamp_utc": "2026-10-09T20:30:00Z",
+  "turn_type": "execute_1_2_3_finite_pulse_kernel_coupler",
+  "source_head_at_start": "97a7383bab8a05cb7cec7122f553a32d275e7c4c",
+  "physical_promotion": 0,
+  "option_1_finite_pulse": {
+    "freeze_commit": "e6170f04746c2f7a25273f8b08168833ee5659cd",
+    "replay_source_commit": "f0f215b26b5c48bee7f784d839d727419c85583a",
+    "workflow_run_id": 37958043591,
+    "workflow_job_id": 113913469228,
+    "artifact_id": 11628299209,
+    "artifact_zip_sha256": "537f8c9cd75b97e5ea6935e3a83703256b27db55cc67b41191a08be8e8699ffb",
+    "result_commit": "42d57a7e9bc3cf23f304abd5fef620ef91160705",
+    "ruling": "canonical physical b and zb cycles fail frozen cross-profile finite-pulse stress; a is less severe but still high modeled control error; hardware calibration remains OPEN"
+  },
+  "option_2_full_kernel": {
+    "freeze_commit": "5442782a75adf042ac931bc3210485025a64aaae",
+    "replay_source_commit": "3c4442309674b02b029ff82745863acc027caada",
+    "workflow_run_id": 37958325236,
+    "workflow_job_id": 113914434765,
+    "artifact_id": 11631165471,
+    "artifact_zip_sha256": "d294e2e3fac762234d0518e67cf27e857d7793add894f4247e6d3e0a5e98dfa3",
+    "result_commit": "2d1517333d64ab9d4c6932f998a864c936101ae9",
+    "kernel_size": 192,
+    "dominates_b_count": 0,
+    "brightest_challenger": {
+      "id": 128,
+      "name": "v",
+      "signed_period": 4,
+      "step_cost": 14,
+      "cycle_exposure": 56,
+      "word_length": 1,
+      "zeroth_w2": "23/63",
+      "K2": "78/1265"
+    }
+  },
+  "option_3_D5_coupler": {
+    "freeze_commit": "ed0502e5db70ec787615ed453212ab9661133fc1",
+    "replay_source_commit": "fbd4b333165ddb48e20ac3d9b81d5c2302fc83ba",
+    "workflow_run_id": 37958522429,
+    "workflow_job_id": 113915104222,
+    "artifact_id": 11630390801,
+    "artifact_zip_sha256": "dd62ef83b11bbe29338f3fac033230797060a666ba3717465eaa6589c8d4abde",
+    "result_commit": "ed16f0b81c7a984c1065f31a386ec337e6cdf681",
+    "unique_integer_distortion_minimum": {
+      "m": 5,
+      "kappa": "2/sqrt(3+2/sqrt(5))",
+      "edge_spread_percent": 1.3463707942773073,
+      "slots": 5,
+      "spares_after_four": 1
+    },
+    "pareto_m": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "ruling": "D5 is exact minimum-distortion redundant two-terminal coupler fiber; hardware advantage OPEN"
+  },
+  "integrated_audit_commit": "7e792d6be92b194a2749583ef5458dd6ea23ab4f",
+  "source_profiles": {
+    "PRX2025": "Radnaev et al., PRX Quantum 6 030334 (2025)",
+    "NPJ2025": "Chung et al., npj Quantum Information 11 193 (2025)"
+  },
+  "claim_boundaries": {
+    "cross_profile_hardware_prediction": "NO",
+    "full_kernel_second_order": "EXACT",
+    "D5_coupler_geometry": "EXACT",
+    "hardware_validation": "OPEN",
+    "threshold": "OPEN",
+    "quantum_advantage": "OPEN",
+    "physical_promotion": 0
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "trigger_prs_closed_unmerged": [
+      19,
+      20,
+      21
+    ]
+  }
+}
