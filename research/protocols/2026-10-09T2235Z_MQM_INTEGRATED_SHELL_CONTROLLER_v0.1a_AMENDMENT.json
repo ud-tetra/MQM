@@ -1,0 +1,16 @@
+{
+  "version": "0.1a",
+  "status": "PRE_EVALUATION_CONTROLLER_STATE_AMENDMENT",
+  "parent": "research/protocols/2026-10-09T2234Z_MQM_INTEGRATED_SHELL_CONTROLLER_v0.1_FREEZE.json",
+  "result_exposed": false,
+  "add_state": "CONFIG_REVIEW",
+  "move_selection_rule": [
+    "choose V128 automatically only if measured timing and measured control+MOVE survival product both favor V128",
+    "choose D6 automatically only if both favor D6",
+    "if the two typed metrics disagree, enter CONFIG_REVIEW; do not scalarize them after exposure",
+    "if required calibration is absent, remain SOURCE_BLOCKED"
+  ],
+  "receipt_mode": "parameterized over K4_ONLY, S4_ONLY, K4_PLUS_S4; model-check safety invariants for every mode",
+  "mathematical_safety_invariants_changed": false,
+  "physical_promotion": 0
+}
