@@ -1,0 +1,31 @@
+name: MQM A4 S4 metric carriers replay
+
+on:
+  pull_request:
+    paths:
+      - 'research/architecture/2026-10-09T1540Z_mqm_A4_S4_metric_carriers_v01.py'
+      - 'review_handoff/MQM_A4_S4_METRIC_v0.1/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run metric construction
+        run: |
+          python3 research/architecture/2026-10-09T1540Z_mqm_A4_S4_metric_carriers_v01.py > MQM_A4_S4_METRIC_RESULTS_v0.1.json
+          cat MQM_A4_S4_METRIC_RESULTS_v0.1.json
+      - name: Hash
+        run: |
+          sha256sum research/architecture/2026-10-09T1540Z_mqm_A4_S4_metric_carriers_v01.py MQM_A4_S4_METRIC_RESULTS_v0.1.json > MQM_A4_S4_METRIC_SHA256_v0.1.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MQM-A4-S4-metric-v0.1
+          path: |
+            MQM_A4_S4_METRIC_RESULTS_v0.1.json
+            MQM_A4_S4_METRIC_SHA256_v0.1.txt
