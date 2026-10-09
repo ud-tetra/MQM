@@ -1,0 +1,83 @@
+{
+  "timestamp_utc": "2026-10-09T19:40:00Z",
+  "turn_type": "execute_1_2_3_second_order_D5_motion_instruction",
+  "source_head_at_start": "ce8470a8ef09ce3b777b31e1c24e1e1f8b87e08c",
+  "physical_promotion": 0,
+  "option_1_second_order_motion": {
+    "freeze_commit": "13ac8c42e09b9e9c082822dda02ed090ca757a9a",
+    "replay_source_commit": "45b79e8fc30f5ef614708eff5658c1dc8381130d",
+    "workflow_run_id": 37956092128,
+    "workflow_job_id": 113906853828,
+    "artifact_id": 11628226256,
+    "artifact_zip_sha256": "3d0c47dedc107716eb551ac7b34e465503c847dae93cbe6ddcbcdcae12527d71",
+    "result_commit": "695c9899519777f87df27ea1ec73cd131282f117",
+    "exposure_amendment_commit": "e6c5bb9c076e294c2ca9037546a3ad2ed38dca39",
+    "key_result": "b has widest frozen second-order diagnostic margin; zb has best zeroth-order suppression but larger second-order and exposure burden",
+    "corrected_exposure": {
+      "I": 0,
+      "a": 6,
+      "b": 72,
+      "ab": 72,
+      "zb": 108
+    }
+  },
+  "option_2_D5_mapping": {
+    "freeze_commit": "802eecf2c49ec63559e9efaf277f9d76019c25c8",
+    "replay_source_commit": "ba8d40b17a8d0b5dc3d1281dc4a46bbf566dbf80",
+    "workflow_run_id": 37956092128,
+    "result_commit": "1cc4193d2d4bf8404ab07325575d46deeae605c4",
+    "enumerated_bijections": 40320,
+    "best_tie_count": 960,
+    "best_kappa": "sqrt((5+sqrt(5))/2) ~= 1.90211303259",
+    "baseline_kappa": 1,
+    "ruling": "NO_GO for natural D5+axis-midpoint augmentation improving frozen 15-edge interaction-length uniformity"
+  },
+  "option_3_motion_instruction_pareto": {
+    "freeze_commit": "5520cb97d9c6a4ad302e9a7288a302d5179b87ea",
+    "metric_repair_commit": "4f738cd4c3c4166e44fd11d48465925676c0570c",
+    "scope_repair_commit": "ec0466c727c816a0dd0001af40001a5a45db9cc0",
+    "replay_source_commit": "75b50381db02ccfbffdb0e3b49d90dce2ccce0a3",
+    "workflow_run_id": 37956497066,
+    "workflow_job_id": 113908232300,
+    "artifact_id": 11628695438,
+    "artifact_zip_sha256": "9750268f9037f077bccc5d3d692f11bf08116e49f05353240877193bb1d1d8e4",
+    "result_commit": "7c19cb8802922807e0b3d2cbe0c3d2accfd65d97",
+    "identity_front": [
+      "I",
+      "a",
+      "b",
+      "zb"
+    ],
+    "dominated_identity": [
+      "ab"
+    ],
+    "canonical_XZ_transposition": "c",
+    "canonical_logical_3cycle": "d",
+    "carrier_front": [
+      "A4",
+      "S4"
+    ],
+    "D6_scope": "retained as cyclic-address/transport specialist outside current Pareto objective set"
+  },
+  "integrated_audit_commit": "083867772fc94bacd90cee837607ca8ab8ddc0da",
+  "claim_boundaries": {
+    "second_order_motion": "EXACT under ideal instantaneous equal-dwell Magnus model through first correction",
+    "D5_8Q_uniformity": "NO_GO for frozen natural augmentation only",
+    "PhaseA_instruction_front": "EXACT within frozen candidate library",
+    "full_1152_second_order_global_optimum": "OPEN",
+    "finite_pulse_hardware_result": "OPEN",
+    "hardware_validation": "OPEN",
+    "threshold": "OPEN",
+    "quantum_advantage": "OPEN",
+    "physical_promotion": 0
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "trigger_prs_closed_unmerged": [
+      17,
+      18
+    ]
+  }
+}
