@@ -1,0 +1,81 @@
+{
+  "timestamp_utc": "2026-10-09T14:55:00Z",
+  "turn_type": "execute_options_1_2_3_D6_D5_local_clifford",
+  "source_head_at_start": "2d80a4a17301de86523cc5ba1184cf5e0f3f477d",
+  "physical_promotion": 0,
+  "option_1_D6_realization": {
+    "replay_source": "research/architecture/2026-10-09T1435Z_mqm_dm_tetrahedral_realization_v01.py",
+    "replay_commit": "d807941178afe22ed4c3af2d8bd7600a8c22e42c",
+    "workflow_run_id": 37943671661,
+    "workflow_job_id": 113864225774,
+    "artifact_id": 11622942292,
+    "artifact_zip_sha256": "81a74c96a40ec67577186a736062c98323a4d96f3f180d9daba1f2c02a29ca43",
+    "source_sha256": "ae4b669cb37a20805642ad9f09a76c0d3d7d7151c4050c883a9acb78cc09de53",
+    "result_sha256": "fd255a407c172692729c8ea474c971183ea135496d869e09455bbef10f45c1e6",
+    "result_commit": "680f0a7a229797a57e97ebb3c936d577c6234b2d",
+    "literal_D6_shell": "PASS exact with six congruent nonregular tetrahedra",
+    "D6_edges": "2,2,sqrt(5)x4",
+    "cayley_menger": 384,
+    "direct_code_D6_vertex_action": "NO_GO for nondegenerate K4 core"
+  },
+  "option_2_D5_comparator": {
+    "exact_D5_ring": "PASS",
+    "D5_minimax_edge_ratio": 1.013463707942773,
+    "D5_edge_spread_percent": 1.3463707942773073,
+    "D6_minimax_edge_ratio": 1.1180339887498951,
+    "D6_edge_spread_percent": 11.803398874989512,
+    "interpretation": "regular-tetra metric is much closer to fivefold than sixfold common-edge closure under max/min edge spread; not an energy or persistence law"
+  },
+  "option_3_local_clifford": {
+    "failed_pre_result_run_id": 37943554141,
+    "failed_pre_result_status": "build failure only, no result promoted",
+    "repair_commit": "cd6fe7d69a1b3b3d17971c3055191ec8726e6087",
+    "repair_log_commit": "bb296998eed93c5b113eb1811fab008fddf138a0",
+    "successful_run_id": 37943787329,
+    "successful_job_id": 113864634439,
+    "artifact_id": 11621862578,
+    "artifact_zip_sha256": "f2a24bb7f1a30894abbe71b46cbf81c18a94a18a20cae3549d7f54808e7a16d8",
+    "source_sha256": "e950063845fff65a006403f4e1298c71b3184261521ce640f74ab43fe38b7cde",
+    "result_sha256": "35f68aa5d0659b4873222c973ac5d6f984c88b1523a2bae81a41c8a6376a0966",
+    "result_commit": "284d38c647070b2b306ac29cd30d654df3d211b4",
+    "support_permutation_candidates": 144,
+    "automorphism_group_size": 1152,
+    "element_order_spectrum": {
+      "1": 1,
+      "2": 199,
+      "3": 80,
+      "4": 312,
+      "6": 368,
+      "12": 192
+    },
+    "logical_action_image": "full S3, six actions with 192 representatives each",
+    "logical_identity_kernel_size": 192,
+    "A4": "PASS witness subgroup order12",
+    "S4": "PASS witness subgroup order24",
+    "A5": "NO_GO: no order5 elements"
+  },
+  "integrated_audit": {
+    "path": "research/architecture/2026-10-09T1450Z_MQM_D5_D6_LOCAL_CLIFFORD_COHERENCE_AUDIT_v0.1.md",
+    "commit": "7467cbe5963c47448616f03fa2cd3b30dc4784bb"
+  },
+  "claim_boundaries": {
+    "D6_physical_preference": "OPEN",
+    "D5_physical_preference": "OPEN",
+    "A4_S4_Euclidean_shells": "OPEN",
+    "A5_entangling_transition_reopening": "OPEN",
+    "hardware_validation": "OPEN",
+    "threshold": "OPEN",
+    "quantum_advantage": "OPEN",
+    "physical_promotion": 0
+  },
+  "multiuser_policy": {
+    "overwrites": 0,
+    "deletions": 0,
+    "force_push": false,
+    "trigger_prs_closed_unmerged": [
+      7,
+      8,
+      9
+    ]
+  }
+}
