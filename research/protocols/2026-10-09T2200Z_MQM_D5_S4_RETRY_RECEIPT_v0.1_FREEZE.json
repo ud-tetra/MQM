@@ -1,0 +1,54 @@
+{
+  "version": "0.1",
+  "status": "FROZEN_BEFORE_D5_S4_RETRY_RECEIPT_EVALUATION",
+  "physical_promotion": 0,
+  "trigger": "RESTORED_HOLD after successful D5 single-channel replacement",
+  "sequence": [
+    "discard all pre-loss/pre-replacement receipts for the affected epoch",
+    "regenerate the six A4 module-interface receipt bits from a fresh post-replacement frame",
+    "check the native K4 cut-space [6,3,3] receipt code",
+    "regenerate the 12 S4/octahedron comparison receipt bits",
+    "check the octahedron cut-space [12,5,4] receipt code",
+    "only if both receipt syndromes are zero transition to RETRY_READY; otherwise remain HOLD_RECEIPT",
+    "start a fresh 2+PV attempt from RETRY_READY"
+  ],
+  "receipt_error_model": {
+    "p6": "iid flip probability on each of the 6 fresh K4 interface receipt bits",
+    "p12": "iid flip probability on each of the 12 fresh S4 comparison receipt bits",
+    "independence": "the two receipt layers are independent only for the frozen analytic benchmark"
+  },
+  "exact_code_spectra": {
+    "K4_6_3_3": {
+      "3": 4,
+      "4": 3
+    },
+    "S4_12_5_4": {
+      "4": 6,
+      "6": 16,
+      "8": 9
+    }
+  },
+  "exact_probabilities": {
+    "Z6": "(1-p6)^6",
+    "U6": "4 p6^3(1-p6)^3 + 3 p6^4(1-p6)^2",
+    "D6": "1-Z6-U6",
+    "Z12": "(1-p12)^12",
+    "U12": "6 p12^4(1-p12)^8 + 16 p12^6(1-p12)^6 + 9 p12^8(1-p12)^4",
+    "D12": "1-Z12-U12",
+    "P_receipt_safe": "Z6 Z12",
+    "P_receipt_unsafe_pass": "(Z6+U6)(Z12+U12)-Z6 Z12",
+    "P_receipt_hold": "1-(Z6+U6)(Z12+U12)"
+  },
+  "combined_retry_gate": {
+    "P_RETRY_READY_SAFE": "P_repaired_single * P_receipt_safe",
+    "P_RETRY_UNSAFE_POSSIBLE": "P_repaired_single * P_receipt_unsafe_pass",
+    "P_HOLD_RECEIPT": "P_repaired_single * P_receipt_hold",
+    "typed_note": "these are subsets of RESTORED_HOLD; fresh 2+PV begins only from RETRY_READY_SAFE/UNSAFE_POSSIBLE distinction in the analytic model"
+  },
+  "acceptance_scope": [
+    "native K4 layer detects every receipt-bit error of weight 1 or 2",
+    "S4 overlay detects every comparison-bit error of weight 1, 2 or 3",
+    "neither layer corrects receipt bits in this protocol; nonzero syndrome causes HOLD"
+  ],
+  "claim_rule": "This is independent receipt verification of a restored channel configuration, not additional quantum-code distance."
+}
