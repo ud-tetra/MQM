@@ -1,0 +1,68 @@
+{
+  "version": "0.1",
+  "status": "EXACT_RECEIPT_DEPTH_YIELD_BENCHMARK",
+  "physical_promotion": 0,
+  "freeze_commit": "b7bfacdfb53198eb7392ecc426d4d68055d1bdbe",
+  "replay_source_commit": "975a6d754cae5d612c677c3f722eb60bf69a03b7",
+  "workflow_run_id": 37965179858,
+  "equal_iid_pareto": {
+    "1/10000": [
+      "K4_ONLY",
+      "S4_ONLY"
+    ],
+    "1/1000": [
+      "K4_ONLY",
+      "S4_ONLY"
+    ],
+    "1/100": [
+      "K4_ONLY",
+      "S4_ONLY"
+    ],
+    "1/20": [
+      "K4_ONLY",
+      "S4_ONLY"
+    ]
+  },
+  "combined_on_equal_iid_pareto": [],
+  "one_percent": {
+    "K4_ONLY": {
+      "safe": 0.941480149401,
+      "unsafe": 0.000003910599,
+      "hold": 0.05851594,
+      "bits": 6,
+      "layers": 1
+    },
+    "S4_ONLY": {
+      "safe": 0.8863848717161292,
+      "unsafe": 5.537974621260203e-8,
+      "hold": 0.11361507290412451,
+      "bits": 12,
+      "layers": 1
+    },
+    "K4_PLUS_S4": {
+      "safe": 0.8345137614500876,
+      "unsafe": 0.0000035184349412542336,
+      "hold": 0.16548272011497114,
+      "bits": 18,
+      "layers": 2
+    }
+  },
+  "asymmetric_grid_summary": {
+    "p6=1/1000,p12=1/1000": [
+      "K4_ONLY",
+      "S4_ONLY"
+    ],
+    "p6=1/1000,p12=1/100": [
+      "K4_ONLY"
+    ],
+    "p6=1/100,p12=1/1000": [
+      "K4_ONLY",
+      "S4_ONLY"
+    ],
+    "p6=1/100,p12=1/100": [
+      "K4_ONLY",
+      "S4_ONLY"
+    ]
+  },
+  "ruling": "K4_ONLY and S4_ONLY are the bit-model Pareto choices across the frozen equal-iid grid; K4_PLUS_S4 is never Pareto there. Combined verification remains semantically justified only when both typed receipt objects must independently be checked."
+}
