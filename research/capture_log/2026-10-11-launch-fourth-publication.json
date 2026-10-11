@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-11",
+  "release": "MQM_LAUNCH_FOURTH_v0.1",
+  "artifact_github_commit": "3f37559392b77f8845330970aee62f762d60a89e",
+  "sites_source_commit": "04708751d7f8c5382e820585ea3d433bff75c96e",
+  "site_version": 20,
+  "site_deployment": "appgdep_6acaefe0a65881918def6ee147b19276",
+  "publication_status": "succeeded",
+  "production_url": "https://mqm-research.ben-w-mayes.chatgpt.site",
+  "full_source_capture": {
+    "local_paths": 460,
+    "mismatches": 0
+  },
+  "github_ci": {
+    "run_id": 38104209963,
+    "conclusion": "success",
+    "offline_artifact_id": 11688678382,
+    "offline_artifact_name": "MQM-offline-website"
+  },
+  "offline_local_zip_sha256": "5aff65922a829245b82ba882f9497616f8af1ce18e4fa9300a5ff3ff3886b391",
+  "packages": 42,
+  "manuscripts": 42,
+  "primary_certificate": "Conditional retained error<115/2^23<2^-16 on16 +/-2^-4;beta5/16",
+  "derivative_comparison": "CurrentM192 too coarse;prospectiveidealM256<2^-118;directedfinite256OPEN",
+  "physical_promotion": 0,
+  "external_review": "OPEN",
+  "source_identity_note": "GitHub and Sites are distinct commit objects. This GitHub-only receipt is retained locally for next Site source capture."
+}
