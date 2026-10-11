@@ -1,0 +1,46 @@
+{
+  "version": "0.1",
+  "physical_promotion": 0,
+  "claims": [
+    {
+      "id": "LAUNCH-FOURTH",
+      "status": "EXACT / DERIVED conditional",
+      "claim": "ad(H-delta_j I)^4=adH^4; launch triangle plus cold151/4 gives finite thermal fourth derivative<1/32",
+      "scope": "Q<=2 finiteM192 launch and declared parameter/arithmetic enclosures; gauge is algebraic, not physical budget reduction"
+    },
+    {
+      "id": "COLD-THIRD",
+      "status": "DERIVED conditional",
+      "claim": "Cold continuum deadline third derivative<2^-13 by separate normalized launch transport and uniform centered embedding",
+      "scope": "Source launch p0 atT16; not differentiating a value approximation"
+    },
+    {
+      "id": "WINDOW",
+      "status": "DERIVED conditional",
+      "claim": "Retained error<115/2^23<2^-16 on16 +/-2^-4;twofold wider than parent",
+      "scope": "Fixed beta5/16, source launch, uniform continuum value and Gaussian bounds; no arbitrary-input diamond guarantee"
+    },
+    {
+      "id": "JET-COMPARISON",
+      "status": "DERIVED conditional",
+      "claim": "Seven full-kernel continuum derivative slots bounded; idealM192 debit<7/64; idealM256<2^-118",
+      "scope": "Centered compact-band common embedding, bounded noncommuting endpoint derivatives and eight source dyads; current192 auxiliary target fails"
+    },
+    {
+      "id": "MATCHED256",
+      "status": "OPEN",
+      "claim": "Directed finite256 response/parameter/propagation certificate required before applying ideal256 derivative comparison"
+    },
+    {
+      "id": "AUDIT",
+      "status": "EXACT / SIMULATED",
+      "claim": "22 candidate decisions,12 exact ODE identities;small-model launch, covariance and feature controls pass",
+      "scope": "Same-agent checks; inherited binary64 arithmetic model; independent review OPEN"
+    },
+    {
+      "id": "PHYSICAL",
+      "status": "OPEN",
+      "claim": "Permanent retention, bath replenishment, arbitrary-inputdiamond, native admission, two-local fullword, device time and hardware remainOPEN"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "status": "Frozen before supplementary diagnostic evaluation",
+  "feature_modes": [
+    8,
+    16
+  ],
+  "feature_orders": [
+    0,
+    1,
+    2
+  ],
+  "feature_times": [
+    "0",
+    "1/4",
+    "1/2"
+  ],
+  "embedding_horizon": "1/2",
+  "numeric_reference_modes": 192,
+  "covariance_modes": [
+    16,
+    32
+  ],
+  "covariance_orders": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "covariance_times": [
+    "0",
+    "1/4",
+    "1/2"
+  ],
+  "floating_tolerance": "2^-30; diagnostic only",
+  "noncommuting_ODE_cases": 4,
+  "seed": 521,
+  "interpretation": "Small-reference implementation controls; not independent continuum or device validation"
+}

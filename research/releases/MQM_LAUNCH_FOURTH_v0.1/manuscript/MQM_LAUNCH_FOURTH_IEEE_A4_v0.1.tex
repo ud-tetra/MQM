@@ -1,0 +1,170 @@
+\documentclass[a4paper,conference]{IEEEtran}
+\usepackage{amsmath,amssymb,booktabs,url}
+\newcommand{\ad}{\operatorname{ad}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\begin{document}
+\title{Launch-Local Fourth Remainders and Differentiated Continuum Comparisons for a Finite Thermal Quantum Latch}
+\author{\IEEEauthorblockN{Ben W. Mayes}\IEEEauthorblockA{MQM Research Project}}
+\maketitle
+\begin{abstract}
+For the inherited fixed-launch thermal latch at inverse temperature $\beta=5/16$ and deadline $T=16$, a launch-local fourth-commutator enclosure and fresh cold third-launch transport give conditional retained error below $115/2^{23}<2^{-16}$ throughout $16\pm2^{-4}$. This doubles the preceding halfwidth without changing the launch, temperature or target. The finite thermal fourth-derivative bound is below $1/32$. A separate differentiated centered Gauss embedding bounds seven continuum kernel comparison slots. Its ideal 192-mode third-derivative debit is too coarse, whereas the ideal 256-mode debit is below $2^{-118}$. No directed finite 256-mode response has been evaluated, so this latter comparison is prospective. All results remain conditional on source model, arithmetic, continuum and Gaussian assumptions; hardware promotion and independent review remain open.
+\end{abstract}
+\begin{IEEEkeywords}
+autonomous quantum control, finite reservoirs, thermal response, error certification, Hamiltonian simulation
+\end{IEEEkeywords}
+\section{Contract, provenance and evidence}
+This is an engineering refinement of the source-bound MQM deadline-jerk packet, not an independent experimental validation. Parameters remain $\Omega=64$, $B=16$, $\kappa=8$, $\beta=5/16$, $T=16$, $h=g=1$, and $\lambda^2=4\sqrt2$. The evaluated centered Gauss reference has $M=192$ modes and total-excitation sectors $Q\le2$. The source dimension is $D_2=3+4M+M(M+1)/2=19299$. A mode count is not a physical qubit count and is unrelated to the separate capacity proposal's 192 labels.
+
+The retained error contract is for the declared launch and reduced retained system, with inherited vacuum ceiling $E_0=3/2^{18}+2^{-128}$ and point-response ceiling $3/2^{26}$. It is not a uniform arbitrary-input diamond certificate. The wider window uses uniform continuum \emph{value} comparisons and the inherited Gaussian remainder. The thermal derivative comparison below is a separate auxiliary gate. No pulse-off, refreshed bath, permanent hold or hardware bridge is added.
+
+\textbf{Status.} Algebraic identities are EXACT within scope. Enclosures are DERIVED conditional on the captured parameter and binary64 operation model. Finite diagnostics are SIMULATED. Independent review and physical promotion remain OPEN and zero, respectively. Protocols were frozen before the new readouts; this is disclosed post-exposure engineering, not an independent prediction.
+
+\section{Launch-local finite fourth derivative}
+For hot launch $v_j$ (native $p_0$ plus one photon in mode $j$), set $K_j=H_{Q=2}-\delta_j I$. Since identity shifts commute,
+\begin{equation}
+\ad_{K_j}^4=\ad_H^4.
+\end{equation}
+This gauge changes neither physical spectral diameter nor resource budget. Unitary propagation commutes with the full joint commutator. Partial trace is contractive in trace norm. Expanding the fourfold commutator on a rank-one launch and pairing its terms gives
+\begin{align}
+\tfrac12\norm{\ad_H^4(|v_j\rangle\langle v_j|)}_1
+&\le L_j,\\
+L_j&=\norm{K_j^4v_j}+4\norm{K_j^3v_j}\norm{K_jv_j}\\
+ &\quad+3\norm{K_j^2v_j}^2.
+\end{align}
+Thus one can bound all times without propagating a fourth-order hot response at every deadline.
+
+For the cold launch, the source identities are
+\begin{align}
+Hp_0&=p_1, &H^2p_0&=p_0+p_2,\\
+H^3p_0&=2p_1+\lambda p_3,\\
+H^4p_0&=2p_0+(2+\lambda^2)p_2+\lambda c_{\rm bath}.
+\end{align}
+Here $\norm{c_{\rm bath}}^2=G^2=128/\pi<128/3$. Consequently $\norm{H^4p_0}^2<324$, while $\norm{H^3p_0}<13/4$ and $\norm{H^2p_0}<3/2$. The cold fourth-commutator half-norm is below
+\begin{equation}
+18+4(13/4)+3(3/2)^2=151/4.
+\end{equation}
+With occupation trace bound $\nu_U$, occupation $\ell^1$ error $d_n$ and enclosed $L_j$, the finite thermal response obeys
+\begin{equation}
+J_4\le\sum_j\widehat n_j L_j+d_n\max_j L_j+(151/4)\nu_U.
+\end{equation}
+The exact rational result is $J_4<1/32$, with diagnostic value $0.0298311412$. The preceding uniform bound was approximately $19.78283$. The finite $\nu_U$ is not a continuum photon number; no divergent occupation trace is promoted across a continuum limit.
+
+\subsection{Arithmetic enclosure}
+Let $d_H$ include source Hamiltonian interval error and $2^{-40}$, and use $\norm{|K_j|}<80$. For power $r=1,\ldots,4$, a sufficient vector allowance is
+\begin{align}
+e_r={}&2r d_H(80+2d_H)^{r-1}\\
+&+[(1+2^{-43})^r-1](80+2d_H)^r.\nonumber
+\end{align}
+Each returned nonnegative squared norm $\widehat s_{rj}$ is interpreted as an exact binary fraction. With $\gamma=2^{-37}/(1-2^{-37})$, use
+\begin{equation}
+N_{rj}=\sqrt{\frac{\widehat s_{rj}+2^{-800}}{1-\gamma}}+e_r,
+\end{equation}
+where the root is rounded upward on an 80-bit dyadic grid using integer square-root arithmetic. The $2^{-800}$ allowance was added after the initial readout to charge norm-product underflow; the initial receipt is preserved and exact decisions were rerun. Acceptance does not use eigensolver thresholds. Operation counts and the inherited arithmetic assumptions still require independent review.
+
+\section{Cold third launch and local fourth remainder}
+Fresh degree-48 Taylor transport over 128 short steps evaluates the cold third launch $2p_1+\lambda p_3$. Define $a_r=P_{\rm live}e^{-iHT}H^rp_0$. Separate normalized launch comparisons give $a_0,a_1,a_2,a_3$ enclosures; this does not differentiate a previously bounded value approximation. The exact bilinear identity is
+\begin{equation}
+q'''(T)=-2\Im\langle a_0,a_3\rangle+6\Im\langle a_1,a_2\rangle.
+\end{equation}
+Scaling the inherited uniform centered embedding by $\norm{H^3p_0}<13/4$, with coefficient, parameter and readout allowances, yields $|q'''(T)|<2^{-13}$ (diagnostic $7.43218\times10^{-5}$).
+
+Let $s_r$ enclose $\norm{a_r}$ for $r=1,2,3$, $A=7/2048$ enclose the cold launch live norm at the deadline, and $h_4=18$. For $|t-T|\le w$, Taylor's integral remainder gives
+\begin{align}
+b_0&=A+s_1w+s_2w^2/2+s_3w^3/6+h_4w^4/24,\\
+b_1&=s_1+s_2w+s_3w^2/2+h_4w^3/6,\\
+b_2&=s_2+s_3w+h_4w^2/2,\qquad b_3=s_3+h_4w.
+\end{align}
+The fourth population derivative is bounded by
+\begin{equation}
+Q_4(w)=2b_0h_4+8b_1b_3+6b_2^2.
+\end{equation}
+The vacuum variation slot is therefore
+\begin{equation}
+d_q(w)=2^{-16}w+2^{-14}w^2/2+|q'''(T)|_Uw^3/6+Q_4(w)w^4/24.
+\end{equation}
+The finite thermal variation uses inherited directed deadline slope, curvature and third-derivative ceilings:
+\begin{equation}
+d_2(w)=2^{-20}w+2^{-13}w^2/2+2^{-6}w^3/6+J_4w^4/24.
+\end{equation}
+The complete conditional ledger is
+\begin{align}
+E(w)<{}& E_0+d_q(w)+3/2^{26}+d_2(w)\\
+ &+\delta_{\rm vac}+\delta_{\rm cov}+\frac{x_U^2}{2(1-x_U)}.\nonumber
+\end{align}
+with the captured source value comparisons and Gaussian majorant on $U=129/8$. At $w=2^{-4}$, exact fractions give $E<115/2^{23}<2^{-16}$; diagnostic $1.3679367829\times10^{-5}$. Halfwidth doubles from $2^{-5}$; relative halfwidth is $2^{-8}$ and full width $2^{-3}$. At $w=2^{-3}$ the majorant is approximately $2.5620\times10^{-5}$ and fails. This is a conservative certificate failure, not a physical error floor. The display numerator 115 was selected after evaluation; the acceptance target was unchanged.
+
+\section{Seven differentiated continuum comparison slots}
+The source thermal response has eight noncommuting double-commutator dyads. Each ket or bra has at most three propagation segments and two norm-one native insertions. Use the common second-quantized centered Gauss polynomial embedding in sectors $Q\le2$. Remove bath-only propagation in each interaction picture; final bath unitaries disappear under partial trace. Intermediate phases and mixed endpoint derivatives must be retained.
+
+For $R_n(x)=x^n/[n!(1-x/(n+1))]$, $x<n+1$, differentiated compact-band feature estimates satisfy
+\begin{equation}
+\norm{v_\infty^{(r)}-W_cv_M^{(r)}}\le4GB^rR_{M-r}(4U),\quad r=0,1,2.
+\end{equation}
+The proof multiplies the centered degree-$M-r-1$ approximation by $\delta^r$, preserving degree-$M-1$ isometry. Bessel integral and Gauss polynomial exactness estimates are standard primary-source inputs \cite{nistb,nistg}; all constants used here are captured in the exact evaluator.
+
+Set $d_r=84B^rR_{M-r}(4U)$ and $a_0=14$, $a_1=21B$, $a_2=21B^2$. The propagator derivative ceilings are
+\begin{equation}
+(u_0,u_1,u_2,u_3)=(1,a_0,a_0^2+a_1,a_0^3+3a_0a_1+a_2).
+\end{equation}
+Writing $D_0=Ud_0$, comparison allowances are
+\begin{align}
+e_0&=D_0,\quad e_1=d_0+a_0D_0,\\
+e_2&=d_1+2a_0d_0+u_2D_0,\\
+e_3&=d_2+3a_0d_1+3(a_1+a_0^2)d_0+u_3D_0.
+\end{align}
+For noncommuting $A(t)$, the underlying third ODE derivative is
+\begin{equation}
+U'''=-iA''U-2A'AU-AA'U+iA^3U.
+\end{equation}
+Both mixed orders matter. At most two endpoint choices per derivative are charged by $2^r$. Compact bandwidth and bounded sector generators supply dominated differentiability; no separate divergent continuum $\Tr N$ is used.
+
+Use $V=64/31457265$, $r_0=2^{-21}$, $G_U^2=128/3$, $y=8U+25/16$. The covariance derivative quadrature allowance is
+\begin{equation}
+\eta_r=B^r\left[\frac{4G_U^2r_0}{1-r_0}R_{2M-r}(y)
++\frac{2G_U^2r_0^9}{1-r_0}\right].
+\end{equation}
+The first eight Bose terms use degree-$2M-1$ Gauss exactness; the remainder is bounded positively. Covariance phases use detunings $\delta$, not unremoved carrier frequency $\Omega+\delta$.
+
+Define degree-three positive polynomials
+\begin{align}
+P(z)&=\sum_{r=0}^3 2^ru_rz^r/r!,&E(z)&=\sum_{r=0}^3 2^re_rz^r/r!,\\
+C(z)&=\sum_{r=0}^3 B^rz^r/r!,&\mathcal E(z)&=\sum_{r=0}^3\eta_rz^r/r!.
+\end{align}
+Six-factor telescoping (three ket and three bra propagators), eight dyads and the half-trace convention give
+\begin{equation}
+\epsilon_r=4r![z^r]\{6VC(z)E(z)P(z)^5+\mathcal E(z)P(z)^6\}.
+\end{equation}
+For $\Delta(t)=-\int_0^t ds\int_0^s du\,F(t,s,u)$, the exact Leibniz rule is
+\begin{align}
+\Delta'''={}&-(3F_t+2F_s+F_u)(t,t,t)\\
+&-\int_0^t(3F_{tt}+3F_{ts}+F_{ss})(t,t,u)\,du\nonumber\\
+&-\int_0^t ds\int_0^s du\,F_{ttt}(t,s,u).\nonumber
+\end{align}
+Thus seven named slots require total debit
+\begin{equation}
+\delta_3\le6\epsilon_1+7U\epsilon_2+U^2\epsilon_3/2.
+\end{equation}
+Exact rational evaluation yields the distinct results in Table~\ref{tab:bridge}. The auxiliary $2^{-12}$ derivative tolerance has model-time$^{-3}$ units; it is not the channel target.
+\begin{table}[t]\centering
+\caption{Separate ideal derivative comparison references}\label{tab:bridge}
+\begin{tabular}{@{}lcc@{}}\toprule
+Reference & Transfer ceiling & Auxiliary status\\\midrule
+Ideal $M=192$ & $<7/64$ & Insufficient\\
+Ideal $M=256$ & $<2^{-118}$ & Conditional pass\\\bottomrule
+\end{tabular}
+\end{table}
+The 192-mode diagnostic debit is $0.10905635$; the 256-mode debit is $2.60178\times10^{-36}$. The prospective 256-mode sector has $D_2=33923$ and its 256-column complex array would occupy 138948608 bytes, before workspaces. No directed finite 256-mode parameter, response or propagation certificate has run. One must not graft this ideal 256-mode comparison onto the numerical 192-mode response.
+
+\section{Controls, reproducibility and remaining gates}
+The release contains frozen protocols, source intervals and model, returned norm/readout data, exact rational certificates, failed candidate decisions, amendments, manifests and regeneration code. A 55 MB parent checkpoint is excluded but regenerable; new moment readouts did not reuse it.
+
+Controls comprise 12 small-model gauged fourth-launch tests, four native identities, two warm trace-bound tests, two cold third-derivative routes, 22 candidate decisions, 18 feature controls, 24 covariance controls and 12 exact rational noncommuting ODE identities. The largest small-feature discrepancy is about 24.04 at low mode count and is within its deliberately coarse majorant; it is not a small-error claim for $M=192$. Warm actual trace norms lie below the launch triangles. Floating diagnostic tolerances do not become directed certificates, and same-agent controls do not establish independent review.
+
+The highest-value next gate is a frozen matched 256-mode directed parameter and full response/derivative evaluation, with independent audit of common embedding, endpoint telescoping, all eight dyads and arithmetic assumptions. Wider $w=1/8$ acceptance requires better cold fourth/fifth and thermal local derivative information. Native joint admission, two-local full-word compilation, permanent retention, reservoir refresh and physical validation remain separate open architecture gates.
+\begin{thebibliography}{3}
+\bibitem{parent} B. W. Mayes, ``Deadline third derivative and fourth remainder,'' MQM\_DEADLINE\_JERK v0.1, 2026. Source artifact commit cb17428e32a5a37b702f9adbd7d23d1e4008bdbc; copied inputs in this release.
+\bibitem{nistb} NIST, \emph{Digital Library of Mathematical Functions}, Sec. 10.9, Eq. 10.9.4. [Online]. Available: \url{https://dlmf.nist.gov/10.9}
+\bibitem{nistg} NIST, \emph{Digital Library of Mathematical Functions}, Sec. 3.5, Gauss quadrature. [Online]. Available: \url{https://dlmf.nist.gov/3.5}
+\end{thebibliography}
+\end{document}

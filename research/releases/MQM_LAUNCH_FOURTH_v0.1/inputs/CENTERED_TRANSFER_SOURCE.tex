@@ -1,0 +1,92 @@
+\documentclass[a4paper,journal]{IEEEtran}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\title{Time-Centered Gaussian Quadrature Embedding for the MQM Vacuum-Transfer Certificate}
+\author{Ben Mayes\thanks{MQM development release v0.1, 7 October 2026. Conditional mathematical derivation, exact arithmetic and implementation controls. Independent review pending; physical promotion zero.}}
+\maketitle
+\begin{abstract}
+We compare a flat-band continuum vacuum reservoir with its finite Gauss--Legendre representation by an explicit, time-centered one-particle embedding. Polynomial evaluation is isometric under positive Gauss quadrature. Centering the bath interaction picture at half the execution interval reduces the uniform feature remainder to a Poisson tail with argument $BT/4$. At $B=T=16$ and $M=192$, exact arithmetic bounds the second-order retained-response transfer debit below $2^{-30}$. This supplies a conditional transfer allowance at the size of the existing full-column numerical response. A separate covariance replacement allowance is below $2^{-57}$. The finite response estimate remains simulated; directed assembly and propagation errors must still be certified before the $2^{-16}$ thermal target can close.
+\end{abstract}
+\begin{IEEEkeywords}Quantum control, Gaussian quadrature, Stinespring comparison, reservoir truncation.\end{IEEEkeywords}
+\section{Frozen Reference Contract}
+Use $\Omega=64$, $B=16$, $\kappa=8$, $\beta=5/16$, $T=16$, $h=g=1$, and $\lambda^2=4\sqrt2$. The native eight-state system, lowering operator $S=I_C\otimes\sigma_R^-$ and fixed $p0$ launch are inherited from the source response specification [1]. The reference vacuum exchange conserves total excitation $Q$. All paired second-order ket and bra trajectories lie in $Q\le2$. Untouched banks and references are retained identically. Reservoir coordinates are traced.
+
+The flat one-particle space is $\mathcal H=L^2([-B,B],d\mu)$, $d\mu=d\delta/(2B)$, with multiplication generator $J=\delta$ and port vector $c=G\mathbf1$, $G^2=128/\pi<49$. The finite reference uses positive $M$-node Gauss quadrature for the same measure, nodes $\delta_j$ and normalized weights $\omega_j$, with $J_M=\operatorname{diag}(\delta_j)$ and $c_{M,j}=G\sqrt{\omega_j}$. This finite star reference is unitarily equivalent to the $M$-site Legendre chain [2]. The theorem concerns ideal nodes, weights and coefficients.
+
+For this vacuum comparison both response models use the exact same thermal covariance $C_\beta(s)$. Its inherited bound is
+\begin{equation}\label{V}
+ T^2 V_\beta<\frac{16384}{31457265},\qquad
+ |C_\beta(s)|\le V_\beta=C_\beta(0).
+\end{equation}
+The numerical stationary-chain reference also changes covariance; that second comparison retains its separate $2^{-57}$ allowance [3].
+\section{Polynomial Evaluation and Centering}
+Let $\mathcal P_{M-1}\subset\mathcal H$ be polynomials of degree less than $M$. Define
+\begin{equation}
+ (Ep)_j=\sqrt{\omega_j}\,p(\delta_j).
+\end{equation}
+Gauss quadrature is exact through degree $2M-1$ [4]. Thus $\|Ep\|=\|p\|$ because $|p|^2$ has degree at most $2M-2$. Distinct nodes make $E$ onto $\mathbb C^M$. Write $W=E^{-1}$, an isometry into $\mathcal H$.
+
+Set $t_0=T/2$. The centered embedding is
+\begin{equation}
+ W_c=e^{-iJt_0}W e^{iJ_Mt_0}.
+\end{equation}
+The vacuum bath interaction-picture port vectors are $v(t)=e^{-iJt}c$ and $v_M(t)=e^{-iJ_Mt}c_M$. For $\tau=t-t_0$, their discrepancy is equivalent, by a common unitary, to comparing $G e^{-i\delta\tau}$ with $W$ applied to its sampled vector. The embedding depends on the declared execution interval; it is a comparison construction, not a physical controller or a change to the finite dynamics.
+
+Use the degree-$M-1$ Chebyshev truncation $p_\tau$ of $e^{-iB\tau x}$. Poisson's Bessel integral [4] gives $|J_n(a)|\le(|a|/2)^n/n!$ for real $a$. Therefore, uniformly for $|\tau|\le T/2$,
+\begin{align}
+ \|e^{-i\delta\tau}-p_\tau\|_\infty&\le2R_M,\\
+ R_M&=\sum_{n=M}^{\infty}\frac{x^n}{n!},\qquad x=BT/4.
+\end{align}
+The polynomial contributions align exactly under $W$. Both the continuum and sampled residual norms are at most $2G R_M$, using positive weights of total mass one. Consequently
+\begin{equation}\label{feature}
+ \sup_{0\le t\le T}\|v(t)-W_cv_M(t)\|\le4G R_M.
+\end{equation}
+\section{Excitation-Sector Duhamel Bound}
+Second quantization of $W_c$ embeds the finite bath into the continuum Fock space and preserves vacuum and excitation number. Unused orthogonal modes begin in vacuum. Each bath free evolution is removed in its own interaction picture; final bath unitaries disappear under partial trace. The system generator and local $S$ insertions are identical in the common space.
+
+The exchange interaction is $S^\dagger a(v(t))+S a^\dagger(v(t))$. On $Q\le2$, the active annihilation and emission factors have norms at most $\sqrt2\|v\|$: emission from two bath photons is blocked by zero system excitation. Hence (\ref{feature}) gives interaction-generator mismatch at most $8\sqrt2G R_M$. Duhamel comparison on any subinterval, followed by telescoping through a ket's local insertions, bounds its total difference by
+\begin{equation}\label{D}
+ D_M\le8\sqrt2G T R_M.
+\end{equation}
+Each ket has nonnegative propagation segments partitioning $[0,T]$ and norm-one insertions. Their interval allowances sum to (\ref{D}); no repeated whole-$T$ charge is introduced.
+
+\begin{theorem}
+For the inherited fixed-launch second-order response with exact common covariance,
+\begin{equation}\label{response}
+ \tfrac12\|\Delta_2^\infty-\Delta_{2,M}^{C}\|_1
+ \le4T^2V_\beta D_M.
+\end{equation}
+\end{theorem}
+\begin{proof}
+The two covariance orientations each have four double-commutator dyads. The Schr\"odinger-picture ket and bra vectors in each dyad are contractions. Their difference is at most $2D_M$ in trace norm by telescoping. Partial trace is contractive. Eight dyads, the factor $1/2$, and the integration triangle of area $T^2/2$, with $|C|\le V_\beta$, give (\ref{response}). Local insertions commute with the bath picture changes and the embedding. This argument concerns the specified response, not arbitrary thermal channel inputs.
+\end{proof}
+\section{Exact Receipt at the Evaluated Size}
+At $M=192=2^6\cdot3$ and $B=T=16$, $x=64=2^6$. The positive-tail ratio gives
+\begin{equation}
+ R_{192}\le\frac{64^{192}}{192!\,[1-64/193]}.
+\end{equation}
+With $\sqrt2<3/2$ and $G<7$, $D_{192}<1344R_{192}$, where $1344=2^6\cdot3\cdot7$. Exact rational comparison verifies
+\begin{align}
+ D_{192}&<3.465\times10^{-7}<2^{-21},\\
+ \delta_{\rm vac,2}&<\frac{5376\cdot16384}{31457265}R_{192}
+ <2^{-30}.
+\end{align}
+The decimal is diagnostic; integer numerator/denominator checks establish the dyadic bounds. Unlike the earlier 1536-site conservative transfer theorem [3], this allowance applies at the evaluated 192-mode size. It aligns the ideal reference size; it does not certify stored binary64 coefficients or propagation.
+
+Supplementary numerical controls use $M=8,16$ and four predeclared centered offsets. The normalized Legendre evaluation matrices have isometry defect below $1.27\times10^{-14}$, and all eight feature comparisons satisfy the Poisson diagnostic bounds. These are implementation controls, not directed numerical enclosures or independent review. They were frozen separately after the exact audit and before their evaluation.
+\section{Remaining Numerical Promotion Gate}
+The existing $M=192$ full-column finite response estimate is approximately $2.2505875\times10^{-8}$ [3]. The source thermal gate now has compatible ideal-size comparison allowances:
+\begin{equation}
+ \tfrac12\|\widehat\Delta_2^{192}\|_1+
+ 2^{-30}+2^{-57}+\delta_{\rm num}
+ <127/2^{25}-2^{-128}.
+\end{equation}
+Here $\delta_{\rm num}$ must enclose quadrature-node and weight representation, thermal occupations, Hamiltonian assembly, propagation and trace-norm evaluation. The floating response estimate is not a certified substitute for its true norm. The primary $2^{-16}$ thermal target remains OPEN pending this gate. Physical promotion is zero; hardware validation, permanent retention, full-word compilation, and novelty review are separate targets.
+\begin{thebibliography}{4}
+\bibitem{spec} B. Mayes, \emph{MQM Second-Order Specification}, development release v0.1, source launch and excitation-sector identity.
+\bibitem{chin} A. W. Chin et al., ``Exact mapping between system-reservoir quantum models and semi-infinite discrete chains using orthogonal polynomials,'' \emph{J. Math. Phys.}, vol.51, 092109, 2010.
+\bibitem{response} B. Mayes, \emph{MQM Chain Response}, development release v0.1, full-column numerical data and separate covariance comparison.
+\bibitem{dlmf} NIST, \emph{Digital Library of Mathematical Functions}, secs.3.5 and10.9, https://dlmf.nist.gov/.
+\end{thebibliography}
+\end{document}

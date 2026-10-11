@@ -1,0 +1,11 @@
+{
+  "source_parent_artifact_github_commit": "cb17428e32a5a37b702f9adbd7d23d1e4008bdbc",
+  "source_sites_commit": "3fe10c7b219972eb32d90d4d77c2b67851ce3e4b",
+  "source_github_head_observed": "e0c671ee4166ece8885fa66944300b34be2cdaff",
+  "representations": "M192 evaluated Gauss reference versus prospective idealM256; neither count is physical qubits or capacity192 labels",
+  "inputs": "Copied immutable source model, exact parameter intervals, readouts and centered transfer proof; hashes inMANIFEST",
+  "new_evaluation": "Fresh cold third launch and four hot launch powers; no parentcheckpoint reused for new readout",
+  "excluded": "Regenerable parent55MB checkpoint, suppliedregenerate_checkpoint.py; giant hot arrays not persisted, returned squared norms captured",
+  "review": "Same-agent evidence; independent review OPEN",
+  "physical_promotion": 0
+}

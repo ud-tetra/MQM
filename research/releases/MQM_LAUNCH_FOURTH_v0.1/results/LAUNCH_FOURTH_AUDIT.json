@@ -1,0 +1,131 @@
+{
+  "status": "SIMULATED finite routes / EXACT rational decision audit",
+  "small_model_rows": [
+    {
+      "M": 4,
+      "gauged_launch_checks": 4,
+      "max_gauge_discrepancy": 5.9272723755222505e-12,
+      "warm_fourth_trace_at16": 0.0032535640781815854,
+      "warm_launch_triangle_bound": 0.005148840054662481,
+      "cold_source_fourth_squared_norm": 293.1083939341886,
+      "cold_third_scalar_discrepancy": 9.703349235223868e-14
+    },
+    {
+      "M": 8,
+      "gauged_launch_checks": 8,
+      "max_gauge_discrepancy": 2.6301984920017445e-12,
+      "warm_fourth_trace_at16": 0.0038240968704343486,
+      "warm_launch_triangle_bound": 0.007141401976406406,
+      "cold_source_fourth_squared_norm": 293.1083939341886,
+      "cold_third_scalar_discrepancy": 3.241851231905457e-14
+    }
+  ],
+  "launch_gauge_checks": 12,
+  "native_source_identity_checks": 4,
+  "cold_third_route_checks": 2,
+  "warm_time16_bound_checks": 2,
+  "rational_decisions": [
+    {
+      "k": 3,
+      "pass": false
+    },
+    {
+      "k": 4,
+      "pass": true
+    },
+    {
+      "k": 5,
+      "pass": true
+    },
+    {
+      "k": 6,
+      "pass": true
+    },
+    {
+      "k": 7,
+      "pass": true
+    },
+    {
+      "k": 8,
+      "pass": true
+    },
+    {
+      "k": 9,
+      "pass": true
+    },
+    {
+      "k": 10,
+      "pass": true
+    },
+    {
+      "k": 11,
+      "pass": true
+    },
+    {
+      "k": 12,
+      "pass": true
+    },
+    {
+      "k": 13,
+      "pass": true
+    },
+    {
+      "k": 14,
+      "pass": true
+    },
+    {
+      "k": 15,
+      "pass": true
+    },
+    {
+      "k": 16,
+      "pass": true
+    },
+    {
+      "k": 17,
+      "pass": true
+    },
+    {
+      "k": 18,
+      "pass": true
+    },
+    {
+      "k": 19,
+      "pass": true
+    },
+    {
+      "k": 20,
+      "pass": true
+    },
+    {
+      "k": 21,
+      "pass": true
+    },
+    {
+      "k": 22,
+      "pass": true
+    },
+    {
+      "k": 23,
+      "pass": true
+    },
+    {
+      "k": 24,
+      "pass": true
+    }
+  ],
+  "continuum_integer_comparisons": [
+    {
+      "M": 192,
+      "auxiliary_pass": false
+    },
+    {
+      "M": 256,
+      "auxiliary_pass": true
+    }
+  ],
+  "M256_comparison_display": "<2^-118",
+  "M192_comparison_display": "<7/64, auxiliary target not cleared",
+  "external_review": "OPEN",
+  "physical_promotion": 0
+}

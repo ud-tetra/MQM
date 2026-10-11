@@ -1,0 +1,7 @@
+{
+  "pages": 3,
+  "IEEEtran_A4": true,
+  "overfull_boxes": false,
+  "renderer": "Poppler pdftoppm",
+  "visual_review": "All3 Poppler-renderedpages inspected; equations and columns fit; IEEEtran A4"
+}

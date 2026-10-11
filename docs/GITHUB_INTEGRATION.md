@@ -2,7 +2,7 @@
 
 Authorized artifact destination: `ud-tetra/MQM`, branch `main`. The user created it and authorized per-turn live artifact capture on 7 October 2026.
 
-This repository contains the website source, generated website, all 41 published architecture replay packages and manuscripts, the immutable code review release 0.5, claim registers, source-bound protocols, failures and amendments. Package hashes live in `research/session_catalogue.json`. Nested dependency packages preserve the earlier research inputs.
+This repository contains the website source, generated website, all 42 published architecture replay packages and manuscripts, the immutable code review release 0.5, claim registers, source-bound protocols, failures and amendments. Package hashes live in `research/session_catalogue.json`. Nested dependency packages preserve the earlier research inputs.
 
 ## Offline use
 

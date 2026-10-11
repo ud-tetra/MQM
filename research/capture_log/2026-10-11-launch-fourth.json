@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-11",
+  "release": "MQM_LAUNCH_FOURTH_v0.1",
+  "evidence": "DERIVED conditional / EXACT arithmetic / SIMULATED controls",
+  "window": "16 +/-2^-4; error<115/2^23<2^-16",
+  "continuum_bridge": "M192 insufficient; idealM256<2^-118; directed finite256 OPEN",
+  "amendments": "Norm underflow2^-800 post-evaluation; originalreceiptpreserved; exact decisions rerun",
+  "excluded": "Regenerable parentcheckpoint and largehotarrays; readouts, source and regenerationcode included",
+  "physical_promotion": 0,
+  "independent_review": "OPEN",
+  "sites_base": "3fe10c7b219972eb32d90d4d77c2b67851ce3e4b",
+  "github_base": "e0c671ee4166ece8885fa66944300b34be2cdaff"
+}

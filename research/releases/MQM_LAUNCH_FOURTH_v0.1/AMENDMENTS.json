@@ -1,0 +1,13 @@
+{
+  "amendments": [
+    {
+      "id": "NORM-UNDERFLOW-ALLOWANCE",
+      "status": "Conservative arithmetic amendment; fresh exact decisions and controls PASS",
+      "change": "Add2^-800 to each returned squared norm before rational upper root",
+      "reason": "Explicit absolute allowance for norm-product underflow",
+      "thresholds_changed": false,
+      "initial_receipt": "results/INITIAL_NORM_RECEIPT.json",
+      "post_evaluation": true
+    }
+  ]
+}

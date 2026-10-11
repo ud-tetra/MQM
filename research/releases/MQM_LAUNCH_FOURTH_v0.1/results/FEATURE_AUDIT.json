@@ -1,0 +1,345 @@
+{
+  "status": "SIMULATED feature/covariance controls and EXACT rational ODE identities",
+  "feature_checks": 18,
+  "feature_rows": [
+    {
+      "M": 8,
+      "r": 0,
+      "t": 0,
+      "discrepancy": 0.03434738044362526,
+      "ideal_feature_majorant_diagnostic": 0.22857142857142854
+    },
+    {
+      "M": 8,
+      "r": 1,
+      "t": 0,
+      "discrepancy": 0.9953962757220051,
+      "ideal_feature_majorant_diagnostic": 15.170370370370371
+    },
+    {
+      "M": 8,
+      "r": 2,
+      "t": 0,
+      "discrepancy": 24.040198197174785,
+      "ideal_feature_majorant_diagnostic": 892.0177777777777
+    },
+    {
+      "M": 8,
+      "r": 0,
+      "t": 0.25,
+      "discrepancy": 1.6831494885160692e-14,
+      "ideal_feature_majorant_diagnostic": 0.22857142857142854
+    },
+    {
+      "M": 8,
+      "r": 1,
+      "t": 0.25,
+      "discrepancy": 2.294298474631492e-13,
+      "ideal_feature_majorant_diagnostic": 15.170370370370371
+    },
+    {
+      "M": 8,
+      "r": 2,
+      "t": 0.25,
+      "discrepancy": 3.5382298361993165e-12,
+      "ideal_feature_majorant_diagnostic": 892.0177777777777
+    },
+    {
+      "M": 8,
+      "r": 0,
+      "t": 0.5,
+      "discrepancy": 0.03434738044362524,
+      "ideal_feature_majorant_diagnostic": 0.22857142857142854
+    },
+    {
+      "M": 8,
+      "r": 1,
+      "t": 0.5,
+      "discrepancy": 0.9953962757220045,
+      "ideal_feature_majorant_diagnostic": 15.170370370370371
+    },
+    {
+      "M": 8,
+      "r": 2,
+      "t": 0.5,
+      "discrepancy": 24.040198197174774,
+      "ideal_feature_majorant_diagnostic": 892.0177777777777
+    },
+    {
+      "M": 16,
+      "r": 0,
+      "t": 0,
+      "discrepancy": 2.004152539099336e-08,
+      "ideal_feature_majorant_diagnostic": 9.939763026182779e-08
+    },
+    {
+      "M": 16,
+      "r": 1,
+      "t": 0,
+      "discrepancy": 1.2479520281605814e-06,
+      "ideal_feature_majorant_diagnostic": 1.2829811771610713e-05
+    },
+    {
+      "M": 16,
+      "r": 2,
+      "t": 0,
+      "discrepancy": 7.243669673697254e-05,
+      "ideal_feature_majorant_diagnostic": 0.0015543810415605288
+    },
+    {
+      "M": 16,
+      "r": 0,
+      "t": 0.25,
+      "discrepancy": 1.4036164302313673e-14,
+      "ideal_feature_majorant_diagnostic": 9.939763026182779e-08
+    },
+    {
+      "M": 16,
+      "r": 1,
+      "t": 0.25,
+      "discrepancy": 2.1043863028874386e-13,
+      "ideal_feature_majorant_diagnostic": 1.2829811771610713e-05
+    },
+    {
+      "M": 16,
+      "r": 2,
+      "t": 0.25,
+      "discrepancy": 3.076508746331306e-12,
+      "ideal_feature_majorant_diagnostic": 0.0015543810415605288
+    },
+    {
+      "M": 16,
+      "r": 0,
+      "t": 0.5,
+      "discrepancy": 2.0041525253204885e-08,
+      "ideal_feature_majorant_diagnostic": 9.939763026182779e-08
+    },
+    {
+      "M": 16,
+      "r": 1,
+      "t": 0.5,
+      "discrepancy": 1.2479520278204506e-06,
+      "ideal_feature_majorant_diagnostic": 1.2829811771610713e-05
+    },
+    {
+      "M": 16,
+      "r": 2,
+      "t": 0.5,
+      "discrepancy": 7.243669674629657e-05,
+      "ideal_feature_majorant_diagnostic": 0.0015543810415605288
+    }
+  ],
+  "covariance_checks": 24,
+  "covariance_rows": [
+    {
+      "M": 16,
+      "r": 0,
+      "t": 0,
+      "discrepancy": 5.421010862427522e-20,
+      "ideal_covariance_majorant_diagnostic": 1740.5936012308935
+    },
+    {
+      "M": 16,
+      "r": 1,
+      "t": 0,
+      "discrepancy": 9.0801931945661e-19,
+      "ideal_covariance_majorant_diagnostic": 44892.38183796452
+    },
+    {
+      "M": 16,
+      "r": 2,
+      "t": 0,
+      "discrepancy": 1.4907779871675686e-17,
+      "ideal_covariance_majorant_diagnostic": 1129898.4962121972
+    },
+    {
+      "M": 16,
+      "r": 3,
+      "t": 0,
+      "discrepancy": 2.424276057677588e-16,
+      "ideal_covariance_majorant_diagnostic": 27770162.733325895
+    },
+    {
+      "M": 16,
+      "r": 0,
+      "t": 0.25,
+      "discrepancy": 6.007676718897367e-20,
+      "ideal_covariance_majorant_diagnostic": 1740.5936012308935
+    },
+    {
+      "M": 16,
+      "r": 1,
+      "t": 0.25,
+      "discrepancy": 9.598598885396149e-19,
+      "ideal_covariance_majorant_diagnostic": 44892.38183796452
+    },
+    {
+      "M": 16,
+      "r": 2,
+      "t": 0.25,
+      "discrepancy": 1.5420185462282925e-17,
+      "ideal_covariance_majorant_diagnostic": 1129898.4962121972
+    },
+    {
+      "M": 16,
+      "r": 3,
+      "t": 0.25,
+      "discrepancy": 2.4846668543546767e-16,
+      "ideal_covariance_majorant_diagnostic": 27770162.733325895
+    },
+    {
+      "M": 16,
+      "r": 0,
+      "t": 0.5,
+      "discrepancy": 6.562671412412759e-20,
+      "ideal_covariance_majorant_diagnostic": 1740.5936012308935
+    },
+    {
+      "M": 16,
+      "r": 1,
+      "t": 0.5,
+      "discrepancy": 1.0468727571869666e-18,
+      "ideal_covariance_majorant_diagnostic": 44892.38183796452
+    },
+    {
+      "M": 16,
+      "r": 2,
+      "t": 0.5,
+      "discrepancy": 1.448059463680814e-17,
+      "ideal_covariance_majorant_diagnostic": 1129898.4962121972
+    },
+    {
+      "M": 16,
+      "r": 3,
+      "t": 0.5,
+      "discrepancy": 7.279801996945499e-17,
+      "ideal_covariance_majorant_diagnostic": 27770162.733325895
+    },
+    {
+      "M": 32,
+      "r": 0,
+      "t": 0,
+      "discrepancy": 4.9763185651190145e-20,
+      "ideal_covariance_majorant_diagnostic": 3.968237438767621e-09
+    },
+    {
+      "M": 32,
+      "r": 1,
+      "t": 0,
+      "discrepancy": 8.300922883092143e-19,
+      "ideal_covariance_majorant_diagnostic": 1.9495265332023666e-07
+    },
+    {
+      "M": 32,
+      "r": 2,
+      "t": 0,
+      "discrepancy": 1.3660947373317356e-17,
+      "ideal_covariance_majorant_diagnostic": 9.430834604366449e-06
+    },
+    {
+      "M": 32,
+      "r": 3,
+      "t": 0,
+      "discrepancy": 2.220446049250313e-16,
+      "ideal_covariance_majorant_diagnostic": 0.0004491165710468092
+    },
+    {
+      "M": 32,
+      "r": 0,
+      "t": 0.25,
+      "discrepancy": 5.447694788369313e-20,
+      "ideal_covariance_majorant_diagnostic": 3.968237438767621e-09
+    },
+    {
+      "M": 32,
+      "r": 1,
+      "t": 0.25,
+      "discrepancy": 8.745339326337312e-19,
+      "ideal_covariance_majorant_diagnostic": 1.9495265332023666e-07
+    },
+    {
+      "M": 32,
+      "r": 2,
+      "t": 0.25,
+      "discrepancy": 1.412759140352831e-17,
+      "ideal_covariance_majorant_diagnostic": 9.430834604366449e-06
+    },
+    {
+      "M": 32,
+      "r": 3,
+      "t": 0.25,
+      "discrepancy": 2.2816158248409317e-16,
+      "ideal_covariance_majorant_diagnostic": 0.0004491165710468092
+    },
+    {
+      "M": 32,
+      "r": 0,
+      "t": 0.5,
+      "discrepancy": 5.826873334447558e-20,
+      "ideal_covariance_majorant_diagnostic": 3.968237438767621e-09
+    },
+    {
+      "M": 32,
+      "r": 1,
+      "t": 0.5,
+      "discrepancy": 9.26417866987751e-19,
+      "ideal_covariance_majorant_diagnostic": 1.9495265332023666e-07
+    },
+    {
+      "M": 32,
+      "r": 2,
+      "t": 0.5,
+      "discrepancy": 1.4783570977528606e-17,
+      "ideal_covariance_majorant_diagnostic": 9.430834604366449e-06
+    },
+    {
+      "M": 32,
+      "r": 3,
+      "t": 0.5,
+      "discrepancy": 2.365467764630782e-16,
+      "ideal_covariance_majorant_diagnostic": 0.0004491165710468092
+    }
+  ],
+  "exact_ODE_checks": 12,
+  "exact_ODE_rows": [
+    {
+      "case": 0,
+      "exact_derivative_orders": [
+        1,
+        2,
+        3
+      ],
+      "noncommuting": true
+    },
+    {
+      "case": 1,
+      "exact_derivative_orders": [
+        1,
+        2,
+        3
+      ],
+      "noncommuting": true
+    },
+    {
+      "case": 2,
+      "exact_derivative_orders": [
+        1,
+        2,
+        3
+      ],
+      "noncommuting": true
+    },
+    {
+      "case": 3,
+      "exact_derivative_orders": [
+        1,
+        2,
+        3
+      ],
+      "noncommuting": true
+    }
+  ],
+  "numeric_reference_not_continuum_certificate": true,
+  "physical_promotion": 0,
+  "external_review": "OPEN"
+}

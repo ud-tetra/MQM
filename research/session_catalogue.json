@@ -5,6 +5,68 @@
   "physical_promotion": 0,
   "releases": [
     {
+      "id": "MQM_LAUNCH_FOURTH_v0.1",
+      "title": "Launch-local fourth remainder doubles conditional capture window",
+      "version": "0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "DERIVED conditional retained error<115/2^23<2^-16 on16 +/-2^-4; twofold wider. Cold third<2^-13 and finite thermal fourth<1/32. Seven differentiated continuum slots bounded: idealM192 too coarse; idealM256<2^-118. Matched finite256 certificate OPEN; physical promotion0.",
+      "claims": {
+        "version": "0.1",
+        "physical_promotion": 0,
+        "claims": [
+          {
+            "id": "LAUNCH-FOURTH",
+            "status": "EXACT / DERIVED conditional",
+            "claim": "ad(H-delta_j I)^4=adH^4; launch triangle plus cold151/4 gives finite thermal fourth derivative<1/32",
+            "scope": "Q<=2 finiteM192 launch and declared parameter/arithmetic enclosures; gauge is algebraic, not physical budget reduction"
+          },
+          {
+            "id": "COLD-THIRD",
+            "status": "DERIVED conditional",
+            "claim": "Cold continuum deadline third derivative<2^-13 by separate normalized launch transport and uniform centered embedding",
+            "scope": "Source launch p0 atT16; not differentiating a value approximation"
+          },
+          {
+            "id": "WINDOW",
+            "status": "DERIVED conditional",
+            "claim": "Retained error<115/2^23<2^-16 on16 +/-2^-4;twofold wider than parent",
+            "scope": "Fixed beta5/16, source launch, uniform continuum value and Gaussian bounds; no arbitrary-input diamond guarantee"
+          },
+          {
+            "id": "JET-COMPARISON",
+            "status": "DERIVED conditional",
+            "claim": "Seven full-kernel continuum derivative slots bounded; idealM192 debit<7/64; idealM256<2^-118",
+            "scope": "Centered compact-band common embedding, bounded noncommuting endpoint derivatives and eight source dyads; current192 auxiliary target fails"
+          },
+          {
+            "id": "MATCHED256",
+            "status": "OPEN",
+            "claim": "Directed finite256 response/parameter/propagation certificate required before applying ideal256 derivative comparison"
+          },
+          {
+            "id": "AUDIT",
+            "status": "EXACT / SIMULATED",
+            "claim": "22 candidate decisions,12 exact ODE identities;small-model launch, covariance and feature controls pass",
+            "scope": "Same-agent checks; inherited binary64 arithmetic model; independent review OPEN"
+          },
+          {
+            "id": "PHYSICAL",
+            "status": "OPEN",
+            "claim": "Permanent retention, bath replenishment, arbitrary-inputdiamond, native admission, two-local fullword, device time and hardware remainOPEN"
+          }
+        ]
+      },
+      "zip_url": "/research/MQM_LAUNCH_FOURTH_v0.1/MQM_LAUNCH_FOURTH_v0.1.zip",
+      "zip_sha256": "f8966c33ae4c8173fad4a0f2ec0c7d73e648bce868d39d0a419f843d9a65cd24",
+      "pdfs": [
+        {
+          "url": "/research/MQM_LAUNCH_FOURTH_v0.1/MQM_LAUNCH_FOURTH_IEEE_A4_v0.1.pdf",
+          "sha256": "bb00b4107b06a02a6ff7be033e036ff16a5d78252656855b9ebe2297d3689791"
+        }
+      ],
+      "claims_url": "/research/MQM_LAUNCH_FOURTH_v0.1/CLAIM_REGISTER.json"
+    },
+    {
       "id": "MQM_DEADLINE_JERK_v0.1",
       "title": "Deadline third derivative and fourth remainder lower the capture ceiling",
       "version": "0.1",

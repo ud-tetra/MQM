@@ -1,0 +1,52 @@
+{
+  "freeze_stage": "Before launch fourth-moment and new cold-third evaluation",
+  "parameters": {
+    "Omega": 64,
+    "B": 16,
+    "kappa": 8,
+    "beta": "5/16",
+    "T": 16,
+    "h": 1,
+    "g": 1,
+    "lambda_squared": "4sqrt2"
+  },
+  "main_reference": {
+    "M": 192,
+    "target": "retained error<2^-16",
+    "candidates": "2^-k k3..24",
+    "horizon": "129/8"
+  },
+  "fourth_method": "Gauge each hot basis launch by delta_j;four matrix powers;norms enclosed by binary64 gamma and rational square roots;triangle hot sum plus cold source moments",
+  "cold_method": "Fresh direct Taylor transport of2p1+lambda*p3;uniform normalized centered embedding scaled13/4;third derivative bilinear;local fourth remainder with normH4p0<18",
+  "rounding": {
+    "sparse_product_gamma": "2^-43",
+    "squared_norm_sum_gamma": "2^-37/(1-2^-37)",
+    "power_operator_norm": 80,
+    "readout_rounding": "Returned binary64 values interpreted as exact fractions"
+  },
+  "derivative_comparison": {
+    "feature_orders": [
+      0,
+      1,
+      2
+    ],
+    "references": [
+      192,
+      256
+    ],
+    "method": "Centered polynomial degreeM-r-1 for differentiated feature; endpoint derivative telescoping for all8 dyads;seven full-kernel slots;Bose covariance derivative quadrature comparison",
+    "auxiliary_target": "third-derivative transfer<2^-12 model-time^-3",
+    "scope": "256-mode comparison prospective ideal reference; no transfer of numerical192-mode certificate"
+  },
+  "controls": {
+    "M": [
+      4,
+      8
+    ],
+    "seed": 521,
+    "routes": "Exact launch identities;dense derivative dyads versus launch bounds;polynomial feature controls;integer decisions"
+  },
+  "post_exposure_engineering": true,
+  "physical_promotion": 0,
+  "external_review": "OPEN"
+}
