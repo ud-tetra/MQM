@@ -1,0 +1,101 @@
+\documentclass[a4paper,journal]{IEEEtran}
+\usepackage{amsmath,amssymb,booktabs,url}
+\newcommand{\Tr}{\operatorname{Tr}}\newcommand{\ad}{\operatorname{ad}}
+\title{Deadline Curvature Enclosures and a Wider Quantum Latch Capture Window}
+\author{Ben W. Mayes\\MQM Research --- Development Addendum, Version 0.1}
+\begin{document}\maketitle
+\begin{abstract}
+At unchanged $\beta=5/16$, finite-reference curvature enclosures and third-order remainders give conditional retained-channel error below $123/2^{23}<2^{-16}$ throughout $16\pm2^{-5}$ model time units, doubling the preceding halfwidth. Mixed bath commutators remain explicit. Uniform continuum values are compared separately; thermal continuum derivative transfer remains open. Exact acceptance arithmetic inherits the declared propagation, Gaussian and rounding assumptions. Physical promotion is zero.
+\end{abstract}
+\begin{IEEEkeywords}quantum control, open quantum systems, finite reservoirs, certified propagation, conditional error bounds\end{IEEEkeywords}
+\section{Contract and evidence boundary}
+This addendum extends the source-bound MQM response-curvature packet~\cite{parent}, using the launch-transport and directed-parameter records~\cite{launch,jet}. It does not reconstruct a device or a full-word compiler. The frozen parameters are $\Omega=64$, $B=16$, $\kappa=8$, $\beta=5/16$, $T=16$, $h=g=1$, and $\lambda^2=4\sqrt2$. The launch, error target, thermal covariance and error interpretation are unchanged. Engineering follows exposure to the parent results; a fresh candidate list $w=2^{-k}$, $3\le k\le24$, was declared before the new thermal evaluation.
+
+The finite Gauss bath has $M=192$ mathematical modes. Its two-excitation sector has
+\begin{equation}D_2=3+4M+\binom{M+1}{2}=19299.\end{equation}
+These modes and coordinates are not physical qubits. The thermal response is a fixed-launch retained-state correction, not an arbitrary-input diamond-norm bound. All bounds below inherit the ideal continuum embedding, Gaussian remainder, directed parameter intervals and specified IEEE-754 operation model. External validation of those dependencies remains open.
+\section{Retained third commutator}
+Let $H=H_B+K$ on the finite source sectors, $C=[K,H_B]$, $D=[C,H_B]$, and $\ad_A X=[A,X]$. The finite response is $\Delta_{2,M}(t)=\Tr_B X(t)$, with $\|X(t)\|_1\le2\nu$. Here $\nu$ is the finite reference occupation trace, not a continuum photon-number bound. Bath-only outer commutators vanish under the partial trace. Jacobi gives the exact identity
+\begin{align}
+\Tr_B\ad_H^3X=\Tr_B\big(&\ad_K^3X+2\ad_C\ad_KX\nonumber\\&+\ad_K\ad_CX+\ad_DX\big).\label{third}
+\end{align}
+For example, $\ad_{H_B}\ad_KX=\ad_K\ad_{H_B}X-\ad_CX$; moving the bath commutator outward under the trace generates the mixed terms in (\ref{third}). No assumption of commuting interaction-picture operators is made.
+
+The inherited local bound is $\|K\|<14$. With $G^2=128/\pi$, the flat-band second and fourth moments are
+\begin{equation}\|\delta c\|^2=G^2B^2/3,\qquad \|\delta^2c\|^2=G^2B^4/5.\end{equation}
+Gauss nodes reproduce these polynomial moments. On $Q\le2$, excitation exchange has norm at most $\sqrt2$ times its one-particle coefficient norm. Thus, using $\pi>3$,
+\begin{equation}\|C\|<256/3,\qquad \|D\|\le4096/\sqrt{5\pi}<4096/3.\end{equation}
+Trace-norm contractivity for Hermitian inputs and $\|[A,X]\|_1\le2\|A\|\|X\|_1$ imply
+\begin{align}
+\tfrac12\|\Delta^{(3)}_{2,M}(t)\|_1
+&\le\nu\left(8\cdot14^3+12\cdot14\cdot\tfrac{256}{3}+2\cdot\tfrac{4096}{3}\right)\nonumber\\
+&=\tfrac{117056}{3}\nu.\label{jerk}
+\end{align}
+This all-time finite-reference bound does not transfer a derivative to the continuum.
+\section{Deadline thermal enclosure}
+All 192 covariance-weighted hot columns and the cold vector were freshly propagated by 128 steps of length $1/8$, degree 48. Separate real and imaginary CSR products have at most 196 terms per row; the source absolute matrix norm is below 64. The rounding model is round-to-nearest binary64, with parameter mismatch $d_H$, occupation mismatch $d_n$ and step majorant
+\begin{equation}s=32\,2^{-43}3^8+\frac{8^{49}}{49!(1-8/50)}+2^{-800}.\end{equation}
+Set $e=16d_H+256s$. The directed parameter intervals include an added $2^{-40}$ Hamiltonian allowance. See the archived rational source for every numerator and denominator.
+
+For evolved hot matrix $W$, read out the reduced weighted dyads directly:
+\begin{equation}\Tr_B\{2HWN(HW)^\dagger-H^2WN W^\dagger-WN(H^2W)^\dagger\},\end{equation}
+then subtract the finite occupation trace times the cold curvature. A separate polarization route is retained as a diagnostic. The exact rational half sum of absolute real and imaginary returned entries bounds the matrix trace norm, so acceptance does not use eigenvalue rounding.
+
+The enclosure adds
+\begin{align}
+E_C={}&\nu_U\big[4\cdot64^2(2e+e^2)\nonumber\\&+4d_H(128+d_H)(1+e)^2\big]+4\cdot64^2d_n+2^{-20}.\label{ec}
+\end{align}
+The final slot bounds direct dyad arithmetic: a conservative $2^{28}$ primitive-operation budget gives $\gamma=2^{-25}/(1-2^{-25})$. The exact receipt verifies
+\begin{align}
+&32\gamma\nu_U4(64+d_H)^2(1+e)^2\nonumber\\&\quad+16\,2^{-43}\nu_U(64+d_H)^2(1+e)^2<2^{-20}.
+\end{align}
+The budget exceeds the source dyad products and reductions. The absolute charge bounds their sums before cancellation; undocumented BLAS precision or execution behavior is not promoted as independently verified arithmetic.
+
+The diagnostic raw half trace norm is about $2.8361\times10^{-10}$. Including (\ref{ec}), the certified conditional upper value is about $7.6057\times10^{-5}<2^{-13}$. The larger certified value reflects conservative arithmetic and propagation allowances. With the inherited finite slope bound $2^{-20}$, the thermal variation is
+\begin{equation}d_2(w)=2^{-20}w+\tfrac12 2^{-13}w^2+\tfrac16\tfrac{117056}{3}\nu_U w^3.\label{d2}\end{equation}
+\section{Cold launch-moment enclosure}
+The archived launch vectors obey $Hp_0=p_1$, $H^2p_0=p_0+p_2$. If $a_j$ denotes their live projection after transport, then
+\begin{equation}q''(16)=2\|a_1\|^2-2\Re\langle a_0,a_2\rangle.\end{equation}
+Parameter, propagation and centered embedding errors are charged afresh on $U=129/8$. If $N_j$ encloses the returned live norm, the unit-launch error is $e_0=e+84UR$, with
+\begin{equation}R=\frac{(4U)^{192}}{192!(1-4U/193)},\qquad e_2=3e_0/2.\end{equation}
+The native curvature correction is
+\begin{equation}2(2N_1e_0+e_0^2)+2(e_0N_2+e_2N_0+e_0e_2).
+\end{equation}
+Exact rational roots enclose $N_j$. This gives $|q''(16)|<2^{-14}$, while $|q'(16)|<2^{-16}$ is rechecked. These are population derivative quantities, not the error threshold.
+
+From $H^3p_0=2p_1+\lambda p_3$, $\|H^3p_0\|<13/4$. Put $A=7/2048$, $s_1=N_1+e_0$, $s_2=N_2+e_2$, $h_3=13/4$, and
+\begin{align}
+b_0&=A+s_1w+s_2w^2/2+h_3w^3/6,\nonumber\\
+b_1&=s_1+s_2w+h_3w^2/2,\quad b_2=s_2+h_3w.\nonumber
+\end{align}
+Then $|q^{(3)}|\le6b_1b_2+2b_0h_3=:J_q(w)$ and
+\begin{equation}d_q(w)=2^{-16}w+\tfrac12 2^{-14}w^2+J_q(w)w^3/6.\end{equation}
+The rational $7/2048$ bounds the square root of the vacuum ceiling; it has no identification with the separate $7/768$ capacity proposal.
+\section{Uniform value ledger and decision}
+Uniform continuum values are compared independently of finite thermal derivatives. Let $V=64/31457265$, $r=2^{-21}$, $y=8U+25/16$, and
+\begin{align}
+\eta={}&\frac{4(128/3)r}{1-r}\frac{y^{384}}{384!(1-y/385)}\nonumber\\&+\frac{2(128/3)r^9}{1-r}.
+\end{align}
+The fresh vacuum response and covariance slots are $336U^3VR$ and $2U^2\eta$. With $x_{16}=12433696189517/58512905602490430$,
+\begin{equation}x_w=x_{16}+6V(16w+w^2/2),\qquad G_w=\frac{x_w^2}{2(1-x_w)}<2^{-25}.
+\end{equation}
+All declared candidates have $x_w<1$. The full error majorant is
+\begin{align}
+E(w)={}&3/2^{18}+2^{-128}+d_q(w)+3/2^{26}\nonumber\\&+d_2(w)+336U^3VR+2U^2\eta+G_w.\label{ledger}
+\end{align}
+Exact cross multiplication on the 22 frozen candidates selects $w=2^{-5}$ as the largest passing dyadic halfwidth. At this value,
+\begin{equation}E(w)<123/2^{23}<2^{-16}.
+\end{equation}
+Its diagnostic total is $1.4385964497733272\times10^{-5}$. Candidate $2^{-4}$ fails this majorant; it is not an all-time physical failure theorem. The display enclosure 123 was selected after evaluation; acceptance stayed fixed at $2^{-16}$.
+
+The halfwidth is twice the parent $2^{-6}$, 2048 times the first $2^{-16}$ retention interval, and $2^{-9}$ relative to $T$. Equal numerical values of time and probability parameters do not identify their types. No pulse-off or temperature reduction was introduced.
+\section{Audit, limitations and next gate}
+Six seeded $M=4,8$ third-commutator controls agree within $1.463\times10^{-13}$, two thermal curvature controls within $1.054\times10^{-20}$, and two cold controls within $2.013\times10^{-15}$. The $M=192$ readout comparison differs by $2.060\times10^{-18}$. These are same-agent diagnostics, not independent review. A separate script audits 22 rational decisions.
+
+The regenerable 55 MB checkpoint is excluded; its hash, source and frozen outputs are captured. Permanent retention, replenished bath, arbitrary-input diamond accuracy, native admission and hardware remain open. Next: enclose the deadline thermal third derivative with a fourth-order remainder, preserving separate continuum value comparisons and the open derivative-transfer gate.
+\begin{thebibliography}{3}
+\bibitem{parent} B. W. Mayes, ``MQM response curvature,'' v0.1, immutable repository source ff55d95b820583149811d92135796215b9a004c5, development packet, 2026.
+\bibitem{launch} B. W. Mayes, ``MQM launch transport,'' v0.1, archived launch moments and propagation receipts, 2026.
+\bibitem{jet} B. W. Mayes, ``MQM response jet,'' v0.1, archived finite sector model and directed parameter intervals, 2026. See the release input hashes and review gates.
+\end{thebibliography}
+\end{document}

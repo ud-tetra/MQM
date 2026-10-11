@@ -1,9 +1,66 @@
 {
-  "record_date": "2026-10-07",
+  "record_date": "2026-10-11",
   "scope": "Source-bound session architecture releases; code release0.5 remains distinct and immutable",
   "independent_review": "pending",
   "physical_promotion": 0,
   "releases": [
+    {
+      "id": "MQM_POINT_CURVATURE_v0.1",
+      "title": "Deadline curvature enclosures and a twofold wider capture window",
+      "version": "0.1",
+      "family": "Microscopic reservoirs",
+      "summary": "DERIVED conditional cold deadline curvature<2^-14 and finite thermal curvature<2^-13. Retained mixed third commutator yields error<123/2^23<2^-16 on16 +/-2^-5 at unchanged beta5/16. Thermal continuum derivative transfer OPEN; physical promotion0.",
+      "claims": {
+        "version": "0.1",
+        "physical_promotion": 0,
+        "claims": [
+          {
+            "id": "RETAINED-THIRD",
+            "status": "EXACT",
+            "claim": "Retained third commutator includes adK^3+2adC adK+adK adC+adD",
+            "scope": "Finite source sectors; C=[K,H_B],D=[C,H_B]"
+          },
+          {
+            "id": "THERMAL-POINT",
+            "status": "DERIVED conditional",
+            "claim": "Finite M192 thermal deadline curvature half trace <2^-13; all-time third derivative <=(117056/3)nu_U",
+            "scope": "Declared binary64 ledger and finite occupation trace; continuum derivative transfer OPEN"
+          },
+          {
+            "id": "COLD-POINT",
+            "status": "DERIVED conditional",
+            "claim": "Cold deadline population curvature <2^-14 with launch-moment embedding and third remainder",
+            "scope": "Fixed cold launch; source directed parameter/propagation/embedding assumptions"
+          },
+          {
+            "id": "WIDER-WINDOW",
+            "status": "DERIVED conditional",
+            "claim": "Uniform retained error<123/2^23<2^-16 on16 +/-2^-5;2x parent halfwidth",
+            "scope": "Unchanged beta5/16 and fixed launch; uniform continuum VALUE comparison on129/8"
+          },
+          {
+            "id": "CONTROLS",
+            "status": "SIMULATED / EXACT decision audit",
+            "claim": "10 small-model route checks,1 large readout comparison,22 rational candidate decisions",
+            "scope": "Same-agent routes; external review OPEN"
+          },
+          {
+            "id": "PHYSICAL-BRIDGE",
+            "status": "OPEN",
+            "claim": "Permanent retention, bath refresh, arbitrary-input diamond distance, thermal continuum derivative transfer and hardware validation"
+          }
+        ]
+      },
+      "zip_url": "/research/MQM_POINT_CURVATURE_v0.1/MQM_POINT_CURVATURE_v0.1.zip",
+      "zip_sha256": "239207a1528f4785865f7b56fef6ec71f3381c452cd40b5df30c8872e7c07a55",
+      "pdfs": [
+        {
+          "url": "/research/MQM_POINT_CURVATURE_v0.1/MQM_POINT_CURVATURE_IEEE_A4_v0.1.pdf",
+          "sha256": "1995a1f2348027db687ccb7801f3f40fecdcd91862d3607d4c71c9a271009550"
+        }
+      ],
+      "claims_url": "/research/MQM_POINT_CURVATURE_v0.1/CLAIM_REGISTER.json"
+    },
     {
       "id": "MQM_RESPONSE_CURVATURE_v0.1",
       "title": "Mixed bath commutator and fourfold wider conditional window",

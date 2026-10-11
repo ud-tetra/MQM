@@ -1,0 +1,30 @@
+{
+  "freeze_stage": "Before fresh thermal curvature evaluation",
+  "parameters": {
+    "Omega": 64,
+    "B": 16,
+    "kappa": 8,
+    "beta": "5/16",
+    "T": 16,
+    "h": 1,
+    "g": 1,
+    "lambda_squared": "4 sqrt(2)"
+  },
+  "target": "uniform retained error strictly below2^-16",
+  "candidates": "2^-k k=3..24",
+  "horizon": "16+2^-3",
+  "method": "fresh128 degree48 Taylor steps on all192 hot columns; direct finite point curvature; reduced retained third commutator with mixed terms; source cold launch output enclosed afresh on larger horizon",
+  "comparison": "Uniform continuum VALUE comparison; no thermal derivative transfer",
+  "controls": {
+    "M": [
+      4,
+      8
+    ],
+    "seed": 311,
+    "random_states_each": 3,
+    "routes": "Dense full third commutator versus reduced retained form; dyad curvature polarization; exact budget cross multiplication"
+  },
+  "physical_promotion": 0,
+  "external_review": "OPEN",
+  "post_exposure_engineering": true
+}

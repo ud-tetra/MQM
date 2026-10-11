@@ -1,0 +1,37 @@
+{
+  "date_utc": "2026-10-11",
+  "scope": "MQM_POINT_CURVATURE_v0.1",
+  "result": "DERIVED conditional error<123/2^23<2^-16 on16 +/-2^-5; unchanged beta5/16",
+  "evidence": [
+    "EXACT retained third identity and rational decisions",
+    "DERIVED conditional directed finite enclosures and continuum value comparison",
+    "SIMULATED same-agent controls"
+  ],
+  "checks": {
+    "small_model_routes": 10,
+    "large_readout_comparison": 1,
+    "exact_candidate_decisions": 22,
+    "pdf": "IEEEtran A4 two-column;2 pages visually inspected"
+  },
+  "physical_promotion": 0,
+  "open": [
+    "thermal continuum derivative transfer",
+    "external review",
+    "permanent retention",
+    "bath replenishment",
+    "arbitrary-input diamond",
+    "hardware validation"
+  ],
+  "exclusions": [
+    "Regenerable55MB checkpoint;hash and replay inPROVENANCE.json",
+    "Aggregate offline ZIP generated locally/CI;excluded fromGit andSites packaging"
+  ],
+  "amendments": [
+    "New protocol frozen before fresh curvature evaluation; post-exposure engineering disclosed",
+    "Display123/2^23 selected after evaluation; acceptance2^-16 unchanged"
+  ],
+  "github_base": "f672ba0e0a6e0d67d9b297ccdaea728da50d183d",
+  "sites_open_source": "258c4fb425ececb8fdb3b234c39d4b425edfb486",
+  "capture_strategy": "Immutable blobs plus base-tree overlay; expected-head fast-forward; preserve unrelated concurrent paths",
+  "paired_capture_receipt": "Publication identities recorded separately after successful capture"
+}

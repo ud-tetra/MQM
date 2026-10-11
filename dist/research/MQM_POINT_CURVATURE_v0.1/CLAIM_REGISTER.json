@@ -1,0 +1,41 @@
+{
+  "version": "0.1",
+  "physical_promotion": 0,
+  "claims": [
+    {
+      "id": "RETAINED-THIRD",
+      "status": "EXACT",
+      "claim": "Retained third commutator includes adK^3+2adC adK+adK adC+adD",
+      "scope": "Finite source sectors; C=[K,H_B],D=[C,H_B]"
+    },
+    {
+      "id": "THERMAL-POINT",
+      "status": "DERIVED conditional",
+      "claim": "Finite M192 thermal deadline curvature half trace <2^-13; all-time third derivative <=(117056/3)nu_U",
+      "scope": "Declared binary64 ledger and finite occupation trace; continuum derivative transfer OPEN"
+    },
+    {
+      "id": "COLD-POINT",
+      "status": "DERIVED conditional",
+      "claim": "Cold deadline population curvature <2^-14 with launch-moment embedding and third remainder",
+      "scope": "Fixed cold launch; source directed parameter/propagation/embedding assumptions"
+    },
+    {
+      "id": "WIDER-WINDOW",
+      "status": "DERIVED conditional",
+      "claim": "Uniform retained error<123/2^23<2^-16 on16 +/-2^-5;2x parent halfwidth",
+      "scope": "Unchanged beta5/16 and fixed launch; uniform continuum VALUE comparison on129/8"
+    },
+    {
+      "id": "CONTROLS",
+      "status": "SIMULATED / EXACT decision audit",
+      "claim": "10 small-model route checks,1 large readout comparison,22 rational candidate decisions",
+      "scope": "Same-agent routes; external review OPEN"
+    },
+    {
+      "id": "PHYSICAL-BRIDGE",
+      "status": "OPEN",
+      "claim": "Permanent retention, bath refresh, arbitrary-input diamond distance, thermal continuum derivative transfer and hardware validation"
+    }
+  ]
+}

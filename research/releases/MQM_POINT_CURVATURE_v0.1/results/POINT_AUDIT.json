@@ -1,0 +1,125 @@
+{
+  "status": "SIMULATED same-agent separate routes / EXACT decision audit",
+  "rows": [
+    {
+      "M": 4,
+      "third_commutator_discrepancies": [
+        1.173471600062736e-13,
+        1.244844714097367e-13,
+        1.4623554919780552e-13
+      ],
+      "curvature_dyad_discrepancy": 5.674220231828727e-21,
+      "cold_deadline_curvature": -0.0636802504973335,
+      "cold_commutator_discrepancy": 2.0122792321330962e-15,
+      "local_norm": 9.622168779227426,
+      "mixed_norm": 83.38816203143165,
+      "twice_mixed_norm": 1033.4750810194573
+    },
+    {
+      "M": 8,
+      "third_commutator_discrepancies": [
+        1.1007244014723442e-13,
+        1.1050729675302315e-13,
+        7.338887013697023e-14
+      ],
+      "curvature_dyad_discrepancy": 1.053218100077051e-20,
+      "cold_deadline_curvature": -0.1345948083076367,
+      "cold_commutator_discrepancy": 1.5543122344752192e-15,
+      "local_norm": 9.622168779227426,
+      "mixed_norm": 83.38816203143175,
+      "twice_mixed_norm": 1033.4750810194591
+    }
+  ],
+  "integer_decisions": [
+    {
+      "k": 3,
+      "pass": false
+    },
+    {
+      "k": 4,
+      "pass": false
+    },
+    {
+      "k": 5,
+      "pass": true
+    },
+    {
+      "k": 6,
+      "pass": true
+    },
+    {
+      "k": 7,
+      "pass": true
+    },
+    {
+      "k": 8,
+      "pass": true
+    },
+    {
+      "k": 9,
+      "pass": true
+    },
+    {
+      "k": 10,
+      "pass": true
+    },
+    {
+      "k": 11,
+      "pass": true
+    },
+    {
+      "k": 12,
+      "pass": true
+    },
+    {
+      "k": 13,
+      "pass": true
+    },
+    {
+      "k": 14,
+      "pass": true
+    },
+    {
+      "k": 15,
+      "pass": true
+    },
+    {
+      "k": 16,
+      "pass": true
+    },
+    {
+      "k": 17,
+      "pass": true
+    },
+    {
+      "k": 18,
+      "pass": true
+    },
+    {
+      "k": 19,
+      "pass": true
+    },
+    {
+      "k": 20,
+      "pass": true
+    },
+    {
+      "k": 21,
+      "pass": true
+    },
+    {
+      "k": 22,
+      "pass": true
+    },
+    {
+      "k": 23,
+      "pass": true
+    },
+    {
+      "k": 24,
+      "pass": true
+    }
+  ],
+  "external_review": "OPEN",
+  "physical_promotion": 0
+}

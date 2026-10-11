@@ -1,0 +1,18 @@
+{
+  "date_utc": "2026-10-11",
+  "parent_commit": "ff55d95b820583149811d92135796215b9a004c5",
+  "current_repository_parent": "f672ba0e0a6e0d67d9b297ccdaea728da50d183d",
+  "source_inputs": {
+    "inputs/LAUNCH_OUTPUT.json": "3951260aba81a9664d48a2be1fd8dcce215a62b8a77b0dbf90cbb6cdb1a4762e",
+    "inputs/PARAMETER_INTERVALS.json": "9e38336c225a90a89c573c4c0abf9efe4c0d34956c5ea1d0fcf858e37f633b12",
+    "inputs/PROTOCOL.json": "74825dcde8e23c3ebb5cd5aaa419b34eeb19bfc8080acf97bccaa95d60221b03",
+    "inputs/response_model.py": "36851c07d6bcc7d8a2f5c1fbe55c3b1da4eadf3633fc83b20f6ab4e7acaeb839"
+  },
+  "checkpoint_excluded": {
+    "path": "results/POINT_CHECKPOINT.npz",
+    "sha256": "cb3dfc942103e5dba574179c14540d6107b2c30c5c523a165a7ae87da1819f32",
+    "regenerate": "python3 propagate_point.py"
+  },
+  "external_review": "OPEN",
+  "physical_promotion": 0
+}
