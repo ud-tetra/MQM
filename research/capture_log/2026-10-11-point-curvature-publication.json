@@ -1,0 +1,38 @@
+{
+  "date_utc": "2026-10-11",
+  "release": "MQM_POINT_CURVATURE_v0.1",
+  "github_artifact_commit": "fd18ebf8c955351670eb26721dc8fe9895501aff",
+  "github_artifact_tree": "2d2bcb7570cac7eda5763005ae2d026e938229df",
+  "sites_source_commit": "ba7cc384ade39abe32d3db92de57774267bf6872",
+  "sites_version": 18,
+  "sites_deployment": {
+    "id": "appgdep_6acae6e3357481919d4b2565bf9b6c30",
+    "project_id": "appgprj_6aad8de0ced88191a976857505b587a3",
+    "title": "MQM · Mayes Quantum Method",
+    "version_id": "appgprj_6aad8de0ced88191a976857505b587a3~appgver_b87e0b3e7c6081918c59d7b30999eb91",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://mqm-research.ben-w-mayes.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6aad8de0ced88191a976857505b587a3",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-11T01:31:27.554340+00:00"
+  },
+  "matched_scope": "43 captured release, website, catalogue, governance and audit paths; unchanged GitHub-only concurrent artifacts preserved. GitHub and Sites commit objects are distinct.",
+  "verified_changed_files": 43,
+  "ci": [
+    {
+      "id": 38102079989,
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ud-tetra/MQM/actions/runs/38102079989"
+    }
+  ],
+  "ci_scope": "Artifact/hash/link/offline tests; no independent theorem or numerical validation.",
+  "offline_sha256": "298703a97aa0fb3049cda6def7c6592f3b900dfc52b40cc7d1a827cb97d93163",
+  "physical_promotion": 0,
+  "external_review": "OPEN",
+  "receipt_scope": "GitHub-only append-after-publication provenance receipt; not part of public Site archive."
+}
