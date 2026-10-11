@@ -1,0 +1,76 @@
+\documentclass[a4paper,journal]{IEEEtran}
+\usepackage{amsmath,amssymb,booktabs,url}
+\newcommand{\Tr}{\operatorname{Tr}}\newcommand{\ad}{\operatorname{ad}}
+\title{Finite Deadline Third Derivative and Fourth-Order Remainder for a Quantum Capture Latch}
+\author{Ben W. Mayes\\MQM Research --- Development Addendum, Version 0.1}
+\begin{document}\maketitle
+\begin{abstract}
+A hash-bound finite-reference third-derivative readout and exact retained fourth-commutator identity lower the conditional capture-error ceiling from $123/2^{23}$ to $111/2^{23}<2^{-16}$. The interval remains $16\pm2^{-5}$ at $\beta=5/16$; the next dyadic candidate fails the conservative remainder. Mixed bath terms are retained. A separate full-kernel Leibniz comparison identifies seven derivative-transfer slots, but their MQM continuum enclosures remain open. Numerical controls are same-agent evidence. Physical promotion is zero.
+\end{abstract}
+\begin{IEEEkeywords}quantum control, finite reservoirs, certified derivatives, open-system error accounting\end{IEEEkeywords}
+\section{Fixed contract and checkpoint provenance}
+The parent point-curvature packet~\cite{parent} establishes conditional cold curvature $<2^{-14}$, finite thermal curvature $<2^{-13}$, and error $<123/2^{23}$ on $16\pm2^{-5}$. This addendum keeps $\Omega=64$, $B=16$, $\kappa=8$, $\beta=5/16$, $T=16$, $h=g=1$, $\lambda^2=4\sqrt2$, the source launch and retained error target $2^{-16}$. Post-exposure engineering is disclosed; candidates $2^{-k}$, $3\le k\le24$, and horizon $U=129/8$ were frozen before the new readout. Widening was not an acceptance requirement.
+
+The source checkpoint has 192 hot columns, each with $3+4M+\binom{M+1}{2}=19299$ coordinates. It was propagated by 128 degree-48 Taylor steps and reused after verifying SHA-256\footnote{Checkpoint hash: \texttt{cb3dfc942103e5dba574179c14540d610}\newline\texttt{7b2c30c5c523a165a7ae87da1819f32}. The regenerable 55 MB checkpoint is excluded from the archive; parent replay code and the frozen readout are captured.}. These are mathematical modes and sector coordinates, not physical qubits. Reuse is not an independent propagation test.
+\section{Exact retained fourth identity}
+Write $H=H_B+K$, and introduce superoperators
+\begin{equation}A=\ad_K,\quad C=\ad_{[K,H_B]},\quad D=\ad_{[[K,H_B],H_B]},\end{equation}
+with $E=\ad_{[[[K,H_B],H_B],H_B]}$. Bath-only outer commutators vanish under partial trace. Right multiplication by $\ad_{H_B}$ becomes the derivation $\delta R=[R,\ad_{H_B}]$, where $\delta A=C$, $\delta C=D$, $\delta D=E$. Starting from $R_1=A$, the exact recurrence is $R_{n+1}=R_nA+\delta R_n$. Consequently,
+\begin{align}
+\Tr_B\ad_H^4X=\Tr_B\big(&A^4+3CA^2+2ACA+A^2C\nonumber\\&+3DA+AD+3C^2+E\big)X.\label{four}
+\end{align}
+The terms $3C^2$, $3DA$, $AD$ and $E$ cannot be dropped.
+
+The source $Q\le2$ bounds are $\|K\|<14$, $\|[K,H_B]\|<256/3$, and $\|[[K,H_B],H_B]\|<4096/3$. Flat-band sixth-moment exactness at $M\ge4$ gives
+\begin{equation}\|\delta^3c\|^2=\frac{128B^6}{7\pi}.
+\end{equation}
+The third mixed commutator has exchange norm at most $\sqrt2\|\delta^3c\|=65536/\sqrt{7\pi}<16384$. For the finite response input $\|X\|_1\le2\nu$, (\ref{four}) yields
+\begin{align}
+\tfrac12\|\Delta_{2,M}^{(4)}\|_1\le\nu\big(&16\cdot14^4+48\tfrac{256}{3}14^2\nonumber\\&+16\tfrac{4096}{3}14+12(\tfrac{256}{3})^2+32768\big)\nonumber\\
+&=1843456\nu.\label{jfour}
+\end{align}
+The integer factorization is $1843456=2^8\cdot19\cdot379$, an arithmetic decomposition of this norm charge. It does not identify a geometric capacity law. The finite occupation trace $\nu$ is not a continuum photon-number bound.
+\section{Deadline third-derivative enclosure}
+For the evolved hot matrix $W$, let $A_j=H^jW$. The direct covariance-weighted readout is
+\begin{equation}i\Tr_B(A_3NA_0^\dagger-3A_2NA_1^\dagger+3A_1NA_2^\dagger-A_0NA_3^\dagger),
+\end{equation}
+minus $\Tr N$ times the cold third derivative. The returned half trace norm is approximately $1.0870\times10^{-8}$, diagnostic only. Acceptance uses the exact rational half sum of absolute real and imaginary entries plus the error ledger.
+
+Let $h=64$, $d_H$ be the inherited parameter mismatch, $d_n$ the occupation $\ell_1$ mismatch, and $e$ the parent finite propagation allowance. The third-derivative correction is
+\begin{align}
+J_{\rm err}={}&\nu_U\big[8h^3(2e+e^2)\nonumber\\&+8d_H((h+d_H)^2+h(h+d_H)+h^2)(1+e)^2\big]\nonumber\\&+8h^3d_n+2^{-12}.\label{jerr}
+\end{align}
+The final arithmetic slot is verified against the parent $2^{28}$ operation budget with $\gamma=2^{-25}/(1-2^{-25})$:
+\begin{align}
+32\gamma\nu_U8(h+d_H)^3(1+e)^2\nonumber\\+16\,2^{-43}\nu_U(h+d_H)^3(1+e)^2<2^{-12}.
+\end{align}
+This assumes the declared round-to-nearest model and source operation counts; independent machine-arithmetic review remains open. Combining the rational returned-entry charge and (\ref{jerr}) gives a finite deadline ceiling approximately $0.009861917<2^{-6}$.
+
+Using the inherited slope and curvature, the new thermal variation is
+\begin{align}d_{2,\rm new}(w)={}&2^{-20}w+2^{-13}w^2/2\nonumber\\&+2^{-6}w^3/6+1843456\nu_Uw^4/24.
+\end{align}
+All other cold, Gaussian and uniform continuum VALUE slots are re-evaluated exactly as in the parent on $U=129/8$. Cross multiplication on 22 candidates selects $w=2^{-5}$. The diagnostic sum is $1.312179523150286\times10^{-5}$, enclosed by
+\begin{equation}E(w)<111/2^{23}<2^{-16}.
+\end{equation}
+The reporting numerator 111 was selected after evaluation; acceptance stayed fixed. The halfwidth did not improve. At $2^{-4}$ the majorant is about $2.7774\times10^{-5}$. Keeping every other slot unchanged would require a fourth-derivative bound below $0.098109$, versus the present $19.78283$. This is an engineering requirement, not an actual-error lower bound.
+\section{Separate continuum derivative gate}
+No uniform real-time value bound is silently differentiated. Suppose the SAME finite and continuum retained response kernels satisfy
+\begin{equation}\Delta(t)=-\int_0^t ds\int_0^s du\,F(t,s,u),
+\end{equation}
+with three continuous dominated derivatives. $F$ must include the final propagator, noncommuting operators, covariance and vacuum expectation; scalar filter cancellation is insufficient. Leibniz yields
+\begin{align}
+\Delta^{(3)}(t)={}&-(3F_t+2F_s+F_u)(t,t,t)\nonumber\\&-\int_0^t(3F_{tt}+3F_{ts}+F_{ss})(t,t,u)\,du\nonumber\\&-\int_0^t ds\int_0^s du\,F_{ttt}(t,s,u).\label{leibniz}
+\end{align}
+If $\epsilon_\alpha$ uniformly bounds half the trace norm of each finite-minus-continuum derivative kernel, the transfer debit is at most
+\begin{equation}3\epsilon_t+2\epsilon_s+\epsilon_u+T(3\epsilon_{tt}+3\epsilon_{ts}+\epsilon_{ss})+T^2\epsilon_{ttt}/2.
+\end{equation}
+The common MQM kernel map, regularity and seven numerical slots are OPEN. The proposed next auxiliary budget $2^{-12}$ has units of model-time$^{-3}$ and is distinct from the channel target. The current window still uses only uniform continuum values.
+\section{Controls, repair and scope}
+Six seeded fourth-commutator controls at $M=4,8$ agree within $5.483\times10^{-12}$; two third-derivative routes agree within $6.120\times10^{-19}$. Two inherited cold-curvature controls also pass. An exact word recurrence verifies (\ref{four}); 64 exact monomial controls verify every boundary coefficient in (\ref{leibniz}). These do not certify an MQM continuum embedding or constitute external review.
+
+An initial diagnostic reused the symbol for a mixed commutator as the eigensystem matrix, incorrectly reporting its norm as one. The fourth identity had already been checked before that overwrite; acceptance was unaffected. The receipt is preserved, the name repaired and all controls rerun. Fresh mixed norms are approximately 13975.134, below 16384.
+
+Physical promotion remains zero. Permanent retention, bath replenishment, arbitrary-input diamond accuracy, native admission and hardware validation remain open. Next work should tighten cold third-derivative variation and response-local fourth remainders together, while independently closing the full-kernel derivative comparison.
+\begin{thebibliography}{1}
+\bibitem{parent} B. W. Mayes, ``Deadline curvature enclosures and a wider quantum latch capture window,'' MQM point-curvature v0.1, repository artifact commit fd18ebf8c955351670eb26721dc8fe9895501aff, 2026. Directed parameter, launch and continuum dependencies are archived in that release.
+\end{thebibliography}\end{document}

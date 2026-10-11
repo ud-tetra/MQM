@@ -1,0 +1,20 @@
+{
+  "date_utc": "2026-10-11",
+  "user_local_date": "2026-10-10",
+  "parent_artifact_commit": "fd18ebf8c955351670eb26721dc8fe9895501aff",
+  "repository_baseline": "6a18706d78c650fba6bd680f0f227d8fe5e2d0e8",
+  "source_inputs": {
+    "inputs/LAUNCH_OUTPUT.json": "3951260aba81a9664d48a2be1fd8dcce215a62b8a77b0dbf90cbb6cdb1a4762e",
+    "inputs/PARAMETER_INTERVALS.json": "9e38336c225a90a89c573c4c0abf9efe4c0d34956c5ea1d0fcf858e37f633b12",
+    "inputs/PARENT_CERTIFICATE.json": "13c1658b3fb394e92549fc53e70e5096249315717bf89fd4c5a1a8de5d9cca13",
+    "inputs/PROTOCOL.json": "74825dcde8e23c3ebb5cd5aaa419b34eeb19bfc8080acf97bccaa95d60221b03",
+    "inputs/response_model.py": "36851c07d6bcc7d8a2f5c1fbe55c3b1da4eadf3633fc83b20f6ab4e7acaeb839"
+  },
+  "checkpoint_reused_and_excluded": {
+    "sha256": "cb3dfc942103e5dba574179c14540d6107b2c30c5c523a165a7ae87da1819f32",
+    "regenerate": "python3 regenerate_checkpoint.py",
+    "description": "192-column128-step degree48 parent checkpoint; no new independent propagation claimed"
+  },
+  "physical_promotion": 0,
+  "external_review": "OPEN"
+}

@@ -1,0 +1,33 @@
+{
+  "freeze_stage": "Before deadline third-derivative readout",
+  "parameters": {
+    "Omega": 64,
+    "B": 16,
+    "kappa": 8,
+    "beta": "5/16",
+    "T": 16,
+    "h": 1,
+    "g": 1,
+    "lambda_squared": "4sqrt2"
+  },
+  "target": "uniform retained error<2^-16",
+  "candidate_halfwidths": "2^-k k3..24",
+  "horizon": "129/8",
+  "source_checkpoint": "mqm-point/research/releases/MQM_POINT_CURVATURE_v0.1/results/POINT_CHECKPOINT.npz",
+  "source_checkpoint_sha256": "cb3dfc942103e5dba574179c14540d6107b2c30c5c523a165a7ae87da1819f32",
+  "method": "Reuse hash-bound128-step degree48 checkpoint; direct third commutator dyads with directed binary64 allowance; full retained fourth commutator including mixed bath moments",
+  "acceptance": "Compute rational largest passing candidate; no required widening; report conservative bound failure without physical failure inference",
+  "controls": {
+    "M": [
+      4,
+      8
+    ],
+    "seed": 419,
+    "random_states_each": 3,
+    "routes": "Dense retained fourth commutator versus recursive bath elimination; hot/cold derivative dyads versus full commutator; rational cross multiplication"
+  },
+  "continuum_comparison": "Uniform value comparison only; thermal continuum derivative transfer OPEN",
+  "post_exposure_engineering": true,
+  "external_review": "OPEN",
+  "physical_promotion": 0
+}

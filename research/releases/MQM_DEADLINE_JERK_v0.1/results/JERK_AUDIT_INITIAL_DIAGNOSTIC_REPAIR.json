@@ -1,0 +1,138 @@
+{
+  "status": "SIMULATED same-agent separate routes / EXACT word recurrence and integer audit",
+  "rows": [
+    {
+      "M": 4,
+      "three_mixed_norm": 1.000000000000004,
+      "fourth_commutator_discrepancies": [
+        4.0032154506416e-12,
+        5.48217225566393e-12,
+        3.792838572588238e-12
+      ],
+      "third_dyad_discrepancy": 2.416171752877547e-19,
+      "cold_deadline_curvature": -0.0636802504973335,
+      "cold_commutator_discrepancy": 2.0122792321330962e-15,
+      "local_norm": 9.622168779227426,
+      "mixed_norm": 83.38816203143165,
+      "twice_mixed_norm": 1033.4750810194573
+    },
+    {
+      "M": 8,
+      "three_mixed_norm": 1.0000000000000224,
+      "fourth_commutator_discrepancies": [
+        1.516141872417542e-12,
+        3.1011265046731812e-12,
+        1.6969815989007305e-12
+      ],
+      "third_dyad_discrepancy": 6.119038557652742e-19,
+      "cold_deadline_curvature": -0.1345948083076367,
+      "cold_commutator_discrepancy": 1.5543122344752192e-15,
+      "local_norm": 9.622168779227426,
+      "mixed_norm": 83.38816203143175,
+      "twice_mixed_norm": 1033.4750810194591
+    }
+  ],
+  "retained_fourth_words": {
+    "A A A A": 1,
+    "C A A": 3,
+    "A C A": 2,
+    "A A C": 1,
+    "D A": 3,
+    "C C": 3,
+    "A D": 1,
+    "E": 1
+  },
+  "integer_decisions": [
+    {
+      "k": 3,
+      "pass": false
+    },
+    {
+      "k": 4,
+      "pass": false
+    },
+    {
+      "k": 5,
+      "pass": true
+    },
+    {
+      "k": 6,
+      "pass": true
+    },
+    {
+      "k": 7,
+      "pass": true
+    },
+    {
+      "k": 8,
+      "pass": true
+    },
+    {
+      "k": 9,
+      "pass": true
+    },
+    {
+      "k": 10,
+      "pass": true
+    },
+    {
+      "k": 11,
+      "pass": true
+    },
+    {
+      "k": 12,
+      "pass": true
+    },
+    {
+      "k": 13,
+      "pass": true
+    },
+    {
+      "k": 14,
+      "pass": true
+    },
+    {
+      "k": 15,
+      "pass": true
+    },
+    {
+      "k": 16,
+      "pass": true
+    },
+    {
+      "k": 17,
+      "pass": true
+    },
+    {
+      "k": 18,
+      "pass": true
+    },
+    {
+      "k": 19,
+      "pass": true
+    },
+    {
+      "k": 20,
+      "pass": true
+    },
+    {
+      "k": 21,
+      "pass": true
+    },
+    {
+      "k": 22,
+      "pass": true
+    },
+    {
+      "k": 23,
+      "pass": true
+    },
+    {
+      "k": 24,
+      "pass": true
+    }
+  ],
+  "thermal_continuum_derivative_transfer": "OPEN",
+  "external_review": "OPEN",
+  "physical_promotion": 0
+}

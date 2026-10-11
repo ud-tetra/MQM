@@ -1,0 +1,14 @@
+{
+  "version": "0.1",
+  "amendments": [
+    {
+      "id": "DIAGNOSTIC-NAME-REPAIR",
+      "trigger": "Initial third mixed-commutator norm displayed1",
+      "cause": "Dense eigensystem reused E variable after fourth identity check; later diagnostic norm measured eigenvector matrix",
+      "repair": "Name third mixed commutator E3; rerun all controls",
+      "effect": "Fourth identity controls and acceptance arithmetic unchanged; no threshold or interpretation change",
+      "initial_receipt": "results/JERK_AUDIT_INITIAL_DIAGNOSTIC_REPAIR.json",
+      "status": "Repaired and freshly retested; all10 route controls and22 acceptance decisions pass"
+    }
+  ]
+}

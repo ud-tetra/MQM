@@ -1,0 +1,47 @@
+{
+  "version": "0.1",
+  "physical_promotion": 0,
+  "claims": [
+    {
+      "id": "RETAINED-FOURTH",
+      "status": "EXACT",
+      "claim": "R4=A^4+3CA^2+2ACA+A^2C+3DA+AD+3C^2+E",
+      "scope": "A=adK,C=ad[K,H_B],D=ad[[K,H_B],H_B],E=ad[[[K,H_B],H_B],H_B]; finite retained source sectors"
+    },
+    {
+      "id": "DEADLINE-THIRD",
+      "status": "DERIVED conditional",
+      "claim": "Finite M192 deadline third-derivative half trace norm<2^-6",
+      "scope": "Hash-bound source checkpoint and declared directed parameter/rounding allowances; not continuum derivative"
+    },
+    {
+      "id": "FOURTH-REMAINDER",
+      "status": "DERIVED",
+      "claim": "Finite all-time fourth derivative half trace norm<=1843456nu_U;1843456=2^8*19*379",
+      "scope": "K<14,C<256/3,D<4096/3,E<16384; flat-band sixth moment onQ<=2"
+    },
+    {
+      "id": "WINDOW",
+      "status": "DERIVED conditional",
+      "claim": "Error<111/2^23<2^-16 throughout16 +/-2^-5; lower ceiling, unchanged halfwidth",
+      "scope": "Same beta5/16, source launch and uniform continuum VALUE comparisons on129/8"
+    },
+    {
+      "id": "LEIBNIZ-TRANSFER",
+      "status": "DERIVED conditional / OPEN application",
+      "claim": "Full-kernel third derivative transfer requires seven derivative comparison slots, with boundary terms",
+      "scope": "Common thrice differentiable dominated kernel; actual MQM slots uncomputed"
+    },
+    {
+      "id": "AUDIT",
+      "status": "EXACT / SIMULATED",
+      "claim": "64 exact polynomial controls; exact word recurrence;10 small-model route controls;22 rational decisions",
+      "scope": "Same-agent controls; diagnostic repair preserved; independent external review OPEN"
+    },
+    {
+      "id": "PHYSICAL",
+      "status": "OPEN",
+      "claim": "Hardware, permanent retention, arbitrary-input diamond accuracy, replenished bath and thermal continuum derivative transfer remainOPEN"
+    }
+  ]
+}
