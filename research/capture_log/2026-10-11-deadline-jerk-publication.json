@@ -1,0 +1,35 @@
+{
+  "date_utc": "2026-10-11",
+  "user_local_date": "2026-10-10",
+  "release": "MQM_DEADLINE_JERK_v0.1",
+  "github_artifact_commit": "cb17428e32a5a37b702f9adbd7d23d1e4008bdbc",
+  "github_artifact_tree": "48b1bea656ea8cd4bcd30edee7144ead77ad367b",
+  "sites_source_commit": "3fe10c7b219972eb32d90d4d77c2b67851ce3e4b",
+  "sites_version": 19,
+  "sites_deployment_status": "succeeded",
+  "site_url": "https://mqm-research.ben-w-mayes.chatgpt.site",
+  "verified_changed_paths": 51,
+  "all_local_source_website_release_paths_verified": 416,
+  "missing_or_mismatched_paths": 0,
+  "unrelated_github_artifacts": "Preserved; base-tree overlay with expected-head fast-forward",
+  "ci": {
+    "id": 38102932243,
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/ud-tetra/MQM/actions/runs/38102932243"
+  },
+  "ci_scope": "Artifact hashes,local links and41-release offline export; not independent numerical or theorem validation",
+  "offline_artifacts": [
+    {
+      "id": 11688471840,
+      "name": "MQM-offline-website",
+      "size_bytes": 50792837,
+      "expired": false
+    }
+  ],
+  "offline_local_sha256": "0c75400b76bb38ad3c008a11aa450787a835cc47c75e436bcc0b0514f283b97a",
+  "scientific_scope": "Conditional finite third derivative and fourth remainder; lower111/2^23 ceiling with unchanged16 +/-2^-5 window; actual continuum derivative transferOPEN",
+  "physical_promotion": 0,
+  "external_review": "OPEN",
+  "receipt_scope": "GitHub-only append-after-publication receipt; distinct commit objects recorded"
+}
