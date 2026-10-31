@@ -21,3 +21,8 @@ Distinguish EXACT, DERIVED, CANDIDATE, SIMULATED, EMPIRICAL-HARDWARE, scoped NO-
 ## Program-wide prediction governance proposal (2026-10-31)
 
 Read `governance/UD_PREDICTIVE_DISCOVERY_ADOPTION_v1.0.md` and its pinned canonical source before physics-facing development. Explicitly label D0 exploratory FIT/target exposure versus P0 candidate and R confirmatory evidence. No physical promotion from a numerical match or CI. Respect all prior MQM capture receipts, separate hardware evidence and frozen releases. Effective only after review/merge; physical promotion 0.
+
+
+## UD proof-first research tracking — 2026-10-31
+
+Read governance/UD_PROOF_FIRST_ADOPTION_v1.0.md and the versioned canonical policy linked within it. Mathematical theorem proofs, counterexamples and no-go constraints are the research milestones; simulation/hardware/CI results are typed supporting evidence. Capture each proof milestone with a versioned proof, dependencies, hash receipt and status. Physical promotion remains 0.

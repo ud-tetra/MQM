@@ -28,3 +28,8 @@ For a complete offline download, extract `offline-build/MQM_OFFLINE_WEBSITE_v1.z
 ## UD program-wide predictive discovery governance (2026-10-31)
 
 **PROPOSAL / REVIEW PENDING - PHYSICAL PROMOTION 0.** The canonical [UD Predictive Discovery Protocol v1.0](https://github.com/ud-tetra/UD/blob/ff89221626d3258dc458f01408f1fac80a072530/docs/UD_PREDICTIVE_DISCOVERY_PROTOCOL_v1.0.md) (SHA-256 `d5e5f079996863ae156a3d35e1cf8ba5135c2f7b8699bd9f9a4b492828351310`) and [three candidate tests](https://github.com/ud-tetra/UD/blob/ff89221626d3258dc458f01408f1fac80a072530/docs/UD_FIRST_THREE_PREDICTION_CANDIDATES_v1.0.md) (SHA-256 `5d2fe31521e61d79182027f790db9cc3e463e8fa9ca74852443135eb5ab08956`) apply as a governance *proposal* here. Development permits explicitly labeled hypotheses, inverse design and FIT. Independent physical claims require source-complete observable/readout/units/null, frozen pre-exposure criteria, non-constructor review, held-out tests and independent replication. This change does not promote previous claims or deploy any site. See the local governance adoption note and bootloader; effective adoption needs reviewed integration to main.
+
+
+## UD proof-first research tracking — 2026-10-31
+
+Read governance/UD_PROOF_FIRST_ADOPTION_v1.0.md and the versioned canonical policy linked within it. Mathematical theorem proofs, counterexamples and no-go constraints are the research milestones; simulation/hardware/CI results are typed supporting evidence. Capture each proof milestone with a versioned proof, dependencies, hash receipt and status. Physical promotion remains 0.
