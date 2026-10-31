@@ -1,0 +1,18 @@
+{
+  "record_type": "governance_capture",
+  "created_at": "2026-10-31T18:34:12.956Z",
+  "status": "STAGED_FOR_REVIEW",
+  "source_commit": "969a7397ef689aaa4c09cc254023a092ae7555af",
+  "canonical_policy_sha256": "d5e5f079996863ae156a3d35e1cf8ba5135c2f7b8699bd9f9a4b492828351310",
+  "tests": {
+    "build_site": "NOT_RUN_no_publication_change",
+    "numerical": "NOT_RUN"
+  },
+  "physics_promotion": 0,
+  "scope": [
+    "README.md",
+    "AGENTS.md",
+    "BOOTLOADER.md",
+    "governance/UD_PREDICTIVE_DISCOVERY_ADOPTION_v1.0.md"
+  ]
+}
